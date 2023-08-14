@@ -1,0 +1,90 @@
+[
+  {
+    "visibilizacion_victimas": {
+      "page1": {
+        "text1": "VISIBILIZACIÓN",
+        "text2": "DE LAS VÍCTIMAS"
+      },
+      "page2": {
+        "slider": {
+          "content1": {
+            "title": "Toda persona puede ser víctima de trata de personas, ",
+            "text1": "<strong>sin distinción de nacionalidad, sexo, edad o condición socioeconómica</strong>. Sin embargo, factores como la pobreza, los conflictos, la violencia, la discriminación y los desastres ambientales, incrementan estas situaciones de vulnerabilidad.",
+            "text2": "(ACNUDH,2014)."
+          },
+          "content2": {
+            "title": "Si no se llega a identificar a las víctimas de la trata, ",
+            "text1": "ellas pasan a ser invisibilizadas.",
+            "text2": "La identificación rápida y correcta de las víctimas es fundamental para garantizar la protección de los derechos que le corresponden.",
+            "text3": "(ACNUDH,2014)."
+          }
+        }
+      },
+      "page3": {
+        "text1": "Se entiende por <strong>víctima</strong> de trata de personas, quien haya sido <strong>debidamente identificada</strong> bajo dicho perfil por la institución gubernamental que tenga la competencia para ello, de manera que se le reconozcan y",
+        "text2": "se le garanticen una serie de derechos y protecciones específicas.",
+        "text3": "(OIM)"
+      },
+      "page4": {
+        "graphic": {
+          "title": "Víctimas identificadas de trata de personas países CORETT (2018-2021)",
+          "column1": 1306,
+          "year1": 2018,
+          "column2": 1652,
+          "year2": 2019,
+          "column3": 1205,
+          "year3": 2020,
+          "column4": 1564,
+          "year4": 2021
+        },
+        "text1": "Durante el periodo 2018-2021 los países de la CORETT identificaron",
+        "text2": "5.727 víctimas de ",
+        "text3": "trata de personas"
+      },
+      "page5": {
+        "title": "PORCENTAJE POR PAÍS DEL TOTAL DE VÍCTIMAS DE TRATA DE PERSONAS IDENTIFICADAS",
+        "text1": "2018-2021",
+        "graphic_default": {
+          "foot": "Explore los datos por país",
+          "percentage1": "0-5%",
+          "percentage2": "5-10%",
+          "percentage3": ">20%"
+        },
+        "graphic_mexico": {},
+        "graphic_guatemala": {},
+        "graphic_belice": {},
+        "graphic_elsalvador": {},
+        "graphic_honduras": {},
+        "graphic_nicaragua": {},
+        "graphic_costarica": {},
+        "graphic_panama": {},
+        "graphic_rdm": {}
+      },
+      "page6": {
+        "title": "Existe una gran dificultad para identificar a las víctimas",
+        "text1": "debido al <strong>carácter clandestino de este delito</strong>, a las pocas denuncias que se reciben debido a su naturaleza compleja y violenta, y a los medios de control que ejercen las personas tratantes.",
+        "text2": "(CORETT, 2020). "
+      },
+      "page7": {
+        "title": "La trata de personas puede ocurrir dentro del país de nacionalidad (trata interna) o fuera del país de nacionalidad de la víctima (trata externa) (OIM).",
+        "graphic": {
+          "percentaje1": "20%",
+          "percentaje2": "18%",
+          "percentaje3": "62%",
+          "text1": "<strong>La mayoría de las personas identificadas<strong/> como víctimas de trata de personas <h3>se encontraban dentro de su país de nacionalidad<h3/>.",
+          "text2": "Personas víctimas de trata identificadas <strong>dentro de su país de nacionalidad<strong/>",
+          "text3": "Personas víctimas de trata identificadas <strong>fuera de su país de nacionalidad<strong/>",
+          "text4": "Sin información"
+        }
+      },
+      "page8": {
+        "news": {
+          "news1": "La invisibilización de las víctimas dificulta la tarea de cuantificar la trata de personas.",
+          "news2": "Las víctimas LGBTIQ+ de la trata de personas",
+          "news3": "Lo que las cifras nos cuentan sobre la trata de personas",
+          "foot": "OIM"
+        }
+      }
+    }
+  }
+]
