@@ -13,5 +13,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'quotes': ['error', 'single'],  // Aceptar comillas simples
+    'semi': ['error', 'always'],   // Punto y coma al final de las sentencias
   },
 }
+
+
+
