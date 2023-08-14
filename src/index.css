@@ -1,3 +1,14 @@
+body {
+  margin: 0;
+ 
+}
+
+:root{
+  font-family: "Formula Condensed", sans-serif;
+  overflow-x: hidden;
+  
+}
+
 .background-container {
   position: relative;
   width: 100vw;

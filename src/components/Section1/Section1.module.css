@@ -1,0 +1,33 @@
+.slider__content {
+  /* display: flex; */
+
+}
+
+.Section1 {
+  width: 100vw;
+  min-height: 25vh;
+  flex-shrink: 0;
+  background: #FFF0F1;
+}
+
+.page1 {
+  background: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
+  height: 130vh;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  position: relative;
+  /* flex-shrink: 0; */
+}
+
+.page1__title {
+  color: #ffdcd1;
+  position: absolute;
+  right: 210px;
+  bottom: 370px;
+  font-size: 110px;
+  font-style: normal;
+  flex-shrink: 0;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
