@@ -66,7 +66,7 @@
         "text2": "(CORETT, 2020). "
       },
       "page7": {
-        "title": "La trata de personas puede ocurrir dentro del país de nacionalidad (trata interna) o fuera del país de nacionalidad de la víctima (trata externa) (OIM).",
+        "title": "La trata de personas puede ocurrir dentro del país de nacionalidad (trata interna) o fuera del país de nacionalidad de la víctima (trata externa) <small>(OIM).<small/>",
         "graphic": {
           "percentaje1": "20%",
           "percentaje2": "18%",
@@ -80,10 +80,86 @@
       "page8": {
         "news": {
           "news1": "La invisibilización de las víctimas dificulta la tarea de cuantificar la trata de personas.",
+          "hover1": {},
           "news2": "Las víctimas LGBTIQ+ de la trata de personas",
+          "hover2": {},
           "news3": "Lo que las cifras nos cuentan sobre la trata de personas",
-          "foot": "OIM"
+          "hover3": {},
+          "foot": "OIM",
+          "foot2": "UNODC"
         }
+      },
+      "page9": {
+        "title": "El 43% de las <br/> víctimas identificadas",
+        "subtitle": "en el periodo 2018-2021 <br/> fueron niños, niñas y adolescentes.",
+        "foot": "<strong>El porcentaje de niños y adolescentes entre el total de víctimas identificadas es de 23 %y el de niñas y adolescentes es de 20 %<strong/> .  En el último año se presentó un aumento de las niñas y adolescentes identificadas como víctimas y una disminución de los niños identificados.",
+        "onslider": {
+          "title": "Niños, niñas y adolescentes entre el número total de víctimas identificadas (2018-2021)",
+          "percentage0": "0%",
+          "percentage1": "1%",
+          "percentage2": "2%",
+          "percentage3": "3%",
+          "percentage4": "4%",
+          "percentage5": "5%",
+          "percentage6": "6%",
+          "percentage7": "7%",
+          "percentage8": "8%",
+          "percentage9": "9%",
+          "percentage10": "10%",
+          "percentage1_niño1": "5%",
+          "percentage1_niño2": "8%",
+          "percentage1_niño3": "7%",
+          "percentage1_niño4": "2%",
+          "percentage1_niña1": "4%",
+          "percentage1_niña2": "3%",
+          "percentage1_niña3": "4%",
+          "percentage1_niña4": "9%",
+          "foot1": "Niñas y adolescentes",
+          "foot2": "Niños y adolescentes"
+        }
+      },
+      "page10": {
+        "title": "Las mujeres y las niñas siguen siendo las principales víctimas de trata <br/> constituyendo <h2><strong>el 54% de víctimas de trata<strong/><h2/> identificadas en la región",
+        "card1": {
+          "text1": "Hombres y niños víctimas de trata de personas en la región",
+          "percentage1": "33%"
+        },
+        "card2": {
+          "text2": "Mujeres y niñas víctimas de trata de personas en la región",
+          "percentage2": "54%"
+        },
+        "card3": {
+          "text3": "<strong>729 personas<strong/> (13%) de las cuales se desconoce la edad y el sexo"
+        },
+        "card4": {
+          "text4": "<strong>39 víctimas<strong/> identificadas pertenecen a la <strong>población LGTBIQ+<strong/>",
+          "popup": "A pesar de los esfuerzos realizados por los países, aún se presentan limitaciones para la identificación de las personas LGBTIQ+."
+        },
+        "onslider": {
+          "title": "Víctimas identificadas por sexo y edad (2018-2021)",
+          "number1": 0,
+          "number2": 200,
+          "number3": 400,
+          "number4": 600,
+          "number5": 800,
+          "number6": 1000,
+          "number7": 1200,
+          "number8": 1400,
+          "number9": 1600,
+          "year1": 2018,
+          "year2": 2019,
+          "year3": 2020,
+          "year4": 2021,
+          "foot1": "Mujeres adultas",
+          "foot2": "Hombres adultos",
+          "foot3": "Niñas y adolescentes",
+          "foot4": "Niños y adolescentes"
+        }
+      },
+      "page11": {
+        "title": "El consentimiento de la víctima no exonera a quien ejerce la trata de la culpa,",
+        "text1": "aunque la persona haya aceptado ser trasladada o realizar la actividad, <strong>la culpa siempre recae sobre la parte explotadora<strong/>. Esto ocurre debido a que la víctima suele estar en una situación vulnerable siendo engañada por la red de trata, quienes son expertos en manipular sentimientos y explotar las necesidades económicas y afectivas de las personas. Al punto que, algunas veces, la víctima pierde su autonomía y su dignidad como ser humano, como respuesta a los abusos y amenazas recibidas.",
+        "foot": "(OIM, s.f.)"
       }
     }
   }
