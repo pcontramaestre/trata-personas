@@ -130,22 +130,27 @@
       {
         "title": {
           "text": "Las crisis cambian los patrones de la trata de personas y dificultan la identificación de las víctimas.",
-          "width": "455",
-          "height": "271",
-          "lineHeight": "43",
-          "fontSize": "33",
-          "top": "2575",
-          "left": "229"
+          "width": "455px",
+          "height": "271px",
+          "lineHeight": "43px",
+          "fontSize": "33px",
+          "top": "2575px",
+          "left": "229px"
         },
-        "footer": "UNODC",
+        "footer": {
+          "text": "UNODC",
+          "top": "2808.8px",
+          "left": "262.19px",
+          "fontSize": "20px"
+        },
         "size": {
-          "width": "603",
-          "height": "427"
+          "width": "603px",
+          "height": "427px"
         },
         "position": {
-          "top": "2489",
-          "left": "145",
-          "rotation": "7.56"
+          "top": "2489px",
+          "left": "145px",
+          "rotation": "7.56deg"
         },
         "hover": {
           "title": "Informe Mundial de UNODC sobre trata de personas: las crisis cambian los patrones de la trata de personas y dificultan la identificación de las víctimas.",
@@ -160,22 +165,27 @@
       {
         "title": {
           "text": "Cada historia de trata puede provocarte un vuelco al corazón",
-          "width": "455",
-          "height": "160",
-          "lineHeight": "50",
-          "fontSize": "38",
-          "top": "2774",
-          "left": "796"
+          "width": "455px",
+          "height": "160px",
+          "lineHeight": "50px",
+          "fontSize": "38px",
+          "top": "2774px",
+          "left": "796px"
         },
-        "footer": "ONU",
+        "footer": {
+          "text": "ONU",
+          "top": "2955.79px",
+          "left": "772.76px",
+          "fontSize": "20px"
+        },
         "size": {
-          "width": "603",
-          "height": "427"
+          "width": "603px",
+          "height": "427px"
         },
         "position": {
-          "top": "2614",
-          "left": "750",
-          "rotation": "-6.17"
+          "top": "2614px",
+          "left": "750px",
+          "rotation": "-6.17deg"
         },
         "hover": {
           "title": "En primera persona: \"La trata es un delito que puede ocurrir ante nuestros ojos”",
@@ -189,22 +199,27 @@
       {
         "title": {
           "text": "La trata es un delito que puede ocurrir ante nuestros ojos",
-          "width": "455",
-          "height": "164",
-          "lineHeight": "50",
-          "fontSize": "38",
-          "top": "2498",
-          "left": "1236"
+          "width": "455px",
+          "height": "164px",
+          "lineHeight": "50px",
+          "fontSize": "38px",
+          "top": "2498px",
+          "left": "1236px"
         },
-        "footer": "ONU",
+        "footer": {
+          "text": "ONU",
+          "top": "2703.8px",
+          "left": "1223.06px",
+          "fontSize": "20px"
+        },
         "size": {
-          "width": "603",
-          "height": "427"
+          "width": "603px",
+          "height": "427px"
         },
         "position": {
-          "top": "2372",
-          "left": "1183",
-          "rotation": "-3.59"
+          "top": "2372px",
+          "left": "1183px",
+          "rotation": "-3.59deg"
         },
         "hover": {
           "title": "Cada historia de trata puede provocarte un vuelco al corazón",
