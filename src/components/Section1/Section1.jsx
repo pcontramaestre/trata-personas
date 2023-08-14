@@ -1,6 +1,6 @@
 import Slides from "../Slides/Slides";
-import NoteBook from "../NoteBook/NoteBook";
-import BarGraph from "../BarGraph/BarGraph";
+import NoteBookSection01 from "../NoteBook/NoteBookSection01/NoteBookSection01";
+import BarGraphSection01 from "../BarGraph/BarGraphSection01/BarGraphSection01";
 import Map from "../Map/Map";
 import BigInfoBox from "../BigInfoBox/BigInfoBox";
 import News from "../News/News";
@@ -18,14 +18,14 @@ function Section1() {
         </h1>
       </div>
       <div className={style.slider__content}>
-        <Slides  />
+        <Slides />
       </div>
-      {/* <NoteBook />
-      <BarGraph />
+      <NoteBookSection01 />
+      <BarGraphSection01 />
       <Map />
       <BigInfoBox />
       <News />
-      <BigInfoBox /> */}
+      <BigInfoBox />
     </section>
   );
 }

@@ -1,0 +1,75 @@
+.NoteBook__container {
+  display: flex;
+  width: 100vw;
+  margin-top: 100px;
+}
+
+.NoteBook {
+  background: url("../../../assets/Img-Section01/Page03/hoja.png");
+  height: 100vh;
+  width: 80vw;
+  background-repeat: no-repeat;
+  background-size: 90vh;
+  transform: rotate(-4.362deg);
+  margin-left: 200px;
+  /* position: absolute; */
+}
+
+.img__hands {
+  height: 120%;
+  z-index: 1;
+  padding-right: 20px;
+  right: 0;
+  position: absolute;
+}
+
+.NoteBook__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  transform: rotate(-2.362deg);
+  text-align: center;
+  margin-left: 140px;
+  margin-top: 115px;
+  font-family: Inter;
+  font-style: normal;
+  width: 450px;
+}
+
+.NoteBook__text1 {
+  transform: rotate(-4.362deg);
+  color: var(--negro-textos, #081d20);
+  font-size: 26px;
+  font-weight: 400;
+  text-align: start;
+  margin: 0;
+}
+
+.NoteBook__text2 {
+  transform: rotate(-4.362deg);
+  color: #c18831;
+  font-family: Formula Condensed;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.NoteBook__text3 {
+  transform: rotate(-4.362deg);
+  text-align: start;
+  color: var(--negro-textos, #081d20);
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.75px;
+  margin-left: 12px;
+}
