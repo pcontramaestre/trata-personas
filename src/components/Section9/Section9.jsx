@@ -1,11 +1,13 @@
-import style from './Section9.module.css'
+import React from "react";
+import style from "./Section9.module.css"; // Importa el módulo CSS
+import BackgroundComponent from "./Components/backgroung";
 
-function Section9 () {
+function Section9() {
   return (
-    <section className={style.Section9}>
-      REFERENCIAS
-    </section>
-  )
+    <div className="App">
+      <BackgroundComponent />
+    </div>
+  );
 }
 
-export default Section9
+export default Section9;
