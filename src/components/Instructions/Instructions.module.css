@@ -1,11 +1,64 @@
-.InstructionsContainer {
-    position: fixed;
+.InstructionsBackground {
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 100vh;
-    background-color: green;
+    max-width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0px;
+    background-color: #026972;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+
+.InstructionsContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InstructionsContainer h1 {
+    margin: 0px;
+    margin-top: 4.5vw;
+    color: #CFF9FF;
+    font-size: 70px;
+    font-family: Formula Condensed;
+}
+
+.InstructionsContainer button {
+    padding: 0px;
+    margin-top: 2vw;
+    font-family: Formula Condensed;
+    border-radius: 0px;
+    background-color: #CFF9FF;
+    color: #026972;
+    text-align: center;
+}
+
+.InstructionsCardsContainer {
+    width: 90%;
+    margin-top: 1.2vw;
+    height: 22vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.InstructionsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InstructionsCard img {
+    object-fit: cover;
+}
+
+.InstructionsCard p {
+    color: #CFF9FF;
+    margin-bottom: 0px;
 }
