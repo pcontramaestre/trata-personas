@@ -9,12 +9,11 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'quotes': ['error', 'smart'],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
-    'quotes': ['error', 'single'],  // Aceptar comillas simples
-    'semi': ['error', 'always'],   // Punto y coma al final de las sentencias
   },
 }
 
