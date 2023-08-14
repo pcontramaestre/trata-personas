@@ -2,15 +2,114 @@
   {
     "InstructionsPage": {
       "title": "¿CÓMO NAVEGAR ESTE SITIO?",
-      "items": {
-        "Texto1": "Desplázate hacia abajo",
-        "Texto2": "Haz clic en el menú para navegar por las secciones",
-        "Texto3": "Sube el volumen para una mejor experiencia",
-        "Texto4": "Pasa el mouse por encima vara ver aclaraciones importantes",
-        "Texto5": "Cuando veas este ícono puedes interactuar con los diferentes elementos en pantalla",
-        "Texto6": "Haz clic en este ícono en cualquier momento para regresar al inicio"
-      },
-      "button": "INICIAR NAVEGACIÓN"
+      "items": [
+        {
+          "icon": {
+            "name": "scroll1",
+            "size": {
+              "width": "51",
+              "height": "103"
+            }
+          },
+          "text": {
+            "content": "Desplázate hacia abajo",
+            "size": {
+              "width": "142",
+              "height": "62"
+            }
+          }
+        },
+        {
+          "icon": {
+            "name": "menuBlanco",
+            "size": {
+              "width": "72",
+              "height": "46"
+            }
+          },
+          "text": {
+            "content": "Haz clic en el menú para navegar por las secciones",
+            "size": {
+              "width": "267",
+              "height": "62"
+            }
+          } 
+        },
+        {
+          "icon": {
+            "name": "audio1",
+            "size": {
+              "width": "71",
+              "height": "49"
+            }
+          },
+          "text": {
+            "content": "Sube el volumen para una mejor experiencia",
+            "size": {
+              "width": "213",
+              "height": "62"
+            }
+          } 
+        },
+        {
+          "icon": {
+            "name": "infoGifBlanco1",
+            "size": {
+              "width": "56",
+              "height": "56"
+            }
+          },
+          "text": {
+            "content": "Pasa el mouse por encima vara ver aclaraciones importantes",
+            "size": {
+              "width": "312",
+              "height": "63"
+            }
+          } 
+        },
+        {
+          "icon": {
+            "name": "group",
+            "size": {
+              "width": "56.65",
+              "height": "56.65"
+            }
+          },
+          "text": {
+            "content": "Cuando veas este ícono puedes interactuar con los diferentes elementos en pantalla",
+            "size": {
+              "width": "415",
+              "height": "69"
+            }
+          } 
+        },
+        {
+          "icon": {
+            "name": "home",
+            "size": {
+              "width": "46.73",
+              "height": "56.65"
+            }
+          },
+          "text": {
+            "content": "Haz clic en este ícono en cualquier momento para regresar al inicio",
+            "size": {
+              "width": "328",
+              "height": "63"
+            }
+          }
+        }
+      ],
+      "button": {
+        "text": {
+          "content": "INICIAR NAVEGACIÓN",
+          "font-size": "40"
+        },
+        "size": {
+          "width": "269",
+          "height": "70"
+        }
+      }
     }
   }, 
   {
