@@ -17,3 +17,7 @@
     position: absolute;
     margin: 0px;
 }
+
+.HomeHeaderText span {
+    font-weight: 700
+}
