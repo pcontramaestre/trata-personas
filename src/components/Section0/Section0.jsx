@@ -48,7 +48,7 @@ function Section0 () {
               return <h2 className={style.HomeHeaderText} style={textStyles[index]} key={index}>{texto.content}</h2>
             }
             case 'p': {
-              return <p className={style.HomeHeaderText} style={textStyles[index]} key={index}>{texto.content}</p>
+              return <p dangerouslySetInnerHTML={{ __html: texto.content }} className={style.HomeHeaderText} style={textStyles[index]} key={index} />
             }
           }
           return true
