@@ -1,11 +1,8 @@
-import style from './NoteBook.module.css'
+import React from "react";
 
-function NoteBook () {
-  return (
-    <div className={style.NoteBook}>
-      NoteBook
-    </div>
-  )
-}
+const NoteBook = () => {
+  return;
+  <div>NoteBook</div>;
+};
 
-export default NoteBook
+export default NoteBook;

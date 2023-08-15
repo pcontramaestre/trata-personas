@@ -1,0 +1,29 @@
+.NewsBackground {
+    position: relative;
+    border: 1px solid red;
+    height: 40vw;
+    margin-top: 5vw;
+}
+
+.NewsArticle {
+    position: absolute;
+    transform: rotateZ('angle');
+    background-image: url('../../assets/News/backgroundArticle.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.NewsArticle p {
+    margin: 0px;
+    text-align: start;
+    position: absolute;
+    left: 10%;
+    font-family: Inika;
+    color: #043335;
+}
+
+.NewsArticle footer {
+    position: absolute;
+    bottom: 11%;
+    left: 10%;
+}

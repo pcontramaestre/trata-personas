@@ -1,212 +1,403 @@
-[
-  {
-    "InstructionsPage": {
-      "title": "¿CÓMO NAVEGAR ESTE SITIO?",
-      "items": [
-        {
-          "icon": {
-            "name": "scroll1",
-            "size": {
-              "width": "51",
-              "height": "103"
-            }
-          },
-          "text": {
-            "content": "Desplázate hacia abajo",
-            "size": {
-              "width": "142",
-              "height": "62"
-            }
+{
+  "InstructionsPage": {
+    "title": {
+      "text": "¿CÓMO NAVEGAR ESTE SITIO?",
+      "fontSize": "70px"
+    },
+    "items": [
+      {
+        "icon": {
+          "name": "scroll1",
+          "size": {
+            "width": "51px",
+            "height": "103px"
           }
         },
-        {
-          "icon": {
-            "name": "menuBlanco",
-            "size": {
-              "width": "72",
-              "height": "46"
-            }
-          },
-          "text": {
-            "content": "Haz clic en el menú para navegar por las secciones",
-            "size": {
-              "width": "267",
-              "height": "62"
-            }
-          } 
-        },
-        {
-          "icon": {
-            "name": "audio1",
-            "size": {
-              "width": "71",
-              "height": "49"
-            }
-          },
-          "text": {
-            "content": "Sube el volumen para una mejor experiencia",
-            "size": {
-              "width": "213",
-              "height": "62"
-            }
-          } 
-        },
-        {
-          "icon": {
-            "name": "infoGifBlanco1",
-            "size": {
-              "width": "56",
-              "height": "56"
-            }
-          },
-          "text": {
-            "content": "Pasa el mouse por encima vara ver aclaraciones importantes",
-            "size": {
-              "width": "312",
-              "height": "63"
-            }
-          } 
-        },
-        {
-          "icon": {
-            "name": "group",
-            "size": {
-              "width": "56.65",
-              "height": "56.65"
-            }
-          },
-          "text": {
-            "content": "Cuando veas este ícono puedes interactuar con los diferentes elementos en pantalla",
-            "size": {
-              "width": "415",
-              "height": "69"
-            }
-          } 
-        },
-        {
-          "icon": {
-            "name": "home",
-            "size": {
-              "width": "46.73",
-              "height": "56.65"
-            }
-          },
-          "text": {
-            "content": "Haz clic en este ícono en cualquier momento para regresar al inicio",
-            "size": {
-              "width": "328",
-              "height": "63"
-            }
-          }
-        }
-      ],
-      "button": {
         "text": {
-          "content": "INICIAR NAVEGACIÓN",
-          "font-size": "40"
+          "content": "Desplázate hacia abajo",
+          "size": {
+            "width": "142px",
+            "height": "62px"
+          },
+          "fontSize": "20px",
+          "lineHeight": "24.2px"
+        }
+      },
+      {
+        "icon": {
+          "name": "menuBlanco",
+          "size": {
+            "width": "72px",
+            "height": "46px"
+          }
+        },
+        "text": {
+          "content": "Haz clic en el menú para navegar por las secciones",
+          "size": {
+            "width": "267px",
+            "height": "62px"
+          },
+          "fontSize": "20px",
+          "lineHeight": "24.2px"
+        } 
+      },
+      {
+        "icon": {
+          "name": "audio1",
+          "size": {
+            "width": "71px",
+            "height": "49px"
+          }
+        },
+        "text": {
+          "content": "Sube el volumen para una mejor experiencia",
+          "size": {
+            "width": "213px",
+            "height": "62px"
+          },
+          "fontSize": "20px",
+          "lineHeight": "24.2px"
+        } 
+      },
+      {
+        "icon": {
+          "name": "infoGifBlanco1",
+          "size": {
+            "width": "56px",
+            "height": "56px"
+          }
+        },
+        "text": {
+          "content": "Pasa el mouse por encima vara ver aclaraciones importantes",
+          "size": {
+            "width": "312px",
+            "height": "63px"
+          },
+          "fontSize": "20px",
+          "lineHeight": "24.2px"
+        } 
+      },
+      {
+        "icon": {
+          "name": "group",
+          "size": {
+            "width": "56.65px",
+            "height": "56.65px"
+          }
+        },
+        "text": {
+          "content": "Cuando veas este ícono puedes interactuar con los diferentes elementos en pantalla",
+          "size": {
+            "width": "415px",
+            "height": "69px"
+          },
+          "fontSize": "20px",
+          "lineHeight": "24.2px"
+        } 
+      },
+      {
+        "icon": {
+          "name": "home",
+          "size": {
+            "width": "46.73px",
+            "height": "56.65px"
+          }
+        },
+        "text": {
+          "content": "Haz clic en este ícono en cualquier momento para regresar al inicio",
+          "size": {
+            "width": "328px",
+            "height": "63px"
+          },
+          "fontSize": "20px",
+          "lineHeight": "24.2px"
+        }
+      }
+    ],
+    "button": {
+      "text": {
+        "content": "INICIAR NAVEGACIÓN",
+        "fontSize": "40px"
+      },
+      "size": {
+        "width": "269px",
+        "height": "70px"
+      }
+    }
+  },
+  "page1": {
+      "Texto1": "TRATA DE PERSONAS",
+      "Texto2": "Un crimen contra la humanidad"
+    },
+  "page2": {
+    "texto1": "LA ESCLAVITUD DEL SIGLO XXI",
+    "texto3": "<strong>La trata de personas</strong> se define como la “captación, transporte, traslado, acogida o recepción de <strong>personas</strong>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <strong>situación de vulnerabilidad</strong> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,<br><h1>CON FINES DE EXPLOTACIÓN.“<br>(OIM, 2019)"
+  },
+  "news": [
+    {
+      "title": {
+        "text": "Las crisis cambian los patrones de la trata de personas y dificultan la identificación de las víctimas.",
+        "width": "455px",
+        "height": "271px",
+        "lineHeight": "43px",
+        "fontSize": "33px",
+        "top": "2575px",
+        "left": "229px"
+      },
+      "footer": {
+        "text": "UNODC",
+        "top": "2808.8px",
+        "left": "262.19px",
+        "fontSize": "20px"
+      },
+      "size": {
+        "width": "603px",
+        "height": "427px"
+      },
+      "position": {
+        "top": "2489px",
+        "left": "145px",
+        "rotation": "7.56deg"
+      },
+      "hover": {
+        "title": "Informe Mundial de UNODC sobre trata de personas: las crisis cambian los patrones de la trata de personas y dificultan la identificación de las víctimas.",
+        "text1": "Se ha detectado un menor número de víctimas de la trata de personas a pesar de que la pandemia por COVID-19 y otras crisis han aumentado la vulnerabilidad a la explotación, según el último Informe Mundial sobre Trata de Personas 2022, presentado por la Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC).",
+        "text2": "El número de víctimas detectadas a escala mundial descendió 11% en 2020 con respecto al año anterior, debido al menor número de detecciones en países de ingresos bajos y medios.",
+        "text3": "A nivel global, el número de condenas por el delito de trata de personas también disminuyó 27% en 2020 con respecto al año anterior, con descensos más pronunciados registrados en el Sur de Asia (56%), Centroamérica y el Caribe (54%) y Sudamérica (46%), acelerando una tendencia a más largo plazo registrada por UNODC desde 2017.",
+        "text4": "El informe detalla también cómo la guerra y los conflictos ofrecen oportunidades que los delincuentes pueden aprovechar.",
+        "footer": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
+        "link": ""
+      }
+    },
+    {
+      "title": {
+        "text": "Cada historia de trata puede provocarte un vuelco al corazón",
+        "width": "455px",
+        "height": "160px",
+        "lineHeight": "50px",
+        "fontSize": "38px",
+        "top": "2774px",
+        "left": "796px"
+      },
+      "footer": {
+        "text": "ONU",
+        "top": "2955.79px",
+        "left": "772.76px",
+        "fontSize": "20px"
+      },
+      "size": {
+        "width": "603px",
+        "height": "427px"
+      },
+      "position": {
+        "top": "2614px",
+        "left": "750px",
+        "rotation": "-6.17deg"
+      },
+      "hover": {
+        "title": "En primera persona: \"La trata es un delito que puede ocurrir ante nuestros ojos”",
+        "text1": "La trata de personas y el tráfico ilícito de migrantes afecta a hombres, mujeres, niños y niñas, e incluso, bebés. Es un delito que muchas veces pasa desapercibido ante nuestros ojos, mientras vamos al trabajo, hacemos la compra, llevamos a nuestros hijos al colegio o quedamos con los amigos para cenar. Hay industrias con las que entramos en contacto en nuestra vida cotidiana, como la hostelería, la agricultura o la construcción, entre otras, en las que se explota a las víctimas de la trata.",
+        "text2": "En Europa, los traficantes llevan a grupos de niños de un país a otro y los obligan a mendigar. Luego se quedan todo el dinero y a menudo los dejan morir de hambre. Para ellos, es solo una cuestión monetaria y las personas no son más que una forma de obtener beneficios.",
+        "text3": "La lucha debe centrarse sobre todo en los que se lucran con estos delitos y en la protección de las víctimas.",
+        "footer": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
+        "link": ""
+      }
+    },
+    {
+      "title": {
+        "text": "La trata es un delito que puede ocurrir ante nuestros ojos",
+        "width": "455px",
+        "height": "164px",
+        "lineHeight": "50px",
+        "fontSize": "38px",
+        "top": "2498px",
+        "left": "1236px"
+      },
+      "footer": {
+        "text": "ONU",
+        "top": "2703.8px",
+        "left": "1223.06px",
+        "fontSize": "20px"
+      },
+      "size": {
+        "width": "603px",
+        "height": "427px"
+      },
+      "position": {
+        "top": "2372px",
+        "left": "1183px",
+        "rotation": "-3.59deg"
+      },
+      "hover": {
+        "title": "Cada historia de trata puede provocarte un vuelco al corazón",
+        "text1": "Hay niñas y mujeres de todas las edades que son explotadas sexualmente, y hombres que buscan desesperadamente un empleo y se encuentran en manos de bandas criminales que luego los utilizan para realizar trabajos forzosos o para otros fines.",
+        "text2": "En la actualidad, nos encontramos además con otro aspecto añadido, el hecho delictivo en las redes sociales. Los vídeos e imágenes sexuales se distribuyen por todo el mundo a través de diferentes canales.",
+        "text3": "La situación, además, se manifiesta de distinta manera dependiendo del lugar. En ciertos países, la finalidad es el trabajo forzoso. En los países que sufren de superpoblación, son los niños los explotados. En Europa y en América del Norte, se da sobre todo la explotación sexual.",
+        "footer": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
+        "link": ""
+      }
+    }
+  ],
+  "map": {
+    "title": {
+      "text1": "Cobertura Territorial",
+      "text2": "CORETT"
+    },
+    "size": {
+      "width": "1920px",
+      "height": "1080px"
+    },
+    "top": "4037px",
+    "countrys": [
+      {
+        "name": "Costa Rica",
+        "flag": {
+          "name": "costaRica",
+          "width": "51.25px"
+        },
+        "position": {
+          "top": "4956px",
+          "left": "1010px"
         },
         "size": {
-          "width": "269",
-          "height": "70"
-        }
-      }
-    }
-  }, 
-  {
-    "InstructionsPage": {
-      "page1": {
-        "Texto1": "TRATA DE PERSONAS",
-        "Texto2": "Un crimen contra la humanidad"
-      },
-      "page2": {
-        "texto1": "LA ESCLAVITUD DEL SIGLO XXI",
-        "texto3": "<strong>La trata de personas</strong> se define como la “captación, transporte, traslado, acogida o recepción de <strong>personas</strong>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <strong>situación de vulnerabilidad</strong> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,<br><h1>CON FINES DE EXPLOTACIÓN.“<br>(OIM, 2019)"
-      },
-      "page3": {
-        "news": {
-          "noticia01": {
-            "title": "Las crisis cambian los patrones de la trata de personas y dificultan la identificación de las víctimas.",
-            "footer": "UNODC",
-            "hover": {
-              "title": "Informe Mundial de UNODC sobre trata de personas: las crisis cambian los patrones de la trata de personas y dificultan la identificación de las víctimas.",
-              "text1": "Se ha detectado un menor número de víctimas de la trata de personas a pesar de que la pandemia por COVID-19 y otras crisis han aumentado la vulnerabilidad a la explotación, según el último Informe Mundial sobre Trata de Personas 2022, presentado por la Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC).",
-              "text2": "El número de víctimas detectadas a escala mundial descendió 11% en 2020 con respecto al año anterior, debido al menor número de detecciones en países de ingresos bajos y medios.",
-              "text3": "A nivel global, el número de condenas por el delito de trata de personas también disminuyó 27% en 2020 con respecto al año anterior, con descensos más pronunciados registrados en el Sur de Asia (56%), Centroamérica y el Caribe (54%) y Sudamérica (46%), acelerando una tendencia a más largo plazo registrada por UNODC desde 2017.",
-              "text4": "El informe detalla también cómo la guerra y los conflictos ofrecen oportunidades que los delincuentes pueden aprovechar.",
-              "footer": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
-              "link": ""
-            }
-          },
-          "noticia02": {
-            "title": "En primera persona: \"La trata es un delito que puede ocurrir ante nuestros ojos”",
-            "footer": "ONU",
-            "hover": {
-              "title": "En primera persona: \"La trata es un delito que puede ocurrir ante nuestros ojos”",
-              "text1": "La trata de personas y el tráfico ilícito de migrantes afecta a hombres, mujeres, niños y niñas, e incluso, bebés. Es un delito que muchas veces pasa desapercibido ante nuestros ojos, mientras vamos al trabajo, hacemos la compra, llevamos a nuestros hijos al colegio o quedamos con los amigos para cenar. Hay industrias con las que entramos en contacto en nuestra vida cotidiana, como la hostelería, la agricultura o la construcción, entre otras, en las que se explota a las víctimas de la trata.",
-              "text2": "En Europa, los traficantes llevan a grupos de niños de un país a otro y los obligan a mendigar. Luego se quedan todo el dinero y a menudo los dejan morir de hambre. Para ellos, es solo una cuestión monetaria y las personas no son más que una forma de obtener beneficios.",
-              "text3": "La lucha debe centrarse sobre todo en los que se lucran con estos delitos y en la protección de las víctimas.",
-              "footer": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
-              "link": ""
-            }
-          },
-          "noticia03": {
-            "title": "Cada historia de trata puede provocarte un vuelco al corazón",
-            "footer": "ONU",
-            "hover": {
-              "title": "Cada historia de trata puede provocarte un vuelco al corazón",
-              "text1": "Hay niñas y mujeres de todas las edades que son explotadas sexualmente, y hombres que buscan desesperadamente un empleo y se encuentran en manos de bandas criminales que luego los utilizan para realizar trabajos forzosos o para otros fines.",
-              "text2": "En la actualidad, nos encontramos además con otro aspecto añadido, el hecho delictivo en las redes sociales. Los vídeos e imágenes sexuales se distribuyen por todo el mundo a través de diferentes canales.",
-              "text3": "La situación, además, se manifiesta de distinta manera dependiendo del lugar. En ciertos países, la finalidad es el trabajo forzoso. En los países que sufren de superpoblación, son los niños los explotados. En Europa y en América del Norte, se da sobre todo la explotación sexual.",
-              "footer": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
-              "link": ""
-            }
-          }
+          "width": "124px",
+          "height": "24px"
         },
-        "texto1": "LA REGIÓN",
-        "texto2": "<strong>La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes</strong> (CORETT), es una instancia regional integrada por 9 países, para la prevención y combate de la trata de personas y el tráfico ilícito de migrantes."
+        "fontSize": "20px"
       },
-      "page4": {
-        "map": {
-          "title": {
-            "text1": "Cobertura Territorial",
-            "text2": "CORETT"
-          },
-          "country": [
-            {
-              "name": "Costa Rica"
-            },
-            {
-              "name": "El Salvador"
-            },
-            {
-              "name": "Guatemala"
-            },
-            {
-              "name": "México"
-            },
-            {
-              "name": "Belice"
-            },
-            {
-              "name": "Honduras"
-            },
-            {
-              "name": "nicaragua"
-            },
-            {
-              "name": "PANAMÁ"
-            },
-            {
-              "name": "República Dominicana"
-            }
-          ],
-          "textInformation": {
-            "title": "El delito de la trata de personas y el tráfico ilícito de migrantes han sido agenda de preocupación por parte de los Estados de la Región,",
-            "text1": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.",
-            "footer": "(CORETT)."
-          }
-        }
+      {
+        "name": "El Salvador",
+        "flag": {
+          "name": "elSalvador",
+          "width": "54.32px"
+        },
+        "position": {
+          "top": "4901px",
+          "left": "876px"
+        },
+        "size": {
+          "width": "138px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "Guatemala",
+        "flag": {
+          "name": "guatemala",
+          "width": "57.94px"
+        },
+        "position": {
+          "top": "4829px",
+          "left": "811px"
+        },
+        "size": {
+          "width": "129px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "México",
+        "flag": {
+          "name": "mexico",
+          "width": "53.76px"
+        },
+        "position": {
+          "top": "4577px",
+          "left": "868px"
+        },
+        "size": {
+          "width": "82px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "Belice",
+        "flag": {
+          "name": "belice",
+          "width": "53.2px"
+        },
+        "position": {
+          "top": "4722px",
+          "left": "1112px"
+        },
+        "size": {
+          "width": "70px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "Honduras",
+        "flag": {
+          "name": "honduras",
+          "width": "62.67px"
+        },
+        "position": {
+          "top": "4767px",
+          "left": "1229px"
+        },
+        "size": {
+          "width": "116px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "nicaragua",
+        "flag": {
+          "name": "nicaragua",
+          "width": "52.65px"
+        },
+        "position": {
+          "top": "4829px",
+          "left": "1234px"
+        },
+        "size": {
+          "width": "123px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "PANAMÁ",
+        "flag": {
+          "name": "panama",
+          "width": "50.7px"
+        },
+        "position": {
+          "top": "4889px",
+          "left": "1273px"
+        },
+        "size": {
+          "width": "90px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "name": "República Dominicana",
+        "flag": {
+          "name": "republicaDominicana",
+          "width": "52.09px"
+        },
+        "position": {
+          "top": "4765px",
+          "left": "1493px"
+        },
+        "size": {
+          "width": "252px",
+          "height": "24px"
+        },
+        "fontSize": "20px"
       }
+    ],
+    "textInformation": {
+      "title": "El delito de la trata de personas y el tráfico ilícito de migrantes han sido agenda de preocupación por parte de los Estados de la Región,",
+      "text1": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.",
+      "footer": "(CORETT)."
     }
   }
-]
+}
