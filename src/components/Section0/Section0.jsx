@@ -7,13 +7,13 @@ import style from './Section0.module.css'
 
 import data from '../../../troy.json'
 
-const { news, map } = data
+const { news, map, noteBook } = data
 
 function Section0 () {
   return (
     <section className={style.Section0Background}>
       TRATA DE PERSONAS
-      <NoteBook />
+      <NoteBook noteBook={noteBook} />
       <News news={news} />
       <Map map={map} />
       <BigInfoBox />
