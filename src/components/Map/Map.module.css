@@ -1,0 +1,12 @@
+.MapBackground {
+    position: relative;
+    background-image: url('../../assets/Map/Map.svg');
+    background-size: cover;
+}
+
+.MapCard {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* font-family: Inter V; */
+}
