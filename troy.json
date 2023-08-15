@@ -239,7 +239,7 @@
           "color": "#D6A862"
         },
         {
-          "content": "La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes (CORETT), es una instancia regional integrada por 9 países, para la prevención y combate de la trata de personas y el tráfico ilícito de migrantes.",
+          "content": "<span>La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes</span> (CORETT), es una instancia regional integrada por <span>9 países</span>, para la <span>prevención y combate de la trata de personas y el tráfico ilícito de migrantes.</span>",
           "tag": "p",
           "width": "959px",
           "height": "256px",
@@ -260,7 +260,7 @@
           "height": "115px",
           "top": "3704px",
           "left": "357px",
-          "fontFamily": "Inika",
+          "fontFamily": "'Inika', serif",
           "fontSize": "33px",
           "fontWeight": "400",
           "lineHeight": "130px",
@@ -305,7 +305,7 @@
     },
     "text": {
       "paragraph": {
-        "content": "La trata de personas se define como la “captación, transporte, traslado, acogida o recepción de personas, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una situación de vulnerabilidad o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
+        "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
         "width": "532.7px",
         "height": "300px",
         "fontSize": "25px",
@@ -467,7 +467,12 @@
           "width": "124px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "El Salvador",
@@ -483,7 +488,12 @@
           "width": "138px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "Guatemala",
@@ -499,7 +509,12 @@
           "width": "129px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "México",
@@ -515,7 +530,12 @@
           "width": "82px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "Belice",
@@ -531,7 +551,12 @@
           "width": "70px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "Honduras",
@@ -547,7 +572,12 @@
           "width": "116px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "nicaragua",
@@ -563,7 +593,12 @@
           "width": "123px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "PANAMÁ",
@@ -579,7 +614,12 @@
           "width": "90px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "República Dominicana",
@@ -595,7 +635,12 @@
           "width": "252px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       }
     ],
     "textInformation": {
