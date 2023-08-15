@@ -36,8 +36,8 @@ function Section0 () {
   }))
 
   return (
-    <section className={style.Section0Background} style={homeHeaderContainer}>
-      <div style={homeHeaderFrontPageStyle} className={style.Section0HomeHeader} />
+    <section className={style.HomeHeaderBackground} style={homeHeaderContainer}>
+      <div style={homeHeaderFrontPageStyle} className={style.HomeHeader} />
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {
