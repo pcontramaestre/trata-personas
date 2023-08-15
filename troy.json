@@ -2,7 +2,17 @@
   "InstructionsPage": {
     "title": {
       "text": "¿CÓMO NAVEGAR ESTE SITIO?",
-      "fontSize": "70px"
+      "fontSize": "70px",
+      "width": "841px",
+      "height": "84px",
+      "top": "204px",
+      "left": "536px",
+      "fontFamily": "Formula Condensed",
+      "fontWeight": "700",
+      "lineHeight": "84px",
+      "letterSpacing": "0em",
+      "textAlign": "center",
+      "color": "#CFF9FF"
     },
     "items": [
       {
@@ -115,14 +125,17 @@
       }
     ],
     "button": {
-      "text": {
-        "content": "INICIAR NAVEGACIÓN",
-        "fontSize": "40px"
-      },
-      "size": {
-        "width": "269px",
-        "height": "70px"
-      }
+      "content": "INICIAR NAVEGACIÓN",
+      "fontSize": "40px",
+      "width": "269px",
+      "height": "70px",
+      "fontFamily": "Formula Condensed",
+      "fontWeight": 300,
+      "lineHeight": "48px",
+      "letterSpacing": "0em",
+      "textAlign": "center",
+      "color": "#026972",
+      "backgroundColor": "#CFF9FF"
     }
   },
   "homeHeader": {
