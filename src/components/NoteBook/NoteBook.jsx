@@ -42,7 +42,7 @@ function NoteBook ({ noteBook }) {
   return (
     <article className={style.NoteBook} style={whiteSheetStyle}>
       <div className={style.NoteBookContainer}>
-        <p style={contentStyle}>{noteBook.text.paragraph.content}</p>
+        <p style={contentStyle} dangerouslySetInnerHTML={{ __html: noteBook.text.paragraph.content }} />
         <h1 style={titleStyle}>{noteBook.text.title.content}</h1>
         <footer style={footerStyle}>{noteBook.text.footer.content}</footer>
       </div>
