@@ -1,0 +1,17 @@
+.NoteBook {
+    position: absolute;
+    background-image: url('../../assets/NoteBook/whiteSheet.png');
+    background-size: cover;
+}
+
+.NoteBook p {
+    position: absolute;
+}
+
+.NoteBook h1 {
+    position: absolute;
+}
+
+.NoteBook footer {
+    position: absolute;
+}
