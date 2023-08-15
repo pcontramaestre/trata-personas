@@ -58,7 +58,13 @@ function Card ({ country, totalTop }) {
   }
 
   const nameStyle = {
-    width: convertSize(country.size.width)
+    width: convertSize(country.size.width),
+    fontSize: convertSize(country.fontSize),
+    fontFamily: country.fontFamily,
+    fontWeight: country.fontWeight,
+    lineHeight: convertSize(country.lineHeight),
+    letterSpacing: country.letterSpacing,
+    textAlign: country.textAlign
   }
 
   return (
