@@ -46,7 +46,7 @@ function Card ({ article, totalHeight }) {
 
   return (
     <div className={style.NewsArticle} style={articleStyle}>
-      <p style={titleStyle}><strong>{article.title.text}</strong></p>
+      <p style={titleStyle}>{article.title.text}</p>
       <footer style={footerStyle}>{article.footer.text}</footer>
     </div>
   )
