@@ -140,7 +140,7 @@
     },
     "text": [
         {
-          "content": "Trata de",
+          "content": "TRATA DE",
           "tag": "h1",
           "top": "306px",
           "left": "118px",
@@ -151,7 +151,7 @@
           "color": "#CFF9FF"
         },
         {
-          "content": "personas",
+          "content": "PERSONAS",
           "tag": "h1",
           "width": "486px",
           "height": "157px",
@@ -211,7 +211,7 @@
           "color": "#026972"
         },
         {
-          "content": "la región",
+          "content": "LA REGIÓN",
           "tag": "h1",
           "width": "651px",
           "height": "134px",
@@ -234,14 +234,14 @@
           "left": "800px",
           "fontFamily": "Inter",
           "fontSize": "40px",
-          "fontWeight": "700",
+          "fontWeight": "400",
           "lineHeight": "48px",
           "textAlign": "left",
           "letterSpacing": "0em",
           "color": "#081D20"
         },
         {
-          "content": "Cobertura Territorial",
+          "content": "COBERTURA TERRITORIAL",
           "tag": "p",
           "width": "1206px",
           "height": "115px",
