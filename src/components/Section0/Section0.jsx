@@ -7,7 +7,7 @@ import style from './Section0.module.css'
 
 import data from '../../../troy.json'
 
-const { news } = data[0]
+const { news, map } = data
 
 function Section0 () {
   return (
@@ -15,7 +15,7 @@ function Section0 () {
       TRATA DE PERSONAS
       <NoteBook />
       <News news={news} />
-      <Map />
+      <Map map={map} />
       <BigInfoBox />
     </section>
   )
