@@ -1,7 +1,7 @@
-.slider__content {
-  /* display: flex; */
+/* .slider__content {
+  display: flex;
 
-}
+} */
 
 .Section1 {
   width: 100vw;
@@ -22,6 +22,7 @@
 .page1__title {
   color: #ffdcd1;
   position: absolute;
+  font-family: "Formula Condensed";
   right: 210px;
   bottom: 370px;
   font-size: 110px;

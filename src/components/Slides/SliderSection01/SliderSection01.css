@@ -22,6 +22,7 @@
   margin: 0;
   text-align: center;
   font-size: 90px;
+  font-family: "Formula Condensed";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -34,6 +35,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
+  font-family: "Inter";
   line-height: normal;
   margin: 0;
 }
@@ -41,6 +43,7 @@
 .text2__slider {
   color: var(--negro-textos, #081d20);
   text-align: center;
+  font-family: "Inter", sans-serif;
   font-family: Inter;
   font-size: 40px;
   font-style: normal;

@@ -28,16 +28,16 @@
       "page4": {
         "graphic": {
           "title": "Víctimas identificadas de trata de personas países CORETT (2018-2021)",
-          "column1": 1306,
+          "column1": "1.306",
           "year1": 2018,
-          "column2": 1652,
+          "column2": "1.652",
           "year2": 2019,
-          "column3": 1205,
+          "column3": "1.205",
           "year3": 2020,
-          "column4": 1564,
+          "column4": "1.564",
           "year4": 2021
         },
-        "text1": "Durante el periodo 2018-2021 los países de la CORETT identificaron",
+        "text1": "Durante el periodo <strong>2018-2021</strong> los países de la CORETT identificaron",
         "text2": "5.727 víctimas de ",
         "text3": "trata de personas"
       },

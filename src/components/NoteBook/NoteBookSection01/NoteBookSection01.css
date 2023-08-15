@@ -9,16 +9,16 @@
   height: 100vh;
   width: 80vw;
   background-repeat: no-repeat;
-  background-size: 90vh;
+  background-size: 100vh;
   transform: rotate(-4.362deg);
-  margin-left: 200px;
+  margin-left: 160px;
   /* position: absolute; */
 }
 
 .img__hands {
+  margin-top: 60px;
   height: 120%;
   z-index: 1;
-  padding-right: 20px;
   right: 0;
   position: absolute;
 }
@@ -31,11 +31,10 @@
   align-content: center;
   transform: rotate(-2.362deg);
   text-align: center;
-  margin-left: 140px;
-  margin-top: 115px;
-  font-family: Inter;
+  margin-left: 160px;
+  margin-top: 183px;
   font-style: normal;
-  width: 450px;
+  width: 40%;
 }
 
 .NoteBook__text1 {
@@ -44,17 +43,18 @@
   font-size: 26px;
   font-weight: 400;
   text-align: start;
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 
 .NoteBook__text2 {
   transform: rotate(-4.362deg);
   color: #c18831;
-  font-family: Formula Condensed;
-  font-size: 50px;
+  font-family: "Formula Condensed";
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.2;
   text-align: start;
   text-transform: uppercase;
   margin: 0;
@@ -69,6 +69,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
+  font-family: "Inter", sans-serif;
   line-height: normal;
   letter-spacing: 2.75px;
   margin-left: 12px;
