@@ -125,6 +125,153 @@
       }
     }
   },
+  "homeHeader": {
+    "position": {
+      "top": "0px",
+      "left": "0px"
+    },
+    "size": {
+      "width": "2047px",
+      "height": "5503px"
+    },
+    "image": {
+      "width": "2047px",
+      "height": "1824px"
+    },
+    "text": [
+        {
+          "content": "Trata de",
+          "tag": "h1",
+          "top": "306px",
+          "left": "118px",
+          "width": "486px",
+          "height": "157px",
+          "fontSize": "140px",
+          "fontFamily": "Formula Condensed",
+          "color": "#CFF9FF"
+        },
+        {
+          "content": "personas",
+          "tag": "h1",
+          "width": "486px",
+          "height": "157px",
+          "top": "441px",
+          "left": "129px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "140px",
+          "fontWeight": "700",
+          "lineHeight": "168px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#CFF9FF"
+        },
+        {
+          "content": "Un crimen contra",
+          "tag": "h2",
+          "width": "554px",
+          "height": "66px",
+          "top": "634px",
+          "left": "123px",
+          "fontFamily": "Inika",
+          "fontSize": "60px",
+          "fontWeight": "700",
+          "lineHeight": "70px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#FFFFFF"
+        },
+        {
+          "content": "la humanidad",
+          "tag": "h2",
+          "width": "554px",
+          "height": "80px",
+          "top": "700px",
+          "left": "127px",
+          "fontFamily": "Inika",
+          "fontSize": "77px",
+          "fontWeight": "700",
+          "lineHeight": "70px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#FFFFFF"
+        },
+        {
+          "content": "la esclavitud del siglo xxi",
+          "tag": "h1",
+          "width": "668px",
+          "height": "277px",
+          "top": "1755px",
+          "left": "216px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "140px",
+          "fontWeight": "700",
+          "lineHeight": "168px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#026972"
+        },
+        {
+          "content": "la región",
+          "tag": "h1",
+          "width": "651px",
+          "height": "134px",
+          "top": "3361px",
+          "left": "119px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "131px",
+          "fontWeight": "700",
+          "lineHeight": "157px",
+          "letterSpacing": "0em",
+          "textAlign": "center",
+          "color": "#D6A862"
+        },
+        {
+          "content": "La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes (CORETT), es una instancia regional integrada por 9 países, para la prevención y combate de la trata de personas y el tráfico ilícito de migrantes.",
+          "tag": "p",
+          "width": "959px",
+          "height": "256px",
+          "top": "3300px",
+          "left": "800px",
+          "fontFamily": "Inter",
+          "fontSize": "40px",
+          "fontWeight": "700",
+          "lineHeight": "48px",
+          "textAlign": "left",
+          "letterSpacing": "0em",
+          "color": "#081D20"
+        },
+        {
+          "content": "Cobertura Territorial",
+          "tag": "p",
+          "width": "1206px",
+          "height": "115px",
+          "top": "3704px",
+          "left": "357px",
+          "fontFamily": "Inika",
+          "fontSize": "33px",
+          "fontWeight": "400",
+          "lineHeight": "130px",
+          "letterSpacing": "0em",
+          "textAlign": "center",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "CORETT",
+          "tag": "h1",
+          "width": "879px",
+          "height": "111px",
+          "top": "3808px",
+          "left": "521px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "133px",
+          "fontWeight": "700",
+          "lineHeight": "130px",
+          "letterSpacing": "0.2em",
+          "textAlign": "center",
+          "color": "#0A4B4E"
+        }
+    ]
+  },
   "page1": {
       "Texto1": "TRATA DE PERSONAS",
       "Texto2": "Un crimen contra la humanidad"
