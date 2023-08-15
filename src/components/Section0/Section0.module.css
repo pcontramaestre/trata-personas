@@ -1,7 +1,19 @@
-.Section0Background {
+.HomeHeaderBackground {
+    position: relative;
     width: 100vw;
     max-width: 100%;
     height: auto;
     min-height: 100vh;
     background-color: #CFF9FF;
+}
+
+.HomeHeader {
+    background-image: url('../../assets/Section0/homeHeader.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.HomeHeaderText {
+    position: absolute;
+    margin: 0px;
 }
