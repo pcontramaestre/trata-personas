@@ -133,6 +133,55 @@
     "texto1": "LA ESCLAVITUD DEL SIGLO XXI",
     "texto3": "<strong>La trata de personas</strong> se define como la “captación, transporte, traslado, acogida o recepción de <strong>personas</strong>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <strong>situación de vulnerabilidad</strong> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,<br><h1>CON FINES DE EXPLOTACIÓN.“<br>(OIM, 2019)"
   },
+  "noteBook": {
+    "position": {
+      "top": "1476.27px",
+      "left": "828.67px",
+      "rotation": "8.49 deg"
+    },
+    "size": {
+      "width": "739.49px",
+      "height": "758.42px"
+    },
+    "text": {
+      "paragraph": {
+        "content:": "La trata de personas se define como la “captación, transporte, traslado, acogida o recepción de personas, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una situación de vulnerabilidad o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
+        "position": {
+          "top": "1635.06px",
+          "left": "998px"
+        },
+        "size": {
+          "width": "532.7px",
+          "height": "300px"
+        },
+        "fontSize": "25px"
+      },
+      "title": {
+        "content": "con fines de explotación”.",
+        "position": {
+          "top": "1941.08px",
+          "left": "1042px"
+        },
+        "size": {
+          "width": "550.49px",
+          "height": "76px"
+        },
+        "fontSize": "60px"
+      },
+      "footer": {
+        "content": "(OIM,2019)",
+        "position": {
+          "top": "2032.25px",
+          "left": "1059px"
+        },
+        "size": {
+          "width": "157.9px",
+          "height": "30px"
+        },
+        "fontSize": "25px"
+      }
+    }
+  },
   "news": [
     {
       "title": {
