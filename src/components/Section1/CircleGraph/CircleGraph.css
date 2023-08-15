@@ -1,0 +1,205 @@
+.circlegraph {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 100px 0;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.circlegraph__title-content {
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+  align-content: center; */
+  width: 65vw;
+}
+
+.circlegraph__title {
+  color: #ce5c3b;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 51px;  */
+}
+
+.circlegraph__small {
+  color: #1e7b85;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  margin: 0 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 2.75px;
+}
+
+.circlegraph_graphic {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.circlegraph__percentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50%;
+  width: 38vw;
+}
+
+.circlegraph__percentage1 {
+  color: #1a6063;
+  width: 40%;
+  text-align: start;
+  font-family: Formula Condensed;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.circlegraph__percentage2 {
+  width: 80%;
+  color: #1a6063;
+  text-align: left;
+  margin-left: 100px;
+  font-family: Formula Condensed;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.circlegraph__percentage3 {
+  width: 100%;
+  color: #1a6063;
+  text-align: left;
+  font-family: Formula Condensed;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.circlegraph__p {
+  width: 25vw;
+  color: #1a6063;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.circlegraph__p strong {
+  color: #1a6063;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.circlegraph__p h3 {
+  color: #1a6063;
+  font-family: "Formula Condensed";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  margin: 0;
+}
+
+.circlegraph__img {
+  width: 26vw;
+}
+
+.circlegraph__barras {
+  display: flex;
+  height: 45vh;
+  width: 27vw;
+}
+
+.list__colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 98%;
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0 10px; */
+}
+
+.list__color1 {
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 3vw;
+  height: 2vh;
+  background: #6bb9af;
+}
+
+.list__color2 {
+  border-radius: 50%;
+  width: 3vw;
+  height: 2vh;
+  background: #df6441;
+}
+
+.list__color3 {
+  border-radius: 50%;
+  width: 3vw;
+  height: 2vh;
+  background: #dea956;
+}
+
+.list__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.list__color-text1 {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  margin: 0 10px;
+}
+
+.list__color-text2 {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  margin: 0 10px;
+}
+
+.list__color-text3 {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  margin: 0 10px;
+}

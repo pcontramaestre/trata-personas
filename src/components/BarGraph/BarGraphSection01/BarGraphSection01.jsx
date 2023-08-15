@@ -31,7 +31,8 @@ function BarGraphSection01() {
               dangerouslySetInnerHTML={{ __html: page4.text1 }}
             />
             <h2 className="bargraph__text2">
-              {page4.text2} <h2 className="bargraph__text3"> {page4.text3}</h2>
+              {page4.text2} <br />{" "}
+              <small className="bargraph__text3"> {page4.text3}</small>
             </h2>
           </div>
         </div>

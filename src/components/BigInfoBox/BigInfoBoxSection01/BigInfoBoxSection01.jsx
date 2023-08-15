@@ -6,7 +6,6 @@ const BigInfoBoxSection01 = () => {
   const page6 = data[0].visibilizacion_victimas.page6;
   return (
     <div className="info__content">
-      {/* <div className="info__separador" /> */}
       <div className="info__texts">
         <div className="info__text-content">
           <h1 className="info__title">{page6.title}</h1>

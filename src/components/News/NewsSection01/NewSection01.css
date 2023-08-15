@@ -1,0 +1,105 @@
+p {
+  margin: 0;
+}
+
+.news__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vw;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+.news__background1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 80px;
+  transform: rotateZ(-7.558deg);
+  background-image: url("../../../assets/Img-Section01/Page08/new.png");
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 60%;
+}
+
+.news__p1 {
+  transform: rotateZ(-7.558deg);
+  color: #043335;
+  width: 75%;
+  font-family: "Inika", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.99px;
+}
+
+.news__background2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(10.172deg);
+  background-image: url("../../../assets/Img-Section01/Page08/new.png");
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 60%;
+  z-index: 2;
+}
+
+.news__p2 {
+  transform: rotateZ(-7.6deg);
+  color: #043335;
+  width: 80%;
+  font-family: "Inika", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.99px;
+}
+
+.news__background3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  transform: rotateZ(3.592deg);
+  background-image: url("../../../assets/Img-Section01/Page08/new.png");
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 60%;
+  right: 80px;
+  z-index: 3;
+}
+
+.news__p3 {
+  transform: rotateZ(-7.6deg);
+  color: #043335;
+  width: 75%;
+  font-family: "Inika", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.99px;
+}
+
+footer {
+  margin-top: 50px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
