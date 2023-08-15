@@ -9,40 +9,43 @@ function NoteBook ({ noteBook }) {
   if (!noteBook) return null
 
   const whiteSheetStyle = {
+    top: convertSize(noteBook.position.top),
+    left: convertSize(noteBook.position.left),
     width: convertSize(noteBook.size.width),
     height: convertSize(noteBook.size.height),
     transform: `rotateZ(${-Number(noteBook.position.rotation.split('deg')[0])}deg)`
   }
 
   const contentStyle = {
-    width: convertSize(noteBook.text.paragraph.size.width),
-    height: convertSize(noteBook.text.paragraph.size.height),
-    top: convertSize(Number(noteBook.text.paragraph.position.top.split('px')[0]) - Number(noteBook.position.top.split('px')[0]) + 'px'),
-    left: convertSize(Number(noteBook.text.paragraph.position.left.split('px')[0]) - Number(noteBook.position.left.split('px')[0]) + 'px'),
-    fontSize: convertSize(noteBook.text.paragraph.fontSize)
+    ...noteBook.text.paragraph,
+    content: '',
+    width: convertSize(noteBook.text.paragraph.width),
+    height: convertSize(noteBook.text.paragraph.height),
+    fontSize: convertSize(noteBook.text.paragraph.fontSize),
+    lineHeight: convertSize(noteBook.text.paragraph.lineHeight)
   }
 
   const titleStyle = {
-    width: convertSize(noteBook.text.title.size.width),
-    height: convertSize(noteBook.text.title.size.height),
-    top: convertSize(Number(noteBook.text.title.position.top.split('px')[0]) - Number(noteBook.position.top.split('px')[0]) + 'px'),
-    left: convertSize(Number(noteBook.text.title.position.left.split('px')[0]) - Number(noteBook.position.left.split('px')[0]) + 'px'),
-    fontSize: convertSize(noteBook.text.title.fontSize)
+    ...noteBook.text.title,
+    width: convertSize(noteBook.text.title.width),
+    height: convertSize(noteBook.text.title.height),
+    fontSize: convertSize(noteBook.text.title.fontSize),
+    lineHeight: convertSize(noteBook.text.title.lineHeight)
   }
 
   const footerStyle = {
-    width: convertSize(noteBook.text.footer.size.width),
-    height: convertSize(noteBook.text.footer.size.height),
-    top: convertSize(Number(noteBook.text.footer.position.top.split('px')[0]) - Number(noteBook.position.top.split('px')[0]) + 'px'),
-    left: convertSize(Number(noteBook.text.footer.position.left.split('px')[0]) - Number(noteBook.position.left.split('px')[0]) + 'px'),
+    width: convertSize(noteBook.text.footer.width),
+    height: convertSize(noteBook.text.footer.height),
     fontSize: convertSize(noteBook.text.footer.fontSize)
   }
 
   return (
     <article className={style.NoteBook} style={whiteSheetStyle}>
-      <p style={contentStyle}>{noteBook.text.paragraph.content}</p>
-      <h1 style={titleStyle}>{noteBook.text.title.content}</h1>
-      <footer style={footerStyle}>{noteBook.text.footer.content}</footer>
+      <div className={style.NoteBookContainer}>
+        <p style={contentStyle}>{noteBook.text.paragraph.content}</p>
+        <h1 style={titleStyle}>{noteBook.text.title.content}</h1>
+        <footer style={footerStyle}>{noteBook.text.footer.content}</footer>
+      </div>
     </article>
   )
 }
