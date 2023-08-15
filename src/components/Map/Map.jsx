@@ -44,7 +44,6 @@ function Map ({ map }) {
 }
 
 function Card ({ country, totalTop }) {
-  console.log('country:', country)
   const styleCard = {
     top: convertSize((Number(country.position.top.split('px')[0]) - Number(totalTop.split('px')[0])) + 'px'),
     left: convertSize(country.position.left),
