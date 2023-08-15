@@ -17,7 +17,7 @@ const icons = {
   home
 }
 
-const { title, items, button } = data[0].InstructionsPage
+const { title, items, button } = data.InstructionsPage
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
