@@ -2,7 +2,17 @@
   "InstructionsPage": {
     "title": {
       "text": "¿CÓMO NAVEGAR ESTE SITIO?",
-      "fontSize": "70px"
+      "fontSize": "70px",
+      "width": "841px",
+      "height": "84px",
+      "top": "204px",
+      "left": "536px",
+      "fontFamily": "Formula Condensed",
+      "fontWeight": "700",
+      "lineHeight": "84px",
+      "letterSpacing": "0em",
+      "textAlign": "center",
+      "color": "#CFF9FF"
     },
     "items": [
       {
@@ -115,15 +125,165 @@
       }
     ],
     "button": {
-      "text": {
-        "content": "INICIAR NAVEGACIÓN",
-        "fontSize": "40px"
-      },
-      "size": {
-        "width": "269px",
-        "height": "70px"
-      }
+      "content": "INICIAR NAVEGACIÓN",
+      "fontSize": "40px",
+      "width": "269px",
+      "height": "70px",
+      "fontFamily": "Formula Condensed",
+      "fontWeight": 300,
+      "lineHeight": "48px",
+      "letterSpacing": "0em",
+      "textAlign": "center",
+      "color": "#026972",
+      "backgroundColor": "#CFF9FF"
     }
+  },
+  "homeHeader": {
+    "position": {
+      "top": "0px",
+      "left": "0px"
+    },
+    "size": {
+      "width": "2047px",
+      "height": "5503px"
+    },
+    "image": {
+      "width": "2047px",
+      "height": "1824px"
+    },
+    "text": [
+        {
+          "content": "TRATA DE",
+          "tag": "h1",
+          "top": "306px",
+          "left": "118px",
+          "width": "486px",
+          "height": "157px",
+          "fontSize": "140px",
+          "fontFamily": "Formula Condensed",
+          "color": "#CFF9FF"
+        },
+        {
+          "content": "PERSONAS",
+          "tag": "h1",
+          "width": "486px",
+          "height": "157px",
+          "top": "441px",
+          "left": "129px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "140px",
+          "fontWeight": "700",
+          "lineHeight": "168px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#CFF9FF"
+        },
+        {
+          "content": "Un crimen contra",
+          "tag": "h2",
+          "width": "554px",
+          "height": "66px",
+          "top": "634px",
+          "left": "123px",
+          "fontFamily": "Inika",
+          "fontSize": "60px",
+          "fontWeight": "700",
+          "lineHeight": "70px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#FFFFFF"
+        },
+        {
+          "content": "la humanidad",
+          "tag": "h2",
+          "width": "554px",
+          "height": "80px",
+          "top": "700px",
+          "left": "127px",
+          "fontFamily": "Inika",
+          "fontSize": "77px",
+          "fontWeight": "700",
+          "lineHeight": "70px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#FFFFFF"
+        },
+        {
+          "content": "LA ESCLAVITUD DEL SIGLO XXI",
+          "tag": "h1",
+          "width": "668px",
+          "height": "277px",
+          "top": "1755px",
+          "left": "216px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "140px",
+          "fontWeight": "700",
+          "lineHeight": "168px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#026972"
+        },
+        {
+          "content": "LA REGIÓN",
+          "tag": "h1",
+          "width": "651px",
+          "height": "134px",
+          "top": "3361px",
+          "left": "119px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "131px",
+          "fontWeight": "700",
+          "lineHeight": "157px",
+          "letterSpacing": "0em",
+          "textAlign": "center",
+          "color": "#D6A862"
+        },
+        {
+          "content": "<span>La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes</span> (CORETT), es una instancia regional integrada por <span>9 países</span>, para la <span>prevención y combate de la trata de personas y el tráfico ilícito de migrantes.</span>",
+          "tag": "p",
+          "width": "959px",
+          "height": "256px",
+          "top": "3300px",
+          "left": "800px",
+          "fontFamily": "Inter",
+          "fontSize": "40px",
+          "fontWeight": "400",
+          "lineHeight": "48px",
+          "textAlign": "left",
+          "letterSpacing": "0em",
+          "color": "#081D20"
+        },
+        {
+          "content": "COBERTURA TERRITORIAL",
+          "tag": "p",
+          "width": "1206px",
+          "height": "115px",
+          "top": "3704px",
+          "left": "357px",
+          "fontFamily": "'Inika', serif",
+          "fontSize": "33px",
+          "fontWeight": "400",
+          "lineHeight": "130px",
+          "letterSpacing": "0em",
+          "textAlign": "center",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "CORETT",
+          "tag": "h1",
+          "width": "879px",
+          "height": "111px",
+          "top": "3808px",
+          "left": "521px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "133px",
+          "fontWeight": "700",
+          "lineHeight": "130px",
+          "letterSpacing": "0.2em",
+          "textAlign": "center",
+          "color": "#0A4B4E"
+        }
+    ]
   },
   "page1": {
     "Texto1": "TRATA DE PERSONAS",
@@ -132,6 +292,49 @@
   "page2": {
     "texto1": "LA ESCLAVITUD DEL SIGLO XXI",
     "texto3": "<strong>La trata de personas</strong> se define como la “captación, transporte, traslado, acogida o recepción de <strong>personas</strong>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <strong>situación de vulnerabilidad</strong> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,<br><h1>CON FINES DE EXPLOTACIÓN.“<br>(OIM, 2019)"
+  },
+  "noteBook": {
+    "position": {
+      "top": "1476.27px",
+      "left": "831px",
+      "rotation": "8.49 deg"
+    },
+    "size": {
+      "width": "739.49px",
+      "height": "758.42px"
+    },
+    "text": {
+      "paragraph": {
+        "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
+        "width": "532.7px",
+        "height": "300px",
+        "fontSize": "25px",
+        "lineHeight": "30px",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#081D20"
+      },
+      "title": {
+        "content": "CON FINES DE EXPLOTACIÓN”.",
+        "width": "550.49px",
+        "height": "76px",
+        "fontSize": "60px",
+        "fontFamily": "Formula Condensed",
+        "fontWeight": "700",
+        "lineHeight": "72px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#C18831"
+      },
+      "footer": {
+        "content": "(OIM,2019)",
+        "width": "157.9px",
+        "height": "30px",
+        "fontSize": "25px"
+      }
+    }
   },
   "news": [
     {
@@ -248,6 +451,7 @@
       "height": "1080px"
     },
     "top": "4037px",
+    "left": "0px",
     "countrys": [
       {
         "name": "Costa Rica",
@@ -263,7 +467,12 @@
           "width": "124px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "El Salvador",
@@ -279,7 +488,12 @@
           "width": "138px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "Guatemala",
@@ -295,7 +509,12 @@
           "width": "129px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "México",
@@ -311,7 +530,12 @@
           "width": "82px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "Belice",
@@ -327,7 +551,12 @@
           "width": "70px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "Honduras",
@@ -343,7 +572,12 @@
           "width": "116px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "nicaragua",
@@ -359,7 +593,12 @@
           "width": "123px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "PANAMÁ",
@@ -375,7 +614,12 @@
           "width": "90px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       },
       {
         "name": "República Dominicana",
@@ -391,13 +635,81 @@
           "width": "252px",
           "height": "24px"
         },
-        "fontSize": "20px"
+        "fontSize": "20px",
+        "fontFamily": "'Inter', sans-serif",
+        "fontWeight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left"
       }
     ],
     "textInformation": {
       "title": "El delito de la trata de personas y el tráfico ilícito de migrantes han sido agenda de preocupación por parte de los Estados de la Región,",
       "text1": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.",
       "footer": "(CORETT)."
+    }
+  },
+  "bigInfoBox": {
+    "width": "1700px",
+    "height": "412px",
+    "top": "5235.984375px",
+    "left": "110px",
+    "borderRadius": "28px",
+    "border": "1px",
+    "backgroundColor": "#01535E",
+    "text": [
+      {
+        "content": "El delito de la trata de personas y el <span>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
+        "tag": "h1",
+        "width": "1175px",
+        "height": "110px",
+        "top": "5296.0078125px",
+        "left": "325px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "45px",
+        "fontWeight": "700",
+        "lineHeight": "54px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
+        "tag": "p",
+        "width": "1401px",
+        "height": "137px",
+        "top": "5415px",
+        "left": "324.9921875px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "lineHeight": "34px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "fontWeight1": "700",
+        "fontWeight2": "400",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "(CORETT).",
+        "tag": "p",
+        "width": "284.0334481956054px",
+        "height": "44.59501064964004px",
+        "top": "5566px",
+        "left": "325.1953125px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      }
+    ],
+    "bar": {
+      "height": "220.0000000000002px",
+      "top": "5337px",
+      "left": "250px",
+      "borderLeft": "1px solid #FFFFFF"
     }
   }
 }

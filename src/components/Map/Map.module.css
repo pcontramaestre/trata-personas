@@ -1,5 +1,5 @@
 .MapBackground {
-    position: relative;
+    position: absolute;
     background-image: url('../../assets/Map/Map.svg');
     background-size: cover;
 }
@@ -8,5 +8,5 @@
     display: flex;
     align-items: center;
     position: absolute;
-    /* font-family: Inter V; */
+    font-family: 'Inter', sans-serif;
 }

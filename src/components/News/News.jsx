@@ -8,8 +8,11 @@ function convertSize (input) {
 function News ({ news }) {
   if (!news) return null
   const totalHeight = news.reduce((acc, curr) => Number(acc.split('px')[0]) < Number(curr.position.top.split('px')[0]) ? acc : curr.position.top, news[0].position.top)
+  const newsBackgroundContainer = {
+    top: convertSize(totalHeight)
+  }
   return (
-    <div id='NewsBackground' className={style.NewsBackground}>
+    <div id='NewsBackground' className={style.NewsBackground} style={newsBackgroundContainer}>
       {
         news.map((article, index) => (
           <Card article={article} key={index} totalHeight={totalHeight} />
@@ -46,7 +49,7 @@ function Card ({ article, totalHeight }) {
 
   return (
     <div className={style.NewsArticle} style={articleStyle}>
-      <p style={titleStyle}><strong>{article.title.text}</strong></p>
+      <p style={titleStyle}>{article.title.text}</p>
       <footer style={footerStyle}>{article.footer.text}</footer>
     </div>
   )

@@ -1,4 +1,5 @@
 import style from "./Map.module.css";
+
 import belice from "../../assets/Map/belice.svg";
 import costaRica from "../../assets/Map/costaRica.svg";
 import elSalvador from "../../assets/Map/elSalvador.svg";
@@ -28,8 +29,11 @@ function convertSize(input) {
 
 function Map({ map }) {
   if (!map) return null;
+
   const mapStyle = {
     height: convertSize(map.size.height),
+    width: convertSize(map.size.width),
+    top: convertSize(map.top),
   };
   return (
     <div className={style.MapBackground} style={mapStyle}>
@@ -41,7 +45,6 @@ function Map({ map }) {
 }
 
 function Card({ country, totalTop }) {
-  console.log("country:", country);
   const styleCard = {
     top: convertSize(
       Number(country.position.top.split("px")[0]) -
@@ -58,6 +61,12 @@ function Card({ country, totalTop }) {
 
   const nameStyle = {
     width: convertSize(country.size.width),
+    fontSize: convertSize(country.fontSize),
+    fontFamily: country.fontFamily,
+    fontWeight: country.fontWeight,
+    lineHeight: convertSize(country.lineHeight),
+    letterSpacing: country.letterSpacing,
+    textAlign: country.textAlign,
   };
 
   return (
