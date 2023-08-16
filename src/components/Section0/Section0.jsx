@@ -7,7 +7,8 @@ import style from './Section0.module.css'
 
 import data from '../../../troy.json'
 
-const { news, map, noteBook, homeHeader, bigInfoBox } = data
+const { homeHeader } = data
+const { noteBook, news, map, bigInfoBox } = data.homeHeader
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
