@@ -711,6 +711,12 @@
       "width": "1944px",
       "height": "1520px"
     },
+    "textContainer": {
+      "width": "1958px",
+      "height": "1451px",
+      "top": "71906px",
+      "color": "#002526"
+    },
     "text": [
       {
         "content": "ACONTECIMIENTOS",
