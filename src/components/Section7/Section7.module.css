@@ -1,0 +1,28 @@
+.InterestingEventsBackground {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #CFF9FF;
+}
+
+.InterestingEvents {
+    position: relative;
+    z-index: 2;
+}
+
+.interestingEventsTextContainer {
+    position: absolute;
+    width: 100%;
+}
+
+.InterestingEventsText {
+    position: absolute;
+    margin: 0px;
+    z-index: 3;
+}
+
+.InterestingEventsText span {
+    font-weight: 700
+}
