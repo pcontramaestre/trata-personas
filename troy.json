@@ -648,5 +648,68 @@
       "text1": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.",
       "footer": "(CORETT)."
     }
+  },
+  "bigInfoBox": {
+    "width": "1700px",
+    "height": "412px",
+    "top": "5235.984375px",
+    "left": "110px",
+    "borderRadius": "28px",
+    "border": "1px",
+    "backgroundColor": "#01535E",
+    "text": [
+      {
+        "content": "El delito de la trata de personas y el <span>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
+        "tag": "h1",
+        "width": "1175px",
+        "height": "110px",
+        "top": "5296.0078125px",
+        "left": "325px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "45px",
+        "fontWeight": "700",
+        "lineHeight": "54px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
+        "tag": "p",
+        "width": "1401px",
+        "height": "137px",
+        "top": "5415px",
+        "left": "324.9921875px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "lineHeight": "34px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "fontWeight1": "700",
+        "fontWeight2": "400",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "(CORETT).",
+        "tag": "p",
+        "width": "284.0334481956054px",
+        "height": "44.59501064964004px",
+        "top": "5566px",
+        "left": "325.1953125px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      }
+    ],
+    "bar": {
+      "height": "220.0000000000002px",
+      "top": "5337px",
+      "left": "250px",
+      "borderLeft": "1px solid #FFFFFF"
+    }
   }
 }
