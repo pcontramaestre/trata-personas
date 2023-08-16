@@ -12,7 +12,7 @@ const SliderSection01 = ({ texts }) => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
   };
 
   return (

@@ -1,0 +1,118 @@
+.women {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.women__content {
+  width: 70%;
+  height: 90%;
+}
+
+.women__title {
+  margin: 0;
+  margin-bottom: 3%;
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: Formula Condensed;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 1.35px;
+}
+
+.women__background {
+  position: relative;
+  /* width: 65%; */
+  height: 45vh;
+  z-index: 1;
+}
+
+.womens__img {
+  /* width: 100%; */
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  height: 75%;
+  z-index: 1;
+}
+
+.women__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 20;
+  height: 45vh;
+  margin-left: 1.5%;
+}
+
+.women__texts-content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+  /* padding: 2%; */
+  align-items: start;
+  width: 45%;
+}
+
+.women__texts-content2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  width: 45%;
+}
+
+.women__text-p {
+  width: 100%;
+  color: var(--verde-medio, #0a4b4e);
+  font-family: "Inter", sans-serif;
+  padding: 2%;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.women__card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 95%;
+  height: 18%;
+}
+
+.women__card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  border-radius: 28px;
+  padding: 30px;
+  background: #165150;
+}
+
+.women__card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42%;
+  padding: 30px;
+  border-radius: 28px;
+  background: #60b6ba;
+}
+
+.women__card-p {
+  color: #fff;
+  font-family: Formula Condensed;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2px;
+}

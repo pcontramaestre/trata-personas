@@ -8,6 +8,7 @@ import data from "../../../trataSection01.json";
 import style from "./Section1.module.css";
 import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
+import Women from "./Women/Women";
 
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
@@ -28,7 +29,8 @@ function Section1() {
       <BigInfoBoxSection01 />
       <CircleGraph />
       <NewSection01 />
-      <CircleGraph02/>
+      <CircleGraph02 />
+      <Women />
       {/* <BigInfoBox /> */}
     </section>
   );
