@@ -1,0 +1,25 @@
+.BigInfoBox {
+    position: absolute;
+}
+
+.BigInfoBox h1 {
+    position: absolute;
+    margin: 0px;
+}
+
+.BigInfoBox h1 span {
+    color: #A2E7F1;
+}
+
+.BigInfoBox p {
+    position: absolute;
+    margin: 0px;
+}
+
+.BigInfoBox p span {
+    font-weight: 700;
+}
+
+.BigInfoBoxBar {
+    position: absolute;
+}

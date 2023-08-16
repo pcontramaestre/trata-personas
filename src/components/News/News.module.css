@@ -1,0 +1,28 @@
+.NewsBackground {
+    position: absolute;
+    height: 40vw;
+    margin-top: 5vw;
+}
+
+.NewsArticle {
+    position: absolute;
+    background-image: url('../../assets/News/backgroundArticle.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.NewsArticle p {
+    margin: 0px;
+    text-align: start;
+    position: absolute;
+    left: 10%;
+    font-family: 'Inika', serif;
+    color: #043335;
+}
+
+.NewsArticle footer {
+    position: absolute;
+    bottom: 11%;
+    left: 10%;
+    font-family: 'Inter', sans-serif;
+}

@@ -6,14 +6,15 @@
     max-width: 100%;
     height: auto;
     min-height: 100vh;
-    padding: 100px 0px;
     background-color: #026972;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
 .InstructionsContainer {
+    position: relative;
+    top: 4vw;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -22,20 +23,12 @@
 
 .InstructionsContainer h1 {
     margin: 0px;
-    margin-top: 4.5vw;
-    color: #CFF9FF;
-    font-size: 70px;
-    font-family: Formula Condensed;
 }
 
 .InstructionsContainer button {
     padding: 0px;
     margin-top: 2vw;
-    font-family: Formula Condensed;
     border-radius: 0px;
-    background-color: #CFF9FF;
-    color: #026972;
-    text-align: center;
 }
 
 .InstructionsCardsContainer {
@@ -61,4 +54,5 @@
 .InstructionsCard p {
     color: #CFF9FF;
     margin-bottom: 0px;
+    text-align: center;
 }

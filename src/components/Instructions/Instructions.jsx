@@ -7,7 +7,6 @@ import audio1 from '../../assets/Instructions/audio1.svg'
 import infoGifBlanco1 from '../../assets/Instructions/infoGifBlanco1.svg'
 import group from '../../assets/Instructions/group.svg'
 import home from '../../assets/Instructions/home.svg'
-import { useEffect, useState } from 'react'
 
 const icons = {
   scroll1,
@@ -18,37 +17,49 @@ const icons = {
   home
 }
 
+const { title, items, button } = data.InstructionsPage
+
+function convertSize (input) {
+  const n = Number(input.split('px')[0])
+  return (n * 100 / 1920) + 'vw'
+}
+
 function Instructions ({ setShowInstructions }) {
-  const [conversionFactor, setConversionFactor] = useState(1)
-
-  useEffect(() => {
-    const section = document.getElementById('InstructionsBackground')
-    setConversionFactor(Number(section.offsetWidth / 1920))
-  }, [])
-
   function handleInstruction () {
     setShowInstructions(false)
   }
 
+  const titleStyles = {
+    ...title,
+    text: '',
+    width: convertSize(title.width),
+    height: convertSize(title.height),
+    top: convertSize(title.top),
+    lineHeight: convertSize(title.lineHeight),
+    fontSize: convertSize(title.fontSize)
+  }
+
   const buttonStyles = {
-    width: (Number(data[0].InstructionsPage.button.size.width) * conversionFactor) + 'px',
-    height: (Number(data[0].InstructionsPage.button.size.height) * conversionFactor) + 'px',
-    fontSize: (Number(data[0].InstructionsPage.button.text['font-size']) * conversionFactor) + 'px',
-    lineHeight: 2
+    ...button,
+    content: '',
+    width: convertSize(button.width),
+    height: convertSize(button.height),
+    lineHeight: convertSize(button.lineHeight),
+    fontSize: convertSize(button.fontSize)
   }
 
   return (
     <section id='InstructionsBackground' className={style.InstructionsBackground}>
       <main className={style.InstructionsContainer}>
-        <h1 style={{ fontSize: 70 * conversionFactor }}>{data[0].InstructionsPage.title}</h1>
+        <h1 style={titleStyles}>{title.text}</h1>
         <div className={style.InstructionsCardsContainer}>
           {
-          data[0].InstructionsPage.items.map((item, index) => (
-            <Card key={index} text={item.text} icon={item.icon} n={conversionFactor} />
+          items.map((item, index) => (
+            <Card key={index} text={item.text} icon={item.icon} />
           ))
         }
         </div>
-        <button onClick={handleInstruction} style={buttonStyles}>{data[0].InstructionsPage.button.text.content}</button>
+        <button onClick={handleInstruction} style={buttonStyles}>{button.content}</button>
       </main>
     </section>
   )
@@ -56,13 +67,12 @@ function Instructions ({ setShowInstructions }) {
 
 function Card ({ icon, text, n }) {
   const styleIcon = {
-    width: (icon && (Number(icon.size.width) * n) + 'px') || 'auto'
-
+    width: convertSize(icon.size.width)
   }
   const styleText = {
-    width: (text && (Number(text.size.width) * n) + 'px') || 'auto',
-    fontSize: 20 * n + 'px',
-    lineHeight: 24.2 * n + 'px'
+    width: convertSize(text.size.width),
+    fontSize: convertSize(text.fontSize),
+    lineHeight: convertSize(text.lineHeight)
   }
 
   return (
