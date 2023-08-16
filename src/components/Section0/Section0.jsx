@@ -7,7 +7,7 @@ import style from './Section0.module.css'
 
 import data from '../../../troy.json'
 
-const { news, map, noteBook, homeHeader } = data
+const { news, map, noteBook, homeHeader, bigInfoBox } = data
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -57,7 +57,7 @@ function Section0 () {
       <NoteBook noteBook={noteBook} />
       <News news={news} />
       <Map map={map} />
-      <BigInfoBox />
+      <BigInfoBox bigInfoBox={bigInfoBox} />
     </section>
   )
 }
