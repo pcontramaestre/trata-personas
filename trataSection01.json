@@ -1,0 +1,167 @@
+[
+  {
+    "visibilizacion_victimas": {
+      "page1": {
+        "text1": "VISIBILIZACIÓN",
+        "text2": "DE LAS VÍCTIMAS"
+      },
+      "page2": {
+        "slider": {
+          "content1": {
+            "title": "Toda persona puede ser víctima de trata de personas, ",
+            "text2": "<strong>sin distinción de nacionalidad, sexo, edad o condición socioeconómica</strong>. Sin embargo, factores como la pobreza, los conflictos, la violencia, la discriminación y los desastres ambientales, incrementan estas situaciones de vulnerabilidad.",
+            "text3": "(ACNUDH,2014)."
+          },
+          "content2": {
+            "title": "Si no se llega a identificar a las víctimas de la trata, ",
+            "text1": "ellas pasan a ser invisibilizadas.",
+            "text2": "La identificación rápida y correcta de las víctimas es fundamental para garantizar la protección de los derechos que le corresponden.",
+            "text3": "(ACNUDH,2014)."
+          }
+        }
+      },
+      "page3": {
+        "text1": "Se entiende por <strong>víctima</strong> de trata de personas, quien haya sido <strong>debidamente identificada</strong> bajo dicho perfil por la institución gubernamental que tenga la competencia para ello, de manera que se le reconozcan y",
+        "text2": "se le garanticen una serie de derechos y protecciones específicas.",
+        "text3": "(OIM)"
+      },
+      "page4": {
+        "graphic": {
+          "title": "Víctimas identificadas de trata de personas países CORETT (2018-2021)",
+          "column1": "1.306",
+          "year1": 2018,
+          "column2": "1.652",
+          "year2": 2019,
+          "column3": "1.205",
+          "year3": 2020,
+          "column4": "1.564",
+          "year4": 2021
+        },
+        "text1": "Durante el periodo <strong>2018-2021</strong> los países de la CORETT identificaron",
+        "text2": "5.727 víctimas de ",
+        "text3": "trata de personas"
+      },
+      "page5": {
+        "title": "PORCENTAJE POR PAÍS DEL TOTAL DE VÍCTIMAS DE TRATA DE PERSONAS IDENTIFICADAS",
+        "text1": "2018-2021",
+        "graphic_default": {
+          "foot": "Explore los datos por país",
+          "percentage1": "0-5%",
+          "percentage2": "5-10%",
+          "percentage3": ">20%"
+        },
+        "graphic_mexico": {},
+        "graphic_guatemala": {},
+        "graphic_belice": {},
+        "graphic_elsalvador": {},
+        "graphic_honduras": {},
+        "graphic_nicaragua": {},
+        "graphic_costarica": {},
+        "graphic_panama": {},
+        "graphic_rdm": {}
+      },
+      "page6": {
+        "title": "Existe una gran dificultad para identificar a las víctimas",
+        "text1": "debido al <strong>carácter clandestino de este delito</strong>, a las pocas denuncias que se reciben debido a su naturaleza compleja y violenta, y a los medios de control que ejercen las personas tratantes.",
+        "text2": "(CORETT, 2020). "
+      },
+      "page7": {
+        "title": "La trata de personas puede ocurrir dentro del país de nacionalidad (trata interna) o fuera del país de nacionalidad de la víctima (trata externa)",
+        "foot_title": "<small>(OIM).</small>",
+        "graphic": {
+          "percentaje1": "20%",
+          "percentaje2": "18%",
+          "percentaje3": "62%",
+          "text1": "<strong>La mayoría de las personas identificadas</strong> como víctimas de trata de personas <h3>se encontraban dentro de su país de nacionalidad.</h3>",
+          "text2": "Personas víctimas de trata identificadas <strong>dentro de su país de nacionalidad</strong>",
+          "text3": "Personas víctimas de trata identificadas <strong>fuera de su país de nacionalidad</strong>",
+          "text4": "Sin información"
+        }
+      },
+      "page8": {
+        "news": {
+          "news1": "La invisibilización de las víctimas dificulta la tarea de cuantificar la trata de personas.",
+          "hover1": {},
+          "news2": "Las víctimas LGBTIQ+ de la trata de personas",
+          "hover2": {},
+          "news3": "Lo que las cifras nos cuentan sobre la trata de personas",
+          "hover3": {},
+          "foot": "OIM",
+          "foot2": "UNODC"
+        }
+      },
+      "page9": {
+        "title": "El 43% de las <br/> víctimas identificadas",
+        "subtitle": "en el periodo 2018-2021 <br/> fueron niños, niñas y adolescentes.",
+        "foot": "<strong>El porcentaje de niños y adolescentes entre el total de víctimas identificadas es de 23 %y el de niñas y adolescentes es de 20 %<strong/> .  En el último año se presentó un aumento de las niñas y adolescentes identificadas como víctimas y una disminución de los niños identificados.",
+        "onslider": {
+          "title": "Niños, niñas y adolescentes entre el número total de víctimas identificadas (2018-2021)",
+          "percentage0": "0%",
+          "percentage1": "1%",
+          "percentage2": "2%",
+          "percentage3": "3%",
+          "percentage4": "4%",
+          "percentage5": "5%",
+          "percentage6": "6%",
+          "percentage7": "7%",
+          "percentage8": "8%",
+          "percentage9": "9%",
+          "percentage10": "10%",
+          "percentage1_niño1": "5%",
+          "percentage1_niño2": "8%",
+          "percentage1_niño3": "7%",
+          "percentage1_niño4": "2%",
+          "percentage1_niña1": "4%",
+          "percentage1_niña2": "3%",
+          "percentage1_niña3": "4%",
+          "percentage1_niña4": "9%",
+          "foot1": "Niñas y adolescentes",
+          "foot2": "Niños y adolescentes"
+        }
+      },
+      "page10": {
+        "title": "Las mujeres y las niñas siguen siendo las principales víctimas de trata constituyendo <strong>el 54% de víctimas de trata</strong> identificadas en la región",
+        "card1": {
+          "text1": "Hombres y niños víctimas de trata de personas en la región",
+          "percentage1": "33%"
+        },
+        "card2": {
+          "text2": "Mujeres y niñas víctimas de trata de personas en la región",
+          "percentage2": "54%"
+        },
+        "card3": {
+          "text3": "<strong>729 personas</strong> (13%) de las cuales se desconoce la edad y el sexo"
+        },
+        "card4": {
+          "text4": "<strong>39 víctimas</strong> identificadas pertenecen a la <strong>población LGTBIQ+</strong>",
+          "popup": "A pesar de los esfuerzos realizados por los países, aún se presentan limitaciones para la identificación de las personas LGBTIQ+."
+        },
+        "onslider": {
+          "title": "Víctimas identificadas por sexo y edad (2018-2021)",
+          "number1": 0,
+          "number2": 200,
+          "number3": 400,
+          "number4": 600,
+          "number5": 800,
+          "number6": 1000,
+          "number7": 1200,
+          "number8": 1400,
+          "number9": 1600,
+          "year1": 2018,
+          "year2": 2019,
+          "year3": 2020,
+          "year4": 2021,
+          "foot1": "Mujeres adultas",
+          "foot2": "Hombres adultos",
+          "foot3": "Niñas y adolescentes",
+          "foot4": "Niños y adolescentes"
+        }
+      },
+      "page11": {
+        "title": "El consentimiento de la víctima no exonera a quien ejerce la trata de la culpa,",
+        "text1": "aunque la persona haya aceptado ser trasladada o realizar la actividad, <strong>la culpa siempre recae sobre la parte explotadora<strong/>. Esto ocurre debido a que la víctima suele estar en una situación vulnerable siendo engañada por la red de trata, quienes son expertos en manipular sentimientos y explotar las necesidades económicas y afectivas de las personas. Al punto que, algunas veces, la víctima pierde su autonomía y su dignidad como ser humano, como respuesta a los abusos y amenazas recibidas.",
+        "foot": "(OIM, s.f.)"
+      }
+    }
+  }
+]

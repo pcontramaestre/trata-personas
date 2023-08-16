@@ -1,0 +1,18 @@
+.h1 {
+  display: flex;
+  width: 790px;
+  height: 185px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #fcfbcb;
+  text-align: center;
+  font-family: Formula Condensed;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142px; /* 78.889% */
+  letter-spacing: 5.4px;
+  text-transform: uppercase;
+}

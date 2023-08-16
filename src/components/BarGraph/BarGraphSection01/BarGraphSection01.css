@@ -1,0 +1,161 @@
+.BarGraph {
+  margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bargraph__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bargraph__image {
+  position: relative;
+  background: url("../../../assets/Img-Section01/Page04/grafico09.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 65vh;
+  width: 70.5%;
+}
+
+.bargraph__items {
+  display: flex;
+  width: 100%;
+}
+
+.baragraph__graphic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* width: 50%; */
+}
+
+.bargraph__title {
+  width: 60%;
+  color: var(--verde-claro-textos, #006873);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.baragraph__columns {
+  position: absolute;
+  margin: 0 30px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  list-style: none;
+}
+
+.baragraph__column1 {
+  position: relative;
+  color: var(--verde-claro-textos, #006873);
+  font-family: "Formula Condensed";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  bottom: 15px;
+  left: 10px;
+}
+.baragraph__column2 {
+  position: relative;
+  color: var(--verde-claro-textos, #006873);
+  font-family: "Formula Condensed";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  bottom: 75px;
+  left: 3px;
+}
+.baragraph__column3 {
+  position: relative;
+  color: var(--verde-claro-textos, #006873);
+  font-family: "Formula Condensed";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.baragraph__column4 {
+  position: relative;
+  color: var(--verde-claro-textos, #006873);
+  font-family: "Formula Condensed";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  bottom: 60px;
+  right: 12px;
+}
+
+.baragraph__years {
+  list-style: none;
+  position: relative;
+  display: flex;
+  width: 49%;
+  margin-left: 10px;
+  justify-content: space-around;
+  color: var(--verde-claro-textos, #006873);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bargraph__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 40%;
+}
+
+.bargraph__text1 {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.bargraph__text2 {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.2;
+  margin: 40px 0px;
+}
+
+.bargraph__text3 {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+}
