@@ -1,0 +1,16 @@
+.RepatriationBackground {
+    position: relative;
+    background-color: #FFF0F1;
+}
+
+.RepatriationImage {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.repatriationText {
+    position: absolute;
+    margin: 0px;
+    z-index: 3;
+}
