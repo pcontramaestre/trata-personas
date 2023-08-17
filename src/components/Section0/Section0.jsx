@@ -64,7 +64,7 @@ function Section0 () {
       <News news={news} />
       <Map map={map} />
       <BigInfoBox bigInfoBox={bigInfoBox} />
-      <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle}></div>
+      <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle} />
     </section>
   )
 }
