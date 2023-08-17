@@ -1,5 +1,6 @@
 .BigInfoBox {
     position: absolute;
+    z-index: 1;
 }
 
 .BigInfoBox h1 {
