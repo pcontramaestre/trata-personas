@@ -21,3 +21,9 @@
 .HomeHeaderText span {
     font-weight: 700
 }
+
+.HomeHeaderBlockFooter {
+    position: absolute;
+    width: 100%;
+    background-color: #002D2C;
+}
