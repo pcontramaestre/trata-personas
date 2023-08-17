@@ -3,9 +3,8 @@
     background-color: #FFF0F1;
 }
 
-.RepatriationImage {
-    width: 100%;
-    position: relative;
+.RepatriationImages {
+    position: absolute;
     z-index: 2;
 }
 
