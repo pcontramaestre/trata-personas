@@ -1254,11 +1254,43 @@
     "top": "54906px",
     "topNextSection": "62203px",
     "backgroundColor": "#FFF0F1",
-    "image": {
-      "width": "1920px",
-      "height": "1747px",
-      "top": "-280px"
-    },
+    "image": [
+      {
+        "name": "frontPage",
+        "width": "1920px",
+        "height": "1747px",
+        "top": "54626px",
+        "left": "0px"
+      },
+      {
+        "name": "group",
+        "width": "29.712223052978516px",
+        "height": "33.33434295654297px",
+        "top": "59889.33203125px",
+        "left": "127.2890625px"
+      },
+      {
+        "name": "straightBlueArrow",
+        "width": "112.770263671875px",
+        "height": "31.98995590209961px",
+        "top": "60102.75px",
+        "left": "128px"
+      },
+      {
+        "name": "straightYellowArrow",
+        "width": "112.96713256835938px",
+        "height": "31.989959716796875px",
+        "top": "60051.4169921875px",
+        "left": "128px"
+      },
+      {
+        "name": "straightRedArrow",
+        "width": "112.9688720703125px",
+        "height": "32.08156967163086px",
+        "top": "60000px",
+        "left": "128px"
+      }
+    ],
     "text": [
       {
         "content": "REPATRIACIÓN, RETORNO",
