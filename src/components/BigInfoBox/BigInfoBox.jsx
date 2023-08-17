@@ -5,13 +5,13 @@ function convertSize (input) {
   return (n * 100 / 1920) + 'vw'
 }
 
-function BigInfoBox ({ bigInfoBox }) {
+function BigInfoBox ({ bigInfoBox, topSection }) {
   if (!bigInfoBox) return null
 
   const bigInfoBoxStyle = {
+    top: convertSize(topSection ? Number(bigInfoBox.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : bigInfoBox.top),
     width: convertSize(bigInfoBox.width),
     height: convertSize(bigInfoBox.height),
-    top: convertSize(bigInfoBox.top),
     left: convertSize(bigInfoBox.left),
     borderRadius: convertSize(bigInfoBox.borderRadius),
     border: convertSize(bigInfoBox.border),

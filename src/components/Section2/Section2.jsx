@@ -5,7 +5,10 @@ import data from "../../../trataSection02.json";
 import SliderSection02 from "../Slides/SliderSection02/SliderSection02";
 import SmallInfoSection02 from "../SmallInfoBox/SmallInfoSection02/SmallInfoSection02";
 import GraphicFinalidades from "./GraphicFinalidades/GraphicFinalidades";
-import ExplotacionSexual from "./Explotacion/ExplotacionSexual";
+import ExplotacionSexual from "./Explotacion/ExplotacionSexual/ExplotacionSexual";
+import ExplotacionLaboral from "./Explotacion/ExplotacionLaboral/ExplotacionLaboral";
+import MedicinaForzada from "./MedicinaForzada/MedicinaForzada";
+import Adopcion from "./Adopcion/Adopcion";
 
 function Section2() {
   const page1 = data[0].finalidades.page1;
@@ -18,9 +21,12 @@ function Section2() {
       <div className="slider__content">
         <SliderSection02 />
       </div>
-      <SmallInfoSection02/>
-      <GraphicFinalidades/>
-      <ExplotacionSexual/>
+      <SmallInfoSection02 />
+      <GraphicFinalidades />
+      <ExplotacionSexual />
+      <ExplotacionLaboral />
+      <MedicinaForzada />
+      <Adopcion/>
       <NoteBook />
       <BigInfoBox />
     </section>

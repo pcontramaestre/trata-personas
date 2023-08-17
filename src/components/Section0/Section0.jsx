@@ -26,8 +26,6 @@ function Section0 () {
 
   const textStyles = homeHeader.text.map((texto, index) => ({
     ...texto,
-    flag: '',
-    content: '',
     top: convertSize(texto.top),
     left: convertSize(texto.left),
     width: convertSize(texto.width),
@@ -64,7 +62,7 @@ function Section0 () {
       <News news={news} />
       <Map map={map} />
       <BigInfoBox bigInfoBox={bigInfoBox} />
-      <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle}></div>
+      <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle} />
     </section>
   )
 }

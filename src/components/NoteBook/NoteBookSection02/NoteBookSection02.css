@@ -1,18 +1,14 @@
 .NoteBook02__container {
   display: flex;
-  width: 100vw;
-  /* margin-top: 100px; */
+  position: absolute;
+  z-index: 5;
 }
 
 .NoteBook02 {
   background: url("../../../assets/Img-Section02/Page04/notebook.png");
-  height: 100%;
   background-repeat: no-repeat;
   background-size: 55.5vw;
   transform: rotate(-4.362deg);
-  left: 3vw;
-  top: 15vh;
-  position: absolute;
 }
 
 .NoteBook02__texts {
@@ -24,10 +20,11 @@
   align-content: center;
   transform: rotate(-3.962deg);
   text-align: center;
-  margin-left: 12vw;
-  margin-top: 40vh;
+  margin-left: 2vw;
+  margin-top: 22.6vh;
   font-style: normal;
   width: 35%;
+  padding: 10vw;
 }
 
 .NoteBook02__text1 {

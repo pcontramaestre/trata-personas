@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Instructions from "./components/Instructions/Instructions";
 import Section0 from "./components/Section0/Section0";
 import Section1 from "./components/Section1/Section1";
