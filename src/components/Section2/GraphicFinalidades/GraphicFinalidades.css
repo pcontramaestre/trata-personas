@@ -1,0 +1,12 @@
+.graphic__finalidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 40px 0;
+}
+
+.img__finalidad {
+  width: 80%;
+  padding: 10em 0;
+}

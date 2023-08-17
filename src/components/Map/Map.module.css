@@ -2,6 +2,7 @@
     position: absolute;
     background-image: url('../../assets/Map/Map.svg');
     background-size: cover;
+    width: 100%;
 }
 
 .MapCard {

@@ -5,9 +5,8 @@
 
 .Section1 {
   width: 100vw;
-  min-height: 25vh;
-  flex-shrink: 0;
-  background: #FFF0F1;
+  /* flex-shrink: 0; */
+  background: #fff0f1;
 }
 
 .page1 {
@@ -32,3 +31,5 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+
