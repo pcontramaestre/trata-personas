@@ -9,7 +9,6 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
   if (!bigInfoBox) return null
 
   const bigInfoBoxStyle = {
-    // top: convertSize(bigInfoBox.top),
     top: convertSize(topSection ? Number(bigInfoBox.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : bigInfoBox.top),
     width: convertSize(bigInfoBox.width),
     height: convertSize(bigInfoBox.height),
