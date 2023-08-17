@@ -66,14 +66,15 @@
         "text2": "(CORETT, 2020). "
       },
       "page7": {
-        "title": "La trata de personas puede ocurrir dentro del país de nacionalidad (trata interna) o fuera del país de nacionalidad de la víctima (trata externa) <small>(OIM).<small/>",
+        "title": "La trata de personas puede ocurrir dentro del país de nacionalidad (trata interna) o fuera del país de nacionalidad de la víctima (trata externa)",
+        "foot_title": "<small>(OIM).</small>",
         "graphic": {
           "percentaje1": "20%",
           "percentaje2": "18%",
           "percentaje3": "62%",
-          "text1": "<strong>La mayoría de las personas identificadas<strong/> como víctimas de trata de personas <h3>se encontraban dentro de su país de nacionalidad<h3/>.",
-          "text2": "Personas víctimas de trata identificadas <strong>dentro de su país de nacionalidad<strong/>",
-          "text3": "Personas víctimas de trata identificadas <strong>fuera de su país de nacionalidad<strong/>",
+          "text1": "<strong>La mayoría de las personas identificadas</strong> como víctimas de trata de personas <h3>se encontraban dentro de su país de nacionalidad.</h3>",
+          "text2": "Personas víctimas de trata identificadas <strong>dentro de su país de nacionalidad</strong>",
+          "text3": "Personas víctimas de trata identificadas <strong>fuera de su país de nacionalidad</strong>",
           "text4": "Sin información"
         }
       },
@@ -119,7 +120,7 @@
         }
       },
       "page10": {
-        "title": "Las mujeres y las niñas siguen siendo las principales víctimas de trata <br/> constituyendo <h2><strong>el 54% de víctimas de trata<strong/><h2/> identificadas en la región",
+        "title": "Las mujeres y las niñas siguen siendo las principales víctimas de trata constituyendo <strong>el 54% de víctimas de trata</strong> identificadas en la región",
         "card1": {
           "text1": "Hombres y niños víctimas de trata de personas en la región",
           "percentage1": "33%"
@@ -129,10 +130,10 @@
           "percentage2": "54%"
         },
         "card3": {
-          "text3": "<strong>729 personas<strong/> (13%) de las cuales se desconoce la edad y el sexo"
+          "text3": "<strong>729 personas</strong> (13%) de las cuales se desconoce la edad y el sexo"
         },
         "card4": {
-          "text4": "<strong>39 víctimas<strong/> identificadas pertenecen a la <strong>población LGTBIQ+<strong/>",
+          "text4": "<strong>39 víctimas</strong> identificadas pertenecen a la <strong>población LGTBIQ+</strong>",
           "popup": "A pesar de los esfuerzos realizados por los países, aún se presentan limitaciones para la identificación de las personas LGBTIQ+."
         },
         "onslider": {

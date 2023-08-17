@@ -30,13 +30,22 @@ function Instructions ({ setShowInstructions }) {
   }
 
   const titleStyles = {
+    ...title,
+    text: '',
+    width: convertSize(title.width),
+    height: convertSize(title.height),
+    top: convertSize(title.top),
+    lineHeight: convertSize(title.lineHeight),
     fontSize: convertSize(title.fontSize)
   }
 
   const buttonStyles = {
-    width: convertSize(button.size.width),
-    height: convertSize(button.size.height),
-    fontSize: convertSize(button.text.fontSize)
+    ...button,
+    content: '',
+    width: convertSize(button.width),
+    height: convertSize(button.height),
+    lineHeight: convertSize(button.lineHeight),
+    fontSize: convertSize(button.fontSize)
   }
 
   return (
@@ -50,7 +59,7 @@ function Instructions ({ setShowInstructions }) {
           ))
         }
         </div>
-        <button onClick={handleInstruction} style={buttonStyles}>{button.text.content}</button>
+        <button onClick={handleInstruction} style={buttonStyles}>{button.content}</button>
       </main>
     </section>
   )

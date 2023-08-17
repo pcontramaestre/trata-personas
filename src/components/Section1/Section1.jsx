@@ -1,11 +1,14 @@
 import Slides from "../Slides/Slides";
 import NoteBookSection01 from "../NoteBook/NoteBookSection01/NoteBookSection01";
 import BarGraphSection01 from "../BarGraph/BarGraphSection01/BarGraphSection01";
-import Map from "../Map/Map";
-import BigInfoBox from "../BigInfoBox/BigInfoBox";
-import News from "../News/News";
+import BigInfoBoxSection01 from "../BigInfoBox/BigInfoBoxSection01/BigInfoBoxSection01";
+import CircleGraph from "./CircleGraph/CircleGraph";
+import NewSection01 from "../News/NewsSection01/NewSection01";
 import data from "../../../trataSection01.json";
 import style from "./Section1.module.css";
+import MapSection01 from "../Map/MapSection01/MapSection01";
+import CircleGraph02 from "./CircleGraph02/CircleGraph02";
+import Women from "./Women/Women";
 
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
@@ -22,10 +25,13 @@ function Section1() {
       </div>
       <NoteBookSection01 />
       <BarGraphSection01 />
-      <Map />
-      <BigInfoBox />
-      <News />
-      <BigInfoBox />
+      <MapSection01 />
+      <BigInfoBoxSection01 />
+      <CircleGraph />
+      <NewSection01 />
+      <CircleGraph02 />
+      <Women />
+      {/* <BigInfoBox /> */}
     </section>
   );
 }

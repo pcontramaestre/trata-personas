@@ -1,0 +1,33 @@
+.NoteBook {
+    position: absolute;
+    background-image: url('../../assets/NoteBook/whiteSheet.png');
+    background-size: cover;
+}
+
+.NoteBookContainer {
+    position: absolute;
+    top: 18.6%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.NoteBookContainer p {
+    margin: 0%;
+    margin-top: 5%;
+}
+
+.NoteBookContainer span {
+    font-weight: 700
+}
+
+.NoteBook h1 {
+    margin: 0%;
+    margin-top: 3%;
+}
+
+.NoteBook footer {
+    margin: 0%;
+    margin-top: 2%;
+}

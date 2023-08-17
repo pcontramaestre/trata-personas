@@ -1,4 +1,3 @@
-import style from "./Slides.module.css";
 import SliderSection01 from "./SliderSection01/SliderSection01";
 import data from "../../../trataSection01.json";
 
