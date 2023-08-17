@@ -6,11 +6,23 @@ import BigInfoBox from '../BigInfoBox/BigInfoBox'
 import style from './Section5.module.css'
 
 import frontPage from '../../assets/Section5/repatriation.png'
+import group from '../../assets/Instructions/group.svg'
+import straightBlueArrow from '../../assets/Section5/straightBlueArrow.svg'
+import straightYellowArrow from '../../assets/Section5/straightYellowArrow.svg'
+import straightRedArrow from '../../assets/Section5/straightRedArrow.svg'
 
 import data from '../../../troy.json'
 
 const { repatriation } = data
-const { noteBook, bigInfoBox } = data.repatriation
+const { noteBook, bigInfoBox, map } = data.repatriation
+
+const images = {
+  frontPage,
+  group,
+  straightBlueArrow,
+  straightYellowArrow,
+  straightRedArrow
+}
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -28,11 +40,6 @@ function Section5 () {
     height: convertSize(Number(repatriation.topNextSection.split('px')[0]) - Number(repatriation.top.split('px')[0]) + 'px')
   }
 
-  const repatriationFrontPageStyle = {
-    height: convertSize(repatriation.image.height),
-    top: convertSize(repatriation.image.top)
-  }
-
   const textStyles = repatriation.text.map((texto) => ({
     ...texto,
     top: convertSize(relativeMedition(texto.top)),
@@ -43,9 +50,20 @@ function Section5 () {
     lineHeight: texto.lineHeight && convertSize(texto.lineHeight)
   }))
 
+  const imagesStyles = repatriation.image.map(photo => ({
+    top: convertSize(relativeMedition(photo.top)),
+    width: convertSize(photo.width),
+    height: convertSize(photo.height),
+    left: convertSize(photo.left)
+  }))
+
   return (
     <section className={style.RepatriationBackground} style={repatriationCotainer}>
-      <img src={frontPage} style={repatriationFrontPageStyle} className={style.RepatriationImage} />
+      {
+        repatriation.image.map((photo, index) => (
+          <img src={images[photo.name]} style={imagesStyles[index]} className={style.RepatriationImages} key={photo.name + index} />
+        ))
+      }
       {
         repatriation.text.map((texto, index) => {
           switch (texto.tag) {
@@ -64,7 +82,7 @@ function Section5 () {
       }
       <NoteBook noteBook={noteBook} topSection={repatriation.top} />
       <BarGraph />
-      <Map />
+      <Map map={map} topSection={repatriation.top} />
       <BigInfoBox bigInfoBox={bigInfoBox} topSection={repatriation.top} />
     </section>
   )
