@@ -1,7 +1,8 @@
 .MapBackground {
     position: absolute;
-    background-image: url('../../assets/Map/Map.svg');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
