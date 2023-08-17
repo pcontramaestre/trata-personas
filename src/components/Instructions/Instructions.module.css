@@ -29,6 +29,7 @@
     padding: 0px;
     margin-top: 2vw;
     border-radius: 0px;
+    border: none;
 }
 
 .InstructionsCardsContainer {
@@ -53,6 +54,6 @@
 
 .InstructionsCard p {
     color: #CFF9FF;
-    margin-bottom: 0px;
+    margin: 0px;
     text-align: center;
 }
