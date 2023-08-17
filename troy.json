@@ -441,10 +441,7 @@
       }
     ],
     "map": {
-      "title": {
-        "text1": "Cobertura Territorial",
-        "text2": "CORETT"
-      },
+      "backgroundImage": "mapGreen.svg",
       "size": {
         "width": "1920px",
         "height": "1080px"
@@ -1618,6 +1615,206 @@
           "fontSize": "25px"
         }
       }
+    },
+    "map": {
+      "backgroundImage": "mapPink.svg",
+      "size": {
+        "width": "1920px",
+        "height": "800px"
+      },
+      "top": "59408px",
+      "left": "0px",
+      "countrys": [
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "51.25px"
+          },
+          "position": {
+            "top": "4956px",
+            "left": "1010px"
+          },
+          "size": {
+            "width": "124px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "54.32px"
+          },
+          "position": {
+            "top": "4901px",
+            "left": "876px"
+          },
+          "size": {
+            "width": "138px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "57.94px"
+          },
+          "position": {
+            "top": "4829px",
+            "left": "811px"
+          },
+          "size": {
+            "width": "129px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "53.76px"
+          },
+          "position": {
+            "top": "4577px",
+            "left": "868px"
+          },
+          "size": {
+            "width": "82px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "53.2px"
+          },
+          "position": {
+            "top": "4722px",
+            "left": "1112px"
+          },
+          "size": {
+            "width": "70px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "62.67px"
+          },
+          "position": {
+            "top": "4767px",
+            "left": "1229px"
+          },
+          "size": {
+            "width": "116px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "52.65px"
+          },
+          "position": {
+            "top": "4829px",
+            "left": "1234px"
+          },
+          "size": {
+            "width": "123px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "50.7px"
+          },
+          "position": {
+            "top": "4889px",
+            "left": "1273px"
+          },
+          "size": {
+            "width": "90px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        },
+        {
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "52.09px"
+          },
+          "position": {
+            "top": "4765px",
+            "left": "1493px"
+          },
+          "size": {
+            "width": "252px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
+        }
+      ]
     },
     "bigInfoBox": {
       "width": "1700px",
