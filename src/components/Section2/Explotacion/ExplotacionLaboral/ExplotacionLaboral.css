@@ -1,0 +1,47 @@
+.explotacion__laboral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vw;
+  width: 100vw;
+  bottom: -0.9vw;
+  position: relative;
+}
+
+.explotacion__laboral-content {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+}
+
+.laboral__img {
+  top: 10vw;
+  width: 100vw;
+  position: absolute;
+  z-index: 20;
+}
+
+.laboral__testimonios {
+  width: 100%;
+  top: 25vw;
+  z-index: 60;
+  position: relative;
+  height: 70vh;
+}
+
+.laboral__title {
+  color: var(--verde-claro-textos, #006873);
+  font-family: Formula Condensed;
+  width: 100%;
+  margin-right: 10vw;
+  margin-bottom: 0;
+  top: 10vh;
+  text-align: end;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

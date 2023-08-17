@@ -1,43 +1,47 @@
-.NoteBook02__container {
+.NoteBook05__container {
   display: flex;
-  position: absolute;
-  z-index: 5;
+  /* width: 50vw; */
 }
 
-.NoteBook02 {
-  background: url("../../../assets/Img-Section02/Page04/notebook.png");
+.NoteBook05 {
+  background: url("../../../assets/Img-Section02/Page06/bookcorto.png");
   background-repeat: no-repeat;
-  background-size: 55.5vw;
-  transform: rotate(-4.362deg);
+  background-size: 43vw;
+  height: 100%;
+  transform: rotate(4.362deg);
+  left: 47vw;
+  top: 40vh;
+  position: absolute;
+  z-index: 90;
 }
 
-.NoteBook02__texts {
+.NoteBook05__texts {
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  transform: rotate(-3.962deg);
+  transform: rotate(8.062deg);
   text-align: center;
-  margin-left: 2vw;
-  margin-top: 22.6vh;
+  margin-left: 9.5vw;
+  margin-top: 16vh;
   font-style: normal;
-  width: 35%;
-  padding: 10vw;
+  width: 50%;
 }
 
-.NoteBook02__text1 {
+.NoteBook05__text1 {
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
   font-size: 1.3vw;
+  line-height: 1.5vw;
   font-weight: 400;
   text-align: start;
   font-family: "Inter", sans-serif;
   margin: 0;
 }
 
-.NoteBook02__text2 {
+.NoteBook05__text2 {
   transform: rotate(-4.362deg);
   color: #c18831;
   font-family: "Formula Condensed";
@@ -52,7 +56,7 @@
   margin-top: 0.3vh;
 }
 
-.NoteBook02__text3 {
+.NoteBook05__text3 {
   transform: rotate(-4.362deg);
   text-align: start;
   color: var(--negro-textos, #081d20);
