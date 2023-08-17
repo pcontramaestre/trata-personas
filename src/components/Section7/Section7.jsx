@@ -3,6 +3,7 @@ import style from './Section7.module.css'
 import frontPage from '../../assets/Section7/interestingEvents.png'
 
 import data from '../../../troy.json'
+import HandSlide from '../Slides/HandSlide/HandSlide'
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -16,7 +17,7 @@ function relativeMedition (input) {
 }
 
 const { interestingEvents } = data
-// const { noteBook, news, map, bigInfoBox } = data.homeHeader
+const { handSlide } = data.interestingEvents
 
 function Section7 () {
   const interestingEventsContainer = {
@@ -65,6 +66,7 @@ function Section7 () {
           return true
         })
       }
+      <HandSlide handSlide={handSlide} totalTop={relativeMedition(handSlide.top)} />
     </section>
   )
 }
