@@ -1,10 +1,8 @@
-import style from './BarGraph.module.css'
+import React from 'react'
 
-function BarGraph () {
+const BarGraph = () => {
   return (
-    <div className={style.BarGraph}>
-      BarGraph
-    </div>
+    <div>BarGraph</div>
   )
 }
 
