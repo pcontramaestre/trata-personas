@@ -1294,31 +1294,68 @@
         "color": "#FFFFFF"
       },
       {
-        "content": "Facilitar y acompañar procesos de retorno, repatriación y reasentamiento que tengan en cuenta los derechos, la seguridad y la dignidad de las víctimas.",
+        "content": "Facilitar y acompañar procesos de retorno,",
         "tag": "p",
-        "width": "1079px",
-        "height": "296px",
+        "width": "950px",
+        "height": "100px",
         "top": "56509px",
-        "left": "437px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "80px",
-        "fontWeight": "700",
-        "lineHeight": "96px",
-        "letterSpacing": "0.03em",
+        "left": "500px",
+        "fontFamily": "Inter",
+        "fontSize": "36px",
+        "fontWeight": "400",
+        "lineHeight": "44px",
+        "letterSpacing": "0em",
         "textAlign": "center",
-
-        "fontFamily2": "Inter",
-        "fontSize2": "36px",
-        "fontWeight2": "400",
-        "lineHeight2": "44px",
-        "letterSpacing2": "0em",
-
-        "fontSize3": "70px",
-        "lineHeight3": "84px",
-        "background": "#0A4B4E"
+        "color": "#0A4B4E"
       },
       {
-        "content": "Los retornos se realizaron con base en la voluntad de las víctimas de volver a sus países de origen, mientras que los reasentamientos se dieron para garantizar la seguridad de las víctimas.",
+        "content": "repatriación y reasentamiento que tengan en cuenta los",
+        "tag": "p",
+        "width": "950px",
+        "height": "100px",
+        "top": "56549px",
+        "left": "500px",
+        "fontFamily": "Inter",
+        "fontSize": "36px",
+        "fontWeight": "400",
+        "lineHeight": "44px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+          "content": "DERECHOS, LA SEGURIDAD Y LA DIGNIDAD DE LAS VÍCTIMAS.",
+          "tag": "h2",
+          "width": "1079px",
+          "height": "230px",
+          "top": "56609px",
+          "left": "437px",
+
+          "fontFamily": "Formula Condensed",
+          "fontSize": "80px",
+          "fontWeight": "700",
+          "lineHeight": "96px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#0A4B4E"
+      },
+      {
+        "content": " (ACNUDH, 2014).",
+        "tag": "p",
+        "width": "266.88080381821396px",
+        "height": "30.000000615822145px",
+        "top": "56810px",
+        "left": "826px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30px",
+        "letterSpacing": "0.11em",
+        "textAlign": "center",
+        "color": "#8B601E"
+      },
+      {
+        "content": "Los <span>retornos</span> se realizaron con base en la voluntad de las víctimas de volver a sus países de origen, mientras que los <span>reasentamientos</span> se dieron para garantizar la seguridad de las víctimas.",
         "tag": "p",
         "width": "1241px",
         "height": "152px",
@@ -1326,11 +1363,11 @@
         "left": "340px",
         "fontFamily": "Inter",
         "fontSize": "38px",
-        "fontWeight": "700",
+        "fontWeight": "400",
         "lineHeight": "46px",
         "letterSpacing": "0em",
         "textAlign": "center",
-        "fontWeight2": "400",
+        "fontWeight2": "700",
         "color": "#081D20"
       },
       {
@@ -1349,11 +1386,50 @@
         "color": "#006873"
       },
       {
-        "content": "En el periodo 2018-2021 se procesaron las repatriaciones, los reasentamientos y los retornos de 764 víctimas de trata de personas.",
+        "content": "En el <span>periodo 2018-2021</span>",
         "tag": "p",
+        "width": "500px",
+        "height": "130px",
+        "top": "58411px",
+        "left": "1160px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "36.31px",        
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "se procesaron las repatriaciones,",
+        "tag": "p",
+        "width": "500px",
+        "height": "130px",
+        "top": "58450px",
+        "left": "1160px",
+        "fontFamily": "Inter",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "lineHeight": "30px",        
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "los reasentamientos y los retornos de",
+        "tag": "p",
+        "width": "500px",
+        "height": "130px",
+        "top": "58485px",
+        "left": "1160px",
+        "fontFamily": "Inter",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "lineHeight": "30px",        
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "764 víctimas de trata de personas.",
+        "tag": "h2",
         "width": "573px",
         "height": "321px",
-        "top": "58411px",
+        "top": "58530px",
         "left": "1160px",
         "fontFamily": "Formula Condensed",
         "fontSize": "97px",
@@ -1361,26 +1437,6 @@
         "lineHeight": "116px",
         "letterSpacing": "0em",
         "textAlign": "left",
-
-        "fontSize2": "80px",
-        "lineHeight2": "96px",
-
-        "fontFamily3": "Inter",
-        "fontSize3": "27px",
-        "fontWeight3": "400",
-        "lineHeight3": "30px",
-
-        "lineHeight4": "109px",
-
-        "fontSize5": "40px",
-        "lineHeight5": "48px",
-
-        "fontSize6": "30px",
-        "fontWeight6": "700",
-        "lineHeight6": "36px",
-        
-        "fontWeight7": "400",
-
         "color": "#0A4B4E"
       },
       {
@@ -1426,7 +1482,7 @@
         "lineHeight": "130px",
         "letterSpacing": "0em",
         "textAlign": "center",
-        "background": "#CE5C3B"
+        "color": "#CE5C3B"
       },
       {
         "content": "Explore los datos por país",
@@ -1489,7 +1545,7 @@
         "color": "#0A4B4E"
       },
       {
-        "content": "La mayoría de las víctimas fueron repatriadas a través de medio aéreo",
+        "content": "La mayoría de las víctimas fueron <span>repatriadas a través de medio aéreo</span>",
         "tag": "h2",
         "width": "926px",
         "height": "153px",
@@ -1506,7 +1562,6 @@
         "fontSize2": "50px",
         "fontWeight2": "700",
         "lineHeight2": "60px",
-
         
         "fontSize3": "70px",
         "lineHeight3": "84px",
@@ -1514,6 +1569,50 @@
         "color": "#0A4B4E",
         "color2": "#006873"
       }      
-    ]
+    ],
+    "noteBook": {
+      "position": {
+        "top": "56918.77px",
+        "left": "455.52px",
+        "rotation": "8.3deg"
+      },
+      "size": {
+        "width": "887.5px",
+        "height": "911.49px"
+      },
+      "backgroundImage": "whiteSheetShort",
+      "text": {
+        "paragraph": {
+          "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
+          "width": "554.42px",
+          "height": "125.65px",
+          "fontSize": "25px",
+          "lineHeight": "30px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#081D20"
+        },
+        "title": {
+          "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
+          "width": "566.29px",
+          "height": "144.39px",
+          "fontSize": "60px",
+          "fontFamily": "Formula Condensed",
+          "fontWeight": "700",
+          "lineHeight": "72px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#C18831"
+        },
+        "footer": {
+          "content": "(OIM).",
+          "width": "292.16px",
+          "height": "35.21px",
+          "fontSize": "25px"
+        }
+      }
+    }
   }
 }
