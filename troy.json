@@ -160,137 +160,137 @@
       "height": "1824px"
     },
     "text": [
-        {
-          "content": "TRATA DE",
-          "tag": "h1",
-          "top": "306px",
-          "left": "118px",
-          "width": "486px",
-          "height": "157px",
-          "fontSize": "140px",
-          "fontFamily": "Formula Condensed",
-          "color": "#CFF9FF"
-        },
-        {
-          "content": "PERSONAS",
-          "tag": "h1",
-          "width": "486px",
-          "height": "157px",
-          "top": "441px",
-          "left": "129px",
-          "fontFamily": "Formula Condensed",
-          "fontSize": "140px",
-          "fontWeight": "700",
-          "lineHeight": "168px",
-          "letterSpacing": "0em",
-          "textAlign": "left",
-          "color": "#CFF9FF"
-        },
-        {
-          "content": "Un crimen contra",
-          "tag": "h2",
-          "width": "554px",
-          "height": "66px",
-          "top": "634px",
-          "left": "123px",
-          "fontFamily": "Inika",
-          "fontSize": "60px",
-          "fontWeight": "700",
-          "lineHeight": "70px",
-          "letterSpacing": "0em",
-          "textAlign": "left",
-          "color": "#FFFFFF"
-        },
-        {
-          "content": "la humanidad",
-          "tag": "h2",
-          "width": "554px",
-          "height": "80px",
-          "top": "700px",
-          "left": "127px",
-          "fontFamily": "Inika",
-          "fontSize": "77px",
-          "fontWeight": "700",
-          "lineHeight": "70px",
-          "letterSpacing": "0em",
-          "textAlign": "left",
-          "color": "#FFFFFF"
-        },
-        {
-          "content": "LA ESCLAVITUD DEL SIGLO XXI",
-          "tag": "h1",
-          "width": "668px",
-          "height": "277px",
-          "top": "1755px",
-          "left": "216px",
-          "fontFamily": "Formula Condensed",
-          "fontSize": "140px",
-          "fontWeight": "700",
-          "lineHeight": "168px",
-          "letterSpacing": "0em",
-          "textAlign": "left",
-          "color": "#026972"
-        },
-        {
-          "content": "LA REGIÓN",
-          "tag": "h1",
-          "width": "651px",
-          "height": "134px",
-          "top": "3361px",
-          "left": "119px",
-          "fontFamily": "Formula Condensed",
-          "fontSize": "131px",
-          "fontWeight": "700",
-          "lineHeight": "157px",
-          "letterSpacing": "0em",
-          "textAlign": "center",
-          "color": "#D6A862"
-        },
-        {
-          "content": "<span>La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes</span> (CORETT), es una instancia regional integrada por <span>9 países</span>, para la <span>prevención y combate de la trata de personas y el tráfico ilícito de migrantes.</span>",
-          "tag": "p",
-          "width": "959px",
-          "height": "256px",
-          "top": "3300px",
-          "left": "800px",
-          "fontFamily": "Inter",
-          "fontSize": "40px",
-          "fontWeight": "400",
-          "lineHeight": "48px",
-          "textAlign": "left",
-          "letterSpacing": "0em",
-          "color": "#081D20"
-        },
-        {
-          "content": "COBERTURA TERRITORIAL",
-          "tag": "p",
-          "width": "1206px",
-          "height": "115px",
-          "top": "3704px",
-          "left": "357px",
-          "fontFamily": "'Inika', serif",
-          "fontSize": "33px",
-          "fontWeight": "400",
-          "lineHeight": "130px",
-          "letterSpacing": "0em",
-          "textAlign": "center",
-          "color": "#0A4B4E"
-        },
-        {
-          "content": "CORETT",
-          "tag": "h1",
-          "width": "879px",
-          "height": "111px",
-          "top": "3808px",
-          "left": "521px",
-          "fontFamily": "Formula Condensed",
-          "fontSize": "133px",
-          "fontWeight": "700",
-          "lineHeight": "130px",
-          "letterSpacing": "0.2em",
-          "textAlign": "center",
-          "color": "#0A4B4E"
-        }
+      {
+        "content": "TRATA DE",
+        "tag": "h1",
+        "top": "306px",
+        "left": "118px",
+        "width": "486px",
+        "height": "157px",
+        "fontSize": "140px",
+        "fontFamily": "Formula Condensed",
+        "color": "#CFF9FF"
+      },
+      {
+        "content": "PERSONAS",
+        "tag": "h1",
+        "width": "486px",
+        "height": "157px",
+        "top": "441px",
+        "left": "129px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "140px",
+        "fontWeight": "700",
+        "lineHeight": "168px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#CFF9FF"
+      },
+      {
+        "content": "Un crimen contra",
+        "tag": "h2",
+        "width": "554px",
+        "height": "66px",
+        "top": "634px",
+        "left": "123px",
+        "fontFamily": "Inika",
+        "fontSize": "60px",
+        "fontWeight": "700",
+        "lineHeight": "70px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "la humanidad",
+        "tag": "h2",
+        "width": "554px",
+        "height": "80px",
+        "top": "700px",
+        "left": "127px",
+        "fontFamily": "Inika",
+        "fontSize": "77px",
+        "fontWeight": "700",
+        "lineHeight": "70px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "LA ESCLAVITUD DEL SIGLO XXI",
+        "tag": "h1",
+        "width": "668px",
+        "height": "277px",
+        "top": "1755px",
+        "left": "216px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "140px",
+        "fontWeight": "700",
+        "lineHeight": "168px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#026972"
+      },
+      {
+        "content": "LA REGIÓN",
+        "tag": "h1",
+        "width": "651px",
+        "height": "134px",
+        "top": "3361px",
+        "left": "119px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "131px",
+        "fontWeight": "700",
+        "lineHeight": "157px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#D6A862"
+      },
+      {
+        "content": "<span>La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes</span> (CORETT), es una instancia regional integrada por <span>9 países</span>, para la <span>prevención y combate de la trata de personas y el tráfico ilícito de migrantes.</span>",
+        "tag": "p",
+        "width": "959px",
+        "height": "256px",
+        "top": "3300px",
+        "left": "800px",
+        "fontFamily": "Inter",
+        "fontSize": "40px",
+        "fontWeight": "400",
+        "lineHeight": "48px",
+        "textAlign": "left",
+        "letterSpacing": "0em",
+        "color": "#081D20"
+      },
+      {
+        "content": "COBERTURA TERRITORIAL",
+        "tag": "p",
+        "width": "1206px",
+        "height": "115px",
+        "top": "3704px",
+        "left": "357px",
+        "fontFamily": "'Inika', serif",
+        "fontSize": "33px",
+        "fontWeight": "400",
+        "lineHeight": "130px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "CORETT",
+        "tag": "h1",
+        "width": "879px",
+        "height": "111px",
+        "top": "3808px",
+        "left": "521px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "133px",
+        "fontWeight": "700",
+        "lineHeight": "130px",
+        "letterSpacing": "0.2em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      }
     ],
     "noteBook": {
       "position": {
@@ -441,10 +441,7 @@
       }
     ],
     "map": {
-      "title": {
-        "text1": "Cobertura Territorial",
-        "text2": "CORETT"
-      },
+      "backgroundImage": "mapGreen.svg",
       "size": {
         "width": "1920px",
         "height": "1080px"
@@ -787,7 +784,7 @@
         "color": "#FFFFFF"
       },
       {
-        "content": "por lo que han realizado esfuerzos hacia la prevención y persecución de ambos delitos y la atención integral a sus víctimas y a las personas objeto de tráfico ilícito de migrantes. Ambos delitos requieren respuestas coordinadas; por lo que, a nivel nacional y regional, los países han tenido avances importantes hacia el desarrollo de un marco jurídico, político e institucional contra la trata de personas.",
+        "content": "por lo que han realizado esfuerzos hacia la prevención y persecución de ambos delitos y la atención integral a sus víctimas y a las personas objeto de tráfico ilícito de migrantes. Ambos delitos requieren respuestas coordinadas, por lo que, a nivel nacional y regional, los países han tenido avances importantes hacia el desarrollo de un marco jurídico, político e institucional contra la trata de personas.",
         "tag": "p",
         "width": "1083px",
         "height": "222px",
@@ -876,380 +873,1043 @@
         "color": "#0F4A4D"
       }
     ],
-  "handSlide": {
+    "handSlide": {
+      "width": "1920px",
+      "height": "829px",
+      "top": "73863px",
+      "left": "-1px",
+      "container": {
+        "width": "11898.3623046875px",
+        "height": "892.13818359375px",
+        "top": "-56px",
+        "left": "-3.078125px",
+        "borderRadius": "28px",
+        "vector": {
+          "border": "1px",
+          "color": "#000000"
+        },
+        "country": {
+          "height": "81.05932293842201px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "50px",
+          "fontWeight": "700",
+          "lineHeight": "60px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        },
+        "date": {
+          "height": "81.05932293842201px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "30px",
+          "fontWeight": "300",
+          "lineHeight": "36px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        },
+        "paragraph": {
+          "fontFamily": "Inter",
+          "fontSize": "20px",
+          "fontWeight1": "500",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "fontWeight2": "800",
+          "fontWeight": 400,
+          "color": "#081D20"
+        },
+        "cards": [
+          {
+            "width": "441.1550944847441px",
+            "height": "355.03855300048974px",
+            "top": "272.580078125px",
+            "left": "68.8359375px",
+            "borderRadius": "28px",
+            "angle": "-0.6deg",
+            "border": "1px",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2018",
+              "country": "Honduras",
+              "paragraph": "Materialización de la autonomía financiera y técnica de la Comisión Interinstitucional contra la Explotación Sexual Comercial y Trata de Personas de Honduras – CICESCT- mediante la desconcentración de esta como una dependencia de la Secretaría de Derechos Humanos."
+            }
+          },
+          {
+            "width": "441.1551005796584px",
+            "height": "299.57917935033566px",
+            "top": "331px",
+            "left": "919.578125px",
+            "angle": "1.67deg",
+            "backgroundColor": "#00E0FF",
+            "text": {
+              "date": "2018",
+              "country": "Panamá",
+              "paragraph": "Aprobación de dos Decretos Ejecutivos para la regularización del estado migratorio y el reconocimiento del derecho al trabajo de las personas víctimas de trata."
+            }
+          },
+          {
+            "width": "477.28606100984484px",
+            "height": "361.03935953078974px",
+            "top": "111.169921875px",
+            "left": "473.359375px",
+            "angle": "-0.43deg",
+            "backgroundColor": "#00FAFF",
+            "text": {
+              "date": "2018",
+              "country": "Panamá",
+              "paragraph": "Aprobación del Protocolo de Actuación para la Identificación de Víctimas de manera preliminar y plena, y el Reglamento Interno de la Unidad de Identificación y Atención a Víctimas, como herramientas de apoyo al proceso de identificación y atención a las víctimas de trata de personas."
+            }
+          },
+          {
+            "width": "655.0594275270923px",
+            "height": "344.5021253361987px",
+            "top": "96.845703125px",
+            "left": "1267.2421875px",
+            "angle": "-0.6deg",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2018",            
+              "country": "Belice",            
+              "paragraph": "Signing of an agreement between the Belize Police Department and the Institute of Human Trafficking, for the development of the capacity of the Specialized Unit of Human Trafficking of Belize. The agreement helps ensure that the specialized unit has the essential tools and resources it needs to conduct proactive investigations of human trafficking."            
+            }
+          },
+          {
+            "width": "590.6673636604868px",
+            "height": "344.50213929951803px",
+            "top": "328.75390625px",
+            "left": "2688.96875px",
+            "angle": "1.15deg",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2018",
+              "country": "Nicaragua",
+              "paragraph": "Aprobación de la Estrategia Nacional para la Atención Integral y el Acompañamiento a Víctimas de Trata de Personas, tomando como referencia la estrategia regional, que define y formula acciones nacionales, coordinadas, pertinentes, viables y concretas a ser implementadas por la Coalición Nacional Contra la Trata de Personas."
+            }
+          },
+          {
+            "width": "441.1550887258958px",
+            "height": "344.50211114476207px",
+            "top": "84.462890625px",
+            "left": "2308.0546875px",
+            "angle:": "0.76deg",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2018",
+              "country": "Nicaragua",
+              "paragraph": "Elaboración del Plan Nacional Estratégico para la prevención, atención, investigación, persecución y sanción del delito de trata de personas 2018-2022, cuyo objetivo es implementar acciones desde un abordaje integral en la lucha contra el delito de la trata de personas."
+            }
+          },
+          {
+            "width": "477.2860649819924px",
+            "height": "273.4695395635138px",
+            "top": "353.4765625px",
+            "left": "1850.0703125px",
+            "angle": "0.84deg",
+            "backgroundColor": "#00FAFF",
+            "text": {
+              "date": "2018",
+              "country": "El Salvador",
+              "paragraph": "Lanzamiento oficial del Protocolo de Actuación Interinstitucional para Atención Integral Inmediata para víctimas de Trata de Personas."
+            }
+          },
+          {
+            "width": "655.0594986696881px",
+            "height": "344.50216275078185px",
+            "top": "78.23828125px",
+            "left": "3052.3984375px",
+            "angle": "0.17deg",
+            "backgroundColor": "#00FAFF",
+            "text": {
+              "date": "2018",
+              "country": "Guatemala",
+              "paragraph": "Creación de la Agencia Fiscal de la Región Occidente de la Fiscalía contra la Trata de Personas con cobertura en las áreas geográficas descritas en el Acuerdo No.160-2017, como parte de los esfuerzos del Ministerio Público en el ámbito de la investigación y persecución del delito de trata de personas."
+            }
+          },
+          {
+            "width": "590.6673714654124px",
+            "height": "344.5021438516801px",
+            "top": "325.408203125px",
+            "left": "3588.8828125px",
+            "angle": "-0.51deg",
+            "backgroundColor": "#00DDFF",
+            "text": {
+              "date": "2018",
+              "country": "Guatemala",
+              "paragraph": "Emisión del Acuerdo No.71-2018 para la creación del Juzgado de Primera Instancia Penal con Competencia Especializada en Delitos de Trata de Personas del Departamento de Quetzaltenango y el Tribunal de Sentencia Penal con Competencia Especializada en los delitos de Trata de Personas del departamento de Quetzaltenango."
+            }
+          },
+          {
+            "width": "655.0594829856535px",
+            "height": "344.5021545023955px",
+            "top": "94.88671875px",
+            "left": "4017.4921875px",
+            "angle": "-1.22deg",
+            "backgroundColor": "#00FAFF",
+            "text": {
+              "date": "2018",
+              "country": "Costa Rica",
+              "paragraph": "Aprobación de la Ley No. 9545 del 24 de mayo del 2018, con la cual la legislación costarricense cuenta con un tipo penal que se acerca más a la definición de trata de personas del artículo 03 del Protocolo de Palermo. Adicionalmente, se precisan algunos aspectos del tipo penal tales como ampliación de los verbos rectores, se incluye a las tecnologías como medio, se incluyen otros fines tales como el aborto forzado, y se precisa y amplía el alcance para cubrir todas las formas de explotación sexual."
+            }
+          },
+          {
+            "width": "477.2860629115712px",
+            "height": "344.50212983120895px",
+            "top": "337.697265625px",
+            "left": "4620.2578125px",
+            "angle": "0.28deg",
+            "backgroundColor": "#F89680",
+            "text": {
+              "date": "2019",
+              "country": "Guatemala",
+              "paragraph": "Apertura del albergue temporal especializado para mujeres adultas migrantes víctimas del delito de trata de personas por parte de la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas – SVETS-en cumplimiento a lo regulado en el Código de Migración."
+            }
+          },
+          {
+            "width": "554.9943463063878px",
+            "height": "344.600750808679px",
+            "top": "118.341796875px",
+            "left": "4948.640625px",
+            "angle": "-0.16deg",
+            "backgroundColor": "#00DDFF",
+            "text": {
+              "date": "2019",
+              "country": "Costa Rica",
+              "paragraph": "Aprobación de dos leyes importantes en relación con la trata de personas: la Ley 9726 que vino a corregir un error en la publicación de la Ley 9545, y el artículo 05 de la Ley 9095 referente al concepto de trata de personas, aspecto de mucha importancia, toda vez que dicha definición sirve como referente para los operadores jurídicos, entre ellos los juzgadores."
+            }
+          },
+          {
+            "width": "477.2860795941653px",
+            "height": "325.29913862841477px",
+            "top": "358.021484375px",
+            "left": "5484.5546875px",
+            "angle": "-0.67deg",
+            "backgroundColor": "#F89680",
+            "text": {
+              "date": "2019",
+              "country": "El Salvador",
+              "paragraph": "Coordinación de esfuerzos para identificar necesidades y complementar el trabajo de las Patrullas Fronterizas orientado a la prevención de delitos transfronterizos como la Trata de Personas y el Tráfico Ilícito de Migrantes."
+            }
+          },
+          {
+            "width": "686.9057964550963px",
+            "height": "312.65483422113306px",
+            "top": "307.197265625px",
+            "left": "6007.3046875px",
+            "border-radius": "28px",
+            "angle": "-0.48deg",
+            "backgroundColor": "#FEC531",
+            "text": {
+              "date": "2019",
+              "country": "República Dominicana",
+              "paragraph": "Desarrollo de dos estudios cualitativos por parte del Instituto Nacional de Migración: Estado del arte: “La vida antes, durante y después de la trata: Marco analítico y metodológico de la investigación”, y, “Trata de mujeres extranjeras en República Dominicana”."
+            }
+          },
+          {
+            "width": "455.85012497735363px",
+            "height": "283.97027388767344px",
+            "top": "190.57421875px",
+            "left": "6608.578125px",
+            "border-radius": "28px",
+            "angle": "0.64deg",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2020",
+              "country": "Guatemala",
+              "paragraph": "Lanzamiento del Mecanismo para la Protección Integral de la Niñez y Adolescencia Migrante No Acompañada."
+            }
+          },
+          {
+            "width": "455.85013731760176px",
+            "height": "271.20496149471387px",
+            "top": "330.615234375px",
+            "left": "7035.140625px",
+            "border-radius": "28px",
+            "angle": "1.61deg",
+            "backgroundColor": "#13F8FD",
+            "text": {
+              "date": "2020",
+              "country": "México",
+              "paragraph": "Aprobación de leyes locales en materia de trata de personas por parte de 29 de las 32 entidades federativas."
+            }
+          },
+          {
+            "width": "455.85011367126776px",
+            "height": "344.50212527036865px",
+            "top": "160.24609375px",
+            "left": "7420.875px",
+            "border-radius": "28px",
+            "angle": "0.19deg",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2020",
+              "country": "México",
+              "paragraph": "Emisión de la Guía Simplificada para la atención a víctimas de trata de personas, documento que aterriza los principales elementos del Modelo Integral de Atención a Víctimas (MIAV) y los vincula con la atención a víctimas de los delitos en materia de trata de personas."
+            }
+          },
+          {
+            "width": "655.0594739449105px",
+            "height": "400.80125474000516px",
+            "top": "252.201171875px",
+            "left": "7840.7109375px",
+            "border-radius": "28px",
+            "angle": "1.09deg",
+            "backgroundColor": "#F89680",
+            "text": {
+              "date": "2021",
+              "country": "Guatemala",
+              "paragraph": "Puesta en marcha de seis Unidades Móviles para la Prevención de la Violencia Sexual, Explotación y Trata de Personas -UNIVET- diseñadas e implementadas por la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas -SVET-, como un mecanismo efectivo y diferente para fortalecer la prevención de la violencia sexual, explotación y trata de personas, en la población en general, especialmente aquella que residen en las áreas más alejadas y vulnerables del país, o bien en áreas que presentan mayor incidencia de personas migrantes."
+            }
+          },
+          {
+            "width": "655.0594756259816px",
+            "height": "408.936601567647px",
+            "top": "170.130859375px",
+            "left": "8467.3125px",
+            "border-radius": "28px",
+            "angle": "1.07deg",
+            "backgroundColor": "#00E0FF",
+            "text": {
+              "date": "2021",
+              "country": "Honduras",
+              "paragraph": "Aprobación del Decreto Legislativo No. 93-2021 a través del cual se reforma el artículo 219 del Código Penal- Decreto Legislativo 130-2017- que hace referencia al delito de trata de personas. Los cambios más significativos giran en torno a: la pena de 5 a 8 años se incrementa de 10 a 15 años de reclusión, la utilización de los medios constituye agravantes de la pena del delito, se castiga al sujeto activo que ejecuta la facilitación y la promoción del delito de trata de personas, se incluyen las modalidades contempladas en la Ley contra la Trata de Personas, y, se incluye el fin comercial de la explotación sexual."
+            }
+          },
+          {
+            "width": "455.85012437684827px",
+            "height": "315.5981419024917px",
+            "top": "348.49609375px",
+            "left": "9096.6015625px",
+            "border-radius": "28px",
+            "angle": "1.66deg",
+            "backgroundColor": "#FCFBCB",
+            "text": {
+              "date": "2021",
+              "country": "México",
+              "paragraph": "Aprobación de la reingeniería del Sistema Nacional contra la Trata de Personas, a efecto de implementarse como un sistema de integración y seguimiento de política pública en la materia."
+            }
+          },
+          {
+            "width": "671.484451213993px",
+            "height": "300.9814826337335px",
+            "top": "195.28125px",
+            "left": "9507.046875px",
+            "border-radius": "28px",
+            "angle": "0.32deg",
+            "backgroundColor": "#F89680",
+            "text": {
+              "date": "2021",
+              "country": "República Dominicana",
+              "paragraph": "Inauguración de una nueva casa de acogida especializada para víctimas de trata personas a cargo del Ministerio de la Mujer, que incluye servicios de asistencia psicológica, legal, abordaje de salud integral, alimentación, educación y formación laboral."
+            }
+          },
+          {
+            "width": "671.4844244998246px",
+            "height": "344.5021303123176px",
+            "top": "357.46875px",
+            "left": "10120.8125px",
+            "border-radius": "28px",
+            "angle": "2.32deg",
+            "backgroundColor": "#00DDFF",
+            "text": {
+              "date": "2021",
+              "country": "República Dominicana",
+              "paragraph": "Elaboración del Protocolo de actualización para casos de trata de personas y tráfico ilícito de migrantes que afectan a niños, niñas y adolescentes (NNA), realizado con apoyo de UNICEF. El protocolo está orientado a mejorar la coordinación interinstitucional, la identificación y referimiento de las víctimas, así como la canalización y provisión de medidas de atención, asistencia y protección de las víctimas, especialmente de niños, niñas y adolescentes."
+            }
+          },
+          {
+            "width": "671.4844092819054px",
+            "height": "315.98060874860585px",
+            "top": "196.669921875px",
+            "left": "10748.1875px",
+            "border-radius": "28px",
+            "angle": "2.6deg",
+            "backgroundColor": "#FEC531",
+            "text": {
+              "date": "2021",
+              "country": "República Dominicana",
+              "paragraph": "Publicación de dos estudios por parte del Instituto Nacional de Migración: Niños, niñas y adolescentes extranjeros en situación o riesgo de trata en República Dominicana, y, Estudio de casos sobre trata de mujeres dominicanas en Costa Rica, Suiza y España."
+            }
+          },
+          {
+            "width": "455.8501409397264px",
+            "height": "290.6489339207555px",
+            "top": "374.833984375px",
+            "left": "11368.0546875px",
+            "border-radius": "28px",
+            "angle": "2.72deg",
+            "backgroundColor": "#00DDFF",
+            "text": {
+              "date": "2021",
+              "country": "Belice",
+              "paragraph": "Validation and acceptance of the Protocol for Accompanied and Unaccompanied Migrant Children in Belize. The preparation of this document was carried out with the support of IOM."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "repatriation": {
     "width": "1920px",
-    "height": "829px",
-    "top": "73863px",
-    "left": "-1px",
-    "container": {
-      "width": "11898.3623046875px",
-      "height": "892.13818359375px",
-      "top": "-56px",
-      "left": "-3.078125px",
-      "borderRadius": "28px",
-      "vector": {
-        "border": "1px",
-        "color": "#000000"
+    "top": "54906px",
+    "topNextSection": "62203px",
+    "backgroundColor": "#FFF0F1",
+    "image": [
+      {
+        "name": "frontPage",
+        "width": "1920px",
+        "height": "1747px",
+        "top": "54626px",
+        "left": "0px"
       },
-      "country": {
-        "height": "81.05932293842201px",
+      {
+        "name": "group",
+        "width": "29.712223052978516px",
+        "height": "33.33434295654297px",
+        "top": "59889.33203125px",
+        "left": "127.2890625px"
+      },
+      {
+        "name": "straightBlueArrow",
+        "width": "112.770263671875px",
+        "height": "31.98995590209961px",
+        "top": "60102.75px",
+        "left": "128px"
+      },
+      {
+        "name": "straightYellowArrow",
+        "width": "112.96713256835938px",
+        "height": "31.989959716796875px",
+        "top": "60051.4169921875px",
+        "left": "128px"
+      },
+      {
+        "name": "straightRedArrow",
+        "width": "112.9688720703125px",
+        "height": "32.08156967163086px",
+        "top": "60000px",
+        "left": "128px"
+      }
+    ],
+    "text": [
+      {
+        "content": "REPATRIACIÓN, RETORNO",
+        "tag": "h1",
+        "top": "55039px",
+        "left": "123px",
+        "width": "1155px",
+        "height": "159px",
+        "fontSize": "145px",
         "fontFamily": "Formula Condensed",
-        "fontSize": "50px",
         "fontWeight": "700",
-        "lineHeight": "60px",
-        "letterSpacing": "0em",
+        "lineHeight": "174px",
+        "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0A4B4E"
+        "color": "#FFFFFF"
       },
-      "date": {
-        "height": "81.05932293842201px",
+      {
+        "content": "Y REASENTAMIENTO",
+        "tag": "h1",
+        "width": "789px",
+        "height": "129px",
+        "top": "55204px",
+        "left": "123px",
         "fontFamily": "Formula Condensed",
+        "fontSize": "120px",
+        "fontWeight": "700",
+        "lineHeight": "154px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "Facilitar y acompañar procesos de retorno,",
+        "tag": "p",
+        "width": "950px",
+        "height": "100px",
+        "top": "56509px",
+        "left": "500px",
+        "fontFamily": "Inter",
+        "fontSize": "36px",
+        "fontWeight": "400",
+        "lineHeight": "44px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "repatriación y reasentamiento que tengan en cuenta los",
+        "tag": "p",
+        "width": "950px",
+        "height": "100px",
+        "top": "56549px",
+        "left": "500px",
+        "fontFamily": "Inter",
+        "fontSize": "36px",
+        "fontWeight": "400",
+        "lineHeight": "44px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+          "content": "DERECHOS, LA SEGURIDAD Y LA DIGNIDAD DE LAS VÍCTIMAS.",
+          "tag": "h2",
+          "width": "1079px",
+          "height": "230px",
+          "top": "56609px",
+          "left": "437px",
+
+          "fontFamily": "Formula Condensed",
+          "fontSize": "80px",
+          "fontWeight": "700",
+          "lineHeight": "96px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#0A4B4E"
+      },
+      {
+        "content": " (ACNUDH, 2014).",
+        "tag": "p",
+        "width": "266.88080381821396px",
+        "height": "30.000000615822145px",
+        "top": "56810px",
+        "left": "826px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30px",
+        "letterSpacing": "0.11em",
+        "textAlign": "center",
+        "color": "#8B601E"
+      },
+      {
+        "content": "Los <span>retornos</span> se realizaron con base en la voluntad de las víctimas de volver a sus países de origen, mientras que los <span>reasentamientos</span> se dieron para garantizar la seguridad de las víctimas.",
+        "tag": "p",
+        "width": "1241px",
+        "height": "152px",
+        "top": "57728px",
+        "left": "340px",
+        "fontFamily": "Inter",
+        "fontSize": "38px",
+        "fontWeight": "400",
+        "lineHeight": "46px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "fontWeight2": "700",
+        "color": "#081D20"
+      },
+      {
+        "content": "Repatriaciones, reasentamientos y retornos de víctimas de trata de personas (2018-2021)",
+        "tag": "p",
+        "width": "636px",
+        "height": "68px",
+        "top": "58136px",
+        "left": "337px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "34px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "En el <span>periodo 2018-2021</span>",
+        "tag": "p",
+        "width": "500px",
+        "height": "130px",
+        "top": "58411px",
+        "left": "1160px",
+        "fontFamily": "Inter",
         "fontSize": "30px",
-        "fontWeight": "300",
-        "lineHeight": "36px",
+        "fontWeight": "400",
+        "lineHeight": "36.31px",        
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "se procesaron las repatriaciones,",
+        "tag": "p",
+        "width": "500px",
+        "height": "130px",
+        "top": "58450px",
+        "left": "1160px",
+        "fontFamily": "Inter",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "lineHeight": "30px",        
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "los reasentamientos y los retornos de",
+        "tag": "p",
+        "width": "500px",
+        "height": "130px",
+        "top": "58485px",
+        "left": "1160px",
+        "fontFamily": "Inter",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "lineHeight": "30px",        
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "764 víctimas de trata de personas.",
+        "tag": "h2",
+        "width": "573px",
+        "height": "321px",
+        "top": "58530px",
+        "left": "1160px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "97px",
+        "fontWeight": "700",
+        "lineHeight": "116px",
         "letterSpacing": "0em",
         "textAlign": "left",
         "color": "#0A4B4E"
       },
-      "paragraph": {
+      {
+        "content": "PAÍSES DE DESTINO DE",
+        "tag": "p",
+        "width": "1206px",
+        "height": "115px",
+        "top": "59179px",
+        "left": "356.5px",
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "400",
+        "lineHeight": "130px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#CE5C3B"
+      },
+      {
+        "content": "REPATRIACIONES, REASENTAMIENTOS Y RETORNOS",
+        "tag": "h2",
+        "width": "1547px",
+        "height": "111px",
+        "top": "59252px",
+        "left": "186px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
+        "fontWeight": "700",
+        "lineHeight": "130px",
+        "letterSpacing": "0.1em",
+        "textAlign": "center",
+        "color": "#CE5C3B"
+      },
+      {
+        "content": "DE VÍCTIMAS DE TRATA DE PERSONAS",
+        "tag": "p",
+        "width": "1206px",
+        "height": "115px",
+        "top": "59308px",
+        "left": "356.5px",
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "400",
+        "lineHeight": "130px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#CE5C3B"
+      },
+      {
+        "content": "Explore los datos por país",
+        "tag": "p",
+        "width": "303px",
+        "height": "42px",
+        "top": "59890.0009765625px",
+        "left": "171px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "35px",
+        "fontWeight": "300",
+        "lineHeight": "42px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#737373"
+      },
+      {
+        "content": "Alta frecuencia",
+        "tag": "p",
+        "width": "142px",
+        "height": "24px",
+        "top": "60005.03125px",
+        "left": "252px",
         "fontFamily": "Inter",
         "fontSize": "20px",
-        "fontWeight1": "500",
+        "fontWeight": "400",
         "lineHeight": "24px",
         "letterSpacing": "0em",
         "textAlign": "left",
-        "fontWeight2": "800",
-        "fontWeight": 400,
-        "color": "#081D20"
+        "color": "#0A4B4E"
       },
-      "cards": [
+      {
+        "content": "Media frecuencia",
+        "tag": "p",
+        "width": "163px",
+        "height": "24px",
+        "top": "60058.03125px",
+        "left": "252px",
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "Baja frecuencia",
+        "tag": "p",
+        "width": "146px",
+        "height": "24px",
+        "top": "60111.03125px",
+        "left": "252px",
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "La mayoría de las víctimas fueron",
+        "tag": "h2",
+        "width": "926px",
+        "height": "153px",
+        "top": "60371px",
+        "left": "527px",
+        "fontFamily": "Inter",
+        "fontSize": "50px",
+        "fontWeight": "400",
+        "lineHeight": "61px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "REPATRIADAS A TRAVÉS DE MEDIO AÉREO",
+        "tag": "h2",
+        "width": "926px",
+        "height": "153px",
+        "top": "60450px",
+        "left": "527px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "70px",
+        "fontWeight": "700",
+        "lineHeight": "60px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#006873"
+      }
+    ],
+    "noteBook": {
+      "position": {
+        "top": "56918.77px",
+        "left": "455.52px",
+        "rotation": "8.3deg"
+      },
+      "size": {
+        "width": "887.5px",
+        "height": "911.49px"
+      },
+      "backgroundImage": "whiteSheetShort",
+      "text": {
+        "paragraph": {
+          "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
+          "width": "554.42px",
+          "height": "125.65px",
+          "fontSize": "25px",
+          "lineHeight": "30px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#081D20"
+        },
+        "title": {
+          "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
+          "width": "566.29px",
+          "height": "144.39px",
+          "fontSize": "60px",
+          "fontFamily": "Formula Condensed",
+          "fontWeight": "700",
+          "lineHeight": "72px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#C18831"
+        },
+        "footer": {
+          "content": "(OIM).",
+          "width": "292.16px",
+          "height": "35.21px",
+          "fontSize": "25px"
+        }
+      }
+    },
+    "map": {
+      "backgroundImage": "mapPink.svg",
+      "size": {
+        "width": "1920px",
+        "height": "800px"
+      },
+      "top": "59408px",
+      "left": "0px",
+      "countrys": [
         {
-          "width": "441.1550944847441px",
-          "height": "355.03855300048974px",
-          "top": "272.580078125px",
-          "left": "68.8359375px",
-          "borderRadius": "28px",
-          "angle": "-0.6deg",
-          "border": "1px",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2018",
-            "country": "Honduras",
-            "paragraph": "Materialización de la autonomía financiera y técnica de la Comisión Interinstitucional contra la Explotación Sexual Comercial y Trata de Personas de Honduras – CICESCT- mediante la desconcentración de esta como una dependencia de la Secretaría de Derechos Humanos."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "51.25px"
+          },
+          "position": {
+            "top": "4956px",
+            "left": "1010px"
+          },
+          "size": {
+            "width": "124px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "441.1551005796584px",
-          "height": "299.57917935033566px",
-          "top": "331px",
-          "left": "919.578125px",
-          "angle": "1.67deg",
-          "backgroundColor": "#00E0FF",
-          "text": {
-            "date": "2018",
-            "country": "Panamá",
-            "paragraph": "Aprobación de dos Decretos Ejecutivos para la regularización del estado migratorio y el reconocimiento del derecho al trabajo de las personas víctimas de trata."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "54.32px"
+          },
+          "position": {
+            "top": "4901px",
+            "left": "876px"
+          },
+          "size": {
+            "width": "138px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "477.28606100984484px",
-          "height": "361.03935953078974px",
-          "top": "111.169921875px",
-          "left": "473.359375px",
-          "angle": "-0.43deg",
-          "backgroundColor": "#00FAFF",
-          "text": {
-            "date": "2018",
-            "country": "Panamá",
-            "paragraph": "Aprobación del Protocolo de Actuación para la Identificación de Víctimas de manera preliminar y plena, y el Reglamento Interno de la Unidad de Identificación y Atención a Víctimas, como herramientas de apoyo al proceso de identificación y atención a las víctimas de trata de personas."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "57.94px"
+          },
+          "position": {
+            "top": "4829px",
+            "left": "811px"
+          },
+          "size": {
+            "width": "129px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "655.0594275270923px",
-          "height": "344.5021253361987px",
-          "top": "96.845703125px",
-          "left": "1267.2421875px",
-          "angle": "-0.6deg",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2018",            
-            "country": "Belice",            
-            "paragraph": "Signing of an agreement between the Belize Police Department and the Institute of Human Trafficking, for the development of the capacity of the Specialized Unit of Human Trafficking of Belize. The agreement helps ensure that the specialized unit has the essential tools and resources it needs to conduct proactive investigations of human trafficking."            
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "53.76px"
+          },
+          "position": {
+            "top": "4577px",
+            "left": "868px"
+          },
+          "size": {
+            "width": "82px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "590.6673636604868px",
-          "height": "344.50213929951803px",
-          "top": "328.75390625px",
-          "left": "2688.96875px",
-          "angle": "1.15deg",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2018",
-            "country": "Nicaragua",
-            "paragraph": "Aprobación de la Estrategia Nacional para la Atención Integral y el Acompañamiento a Víctimas de Trata de Personas, tomando como referencia la estrategia regional, que define y formula acciones nacionales, coordinadas, pertinentes, viables y concretas a ser implementadas por la Coalición Nacional Contra la Trata de Personas."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "53.2px"
+          },
+          "position": {
+            "top": "4722px",
+            "left": "1112px"
+          },
+          "size": {
+            "width": "70px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "441.1550887258958px",
-          "height": "344.50211114476207px",
-          "top": "84.462890625px",
-          "left": "2308.0546875px",
-          "angle:": "0.76deg",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2018",
-            "country": "Nicaragua",
-            "paragraph": "Elaboración del Plan Nacional Estratégico para la prevención, atención, investigación, persecución y sanción del delito de trata de personas 2018-2022, cuyo objetivo es implementar acciones desde un abordaje integral en la lucha contra el delito de la trata de personas."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "62.67px"
+          },
+          "position": {
+            "top": "4767px",
+            "left": "1229px"
+          },
+          "size": {
+            "width": "116px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "477.2860649819924px",
-          "height": "273.4695395635138px",
-          "top": "353.4765625px",
-          "left": "1850.0703125px",
-          "angle": "0.84deg",
-          "backgroundColor": "#00FAFF",
-          "text": {
-            "date": "2018",
-            "country": "El Salvador",
-            "paragraph": "Lanzamiento oficial del Protocolo de Actuación Interinstitucional para Atención Integral Inmediata para víctimas de Trata de Personas."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "52.65px"
+          },
+          "position": {
+            "top": "4829px",
+            "left": "1234px"
+          },
+          "size": {
+            "width": "123px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "655.0594986696881px",
-          "height": "344.50216275078185px",
-          "top": "78.23828125px",
-          "left": "3052.3984375px",
-          "angle": "0.17deg",
-          "backgroundColor": "#00FAFF",
-          "text": {
-            "date": "2018",
-            "country": "Guatemala",
-            "paragraph": "Creación de la Agencia Fiscal de la Región Occidente de la Fiscalía contra la Trata de Personas con cobertura en las áreas geográficas descritas en el Acuerdo No.160-2017, como parte de los esfuerzos del Ministerio Público en el ámbito de la investigación y persecución del delito de trata de personas."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "50.7px"
+          },
+          "position": {
+            "top": "4889px",
+            "left": "1273px"
+          },
+          "size": {
+            "width": "90px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         },
         {
-          "width": "590.6673714654124px",
-          "height": "344.5021438516801px",
-          "top": "325.408203125px",
-          "left": "3588.8828125px",
-          "angle": "-0.51deg",
-          "backgroundColor": "#00DDFF",
-          "text": {
-            "date": "2018",
-            "country": "Guatemala",
-            "paragraph": "Emisión del Acuerdo No.71-2018 para la creación del Juzgado de Primera Instancia Penal con Competencia Especializada en Delitos de Trata de Personas del Departamento de Quetzaltenango y el Tribunal de Sentencia Penal con Competencia Especializada en los delitos de Trata de Personas del departamento de Quetzaltenango."
-          }
-        },
-        {
-          "width": "655.0594829856535px",
-          "height": "344.5021545023955px",
-          "top": "94.88671875px",
-          "left": "4017.4921875px",
-          "angle": "-1.22deg",
-          "backgroundColor": "#00FAFF",
-          "text": {
-            "date": "2018",
-            "country": "Costa Rica",
-            "paragraph": "Aprobación de la Ley No. 9545 del 24 de mayo del 2018, con la cual la legislación costarricense cuenta con un tipo penal que se acerca más a la definición de trata de personas del artículo 03 del Protocolo de Palermo. Adicionalmente, se precisan algunos aspectos del tipo penal tales como ampliación de los verbos rectores, se incluye a las tecnologías como medio, se incluyen otros fines tales como el aborto forzado, y se precisa y amplía el alcance para cubrir todas las formas de explotación sexual."
-          }
-        },
-        {
-          "width": "477.2860629115712px",
-          "height": "344.50212983120895px",
-          "top": "337.697265625px",
-          "left": "4620.2578125px",
-          "angle": "0.28deg",
-          "backgroundColor": "#F89680",
-          "text": {
-            "date": "2019",
-            "country": "Guatemala",
-            "paragraph": "Apertura del albergue temporal especializado para mujeres adultas migrantes víctimas del delito de trata de personas por parte de la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas – SVETS-en cumplimiento a lo regulado en el Código de Migración."
-          }
-        },
-        {
-          "width": "554.9943463063878px",
-          "height": "344.600750808679px",
-          "top": "118.341796875px",
-          "left": "4948.640625px",
-          "angle": "-0.16deg",
-          "backgroundColor": "#00DDFF",
-          "text": {
-            "date": "2019",
-            "country": "Costa Rica",
-            "paragraph": "Aprobación de dos leyes importantes en relación con la trata de personas: la Ley 9726 que vino a corregir un error en la publicación de la Ley 9545, y el artículo 05 de la Ley 9095 referente al concepto de trata de personas, aspecto de mucha importancia, toda vez que dicha definición sirve como referente para los operadores jurídicos, entre ellos los juzgadores."
-          }
-        },
-        {
-          "width": "477.2860795941653px",
-          "height": "325.29913862841477px",
-          "top": "358.021484375px",
-          "left": "5484.5546875px",
-          "angle": "-0.67deg",
-          "backgroundColor": "#F89680",
-          "text": {
-            "date": "2019",
-            "country": "El Salvador",
-            "paragraph": "Coordinación de esfuerzos para identificar necesidades y complementar el trabajo de las Patrullas Fronterizas orientado a la prevención de delitos transfronterizos como la Trata de Personas y el Tráfico Ilícito de Migrantes."
-          }
-        },
-        {
-          "width": "686.9057964550963px",
-          "height": "312.65483422113306px",
-          "top": "307.197265625px",
-          "left": "6007.3046875px",
-          "border-radius": "28px",
-          "angle": "-0.48deg",
-          "backgroundColor": "#FEC531",
-          "text": {
-            "date": "2019",
-            "country": "República Dominicana",
-            "paragraph": "Desarrollo de dos estudios cualitativos por parte del Instituto Nacional de Migración: Estado del arte: “La vida antes, durante y después de la trata: Marco analítico y metodológico de la investigación”, y, “Trata de mujeres extranjeras en República Dominicana”."
-          }
-        },
-        {
-          "width": "455.85012497735363px",
-          "height": "283.97027388767344px",
-          "top": "190.57421875px",
-          "left": "6608.578125px",
-          "border-radius": "28px",
-          "angle": "0.64deg",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2020",
-            "country": "Guatemala",
-            "paragraph": "Lanzamiento del Mecanismo para la Protección Integral de la Niñez y Adolescencia Migrante No Acompañada."
-          }
-        },
-        {
-          "width": "455.85013731760176px",
-          "height": "271.20496149471387px",
-          "top": "330.615234375px",
-          "left": "7035.140625px",
-          "border-radius": "28px",
-          "angle": "1.61deg",
-          "backgroundColor": "#13F8FD",
-          "text": {
-            "date": "2020",
-            "country": "México",
-            "paragraph": "Aprobación de leyes locales en materia de trata de personas por parte de 29 de las 32 entidades federativas."
-          }
-        },
-        {
-          "width": "455.85011367126776px",
-          "height": "344.50212527036865px",
-          "top": "160.24609375px",
-          "left": "7420.875px",
-          "border-radius": "28px",
-          "angle": "0.19deg",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2020",
-            "country": "México",
-            "paragraph": "Emisión de la Guía Simplificada para la atención a víctimas de trata de personas, documento que aterriza los principales elementos del Modelo Integral de Atención a Víctimas (MIAV) y los vincula con la atención a víctimas de los delitos en materia de trata de personas."
-          }
-        },
-        {
-          "width": "655.0594739449105px",
-          "height": "400.80125474000516px",
-          "top": "252.201171875px",
-          "left": "7840.7109375px",
-          "border-radius": "28px",
-          "angle": "1.09deg",
-          "backgroundColor": "#F89680",
-          "text": {
-            "date": "2021",
-            "country": "Guatemala",
-            "paragraph": "Puesta en marcha de seis Unidades Móviles para la Prevención de la Violencia Sexual, Explotación y Trata de Personas -UNIVET- diseñadas e implementadas por la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas -SVET-, como un mecanismo efectivo y diferente para fortalecer la prevención de la violencia sexual, explotación y trata de personas, en la población en general, especialmente aquella que residen en las áreas más alejadas y vulnerables del país, o bien en áreas que presentan mayor incidencia de personas migrantes."
-          }
-        },
-        {
-          "width": "655.0594756259816px",
-          "height": "408.936601567647px",
-          "top": "170.130859375px",
-          "left": "8467.3125px",
-          "border-radius": "28px",
-          "angle": "1.07deg",
-          "backgroundColor": "#00E0FF",
-          "text": {
-            "date": "2021",
-            "country": "Honduras",
-            "paragraph": "Aprobación del Decreto Legislativo No. 93-2021 a través del cual se reforma el artículo 219 del Código Penal- Decreto Legislativo 130-2017- que hace referencia al delito de trata de personas. Los cambios más significativos giran en torno a: la pena de 5 a 8 años se incrementa de 10 a 15 años de reclusión; la utilización de los medios constituye agravantes de la pena del delito; se castiga al sujeto activo que ejecuta la facilitación y la promoción del delito de trata de personas; se incluyen las modalidades contempladas en la Ley contra la Trata de Personas, y, se incluye el fin comercial de la explotación sexual."
-          }
-        },
-        {
-          "width": "455.85012437684827px",
-          "height": "315.5981419024917px",
-          "top": "348.49609375px",
-          "left": "9096.6015625px",
-          "border-radius": "28px",
-          "angle": "1.66deg",
-          "backgroundColor": "#FCFBCB",
-          "text": {
-            "date": "2021",
-            "country": "México",
-            "paragraph": "Aprobación de la reingeniería del Sistema Nacional contra la Trata de Personas, a efecto de implementarse como un sistema de integración y seguimiento de política pública en la materia."
-          }
-        },
-        {
-          "width": "671.484451213993px",
-          "height": "300.9814826337335px",
-          "top": "195.28125px",
-          "left": "9507.046875px",
-          "border-radius": "28px",
-          "angle": "0.32deg",
-          "backgroundColor": "#F89680",
-          "text": {
-            "date": "2021",
-            "country": "República Dominicana",
-            "paragraph": "Inauguración de una nueva casa de acogida especializada para víctimas de trata personas a cargo del Ministerio de la Mujer, que incluye servicios de asistencia psicológica, legal, abordaje de salud integral, alimentación, educación y formación laboral."
-          }
-        },
-        {
-          "width": "671.4844244998246px",
-          "height": "344.5021303123176px",
-          "top": "357.46875px",
-          "left": "10120.8125px",
-          "border-radius": "28px",
-          "angle": "2.32deg",
-          "backgroundColor": "#00DDFF",
-          "text": {
-            "date": "2021",
-            "country": "República Dominicana",
-            "paragraph": "Elaboración del Protocolo de actualización para casos de trata de personas y tráfico ilícito de migrantes que afectan a niños, niñas y adolescentes (NNA), realizado con apoyo de UNICEF. El protocolo está orientado a mejorar la coordinación interinstitucional, la identificación y referimiento de las víctimas, así como la canalización y provisión de medidas de atención, asistencia y protección de las víctimas, especialmente de niños, niñas y adolescentes."
-          }
-        },
-        {
-          "width": "671.4844092819054px",
-          "height": "315.98060874860585px",
-          "top": "196.669921875px",
-          "left": "10748.1875px",
-          "border-radius": "28px",
-          "angle": "2.6deg",
-          "backgroundColor": "#FEC531",
-          "text": {
-            "date": "2021",
-            "country": "República Dominicana",
-            "paragraph": "Publicación de dos estudios por parte del Instituto Nacional de Migración: Niños, niñas y adolescentes extranjeros en situación o riesgo de trata en República Dominicana, y, Estudio de casos sobre trata de mujeres dominicanas en Costa Rica, Suiza y España."
-          }
-        },
-        {
-          "width": "455.8501409397264px",
-          "height": "290.6489339207555px",
-          "top": "374.833984375px",
-          "left": "11368.0546875px",
-          "border-radius": "28px",
-          "angle": "2.72deg",
-          "backgroundColor": "#00DDFF",
-          "text": {
-            "date": "2021",
-            "country": "Belice",
-            "paragraph": "Validation and acceptance of the Protocol for Accompanied and Unaccompanied Migrant Children in Belize. The preparation of this document was carried out with the support of IOM."
-          }
+          "name": "",
+          "flag": {
+            "name": "",
+            "width": "52.09px"
+          },
+          "position": {
+            "top": "4765px",
+            "left": "1493px"
+          },
+          "size": {
+            "width": "252px",
+            "height": "24px"
+          },
+          "fontSize": "20px",
+          "fontFamily": "'Inter', sans-serif",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "left"
         }
       ]
+    },
+    "bigInfoBox": {
+      "width": "1700px",
+      "height": "478px",
+      "top": "61799px",
+      "left": "110px",
+      "borderRadius": "28px",
+      "border": "1px",
+      "backgroundColor": "#CFF9FF",
+      "text": [
+        {
+          "content": "Durante el año 2020, y en el contexto de la COVID-19,",
+          "tag": "h1",
+          "width": "1344px",
+          "height": "72px",
+          "top": "61876px",
+          "left": "326px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "64px",
+          "fontWeight": "700",
+          "lineHeight": "76.8px",
+          "letterSpacing": "0.03em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "los países de la región reportaron una <span>disminución</span> en la capacidad de ejecutar <span>allanamientos</span> y <span>procesamientos judiciales</span> debido a las restricciones impuestas para la mitigación de la enfermedad. De igual forma, se interrumpieron algunos <span>procesos de retorno y repatriación</span> debido a las restricciones de viajes, y se dieron reajustes en los albergues y los espacios de atención de víctimas de trata de personas.",
+          "tag": "p",
+          "width": "1344px",
+          "height": "212px",
+          "top": "61973px",
+          "left": "326px",
+          "fontFamily": "Inter",
+          "fontSize": "30px",
+          "lineHeight": "36.31px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "fontWeight": "400",
+          "fontWeight2": "700",
+          "color": "#081D20"
+        },
+        {
+          "content": "(CORETT, 2020)",
+          "tag": "p",
+          "width": "284.03px",
+          "height": "44.6px",
+          "top": "62167px",
+          "left": "326px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
+        }
+      ],
+      "bar": {
+        "height": "220.0000000000002px",
+        "top": "5337px",
+        "left": "250px",
+        "borderLeft": "1px solid #FFFFFF"
+      }
     }
-  }
   }
 }
