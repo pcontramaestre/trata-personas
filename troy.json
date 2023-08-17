@@ -1545,7 +1545,7 @@
         "color": "#0A4B4E"
       },
       {
-        "content": "La mayoría de las víctimas fueron <span>repatriadas a través de medio aéreo</span>",
+        "content": "La mayoría de las víctimas fueron",
         "tag": "h2",
         "width": "926px",
         "height": "153px",
@@ -1557,18 +1557,23 @@
         "lineHeight": "61px",
         "letterSpacing": "0.03em",
         "textAlign": "center",
-
-        "fontFamily2": "Formula Condensed",
-        "fontSize2": "50px",
-        "fontWeight2": "700",
-        "lineHeight2": "60px",
-        
-        "fontSize3": "70px",
-        "lineHeight3": "84px",
-        
-        "color": "#0A4B4E",
-        "color2": "#006873"
-      }      
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "REPATRIADAS A TRAVÉS DE MEDIO AÉREO",
+        "tag": "h2",
+        "width": "926px",
+        "height": "153px",
+        "top": "60450px",
+        "left": "527px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "70px",
+        "fontWeight": "700",
+        "lineHeight": "60px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#006873"
+      }
     ],
     "noteBook": {
       "position": {
@@ -1612,6 +1617,69 @@
           "height": "35.21px",
           "fontSize": "25px"
         }
+      }
+    },
+    "bigInfoBox": {
+      "width": "1700px",
+      "height": "478px",
+      "top": "61799px",
+      "left": "110px",
+      "borderRadius": "28px",
+      "border": "1px",
+      "backgroundColor": "#CFF9FF",
+      "text": [
+        {
+          "content": "Durante el año 2020, y en el contexto de la COVID-19,",
+          "tag": "h1",
+          "width": "1344px",
+          "height": "72px",
+          "top": "61876px",
+          "left": "326px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "64px",
+          "fontWeight": "700",
+          "lineHeight": "76.8px",
+          "letterSpacing": "0.03em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "los países de la región reportaron una <span>disminución</span> en la capacidad de ejecutar <span>allanamientos</span> y <span>procesamientos judiciales</span> debido a las restricciones impuestas para la mitigación de la enfermedad. De igual forma, se interrumpieron algunos <span>procesos de retorno y repatriación</span> debido a las restricciones de viajes, y se dieron reajustes en los albergues y los espacios de atención de víctimas de trata de personas.",
+          "tag": "p",
+          "width": "1344px",
+          "height": "212px",
+          "top": "61973px",
+          "left": "326px",
+          "fontFamily": "Inter",
+          "fontSize": "30px",
+          "lineHeight": "36.31px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "fontWeight": "400",
+          "fontWeight2": "700",
+          "color": "#081D20"
+        },
+        {
+          "content": "(CORETT, 2020)",
+          "tag": "p",
+          "width": "284.03px",
+          "height": "44.6px",
+          "top": "62167px",
+          "left": "326px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
+        }
+      ],
+      "bar": {
+        "height": "220.0000000000002px",
+        "top": "5337px",
+        "left": "250px",
+        "borderLeft": "1px solid #FFFFFF"
       }
     }
   }
