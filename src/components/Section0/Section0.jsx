@@ -36,6 +36,11 @@ function Section0 () {
     lineHeight: texto.lineHeight && convertSize(texto.lineHeight)
   }))
 
+  const blockFooterStyle = {
+    height: convertSize('634px'),
+    top: convertSize('5503px')
+  }
+
   return (
     <section className={style.HomeHeaderBackground} style={homeHeaderContainer}>
       <div style={homeHeaderFrontPageStyle} className={style.HomeHeader} />
@@ -59,6 +64,7 @@ function Section0 () {
       <News news={news} />
       <Map map={map} />
       <BigInfoBox bigInfoBox={bigInfoBox} />
+      <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle}></div>
     </section>
   )
 }

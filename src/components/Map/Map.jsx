@@ -32,9 +32,8 @@ function Map({ map }) {
 
   const mapStyle = {
     height: convertSize(map.size.height),
-    width: convertSize(map.size.width),
-    top: convertSize(map.top),
-  };
+    top: convertSize(map.top)
+  }
   return (
     <div className={style.MapBackground} style={mapStyle}>
       {map.countrys.map((country, index) => (

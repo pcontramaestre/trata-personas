@@ -17,7 +17,7 @@ const icons = {
   home
 }
 
-const { title, items, button } = data.InstructionsPage
+const { title, items, button, text } = data.InstructionsPage
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -39,6 +39,13 @@ function Instructions ({ setShowInstructions }) {
     fontSize: convertSize(title.fontSize)
   }
 
+  const textStyle = {
+    ...text,
+    fontSize: convertSize(text.fontSize),
+    lineHeight: convertSize(text.lineHeight),
+    marginTop: convertSize('24px')
+  }
+
   const buttonStyles = {
     ...button,
     content: '',
@@ -55,7 +62,7 @@ function Instructions ({ setShowInstructions }) {
         <div className={style.InstructionsCardsContainer}>
           {
           items.map((item, index) => (
-            <Card key={index} text={item.text} icon={item.icon} />
+            <Card key={index} text={item.text} icon={item.icon} textStyle={textStyle} />
           ))
         }
         </div>
@@ -65,14 +72,13 @@ function Instructions ({ setShowInstructions }) {
   )
 }
 
-function Card ({ icon, text, n }) {
+function Card ({ icon, text, textStyle }) {
   const styleIcon = {
     width: convertSize(icon.size.width)
   }
   const styleText = {
-    width: convertSize(text.size.width),
-    fontSize: convertSize(text.fontSize),
-    lineHeight: convertSize(text.lineHeight)
+    ...textStyle,
+    width: convertSize(text.size.width)
   }
 
   return (
