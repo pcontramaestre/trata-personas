@@ -21,6 +21,12 @@
     width: 100%;
 }
 
+.HandSlideCard h1 {
+    margin: 0px;
+    margin-bottom: 1vw;
+    margin-top: 0.3vw;
+}
+
 .HandSlideCard p {
     border-top: solid 1px #000000;
 }
