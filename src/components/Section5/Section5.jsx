@@ -10,7 +10,7 @@ import frontPage from '../../assets/Section5/repatriation.png'
 import data from '../../../troy.json'
 
 const { repatriation } = data
-// const { noteBook, news, map, bigInfoBox } = data.repatriation
+const { noteBook, bigInfoBox } = data.repatriation
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -62,10 +62,10 @@ function Section5 () {
           return true
         })
       }
-      <NoteBook />
+      <NoteBook noteBook={noteBook} topSection={repatriation.top} />
       <BarGraph />
       <Map />
-      <BigInfoBox />
+      <BigInfoBox bigInfoBox={bigInfoBox} topSection={repatriation.top} />
     </section>
   )
 }
