@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* position: absolute; */
+  position: relative;
   bottom: 0;
   /* height: 120vh; */
-  margin: 25vh 0;
-  padding: 10vh;
+  /* margin: 25vh 0; */
+  z-index: 60;
+  /* padding: 10vh; */
   width: 100%;
 }
 
@@ -38,3 +39,6 @@
   text-transform: capitalize;
 }
 
+.laboral {
+  color: #a2e7f1;
+}
