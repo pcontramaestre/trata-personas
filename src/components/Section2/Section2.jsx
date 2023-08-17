@@ -7,6 +7,7 @@ import SmallInfoSection02 from "../SmallInfoBox/SmallInfoSection02/SmallInfoSect
 import GraphicFinalidades from "./GraphicFinalidades/GraphicFinalidades";
 import ExplotacionSexual from "./Explotacion/ExplotacionSexual";
 
+
 function Section2() {
   const page1 = data[0].finalidades.page1;
   return (
@@ -21,6 +22,7 @@ function Section2() {
       <SmallInfoSection02/>
       <GraphicFinalidades/>
       <ExplotacionSexual/>
+      
       <NoteBook />
       <BigInfoBox />
     </section>

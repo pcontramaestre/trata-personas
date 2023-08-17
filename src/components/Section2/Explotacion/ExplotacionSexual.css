@@ -1,11 +1,16 @@
 .explotacion__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: url("../../../src/assets/Img-Section02/Page04/background.png");
-  height: 130vh;
-  background-size: 100vw;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.explotacion__container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 
 .explotacion__hand {
@@ -20,7 +25,8 @@
 }
 
 .womenloading__img {
-  position: absolute;
+  /* position: absolute; */
+  z-index: 12;
   height: 45vw;
   right: 10vw;
 }
@@ -47,15 +53,15 @@
   text-transform: uppercase;
 }
 
-.womenloading__content{
+.womenloading__content {
   display: flex;
-
 }
 
 .explotacion__news {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 90vh;
 }
 
 .explotacion__news-content {
