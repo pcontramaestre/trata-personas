@@ -14,3 +14,7 @@
     margin: 0px;
     z-index: 3;
 }
+
+.repatriationText span {
+    font-weight: 700
+}
