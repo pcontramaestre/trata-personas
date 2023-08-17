@@ -1,0 +1,71 @@
+.NoteBook02__container {
+  display: flex;
+  width: 100vw;
+  /* margin-top: 100px; */
+}
+
+.NoteBook02 {
+  background: url("../../../assets/Img-Section02/Page04/notebook.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 55.5vw;
+  transform: rotate(-4.362deg);
+  left: 3vw;
+  top: 15vh;
+  position: absolute;
+}
+
+.NoteBook02__texts {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  transform: rotate(-3.962deg);
+  text-align: center;
+  margin-left: 12vw;
+  margin-top: 40vh;
+  font-style: normal;
+  width: 35%;
+}
+
+.NoteBook02__text1 {
+  transform: rotate(-4.362deg);
+  color: var(--negro-textos, #081d20);
+  font-size: 1.3vw;
+  font-weight: 400;
+  text-align: start;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.NoteBook02__text2 {
+  transform: rotate(-4.362deg);
+  color: #c18831;
+  font-family: "Formula Condensed";
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 0.8vw;
+  margin-top: 0.3vh;
+}
+
+.NoteBook02__text3 {
+  transform: rotate(-4.362deg);
+  text-align: start;
+  color: var(--negro-textos, #081d20);
+  font-family: Inter;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: normal;
+  letter-spacing: 2.75px;
+  margin-left: 1vw;
+  margin-top: 0.65vw;
+}

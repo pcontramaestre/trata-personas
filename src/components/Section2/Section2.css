@@ -1,0 +1,48 @@
+.Section02 {
+  width: 100vw;
+  /* flex-shrink: 0; */
+  background:#FEFFF3;
+}
+
+.page2 {
+  background: url("../../assets/Img-Section02/Page01/background.png");
+  height: 130vh;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.page2__title {
+  margin: 0;
+  color: #fefff3;
+  position: absolute;
+  font-family: "Formula Condensed";
+  right: 13%;
+  top: 25%;
+  font-size: 110px;
+  font-size: 720%;
+  font-style: normal;
+  flex-shrink: 0;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.page2__title2 {
+  color: #fefff3;
+  position: absolute;
+  font-family: "Formula Condensed";
+  right: 5.8%;
+  bottom: 42%;
+  font-size: 600%;
+  font-style: normal;
+  flex-shrink: 0;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.slider__content{
+  height: 100vh;
+}

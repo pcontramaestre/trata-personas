@@ -1,0 +1,22 @@
+.titleslider02 {
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80vw;
+}
+.titleslider02 strong{
+  width: 80%;
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: Formula Condensed;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* width: 110%; */
+}
