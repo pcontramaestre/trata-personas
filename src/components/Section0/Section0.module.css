@@ -27,3 +27,13 @@
     width: 100%;
     background-color: #002D2C;
 }
+
+.scroll {
+    animation: upAndDrown 1s infinite alternate ease-in-out;
+}
+
+@keyframes upAndDrown {
+    to {
+        transform: translateY(-1.5vw);
+    }
+}
