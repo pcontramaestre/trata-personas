@@ -5,14 +5,15 @@ function convertSize (input) {
   return (n * 100 / 1920) + 'vw'
 }
 
-function NoteBook ({ noteBook }) {
+function NoteBook ({ noteBook, topSection }) {
   if (!noteBook) return null
 
   const whiteSheetStyle = {
-    top: convertSize(noteBook.position.top),
+    top: convertSize(topSection ? Number(noteBook.position.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : noteBook.position.top),
     left: convertSize(noteBook.position.left),
     width: convertSize(noteBook.size.width),
     height: convertSize(noteBook.size.height),
+    backgroundImage: `url("./src/assets/NoteBook/${noteBook.backgroundImage ? noteBook.backgroundImage : 'whiteSheet'}.png")`,
     transform: `rotateZ(${-Number(noteBook.position.rotation.split('deg')[0])}deg)`
   }
 

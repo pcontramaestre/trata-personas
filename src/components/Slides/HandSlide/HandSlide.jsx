@@ -41,7 +41,6 @@ function HandSlide ({ handSlide, totalTop }) {
     height: convertSize(handSlide.container.country.fontSize),
     fontSize: convertSize(handSlide.container.country.fontSize),
     lineHeight: convertSize(handSlide.container.country.lineHeight),
-    margin: convertSize('0px')
   }
 
   const paragraphStyles = {

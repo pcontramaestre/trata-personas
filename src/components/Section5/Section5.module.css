@@ -1,0 +1,36 @@
+.RepatriationBackground {
+    position: relative;
+    background-color: #FFF0F1;
+}
+
+.RepatriationImages {
+    position: absolute;
+    z-index: 2;
+}
+
+.repatriationText {
+    position: absolute;
+    margin: 0px;
+    z-index: 3;
+}
+
+.repatriationText span {
+    font-weight: 700
+}
+
+.animationContainer {
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stuffed {
+    position: absolute;
+    width: 100%;
+    background-color: #1D666B;
+}
+
+.animationPictures {
+    position: absolute;
+}
