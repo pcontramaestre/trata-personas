@@ -16,7 +16,6 @@ const ExplotacionLaboral = () => {
         <h1 className="laboral__title">{page6.title}</h1>
         <BookLaboral page6={page6} />
       </div>
-
       <img className="laboral__img" src={backgroundpasto} />
       <div className="laboral__testimonios">
         <Testimonios laboral={true} name1={name1} name2={name2} />
