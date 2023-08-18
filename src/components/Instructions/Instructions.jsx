@@ -83,7 +83,7 @@ function Card ({ icon, text, textStyle }) {
 
   return (
     <div className={style.InstructionsCard}>
-      <img src={(icon && icons[icon.name]) || ''} style={styleIcon} />
+      <img src={(icon && icons[icon.name]) || ''} style={styleIcon} className={icon.name === 'scroll1' ? style.scroll : icon.name === 'infoGifBlanco1' ? style.infoGifBlanco : null} />
       <p style={styleText}>{(text && text.content) || ''}</p>
     </div>
   )
