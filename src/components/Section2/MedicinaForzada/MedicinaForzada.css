@@ -1,0 +1,42 @@
+.medicina__forzada {
+  display: flex;
+  flex-direction: column;
+  background: url("../../../assets/Img-Section02/Page07/background.png");
+  align-items: center;
+  width: 100vw;
+  height: 130vh;
+  /* background-size: 200vh; */
+  background-repeat: no-repeat;
+  margin-top: 20vw;
+  position: relative;
+}
+
+.medicina__content {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.medicina__title {
+  color: var(--verde-claro-textos, #006873);
+  font-family: Formula Condensed;
+  width: 100%;
+  margin-right: 10vw;
+  margin-bottom: 0;
+  margin-top: 20vh;
+  text-align: end;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pills__img {
+  top: 5vw;
+  left: 0;
+  width: 40vw;
+  position: absolute;
+  z-index: 20;
+}
