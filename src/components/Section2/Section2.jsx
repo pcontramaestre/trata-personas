@@ -10,7 +10,7 @@ import ExplotacionLaboral from "./Explotacion/ExplotacionLaboral/ExplotacionLabo
 import MedicinaForzada from "./MedicinaForzada/MedicinaForzada";
 import Adopcion from "./Adopcion/Adopcion";
 import Matrimonio from "./Matrimonio/Matrimonio";
-
+import Esclavitud from "./Esclavitud/Esclavitud";
 
 function Section2() {
   const page1 = data[0].finalidades.page1;
@@ -28,8 +28,9 @@ function Section2() {
       <ExplotacionSexual />
       <ExplotacionLaboral />
       <MedicinaForzada />
-      <Adopcion/>
-      <Matrimonio/>
+      <Adopcion />
+      <Matrimonio />
+      <Esclavitud />
       <NoteBook />
       <BigInfoBox />
     </section>

@@ -5,6 +5,7 @@
 
 .Section1 {
   width: 100vw;
+  margin-top: 15vh;
   /* flex-shrink: 0; */
   background: #fff0f1;
 }

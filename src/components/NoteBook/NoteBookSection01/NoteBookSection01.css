@@ -17,8 +17,8 @@
 
 .img__hands {
   margin-top: 10vh;
-  height: 70vh;
-  /* width: 50vw; */
+  /* height: 70vh; */
+  width: 50vw;
   z-index: 1;
   right: 0;
   position: absolute;
@@ -35,7 +35,7 @@
   margin-left: 20vh;
   margin-top: 20vh;
   font-style: normal;
-  width: 50%;
+  width: 40%;
 }
 
 .NoteBook__text1 {
@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 1050px) {
   .NoteBook__texts {
- width: 60%;
+    width: 60%;
   }
 
   .img__hands {
@@ -90,7 +90,8 @@
 @media screen and (max-width: 720px) {
   .img__hands {
     margin-top: 8vh;
-    height: 45vh;
+    /* height: 45vh; */
+    width: 60vw;
     right: -2vh;
   }
 
