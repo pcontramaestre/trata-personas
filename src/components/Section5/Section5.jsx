@@ -6,22 +6,28 @@ import BigInfoBox from '../BigInfoBox/BigInfoBox'
 import style from './Section5.module.css'
 
 import frontPage from '../../assets/Section5/repatriation.png'
-import group from '../../assets/Instructions/group.svg'
+import grafico from '../../assets/Section5/grafico.png'
+import hand from '../../assets/Section5/hand.svg'
 import straightBlueArrow from '../../assets/Section5/straightBlueArrow.svg'
 import straightYellowArrow from '../../assets/Section5/straightYellowArrow.svg'
 import straightRedArrow from '../../assets/Section5/straightRedArrow.svg'
+import bus from '../../assets/Section5/bus.png'
+import plane from '../../assets/Section5/plane.png'
 
 import data from '../../../troy.json'
 
 const { repatriation } = data
-const { noteBook, bigInfoBox, map } = data.repatriation
+const { noteBook, bigInfoBox, map, animation } = data.repatriation
 
 const images = {
   frontPage,
-  group,
+  grafico,
+  hand,
   straightBlueArrow,
   straightYellowArrow,
-  straightRedArrow
+  straightRedArrow,
+  bus,
+  plane
 }
 
 function convertSize (input) {
@@ -57,6 +63,11 @@ function Section5 () {
     left: convertSize(photo.left)
   }))
 
+  const stuffedStyle = {
+    top: convertSize('6601px'),
+    height: convertSize('846px')
+  }
+
   return (
     <section className={style.RepatriationBackground} style={repatriationCotainer}>
       {
@@ -83,8 +94,39 @@ function Section5 () {
       <NoteBook noteBook={noteBook} topSection={repatriation.top} />
       <BarGraph />
       <Map map={map} topSection={repatriation.top} />
+      <Animation />
       <BigInfoBox bigInfoBox={bigInfoBox} topSection={repatriation.top} />
+      <div className={style.stuffed} style={stuffedStyle} />
     </section>
+  )
+}
+
+function Animation () {
+  const animationContainerStyles = {
+    width: convertSize(animation.width),
+    height: convertSize(animation.height),
+    top: convertSize(relativeMedition(animation.top)),
+    backgroundImage: `url("./src/assets/Section5/${animation.backgroundImage}")`,
+    backgroundColor: animation.backgroundColor
+  }
+
+  const picturesStyles = animation.images.map(image => (
+    {
+      width: convertSize(image.width),
+      height: convertSize(image.height),
+      top: convertSize(image.top),
+      left: convertSize(image.left)
+    }
+  ))
+
+  return (
+    <div style={animationContainerStyles} className={style.animationContainer}>
+      {
+        animation.images.map((image, index) => (
+          <img src={images[image.name]} className={style.animationPictures} style={picturesStyles[index]} key={index} />
+        ))
+      }
+    </div>
   )
 }
 
