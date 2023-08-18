@@ -5,7 +5,15 @@ import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section0.module.css'
 
+import scroll from '../../assets/Instructions/scroll1.svg'
+import group from '../../assets/Instructions/group.svg'
+
 import data from '../../../troy.json'
+
+const icons = {
+  scroll,
+  group
+}
 
 const { homeHeader } = data
 const { noteBook, news, map, bigInfoBox } = data.homeHeader
@@ -34,6 +42,14 @@ function Section0 () {
     lineHeight: texto.lineHeight && convertSize(texto.lineHeight)
   }))
 
+  const iconStyles = homeHeader.images.map(icon => ({
+    ...icon,
+    top: convertSize(icon.top),
+    left: convertSize(icon.left),
+    width: convertSize(icon.width),
+    height: convertSize(icon.height)
+  }))
+
   const blockFooterStyle = {
     height: convertSize('634px'),
     top: convertSize('5503px')
@@ -42,6 +58,11 @@ function Section0 () {
   return (
     <section className={style.HomeHeaderBackground} style={homeHeaderContainer}>
       <div style={homeHeaderFrontPageStyle} className={style.HomeHeader} />
+      {
+        homeHeader.images.map((image, index) => (
+          <img src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : null} style={iconStyles[index]} key={image.name + index} />
+        ))
+      }
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {
