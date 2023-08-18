@@ -119,8 +119,10 @@ function SheetNews ({ hover, footer, icon }) {
       <h1 style={titleStyle} className={style.titleIntoArticle}>{hover.title.content}</h1>
       <div className={style.vector} />
       <p dangerouslySetInnerHTML={{ __html: hover.text.content }} style={textStyle} className={style.IntoArticle} />
-      <label style={footerStyle} className={style.IntoArticle}>{hover.footer.content}</label>
-      <footer><a href={hover.link} className={style.articleFooter} style={linkStyles}><img src={group} style={iconStyles} /> CONSULTA LA NOTICIA COMPLETA</a></footer>
+      <footer className={style.footerContainer}>
+        <label style={footerStyle} className={style.IntoArticle}>{hover.footer.content}</label>
+        <a href={hover.link} target='_blank' className={style.articleFooter} style={linkStyles} rel='noreferrer'><img src={group} style={iconStyles} /> CONSULTA LA NOTICIA COMPLETA</a>
+      </footer>
     </div>
   )
 }
