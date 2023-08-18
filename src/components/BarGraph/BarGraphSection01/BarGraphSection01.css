@@ -1,5 +1,5 @@
 .BarGraph {
-  margin-top: 100px;
+  margin-top: 10vh;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  /* width: 50%; */
+  width: 50%;
 }
 
 .bargraph__title {
@@ -44,7 +44,7 @@
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -132,7 +132,7 @@
 .bargraph__text1 {
   color: var(--verde-medio, #0a4b4e);
   font-family: "Inter", sans-serif;
-  font-size: 28px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -144,18 +144,64 @@
 .bargraph__text2 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 68px;
+  font-size: 8vh;
   font-style: normal;
   font-weight: 700;
   line-height: 0.2;
-  margin: 40px 0px;
+  margin: 5vh 0;
 }
 
 .bargraph__text3 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 56px;
+  font-size: 6vh;
   font-style: normal;
   font-weight: 700;
   line-height: 2;
+}
+
+@media screen and (max-width: 720px) {
+  .bargraph__texts {
+    justify-content: start;
+  }
+  .bargraph__text2 {
+    font-size: 3vh;
+    line-height: 1;
+    margin: 1vh 0;
+  }
+  .bargraph__text3 {
+    font-size: 6vh;
+    line-height: 0.9;
+  }
+  .bargraph__title {
+    width: 70%;
+    font-size: 1.5vh;
+    margin: 0;
+  }
+  .bargraph__image {
+    position: relative;
+    left: -7vh;
+    height: 65vh;
+    width: 55%;
+  }
+  .bargraph__text1 {
+    font-size: 2vh;
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .BarGraph {
+    margin-top: 0vh;
+  }
+  .bargraph__title {
+    font-size: 1.2vh;
+  }
+  .bargraph__image {
+    position: relative;
+    left: -2vh;
+    height: 100%;
+    width: 70%;
+  }
 }

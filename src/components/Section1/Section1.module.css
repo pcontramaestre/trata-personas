@@ -10,10 +10,12 @@
 }
 
 .page1 {
-  background: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
-  height: 130vh;
-  background-size: 100vw;
+  background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
   position: relative;
   /* flex-shrink: 0; */
 }
@@ -22,9 +24,9 @@
   color: #ffdcd1;
   position: absolute;
   font-family: "Formula Condensed";
-  right: 210px;
-  bottom: 370px;
-  font-size: 110px;
+  right: 10vw;
+  bottom: 50%;
+  font-size: 8vh;
   font-style: normal;
   flex-shrink: 0;
   font-weight: 700;
@@ -32,4 +34,11 @@
   text-transform: uppercase;
 }
 
-
+@media screen and (max-width: 768px) {
+  .page1__title {
+    font-size: 6vh;
+  }
+  .page1{
+    height: 70vh;
+  }
+}

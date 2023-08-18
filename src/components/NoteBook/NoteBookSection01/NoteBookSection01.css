@@ -1,7 +1,7 @@
 .NoteBook__container {
   display: flex;
   width: 100vw;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .NoteBook {
@@ -11,13 +11,14 @@
   background-repeat: no-repeat;
   background-size: 100vh;
   transform: rotate(-4.362deg);
-  margin-left: 160px;
+  /* margin-left: 160px; */
   /* position: absolute; */
 }
 
 .img__hands {
-  margin-top: 60px;
-  height: 120%;
+  margin-top: 10vh;
+  height: 70vh;
+  /* width: 50vw; */
   z-index: 1;
   right: 0;
   position: absolute;
@@ -31,16 +32,16 @@
   align-content: center;
   transform: rotate(-2.362deg);
   text-align: center;
-  margin-left: 160px;
-  margin-top: 183px;
+  margin-left: 20vh;
+  margin-top: 20vh;
   font-style: normal;
-  width: 40%;
+  width: 50%;
 }
 
 .NoteBook__text1 {
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
-  font-size: 26px;
+  font-size: 3vh;
   font-weight: 400;
   text-align: start;
   font-family: "Inter", sans-serif;
@@ -61,6 +62,7 @@
   margin-left: 10px;
   margin-top: 4px;
 }
+
 .NoteBook__text3 {
   transform: rotate(-4.362deg);
   text-align: start;
@@ -73,4 +75,70 @@
   line-height: normal;
   letter-spacing: 2.75px;
   margin-left: 12px;
+}
+
+@media screen and (max-width: 1050px) {
+  .NoteBook__texts {
+ width: 60%;
+  }
+
+  .img__hands {
+    right: -25vh;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .img__hands {
+    margin-top: 8vh;
+    height: 45vh;
+    right: -2vh;
+  }
+
+  .NoteBook {
+    width: 42vh;
+  }
+
+  .NoteBook__texts {
+    margin-left: 8vh;
+    margin-top: 6vh;
+    width: 55%;
+  }
+  .NoteBook__text1 {
+    font-size: 1.5vh;
+  }
+  .NoteBook__text2 {
+    font-size: 2.5vw;
+  }
+
+  .NoteBook__text3 {
+    font-size: 1.5vh;
+    margin-left: 12px;
+  }
+
+  .NoteBook {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: 35vh;
+    transform: rotate(-4.362deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .NoteBook {
+    height: 60vh;
+  }
+  .NoteBook__container {
+    display: flex;
+    width: 100vw;
+  }
+
+  .NoteBook__texts {
+    width: 60%;
+  }
+
+  .img__hands {
+    margin-top: 8vh;
+    height: 45vh;
+    right: -12vh;
+  }
 }

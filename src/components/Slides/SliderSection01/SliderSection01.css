@@ -4,11 +4,11 @@
   align-items: center;
   align-content: center;
   /* max-width: 900px; */
-  margin-top: 200px;
+  margin: 8vh 0;
 }
 
 .slider {
-  padding: 0 320px;
+  padding: 0 10vw;
   display: flex;
   /* width: 100vw; */
   flex-direction: column;
@@ -21,7 +21,7 @@
   color: #ce5c3b;
   margin: 0;
   text-align: center;
-  font-size: 90px;
+  font-size: 7vh;
   font-family: "Formula Condensed";
   font-style: normal;
   font-weight: 700;
@@ -32,7 +32,7 @@
 .text1__slider {
   color: var(--negro-textos, #081d20);
   font-family: Inter;
-  font-size: 40px;
+  font-size: 3.5vh;
   font-style: normal;
   font-weight: 400;
   font-family: "Inter";
@@ -45,7 +45,7 @@
   text-align: center;
   font-family: "Inter", sans-serif;
   font-family: Inter;
-  font-size: 40px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
