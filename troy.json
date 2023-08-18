@@ -159,6 +159,26 @@
       "width": "2047px",
       "height": "1824px"
     },
+    "images": [
+      {
+        "name": "scroll",
+        "width": "47.06px",
+        "height": "95px",
+        "top": "847px",
+        "left": "946px",
+        "position": "absolute",
+        "zIndex": "1"
+      },
+      {
+        "name": "group",
+        "width": "40px",
+        "height": "45px",
+        "top": "5080.33px",
+        "left": "965.29px",
+        "position": "absolute",
+        "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
+      }
+    ],
     "text": [
       {
         "content": "TRATA DE",
