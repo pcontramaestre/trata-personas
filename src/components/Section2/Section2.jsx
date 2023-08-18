@@ -11,6 +11,8 @@ import MedicinaForzada from "./MedicinaForzada/MedicinaForzada";
 import Adopcion from "./Adopcion/Adopcion";
 import Matrimonio from "./Matrimonio/Matrimonio";
 import Esclavitud from "./Esclavitud/Esclavitud";
+import PracticasEsclavitud from "./Esclavitud/PracticasEsclavitud/PracticasEsclavitud";
+import ActividadesIlicitas from "./ActividadesIlicitas/ActividadesIlicitas";
 
 function Section2() {
   const page1 = data[0].finalidades.page1;
@@ -31,6 +33,8 @@ function Section2() {
       <Adopcion />
       <Matrimonio />
       <Esclavitud />
+      <PracticasEsclavitud page11={data}/>
+      <ActividadesIlicitas/>
       <NoteBook />
       <BigInfoBox />
     </section>
