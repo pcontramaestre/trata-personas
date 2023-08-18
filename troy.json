@@ -1263,7 +1263,14 @@
         "left": "0px"
       },
       {
-        "name": "group",
+        "name": "grafico",
+        "width": "888px",
+        "height": "779px",
+        "top": "58182px",
+        "left": "220px"
+      },
+      {
+        "name": "hand",
         "width": "29.712223052978516px",
         "height": "33.33434295654297px",
         "top": "59889.33203125px",
@@ -1413,6 +1420,66 @@
         "letterSpacing": "0em",
         "textAlign": "center",
         "color": "#006873"
+      },
+      {
+        "content": "47",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "58783px",
+        "left": "370px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "110",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "58716px",
+        "left": "513px",
+        "font-family": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "56",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "58780px",
+        "left": "710px",
+        "font-family": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "551",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "58308px",
+        "left": "876px",
+        "font-family": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
       },
       {
         "content": "En el <span>periodo 2018-2021</span>",
@@ -1848,6 +1915,29 @@
         }
       ]
     },
+    "animation": {
+      "width": "1920px",
+      "height": "1080px",
+      "top": "60427px",
+      "backgroundImage": "animationBackground.png",
+      "backgroundColor": "#FFDCD1",
+      "images": [
+        {
+          "name": "bus",
+          "width": "1369px",
+          "height": "310px",
+          "top": "753px",
+          "left": "1814px"
+        },
+        {
+          "name": "plane",
+          "width": "1551px",
+          "height": "523px",
+          "top": "88px",
+          "left": "-1451px"
+        }
+      ]
+    },
     "bigInfoBox": {
       "width": "1700px",
       "height": "478px",
@@ -1905,10 +1995,10 @@
         }
       ],
       "bar": {
-        "height": "220.0000000000002px",
-        "top": "5337px",
+        "height": "306px",
+        "top": "61885px",
         "left": "250px",
-        "borderLeft": "1px solid #FFFFFF"
+        "borderLeft": "1px solid #081D20"
       }
     }
   }
