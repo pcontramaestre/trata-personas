@@ -12,12 +12,6 @@ const Testimonios = ({ name1, name2, laboral }) => {
     },
   ];
 
-  console.log(
-    testimonios[1].name === null
-      ? console.log("es null")
-      : console.log("no es null", console.log(testimonios[1].name))
-  );
-
   return (
     <div>
       {testimonios[1].name === null ? (

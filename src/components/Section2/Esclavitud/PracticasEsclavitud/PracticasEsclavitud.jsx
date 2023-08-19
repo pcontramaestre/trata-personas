@@ -19,7 +19,7 @@ const PracticasEsclavitud = ({ page11 }) => {
       />
       <div className="practicas__container">
         {esclavitud.map((e, index) => (
-          <div className="practicas__content">
+          <div className="practicas__content" key={index}>
             <div
               className={`practicas__texts ${
                 e.item === "Servidumbre por deudas" || e.item === 

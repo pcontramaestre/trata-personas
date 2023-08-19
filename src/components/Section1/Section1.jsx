@@ -15,10 +15,12 @@ function Section1() {
 
   return (
     <section className={style.Section1}>
-      <div className={style.page1}>
-        <h1 className={style.page1__title}>
-          {page1.text1} <br /> {page1.text2}
-        </h1>
+      <div className={style.page1content}>
+        <div className={style.page1}>
+          <h1 className={style.page1__title}>
+            {page1.text1} <br /> {page1.text2}
+          </h1>
+        </div>
       </div>
       <div className={style.slider__content}>
         <Slides />

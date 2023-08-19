@@ -10,11 +10,15 @@
   background: #fff0f1;
 }
 
+.page1content{
+  height: 160vh;
+}
+
 .page1 {
   background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
-  height: 100vh;
+  height: 100%;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
@@ -25,9 +29,9 @@
   color: #ffdcd1;
   position: absolute;
   font-family: "Formula Condensed";
-  right: 10vw;
-  bottom: 50%;
-  font-size: 8vh;
+  right: 25vw;
+  bottom: 60%;
+  font-size: 10vh;
   font-style: normal;
   flex-shrink: 0;
   font-weight: 700;
