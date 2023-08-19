@@ -36,8 +36,5 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.BigInfoBoxTitle span:hover .BigInfoBoxContainerHover {
-    display: inline-block;
+    z-index: 1;
 }
