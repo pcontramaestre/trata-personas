@@ -115,7 +115,7 @@ function SheetNews ({ hover, footer, icon }) {
   }
 
   return (
-    <div style={sheetStyles} className={hover.especial ? style.especial : style.NewsArticleHover}>
+    <div style={sheetStyles} className={style.NewsArticleHover}>
       <h1 style={titleStyle} className={style.titleIntoArticle}>{hover.title.content}</h1>
       <div className={style.vector} />
       <p dangerouslySetInnerHTML={{ __html: hover.text.content }} style={textStyle} className={style.IntoArticle} />
