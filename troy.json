@@ -809,7 +809,7 @@
       "backgroundColor": "#01535E",
       "text": [
         {
-          "content": "El delito de la trata de personas y el <span>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
+          "content": "El delito de la trata de personas y el <span id='specialSpan'>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
           "tag": "h1",
           "width": "1175px",
           "height": "110px",
@@ -860,6 +860,37 @@
         "top": "5337px",
         "left": "250px",
         "borderLeft": "1px solid #FFFFFF"
+      },
+      "icons": {
+        "name": "group",
+        "width": "39.997704278843464px",
+        "height": "40.00000174456551px",
+        "top": "5260px",
+        "left": "1300px",
+        "transform": "rotateZ(180deg)",
+        "filter": "brightness(0) saturate(100%) invert(70%) sepia(28%) saturate(625%) hue-rotate(134deg) brightness(91%) contrast(82%)",
+        "hover": {
+          "width": "1119.0040283203125px",
+          "height": "204.9998321533203px",
+          "top": "-175px",
+          "left": "570px",
+          "backgroundImage": "gratinBeish.png",
+          "backgroundColor": "#FFFCED",
+          "text": {
+            "content": "Es importante reconocer la diferencia entre la trata de personas y el tráfico ilícito de migrantes. El tráfico ilícito de migrantes se refiere a la facilitación de la entrada irregular de una persona en un Estado del cual dicha persona no es nacional ni residente permanente con el fin de obtener, directa o indirectamente, un beneficio financiero u otro beneficio de orden material. En algunos casos los dos delitos pueden estar relacionados, pues las redes de tráfico podrían estar conectadas a redes de trata (OIM, 2019).",
+            "width": "1052px",
+            "height": "128px",
+            "top": "45px",
+            "left": "33px",
+            "fontFamily": "Inter",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "letterSpacing": "0em",
+            "textAlign": "left",
+            "color": "#000000"
+          }
+        }
       }
     }
   },
