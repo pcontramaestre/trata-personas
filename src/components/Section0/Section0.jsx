@@ -7,12 +7,14 @@ import style from './Section0.module.css'
 
 import scroll from '../../assets/Instructions/scroll1.svg'
 import group from '../../assets/Instructions/group.svg'
+import audio1 from '../../assets/Instructions/audio1.svg'
 
 import data from '../../../troy.json'
 
 const icons = {
   scroll,
-  group
+  group,
+  audio1
 }
 
 const { homeHeader } = data
