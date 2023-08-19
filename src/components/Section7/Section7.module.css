@@ -27,3 +27,13 @@
 .InterestingEventsText span {
     font-weight: 700
 }
+
+.scroll2 {
+    animation: rightLeft 0.8s infinite alternate ease-in-out;
+}
+
+@keyframes rightLeft {
+    to {
+        transform: translateX(2vw);
+    }
+}

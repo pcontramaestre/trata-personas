@@ -115,15 +115,35 @@ function Animation () {
       width: convertSize(image.width),
       height: convertSize(image.height),
       top: convertSize(image.top),
-      left: convertSize(image.left)
+      left: convertSize(image.left),
+      backgroundImage: `url("./src/assets/Section5/${image.name}.png")`
     }
   ))
+
+  const stylesText = {}
+
+  animation.images.forEach(image => {
+    stylesText[image.name] = image.text.listText.map((text) => ({
+      ...image.text[text.typeText],
+      top: convertSize(text.top),
+      left: convertSize(text.left),
+      fontSize: convertSize(image.text[text.typeText].fontSize),
+      lineHeight: convertSize(image.text[text.typeText].lineHeight),
+      transform: `rotateZ(${-Number(text.angle.split('deg')[0])}deg)`
+    }))
+  })
 
   return (
     <div style={animationContainerStyles} className={style.animationContainer}>
       {
         animation.images.map((image, index) => (
-          <img src={images[image.name]} className={style.animationPictures} style={picturesStyles[index]} key={index} />
+          <div  className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
+            {
+              image.text.listText.map((content, index) => (
+                <label style={stylesText[image.name][index]} key={content.content + index}>{content.content}</label>
+              ))
+            }
+          </div>
         ))
       }
     </div>

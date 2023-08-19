@@ -12,3 +12,7 @@
     position: absolute;
     font-family: 'Inter', sans-serif;
 }
+
+.MapCard img {
+    margin-right: 0.3vw;
+}

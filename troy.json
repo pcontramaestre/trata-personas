@@ -177,6 +177,14 @@
         "left": "965.29px",
         "position": "absolute",
         "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
+      },
+      {
+        "name": "audio1",
+        "width": "57.93px",
+        "height": "40px",
+        "top": "158px",
+        "left": "1758px",
+        "position": "absolute"
       }
     ],
     "text": [
@@ -473,7 +481,7 @@
           },
           "hover": {
             "width": "750px",
-            "height": "930px",
+            "height": "790px",
             "top": "0px",
             "left": "650px",
             "backgroundImage": "sheetM",
@@ -546,7 +554,7 @@
           },
           "hover": {
             "width": "791px",
-            "height": "973px",
+            "height": "790px",
             "top": "-65px",
             "left": "1100px",
             "backgroundImage": "sheetS",
@@ -907,6 +915,17 @@
       "top": "71906px",
       "color": "#002526"
     },
+    "images": [
+      {
+        "name": "scroll2",
+        "width": "130px",
+        "height": "62.4px",
+        "top": "73801px",
+        "left": "895px",
+        "position": "absolute",
+        "zIndex": "1"
+      }
+    ],
     "text": [
       {
         "content": "ACONTECIMIENTOS",
@@ -1706,14 +1725,29 @@
         "color": "#0A4B4E"
       },
       {
-        "content": "764 víctimas de trata de personas.",
+        "content": "764 víctimas de",
         "tag": "h2",
-        "width": "573px",
-        "height": "321px",
+        "width": "525px",
+        "height": "100px",
         "top": "58530px",
         "left": "1160px",
         "fontFamily": "Formula Condensed",
         "fontSize": "97px",
+        "fontWeight": "700",
+        "lineHeight": "116px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "trata de personas.",
+        "tag": "h2",
+        "width": "525px",
+        "height": "100px",
+        "top": "58630px",
+        "left": "1160px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
         "fontWeight": "700",
         "lineHeight": "116px",
         "letterSpacing": "0em",
@@ -2108,18 +2142,144 @@
       "backgroundColor": "#FFDCD1",
       "images": [
         {
-          "name": "bus",
-          "width": "1369px",
-          "height": "310px",
-          "top": "753px",
-          "left": "1814px"
-        },
-        {
           "name": "plane",
           "width": "1551px",
           "height": "523px",
           "top": "88px",
-          "left": "-1451px"
+          "left": "-1451px",
+          "text": {
+            "generalText": {
+              "fontFamily": "Inika",
+              "fontSize": "30px",
+              "fontWeight": "400",
+              "lineHeight": "39px",
+              "letterSpacing": "0.03em",
+              "textAlign": "right",
+              "color": "#125053"
+            },
+            "specialText1": {
+              "fontFamily": "Inika",
+              "fontSize": "80px",
+              "fontWeight": "700",
+              "lineHeight": "104px",
+              "letterSpacing": "0.03em",
+              "textAlign": "left",
+              "color": "#CE5C3B"
+            },
+            "specialText2": {
+              "fontFamily": "Formula Condensed",
+              "fontSize": "120px",
+              "fontWeight": "700",
+              "lineHeight": "144px",
+              "letterSpacing": "0.03em",
+              "textAlign": "center",
+              "color": "#125053"
+            },
+            "listText": [
+              {
+                "content": "680",
+                "typeText": "specialText1",
+                "top": "220px",
+                "left": "115px",
+                "angle": "25.26deg"
+                
+              },
+              {
+                "content": "90%",
+                "typeText": "specialText2",
+                "top": "139.97px",
+                "left": "452.2px",
+                "angle": "-3.04deg"
+              },
+              {
+                "content": "personas",
+                "typeText": "generalText",
+                "top": "203.14px",
+                "left": "255.55px",
+                "angle": "19.7deg"
+              },
+              {
+                "content": "víctimas",
+                "typeText": "generalText",
+                "top": "291.84px",
+                "left": "156.1px",
+                "angle": "26.4deg"
+              },
+              {
+                "content": "repatriadas",
+                "typeText": "generalText",
+                "top": "234.24px",
+                "left": "274.75px",
+                "angle": "18.71deg"
+              }
+            ]
+          }
+        },
+        {
+          "name": "bus",
+          "width": "1369px",
+          "height": "310px",
+          "top": "753px",
+          "left": "1814px",
+          "text": {
+            "generalText": {
+              "fontFamily": "Inika",
+              "fontSize": "30px",
+              "fontWeight": "400",
+              "lineHeight": "39px",
+              "letterSpacing": "0.03em",
+              "textAlign": "right",
+              "color": "#125053"
+            },
+            "specialText1": {
+              "fontFamily": "Inika",
+              "fontSize": "48px",
+              "fontWeight": "700",
+              "lineHeight": "62.54px",
+              "letterSpacing": "0.03em",
+              "textAlign": "left",
+              "color": "#CE5C3B"
+            },
+            "specialText2": {
+              "fontFamily": "Formula Condensed",
+              "fontSize": "120px",
+              "fontWeight": "700",
+              "lineHeight": "144px",
+              "letterSpacing": "0.03em",
+              "textAlign": "center",
+              "color": "#125053"
+            },
+            "listText": [
+              {
+                "content": "10%",
+                "typeText": "specialText2",
+                "top": "107.19px",
+                "left": "869.95px",
+                "angle": "-4.96deg"
+              },
+              {
+                "content": "73",
+                "typeText": "specialText1",
+                "top": "111.94px",
+                "left": "1035.07px",
+                "angle": "11.28deg"
+              },
+              {
+                "content": "personas",
+                "typeText": "generalText",
+                "top": "107.144px",
+                "left": "1100.35px",
+                "angle": "11.28deg"
+              },
+              {
+                "content": "víctimas repatriadas",
+                "typeText": "generalText",
+                "top": "147.84px",
+                "left": "1035.07px",
+                "angle": "11.28deg"
+              }
+            ]
+          }
         }
       ]
     },
