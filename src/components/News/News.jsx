@@ -1,5 +1,7 @@
 import style from './News.module.css'
 
+import group from '../../assets/Instructions/group.svg'
+
 function convertSize (input) {
   const n = Number(input.split('px')[0])
   return (n * 100 / 1920) + 'vw'
@@ -7,15 +9,21 @@ function convertSize (input) {
 
 function News ({ news }) {
   if (!news) return null
-  const totalHeight = news.reduce((acc, curr) => Number(acc.split('px')[0]) < Number(curr.position.top.split('px')[0]) ? acc : curr.position.top, news[0].position.top)
+
+  const totalHeight = news.articles.reduce((acc, curr) => Number(acc.split('px')[0]) < Number(curr.position.top.split('px')[0]) ? acc : curr.position.top, news.articles[0].position.top)
+
   const newsBackgroundContainer = {
     top: convertSize(totalHeight)
   }
+
   return (
     <div id='NewsBackground' className={style.NewsBackground} style={newsBackgroundContainer}>
       {
-        news.map((article, index) => (
-          <Card article={article} key={index} totalHeight={totalHeight} />
+        news.articles.map((article, index) => (
+          <div key={index}>
+            <Card article={article} key={index} totalHeight={totalHeight} />
+            <SheetNews hover={article.hover} footer={news.footer} icon={news.footerIcon} />
+          </div>
         ))
       }
     </div>
@@ -51,6 +59,70 @@ function Card ({ article, totalHeight }) {
     <div className={style.NewsArticle} style={articleStyle}>
       <p style={titleStyle}>{article.title.text}</p>
       <footer style={footerStyle}>{article.footer.text}</footer>
+    </div>
+  )
+}
+
+function SheetNews ({ hover, footer, icon }) {
+  const sheetStyles = {
+    width: convertSize(hover.width),
+    height: convertSize(hover.height),
+    top: convertSize(hover.top),
+    left: convertSize(hover.left),
+    backgroundImage: `url("./src/assets/News/${hover.backgroundImage}.png")`
+  }
+
+  const titleStyle = {
+    ...hover.title,
+    width: convertSize(hover.title.width),
+    height: convertSize(hover.title.height),
+    top: convertSize(hover.title.top),
+    left: convertSize(hover.title.left),
+    fontSize: convertSize(hover.title.fontSize),
+    lineHeight: convertSize(hover.title.lineHeight)
+  }
+
+  const textStyle = {
+    ...hover.text,
+    width: convertSize(hover.text.width),
+    height: convertSize(hover.text.height),
+    top: convertSize(hover.text.top),
+    left: convertSize(hover.text.left),
+    fontSize: convertSize(hover.text.fontSize),
+    lineHeight: convertSize(hover.text.lineHeight)
+  }
+
+  const footerStyle = {
+    ...hover.footer,
+    width: convertSize(hover.footer.width),
+    height: convertSize(hover.footer.height),
+    top: convertSize(hover.footer.top),
+    left: convertSize(hover.footer.left),
+    fontSize: convertSize(hover.footer.fontSize),
+    lineHeight: convertSize(hover.footer.lineHeight)
+  }
+
+  const linkStyles = {
+    ...footer,
+    fontSize: convertSize(footer.fontSize),
+    lineHeight: convertSize(footer.lineHeight)
+  }
+
+  const iconStyles = {
+    ...icon,
+    width: convertSize(icon.width),
+    height: convertSize(icon.height)
+  }
+
+  return (
+    <div style={sheetStyles} className={hover.especial ? style.especial : style.NewsArticleHover}>
+      <h1 style={titleStyle} className={style.titleIntoArticle}>{hover.title.content}</h1>
+      <div className={style.vector} />
+      <p dangerouslySetInnerHTML={{ __html: hover.text.content }} style={textStyle} className={style.IntoArticle} />
+      <footer className={style.footerContainer}>
+        <label style={footerStyle} className={style.IntoArticle}>{hover.footer.content}</label>
+        <a href={hover.link} target='_blank' className={style.articleFooter} style={linkStyles} rel='noreferrer'><img src={group} style={iconStyles} /> CONSULTA LA NOTICIA COMPLETA</a>
+      </footer>
     </div>
   )
 }

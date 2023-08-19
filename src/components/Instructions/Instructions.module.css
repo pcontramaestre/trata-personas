@@ -57,3 +57,23 @@
     margin: 0px;
     text-align: center;
 }
+
+.scroll {
+    animation: upAndDrown 1s infinite alternate ease-in-out;
+}
+
+.infoGifBlanco {
+    animation: expand 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes upAndDrown {
+    to {
+        transform: translateY(-1.5vw);
+    }
+}
+
+@keyframes expand {
+    to {
+        transform: scale(1.5);
+    }
+}
