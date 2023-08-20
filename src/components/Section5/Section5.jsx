@@ -1,5 +1,5 @@
 import NoteBook from '../NoteBook/NoteBook'
-import BarGraph from '../BarGraph/BarGraph'
+// import BarGraph from '../BarGraph/BarGraph'
 import Map from '../Map/Map'
 import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
@@ -64,7 +64,7 @@ function Section5 () {
   }))
 
   const stuffedStyle = {
-    top: convertSize('6601px'),
+    top: convertSize(61507 - Number(repatriation.top.split('px')[0]) + 'px'),
     height: convertSize('846px')
   }
 
@@ -92,7 +92,7 @@ function Section5 () {
         })
       }
       <NoteBook noteBook={noteBook} topSection={repatriation.top} />
-      <BarGraph />
+      {/* <BarGraph /> */}
       <Map map={map} topSection={repatriation.top} />
       <Animation />
       <BigInfoBox bigInfoBox={bigInfoBox} topSection={repatriation.top} />
@@ -137,7 +137,7 @@ function Animation () {
     <div style={animationContainerStyles} className={style.animationContainer}>
       {
         animation.images.map((image, index) => (
-          <div  className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
+          <div className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
             {
               image.text.listText.map((content, index) => (
                 <label style={stylesText[image.name][index]} key={content.content + index}>{content.content}</label>
