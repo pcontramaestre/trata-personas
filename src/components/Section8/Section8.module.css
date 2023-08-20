@@ -1,0 +1,19 @@
+.CreditsBackground {
+    position: relative;
+}
+
+.pictures {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.creditsText {
+    position: absolute;
+    margin: 0px;
+    z-index: 3;
+}
+
+.creditsText span {
+    font-weight: 700
+}
