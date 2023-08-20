@@ -5,7 +5,7 @@
 }
 
 .NoteBook {
-  background: url("../../../assets/Img-Section01/Page03/hoja.png");
+  background-image: url("../../../assets/Img-Section01/Page03/hoja.png");
   height: 100vh;
   width: 80vw;
   background-repeat: no-repeat;
@@ -33,51 +33,53 @@
   transform: rotate(-2.362deg);
   text-align: center;
   margin-left: 20vh;
-  margin-top: 20vh;
+  margin-top: 21vh;
   font-style: normal;
-  width: 40%;
+  width: 45%;
 }
 
 .NoteBook__text1 {
+  width: 100%;
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
   font-size: 3vh;
   font-weight: 400;
-  text-align: start;
+  text-align: left;
   font-family: "Inter", sans-serif;
   margin: 0;
 }
 
 .NoteBook__text2 {
+  width: 100%;
   transform: rotate(-4.362deg);
   color: #c18831;
   font-family: "Formula Condensed";
-  font-size: 48px;
+  font-size: 2.5em;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
-  text-align: start;
+  text-align: left;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 4px;
 }
 
 .NoteBook__text3 {
   transform: rotate(-4.362deg);
-  text-align: start;
+  text-align: left;
   color: var(--negro-textos, #081d20);
   font-family: Inter;
-  font-size: 25px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   line-height: normal;
   letter-spacing: 2.75px;
-  margin-left: 12px;
+  margin-left: 2vh;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1023px) {
   .NoteBook__texts {
     width: 60%;
   }
@@ -108,12 +110,12 @@
     font-size: 1.5vh;
   }
   .NoteBook__text2 {
+    margin-left: 5px;
     font-size: 2.5vw;
   }
 
   .NoteBook__text3 {
     font-size: 1.5vh;
-    margin-left: 12px;
   }
 
   .NoteBook {
@@ -143,3 +145,31 @@
     right: -12vh;
   }
 }
+
+@media screen and (min-height: 1024px) and (max-width: 720px) {
+  .img__hands {
+    right: -25vw;
+  }
+
+  .NoteBook {
+    background-repeat: no-repeat;
+    background-size: 80vh;
+    transform: rotate(-4.362deg);
+  }
+
+  .NoteBook__texts {
+    margin-top: 12.5em;
+    margin-left: 9.5em;
+    width: 60%;
+  }
+  
+  .NoteBook__text2 {
+    margin-left: 0.5em;
+  }
+
+  .NoteBook__text3 {
+    font-size: 1.5vh;
+
+  }
+}
+

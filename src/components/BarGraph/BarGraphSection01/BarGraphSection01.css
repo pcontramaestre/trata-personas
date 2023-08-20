@@ -1,33 +1,19 @@
 .BarGraph {
-  margin-top: 10vh;
+  margin: 15em 0;
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-
-.bargraph__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .bargraph__image {
   position: relative;
-  background: url("../../../assets/Img-Section01/Page04/grafico09.png");
+  background-image: url("../../../assets/Img-Section01/Page04/grafico09.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 65vh;
   width: 70.5%;
-}
-
-.bargraph__items {
-  display: flex;
-  width: 100%;
 }
 
 .baragraph__graphic {
@@ -72,6 +58,7 @@
   bottom: 15px;
   left: 10px;
 }
+
 .baragraph__column2 {
   position: relative;
   color: var(--verde-claro-textos, #006873);
@@ -83,6 +70,7 @@
   bottom: 75px;
   left: 3px;
 }
+
 .baragraph__column3 {
   position: relative;
   color: var(--verde-claro-textos, #006873);
@@ -161,38 +149,39 @@
 }
 
 @media screen and (max-width: 720px) {
-  .bargraph__texts {
-    justify-content: start;
-  }
-  .bargraph__text2 {
-    font-size: 3vh;
-    line-height: 1;
-    margin: 1vh 0;
-  }
-  .bargraph__text3 {
-    font-size: 6vh;
-    line-height: 0.9;
-  }
-  .bargraph__title {
-    width: 70%;
-    font-size: 1.5vh;
-    margin: 0;
+  .BarGraph {
+    margin: 20em 0;
+    flex-direction: column;
+    height: 80vh;
   }
   .bargraph__image {
-    position: relative;
-    left: -7vh;
-    height: 65vh;
-    width: 55%;
+    height: 30vh;
   }
-  .bargraph__text1 {
-    font-size: 2vh;
-    width: 80%;
-    margin: 0;
+  .baragraph__graphic{
+    width: 90%;
+  }
+  .bargraph__title {
+    font-size: 4vw;
+    width: 90%;
+  }
+  .bargraph__texts{
+    width: 90%;
+    align-items: center;
+  }
+  .bargraph__text2{
+    font-size:2em;
+  }
+  .bargraph__text3{
+    font-size:1em;
+  }
+  .bargraph__text1{
+    width: 100%;
+    font-size: 1em;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .BarGraph {
+  /* .BarGraph {
     margin-top: 0vh;
   }
   .bargraph__title {
@@ -203,5 +192,5 @@
     left: -2vh;
     height: 100%;
     width: 70%;
-  }
+  } */
 }

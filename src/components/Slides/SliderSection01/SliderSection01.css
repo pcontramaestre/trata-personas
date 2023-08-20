@@ -4,7 +4,8 @@
   align-items: center;
   align-content: center;
   /* max-width: 900px; */
-  margin: 8vh 0;
+  margin: 300px 0;
+  /* height: ; */
 }
 
 .slider {
@@ -63,4 +64,43 @@
   letter-spacing: 2.75px;
   text-transform: uppercase;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .slider-container {
+    margin: 0px 0;
+  }
+
+  .slider {
+    padding: 0 5vw;
+  }
+
+  .titleslider {
+    font-size: 7vw;
+  }
+
+  .text1__slider {
+    font-size: 3.5vw;
+  }
+
+  .text2__slider {
+    font-size: 4vw;
+  }
+
+  .text3__slider {
+    font-size: 4vw;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-height: 1200px) {
+  .slider-container {
+    margin: 200px 0;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .slider-container {
+    margin: 100px 0;
+  }
 }
