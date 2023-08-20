@@ -9,6 +9,12 @@ import ExplotacionSexual from "./Explotacion/ExplotacionSexual/ExplotacionSexual
 import ExplotacionLaboral from "./Explotacion/ExplotacionLaboral/ExplotacionLaboral";
 import MedicinaForzada from "./MedicinaForzada/MedicinaForzada";
 import Adopcion from "./Adopcion/Adopcion";
+import Matrimonio from "./Matrimonio/Matrimonio";
+import Esclavitud from "./Esclavitud/Esclavitud";
+import PracticasEsclavitud from "./Esclavitud/PracticasEsclavitud/PracticasEsclavitud";
+import ActividadesIlicitas from "./ActividadesIlicitas/ActividadesIlicitas";
+import Organos from "./Organos/Organos";
+import BoxInfoSection02 from "../BigInfoBox/BigInfoBoxSection02/BoxInfoSection02";
 
 function Section2() {
   const page1 = data[0].finalidades.page1;
@@ -26,9 +32,13 @@ function Section2() {
       <ExplotacionSexual />
       <ExplotacionLaboral />
       <MedicinaForzada />
-      <Adopcion/>
-      <NoteBook />
-      <BigInfoBox />
+      <Adopcion />
+      <Matrimonio />
+      <Esclavitud />
+      <PracticasEsclavitud page11={data} />
+      <ActividadesIlicitas />
+      <Organos />
+      <BoxInfoSection02 />
     </section>
   );
 }

@@ -9,16 +9,19 @@ import style from "./Section1.module.css";
 import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
 import Women from "./Women/Women";
+import Book from "./BookPrueba/Book";
 
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
 
   return (
     <section className={style.Section1}>
-      <div className={style.page1}>
-        <h1 className={style.page1__title}>
-          {page1.text1} <br /> {page1.text2}
-        </h1>
+      <div className={style.page1content}>
+        <div className={style.page1}>
+          <h1 className={style.page1__title}>
+            {page1.text1} <br /> {page1.text2}
+          </h1>
+        </div>
       </div>
       <div className={style.slider__content}>
         <Slides />

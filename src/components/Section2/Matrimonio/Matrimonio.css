@@ -1,4 +1,4 @@
-.medicina__forzada {
+.matrimonio {
   display: flex;
   flex-direction: column;
   background-image: url("../../../assets/Img-Section02/Page07/background.png");
@@ -7,18 +7,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 20vw;
   position: relative;
+  margin-top: 10vh;
 }
 
-.medicina__content {
+.matrimonio__content {
   display: flex;
   position: relative;
   height: 120vh;
   width: 100vw;
 }
 
-.medicina__title {
+.matrimonio__title {
   color: var(--verde-claro-textos, #006873);
   font-family: Formula Condensed;
   width: 100%;
@@ -33,10 +33,9 @@
   text-transform: uppercase;
 }
 
-.pills__img {
-  top: 5vw;
-  left: 0;
-  width: 40vw;
+.matrimonio__img {
+  top: 30vh;
   position: absolute;
-  z-index: 20;
+  left: 0;
+  height: 80%;
 }
