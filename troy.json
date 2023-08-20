@@ -321,20 +321,14 @@
       }
     ],
     "noteBook": {
-      "position": {
-        "top": "1476.27px",
-        "left": "831px",
-        "rotation": "8.49 deg"
-      },
-      "size": {
-        "width": "739.49px",
-        "height": "758.42px"
-      },
+      "top": "1476.27px",
+      "left": "831px",
+      "rotation": "8.49 deg",
+      "width": "739.49px",
+      "height": "758.42px",
+      "backgroundImage": "whiteSheet",
       "text": {
-        "paragraph": {
-          "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
-          "width": "532.7px",
-          "height": "300px",
+        "paragraphStyles": {
           "fontSize": "25px",
           "lineHeight": "30px",
           "fontFamily": "Inter",
@@ -343,10 +337,16 @@
           "textAlign": "left",
           "color": "#081D20"
         },
-        "title": {
-          "content": "CON FINES DE EXPLOTACIÓN”.",
-          "width": "550.49px",
-          "height": "76px",
+        "paragraph": [
+          {
+            "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
+            "width": "532.7px",
+            "height": "300px",
+            "top": "1635.06px",
+            "left": "998px"
+          }
+        ],
+        "titleStyles": {
           "fontSize": "60px",
           "fontFamily": "Formula Condensed",
           "fontWeight": "700",
@@ -355,11 +355,27 @@
           "textAlign": "left",
           "color": "#C18831"
         },
+        "title": [
+          {
+            "content": "CON FINES DE EXPLOTACIÓN”.",
+            "width": "550.49px",
+            "height": "76px",
+            "top": "1941.08px",
+            "left": "1042px"
+          }
+        ],
         "footer": {
           "content": "(OIM,2019)",
           "width": "157.9px",
           "height": "30px",
-          "fontSize": "25px"
+          "top": "2032.25px",
+          "left": "1059px",
+          "fontSize": "25px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left"
         }
       }
     },
@@ -1456,7 +1472,7 @@
   "repatriation": {
     "width": "1920px",
     "top": "54906px",
-    "topNextSection": "62203px",
+    "topNextSection": "62224px",
     "backgroundColor": "#FFF0F1",
     "image": [
       {
@@ -1599,7 +1615,7 @@
         "tag": "p",
         "width": "1241px",
         "height": "152px",
-        "top": "57728px",
+        "top": "57828px",
         "left": "340px",
         "fontFamily": "Inter",
         "fontSize": "38px",
@@ -1891,21 +1907,14 @@
       }
     ],
     "noteBook": {
-      "position": {
-        "top": "56918.77px",
-        "left": "455.52px",
-        "rotation": "8.3deg"
-      },
-      "size": {
-        "width": "887.5px",
-        "height": "911.49px"
-      },
+      "top": "56918.77px",
+      "left": "455.52px",
+      "rotation": "8.3deg",
+      "width": "887.5px",
+      "height": "911.49px",
       "backgroundImage": "whiteSheetShort",
       "text": {
-        "paragraph": {
-          "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
-          "width": "554.42px",
-          "height": "125.65px",
+        "paragraphStyles": {
           "fontSize": "25px",
           "lineHeight": "30px",
           "fontFamily": "Inter",
@@ -1914,10 +1923,16 @@
           "textAlign": "left",
           "color": "#081D20"
         },
-        "title": {
-          "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
-          "width": "566.29px",
-          "height": "144.39px",
+        "paragraph": [
+          {
+            "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
+            "width": "554.42px",
+            "height": "125.65px",
+            "top": "57215.51px",
+            "left": "677px"
+          }
+        ],
+        "titleStyles": {
           "fontSize": "60px",
           "fontFamily": "Formula Condensed",
           "fontWeight": "700",
@@ -1926,11 +1941,28 @@
           "textAlign": "left",
           "color": "#C18831"
         },
+        "title": [
+          {
+            "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
+            "width": "566.29px",
+            "height": "144.39px",
+            "top": "57345.74px",
+            "left": "699px"
+          }
+        ],
         "footer": {
           "content": "(OIM).",
           "width": "292.16px",
           "height": "35.21px",
-          "fontSize": "25px"
+          "top": "57540.69px",
+          "left": "733px",
+          "fontSize": "25px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
         }
       }
     },
@@ -2379,5 +2411,606 @@
         "color": "#063E38"
       }
     ]
+  },
+  "prevention": {
+    "width": "1920px",
+    "height": "8446px",
+    "top": "62203px",
+    "backgroundColor": "#CFF9FF",
+    "images": [
+      {
+        "name": "frontPage",
+        "width": "1920px",
+        "height": "1500px",
+        "top": "62203px",
+        "left": "0px",
+        "objectPosition": "top",
+        "objectFit": "cover"
+      },
+      {
+        "name": "rectanguloAzul",
+        "width": "1920",
+        "height": "1025px",
+        "top": "64386px",
+        "left": "0px"
+      },
+      {
+        "name": "hand",
+        "width": "678px",
+        "height": "823px",
+        "top": "64487px",
+        "left": "189px"
+      },
+      {
+        "name": "graphic1",
+        "width": "1403px",
+        "height": "701px",
+        "top": "65629px",
+        "left": "261px"
+      },
+      {
+        "name": "megafono",
+        "width": "335px",
+        "height": "353px",
+        "top": "68433px",
+        "left": "906px",
+        "zIndex": "1"
+      },
+      {
+        "name": "contenedorRojo1",
+        "width": "1064px",
+        "height": "293px",
+        "top": "67954px",
+        "left": "242px"
+      },
+      {
+        "name": "contenedorRojo2",
+        "width": "1482px",
+        "height": "315px",
+        "top": "68442px",
+        "left": "200px"
+      },
+      {
+        "name": "manosAmigas",
+        "width": "433px",
+        "height": "246px",
+        "top": "68044px",
+        "left": "873px"
+      },
+      {
+        "name": "dona1",
+        "width": "664px",
+        "height": "670px",
+        "top": "69232px",
+        "left": "592px"
+      }
+    ],
+    "text": [
+      {
+        "content": "PREVENCIÓN",
+        "tag": "h1",
+        "width": "777px",
+        "height": "293px",
+        "top": "62540px",
+        "left": "138px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "145px",
+        "fontWeight": "700",
+        "lineHeight": "142px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#08393D"
+      },
+      {
+        "content": "(CORETT, 2021).",
+        "tag": "p",
+        "width": "284.02px",
+        "height": "30px",
+        "top": "64140px",
+        "left": "836px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30.26px",
+        "letterSpacing": "0.11em",
+        "textAlign": "center",
+        "color": "#8B601E"
+      },
+      {
+        "content": "y el tráfico ilícito de migrantes en los países miembros de la Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes”",
+        "tag": "p",
+        "width": "1265px",
+        "height": "82px",
+        "top": "63992px",
+        "left": "346px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "La Estrategia Regional de Prevención de la Trata de personas y el Tráfico Ilícito de Migrantes, está orientada a",
+        "tag": "p",
+        "width": "1050px",
+        "height": "88px",
+        "top": "63623px",
+        "left": "493px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "“FORTALECER Y ARTICULAR ACCIONES ESTRATÉGICAS DE SENSIBILIZACIÓN, CAPACITACIÓN, DIFUSIÓN, DETECCIÓN PARA LA PREVENCIÓN DE LA TRATA DE PERSONAS",
+        "tag": "h2",
+        "width": "1396px",
+        "height": "250px",
+        "top": "63731px",
+        "left": "280px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "70px",
+        "fontWeight": "700",
+        "lineHeight": "84px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "1388px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "1118px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "789px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "528px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Personas alcanzadas con actividades de prevención de trata de personas (2018-2021)",
+        "tag": "p",
+        "width": "675px",
+        "height": "68px",
+        "top": "65514px",
+        "left": "625px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "3.494.203",
+        "tag": "p",
+        "width": "188px",
+        "height": "51px",
+        "top": "66183px",
+        "left": "1359px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "2.312.678",
+        "tag": "p",
+        "width": "173px",
+        "height": "51px",
+        "top": "66209px",
+        "left": "1097px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "28.044.414",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "65715px",
+        "left": "789px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "4.531.489",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "66173px",
+        "left": "520px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "Durante el periodo <span>2018-2021</span>, las actividades de prevención de la trata de personas tuvieron un <span>alcance de</span>",
+        "tag": "p",
+        "width": "1005px",
+        "height": "103px",
+        "top": "66562px",
+        "left": "460px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0.00em",
+        "textAlign": "Center",
+        "color": "#081D20"
+      },
+      {
+        "content": "38.382.784 personas",
+        "tag": "h2",
+        "width": "1122px",
+        "height": "123px",
+        "top": "66665px",
+        "left": "401px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "140px",
+        "fontWeight": "700",
+        "lineHeight": "168px",
+        "letterSpacing": "0.03em",
+        "textAlign": "Center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "Incluye aquellos <span>medios que no implican contacto directo con las poblaciones a las que se intenta prevenir</span>, pero que de manera indirecta tienen un efecto en las mismas: campañas de publicidad, difusión de materiales informativos o campañas por medios de comunicación.",
+        "tag": "p",
+        "width": "557px",
+        "height": "202px",
+        "top": "68509px",
+        "left": "294px",
+        "fontFamily": "Inter",
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "28.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "Incluye todos aquellos <span>medios que implican un contacto directo con las potenciales víctimas</span> o quienes tienen un rol desde su ámbito profesional en la prevención de la trata de personas, como talleres de sensibilización y capacitaciones.",
+        "tag": "p",
+        "width": "583.39px",
+        "height": "175px",
+        "top": "68003px",
+        "left": "292.61px",
+        "fontFamily": "Inter",
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "28.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "personas alcanzadas",
+        "tag": "p",
+        "width": "375px",
+        "height": "75px",
+        "top": "68129px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "42px",
+        "fontWeight": "700",
+        "lineHeight": "50.4px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "personas alcanzadas",
+        "tag": "p",
+        "width": "375px",
+        "height": "75px",
+        "top": "68633px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "57.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "personas alcanzadas",
+        "tag": "p",
+        "width": "375px",
+        "height": "75px",
+        "top": "68633px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "57.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "3.186.277",
+        "tag": "h2",
+        "width": "375px",
+        "height": "75px",
+        "top": "68027px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "96px",
+        "fontWeight": "700",
+        "lineHeight": "115.2px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "34.652.739",
+        "tag": "h2",
+        "width": "375px",
+        "height": "75px",
+        "top": "68533px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "96px",
+        "fontWeight": "700",
+        "lineHeight": "115.2px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "Prevención directa",
+        "tag": "h2",
+        "width": "566px",
+        "height": "94px",
+        "top": "67815px",
+        "left": "310px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
+        "fontWeight": "700",
+        "lineHeight": "96px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "Prevención directa",
+        "tag": "h2",
+        "width": "633px",
+        "height": "94px",
+        "top": "68335px",
+        "left": "305px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "76px",
+        "fontWeight": "700",
+        "lineHeight": "91.2px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "90,3%",
+        "tag": "h2",
+        "width": "152px",
+        "height": "51px",
+        "top": "69506px",
+        "left": "1340px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "75px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "0.0em",
+        "textAlign": "left",
+        "color": "#006873"
+      },
+      {
+        "content": "8,3%",
+        "tag": "h2",
+        "width": "128px",
+        "height": "51px",
+        "top": "69050px",
+        "left": "1074px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "75px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "0.0em",
+        "textAlign": "left",
+        "color": "#006873"
+      },
+      {
+        "content": "1,4%",
+        "tag": "h2",
+        "width": "151px",
+        "height": "51px",
+        "top": "69117px",
+        "left": "471px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "75px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "<span>Sin especificar</span> el medio de prevención",
+        "tag": "p",
+        "width": "328px",
+        "height": "51px",
+        "top": "69195px",
+        "left": "294px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
+        "tag": "p",
+        "width": "467px",
+        "height": "68px",
+        "top": "69127px",
+        "left": "1078px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#006873"
+      },{
+        "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
+        "tag": "p",
+        "width": "467px",
+        "height": "68px",
+        "top": "69127px",
+        "left": "1078px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Personas alcanzadas a través de <span>medios de prevención indirecta</span>",
+        "tag": "p",
+        "width": "491px",
+        "height": "51px",
+        "top": "69577px",
+        "left": "1343px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#006873"
+      }
+    ],
+    "noteBook": {
+      "width": "690.83px",
+      "height": "708.58px",
+      "top": "64505px",
+      "left": "1028.92px",
+      "rotation": "-10.89deg",
+      "backgroundImage": "whiteSheet",
+      "text": {
+        "paragraphStyles": {
+          "fontSize": "25px",
+          "lineHeight": "30px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#081D20"
+        },
+        "paragraph": {
+          "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
+          "width": "554.42px",
+          "height": "125.65px"          
+        },
+        "titleStyles": {
+          "fontSize": "60px",
+          "fontFamily": "Formula Condensed",
+          "fontWeight": "700",
+          "lineHeight": "72px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#C18831"
+        },
+        "title": {
+          "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
+          "width": "566.29px",
+          "height": "144.39px"
+        },
+        "footerStyles": {
+          "fontSize": "25px"
+        },
+        "footer": {
+          "content": "(ACNUDH, 2014).",
+          "width": "292.16px",
+          "height": "35.21px"
+        }
+      }
+    }
   }
 }
