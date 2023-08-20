@@ -1,0 +1,18 @@
+.PreventionBackground {
+    position: relative;
+    width: 100vw;
+}
+
+.images {
+    position: absolute;
+}
+
+.preventionText {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+.preventionText span {
+    font-weight: 700
+}
