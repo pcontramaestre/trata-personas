@@ -11,10 +11,14 @@
 }
 
 .page1content {
-  height: 160vh;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  height: 250vh;
 }
 
 .page1 {
+  display: flex;
+  justify-content: flex-end;
   background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
   height: 100%;
   background-size: cover;
@@ -45,7 +49,7 @@
   }
 
   .page1content {
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   .page1 {
@@ -71,7 +75,7 @@
   }
 
   .page1content {
-    height: 65vh;
+
   }
 
   .page1__title {
@@ -88,12 +92,11 @@
   }
 
   .page1content {
-    height: 60vh;
+    height: 100vh;
   }
 
   .page1 {
     top: -20vh;
-    position: relative;
   }
 
   .page1__title {
@@ -103,8 +106,3 @@
   }
 }
 
-@media screen and (max-height: 900px){
-  .page1content {
-    /* height: 40vh; */
-  }
-}
