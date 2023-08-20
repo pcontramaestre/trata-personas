@@ -2346,5 +2346,38 @@
         "borderLeft": "1px solid #081D20"
       }
     }
+  },
+  "credits": {
+    "width": "1920px",
+    "height": "1662px",
+    "top": "74602px",
+    "left": "0px",
+    "backgroundColor": "#CFF9FF",
+    "images": [
+      {
+        "name": "frontPage",
+        "width": "1948px",
+        "height": "1495.5px",
+        "top": "74602px",
+        "left": "0px"
+      }
+    ],
+    "text": [
+      {
+        "content": "CRÉDITOS",
+        "tag": "h1",
+        "top": "75126px",
+        "left": "125px",
+        "width": "682px",
+        "height": "185px",
+        "fontSize": "180px",
+        "fontFamily": "Formula Condensed",
+        "fontWeight": "700",
+        "lineHeight": "174px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#063E38"
+      }
+    ]
   }
 }
