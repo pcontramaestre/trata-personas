@@ -1,0 +1,16 @@
+.LawEnforcementBackground {
+    position: relative;
+}
+
+.LawEnforcementImages {
+    position: absolute;
+}
+
+.LawEnforcementText {
+    position: absolute;
+    margin: 0px;
+}
+
+.LawEnforcementText span {
+    font-weight: 700
+}
