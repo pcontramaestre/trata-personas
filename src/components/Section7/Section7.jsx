@@ -53,7 +53,7 @@ function Section7 () {
 
   const iconStyles = interestingEvents.images.map(icon => ({
     ...icon,
-    top: convertSize(Number(icon.top.split('px')[0]) - Number(interestingEvents.top.split('px')[0]) + 'px' ),
+    top: convertSize(Number(icon.top.split('px')[0]) - Number(interestingEvents.top.split('px')[0]) + 'px'),
     left: convertSize(icon.left),
     width: convertSize(icon.width),
     height: convertSize(icon.height)
