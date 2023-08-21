@@ -25,7 +25,7 @@ const imagesList = {
 }
 
 const { lawEnforcement } = data
-const { images, text } = lawEnforcement
+const { images, text, news1, news2 } = lawEnforcement
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -83,7 +83,8 @@ function Section4 () {
       }
       {/* <BarGraph /> */}
       {/* <SmallInfoBox /> */}
-      <News />
+      <News news={news1} topSection={lawEnforcement.top} />
+      <News news={news2} topSection={lawEnforcement.top} />
     </section>
   )
 }
