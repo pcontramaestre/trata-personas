@@ -168,6 +168,15 @@
     },
     "images": [
       {
+        "name": "logo",
+        "width": "410.68px",
+        "height": "70px",
+        "top": "92px",
+        "left": "120px",
+        "position": "absolute",
+        "zIndex": "1"
+      },
+      {
         "name": "scroll",
         "width": "47.06px",
         "height": "95px",
