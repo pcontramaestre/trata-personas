@@ -1,0 +1,41 @@
+.matrimonio {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../assets/Img-Section02/Page07/background.png");
+  align-items: center;
+  /* width: 100vw; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 10vh;
+}
+
+.matrimonio__content {
+  display: flex;
+  position: relative;
+  height: 120vh;
+  width: 100vw;
+}
+
+.matrimonio__title {
+  color: var(--verde-claro-textos, #006873);
+  font-family: Formula Condensed;
+  width: 100%;
+  margin-right: 10vw;
+  margin-bottom: 0;
+  margin-top: 20vh;
+  text-align: end;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.matrimonio__img {
+  top: 30vh;
+  position: absolute;
+  left: 0;
+  height: 80%;
+}

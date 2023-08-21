@@ -177,6 +177,14 @@
         "left": "965.29px",
         "position": "absolute",
         "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
+      },
+      {
+        "name": "audio1",
+        "width": "57.93px",
+        "height": "40px",
+        "top": "158px",
+        "left": "1758px",
+        "position": "absolute"
       }
     ],
     "text": [
@@ -313,20 +321,14 @@
       }
     ],
     "noteBook": {
-      "position": {
-        "top": "1476.27px",
-        "left": "831px",
-        "rotation": "8.49 deg"
-      },
-      "size": {
-        "width": "739.49px",
-        "height": "758.42px"
-      },
+      "top": "1476.27px",
+      "left": "831px",
+      "rotation": "8.49 deg",
+      "width": "739.49px",
+      "height": "758.42px",
+      "backgroundImage": "whiteSheet",
       "text": {
-        "paragraph": {
-          "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
-          "width": "532.7px",
-          "height": "300px",
+        "paragraphStyles": {
           "fontSize": "25px",
           "lineHeight": "30px",
           "fontFamily": "Inter",
@@ -335,10 +337,16 @@
           "textAlign": "left",
           "color": "#081D20"
         },
-        "title": {
-          "content": "CON FINES DE EXPLOTACIÓN”.",
-          "width": "550.49px",
-          "height": "76px",
+        "paragraph": [
+          {
+            "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
+            "width": "532.7px",
+            "height": "300px",
+            "top": "1635.06px",
+            "left": "998px"
+          }
+        ],
+        "titleStyles": {
           "fontSize": "60px",
           "fontFamily": "Formula Condensed",
           "fontWeight": "700",
@@ -347,25 +355,78 @@
           "textAlign": "left",
           "color": "#C18831"
         },
+        "title": [
+          {
+            "content": "CON FINES DE EXPLOTACIÓN”.",
+            "width": "550.49px",
+            "height": "76px",
+            "top": "1941.08px",
+            "left": "1042px"
+          }
+        ],
         "footer": {
           "content": "(OIM,2019)",
           "width": "157.9px",
           "height": "30px",
-          "fontSize": "25px"
+          "top": "2032.25px",
+          "left": "1059px",
+          "fontSize": "25px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left"
         }
       }
     },
     "news": {
-      "footer": {
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
         "fontFamily": "Inika",
         "fontSize": "20px",
         "fontWeight": "700",
         "lineHeight": "26px",
         "letterSpacing": "0em",
         "textAlign": "left",
-        "color": "#948678"
+        "color": "#231814",
+        "color2": "#948678"
       },
-      "footerIcon": {
+      "footerIconHover": {
         "width": "20.9993953704834px",
         "height": "24.002277374267578px",
         "top": "874.00390625px",
@@ -386,8 +447,7 @@
           "footer": {
             "text": "UNODC",
             "top": "2808.8px",
-            "left": "262.19px",
-            "fontSize": "20px"
+            "left": "262.19px"
           },
           "size": {
             "width": "603px",
@@ -409,39 +469,21 @@
               "width": "585px",
               "height": "152px",
               "top": "56px",
-              "left": "97px",
-              "fontFamily": "Inika",
-              "fontSize": "30px",
-              "fontWeight": "700",
-              "lineHeight": "39px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "left": "97px"
             },
             "text": {
               "content": "Se ha detectado un menor número de víctimas de la trata de personas a pesar de que la pandemia por COVID-19 y otras crisis han aumentado la vulnerabilidad a la explotación, según el último Informe Mundial sobre Trata de Personas 2022, presentado por la Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC).<br/><br/>El número de víctimas detectadas a escala mundial descendió 11% en 2020 con respecto al año anterior, debido al menor número de detecciones en países de ingresos bajos y medios.<br/><br/>A nivel global, el número de condenas por el delito de trata de personas también disminuyó 27% en 2020 con respecto al año anterior, con descensos más pronunciados registrados en el Sur de Asia (56%), Centroamérica y el Caribe (54%) y Sudamérica (46%), acelerando una tendencia a más largo plazo registrada por UNODC desde 2017. El informe detalla también cómo la guerra y los conflictos ofrecen oportunidades que los delincuentes pueden aprovechar.",
               "width": "586px",
               "height": "490px",
               "top": "286px",
-              "left": "96px",
-              "fontFamily": "Inter",
-              "fontSize": "20px",
-              "fontWeight": "400",
-              "lineHeight": "24px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "left": "96px"
             },
             "footer": {
               "content": "Fuente: Oficina de las Naciones Unidas contra la Droga y el Delito",
               "width": "430px",
               "height": "51px",
-              "top": "811px",
-              "left": "97px",
-              "fontFamily": "Inika",
-              "fontSize": "20px",
-              "fontWeight": "700",
-              "lineHeight": "26px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "top": "700px",
+              "left": "0px"
             },
             "link": "https://www.unodc.org/lpomex/es/noticias/enero-2023/informe-mundial-de-unodc-sobre-trata-de-personas_-las-crisis-cambian-los-patrones-de-la-trata-de-personas-y-dificultan-la-identificacin-de-las-vctimas.html"
           }
@@ -459,8 +501,7 @@
           "footer": {
             "text": "ONU",
             "top": "2955.79px",
-            "left": "772.76px",
-            "fontSize": "20px"
+            "left": "772.76px"
           },
           "size": {
             "width": "603px",
@@ -473,7 +514,7 @@
           },
           "hover": {
             "width": "750px",
-            "height": "930px",
+            "height": "790px",
             "top": "0px",
             "left": "650px",
             "backgroundImage": "sheetM",
@@ -482,39 +523,21 @@
               "width": "585px",
               "height": "76px",
               "top": "56px",
-              "left": "97px",
-              "fontFamily": "Inika",
-              "fontSize": "30px",
-              "fontWeight": "700",
-              "lineHeight": "39px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "left": "97px"
             },
             "text": {
               "content": "Hay niñas y mujeres de todas las edades que son explotadas sexualmente, y hombres que buscan desesperadamente un empleo y se encuentran en manos de bandas criminales que luego los utilizan para realizar trabajos forzosos o para otros fines.<br/><br/>En la actualidad, nos encontramos además con otro aspecto añadido, el hecho delictivo en las redes sociales. Los vídeos e imágenes sexuales se distribuyen por todo el mundo a través de diferentes canales.<br/><br/>La situación, además, se manifiesta de distinta manera dependiendo del lugar. En ciertos países, la finalidad es el trabajo forzoso. En los países que sufren de superpoblación, son los niños los explotados. En Europa y en América del Norte, se da sobre todo la explotación sexual.",
               "width": "562px",
               "height": "440px",
               "top": "203px",
-              "left": "96px",
-              "fontFamily": "Inter",
-              "fontSize": "20px",
-              "fontWeight": "400",
-              "lineHeight": "24px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "left": "96px"
             },
             "footer": {
               "content": "Fuente: Noticias ONU/ Ilias Chatzis - UNODC",
               "width": "430px",
               "height": "23px",
-              "top": "673px",
-              "left": "97px",
-              "fontFamily": "Inika",
-              "fontSize": "20px",
-              "fontWeight": "700",
-              "lineHeight": "26px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "top": "590px",
+              "left": "0px"
             },
             "link": "https://news.un.org/es/interview/2021/12/1501102"
           }
@@ -532,8 +555,7 @@
           "footer": {
             "text": "ONU",
             "top": "2703.8px",
-            "left": "1223.06px",
-            "fontSize": "20px"
+            "left": "1223.06px"
           },
           "size": {
             "width": "603px",
@@ -546,7 +568,7 @@
           },
           "hover": {
             "width": "791px",
-            "height": "973px",
+            "height": "790px",
             "top": "-65px",
             "left": "1100px",
             "backgroundImage": "sheetS",
@@ -555,39 +577,21 @@
               "width": "585px",
               "height": "76px",
               "top": "56px",
-              "left": "97px",
-              "fontFamily": "Inika",
-              "fontSize": "30px",
-              "fontWeight": "700",
-              "lineHeight": "39px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "left": "97px"
             },
             "text": {
               "content": "La trata de personas y el tráfico ilícito de migrantes afecta a hombres, mujeres, niños y niñas, e incluso, bebés. Es un delito que muchas veces pasa desapercibido ante nuestros ojos, mientras vamos al trabajo, hacemos la compra, llevamos a nuestros hijos al colegio o quedamos con los amigos para cenar. Hay industrias con las que entramos en contacto en nuestra vida cotidiana, como la hostelería, la agricultura o la construcción, entre otras, en las que se explota a las víctimas de la trata.<br/><br/>En Europa, los traficantes llevan a grupos de niños de un país a otro y los obligan a mendigar. Luego se quedan todo el dinero y a menudo los dejan morir de hambre. Para ellos, es solo una cuestión monetaria y las personas no son más que una forma de obtener beneficios.<br/><br/>La lucha debe centrarse sobre todo en los que se lucran con estos delitos y en la protección de las víctimas.",
               "width": "570px",
               "height": "440px",
               "top": "203px",
-              "left": "96px",
-              "fontFamily": "Inter",
-              "fontSize": "20px",
-              "fontWeight": "400",
-              "lineHeight": "24px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "left": "96px"
             },
             "footer": {
               "content": "Fuente: Noticias ONU/ Ilias Chatzis - UNODC",
               "width": "430px",
               "height": "23px",
-              "top": "635px",
-              "left": "97px",
-              "fontFamily": "Inika",
-              "fontSize": "20px",
-              "fontWeight": "700",
-              "lineHeight": "26px",
-              "letterSpacing": "0em",
-              "textAlign": "left"
+              "top": "600px",
+              "left": "0px"
             },
             "link": "https://news.un.org/es/interview/2021/12/1501102"
           }
@@ -809,7 +813,7 @@
       "backgroundColor": "#01535E",
       "text": [
         {
-          "content": "El delito de la trata de personas y el <span>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
+          "content": "El delito de la trata de personas y el <span id='specialSpan'>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
           "tag": "h1",
           "width": "1175px",
           "height": "110px",
@@ -860,6 +864,37 @@
         "top": "5337px",
         "left": "250px",
         "borderLeft": "1px solid #FFFFFF"
+      },
+      "icons": {
+        "name": "group",
+        "width": "39.997704278843464px",
+        "height": "40.00000174456551px",
+        "top": "5260px",
+        "left": "1300px",
+        "transform": "rotateZ(180deg)",
+        "filter": "brightness(0) saturate(100%) invert(70%) sepia(28%) saturate(625%) hue-rotate(134deg) brightness(91%) contrast(82%)",
+        "hover": {
+          "width": "1119.0040283203125px",
+          "height": "204.9998321533203px",
+          "top": "-170px",
+          "left": "570px",
+          "backgroundImage": "gratinBeish.png",
+          "backgroundColor": "#FFFCED",
+          "text": {
+            "content": "Es importante reconocer la diferencia entre la trata de personas y el tráfico ilícito de migrantes. El tráfico ilícito de migrantes se refiere a la facilitación de la entrada irregular de una persona en un Estado del cual dicha persona no es nacional ni residente permanente con el fin de obtener, directa o indirectamente, un beneficio financiero u otro beneficio de orden material. En algunos casos los dos delitos pueden estar relacionados, pues las redes de tráfico podrían estar conectadas a redes de trata (OIM, 2019).",
+            "width": "1052px",
+            "height": "128px",
+            "top": "45px",
+            "left": "33px",
+            "fontFamily": "Inter",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "letterSpacing": "0em",
+            "textAlign": "left",
+            "color": "#000000"
+          }
+        }
       }
     }
   },
@@ -876,6 +911,17 @@
       "top": "71906px",
       "color": "#002526"
     },
+    "images": [
+      {
+        "name": "scroll2",
+        "width": "130px",
+        "height": "62.4px",
+        "top": "73801px",
+        "left": "895px",
+        "position": "absolute",
+        "zIndex": "1"
+      }
+    ],
     "text": [
       {
         "content": "ACONTECIMIENTOS",
@@ -1406,7 +1452,7 @@
   "repatriation": {
     "width": "1920px",
     "top": "54906px",
-    "topNextSection": "62203px",
+    "topNextSection": "62224px",
     "backgroundColor": "#FFF0F1",
     "image": [
       {
@@ -1549,7 +1595,7 @@
         "tag": "p",
         "width": "1241px",
         "height": "152px",
-        "top": "57728px",
+        "top": "57828px",
         "left": "340px",
         "fontFamily": "Inter",
         "fontSize": "38px",
@@ -1675,14 +1721,29 @@
         "color": "#0A4B4E"
       },
       {
-        "content": "764 víctimas de trata de personas.",
+        "content": "764 víctimas de",
         "tag": "h2",
-        "width": "573px",
-        "height": "321px",
+        "width": "525px",
+        "height": "100px",
         "top": "58530px",
         "left": "1160px",
         "fontFamily": "Formula Condensed",
         "fontSize": "97px",
+        "fontWeight": "700",
+        "lineHeight": "116px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "trata de personas.",
+        "tag": "h2",
+        "width": "525px",
+        "height": "100px",
+        "top": "58630px",
+        "left": "1160px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
         "fontWeight": "700",
         "lineHeight": "116px",
         "letterSpacing": "0em",
@@ -1826,21 +1887,14 @@
       }
     ],
     "noteBook": {
-      "position": {
-        "top": "56918.77px",
-        "left": "455.52px",
-        "rotation": "8.3deg"
-      },
-      "size": {
-        "width": "887.5px",
-        "height": "911.49px"
-      },
+      "top": "56918.77px",
+      "left": "455.52px",
+      "rotation": "8.3deg",
+      "width": "887.5px",
+      "height": "911.49px",
       "backgroundImage": "whiteSheetShort",
       "text": {
-        "paragraph": {
-          "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
-          "width": "554.42px",
-          "height": "125.65px",
+        "paragraphStyles": {
           "fontSize": "25px",
           "lineHeight": "30px",
           "fontFamily": "Inter",
@@ -1849,10 +1903,16 @@
           "textAlign": "left",
           "color": "#081D20"
         },
-        "title": {
-          "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
-          "width": "566.29px",
-          "height": "144.39px",
+        "paragraph": [
+          {
+            "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
+            "width": "554.42px",
+            "height": "125.65px",
+            "top": "57215.51px",
+            "left": "677px"
+          }
+        ],
+        "titleStyles": {
           "fontSize": "60px",
           "fontFamily": "Formula Condensed",
           "fontWeight": "700",
@@ -1861,11 +1921,28 @@
           "textAlign": "left",
           "color": "#C18831"
         },
+        "title": [
+          {
+            "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
+            "width": "566.29px",
+            "height": "144.39px",
+            "top": "57345.74px",
+            "left": "699px"
+          }
+        ],
         "footer": {
           "content": "(OIM).",
           "width": "292.16px",
           "height": "35.21px",
-          "fontSize": "25px"
+          "top": "57540.69px",
+          "left": "733px",
+          "fontSize": "25px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
         }
       }
     },
@@ -2077,18 +2154,144 @@
       "backgroundColor": "#FFDCD1",
       "images": [
         {
-          "name": "bus",
-          "width": "1369px",
-          "height": "310px",
-          "top": "753px",
-          "left": "1814px"
-        },
-        {
           "name": "plane",
           "width": "1551px",
           "height": "523px",
           "top": "88px",
-          "left": "-1451px"
+          "left": "-1451px",
+          "text": {
+            "generalText": {
+              "fontFamily": "Inika",
+              "fontSize": "30px",
+              "fontWeight": "400",
+              "lineHeight": "39px",
+              "letterSpacing": "0.03em",
+              "textAlign": "right",
+              "color": "#125053"
+            },
+            "specialText1": {
+              "fontFamily": "Inika",
+              "fontSize": "80px",
+              "fontWeight": "700",
+              "lineHeight": "104px",
+              "letterSpacing": "0.03em",
+              "textAlign": "left",
+              "color": "#CE5C3B"
+            },
+            "specialText2": {
+              "fontFamily": "Formula Condensed",
+              "fontSize": "120px",
+              "fontWeight": "700",
+              "lineHeight": "144px",
+              "letterSpacing": "0.03em",
+              "textAlign": "center",
+              "color": "#125053"
+            },
+            "listText": [
+              {
+                "content": "680",
+                "typeText": "specialText1",
+                "top": "220px",
+                "left": "115px",
+                "angle": "25.26deg"
+                
+              },
+              {
+                "content": "90%",
+                "typeText": "specialText2",
+                "top": "139.97px",
+                "left": "452.2px",
+                "angle": "-3.04deg"
+              },
+              {
+                "content": "personas",
+                "typeText": "generalText",
+                "top": "203.14px",
+                "left": "255.55px",
+                "angle": "19.7deg"
+              },
+              {
+                "content": "víctimas",
+                "typeText": "generalText",
+                "top": "291.84px",
+                "left": "156.1px",
+                "angle": "26.4deg"
+              },
+              {
+                "content": "repatriadas",
+                "typeText": "generalText",
+                "top": "234.24px",
+                "left": "274.75px",
+                "angle": "18.71deg"
+              }
+            ]
+          }
+        },
+        {
+          "name": "bus",
+          "width": "1369px",
+          "height": "310px",
+          "top": "753px",
+          "left": "1814px",
+          "text": {
+            "generalText": {
+              "fontFamily": "Inika",
+              "fontSize": "30px",
+              "fontWeight": "400",
+              "lineHeight": "39px",
+              "letterSpacing": "0.03em",
+              "textAlign": "right",
+              "color": "#125053"
+            },
+            "specialText1": {
+              "fontFamily": "Inika",
+              "fontSize": "48px",
+              "fontWeight": "700",
+              "lineHeight": "62.54px",
+              "letterSpacing": "0.03em",
+              "textAlign": "left",
+              "color": "#CE5C3B"
+            },
+            "specialText2": {
+              "fontFamily": "Formula Condensed",
+              "fontSize": "120px",
+              "fontWeight": "700",
+              "lineHeight": "144px",
+              "letterSpacing": "0.03em",
+              "textAlign": "center",
+              "color": "#125053"
+            },
+            "listText": [
+              {
+                "content": "10%",
+                "typeText": "specialText2",
+                "top": "107.19px",
+                "left": "869.95px",
+                "angle": "-4.96deg"
+              },
+              {
+                "content": "73",
+                "typeText": "specialText1",
+                "top": "111.94px",
+                "left": "1035.07px",
+                "angle": "11.28deg"
+              },
+              {
+                "content": "personas",
+                "typeText": "generalText",
+                "top": "107.144px",
+                "left": "1100.35px",
+                "angle": "11.28deg"
+              },
+              {
+                "content": "víctimas repatriadas",
+                "typeText": "generalText",
+                "top": "147.84px",
+                "left": "1035.07px",
+                "angle": "11.28deg"
+              }
+            ]
+          }
         }
       ]
     },
@@ -2154,6 +2357,947 @@
         "left": "250px",
         "borderLeft": "1px solid #081D20"
       }
+    }
+  },
+  "credits": {
+    "width": "1920px",
+    "height": "1662px",
+    "top": "74602px",
+    "left": "0px",
+    "backgroundColor": "#CFF9FF",
+    "images": [
+      {
+        "name": "frontPage",
+        "width": "1948px",
+        "height": "1495.5px",
+        "top": "74602px",
+        "left": "0px"
+      }
+    ],
+    "text": [
+      {
+        "content": "CRÉDITOS",
+        "tag": "h1",
+        "top": "75126px",
+        "left": "125px",
+        "width": "682px",
+        "height": "185px",
+        "fontSize": "180px",
+        "fontFamily": "Formula Condensed",
+        "fontWeight": "700",
+        "lineHeight": "174px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#063E38"
+      }
+    ]
+  },
+  "prevention": {
+    "width": "1920px",
+    "height": "8446px",
+    "top": "62203px",
+    "backgroundColor": "#CFF9FF",
+    "images": [
+      {
+        "name": "frontPage",
+        "width": "1920px",
+        "height": "1500px",
+        "top": "62203px",
+        "left": "0px",
+        "objectPosition": "top",
+        "objectFit": "cover"
+      },
+      {
+        "name": "rectanguloAzul",
+        "width": "1920",
+        "height": "1025px",
+        "top": "64386px",
+        "left": "0px"
+      },
+      {
+        "name": "hand",
+        "width": "678px",
+        "height": "823px",
+        "top": "64487px",
+        "left": "189px"
+      },
+      {
+        "name": "graphic1",
+        "width": "1403px",
+        "height": "701px",
+        "top": "65629px",
+        "left": "261px"
+      },
+      {
+        "name": "megafono",
+        "width": "335px",
+        "height": "353px",
+        "top": "68433px",
+        "left": "906px",
+        "zIndex": "1"
+      },
+      {
+        "name": "contenedorRojo1",
+        "width": "1064px",
+        "height": "293px",
+        "top": "67954px",
+        "left": "242px"
+      },
+      {
+        "name": "contenedorRojo2",
+        "width": "1482px",
+        "height": "315px",
+        "top": "68442px",
+        "left": "200px"
+      },
+      {
+        "name": "manosAmigas",
+        "width": "433px",
+        "height": "246px",
+        "top": "68044px",
+        "left": "873px"
+      },
+      {
+        "name": "dona1",
+        "width": "664px",
+        "height": "670px",
+        "top": "69232px",
+        "left": "592px"
+      }
+    ],
+    "text": [
+      {
+        "content": "PREVENCIÓN",
+        "tag": "h1",
+        "width": "777px",
+        "height": "293px",
+        "top": "62540px",
+        "left": "138px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "145px",
+        "fontWeight": "700",
+        "lineHeight": "142px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#08393D"
+      },
+      {
+        "content": "(CORETT, 2021).",
+        "tag": "p",
+        "width": "284.02px",
+        "height": "30px",
+        "top": "64140px",
+        "left": "836px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30.26px",
+        "letterSpacing": "0.11em",
+        "textAlign": "center",
+        "color": "#8B601E"
+      },
+      {
+        "content": "y el tráfico ilícito de migrantes en los países miembros de la Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes”",
+        "tag": "p",
+        "width": "1265px",
+        "height": "82px",
+        "top": "63992px",
+        "left": "346px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "La Estrategia Regional de Prevención de la Trata de personas y el Tráfico Ilícito de Migrantes, está orientada a",
+        "tag": "p",
+        "width": "1050px",
+        "height": "88px",
+        "top": "63623px",
+        "left": "493px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "“FORTALECER Y ARTICULAR ACCIONES ESTRATÉGICAS DE SENSIBILIZACIÓN, CAPACITACIÓN, DIFUSIÓN, DETECCIÓN PARA LA PREVENCIÓN DE LA TRATA DE PERSONAS",
+        "tag": "h2",
+        "width": "1396px",
+        "height": "250px",
+        "top": "63731px",
+        "left": "280px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "70px",
+        "fontWeight": "700",
+        "lineHeight": "84px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "1388px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "1118px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "789px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "66336px",
+        "left": "528px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Personas alcanzadas con actividades de prevención de trata de personas (2018-2021)",
+        "tag": "p",
+        "width": "675px",
+        "height": "68px",
+        "top": "65514px",
+        "left": "625px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "3.494.203",
+        "tag": "p",
+        "width": "188px",
+        "height": "51px",
+        "top": "66183px",
+        "left": "1359px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "2.312.678",
+        "tag": "p",
+        "width": "173px",
+        "height": "51px",
+        "top": "66209px",
+        "left": "1097px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "28.044.414",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "65715px",
+        "left": "789px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "4.531.489",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "66173px",
+        "left": "520px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.00em",
+        "textAlign": "center",
+        "color": "#053739"
+      },
+      {
+        "content": "Durante el periodo <span>2018-2021</span>, las actividades de prevención de la trata de personas tuvieron un <span>alcance de</span>",
+        "tag": "p",
+        "width": "1005px",
+        "height": "103px",
+        "top": "66562px",
+        "left": "460px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0.00em",
+        "textAlign": "Center",
+        "color": "#081D20"
+      },
+      {
+        "content": "38.382.784 personas",
+        "tag": "h2",
+        "width": "1122px",
+        "height": "123px",
+        "top": "66665px",
+        "left": "401px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "140px",
+        "fontWeight": "700",
+        "lineHeight": "168px",
+        "letterSpacing": "0.03em",
+        "textAlign": "Center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "Incluye aquellos <span>medios que no implican contacto directo con las poblaciones a las que se intenta prevenir</span>, pero que de manera indirecta tienen un efecto en las mismas: campañas de publicidad, difusión de materiales informativos o campañas por medios de comunicación.",
+        "tag": "p",
+        "width": "557px",
+        "height": "202px",
+        "top": "68509px",
+        "left": "294px",
+        "fontFamily": "Inter",
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "28.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "Incluye todos aquellos <span>medios que implican un contacto directo con las potenciales víctimas</span> o quienes tienen un rol desde su ámbito profesional en la prevención de la trata de personas, como talleres de sensibilización y capacitaciones.",
+        "tag": "p",
+        "width": "583.39px",
+        "height": "175px",
+        "top": "68003px",
+        "left": "292.61px",
+        "fontFamily": "Inter",
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "28.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "personas alcanzadas",
+        "tag": "p",
+        "width": "375px",
+        "height": "75px",
+        "top": "68129px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "42px",
+        "fontWeight": "700",
+        "lineHeight": "50.4px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "personas alcanzadas",
+        "tag": "p",
+        "width": "375px",
+        "height": "75px",
+        "top": "68633px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "57.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "personas alcanzadas",
+        "tag": "p",
+        "width": "375px",
+        "height": "75px",
+        "top": "68633px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "57.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "3.186.277",
+        "tag": "h2",
+        "width": "375px",
+        "height": "75px",
+        "top": "68027px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "96px",
+        "fontWeight": "700",
+        "lineHeight": "115.2px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "34.652.739",
+        "tag": "h2",
+        "width": "375px",
+        "height": "75px",
+        "top": "68533px",
+        "left": "1268px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "96px",
+        "fontWeight": "700",
+        "lineHeight": "115.2px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "Prevención directa",
+        "tag": "h2",
+        "width": "566px",
+        "height": "94px",
+        "top": "67815px",
+        "left": "310px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
+        "fontWeight": "700",
+        "lineHeight": "96px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "Prevención directa",
+        "tag": "h2",
+        "width": "633px",
+        "height": "94px",
+        "top": "68335px",
+        "left": "305px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "76px",
+        "fontWeight": "700",
+        "lineHeight": "91.2px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0F4A4D"
+      },
+      {
+        "content": "90,3%",
+        "tag": "h2",
+        "width": "152px",
+        "height": "51px",
+        "top": "69506px",
+        "left": "1340px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "75px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "0.0em",
+        "textAlign": "left",
+        "color": "#006873"
+      },
+      {
+        "content": "8,3%",
+        "tag": "h2",
+        "width": "128px",
+        "height": "51px",
+        "top": "69050px",
+        "left": "1074px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "75px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "0.0em",
+        "textAlign": "left",
+        "color": "#006873"
+      },
+      {
+        "content": "1,4%",
+        "tag": "h2",
+        "width": "151px",
+        "height": "51px",
+        "top": "69117px",
+        "left": "471px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "75px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "<span>Sin especificar</span> el medio de prevención",
+        "tag": "p",
+        "width": "328px",
+        "height": "51px",
+        "top": "69195px",
+        "left": "294px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
+        "tag": "p",
+        "width": "467px",
+        "height": "68px",
+        "top": "69127px",
+        "left": "1078px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#006873"
+      },{
+        "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
+        "tag": "p",
+        "width": "467px",
+        "height": "68px",
+        "top": "69127px",
+        "left": "1078px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Personas alcanzadas a través de <span>medios de prevención indirecta</span>",
+        "tag": "p",
+        "width": "491px",
+        "height": "51px",
+        "top": "69577px",
+        "left": "1343px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#006873"
+      }
+    ],
+    "noteBook": {
+      "width": "690.83px",
+      "height": "708.58px",
+      "top": "64505px",
+      "left": "1028.92px",
+      "rotation": "-10.89deg",
+      "backgroundImage": "whiteSheet",
+      "text": {
+        "paragraphStyles": {
+          "fontSize": "25px",
+          "lineHeight": "32px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#081D20"
+        },
+        "paragraph": [
+          {
+            "content": "Las políticas y actividades incluidas en el concepto de prevención suelen ser las que <span>atacan las causas de la trata de personas.</span>",
+            "width": "443.76px",
+            "height": "141.9px",
+            "top": "64910px"
+          },
+          {
+            "content": "La prevención comprende las",
+            "width": "431.14px",
+            "height": "34.48px",
+            "top": "64655.58px"
+          }
+        ],
+        "titleStyles": {
+          "fontSize": "50px",
+          "fontFamily": "Formula Condensed",
+          "fontWeight": "700",
+          "lineHeight": "60px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#C18831"
+        },
+        "title": [
+          {
+            "content": "MEDIDAS QUE TIENEN POR OBJETO IMPEDIR QUE OCURRAN FUTUROS ACTOS DE TRATA DE PERSONAS.",
+            "width": "501.87px",
+            "height": "201.71px",
+            "top": "64717px"
+          }
+        ],
+        "footer": {
+          "content": "(ACNUDH, 2014).",
+          "width": "248.96px",
+          "height": "30px",
+          "top": "65053px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
+        }
+      }
+    },
+    "bigInfoBox": {
+      "width": "1700px",
+      "height": "595px",
+      "top": "67040px",
+      "left": "112px",
+      "borderRadius": "28px",
+      "border": "1px",
+      "backgroundColor": "#006873",
+      "text": [
+        {
+          "content": "Las diferentes instituciones a cargo de la prevención de la trata de personas han llevado a cabo capacitaciones, seminarios y talleres dirigidos a personas que potencialmente podrían ser víctimas de trata,",
+          "tag": "h1",
+          "width": "1259px",
+          "height": "177px",
+          "top": "67161px",
+          "left": "328px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "44px",
+          "fontWeight": "700",
+          "lineHeight": "52.8px",
+          "letterSpacing": "0.05em",
+          "textAlign": "left",
+          "color": "#D0F9FF"
+        },
+        {
+          "content": " así como a",
+          "tag": "p",
+          "width": "1401px",
+          "height": "137px",
+          "top": "5415px",
+          "left": "324.9921875px",
+          "fontFamily": "Inter",
+          "fontSize": "30px",
+          "fontWeight": "400",
+          "lineHeight": "36.31px",
+          "letterSpacing": "0.05em",
+          "textAlign": "left",
+          "color": "#D0F9FF"
+        },
+        {
+          "content": "<span>personas</span> trabajadoras del sector público y privado <span>que podrían tener contacto con víctimas,</span> en temas de sensibilización, detección y atención de víctimas. Así mismo, <span>han desarrollado campañas de información y sensibilización dirigidas a alertar al público en general,</span> realizando acercamientos con las comunidades más vulnerables y de zonas alejadas.",
+          "tag": "p",
+          "width": "1344px",
+          "height": "173px",
+          "top": "67323px",
+          "left": "328px",
+          "fontFamily": "Inter",
+          "fontSize": "30px",
+          "fontWeight": "400",
+          "lineHeight": "40px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#E8FCFF"
+        },
+        {
+          "content": "(CORETT, 2020).",
+          "tag": "p",
+          "width": "284.03px",
+          "height": "44.6px",
+          "top": "67515px",
+          "left": "328px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30.26px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#A2E7F1"
+        }
+      ],
+      "bar": {
+        "height": "248px",
+        "top": "67212px",
+        "left": "252px",
+        "borderLeft": "2px solid #FFFFFF"
+      }
+    },
+    "news": {
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "México: Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
+            "width": "461.18px",
+            "height": "191.51px",
+            "top": "70421.69px",
+            "left": "183px"
+          },
+          "footer": {
+            "text": "Corett",
+            "top": "70727.81px",
+            "left": "214.18px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70310.36px",
+            "left": "190px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "750px",
+            "height": "817px",
+            "top": "20px",
+            "left": "80px",
+            "backgroundImage": "sheetM",
+            "title": {
+              "content": "Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
+              "width": "534px",
+              "height": "111px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Esta actividad académica está dirigida a funcionarios públicos de los 11 países que conforman la CRM (Canadá, Belice, Costa Rica, El Salvador, Estados Unidos, Guatemala, Honduras, México, Nicaragua, Panamá y República Dominicana), quienes se desempeñan en puestos estratégicos para enfrentar la trata de personas y el trabajo forzoso en sus naciones.<br/>El secretario ejecutivo de la CRM mencionó que “el combate a la trata de personas debe ser permanente y constante en nuestros países; además, el fortalecimiento de capacidades requiere ser fundamental y continuo en nuestras instituciones.<br/>“Es un fenómeno complejo y requiere la coordinación de numerosas personas e instituciones en los sectores público y privado, y en la sociedad civil. Es por ello que la coordinación debe ir de la mano de la actualización de los conocimientos, así como de la comprensión de los retos en nuestra región”",
+              "width": "586px",
+              "height": "440px",
+              "top": "215px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/UNAM",
+              "width": "430px",
+              "height": "23px",
+              "top": "600px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/mexico/especializacion-a-funcionarios-publicos-para-enfrentar-trata-de-personas-y-trabajo-forzoso"
+          }
+        },
+        {
+          "title": {
+            "text": "Honduras: En marcha campaña para combatir trata de personas",
+            "width": "452.52px",
+            "height": "191.51px",
+            "top": "70194.55px",
+            "left": "809.59px"
+          },
+          "footer": {
+            "text": "Corett",
+            "top": "70383px",
+            "left": "758.98px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70059px",
+            "left": "774.69px",
+            "rotation": "-14.88deg"
+          },
+          "hover": {
+            "width": "730px",
+            "height": "735px",
+            "top": "-110px",
+            "left": "700px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "En marcha campaña para combatir trata de personas",
+              "width": "535px",
+              "height": "80px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La Comisión Interinstitucional Contra la Explotación Sexual Comercial y Trata de Personas de Honduras Lanzó la jornada “Puedes Verme”, en colaboración con la Campaña A21, organización no gubernamental global 501, sin fines de lucro que trabaja frente a ese flagelo.<br/>El trabajo se aúna con el objetivo de mostrar a la población de Honduras, cuáles son los indicadores de la trata de personas y que puedan denunciar a los números telefónicos habilitados en el país.<br/>La campaña está compuesta por spots audiovisuales que muestran la realidad que sufren muchas personas en el país al ser captadas por las redes de trata que operan en el territorio nacional, y por vallas publicitarias y banners, a través de medios de comunicación en puntos estratégicos que permitan generar conciencia y sensibilización.",
+              "width": "570px",
+              "height": "408px",
+              "top": "188px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/La Tribuna ",
+              "width": "470px",
+              "height": "23px",
+              "top": "520px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/honduras/en-marcha-campana-para-combatir-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
+            "width": "443.52px",
+            "height": "191.51px",
+            "top": "70470.31px",
+            "left": "1288.02px"
+          },
+          "footer": {
+            "text": "UNODC",
+            "top": "70763.81px",
+            "left": "1313.2px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70358.36px",
+            "left": "1280.02px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "791px",
+            "height": "847px",
+            "top": "-30px",
+            "left": "1115px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
+              "width": "534px",
+              "height": "74px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La campaña para el Día Mundial contra la Trata de Personas de 2023 tiene como objetivo sensibilizar sobre los alarmantes acontecimientos y amenazas identificados por el último Informe Mundial sobre la Trata de Personas de la UNODC y hace un llamamiento a los gobiernos, las fuerzas del orden, los servicios públicos y la sociedad civil para evaluar y mejorar sus esfuerzos para fortalecer la prevención, identificar y apoyar a las víctimas, y poner fin a la impunidad.<br/>Para acabar con la trata debemos reforzar la resistencia contra la explotación y los problemas socioeconómicos y culturales subyacentes que propician la trata. Debemos sensibilizar a todo el mundo sobre el tema de la trata de personas y dirigir así la atención hacia quienes pueden marcar la diferencia en términos de cambio de políticas y gestión de recursos nacionales para reforzar las medidas de prevención, mejorar la identificación de las víctimas, aumentar el apoyo a los supervivientes y acabar con la impunidad.",
+              "width": "588px",
+              "height": "440px",
+              "top": "212px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: UNODC",
+              "width": "430px",
+              "height": "23px",
+              "top": "570px",
+              "left": "0px"
+            },
+            "link": "https://www.un.org/es/observances/end-human-trafficking-day"
+          }
+        }
+      ]
     }
   }
 }

@@ -1,4 +1,8 @@
+import { useEffect } from 'react'
+
 import style from './BigInfoBox.module.css'
+
+import group from '../../assets/Instructions/group.svg'
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -6,6 +10,28 @@ function convertSize (input) {
 }
 
 function BigInfoBox ({ bigInfoBox, topSection }) {
+  useEffect(() => {
+    if (bigInfoBox && bigInfoBox.icons) {
+      const span = document.getElementById('specialSpan')
+      const div = document.getElementById('divHover')
+
+      function activeDisplay () {
+        div.style.display = 'block'
+      }
+
+      function desactiveDisplay () {
+        div.style.display = ''
+      }
+
+      span.addEventListener('mouseenter', activeDisplay)
+      span.addEventListener('mouseleave', desactiveDisplay)
+      return () => {
+        span.removeEventListener('mouseenter', activeDisplay)
+        span.removeEventListener('mouseleave', desactiveDisplay)
+      }
+    }
+  }, [])
+
   if (!bigInfoBox) return null
 
   const bigInfoBoxStyle = {
@@ -35,16 +61,68 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
     left: convertSize(Number(bigInfoBox.bar.left.split('px')[0]) - Number(bigInfoBox.left.split('px')[0]) + 'px')
   }
 
+  const iconStyles = bigInfoBox.icons
+    ? {
+        ...bigInfoBox.icons,
+        width: convertSize(bigInfoBox.icons.width),
+        height: convertSize(bigInfoBox.icons.height),
+        top: convertSize(Number(bigInfoBox.icons.top.split('px')[0]) - Number(bigInfoBox.top.split('px')[0]) + 'px'),
+        left: convertSize(Number(bigInfoBox.icons.left.split('px')[0]) - Number(bigInfoBox.left.split('px')[0]) + 'px')
+      }
+    : {}
+
+  const iconHoverStyles = bigInfoBox.icons
+    ? {
+        ...bigInfoBox.icons.hover,
+        width: convertSize(bigInfoBox.icons.hover.width),
+        height: convertSize(bigInfoBox.icons.hover.height),
+        top: convertSize(bigInfoBox.icons.hover.top),
+        left: convertSize(bigInfoBox.icons.hover.left),
+        backgroundImage: `url("./src/assets/BigInfoBox/${bigInfoBox.icons.hover.backgroundImage}")`,
+        backgroundSize: `${convertSize(bigInfoBox.icons.hover.width)} ${convertSize(bigInfoBox.icons.hover.height)}`,
+        borderRadius: convertSize(bigInfoBox.borderRadius)
+      }
+    : {}
+
+  const textHoverStyles = bigInfoBox.icons
+    ? {
+        ...bigInfoBox.icons.hover.text,
+        width: convertSize(bigInfoBox.icons.hover.text.width),
+        height: convertSize(bigInfoBox.icons.hover.text.height),
+        top: convertSize(bigInfoBox.icons.hover.text.top),
+        left: convertSize(bigInfoBox.icons.hover.text.left),
+        fontSize: convertSize(bigInfoBox.icons.hover.text.fontSize),
+        lineHeight: convertSize(bigInfoBox.icons.hover.text.lineHeight)
+      }
+    : {}
+
   return (
     <div className={style.BigInfoBox} style={bigInfoBoxStyle}>
       <div className={style.BigInfoBoxBar} style={barInfoBox} />
       {
+        bigInfoBox.icons
+          ? (
+            <div id='divHover' style={iconHoverStyles} className={style.BigInfoBoxContainerHover}>
+              <p style={textHoverStyles}>{bigInfoBox.icons.hover.text.content}</p>
+            </div>)
+          : null
+      }
+      {
         bigInfoBox.text.map((texto, index) => {
           if (texto.tag === 'h1') {
-            return <h1 style={textInfoBox[index]} dangerouslySetInnerHTML={{ __html: texto.content }} key={index} />
+            return <h1 className={style.BigInfoBoxTitle} style={textInfoBox[index]} dangerouslySetInnerHTML={{ __html: texto.content }} key={index} />
           }
           return <p style={textInfoBox[index]} dangerouslySetInnerHTML={{ __html: texto.content }} key={index} />
         })
+      }
+      {
+        bigInfoBox.icons
+          ? (
+            <>
+              <img src={group} style={iconStyles} className={style.icon} />
+            </>
+            )
+          : null
       }
     </div>
   )

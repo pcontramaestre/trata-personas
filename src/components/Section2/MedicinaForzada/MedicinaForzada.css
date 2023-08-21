@@ -1,11 +1,11 @@
 .medicina__forzada {
   display: flex;
   flex-direction: column;
-  background: url("../../../assets/Img-Section02/Page07/background.png");
+  background-image: url("../../../assets/Img-Section02/Page07/background.png");
   align-items: center;
-  width: 100vw;
-  height: 130vh;
-  /* background-size: 200vh; */
+  /* width: 100vw; */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-top: 20vw;
   position: relative;
@@ -14,7 +14,7 @@
 .medicina__content {
   display: flex;
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
 }
 

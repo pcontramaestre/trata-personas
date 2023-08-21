@@ -1,9 +1,14 @@
 import style from './Section7.module.css'
 
 import frontPage from '../../assets/Section7/interestingEvents.png'
+import scroll2 from '../../assets/Section7/scroll2.svg'
 
 import data from '../../../troy.json'
 import HandSlide from '../Slides/HandSlide/HandSlide'
+
+const icons = {
+  scroll2
+}
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -46,10 +51,23 @@ function Section7 () {
     lineHeight: texto.lineHeight && convertSize(texto.lineHeight)
   }))
 
+  const iconStyles = interestingEvents.images.map(icon => ({
+    ...icon,
+    top: convertSize(Number(icon.top.split('px')[0]) - Number(interestingEvents.top.split('px')[0]) + 'px'),
+    left: convertSize(icon.left),
+    width: convertSize(icon.width),
+    height: convertSize(icon.height)
+  }))
+
   return (
     <section className={style.InterestingEventsBackground} style={interestingEventsContainer}>
       <img src={frontPage} style={interestingEventsFrontPageStyle} className={style.InterestingEvents} />
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
+      {
+        interestingEvents.images.map((image, index) => (
+          <img src={image && icons[image.name]} className={image.name === 'scroll2' ? style.scroll2 : null} style={iconStyles[index]} key={image.name + index} />
+        ))
+      }
       {
         interestingEvents.text.map((texto, index) => {
           switch (texto.tag) {

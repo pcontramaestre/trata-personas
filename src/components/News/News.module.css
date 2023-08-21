@@ -2,7 +2,7 @@
     position: absolute;
     height: 40vw;
     margin-top: 5vw;
-    background-image: url();
+    z-index: 3;
 }
 
 .NewsArticle {
@@ -21,11 +21,8 @@
     color: #043335;
 }
 
-.NewsArticle footer {
+.NewsArticle label {
     position: absolute;
-    bottom: 11%;
-    left: 10%;
-    font-family: 'Inter', sans-serif;
 }
 
 .NewsArticle:hover + .NewsArticleHover {
@@ -44,6 +41,7 @@
     display: none;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 1;
 }
 
 .titleIntoArticle {
@@ -60,6 +58,20 @@
 
 .IntoArticle {
     margin-left: 4vw;
+}
+
+.footerContainer {
+    position: absolute;
+}
+
+.footerContainer label {
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+.footerContainer a img {
+    transform: scale(1.3);
+    margin-right: 0.2vw;
 }
 
 .articleFooter {

@@ -24,3 +24,17 @@
 .BigInfoBoxBar {
     position: absolute;
 }
+
+.icon {
+    position: absolute;
+    transform: rotateZ(180deg);
+}
+
+.BigInfoBoxContainerHover {
+    display: none;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
