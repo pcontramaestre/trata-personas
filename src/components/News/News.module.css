@@ -2,7 +2,7 @@
     position: absolute;
     height: 40vw;
     margin-top: 5vw;
-    background-image: url();
+    z-index: 3;
 }
 
 .NewsArticle {
@@ -21,11 +21,8 @@
     color: #043335;
 }
 
-.NewsArticle footer {
+.NewsArticle label {
     position: absolute;
-    bottom: 11%;
-    left: 10%;
-    font-family: 'Inter', sans-serif;
 }
 
 .NewsArticle:hover + .NewsArticleHover {
@@ -64,7 +61,7 @@
 }
 
 .footerContainer {
-    margin-top: 3vw;
+    position: absolute;
 }
 
 .footerContainer label {
