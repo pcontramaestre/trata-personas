@@ -5,6 +5,7 @@ import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section0.module.css'
 
+import logo from '../../assets/Instructions/logo.svg'
 import scroll from '../../assets/Instructions/scroll1.svg'
 import group from '../../assets/Instructions/group.svg'
 import audio1 from '../../assets/Instructions/audio1.svg'
@@ -12,6 +13,7 @@ import audio1 from '../../assets/Instructions/audio1.svg'
 import data from '../../../troy.json'
 
 const icons = {
+  logo,
   scroll,
   group,
   audio1
