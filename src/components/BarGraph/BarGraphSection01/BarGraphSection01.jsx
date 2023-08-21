@@ -9,19 +9,21 @@ function BarGraphSection01() {
         <h2 className="bargraph__title">{page4.graphic.title}</h2>
         <div className="bargraph__image">
           {" "}
-          {/* <ul className="baragraph__columns">
-            <li className="baragraph__column1">{page4.graphic.column1}</li>
-            <li className="baragraph__column2">{page4.graphic.column2}</li>
-            <li className="baragraph__column3">{page4.graphic.column3}</li>
-            <li className="baragraph__column4">{page4.graphic.column4}</li>
-          </ul> */}
+          <div className="baragraphcolumns">
+            <ul className="baragraph__columns-1">
+              <li className="baragraph__column1">{page4.graphic.column1}</li>
+              <li className="baragraph__column2">{page4.graphic.column2}</li>
+              <li className="baragraph__column3">{page4.graphic.column3}</li>
+              <li className="baragraph__column4">{page4.graphic.column4}</li>
+            </ul>
+          </div>
         </div>
-        {/* <ul className="baragraph__years">
+        <ul className="baragraph__years">
           <li>{page4.graphic.year1}</li>
           <li>{page4.graphic.year2}</li>
           <li>{page4.graphic.year3}</li>
           <li>{page4.graphic.year4}</li>
-        </ul> */}
+        </ul>
       </div>
       <div className="bargraph__texts">
         <p
