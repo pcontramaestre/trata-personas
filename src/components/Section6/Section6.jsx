@@ -36,7 +36,7 @@ function convertSize (input) {
 }
 
 const { prevention } = data
-const { images, text } = data.prevention
+const { images, text, noteBook, bigInfoBox, news } = data.prevention
 
 function Section6 () {
   const preventionBackground = {
@@ -86,10 +86,10 @@ function Section6 () {
           return true
         })
       }
-      <NoteBook />
+      <NoteBook noteBook={noteBook} topSection={prevention.top} />
       {/* <BarGraph /> */}
-      <BigInfoBox />
-      <News />
+      <BigInfoBox bigInfoBox={bigInfoBox} topSection={prevention.top} />
+      <News news={news} topSection={prevention.top} />
     </section>
   )
 }
