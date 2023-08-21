@@ -3150,7 +3150,7 @@
             "left": "183px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "70727.81px",
             "left": "214.18px"
           },
@@ -3202,7 +3202,7 @@
             "left": "809.59px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "70383px",
             "left": "758.98px"
           },
@@ -4187,7 +4187,7 @@
         "color": "#0A4B4E"
       }
     ],
-    "news": {
+    "news1": {
       "footerCard": {
         "fontFamily": "Inter",
         "fontSize": "20px",
@@ -4251,7 +4251,7 @@
             "left": "795.49px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "51374px",
             "left": "781.52px"
           },
@@ -4265,11 +4265,12 @@
             "rotation": "-8.25deg"
           },
           "hover": {
-            "width": "791px",
-            "height": "683px",
-            "top": "0px",
-            "left": "0px",
+            "width": "650px",
+            "height": "653px",
+            "top": "-20px",
+            "left": "736px",
             "backgroundImage": "sheetS",
+            "backgroundSize": "640px 623px",
             "title": {
               "content": "Panamá continúa lucha contra la trata de personas",
               "width": "464px",
@@ -4279,7 +4280,7 @@
             },
             "text": {
               "content": "4 de enero de 2023<br/><br/>La Comisión Nacional contra la Trata de Personas informó que el 75% de las personas rescatadas, entre ellas cinco menores de edad, están relacionadas con casos de explotación sexual y un 25%por explotación laboral.<br><br/>El 39% de las víctimas son panameñas, mientras que el 38% corresponde a mujeres colombianas, 8% venezolanos y el 15% nicaragüenses.",
-              "width": "570px",
+              "width": "490px",
               "height": "266px",
               "top": "203px",
               "left": "96px"
@@ -4288,7 +4289,7 @@
               "content": "Fuente: CORETT/ Panamá América",
               "width": "477px",
               "height": "23px",
-              "top": "466px",
+              "top": "396px",
               "left": "0px"
             },
             "link": "https://www.coalicioncorett.com/noticias/panama/panama-continua-lucha-contra-la-trata-de-personas"
@@ -4303,7 +4304,7 @@
             "left": "242.02px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "51770.5px",
             "left": "272px"
           },
@@ -4317,10 +4318,10 @@
             "rotation": "7.56deg"
           },
           "hover": {
-            "width": "750px",
-            "height": "817px",
-            "top": "20px",
-            "left": "80px",
+            "width": "700px",
+            "height": "705px",
+            "top": "120px",
+            "left": "150px",
             "backgroundImage": "sheetS",
             "title": {
               "content": "Desarticulan grupo delictivo dedicado a la trata de personas en CDMX",
@@ -4330,7 +4331,7 @@
               "left": "97px"
             },
             "text": {
-              "content": "Fuerzas federales desarticularon un grupo delictivo transnacional dedicado a la trata de personas de Centroamérica que operaba desde la Ciudad de México.<br/>De acuerdo con autoridades de seguridad, el modus operandi de esta organización criminal consistía en captar a las víctimas en su país de origen mediante una oferta laboral como “dama de compañía” con el engaño de que iba a ganar bien económicamente.<br/>Luego de las investigaciones, un juez ordenó la aprehensión seis personas por los delitos de trata de personas con fines de explotación a través de la prostitución ajena, beneficio de la explotación sexual y delincuencia organizada.",
+              "content": "Fuerzas federales desarticularon un grupo delictivo transnacional dedicado a la trata de personas de Centroamérica que operaba desde la Ciudad de México.<br/><br/>De acuerdo con autoridades de seguridad, el modus operandi de esta organización criminal consistía en captar a las víctimas en su país de origen mediante una oferta laboral como “dama de compañía” con el engaño de que iba a ganar bien económicamente.<br/><br/>Luego de las investigaciones, un juez ordenó la aprehensión seis personas por los delitos de trata de personas con fines de explotación a través de la prostitución ajena, beneficio de la explotación sexual y delincuencia organizada.",
               "width": "570px",
               "height": "364px",
               "top": "206px",
@@ -4340,7 +4341,7 @@
               "content": "Fuente: CORETT/El Sol de México",
               "width": "470px",
               "height": "23px",
-              "top": "578px",
+              "top": "478px",
               "left": "0px"
             },
             "link": "https://www.coalicioncorett.com/noticias/mexico/desarticulan-grupo-delictivo-dedicado-a-la-trata-de-personas-en-cdmx"
@@ -4355,7 +4356,7 @@
             "left": "1215px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "51816.5px",
             "left": "1249px"
           },
@@ -4369,11 +4370,11 @@
             "rotation": "7.56 deg"
           },
           "hover": {
-            "width": "791px",
+            "width": "673px",
             "height": "708px",
-            "top": "-110px",
-            "left": "700px",
-            "backgroundImage": "sheetM",
+            "top": "130px",
+            "left": "1170px",
+            "backgroundImage": "sheets",
             "title": {
               "content": "Desde el 2021 hasta la fecha se han rescatado más de 185 víctimas de trata de personas",
               "width": "482px",
@@ -4382,7 +4383,7 @@
               "left": "97px"
             },
             "text": {
-              "content": "Más de 185 víctimas de trata de personas han sido rescatadas en República Dominicana desde el 2021 hasta la fecha, según indicó la titular de la Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas, Yoanna Bejarán.<br/>Bejarán sostuvo que la mayoría de las personas perjudicadas han sido de nacionalidad extranjera. Entre las víctimas mencionó colombianas, venezolanas y haitianas. Sin embargo, también destacó la trata de personas local.<br/>Desde el 2021 hasta este 2023 el Ministerio Público ha logrado 17 condenas.",
+              "content": "Más de 185 víctimas de trata de personas han sido rescatadas en República Dominicana desde el 2021 hasta la fecha, según indicó la titular de la Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas, Yoanna Bejarán.<br/><br/>Bejarán sostuvo que la mayoría de las personas perjudicadas han sido de nacionalidad extranjera. Entre las víctimas mencionó colombianas, venezolanas y haitianas. Sin embargo, también destacó la trata de personas local.<br/><br/>Desde el 2021 hasta este 2023 el Ministerio Público ha logrado 17 condenas.",
               "width": "552px",
               "height": "345px",
               "top": "225px",
@@ -4392,7 +4393,221 @@
               "content": "Fuente: CORETT/Diario Libre",
               "width": "493px",
               "height": "27px",
-              "top": "591px",
+              "top": "491px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/republica-dominicana/desde-el-2021-hasta-la-fecha-se-han-rescatado-mas-de-185-victimas-de-trata-de-personas"
+          }
+        }
+      ]
+    },
+    "news2": {
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "Panamá continúa lucha contra la trata de personas",
+            "width": "481.03px",
+            "height": "95.76px",
+            "top": "51245px",
+            "left": "795.49px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "51374px",
+            "left": "781.52px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "51098px",
+            "left": "751.3px",
+            "rotation": "-8.25deg"
+          },
+          "hover": {
+            "width": "650px",
+            "height": "653px",
+            "top": "-20px",
+            "left": "736px",
+            "backgroundImage": "sheetS",
+            "backgroundSize": "640px 623px",
+            "title": {
+              "content": "Panamá continúa lucha contra la trata de personas",
+              "width": "464px",
+              "height": "76px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "4 de enero de 2023<br/><br/>La Comisión Nacional contra la Trata de Personas informó que el 75% de las personas rescatadas, entre ellas cinco menores de edad, están relacionadas con casos de explotación sexual y un 25%por explotación laboral.<br><br/>El 39% de las víctimas son panameñas, mientras que el 38% corresponde a mujeres colombianas, 8% venezolanos y el 15% nicaragüenses.",
+              "width": "490px",
+              "height": "266px",
+              "top": "203px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/ Panamá América",
+              "width": "477px",
+              "height": "23px",
+              "top": "396px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/panama/panama-continua-lucha-contra-la-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "México: Desarticulan grupo delictivo dedicado a la trata de personas en CDMX",
+            "width": "458.45px",
+            "height": "132.71px",
+            "top": "51587.33px",
+            "left": "242.02px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "51770.5px",
+            "left": "272px"
+          },
+          "size": {
+            "width": "603.02px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "51450.36px",
+            "left": "202px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "700px",
+            "height": "705px",
+            "top": "120px",
+            "left": "150px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Desarticulan grupo delictivo dedicado a la trata de personas en CDMX",
+              "width": "585px",
+              "height": "83px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Fuerzas federales desarticularon un grupo delictivo transnacional dedicado a la trata de personas de Centroamérica que operaba desde la Ciudad de México.<br/><br/>De acuerdo con autoridades de seguridad, el modus operandi de esta organización criminal consistía en captar a las víctimas en su país de origen mediante una oferta laboral como “dama de compañía” con el engaño de que iba a ganar bien económicamente.<br/><br/>Luego de las investigaciones, un juez ordenó la aprehensión seis personas por los delitos de trata de personas con fines de explotación a través de la prostitución ajena, beneficio de la explotación sexual y delincuencia organizada.",
+              "width": "570px",
+              "height": "364px",
+              "top": "206px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/El Sol de México",
+              "width": "470px",
+              "height": "23px",
+              "top": "478px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/mexico/desarticulan-grupo-delictivo-dedicado-a-la-trata-de-personas-en-cdmx"
+          }
+        },
+        {
+          "title": {
+            "text": "República Dominicana<br/>Desde el 2021 hasta la fecha se han rescatado más de 185 víctimas de trata de personas",
+            "width": "476.28px",
+            "height": "187.47px",
+            "top": "51501.33px",
+            "left": "1215px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "51816.5px",
+            "left": "1249px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "51407.36px",
+            "left": "1199px",
+            "rotation": "7.56 deg"
+          },
+          "hover": {
+            "width": "673px",
+            "height": "708px",
+            "top": "130px",
+            "left": "1170px",
+            "backgroundImage": "sheets",
+            "title": {
+              "content": "Desde el 2021 hasta la fecha se han rescatado más de 185 víctimas de trata de personas",
+              "width": "482px",
+              "height": "115px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Más de 185 víctimas de trata de personas han sido rescatadas en República Dominicana desde el 2021 hasta la fecha, según indicó la titular de la Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas, Yoanna Bejarán.<br/><br/>Bejarán sostuvo que la mayoría de las personas perjudicadas han sido de nacionalidad extranjera. Entre las víctimas mencionó colombianas, venezolanas y haitianas. Sin embargo, también destacó la trata de personas local.<br/><br/>Desde el 2021 hasta este 2023 el Ministerio Público ha logrado 17 condenas.",
+              "width": "552px",
+              "height": "345px",
+              "top": "225px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/Diario Libre",
+              "width": "493px",
+              "height": "27px",
+              "top": "491px",
               "left": "0px"
             },
             "link": "https://www.coalicioncorett.com/noticias/republica-dominicana/desde-el-2021-hasta-la-fecha-se-han-rescatado-mas-de-185-victimas-de-trata-de-personas"
