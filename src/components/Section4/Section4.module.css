@@ -1,3 +1,11 @@
 .LawEnforcementBackground {
     position: relative;
 }
+
+.LawEnforcementImages {
+    position: absolute;
+}
+
+.LawEnforcementText {
+    position: absolute;
+}
