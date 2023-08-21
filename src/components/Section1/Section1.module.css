@@ -5,26 +5,36 @@
 
 .Section1 {
   width: 100vw;
+  margin-top: 15vh;
   /* flex-shrink: 0; */
   background: #fff0f1;
 }
 
+.page1content {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  height: 250vh;
+}
+
 .page1 {
-  background: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
-  height: 130vh;
-  background-size: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
   position: relative;
-  /* flex-shrink: 0; */
 }
 
 .page1__title {
   color: #ffdcd1;
   position: absolute;
   font-family: "Formula Condensed";
-  right: 210px;
-  bottom: 370px;
-  font-size: 110px;
+  right: 25vw;
+  bottom: 60%;
+  font-size: 10vh;
   font-style: normal;
   flex-shrink: 0;
   font-weight: 700;
@@ -32,4 +42,50 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1050px) {
+  .Section1 {
+    width: 100vw;
+  }
 
+  .page1 {
+    top: -5vh;
+  }
+
+  .page1__title {
+    right: 4vw;
+    bottom: 40%;
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .Section1 {
+    width: 100vw;
+  }
+
+  .page1__title {
+    right: 4vw;
+    bottom: 50%;
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Section1 {
+    width: 100vw;
+  }
+
+  .page1content {
+    height: 100vh;
+  }
+
+  .page1 {
+    top: -20vh;
+  }
+
+  .page1__title {
+    right: 10vw;
+    bottom: 50%;
+    font-size: 10vw;
+  }
+}

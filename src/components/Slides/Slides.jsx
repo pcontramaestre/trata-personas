@@ -18,7 +18,7 @@ function Slides() {
     },
   ];
   return (
-    <div>
+    <div className="section__01slider">
       <SliderSection01 texts={texts} />
     </div>
   );

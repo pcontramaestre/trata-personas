@@ -1,0 +1,52 @@
+.esclavitud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 140vh;
+  width: 100vw;
+}
+
+.esclavitud__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.esclavitud__title {
+  color: var(--verde-claro-textos, #006873);
+  font-family: Formula Condensed;
+  width: 100%;
+  margin-left: 10vw;
+  margin-bottom: 0;
+  margin-top: 20vh;
+  text-align: start;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.esclavitud__subtitle {
+  color: var(--verde-claro-textos, #006873);
+  font-family: Formula Condensed;
+  margin-left: 10vw;
+  width: 30%;
+  font-size: 8vh;
+  line-height: 1px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.esclavitud__img {
+  top: 5vw;
+  right: 5vw;
+  width: 40vw;
+  position: absolute;
+}

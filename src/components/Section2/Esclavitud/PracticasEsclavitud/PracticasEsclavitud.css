@@ -1,0 +1,113 @@
+.practicas__esclavitud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 120vh;
+  width: 100vw;
+}
+
+.practicas__title {
+  margin: 0;
+  width: 70%;
+  color: var(--negro-textos, #0a4b4e);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.practicas__title strong {
+  color: var(--negro-textos, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 2vw;
+  letter-spacing: 1.35px;
+}
+
+.practicas__container {
+  margin-top: 15vh;
+  width: 70vw;
+}
+
+.practicas__content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: s center;
+  width: 100%;
+}
+
+.practicas__texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.practicas__item-background {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  width: 85%;
+  border-radius: 0px 45px 45px 0px;
+  background-color: #ffe1e3;
+}
+
+.Servidumbre {
+  border-radius: 45px 45px 0px 45px;
+  background-color: #8cdff1;
+}
+
+.Venta {
+  border-radius: 45px 0px 0px 45px;
+  background-color: #fde1b5;
+}
+
+.Matrimonio {
+  border-radius: 0px 45px 45px 45px;
+  background-color: #006671;
+}
+
+.practicas__item {
+  /* margin: 0; */
+  margin-left: 10%;
+  color: #006671;
+  font-family: Formula Condensed;
+  font-size: 5.6vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+.blanco {
+  color: white;
+}
+
+.img__matrimonio {
+  transform: rotate(-90deg);
+  fill: white;
+}
+
+.img__comun {
+  margin-right: 6vh;
+  padding: 1vh;
+  height: 4vh;
+  transform: rotate(-90deg);
+}
+.img__matrimonio{
+  margin-right: 6vh;
+  padding: 1vh;
+  height: 4vh;
+  transform: rotate(-90deg);
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: flex-start;
+}
