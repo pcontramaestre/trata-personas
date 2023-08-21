@@ -8,4 +8,9 @@
 
 .LawEnforcementText {
     position: absolute;
+    margin: 0px;
+}
+
+.LawEnforcementText span {
+    font-weight: 700
 }
