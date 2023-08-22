@@ -3368,6 +3368,7 @@
         "left": "786px"
       },
       {
+        "id": "infoGif",
         "name": "infoGif",
         "width": "50px",
         "height": "50px",
@@ -3382,7 +3383,7 @@
         "tag": "h1",
         "width": "777px",
         "height": "293px",
-        "top": "45460px",
+        "top": "45582px",
         "left": "1005px",
         "fontFamily": "Formula Condensed",
         "fontSize": "145px",
@@ -4629,6 +4630,25 @@
           }
         }
       ]
+    },
+    "smallInfoBox": {
+      "infoGraphic": {
+        "name": "infoGif",
+        "width": "779px",
+        "top": "49780px",
+        "left": "610px",
+        "backgroundColor": "#FFEE96",
+        "text": {
+          "content": "Los datos disponibles sobre el tipo de denuncia difieren entre países debido a que <span>cada país reporta en función de su legislación nacional.</span>",
+          "width": "678px",
+          "fontFamily": "Inter",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "justify"
+        }
+      }
     }
   }
 }
