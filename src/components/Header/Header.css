@@ -1,0 +1,43 @@
+.header-container{
+    background-color: #CFF9FF;
+    padding: 3rem;
+}
+.header-container_img{
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 0.7rem;
+    display: flex;
+}
+.header-text{
+    width: 28.8vw;
+    margin: 0rem 0.5rem;
+    position: relative;
+}
+.header-text img{
+    border-radius: 28px;
+    max-height: 270px;
+    min-height: 233px;
+    object-fit: cover;
+    width: 100%;
+}
+.header-text .text{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Formula Condensed;
+    position: absolute;
+    top: 0vw;
+    width: 24.1vw;
+    letter-spacing: 1.65px;
+    padding: 0rem 2rem;
+    background-color: rgba(0,0,0,0.5);
+    height: 233px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-text .text:hover{
+    opacity: 0;
+}
