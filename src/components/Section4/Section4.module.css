@@ -14,3 +14,14 @@
 .LawEnforcementText span {
     font-weight: 700
 }
+
+.infoGif {
+    position: absolute;
+    animation: expand 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes expand {
+    to {
+        transform: scale(1.5);
+    }
+}
