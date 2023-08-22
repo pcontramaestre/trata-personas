@@ -25,3 +25,15 @@
         transform: scale(1.5);
     }
 }
+
+.BigCardStyles {
+    position: absolute;
+    display: none;
+    background-size: contain;
+    background-position: center;
+}
+
+.textStyles {
+    position: absolute;
+    margin: 0px;
+}
