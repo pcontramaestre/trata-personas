@@ -4,6 +4,7 @@
   align-items: center; /* Centrar verticalmente */
   flex-direction: column; /* Apilar elementos verticalmente */
   gap: 20px; /* Espacio entre elementos */
+  position: relative;
 }
 
 /* Estilos para centrar vertical y horizontalmente */
@@ -21,48 +22,100 @@
 .fondo-style {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   width: 100vw;
-  height: 100vh;
 }
 
 #fondo1 {
-  background-image: url(../Section9IMG/8d1155c4c79d781187b5a1a511c948ff.png);
+  width: 100vw;
+  z-index: 3;
 }
-
-#fondo2 {
-  background-image: url(../Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
+#fondo1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#fondo2 img {
+  /* background-image: url(../Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png); */
+  position: absolute;
+  top: 59vw;
+  z-index: 2;
+  height: 200vh;
+  width: 100vw;
 }
 
 #fondo3 {
+  background-image: url(../Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
+  position: absolute;
+  top: 127vw;
+    height: 208vh;
+  width: 100vw;
+  object-fit: cover;
+}
+#fondo4 {
   background-image: url(../Section9IMG/528d375cdfbed90a2c779e3b78f887cf.png);
-  height: 80vh; /* Ajusta la altura según tu diseño */
+  height: 56vw;
+  position: absolute;
+  top: 200vw;
+  object-fit: cover;
 }
 
+.square {
+  position: absolute;
+  top: 61vw;
+  width: 100vw;
+  z-index: 4;
+}
+.container-square {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
 .style {
   color: #fcfbcb;
   text-align: center;
   font-family: Formula Condensed;
-  font-size: 100px;
+  font-size: 9.375vw;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1;
+  font-weight: 700;
+  line-height: 142px;
   letter-spacing: 5.4px;
   text-transform: uppercase;
-  margin-top: -300px;
-  margin-left: 40px;
+  position: absolute;
+  top: 26vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-
+h2 {
+  margin-bottom: 1rem;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1.02px;
+  margin-top: 0rem;
+}
+p {
+  letter-spacing: 0px;
+}
+.style-hover:hover{
+  transform: scaleY(1.07);
+  -webkit-transform-origin-y: bottom;
+  transition: all 0.2s;
+}
 .cuadro1-style {
-  width: 528px;
+  width: 33vw;
+  max-width: 528px;
   height: 287px;
   background-color: #0f4a4d;
-  position: absolute;
-  margin-top: 1000px; /* Ajusta la posición verticalmente */
-  left: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 1rem;
+}
+
+.cuadro1-style:hover{
+  transform: scaleY(1.07);
+  -webkit-transform-origin-y: bottom;
+  transition: all 0.2s;
 }
 
 .cuadro1-text {
@@ -72,6 +125,7 @@
   font-weight: 400;
   line-height: normal;
   text-align: center;
+  padding: 2rem;
 }
 
 .cuadro1-title {
@@ -88,18 +142,17 @@
 }
 
 .cuadro2-style {
-  width: 893px;
+  width: 57vw;
+  max-width: 893px;
   height: 287px;
   background-color: #81ddec;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -900px; /* Ajusta según tu diseño */
-  margin-left: 20vw; /* Ajusta según tu diseño */
 }
 
 .cuadro2-text {
-  width: 800px;
+  /* width: 800px; */
   height: 200px;
   color: #0f4a4d;
   font-family: "Formula Condensed", sans-serif;
@@ -107,6 +160,10 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.02px;
+  padding: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .cuadro2-subtitle {
@@ -122,15 +179,14 @@
 }
 
 .cuadro3-style {
-  width: 690px;
+  width: 45vw;
+  max-width: 690px;
   height: 287px;
-  flex-shrink: 0;
   background-color: #13aaaf;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -2000px; /* Ajusta según tu diseño */
-  margin-left: -53vw; /* Ajusta según tu diseño */
+  margin-right: 1rem;
 }
 
 .cuadro3-text {
@@ -142,6 +198,7 @@
   line-height: normal;
   letter-spacing: 1.02px;
   margin-left: 1vw;
+  padding: 2rem;
 }
 
 .cuadro3-subtitle {
@@ -160,18 +217,17 @@
 }
 
 .cuadro4-style {
-  width: 730px;
+  width: 45vw;
+  max-width: 730px;
   height: 287px;
-  flex-shrink: 0;
   background-color: #8af4f9;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -1525px; /* Ajusta según tu diseño */
-  margin-left: 25vw; /* Ajusta según tu diseño */
 }
 
 .cuadro4-text {
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -198,16 +254,14 @@
 }
 
 .cuadro5-style {
-  width: 488px;
+  max-width: 488px;
+  width: 30vw;
+  margin-right: 1rem;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
   background-color: #ebeaa6;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; /* Ajusta según tu diseño */
-  margin-left: -64vw; /* Ajusta según tu diseño */
 }
 
 .cuadro5-text {
@@ -219,6 +273,7 @@
   line-height: normal;
   letter-spacing: 1.02px;
   margin-left: 1vw;
+  padding: 2rem;
 }
 
 .cuadro5-subtitle {
@@ -237,22 +292,18 @@
 }
 
 .cuadro6-style {
-  width: 931px;
-  height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  background-color: #0f4a4d;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -285px; /* Ajusta según tu diseño */
-  margin-left: 11vw; /* Ajusta según tu diseño */
+  width: 60vw;
+  max-width: 931px;
+  height: 287px;
+  background-color: #0f4a4d;
 }
 
 .cuadro6-text {
-  width: 794px;
-  height: 190px;
-  flex-shrink: 0;
+  width: 55.3vw;
+  padding: 2rem;
   color: #fff;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -269,9 +320,6 @@
 }
 
 .cuadro6-description {
-  width: 931px;
-  height: 287px;
-  flex-shrink: 0;
   color: #fff;
   font-family: Inter;
   font-size: 18px;
@@ -280,22 +328,18 @@
   line-height: normal;
 }
 .cuadro7-style {
-  width: 592px;
+  margin-right: 1rem;
+  width: 34vw;
+  max-width: 592px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
   background-color: #8cd7e1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -59vw; /* Ajusta según tu diseño */
 }
 
 .cuadro7-text {
-  width: 449px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -312,9 +356,6 @@
 }
 
 .cuadro7-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -324,23 +365,17 @@
 }
 
 .cuadro8-style {
-  width: 840px;
+  width: 56vw;
+  max-width: 840px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
   background-color: #86f3f8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -284px; /* Ajusta según tu diseño */
-  margin-left: 16vw; /* Ajusta según tu diseño */
 }
 
 .cuadro8-text {
-  width: 676px;
-  height: 180px;
-  flex-shrink: 0;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -357,9 +392,6 @@
 }
 
 .cuadro8-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -369,25 +401,20 @@
 }
 
 .cuadro9-style {
-  width: 710px;
+  max-width: 710px;
+  width: 39vw;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  background-color: #86f3f8;
+  background-color: #0f4a4d;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -53vw; /* Ajusta según tu diseño */
+  margin-right: 1rem;
 }
 
 .cuadro9-text {
   display: flex;
-  width: 545.858px;
-  height: 86px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
   color: #fff;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -395,6 +422,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.02px;
+  padding: 2rem;
 }
 
 .cuadro9-subtitle {
@@ -404,9 +432,6 @@
 }
 
 .cuadro9-description {
-  width: 411px;
-  height: 44px;
-  flex-shrink: 0;
   color: #fff;
   font-family: Inter;
   font-size: 18px;
@@ -416,22 +441,17 @@
 }
 
 .cuadro10-style {
-  width: 840px;
+  max-width: 710px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
   background-color: #13aaaf;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -284px; /* Ajusta según tu diseño */
-  margin-left: 29vw; /* Ajusta según tu diseño */
+  width: 51vw;
 }
 
 .cuadro10-text {
-  width: 700px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -450,7 +470,7 @@
 .cuadro10-description {
   width: 479px;
   height: 44px;
-  flex-shrink: 0;
+
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -460,22 +480,18 @@
 }
 
 .cuadro11-style {
-  width: 727px;
+  margin-right: 1rem;
+  width: 40vw;
+  max-width: 727px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
   background-color: #86f3f8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -53vw; /* Ajusta según tu diseño */
 }
 
 .cuadro11-text {
-  width: 487px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -492,9 +508,6 @@
 }
 
 .cuadro11-description {
-  width: 507px;
-  height: 44px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -504,22 +517,17 @@
 }
 
 .cuadro12-style {
-  width: 690px;
+  width: 50vw;
+    max-width: 690px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
   background-color: #8cd7e1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -284px; /* Ajusta según tu diseño */
-  margin-left: 29vw; /* Ajusta según tu diseño */
 }
 
 .cuadro12-text {
-  width: 449px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -536,9 +544,6 @@
 }
 
 .cuadro12-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -548,22 +553,18 @@
 }
 
 .cuadro13-style {
-  width: 592px;
+  width: 34vw;
+  margin-right: 1rem;
+  max-width: 487px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  background-color: #8cd7e1;
+  background-color: #13AAAF;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -59vw; /* Ajusta según tu diseño */
 }
 
 .cuadro13-text {
-  width: 449px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -580,9 +581,6 @@
 }
 
 .cuadro13-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -592,22 +590,16 @@
 }
 
 .cuadro14-style {
-  width: 592px;
+  width: 56vw;
+  max-width: 930px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  background-color: #8cd7e1;
+  background-color: #EBEAA6;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -59vw; /* Ajusta según tu diseño */
 }
 
 .cuadro14-text {
-  width: 449px;
-  height: 150px;
-  flex-shrink: 0;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -615,6 +607,7 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.02px;
+  padding: 2rem;
 }
 
 .cuadro14-subtitle {
@@ -624,9 +617,6 @@
 }
 
 .cuadro14-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -635,22 +625,18 @@
   line-height: normal;
 }
 .cuadro15-style {
-  width: 592px;
+  margin-right: 1rem;
+  max-width: 623px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  background-color: #8cd7e1;
+  background-color: #86F3F8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -59vw; /* Ajusta según tu diseño */
+  width: 42vw;
 }
 
 .cuadro15-text {
-  width: 449px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -667,9 +653,6 @@
 }
 
 .cuadro15-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -679,22 +662,17 @@
 }
 
 .cuadro16-style {
-  width: 592px;
+  width: 48vw;
+  max-width: 795px;
   height: 287px;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  background-color: #8cd7e1;
+  background-color: #8CD7E1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px; /* Ajusta según tu diseño */
-  margin-left: -59vw; /* Ajusta según tu diseño */
 }
 
 .cuadro16-text {
-  width: 449px;
-  height: 150px;
-  flex-shrink: 0;
+  padding: 2rem;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 34px;
@@ -711,9 +689,6 @@
 }
 
 .cuadro16-description {
-  width: 409px;
-  height: 74px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 18px;
