@@ -1,5 +1,12 @@
 {
   "InstructionsPage": {
+    "logo": {
+      "width": "410.68px",
+      "height": "70px",
+      "top": "92px",
+      "left": "120px",
+      "position": "absolute"
+    },
     "title": {
       "text": "¿CÓMO NAVEGAR ESTE SITIO?",
       "fontSize": "70px",
@@ -160,6 +167,15 @@
       "height": "1824px"
     },
     "images": [
+      {
+        "name": "logo",
+        "width": "410.68px",
+        "height": "70px",
+        "top": "92px",
+        "left": "120px",
+        "position": "absolute",
+        "zIndex": "1"
+      },
       {
         "name": "scroll",
         "width": "47.06px",
@@ -3150,7 +3166,7 @@
             "left": "183px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "70727.81px",
             "left": "214.18px"
           },
@@ -3202,7 +3218,7 @@
             "left": "809.59px"
           },
           "footer": {
-            "text": "Corett",
+            "text": "CORETT",
             "top": "70383px",
             "left": "758.98px"
           },
@@ -3298,6 +3314,1341 @@
           }
         }
       ]
+    }
+  },
+  "lawEnforcement": {
+    "width": "1920px",
+    "height": "9396px",
+    "top": "45510px",
+    "left": "0px",
+    "backgroundColor": "#CFF9FF",
+    "images": [
+      {
+        "name": "frontPage",
+        "width": "1920px",
+        "height": "1909px",
+        "top": "44809px",
+        "left": "0px",
+        "objectPosition": "top",
+        "objectFit": "cover"
+      },
+      {
+        "name": "grafico1",
+        "width": "1015px",
+        "height": "506px",
+        "top": "48133px",
+        "left": "198px"
+      },
+      {
+        "name": "grafico2",
+        "width": "813px",
+        "height": "709px",
+        "top": "49041px",
+        "left": "741px"
+      },
+      {
+        "name": "grafico3",
+        "width": "1275px",
+        "height": "639px",
+        "top": "50192px",
+        "left": "351px"
+      },
+      {
+        "name": "grafico4",
+        "width": "1294px",
+        "height": "650px",
+        "top": "52164px",
+        "left": "343px"
+      },
+      {
+        "name": "grafico5",
+        "width": "1052px",
+        "height": "527.66px",
+        "top": "53191px",
+        "left": "786px"
+      },
+      {
+        "id": "infoGif",
+        "name": "infoGif",
+        "width": "50px",
+        "height": "50px",
+        "top": "49817px",
+        "left": "935px",
+        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)"
+      }
+    ],
+    "text": [
+      {
+        "content": "PROCURACIÓN DE LA JUSTICIA",
+        "tag": "h1",
+        "width": "777px",
+        "height": "293px",
+        "top": "45582px",
+        "left": "1005px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "145px",
+        "fontWeight": "700",
+        "lineHeight": "142px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#FFFFFF"
+      },
+      {
+        "content": "(ACNUDH, 2014).",
+        "tag": "p",
+        "width": "256.63px",
+        "height": "30px",
+        "top": "47349px",
+        "left": "833px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30.26px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#8B601E"
+      },
+      {
+        "content": "Dar una respuesta eficaz para",
+        "tag": "p",
+        "width": "1114px",
+        "height": "67px",
+        "top": "46952px",
+        "left": "404px",
+        "fontFamily": "Inter",
+        "fontSize": "50px",
+        "fontWeight": "400",
+        "lineHeight": "60.51px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "y combatir eficazmente el delito",
+        "tag": "p",
+        "width": "1114px",
+        "height": "67px",
+        "top": "47260px",
+        "left": "404px",
+        "fontFamily": "Inter",
+        "fontSize": "50px",
+        "fontWeight": "400",
+        "lineHeight": "60.51px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "HACER JUSTICIA A LAS VÍCTIMAS, PREVENIR LA TRATA EN EL FUTURO",
+        "tag": "h2",
+        "width": "1114px",
+        "height": "227px",
+        "top": "47032px",
+        "left": "404px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "100px",
+        "fontWeight": "700",
+        "lineHeight": "120px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Las diferentes <span>Fiscalías, Procuradurías, Ministerios Públicos y Cortes de la región</span> se han encargado de procurar la justicia en los casos de trata de personas.",
+        "tag": "p",
+        "width": "1000px",
+        "height": "124px",
+        "top": "47636px",
+        "left": "538px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.11em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "Denuncias por trata de personas (2018-2021)",
+        "tag": "p",
+        "width": "650px",
+        "height": "34px",
+        "top": "48069px",
+        "left": "381px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "48656px",
+        "left": "983px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "48656px",
+        "left": "787px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "48644px",
+        "left": "548px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "48644px",
+        "left": "548px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "944",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "48544px",
+        "left": "356px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#063B3D"
+      },
+      {
+        "content": "1.559",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "48468px",
+        "left": "548px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#063B3D"
+      },
+      {
+        "content": "3.093",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "48309px",
+        "left": "799px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#063B3D"
+      },
+      {
+        "content": "1.100",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "48532px",
+        "left": "994px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#063B3D"
+      },
+      {
+        "content": "Frecuencias de denuncia según la finalidad de la trata (2018-2021)",
+        "tag": "p",
+        "width": "946px",
+        "height": "34px",
+        "top": "48974px",
+        "left": "487px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Otros",
+        "tag": "p",
+        "width": "233px",
+        "height": "65px",
+        "top": "49091px",
+        "left": "519px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Esclavitud",
+        "tag": "p",
+        "width": "233px",
+        "height": "65px",
+        "top": "49201px",
+        "left": "519px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Mendicidad forzada",
+        "tag": "p",
+        "width": "400px",
+        "height": "65px",
+        "top": "49311px",
+        "left": "352px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Adopción irregular",
+        "tag": "p",
+        "width": "373px",
+        "height": "65px",
+        "top": "49421px",
+        "left": "379px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Explotación laboral",
+        "tag": "p",
+        "width": "401px",
+        "height": "65px",
+        "top": "49531px",
+        "left": "351px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Explotación sexual",
+        "tag": "p",
+        "width": "448px",
+        "height": "65px",
+        "top": "49641px",
+        "left": "304px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "right",
+        "color": "#006873"
+      },
+      {
+        "content": "Procesos judiciales abiertos (2018-2021)",
+        "tag": "p",
+        "width": "650px",
+        "height": "34px",
+        "top": "50091px",
+        "left": "664px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "50861px",
+        "left": "1360px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "50861px",
+        "left": "1121px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "50849px",
+        "left": "817px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "50859px",
+        "left": "576px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "269",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "50493px",
+        "left": "576px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "381",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "50323px",
+        "left": "817px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "208",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "50571px",
+        "left": "1118px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "273",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "50531px",
+        "left": "1371px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "Sentencias absolutorias (2018-2021)",
+        "tag": "p",
+        "width": "852px",
+        "height": "34px",
+        "top": "52054px",
+        "left": "564px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "52862px",
+        "left": "568px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "52852px",
+        "left": "827px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "52864px",
+        "left": "1113px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "52864px",
+        "left": "1383px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "45",
+        "tag": "p",
+        "width": "171px",
+        "height": "51px",
+        "top": "52342px",
+        "left": "578px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#004D55"
+      },
+      {
+        "content": "51",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "52256px",
+        "left": "821px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#004D55"
+      },
+      {
+        "content": "15",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "52665px",
+        "left": "1124px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#004D55"
+      },
+      {
+        "content": "13",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "52698px",
+        "left": "1378px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#004D55"
+      },
+      {
+        "content": "Sentencias condenatorias (2018-2021)",
+        "tag": "p",
+        "width": "650px",
+        "height": "34px",
+        "top": "53081px",
+        "left": "990px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "115.14px",
+        "height": "42.25px",
+        "top": "53742.68px",
+        "left": "1621.8px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "115.14px",
+        "height": "42.25px",
+        "top": "53742.68px",
+        "left": "1423.83px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "175.61px",
+        "height": "62.95px",
+        "top": "53732.74px",
+        "left": "1172.01px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "141.65px",
+        "height": "45.56px",
+        "top": "53741.02px",
+        "left": "972.38px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0.0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "120",
+        "tag": "p",
+        "width": "115.14px",
+        "height": "42.25px",
+        "top": "53434px",
+        "left": "1622px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "119",
+        "tag": "p",
+        "width": "115.14px",
+        "height": "42.25px",
+        "top": "53445px",
+        "left": "1421.34px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "163",
+        "tag": "p",
+        "width": "175.61px",
+        "height": "62.95px",
+        "top": "53321.05px",
+        "left": "1172.01px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "124",
+        "tag": "p",
+        "width": "141.65px",
+        "height": "45.56px",
+        "top": "53425px",
+        "left": "972.38px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "53px",
+        "fontWeight": "700",
+        "lineHeight": "63.6px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#C7F1FA"
+      },
+      {
+        "content": "Durante el periodo <span>2018-2021</span> fueron presentadas",
+        "tag": "p",
+        "width": "522px",
+        "height": "93px",
+        "top": "48269px",
+        "left": "1283px",
+        "fontFamily": "Inter",
+        "fontSize": "33px",
+        "fontWeight": "400",
+        "lineHeight": "39.94px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "por el delito de trata de personas.",
+        "tag": "p",
+        "width": "560px",
+        "height": "45px",
+        "top": "48468px",
+        "left": "1285px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "42px",
+        "fontWeight": "700",
+        "lineHeight": "50.4px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "6.696 denuncias",
+        "tag": "h2",
+        "width": "539px",
+        "height": "82px",
+        "top": "48377px",
+        "left": "1283px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "96px",
+        "fontWeight": "700",
+        "lineHeight": "82px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "Durante el periodo <span>2018-2021</span> se emitieron",
+        "tag": "p",
+        "width": "453px",
+        "height": "103px",
+        "top": "53316px",
+        "left": "144px",
+        "fontFamily": "Inter",
+        "fontSize": "33px",
+        "fontWeight": "400",
+        "lineHeight": "39.94px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "condenatorias por el delito de trata de personas.",
+        "tag": "p",
+        "width": "491px",
+        "height": "96px",
+        "top": "53509px",
+        "left": "144px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "46px",
+        "fontWeight": "700",
+        "lineHeight": "55.2px",
+        "letterSpacing": "0.04em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "526 sentencias",
+        "tag": "h2",
+        "width": "509px",
+        "height": "82px",
+        "top": "53419px",
+        "left": "144px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "90px",
+        "fontWeight": "700",
+        "lineHeight": "82px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      }
+    ],
+    "news1": {
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "Panamá continúa lucha contra la trata de personas",
+            "width": "481.03px",
+            "height": "95.76px",
+            "top": "51245px",
+            "left": "795.49px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "51374px",
+            "left": "781.52px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "51098px",
+            "left": "751.3px",
+            "rotation": "-8.25deg"
+          },
+          "hover": {
+            "width": "650px",
+            "height": "653px",
+            "top": "-20px",
+            "left": "736px",
+            "backgroundImage": "sheetS",
+            "backgroundSize": "640px 623px",
+            "title": {
+              "content": "Panamá continúa lucha contra la trata de personas",
+              "width": "464px",
+              "height": "76px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "4 de enero de 2023<br/><br/>La Comisión Nacional contra la Trata de Personas informó que el 75% de las personas rescatadas, entre ellas cinco menores de edad, están relacionadas con casos de explotación sexual y un 25%por explotación laboral.<br><br/>El 39% de las víctimas son panameñas, mientras que el 38% corresponde a mujeres colombianas, 8% venezolanos y el 15% nicaragüenses.",
+              "width": "490px",
+              "height": "266px",
+              "top": "203px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/ Panamá América",
+              "width": "477px",
+              "height": "23px",
+              "top": "396px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/panama/panama-continua-lucha-contra-la-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "México: Desarticulan grupo delictivo dedicado a la trata de personas en CDMX",
+            "width": "458.45px",
+            "height": "132.71px",
+            "top": "51587.33px",
+            "left": "242.02px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "51770.5px",
+            "left": "272px"
+          },
+          "size": {
+            "width": "603.02px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "51450.36px",
+            "left": "202px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "700px",
+            "height": "705px",
+            "top": "120px",
+            "left": "150px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Desarticulan grupo delictivo dedicado a la trata de personas en CDMX",
+              "width": "585px",
+              "height": "83px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Fuerzas federales desarticularon un grupo delictivo transnacional dedicado a la trata de personas de Centroamérica que operaba desde la Ciudad de México.<br/><br/>De acuerdo con autoridades de seguridad, el modus operandi de esta organización criminal consistía en captar a las víctimas en su país de origen mediante una oferta laboral como “dama de compañía” con el engaño de que iba a ganar bien económicamente.<br/><br/>Luego de las investigaciones, un juez ordenó la aprehensión seis personas por los delitos de trata de personas con fines de explotación a través de la prostitución ajena, beneficio de la explotación sexual y delincuencia organizada.",
+              "width": "570px",
+              "height": "364px",
+              "top": "206px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/El Sol de México",
+              "width": "470px",
+              "height": "23px",
+              "top": "478px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/mexico/desarticulan-grupo-delictivo-dedicado-a-la-trata-de-personas-en-cdmx"
+          }
+        },
+        {
+          "title": {
+            "text": "República Dominicana<br/>Desde el 2021 hasta la fecha se han rescatado más de 185 víctimas de trata de personas",
+            "width": "476.28px",
+            "height": "187.47px",
+            "top": "51501.33px",
+            "left": "1215px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "51816.5px",
+            "left": "1249px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "51407.36px",
+            "left": "1199px",
+            "rotation": "7.56 deg"
+          },
+          "hover": {
+            "width": "673px",
+            "height": "708px",
+            "top": "130px",
+            "left": "1170px",
+            "backgroundImage": "sheets",
+            "title": {
+              "content": "Desde el 2021 hasta la fecha se han rescatado más de 185 víctimas de trata de personas",
+              "width": "482px",
+              "height": "115px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Más de 185 víctimas de trata de personas han sido rescatadas en República Dominicana desde el 2021 hasta la fecha, según indicó la titular de la Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas, Yoanna Bejarán.<br/><br/>Bejarán sostuvo que la mayoría de las personas perjudicadas han sido de nacionalidad extranjera. Entre las víctimas mencionó colombianas, venezolanas y haitianas. Sin embargo, también destacó la trata de personas local.<br/><br/>Desde el 2021 hasta este 2023 el Ministerio Público ha logrado 17 condenas.",
+              "width": "552px",
+              "height": "345px",
+              "top": "225px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/Diario Libre",
+              "width": "493px",
+              "height": "27px",
+              "top": "491px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/republica-dominicana/desde-el-2021-hasta-la-fecha-se-han-rescatado-mas-de-185-victimas-de-trata-de-personas"
+          }
+        }
+      ]
+    },
+    "news2": {
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "República Dominicana: Condenan a 20 años de prisión a una mujer vinculada a la trata de personas",
+            "width": "488.76px",
+            "height": "191.51px",
+            "top": "54198.95px",
+            "left": "156.5px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "54390.47px",
+            "left": "155.86px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "54104.04px",
+            "left": "96.78px",
+            "rotation": "-0.91deg"
+          },
+          "hover": {
+            "width": "685px",
+            "height": "683px",
+            "top": "-20px",
+            "left": "80px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Condenan a 20 años de prisión a una mujer vinculada a la trata de personas",
+              "width": "555px",
+              "height": "76px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas (PETT) y la Fiscalía de esta jurisdicción obtuvieron una condena de 20 años de prisión en contra de una mujer que se dedicaba a la trata de personas con fines de explotación sexual en perjuicio de 27 mujeres de nacionalidad dominicana y venezolana.<br/><br/>En el transcurso de la investigación, se obtuvieron pruebas con las que quedó demostrado que la encartada incurrió en trata de personas agravada, dada la multiplicidad de víctimas.",
+              "width": "540px",
+              "height": "266px",
+              "top": "203px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/ Procuraduría General de la República- Gobierno de la República Dominicana",
+              "width": "477px",
+              "height": "50px",
+              "top": "401px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/historias-republica-dominicana"
+          }
+        },
+        {
+          "title": {
+            "text": "Ministerio Público logra condena de más de 10 años y multa de Q300 mil por trata de personas en Guatemala",
+            "width": "481.03px",
+            "height": "191.51px",
+            "top": "54119.76px",
+            "left": "1273.82px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "54324.04px",
+            "left": "1240.52px"
+          },
+          "size": {
+            "width": "603.02px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "54017.04pxx",
+            "left": "1220.27px",
+            "rotation": "-8.25deg"
+          },
+          "hover": {
+            "width": "700px",
+            "height": "705px",
+            "top": "-40px",
+            "left": "1180px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Ministerio Público logra condena de más de 10 años y multa de Q300 mil por trata de personas en Guatemala",
+              "width": "585px",
+              "height": "115px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "18 de mayo de 2023<br/><br/>El Ministerio Público, por medio de la Unidad contra la Explotación Sexual, de la Fiscalía contra la Trata de Personas, logró con base en la acusación presentada sentencia condenatoria de 10 años y 6 meses de prisión inconmutables contra Bertoldino Florián Valenzuela por el delito de trata de personas.<br/><br/>En concepto de reparación digna debe pagar Q10 mil por daño moral, una beca de estudios hasta el nivel diversificado para la víctima y colocar cuatro mantas vinílicas en el parque de Villa Nueva en coordinación con la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas (SVET) y la Municipalidad de Villa Nueva.",
+              "width": "570px",
+              "height": "364px",
+              "top": "232px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/Ministerio Público de Guatemala",
+              "width": "470px",
+              "height": "23px",
+              "top": "505px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/guatemala/ministerio-publico-logra-condena-de-mas-de-10-anos-y-multa-de-q300-mil-por-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "El Salvador: Explotador sexual es condenado a 8 años de prisión",
+            "width": "481.03px",
+            "height": "132.71px",
+            "top": "54407.35px",
+            "left": "682px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "54569.5px",
+            "left": "708px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "54292.38px",
+            "left": "651.98px",
+            "rotation": "7.56 deg"
+          },
+          "hover": {
+            "width": "681px",
+            "height": "683px",
+            "top": "130px",
+            "left": "620px",
+            "backgroundImage": "sheets",
+            "title": {
+              "content": "Explotador sexual es condenado a 8 años de prisión",
+              "width": "477px",
+              "height": "76px",
+              "top": "62px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "José Salvador Lovo recibió una condena de 8 años de prisión por el delito de Trata de Personas Agravada, modalidad de Explotación Sexual, en perjuicio de dos adolescentes.<br/><br/>Las investigaciones de la Unidad Especializada de Delitos de Tráfico Ilegal y Trata de Personas lograron establecer que el imputado habría atraído a las víctimas con la promesa de trabajar en una cervecería como meseras. Sin embrago, ya en el lugar fueron amenazadas y luego obligadas a realizar trabajos sexuales con clientes del negocio y a la venta de bebidas alcohólicas, en beneficio económico del imputado, dueño del local.",
+              "width": "527px",
+              "height": "298px",
+              "top": "209px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/ Fiscalía General de la República de El Salvador",
+              "width": "457px",
+              "height": "50px",
+              "top": "450px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/historias-el-salvador"
+          }
+        }
+      ]
+    },
+    "smallInfoBox": {
+      "infoGraphic": {
+        "name": "infoGif",
+        "width": "779px",
+        "top": "49780px",
+        "left": "610px",
+        "backgroundColor": "#FFEE96",
+        "text": {
+          "content": "Los datos disponibles sobre el tipo de denuncia difieren entre países debido a que <span>cada país reporta en función de su legislación nacional.</span>",
+          "width": "678px",
+          "fontFamily": "Inter",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "justify"
+        }
+      }
     }
   }
 }

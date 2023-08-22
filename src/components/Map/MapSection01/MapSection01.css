@@ -10,7 +10,7 @@
   color: #004543;
   text-align: center;
   font-family: Formula Condensed;
-  font-size: 44px;
+  font-size: 2.7em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -23,6 +23,7 @@
   text-align: center;
   font-family: Formula Condensed;
   font-size: 40px;
+  font-size: 2.4em;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -30,6 +31,9 @@
 }
 
 .map__content {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
   width: 100vw;
   height: 120%;
 }
@@ -41,20 +45,20 @@
 }
 
 .percentage1 {
-  width: 70px;
-  height: 20px;
+  width: 4.2em;
+  height: 1.3em;
   background: #a2e7f1;
 }
 
 .percentage2 {
-  width: 70px;
-  height: 20px;
+  width: 4.2em;
+  height: 1.3em;
   background: #1e7b85;
 }
 
 .percentage3 {
-  width: 70px;
-  height: 20px;
+  width: 4.2em;
+  height: 1.3em;
   background: #081d20;
 }
 
@@ -72,14 +76,14 @@
   align-items: center;
   align-content: center;
   position: absolute;
-  bottom: 100px;
+  bottom: 25vh;
 }
 
 .map__foot-text {
   text-align: center;
   color: #737373;
   font-family: Formula Condensed;
-  font-size: 28px;
+  font-size: 1.7em;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -106,16 +110,56 @@
   width: 20%;
 }
 
-.map__content {
-  display: flex;
-  position: relative;
-  margin-top: 20px;
-  width: 100vw;
-}
-
 .map__img {
   position: absolute;
   width: 100%;
-  /* height: 100%; */
+  /* height: 100vh; */
   margin-right: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .map__foot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    bottom: 12em;
+  }
+
+  .map__section01 {
+    height: 90vh;
+  }
+  .map__title {
+    font-size: 1.5em;
+  }
+  .map__text1 {
+    font-size: 1.5em;
+  }
+  .map__img {
+    right: 0;
+    width: 90%;
+    height: 60%;
+  }
+  .map__percentage {
+    width: 30%;
+  }
+
+  .percentage__list {
+    margin: 0;
+  }
+
+  .percentage__number li {
+    margin-left: 0.6em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .map__foot {
+    bottom: 6em;
+  }
+  .percentage__number li {
+    font-size: 10px;
+  }
 }

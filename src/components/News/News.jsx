@@ -63,7 +63,7 @@ function Card ({ article, totalHeight, footer, title }) {
 
   return (
     <div className={style.NewsArticle} style={articleStyle}>
-      <p style={titleStyle}>{article.title.text}</p>
+      <p dangerouslySetInnerHTML={{ __html: article.title.text }} style={titleStyle} />
       <label style={footerStyle}>{article.footer.text}</label>
     </div>
   )

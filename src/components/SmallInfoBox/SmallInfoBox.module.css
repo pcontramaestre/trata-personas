@@ -1,0 +1,10 @@
+.SmallInfoBoxContainer {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.SmallInfoBoxContainer span {
+    font-weight: 700;
+}

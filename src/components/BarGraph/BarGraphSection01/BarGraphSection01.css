@@ -8,12 +8,33 @@
 }
 
 .bargraph__image {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   position: relative;
   background-image: url("../../../assets/Img-Section01/Page04/grafico09.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   height: 65vh;
   width: 70.5%;
+}
+
+.baragraphcolumns {
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+  margin-left: 22.5%;
+  margin-right: 10.5%;
+}
+
+.baragraph__columns-1 {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  list-style: none;
 }
 
 .baragraph__graphic {
@@ -37,60 +58,60 @@
   margin: 0;
 }
 
-.baragraph__columns {
-  position: absolute;
-  margin: 0 30px;
-  margin-top: 200px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 85%;
-  list-style: none;
-}
-
 .baragraph__column1 {
+  display: flex;
+  align-items: end;
   position: relative;
   color: var(--verde-claro-textos, #006873);
   font-family: "Formula Condensed";
-  font-size: 38px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  bottom: 15px;
-  left: 10px;
+  bottom: 1em;
+  /* left: 0.2rem; */
 }
 
 .baragraph__column2 {
+  display: flex;
+  align-items: end;
   position: relative;
   color: var(--verde-claro-textos, #006873);
   font-family: "Formula Condensed";
-  font-size: 38px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  bottom: 75px;
-  left: 3px;
+  /* bottom: 75px; */
+  bottom: 2.8em;
+  /* left: 0.2vw; */
 }
 
 .baragraph__column3 {
+  display: flex;
+  align-items: end;
   position: relative;
   color: var(--verde-claro-textos, #006873);
   font-family: "Formula Condensed";
-  font-size: 38px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  bottom: 0.4em;
 }
 
 .baragraph__column4 {
+  display: flex;
+  align-items: end;
   position: relative;
   color: var(--verde-claro-textos, #006873);
   font-family: "Formula Condensed";
-  font-size: 38px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  bottom: 60px;
-  right: 12px;
+  bottom: 2.3em;
+  /* right: 1vh; */
 }
 
 .baragraph__years {
@@ -98,12 +119,14 @@
   position: relative;
   display: flex;
   width: 49%;
-  margin-left: 10px;
+  margin: 0 0;
+  /* margin-left: 10px; */
+  margin-left: 0.6em;
   justify-content: space-around;
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 26px;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -148,49 +171,113 @@
   line-height: 2;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 769px) {
   .BarGraph {
-    margin: 20em 0;
+    /* margin: 20em 0; */
     flex-direction: column;
     height: 80vh;
   }
-  .bargraph__image {
-    height: 30vh;
-  }
-  .baragraph__graphic{
-    width: 90%;
+  .baragraph__graphic {
+    width: 100%;
   }
   .bargraph__title {
-    font-size: 4vw;
+    font-size: 4.5vw;
     width: 90%;
   }
-  .bargraph__texts{
+  .bargraph__texts {
+    margin-top: 4vh;
     width: 90%;
     align-items: center;
   }
-  .bargraph__text2{
-    font-size:2em;
+  .bargraph__text2 {
+    font-size: 2.5em;
   }
-  .bargraph__text3{
-    font-size:1em;
+  .bargraph__text3 {
+    font-size: 2em;
   }
-  .bargraph__text1{
+  .bargraph__image {
+    height: 45vh;
+  }
+  .bargraph__text1 {
     width: 100%;
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* .BarGraph {
-    margin-top: 0vh;
-  }
-  .bargraph__title {
-    font-size: 1.2vh;
-  }
   .bargraph__image {
-    position: relative;
-    left: -2vh;
-    height: 100%;
-    width: 70%;
-  } */
+    height: 38vh;
+  }
+  .baragraph__years {
+    font-size: 0.8em;
+  }
+  .baragraphcolumns {
+    margin-right: 11%;
+  }
+  .baragraph__column1 {
+    bottom: 14%;
+    font-size: 1em;
+  }
+  .baragraph__column2 {
+    bottom: 14vw;
+    font-size: 1em;
+  }
+  .baragraph__column3 {
+    bottom: 9%;
+    font-size: 1em;
+  }
+  .baragraph__column4 {
+    bottom: 12vw;
+    font-size: 1em;
+  }
+  .bargraph__text2 {
+    font-size: 1.5em;
+  }
+  .bargraph__text3 {
+    font-size: 1.8em;
+  }
+  .bargraph__text1 {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .baragraphcolumns {
+    margin-right: 11%;
+  }
+  .baragraph__column1 {
+    bottom: 1.3em;
+    font-size: 1em;
+  }
+  .baragraph__column2 {
+    bottom: 3.1em;
+    font-size: 1em;
+  }
+  .baragraph__column3 {
+    bottom: 1em;
+    font-size: 1em;
+  }
+  .baragraph__column4 {
+    bottom: 2.6em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-height: 1140px) {
+  .baragraph__column1 {
+    font-size: 4em;
+    bottom: 8%;
+  }
+  .baragraph__column2 {
+    font-size: 4em;
+    bottom: 28%;
+  }
+  .baragraph__column3 {
+    font-size: 4em;
+    bottom: 2%;
+  }
+  .baragraph__column4 {
+    font-size: 4em;
+    bottom: 23%;
+  }
 }

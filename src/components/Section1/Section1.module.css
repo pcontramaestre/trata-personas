@@ -11,10 +11,14 @@
 }
 
 .page1content {
-  height: 160vh;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  height: 250vh;
 }
 
 .page1 {
+  display: flex;
+  justify-content: flex-end;
   background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
   height: 100%;
   background-size: cover;
@@ -41,21 +45,10 @@
 @media screen and (max-width: 1050px) {
   .Section1 {
     width: 100vw;
-    /* margin-top: 15vh; */
-  }
-
-  .page1content {
-    height: 70vh;
   }
 
   .page1 {
-    /* background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
-    height: 65%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative; */
+    top: -5vh;
   }
 
   .page1__title {
@@ -70,10 +63,6 @@
     width: 100vw;
   }
 
-  .page1content {
-    height: 65vh;
-  }
-
   .page1__title {
     right: 4vw;
     bottom: 50%;
@@ -84,27 +73,19 @@
 @media screen and (max-width: 480px) {
   .Section1 {
     width: 100vw;
-    /* margin-top: 15vh; */
   }
 
   .page1content {
-    height: 60vh;
+    height: 100vh;
   }
 
   .page1 {
     top: -20vh;
-    position: relative;
   }
 
   .page1__title {
     right: 10vw;
     bottom: 50%;
     font-size: 10vw;
-  }
-}
-
-@media screen and (max-height: 900px){
-  .page1content {
-    /* height: 40vh; */
   }
 }

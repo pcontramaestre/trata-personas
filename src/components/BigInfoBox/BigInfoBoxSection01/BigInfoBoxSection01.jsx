@@ -7,6 +7,7 @@ const BigInfoBoxSection01 = () => {
   return (
     <div className="info__content">
       <div className="info__texts">
+      <div className="info__separador"></div>
         <div className="info__text-content">
           <h1 className="info__title">{page6.title}</h1>
           <p
