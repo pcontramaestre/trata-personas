@@ -1,6 +1,7 @@
 import style from './Instructions.module.css'
 
 import data from '../../../troy.json'
+import logo from '../../assets/Instructions/logo.svg'
 import scroll1 from '../../assets/Instructions/scroll1.svg'
 import menuBlanco from '../../assets/Instructions/menuBlanco.svg'
 import audio1 from '../../assets/Instructions/audio1.svg'
@@ -27,6 +28,14 @@ function convertSize (input) {
 function Instructions ({ setShowInstructions }) {
   function handleInstruction () {
     setShowInstructions(false)
+  }
+
+  const logoStyles = {
+    ...data.InstructionsPage.logo,
+    width: convertSize(data.InstructionsPage.logo.width),
+    height: convertSize(data.InstructionsPage.logo.height),
+    top: convertSize(data.InstructionsPage.logo.top),
+    left: convertSize(data.InstructionsPage.logo.left)
   }
 
   const titleStyles = {
@@ -57,6 +66,7 @@ function Instructions ({ setShowInstructions }) {
 
   return (
     <section id='InstructionsBackground' className={style.InstructionsBackground}>
+      <img src={logo} style={logoStyles} />
       <main className={style.InstructionsContainer}>
         <h1 style={titleStyles}>{title.text}</h1>
         <div className={style.InstructionsCardsContainer}>
