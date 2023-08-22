@@ -3,6 +3,7 @@ import frontPage from "../../assets/Section8/frontPage.png";
 import data from "../../../troy.json";
 import Corett from "./Corett/corett";
 import Countries from "./Paises/Countries";
+import VideoCorett from "./VideoCorett/VideoCorett";
 
 const imagesList = {
   frontPage,
@@ -101,6 +102,7 @@ function Section8() {
       <section className={style.section08}>
         <Corett />
         <Countries />
+        <VideoCorett />
       </section>
     </div>
   );
