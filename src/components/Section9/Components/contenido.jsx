@@ -1,6 +1,5 @@
 import React from "react";
 import "./contenido.css";
-import { Parallax } from "react-parallax";
 import Cuadro1 from "./cuadros/cuadro1";
 import Cuadro2 from "./cuadros/cuadro2";
 import Cuadro3 from "./cuadros/cuadro3";

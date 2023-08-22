@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./components/Header/Header";
 import Instructions from "./components/Instructions/Instructions";
 import Section0 from "./components/Section0/Section0";
 import Section1 from "./components/Section1/Section1";
@@ -23,6 +24,7 @@ function App() {
         <Instructions setShowInstructions={setShowInstructions} />
       ) : (
         <main>
+          <Header />
           <Section0 />
           <Section1 />
           <Section2 />
