@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
 // import BarGraph from '../BarGraph/BarGraph'
 import News from '../News/News'
-// import SmallInfoBox from '../SmallInfoBox/SmallInfoBox'
+import SmallInfoBox from '../SmallInfoBox/SmallInfoBox'
 
 import style from './Section4.module.css'
 
@@ -25,7 +26,7 @@ const imagesList = {
 }
 
 const { lawEnforcement } = data
-const { images, text, news1, news2 } = lawEnforcement
+const { images, text, news1, news2, smallInfoBox } = lawEnforcement
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -34,6 +35,28 @@ function convertSize (input) {
 }
 
 function Section4 () {
+  useEffect(() => {
+    if (smallInfoBox && smallInfoBox.infoGraphic) {
+      const icon = document.getElementById('infoGif')
+      const div = document.getElementById('SmallInfoBoxinfoGif')
+
+      function activeDisplay () {
+        div.style.display = 'flex'
+      }
+
+      function desactiveDisplay () {
+        div.style.display = ''
+      }
+
+      icon.addEventListener('mouseenter', activeDisplay)
+      div.addEventListener('mouseleave', desactiveDisplay)
+      return () => {
+        icon.removeEventListener('mouseenter', activeDisplay)
+        div.removeEventListener('mouseleave', desactiveDisplay)
+      }
+    }
+  }, [])
+
   const lawEnforcementeBackground = {
     width: convertSize(lawEnforcement.width),
     height: convertSize(lawEnforcement.height),
@@ -62,7 +85,7 @@ function Section4 () {
     <section className={style.LawEnforcementBackground} style={lawEnforcementeBackground}>
       {
         images.map((image, index) => (
-          <img src={image && imagesList[image.name]} style={imagesStyles[index]} className={style.LawEnforcementImages} key={image.name + index} />
+          <img id={image.id ? image.id : null} src={image && imagesList[image.name]} style={imagesStyles[index]} className={image.name === 'infoGif' ? style.infoGif : style.LawEnforcementImages} key={image.name + index} />
         ))
       }
       {
@@ -82,7 +105,7 @@ function Section4 () {
         })
       }
       {/* <BarGraph /> */}
-      {/* <SmallInfoBox /> */}
+      <SmallInfoBox info={smallInfoBox.infoGraphic} topSection={lawEnforcement.top} />
       <News news={news1} topSection={lawEnforcement.top} />
       <News news={news2} topSection={lawEnforcement.top} />
     </section>
