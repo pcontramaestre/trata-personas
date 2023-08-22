@@ -20,7 +20,7 @@
   color: #ce5c3b;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 37px;
+  font-size: 4.9vh;
   font-style: normal;
   font-weight: 700;
   /* line-height: 51px;  */
@@ -30,6 +30,7 @@
   color: #1e7b85;
   font-family: "Inter", sans-serif;
   font-size: 24px;
+  font-size: 3.2vh;
   margin: 0 10px;
   font-style: normal;
   font-weight: 400;
@@ -62,7 +63,7 @@
   width: 40%;
   text-align: start;
   font-family: Formula Condensed;
-  font-size: 60px;
+  font-size: 7vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -72,9 +73,9 @@
   width: 80%;
   color: #1a6063;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 13vh;
   font-family: Formula Condensed;
-  font-size: 60px;
+  font-size: 7vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -85,7 +86,7 @@
   color: #1a6063;
   text-align: left;
   font-family: Formula Condensed;
-  font-size: 60px;
+  font-size: 7vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -95,7 +96,7 @@
   width: 25vw;
   color: #1a6063;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 3.2vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -104,15 +105,16 @@
 .circlegraph__p strong {
   color: #1a6063;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 3.2vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+
 .circlegraph__p h3 {
   color: #1a6063;
   font-family: "Formula Condensed";
-  font-size: 34px;
+  font-size: 4.5vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -142,7 +144,7 @@
 
 .list__color1 {
   border-radius: 50%;
-  margin-top: 5px;
+  margin-top: 1vh;
   width: 3vw;
   height: 2vh;
   background: #6bb9af;
@@ -174,7 +176,7 @@
 .list__color-text1 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 28px;
+  font-size: 3.75vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -185,7 +187,7 @@
 .list__color-text2 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 28px;
+  font-size: 3.75vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -196,10 +198,120 @@
 .list__color-text3 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 28px;
+  font-size: 3.75vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 1.05px;
   margin: 0 10px;
 }
+
+@media screen and (max-width: 720px) {
+  .circlegraph__title {
+    font-size: 1.5em;
+  }
+  .circlegraph__small {
+    /* margin: 0; */
+    font-size: 0.8em;
+  }
+  .circlegraph__p {
+    width: 100%;
+    margin: 1em 0;
+    font-size: 2em;
+  }
+  .circlegraph_graphic {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+  }
+  .circlegraph__img {
+    margin-top: 1em;
+    width: 40vw;
+  }
+  .circlegraph__percentage {
+    top: 22em;
+    height: 30%;
+    width: 100%;
+  }
+  .circlegraph__percentage1 {
+    margin-left: 2.7em;
+    width: 40%;
+    font-size: 2.5em;
+  }
+  .circlegraph__percentage2 {
+    margin-right: 1.8em;
+    width: 40%;
+    font-size: 2.5em;
+  }
+  .circlegraph__percentage3 {
+    margin-right: 3.5em;
+    width: 40%;
+    font-size: 2.5em;
+  }
+  .circlegraph__barras {
+    margin-top: 3vh;
+    height: 20vh;
+    width: 100%;
+  }
+  .list__color-text1 {
+    font-size: 2em;
+    letter-spacing: 1.05px;
+    margin: 5px 10px;
+  }
+  .list__color-text2 {
+    font-size: 2em;
+    letter-spacing: 1.05px;
+    margin: 5px 10px;
+  }
+  .list__color-text3 {
+    font-size: 2em;
+    letter-spacing: 1.05px;
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .circlegraph__title-content {
+    width: 90vw;
+  }
+  .circlegraph__title {
+    font-size: 1.2em;
+  }
+  .circlegraph__p {
+    width: 90vw;
+    font-size: 1em;
+  }
+  .circlegraph__p h3 {
+    font-size: 1.6em;
+  }
+  .circlegraph__img {
+    margin-top: 1em;
+    width: 35vw;
+  }
+  .circlegraph__percentage {
+    top: 13em;
+    height: 25%;
+    width: 80vw;
+  }
+  .circlegraph__percentage1 {
+    margin-right: 1.6em;
+    font-size: 1.5em;
+  }
+  .circlegraph__percentage2 {
+    margin-right: 3.5em;
+    font-size: 1.5em;
+  }
+  .circlegraph__percentage3 {
+    font-size: 1.5em;
+  }
+}
+
+.section08 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cff9ff;
+}
+

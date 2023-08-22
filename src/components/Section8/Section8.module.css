@@ -1,19 +1,25 @@
 .CreditsBackground {
-    position: relative;
+  position: relative;
 }
 
 .pictures {
-    position: absolute;
-    object-fit: cover;
-    object-position: top;
+  position: absolute;
+  object-fit: cover;
+  object-position: top;
 }
 
 .creditsText {
-    position: absolute;
-    margin: 0px;
-    z-index: 3;
+  position: absolute;
+  margin: 0px;
+  z-index: 3;
 }
 
 .creditsText span {
-    font-weight: 700
+  font-weight: 700;
+}
+
+.section08 {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: #cff9ff;
 }

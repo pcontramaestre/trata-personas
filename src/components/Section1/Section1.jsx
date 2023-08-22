@@ -28,9 +28,9 @@ function Section1() {
       <MapSection01 />
       <BigInfoBoxSection01 />
       <CircleGraph />
-      <NewSection01 />
-      <CircleGraph02 />
-      <Women />
+      {/* <NewSection01 /> */}
+      {/* <CircleGraph02 /> */}
+      {/* <Women /> */}
       {/* <BigInfoBox /> */}
     </section>
   );
