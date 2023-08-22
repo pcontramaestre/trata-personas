@@ -1,6 +1,10 @@
 .header-container{
     background-color: #CFF9FF;
-    padding: 3rem;
+    padding: 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .header-container_img{
     width: 90vw;
@@ -28,11 +32,10 @@
     font-family: Formula Condensed;
     position: absolute;
     top: 0vw;
-    width: 24.1vw;
+    width: 100%;
     letter-spacing: 1.65px;
-    padding: 0rem 2rem;
     background-color: rgba(0,0,0,0.5);
-    height: 233px;
+    height: 97%;
     border-radius: 28px;
     display: flex;
     align-items: center;
