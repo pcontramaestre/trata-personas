@@ -1,0 +1,27 @@
+.ProtectionCare {
+    position: relative;
+}
+
+.ProtectionCareImages {
+    position: absolute;
+}
+
+.ProtectionCareText {
+    position: absolute;
+    margin: 0px;
+}
+
+.ProtectionCareText span {
+    font-weight: 700
+}
+
+.ProtectionCareIcon {
+    position: absolute;
+    animation: expand 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes expand {
+    to {
+        transform: scale(1.5);
+    }
+}
