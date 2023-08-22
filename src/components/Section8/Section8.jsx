@@ -1,8 +1,8 @@
 import style from "./Section8.module.css";
-
 import frontPage from "../../assets/Section8/frontPage.png";
-
 import data from "../../../troy.json";
+import Corett from "./Corett/corett";
+import Countries from "./Paises/Countries";
 
 const imagesList = {
   frontPage,
@@ -50,53 +50,59 @@ function Section8() {
   }));
 
   return (
-    <section style={creditsContainer} className={style.CreditsBackground}>
-      {images.map((image, index) => (
-        <img
-          src={imagesList[image.name]}
-          className={style.pictures}
-          style={picturesStyles[index]}
-          key={index}
-        />
-      ))}
-      {text.map((texto, index) => {
-        switch (texto.tag) {
-          case "h1": {
-            return (
-              <h1
-                className={style.creditsText}
-                style={textStyles[index]}
-                key={index}
-              >
-                {texto.content}
-              </h1>
-            );
+    <div>
+      <section style={creditsContainer} className={style.CreditsBackground}>
+        {images.map((image, index) => (
+          <img
+            src={imagesList[image.name]}
+            className={style.pictures}
+            style={picturesStyles[index]}
+            key={index}
+          />
+        ))}
+        {text.map((texto, index) => {
+          switch (texto.tag) {
+            case "h1": {
+              return (
+                <h1
+                  className={style.creditsText}
+                  style={textStyles[index]}
+                  key={index}
+                >
+                  {texto.content}
+                </h1>
+              );
+            }
+            case "h2": {
+              return (
+                <h2
+                  className={style.creditsText}
+                  style={textStyles[index]}
+                  key={index}
+                >
+                  {texto.content}
+                </h2>
+              );
+            }
+            case "p": {
+              return (
+                <p
+                  dangerouslySetInnerHTML={{ __html: texto.content }}
+                  className={style.creditsText}
+                  style={textStyles[index]}
+                  key={index}
+                />
+              );
+            }
           }
-          case "h2": {
-            return (
-              <h2
-                className={style.creditsText}
-                style={textStyles[index]}
-                key={index}
-              >
-                {texto.content}
-              </h2>
-            );
-          }
-          case "p": {
-            return (
-              <p
-                dangerouslySetInnerHTML={{ __html: texto.content }}
-                className={style.creditsText}
-                style={textStyles[index]}
-                key={index}
-              />
-            );
-          }
-        }
-        return true;
-      })}
-    </section>
+          return true;
+        })}
+      </section>
+      <section className={style.section08}>
+        <Corett />
+        <Countries />
+      </section>
+    </div>
   );
 }
 
