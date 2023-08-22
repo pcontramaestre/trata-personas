@@ -4650,5 +4650,907 @@
         }
       }
     }
+  },
+  "protectionAndCare": {
+    "width": "1922px",
+    "height": "10560px",
+    "top": "34950px",
+    "left": "0px",
+    "backgroundColor": "#CFF9FF",
+    "images": [
+      {
+        "name": "frontPage",
+        "width": "1920px",
+        "height": "1998px",
+        "top": "34174px",
+        "left": "0px",
+        "objectPosition": "top",
+        "objectFit": "cover",
+        "zIndex": 0
+      },
+      {
+        "name": "grafico1",
+        "width": "1015px",
+        "height": "506px",
+        "top": "37518px",
+        "left": "713.66px"
+      },
+      {
+        "name": "grafico2",
+        "width": "1306px",
+        "height": "408px",
+        "top": "43785px",
+        "left": "296.66px"
+      },
+      {
+        "name": "frecuencia",
+        "width": "138px",
+        "height": "29px",
+        "top": "44375px",
+        "left": "471.66px"
+      },
+      {
+        "name": "atenciones",
+        "width": "108px",
+        "height": "20px",
+        "top": "44380px",
+        "left": "903.66px"
+      },
+      {
+        "name": "group",
+        "width": "40px",
+        "height": "40px",
+        "top": "38812.33px",
+        "left": "834.29px",
+        "filter": "brightness(0) saturate(100%) invert(92%) sepia(5%) saturate(3566%) hue-rotate(139deg) brightness(72%) contrast(103%)"
+      },
+      {
+        "name": "audio",
+        "width": "42px",
+        "height": "42px",
+        "top": "35886px",
+        "left": "1771px"
+      }
+    ],
+    "icons": [
+      {
+        "name": "infoGif",
+        "width": "40px",
+        "height": "40px",
+        "top": "38145px",
+        "left": "935px",
+        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
+        "zIndex": 1
+      },
+      {
+        "name": "infoGif",
+        "width": "40px",
+        "height": "40px",
+        "top": "38980px",
+        "left": "935px",
+        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
+        "zIndex": 1
+      }
+    ],
+    "text": [
+      {
+        "content": "PROTECCIÓN Y ATENCIÓN",
+        "tag": "h1",
+        "width": "620px",
+        "height": "271px",
+        "top": "35082px",
+        "left": "595px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "145px",
+        "fontWeight": "700",
+        "lineHeight": "149px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#CFF9FF"
+      },
+      {
+        "content": "A LAS VÍCTIMAS",
+        "tag": "h1",
+        "width": "596px",
+        "height": "145px",
+        "top": "35691px",
+        "left": "595px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "120px",
+        "fontWeight": "700",
+        "lineHeight": "154px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#CFF9FF"
+      },
+      {
+        "content": "<span>Se reportan la totalidad de víctimas atendidas durante el periodo</span>, independientemente de que hayan sido identificadas en un periodo anterior.",
+        "tag": "p",
+        "width": "841px",
+        "height": "120px",
+        "top": "37076px",
+        "left": "540px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "En la mayoría de los países de la región se brinda la atención requerida por las víctimas <span>sin importar el estado de los procesos judiciales o administrativos.</span>",
+        "tag": "p",
+        "width": "901px",
+        "height": "159px",
+        "top": "38350px",
+        "left": "509.66px",
+        "fontFamily": "Inter",
+        "fontSize": "35px",
+        "fontWeight": "400",
+        "lineHeight": "42.36px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "(OIM).",
+        "tag": "p",
+        "width": "256.63px",
+        "height": "30px",
+        "top": "37217px",
+        "left": "831.66px",
+        "fontFamily": "Inter",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "lineHeight": "30.26px",
+        "letterSpacing": "0.11em",
+        "textAlign": "center",
+        "color": "#8B601E"
+      },
+      {
+        "content": "Medios de atención a las víctimas",
+        "tag": "h1",
+        "width": "1272px",
+        "height": "97px",
+        "top": "38691px",
+        "left": "377.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "100px",
+        "fontWeight": "700",
+        "lineHeight": "92px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "LA ASISTENCIA PSICOSOCIAL",
+        "tag": "h2",
+        "width": "1274px",
+        "height": "84px",
+        "top": "43275px",
+        "left": "352.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "70px",
+        "fontWeight": "700",
+        "lineHeight": "84px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "fue el medio de atención brindado con mayor frecuencia a las víctimas.",
+        "tag": "p",
+        "width": "810px",
+        "height": "114px",
+        "top": "43359px",
+        "left": "583px",
+        "fontFamily": "Inter",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "48.41px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "Víctimas de trata de",
+        "tag": "p",
+        "width": "588px",
+        "height": "100px",
+        "top": "37423px",
+        "left": "931px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "personas atendidas (2018-2021)",
+        "tag": "p",
+        "width": "588px",
+        "height": "100px",
+        "top": "37461px",
+        "left": "931px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Medios de atención a víctimas de trata (2018-2021)",
+        "tag": "p",
+        "width": "839px",
+        "height": "44px",
+        "top": "43708px",
+        "left": "541px",
+        "fontFamily": "Inter",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "33.89px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Durante el periodo <span>2018-2021</span> fueron atendidas",
+        "tag": "p",
+        "width": "487px",
+        "height": "93px",
+        "top": "37678px",
+        "left": "175.66px",
+        "fontFamily": "Inter",
+        "fontSize": "33px",
+        "fontWeight": "400",
+        "lineHeight": "39.94px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "víctimas de trata de personas.",
+        "tag": "p",
+        "width": "456px",
+        "height": "45px",
+        "top": "37878px",
+        "left": "177.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "48px",
+        "letterSpacing": "0.02em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "8.576 personas",
+        "tag": "h2",
+        "width": "507px",
+        "height": "82px",
+        "top": "37782px",
+        "left": "175.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "96px",
+        "fontWeight": "700",
+        "lineHeight": "82px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#0A4B4E"
+      },
+      {
+        "content": "1.855",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "37780px",
+        "left": "1505.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "1.950",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "37765px",
+        "left": "1310.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "2.507",
+        "tag": "p",
+        "width": "212px",
+        "height": "76px",
+        "top": "37675px",
+        "left": "1066.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "2.264",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "37720px",
+        "left": "878.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "2021",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "38054px",
+        "left": "1505.66px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2020",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "38054px",
+        "left": "1309.66px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2019",
+        "tag": "p",
+        "width": "212px",
+        "height": "51px",
+        "top": "38054px",
+        "left": "1070.66px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "2018",
+        "tag": "p",
+        "width": "171px",
+        "height": "51px",
+        "top": "38054px",
+        "left": "878.66px",
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "36.31px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Reintegración Familiar",
+        "tag": "p",
+        "width": "177px",
+        "height": "51px",
+        "top": "44242px",
+        "left": "1368.66px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Manutención",
+        "tag": "p",
+        "width": "157px",
+        "height": "51px",
+        "top": "44244px",
+        "left": "1208.66px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Formación educativa",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "44242px",
+        "left": "1050.66px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Alojamiento",
+        "tag": "p",
+        "width": "165px",
+        "height": "51px",
+        "top": "44242px",
+        "left": "881.66px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Asesoría Legal",
+        "tag": "p",
+        "width": "139px",
+        "height": "51px",
+        "top": "44242px",
+        "left": "742.66px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Asistencia médica",
+        "tag": "p",
+        "width": "200px",
+        "height": "76px",
+        "top": "44230px",
+        "left": "543px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "Asistencia psicosocial",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "44240px",
+        "left": "398.66px",
+        "fontFamily": "Inter",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "lineHeight": "27.84px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#006873"
+      },
+      {
+        "content": "40",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "43810px",
+        "left": "151.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "15.000",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "43810px",
+        "left": "1596.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "30",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "43893px",
+        "left": "151.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "10.000",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "43893px",
+        "left": "1596.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "20",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "43977px",
+        "left": "151.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "5.000",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "43977px",
+        "left": "1596.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "10",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "44062px",
+        "left": "151.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "0",
+        "tag": "p",
+        "width": "171px",
+        "height": "55px",
+        "top": "44062px",
+        "left": "1596.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "lineHeight": "56.4px",
+        "letterSpacing": "0em",
+        "textAlign": "center",
+        "color": "#1A6063"
+      },
+      {
+        "content": "Número de atenciones",
+        "tag": "p",
+        "width": "391px",
+        "height": "51px",
+        "top": "44364px",
+        "left": "1057.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "45px",
+        "fontWeight": "300",
+        "lineHeight": "54px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#006873"
+      },
+      {
+        "content": "Frecuencia",
+        "tag": "p",
+        "width": "175px",
+        "height": "51px",
+        "top": "44364px",
+        "left": "650.66px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "45px",
+        "fontWeight": "300",
+        "lineHeight": "54px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#006873"
+      },
+      {
+        "content": "Explore los íconos",
+        "tag": "p",
+        "width": "214px",
+        "height": "42px",
+        "top": "38813px",
+        "left": "878px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "35px",
+        "fontWeight": "300",
+        "lineHeight": "42px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#737373"
+      }
+    ],
+    "noteBook": {
+      "width": "674px",
+      "height": "636.05px",
+      "top": "36370.45px",
+      "left": "583.04px",
+      "rotation": "6.96deg",
+      "backgroundImage": "whiteSheet",
+      "text": {
+        "paragraphStyles": {
+          "fontSize": "25px",
+          "lineHeight": "32px",
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#081D20"
+        },
+        "paragraph": [
+          {
+            "content": "Se entiende como <span>víctima de trata atendida,</span> aquellas víctimas de trata de personas que",
+            "width": "408.04px",
+            "height": "90px",
+            "top": "36534.24px"
+          }
+        ],
+        "titleStyles": {
+          "fontSize": "50px",
+          "fontFamily": "Formula Condensed",
+          "fontWeight": "700",
+          "lineHeight": "60px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#C18831"
+        },
+        "title": [
+          {
+            "content": "HAN TENIDO ACCESO A SERVICIOS DE ASISTENCIA Y PROTECCIÓN.",
+            "width": "480.11px",
+            "height": "149.65px",
+            "top": "36637.71px"
+          }
+        ],
+        "footer": {
+          "content": "(OIM).",
+          "width": "157.9px",
+          "height": "30px",
+          "top": "36840.25px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
+        }
+      }
+    },
+    "news": {
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "Panamá: Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
+            "width": "481.03px",
+            "height": "191.51px",
+            "top": "44752.33px",
+            "left": "414.05px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "315.36px",
+            "left": "446.05px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "44658.36px",
+            "left": "382.02px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "700px",
+            "height": "873px",
+            "top": "-250px",
+            "left": "300px",
+            "backgroundImage": "sheetL",
+            "title": {
+              "content": "Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
+              "width": "585px",
+              "height": "124px",
+              "top": "57px",
+              "left": "197px"
+            },
+            "text": {
+              "content": "19 de marzo de 2023<br/><br/>Las menores rescatadas durante la Operación “Luz de Esperanza” que desarrolló el Ministerio Público y el Servicio Nacional de Fronteras, quienes se encuentran bajo el cuidado de familiares, recibieron la atención del equipo técnico evaluador de la Comisión Nacional contra la Trata de Personas del Ministerio de Seguridad Pública como parte del cuidado posterior.<br/><br/>El año pasado, las autoridades de Panamá en coordinación con las de Costa Rica, lograron desarticular una banda dedicada a la trata de personas con fines de explotación sexual infantil. En esa operación se realizaron 12 allanamientos, tanto en Panamá como en Costa Rica, logrando rescatar a 9 menores de edad entre 6 y 15 años.<br/><br/>De forma periódica el equipo técnico evalúa las necesidades para atender a los menores de forma individualizada a fin de conocer el avance y el estado de salud de niñas violentadas en su integridad.",
+              "width": "566px",
+              "height": "490px",
+              "top": "221px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/El Siglo Panamá",
+              "width": "497px",
+              "height": "27px",
+              "top": "673px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/panama/comision-nacional-contra-la-trata-de-personas-atiende-victimas-de-explotacion-sexual-infantil"
+          }
+        },
+        {
+          "title": {
+            "text": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
+            "width": "488.58px",
+            "height": "191.51px",
+            "top": "44827.27px",
+            "left": "1036.59px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "45070.69px",
+            "left": "1010.86px"
+          },
+          "size": {
+            "width": "603.02px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "44702px",
+            "left": "986.23px",
+            "rotation": "-7.43deg"
+          },
+          "hover": {
+            "width": "791px",
+            "height": "793px",
+            "top": "-200px",
+            "left": "980px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
+              "width": "585px",
+              "height": "76px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "7 de junio de 2023<br/><br/>Un total de 9 víctimas de trata de personas fueron rescatadas por Honduras en los últimos días, con lo que suman 25 las liberadas entre enero y mayo de 2023, informó este miércoles la Comisión Interinstitucional Contra la Explotación Sexual, Comercial y Trata de Personas (CICESCT).<br/><br/>“Se ha logrado la identificación y atención inmediata a nueve sobrevivientes de trata de personas en territorio nacional”, indicó la CICESCT en un comunicado.<br/><br/>Los rescates ocurrieron en operaciones coordinadas por la CICESCT con apoyo del Ministerio Público, la Unidad Contra la Trata, Explotación Sexual Comercial y Tráfico de Personas, la Dirección Policial de Investigaciones (DPI), la Agencia Técnica de Investigación Criminal (ATIC) y la Secretaría de Seguridad, entre otras instituciones.",
+              "width": "586px",
+              "height": "440px",
+              "top": "203px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/SWI",
+              "width": "430px",
+              "height": "23px",
+              "top": "573px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/honduras/honduras-rescata-a-9-victimas-de-trata-y-suman-25-las-liberadas-en-5-meses-de-2023"
+          }
+        }
+      ]
+    }
   }
 }
