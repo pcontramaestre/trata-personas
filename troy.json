@@ -2483,13 +2483,34 @@
     "backgroundColor": "#CFF9FF",
     "images": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
-        "height": "1500px",
-        "top": "62203px",
+        "height": "1230px",
+        "top": "62224px",
         "left": "0px",
-        "objectPosition": "top",
-        "objectFit": "cover"
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": "1"
+      },
+      {
+        "name": "family",
+        "width": "1105px",
+        "height": "1087px",
+        "top": "62280px",
+        "left": "874px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": "1"
+      },
+      {
+        "name": "frame",
+        "width": "1920px",
+        "height": "555px",
+        "top": "62224px",
+        "left": "0px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": "1"
       },
       {
         "name": "rectanguloAzul",
