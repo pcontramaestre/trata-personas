@@ -1,8 +1,3 @@
-.NoteBook05__container {
-  display: flex;
-  /* width: 50vw; */
-}
-
 .NoteBook05 {
   background: url("../../../assets/Img-Section02/Page06/bookcorto.png");
   background-repeat: no-repeat;
@@ -69,4 +64,59 @@
   letter-spacing: 2.75px;
   margin-left: 1vw;
   margin-top: 0.65vw;
+}
+
+@media screen and (max-width: 720px) {
+  .NoteBook05 {
+    background-size: contain;
+    width: 60%;
+    left: 35vw;
+    top: 35vh;
+  }
+
+  .NoteBook05__texts {
+    margin-left: 5.5em;
+    margin-top: 6em;
+    width: 60%;
+  }
+
+  .NoteBook05__text1 {
+    font-size: 0.8em;
+    line-height: normal;
+  }
+
+  .NoteBook05__text2 {
+    font-size: 1em;
+    margin-left: 0.4vw;
+    margin-top: 0.3vh;
+  }
+
+  .NoteBook05__text3 {
+    font-size: 0.5em;
+    margin-left: 0.5vw;
+    margin-top: 0.65vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .NoteBook05 {
+    background-size: contain;
+    width: 70%;
+    left: 20vw;
+    top: 40vh;
+  }
+  .NoteBook05__texts {
+    margin-left: 3.5em;
+    margin-top: 3em;
+    width: 60%;
+  }
+  .NoteBook05__text1 {
+    font-size: 0.6em;
+    line-height: normal;
+  }
+  .NoteBook05__text2 {
+    font-size: 0.6em;
+  }
+  .NoteBook05__text3 {
+    font-size: 0.4em;
+  }
 }

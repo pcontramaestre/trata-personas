@@ -10,6 +10,14 @@ import nicaragua from '../../assets/Map/nicaragua.svg'
 import panama from '../../assets/Map/panama.svg'
 import republicaDominicana from '../../assets/Map/republicaDominicana.svg'
 
+import mapGreen from '../../assets/Map/mapGreen.svg'
+import mapPink from '../../assets/Map/mapPink.svg'
+
+const maps = {
+  mapGreen,
+  mapPink
+}
+
 const flags = {
   belice,
   costaRica,
@@ -33,7 +41,7 @@ function Map ({ map, topSection }) {
   const mapStyle = {
     height: convertSize(map.size.height),
     top: convertSize(topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top),
-    backgroundImage: `url("./src/assets/Map/${map.backgroundImage}")`
+    backgroundImage: `url(${maps[map.backgroundImage]})`
   }
   return (
     <div className={style.MapBackground} style={mapStyle}>

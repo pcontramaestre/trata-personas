@@ -1,6 +1,15 @@
 import style from './News.module.css'
 
 import group from '../../assets/Instructions/group.svg'
+import sheetL from '../../assets/News/sheetL.png'
+import sheetM from '../../assets/News/sheetM.png'
+import sheetS from '../../assets/News/sheetS.png'
+
+const sheets = {
+  sheetL,
+  sheetM,
+  sheetS
+}
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -75,7 +84,7 @@ function SheetNews ({ hover, title, text, footer, icon }) {
     height: convertSize(hover.height),
     top: convertSize(hover.top),
     left: convertSize(hover.left),
-    backgroundImage: `url("./src/assets/News/${hover.backgroundImage}.png")`
+    backgroundImage: `url(${sheets[hover.backgroundImage]})`
   }
 
   const titleStyle = {

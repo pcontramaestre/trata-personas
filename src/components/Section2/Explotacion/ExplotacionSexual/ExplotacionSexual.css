@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../../../../assets/Img-Section02/Page04/background.png");
   width: 100vw;
   position: relative;
+  padding: 10% 0;
 }
 
 .background__sexual {
@@ -49,8 +51,6 @@
   z-index: 5;
 }
 
-
-
 /* MANO DE EXPLORA LAS IMAGENES */
 .explotacion__hand {
   display: flex;
@@ -60,8 +60,10 @@
   width: 100%;
 }
 
-.hand__content{
+.hand__content {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hand__img {
@@ -76,7 +78,62 @@
   font-size: 1.9vw;
   font-style: normal;
   font-weight: 300;
+  margin: 0;
   z-index: 2;
 }
 
 /* MANO DE EXPLORA LAS IMAGENES */
+
+@media screen and (max-width: 720px) {
+  .explotacion__content {
+    padding: 5% 0;
+  }
+  .explotacion__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .explotacion__news {
+    height: 50vh;
+  }
+  .womenloading__content {
+    display: flex;
+    z-index: 3;
+  }
+  .womenloading__img {
+    height: 50vw;
+    right: 6vw;
+  }
+  .explotacion__title {
+    width: 100%;
+    margin-left: 4em;
+    font-size: 3em;
+  }
+  .hand__img {
+    width: 2vw;
+  }
+  .hand__title {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .explotacion__content {
+    padding: 5% 0;
+  }
+  .explotacion__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .explotacion__news {
+    height: 50vh;
+  }
+  .womenloading__content {
+    display: flex;
+    z-index: 3;
+  }
+  .explotacion__title {
+    margin-left: 2em;
+    font-size: 1.5em;
+  }
+}

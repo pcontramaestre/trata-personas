@@ -10,3 +10,17 @@
   width: 80%;
   padding: 10em 0;
 }
+
+@media screen and (max-width: 720px) {
+  .img__finalidad {
+    width: 90%;
+    padding: 15em 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .img__finalidad {
+    width: 90%;
+    padding: 5em 0;
+  }
+}

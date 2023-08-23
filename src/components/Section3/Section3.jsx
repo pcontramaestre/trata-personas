@@ -28,6 +28,7 @@ import manutencion from '../../assets/Section3/manutencion.svg'
 import educacion from '../../assets/Section3/educacion.svg'
 import alojamiento from '../../assets/Section3/alojamiento.svg'
 import reintegracion from '../../assets/Section3/reintegracion.svg'
+import backgroundCard from '../../assets/Section3/backgroundCard.png'
 
 const imagesList = {
   background,
@@ -198,7 +199,7 @@ function BigCard ({ bigCard, topSection, name }) {
         top: convertSize(Number(bigCard[name].top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px'),
         left: convertSize(bigCard[name].left),
         borderRadius: convertSize(bigCard.borderRadius),
-        backgroundImage: `url("./src/assets/Section3/${bigCard.backgroundImage}.png")`
+        backgroundImage: `url(${backgroundCard})`
       }
     : {}
 

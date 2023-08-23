@@ -1,19 +1,20 @@
-.NoteBook03__container {
-  display: flex;
-  /* width: 50vw; */
-}
-
 .NoteBook03 {
   background: url("../../../assets/Img-Section02/Page06/bookcorto.png");
   background-repeat: no-repeat;
-  background-size: 41vw;
+  /* background-size: 41vw; */
+  background-position: center;
+  background-size: contain;
   transform: rotate(4.362deg);
   left: 55vw;
-  top: 35vh;
+  top: 30vh;
+  width: 50vw;
+  height: 55vh;
   position: absolute;
+  z-index: 999;
 }
 
 .NoteBook03__texts {
+  z-index: 999;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -22,8 +23,8 @@
   align-content: center;
   transform: rotate(8.062deg);
   text-align: center;
-  margin-left: 9.5vw;
-  margin-top: 15.4vh;
+  margin-left: 30vh;
+  margin-top: 15vh;
   font-style: normal;
   width: 50%;
 }
@@ -32,7 +33,7 @@
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
   font-size: 1.3vw;
-  line-height: 1.5vw;
+  line-height: 1.4vw;
   font-weight: 400;
   text-align: start;
   font-family: "Inter", sans-serif;
@@ -50,7 +51,7 @@
   text-align: start;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 0.8vw;
+  margin-left: 0.5vw;
   margin-top: 0.3vh;
 }
 
@@ -67,4 +68,71 @@
   letter-spacing: 2.75px;
   margin-left: 1vw;
   margin-top: 0.65vw;
+}
+
+@media screen and (max-width: 720px) {
+  .NoteBook03 {
+    left: 22em;
+    top: 5em;
+    width: 50vw;
+    height: 55vh;
+  }
+
+  .NoteBook03__texts {
+    margin-left: 5.5em;
+    margin-top: 14.5em;
+    width: 50%;
+  }
+
+  .NoteBook03__text1 {
+    font-size: 0.7em;
+    line-height: normal;
+  }
+
+  .NoteBook03__text2 {
+    font-size: 1em;
+    margin: 0;
+    margin-left: 0.8vw;
+    margin-top: 0.3vh;
+  }
+
+  .NoteBook03__text3 {
+    font-size: 0.5em;
+    margin-left: 1vw;
+    margin-top: 0.65vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .NoteBook03 {
+    left: 10em;
+    top: 5em;
+    width: 45vw;
+    width: 12em;
+    height: 50vh;
+    height: 15em;
+  }
+
+  .NoteBook03__texts {
+    margin-left: 2.5em;
+    margin-top: 45%;
+    width: 65%;
+  }
+
+  .NoteBook03__text1 {
+    font-size: 0.5em;
+    line-height: normal;
+  }
+
+  .NoteBook03__text2 {
+    font-size: 0.5em;
+    margin: 0;
+    margin-left: 0.8vw;
+    margin-top: 0.3vh;
+  }
+
+  .NoteBook03__text3 {
+    font-size: 0.2em;
+    margin-left: 1vw;
+    margin-top: 0.65vw;
+  }
 }
