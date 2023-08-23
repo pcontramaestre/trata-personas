@@ -9,7 +9,10 @@ import style from './Section3.module.css'
 
 import data from '../../../troy.json'
 
-import frontPage from '../../assets/Section3/frontPage.png'
+import background from '../../assets/Section3/frontPageBackground.png'
+import leftHand from '../../assets/Section3/frontPageLeftHand.png'
+import bars from '../../assets/Section3/frontPageBars.png'
+import rightHand from '../../assets/Section3/frontPageRightHand.png'
 import grafico1 from '../../assets/Section3/grafico1.png'
 import grafico2 from '../../assets/Section3/grafico2.png'
 import frecuencia from '../../assets/Section3/frecuencia.svg'
@@ -27,7 +30,10 @@ import alojamiento from '../../assets/Section3/alojamiento.svg'
 import reintegracion from '../../assets/Section3/reintegracion.svg'
 
 const imagesList = {
-  frontPage,
+  background,
+  leftHand,
+  bars,
+  rightHand,
   grafico1,
   grafico2,
   frecuencia,
