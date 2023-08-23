@@ -26,13 +26,14 @@
 }
 .header-text .text{
     color: white;
-    font-size: 40px;
+    font-size: 43px;
     font-weight: 700;
     text-align: center;
     font-family: Formula Condensed;
     position: absolute;
     top: 0vw;
-    width: 100%;
+    width: 92%;
+    padding: 0% 4%;
     letter-spacing: 1.65px;
     background-color: rgba(0,0,0,0.5);
     height: 97%;
@@ -43,4 +44,5 @@
 }
 .header-text .text:hover{
     opacity: 0;
+    transition: all 0.3s;
 }
