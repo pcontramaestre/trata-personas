@@ -3,6 +3,11 @@ import { useEffect } from 'react'
 import style from './BigInfoBox.module.css'
 
 import group from '../../assets/Instructions/group.svg'
+import gratinBeish from '../../assets/BigInfoBox/gratinBeish.png'
+
+const backgroundStyles = {
+  gratinBeish
+}
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -78,7 +83,7 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
         height: convertSize(bigInfoBox.icons.hover.height),
         top: convertSize(bigInfoBox.icons.hover.top),
         left: convertSize(bigInfoBox.icons.hover.left),
-        backgroundImage: `url("./src/assets/BigInfoBox/${bigInfoBox.icons.hover.backgroundImage}")`,
+        backgroundImage: `url(${backgroundStyles[bigInfoBox.icons.hover.backgroundImage]})`,
         backgroundSize: `${convertSize(bigInfoBox.icons.hover.width)} ${convertSize(bigInfoBox.icons.hover.height)}`,
         borderRadius: convertSize(bigInfoBox.borderRadius)
       }
