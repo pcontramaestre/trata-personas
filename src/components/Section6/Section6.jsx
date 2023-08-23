@@ -5,7 +5,9 @@ import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section6.module.css'
 
-import frontPage from '../../assets/Section6/frontPage.png'
+import background from '../../assets/Section6/frontPageBackground.png'
+import family from '../../assets/Section6/frontPageFamily.png'
+import frame from '../../assets/Section6/frontPageFrame.png'
 import hand from '../../assets/Section6/hand.png'
 import contenedorRojo1 from '../../assets/Section6/contenedorRojo1.png'
 import contenedorRojo2 from '../../assets/Section6/contenedorRojo2.png'
@@ -18,7 +20,9 @@ import rectanguloAzul from '../../assets/Section6/rectanguloAzul.png'
 import data from '../../../troy.json'
 
 const imagesList = {
-  frontPage,
+  background,
+  family,
+  frame,
   hand,
   contenedorRojo1,
   contenedorRojo2,

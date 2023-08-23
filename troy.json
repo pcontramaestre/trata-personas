@@ -965,6 +965,26 @@
     },
     "images": [
       {
+        "name": "background",
+        "width": "1920px",
+        "height": "1528px",
+        "top": "70628px",
+        "left": "0px",
+        "position": "absolute",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "persons",
+        "width": "1920px",
+        "height": "1070px",
+        "top": "71080px",
+        "left": "0px",
+        "position": "absolute",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
         "name": "scroll2",
         "width": "130px",
         "height": "62.4px",
@@ -1493,11 +1513,58 @@
     "backgroundColor": "#FFF0F1",
     "image": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
         "height": "1747px",
         "top": "54626px",
-        "left": "0px"
+        "left": "0px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person1",
+        "width": "444px",
+        "height": "882px",
+        "top": "55306px",
+        "left": "1476px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person2",
+        "width": "337px",
+        "height": "782px",
+        "top": "55306px",
+        "left": "1146px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person3",
+        "width": "372px",
+        "height": "752px",
+        "top": "55396px",
+        "left": "802px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person4",
+        "width": "354px",
+        "height": "735px",
+        "top": "55511px",
+        "left": "459px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person5",
+        "width": "330px",
+        "height": "711px",
+        "top": "55605px",
+        "left": "118px",
+        "objectFit": "contain",
+        "objectPosition": "center"
       },
       {
         "name": "grafico",
@@ -2436,13 +2503,34 @@
     "backgroundColor": "#CFF9FF",
     "images": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
-        "height": "1500px",
-        "top": "62203px",
+        "height": "1230px",
+        "top": "62224px",
         "left": "0px",
-        "objectPosition": "top",
-        "objectFit": "cover"
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": "1"
+      },
+      {
+        "name": "family",
+        "width": "1105px",
+        "height": "1087px",
+        "top": "62280px",
+        "left": "874px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": "1"
+      },
+      {
+        "name": "frame",
+        "width": "1920px",
+        "height": "555px",
+        "top": "62224px",
+        "left": "0px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": "1"
       },
       {
         "name": "rectanguloAzul",
@@ -2516,7 +2604,8 @@
         "lineHeight": "142px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#08393D"
+        "color": "#08393D",
+        "zIndex": "1"
       },
       {
         "content": "(CORETT, 2021).",
@@ -3075,8 +3164,8 @@
           "tag": "p",
           "width": "1401px",
           "height": "137px",
-          "top": "5415px",
-          "left": "324.9921875px",
+          "top": "67275px",
+          "left": "1378px",
           "fontFamily": "Inter",
           "fontSize": "30px",
           "fontWeight": "400",
@@ -3345,13 +3434,49 @@
     "backgroundColor": "#CFF9FF",
     "images": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
         "height": "1909px",
         "top": "44809px",
         "left": "0px",
-        "objectPosition": "top",
-        "objectFit": "cover"
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "person1",
+        "width": "786px",
+        "height": "611px",
+        "top": "46105px",
+        "left": "1134px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "person2",
+        "width": "846px",
+        "height": "755px",
+        "top": "45961px",
+        "left": "632px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "person3",
+        "width": "732px",
+        "height": "1105px",
+        "top": "45611px",
+        "left": "305px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "person4",
+        "width": "736px",
+        "height": "1304px",
+        "top": "45414",
+        "left": "0px",
+        "objectPosition": "center",
+        "objectFit": "contain"
       },
       {
         "name": "grafico1",
@@ -4680,13 +4805,43 @@
     "backgroundColor": "#CFF9FF",
     "images": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
         "height": "1998px",
-        "top": "34174px",
+        "top": "34274px",
         "left": "0px",
-        "objectPosition": "top",
-        "objectFit": "cover",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
+        "name": "leftHand",
+        "width": "1406px",
+        "height": "803px",
+        "top": "35442px",
+        "left": "0px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
+        "name": "bars",
+        "width": "1362px",
+        "height": "1446px",
+        "top": "34718px",
+        "left": "111px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
+        "name": "rightHand",
+        "width": "1007px",
+        "height": "913px",
+        "top": "34950px",
+        "left": "913px",
+        "objectPosition": "center",
+        "objectFit": "contain",
         "zIndex": 0
       },
       {
@@ -4860,7 +5015,7 @@
         "tag": "h1",
         "width": "620px",
         "height": "271px",
-        "top": "35082px",
+        "top": "35182px",
         "left": "595px",
         "fontFamily": "Formula Condensed",
         "fontSize": "145px",
@@ -4875,7 +5030,7 @@
         "tag": "h1",
         "width": "596px",
         "height": "145px",
-        "top": "35691px",
+        "top": "35791px",
         "left": "595px",
         "fontFamily": "Formula Condensed",
         "fontSize": "120px",
