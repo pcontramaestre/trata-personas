@@ -38,7 +38,7 @@ function Section4 () {
   useEffect(() => {
     if (smallInfoBox && smallInfoBox.infoGraphic) {
       const icon = document.getElementById('infoGif')
-      const div = document.getElementById('SmallInfoBoxinfoGif')
+      const div = document.getElementsByName('SmallInfoBoxinfoGif')[0]
 
       function activeDisplay () {
         div.style.display = 'flex'
