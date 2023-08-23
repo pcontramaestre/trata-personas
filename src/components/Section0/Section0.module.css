@@ -7,10 +7,8 @@
     background-color: #CFF9FF;
 }
 
-.HomeHeader {
-    background-image: url('../../assets/Section0/homeHeader.png');
-    background-size: cover;
-    background-position: center;
+.HomeHeaderImages {
+    object-fit: contain;
 }
 
 .HomeHeaderText {
