@@ -1,53 +1,56 @@
 import React from "react";
-import "./Header.css";
+// import "./Header.css";
+import data from "../../../trataHeader.json";
+import style from "./Header.css"
 
-const Header = () => {
+function Header() {
+  const page1 = data[0].header.page1;
   return (
-    <div className="header-container">
+    <section className="header-container">
       <div className="header-container_img">
         <div className="header-text">
-          <img src="src\assets\Header\header-1.jpg" alt="" />
-          <div className="text">VISIBILIZACIÓN DE LAS VÍCTIMAS</div>
+          <img src="src/assets/Header/header-1.jpg" alt="" />
+          <div className="text">{page1.text1}</div>
         </div>
         <div className="header-text">
-          <img src="src\assets\Header\header-2.jpg" alt="" />
-          <div className="text">LAS FINALIDADES DE LA TRATA DE PERSONAS</div>
+          <img src="src/assets/Header/header-2.jpg" alt="" />
+          <div className="text">{page1.text2}</div>
         </div>
         <div className="header-text">
-          <img src="src\assets\Header\header-3.jpg" alt="" />
-          <div className="text">PROTECCIÓN Y ATENCIÓN A LAS VÍCTIMAS</div>
+          <img src="src/assets/Header/header-3.jpg" alt="" />
+          <div className="text">{page1.text3}</div>
         </div>
       </div>
       <div className="header-container_img">
         <div className="header-text">
-          <img src="src\assets\Header\header-4.png" alt="" />
-          <div className="text">PROCURACIÓN DE LA JUSTICIA</div>
+          <img src="src/assets/Header/header-4.png" alt="" />
+          <div className="text">{page1.text4}</div>
         </div>
         <div className="header-text">
-          <img src="src\assets\Header\header-5.png" alt="" />
-          <div className="text">REPATRIACCIÓN</div>
+          <img src="src/assets/Header/header-5.png" alt="" />
+          <div className="text">{page1.text5}</div>
         </div>
         <div className="header-text">
-          <img src="src\assets\Header\header-6.png" alt="" />
-          <div className="text">PREVENCIÓN</div>
+          <img src="src/assets/Header/header-6.png" alt="" />
+          <div className="text">{page1.text6}</div>
         </div>
       </div>
       <div className="header-container_img">
-      <div className="header-text">
-          <img src="src\assets\Header\header-7.png" alt="" />
-          <div className="text">ACONTECIMIENTOS DE INTERÉS</div>
+        <div className="header-text">
+          <img src="src/assets/Header/header-7.png" alt="" />
+          <div className="text">{page1.text7}</div>
         </div>
         <div className="header-text">
-          <img src="src\assets\Header\header-8.png" alt="" />
-          <div className="text">CRÉDITOS</div>
+          <img src="src/assets/Header/header-8.png" alt="" />
+          <div className="text">{page1.text8}</div>
         </div>
         <div className="header-text">
-          <img src="src\assets\Header\header-9.png" alt="" />
-          <div className="text">REFERENCIAS</div>
+          <img src="src/assets/Header/header-9.png" alt="" />
+          <div className="text">{page1.text9}</div>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default Header;
