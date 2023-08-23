@@ -9,6 +9,10 @@ import logo from '../../assets/Instructions/logo.svg'
 import scroll from '../../assets/Instructions/scroll1.svg'
 import group from '../../assets/Instructions/group.svg'
 import audio1 from '../../assets/Instructions/audio1.svg'
+import background from '../../assets/Section0/frontPageBackground.png'
+import people from '../../assets/Section0/frontPagePeopleBehind.png'
+import person from '../../assets/Section0/frontPagePersonAhead.png'
+import puppet from '../../assets/Section0/frontPagePuppet.png'
 
 import data from '../../../troy.json'
 
@@ -16,7 +20,11 @@ const icons = {
   logo,
   scroll,
   group,
-  audio1
+  audio1,
+  background,
+  people,
+  person,
+  puppet
 }
 
 const { homeHeader } = data
@@ -30,10 +38,6 @@ function convertSize (input) {
 function Section0 () {
   const homeHeaderContainer = {
     height: convertSize(homeHeader.size.height)
-  }
-
-  const homeHeaderFrontPageStyle = {
-    height: convertSize(homeHeader.image.height)
   }
 
   const textStyles = homeHeader.text.map((texto, index) => ({
@@ -61,10 +65,9 @@ function Section0 () {
 
   return (
     <section className={style.HomeHeaderBackground} style={homeHeaderContainer}>
-      <div style={homeHeaderFrontPageStyle} className={style.HomeHeader} />
       {
         homeHeader.images.map((image, index) => (
-          <img src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : null} style={iconStyles[index]} key={image.name + index} />
+          <img src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
         ))
       }
       {
