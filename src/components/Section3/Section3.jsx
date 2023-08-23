@@ -15,7 +15,7 @@ import grafico2 from '../../assets/Section3/grafico2.png'
 import frecuencia from '../../assets/Section3/frecuencia.svg'
 import atenciones from '../../assets/Section3/atenciones.svg'
 import group from '../../assets/Instructions/group.svg'
-import infoGif from '../../assets/Instructions/infoGifBlanco1.svg'
+import infoGifSection3 from '../../assets/Instructions/infoGifBlanco1.svg'
 import audio from '../../assets/Instructions/audio1.svg'
 import rows from '../../assets/Section3/rows.png'
 import psicosocial from '../../assets/Section3/psicosocial.svg'
@@ -45,11 +45,11 @@ const imagesList = {
 }
 
 const iconList = {
-  infoGif
+  infoGifSection3
 }
 
 const { protectionAndCare } = data
-const { images, text, icons, noteBook, news, bigCard } = protectionAndCare
+const { images, text, icons, noteBook, news, bigCard, smallInfoBox } = protectionAndCare
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -61,25 +61,25 @@ function Section3 () {
   const [nameBigCard, setNameBigCard] = useState('')
 
   useEffect(() => {
-    // if (bigCard) {
-    //   const icon = document.getElementById('infoGif')
-    //   const div = document.getElementById('SmallInfoBoxinfoGif')
+    if (smallInfoBox) {
+      const iconsList = document.getElementsByName(icons[0].name)
+      const divs = document.getElementsByName(`SmallInfoBox${icons[0].name}`)
 
-    //   function activeDisplay () {
-    //     div.style.display = 'flex'
-    //   }
+      function activeDisplay (index) {
+        divs[index].style.display = 'flex'
+      }
 
-    //   function desactiveDisplay () {
-    //     div.style.display = ''
-    //   }
+      function desactiveDisplay (index) {
+        divs[index].style.display = ''
+      }
 
-    //   icon.addEventListener('mouseenter', activeDisplay)
-    //   div.addEventListener('mouseleave', desactiveDisplay)
-    //   return () => {
-    //     icon.removeEventListener('mouseenter', activeDisplay)
-    //     div.removeEventListener('mouseleave', desactiveDisplay)
-    //   }
-    // }
+      iconsList.forEach((icon, index) => icon.addEventListener('mouseenter', () => { activeDisplay(index) }))
+      divs.forEach((div, index) => div.addEventListener('mouseleave', () => { desactiveDisplay(index) }))
+      return () => {
+        iconsList.forEach((icon, index) => icon.removeEventListener('mouseenter', () => { activeDisplay(index) }))
+        divs.forEach((div, index) => div.removeEventListener('mouseleave', () => { desactiveDisplay(index) }))
+      }
+    }
   }, [])
 
   useEffect(() => {
@@ -153,7 +153,7 @@ function Section3 () {
       }
       {
         icons.map((icon, index) => (
-          <img src={icon && iconList[icon.name]} style={iconStyles[index]} className={style.ProtectionCareIcon} key={icon.name + index} />
+          <img name={icon.name} src={icon && iconList[icon.name]} style={iconStyles[index]} className={style.ProtectionCareIcon} key={icon.name + index} />
         ))
       }
       {
@@ -174,7 +174,9 @@ function Section3 () {
       }
       <NoteBook noteBook={noteBook} topSection={protectionAndCare.top} />
       {/* <BarGraph /> */}
-      <SmallInfoBox />
+      {
+        Object.values(smallInfoBox).map((infoBox, index) => <SmallInfoBox info={infoBox} topSection={protectionAndCare.top} key={infoBox.name + index} />)
+      }
       <BigCard bigCard={bigCard} topSection={protectionAndCare.top} name={nameBigCard} />
       <News news={news} topSection={protectionAndCare.top} />
     </section>
@@ -182,9 +184,6 @@ function Section3 () {
 }
 
 function BigCard ({ bigCard, topSection, name }) {
-  console.log('name:', name)
-  console.log('bigCard:', bigCard)
-  if (bigCard[name]) console.log('bigCard[name]:', bigCard[name])
   const cardStyles = name
     ? {
         ...bigCard,
@@ -192,6 +191,7 @@ function BigCard ({ bigCard, topSection, name }) {
         height: convertSize(bigCard.height),
         top: convertSize(Number(bigCard[name].top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px'),
         left: convertSize(bigCard[name].left),
+        borderRadius: convertSize(bigCard.borderRadius),
         backgroundImage: `url("./src/assets/Section3/${bigCard.backgroundImage}.png")`
       }
     : {}
@@ -203,8 +203,8 @@ function BigCard ({ bigCard, topSection, name }) {
         lineHeight: convertSize(bigCard.titleStile.lineHeight),
         width: convertSize(bigCard[name].title.width),
         height: convertSize(bigCard[name].title.height),
-        top: convertSize(bigCard[name].title.top),
-        left: convertSize(bigCard[name].title.left)
+        top: convertSize(Number(bigCard[name].title.top.split('px')[0]) - Number(bigCard[name].topCard.split('px')[0]) + 'px'),
+        left: convertSize(Number(bigCard[name].title.left.split('px')[0]) - Number(bigCard[name].leftCard.split('px')[0]) + 'px')
       }
     : {}
 
@@ -215,8 +215,8 @@ function BigCard ({ bigCard, topSection, name }) {
         lineHeight: convertSize(bigCard.subtitleStile.lineHeight),
         width: convertSize(bigCard[name].subtitle.width),
         height: convertSize(bigCard[name].subtitle.height),
-        top: convertSize(bigCard[name].subtitle.top),
-        left: convertSize(bigCard[name].subtitle.left)
+        top: convertSize(Number(bigCard[name].subtitle.top.split('px')[0]) - Number(bigCard[name].topCard.split('px')[0]) + 'px'),
+        left: convertSize(Number(bigCard[name].subtitle.left.split('px')[0]) - Number(bigCard[name].leftCard.split('px')[0]) + 'px')
       }
     : {}
 
@@ -227,8 +227,8 @@ function BigCard ({ bigCard, topSection, name }) {
         lineHeight: convertSize(bigCard.textStile.lineHeight),
         width: convertSize(bigCard[name].text.width),
         height: convertSize(bigCard[name].text.height),
-        top: convertSize(bigCard[name].text.top),
-        left: convertSize(bigCard[name].text.left)
+        top: convertSize(Number(bigCard[name].text.top.split('px')[0]) - Number(bigCard[name].topCard.split('px')[0]) + 'px'),
+        left: convertSize(Number(bigCard[name].text.left.split('px')[0]) - Number(bigCard[name].leftCard.split('px')[0]) + 'px')
       }
     : {}
 
