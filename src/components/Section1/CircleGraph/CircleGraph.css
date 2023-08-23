@@ -211,12 +211,12 @@
     font-size: 1.5em;
   }
   .circlegraph__small {
-    /* margin: 0; */
     font-size: 0.8em;
   }
   .circlegraph__p {
     width: 100%;
     margin: 1em 0;
+    text-align: center;
     font-size: 2em;
   }
   .circlegraph_graphic {
@@ -258,17 +258,14 @@
   }
   .list__color-text1 {
     font-size: 2em;
-    letter-spacing: 1.05px;
     margin: 5px 10px;
   }
   .list__color-text2 {
     font-size: 2em;
-    letter-spacing: 1.05px;
     margin: 5px 10px;
   }
   .list__color-text3 {
     font-size: 2em;
-    letter-spacing: 1.05px;
     margin: 5px 10px;
   }
 }
@@ -306,6 +303,15 @@
   }
   .circlegraph__percentage3 {
     font-size: 1.5em;
+  }
+  .list__color-text1{
+    font-size: 1em;
+  }
+  .list__color-text2{
+    font-size: 1em;
+  }
+  .list__color-text3{
+    font-size: 1em;
   }
 }
 

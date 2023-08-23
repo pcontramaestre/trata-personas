@@ -1,13 +1,14 @@
 .women {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
 }
 
 .women__content {
-  width: 70%;
+  width: 85%;
   height: 90%;
 }
 
@@ -34,46 +35,53 @@
   /* width: 100%; */
   position: absolute;
   bottom: 0;
-  left: 40%;
-  height: 75%;
+  left: 50%;
+  height: 30vh;
   z-index: 1;
 }
 
 .women__texts {
   display: flex;
+  position: relative;
   flex-direction: column;
-  align-items: start;
-  justify-content: space-around;
-  position: absolute;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../../assets/Img-Section01/Page10/women.png");
+  justify-content: space-evenly;
   z-index: 20;
-  height: 45vh;
-  margin-left: 1.5%;
+  height: 50vh;
+  /* width: 100vw; */
 }
 
 .women__texts-content1 {
+  top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 2%;
-  /* padding: 2%; */
-  align-items: start;
-  width: 45%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 50%;
 }
 
 .women__texts-content2 {
+  bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: start;
-  width: 45%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 45%;
 }
 
 .women__text-p {
-  width: 100%;
+  width: 60%;
   color: var(--verde-medio, #0a4b4e);
   font-family: "Inter", sans-serif;
   padding: 2%;
-  font-size: 30px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -82,7 +90,7 @@
 .women__card-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 8vh;
   width: 95%;
   height: 18%;
 }
@@ -93,24 +101,44 @@
   align-items: center;
   width: 45%;
   border-radius: 28px;
-  padding: 30px;
+  padding: 3vh;
   background: #165150;
 }
 
 .women__card2 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 42%;
-  padding: 30px;
+  padding:3vh;
   border-radius: 28px;
   background: #60b6ba;
+}
+
+.women__gif {
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  height: 40px;
+}
+
+.women__percentage {
+  color: var(--verde-medio, #0a4b4e);
+  font-family: Formula Condensed;
+  font-size: 100px;
+  font-size: 13vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140px; /* 93.333% */
+  text-transform: uppercase;
 }
 
 .women__card-p {
   color: #fff;
   font-family: Formula Condensed;
-  font-size: 32px;
+  padding: 1em;
+  font-size: 4.3vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
