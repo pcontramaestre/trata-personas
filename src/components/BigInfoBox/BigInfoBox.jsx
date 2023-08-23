@@ -1,7 +1,5 @@
 import { useEffect } from 'react'
-
 import style from './BigInfoBox.module.css'
-
 import group from '../../assets/Instructions/group.svg'
 
 function convertSize (input) {
