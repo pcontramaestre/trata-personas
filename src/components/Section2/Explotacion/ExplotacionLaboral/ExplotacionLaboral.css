@@ -4,18 +4,15 @@
   align-items: center;
   margin-top: 20vh;
   background-image: url("../../../../assets/Img-Section02//Page06//backgroundpasto.png");
-  /* width: 100vw; */
-  /* background-position:center; */
   background-size: cover;
   background-repeat: no-repeat;
-  /* bottom: -0.9vw; */
   position: relative;
 }
 
 .explotacion__laboral-content {
   display: flex;
   position: relative;
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
   z-index: 20;
 }
@@ -29,9 +26,9 @@
 
 .laboral__testimonios {
   width: 100%;
-  top: 20vh;
+  bottom: -10vh;
   z-index: 60;
-  position: relative;
+  position: absolute;
   height: 70vh;
 }
 
@@ -52,17 +49,12 @@
 
 @media screen and (max-width: 720px) {
   .explotacion__laboral {
-    margin-top: 10vh;
-    background-position:center;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
 
   .explotacion__laboral-content {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    z-index: 20;
+    height: 120vh;
   }
 
   .laboral__img {
@@ -72,21 +64,23 @@
     z-index: 20;
   }
   .laboral__testimonios {
-    width: 100%;
-    top: 20vh;
-    z-index: 60;
-    position: relative;
-    height: 80vh;
+    bottom: 0vh;
+    height: 20vh;
   }
   .laboral__title {
-    top: 2em;
-    text-align: end;
-    font-size: 6em;
+    display: flex;
+    position: relative;
+    right: 20px;
+    margin: 0;
+    justify-content: flex-end;
+    width: 100%;
+    height: 5%;
+    font-size: 3em;
   }
 }
 @media screen and (max-width: 420px) {
   .explotacion__laboral {
-    margin-top: 8vh;
+    /* margin-top: 8vh; */
   }
 
   .explotacion__laboral-content {
@@ -102,14 +96,14 @@
   }
   .laboral__testimonios {
     width: 100%;
-    top: 10vh;
+    top: -6.6em;
     z-index: 60;
     position: relative;
-    height: 80vh;
+    height: 10vh;
   }
   .laboral__title {
-    top: 2em;
+    top: 1em;
     text-align: end;
-    font-size: 3.5em;
+    font-size: 1.7em;
   }
 }

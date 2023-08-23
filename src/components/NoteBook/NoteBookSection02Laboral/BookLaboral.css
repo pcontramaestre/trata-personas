@@ -33,7 +33,7 @@
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
   font-size: 1.3vw;
-  line-height: 1.5vw;
+  line-height: 1.4vw;
   font-weight: 400;
   text-align: start;
   font-family: "Inter", sans-serif;
@@ -51,7 +51,7 @@
   text-align: start;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 0.8vw;
+  margin-left: 0.5vw;
   margin-top: 0.3vh;
 }
 
@@ -73,7 +73,7 @@
 @media screen and (max-width: 720px) {
   .NoteBook03 {
     left: 22em;
-    top: 20em;
+    top: 5em;
     width: 50vw;
     height: 55vh;
   }
@@ -105,7 +105,7 @@
 @media screen and (max-width: 420px) {
   .NoteBook03 {
     left: 10em;
-    top: 20em;
+    top: 5em;
     width: 45vw;
     width: 12em;
     height: 50vh;

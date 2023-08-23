@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+  position: relative;
   height: 200vh;
   width: 100vw;
 }
@@ -23,7 +24,7 @@
   margin-bottom: 0;
   margin-top: 20vh;
   text-align: start;
-  font-size: 5vw;
+  font-size: 10.2vh;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 3px;
@@ -35,4 +36,38 @@
   right: 5vw;
   width: 40vw;
   position: absolute;
+}
+
+.adopcion__testimonios {
+  position: absolute;
+  bottom: -15vh;
+}
+
+@media screen and (max-width: 720px) {
+  .adopcion {
+    height: 100vh;
+  }
+  .adopcion__content {
+    height: 90vh;
+  }
+  .adopcion__title {
+    width: 50%;
+    font-size: 3em;
+  }
+  .adopcion__img {
+    top: 20em;
+  }
+  .adopcion__testimonios {
+    position: absolute;
+    bottom: -15vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .adopcion {
+    height: 90vh;
+  }
+  .adopcion__title {
+    width: 50%;
+    font-size: 2em;
+  }
 }

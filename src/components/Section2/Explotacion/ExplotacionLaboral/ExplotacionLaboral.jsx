@@ -13,7 +13,10 @@ const ExplotacionLaboral = () => {
   return (
     <div className="explotacion__laboral">
       <div className="explotacion__laboral-content">
-        <h1 className="laboral__title">{page6.title}</h1>
+        <h1
+          className="laboral__title"
+          dangerouslySetInnerHTML={{ __html: page6.title }}
+        />
         <BookLaboral page6={page6} />
       </div>
       {/* <img className="laboral__img" src={backgroundpasto} /> */}
