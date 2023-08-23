@@ -63,9 +63,6 @@
 
 @media screen and (max-width: 720px) {
   .circlegraph02 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100vw;
     height: 120vh;
     margin-top: 20vh;
@@ -104,6 +101,12 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .circlegraph02{
+    height: 90vh;
+  }
+  .circlegraph02__title{
+    font-size: 3em;
+  }
   .circlegraph02__subtitle {
     text-align: center;
     font-size: 1em;

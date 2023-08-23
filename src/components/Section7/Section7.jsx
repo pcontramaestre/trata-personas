@@ -1,12 +1,15 @@
 import style from './Section7.module.css'
 
-import frontPage from '../../assets/Section7/interestingEvents.png'
+import background from '../../assets/Section7/frontPageBackground.png'
+import persons from '../../assets/Section7/frontPagePersons.png'
 import scroll2 from '../../assets/Section7/scroll2.svg'
 
 import data from '../../../troy.json'
 import HandSlide from '../Slides/HandSlide/HandSlide'
 
 const icons = {
+  background,
+  persons,
   scroll2
 }
 
@@ -61,7 +64,6 @@ function Section7 () {
 
   return (
     <section className={style.InterestingEventsBackground} style={interestingEventsContainer}>
-      <img src={frontPage} style={interestingEventsFrontPageStyle} className={style.InterestingEvents} />
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
       {
         interestingEvents.images.map((image, index) => (

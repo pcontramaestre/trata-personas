@@ -25,7 +25,6 @@ const SliderSection02 = () => {
   };
 
   return (
-    <div>
       <Slider {...settings}>
         {texts.map((text, index) => (
           <div key={index} className="slider-container">
@@ -36,7 +35,6 @@ const SliderSection02 = () => {
           </div>
         ))}
       </Slider>
-    </div>
   );
 };
 

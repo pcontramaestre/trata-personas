@@ -7,7 +7,11 @@ import style from './Section4.module.css'
 
 import data from '../../../troy.json'
 
-import frontPage from '../../assets/Section4/frontPage.png'
+import background from '../../assets/Section4/frontPageBackground.png'
+import person1 from '../../assets/Section4/frontPagePerson1.png'
+import person2 from '../../assets/Section4/frontPagePerson2.png'
+import person3 from '../../assets/Section4/frontPagePerson3.png'
+import person4 from '../../assets/Section4/frontPagePerson4.png'
 import grafico1 from '../../assets/Section4/grafico1.png'
 import grafico2 from '../../assets/Section4/grafico2.png'
 import grafico3 from '../../assets/Section4/grafico3.png'
@@ -16,7 +20,11 @@ import grafico5 from '../../assets/Section4/grafico5.png'
 import infoGif from '../../assets/Instructions/infoGifBlanco1.svg'
 
 const imagesList = {
-  frontPage,
+  background,
+  person1,
+  person2,
+  person3,
+  person4,
   grafico1,
   grafico2,
   grafico3,

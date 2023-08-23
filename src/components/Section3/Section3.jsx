@@ -9,7 +9,10 @@ import style from './Section3.module.css'
 
 import data from '../../../troy.json'
 
-import frontPage from '../../assets/Section3/frontPage.png'
+import background from '../../assets/Section3/frontPageBackground.png'
+import leftHand from '../../assets/Section3/frontPageLeftHand.png'
+import bars from '../../assets/Section3/frontPageBars.png'
+import rightHand from '../../assets/Section3/frontPageRightHand.png'
 import grafico1 from '../../assets/Section3/grafico1.png'
 import grafico2 from '../../assets/Section3/grafico2.png'
 import frecuencia from '../../assets/Section3/frecuencia.svg'
@@ -25,9 +28,13 @@ import manutencion from '../../assets/Section3/manutencion.svg'
 import educacion from '../../assets/Section3/educacion.svg'
 import alojamiento from '../../assets/Section3/alojamiento.svg'
 import reintegracion from '../../assets/Section3/reintegracion.svg'
+import backgroundCard from '../../assets/Section3/backgroundCard.png'
 
 const imagesList = {
-  frontPage,
+  background,
+  leftHand,
+  bars,
+  rightHand,
   grafico1,
   grafico2,
   frecuencia,
@@ -192,7 +199,7 @@ function BigCard ({ bigCard, topSection, name }) {
         top: convertSize(Number(bigCard[name].top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px'),
         left: convertSize(bigCard[name].left),
         borderRadius: convertSize(bigCard.borderRadius),
-        backgroundImage: `url("./src/assets/Section3/${bigCard.backgroundImage}.png")`
+        backgroundImage: `url(${backgroundCard})`
       }
     : {}
 
