@@ -1,7 +1,7 @@
 import style from "./Section8.module.css";
 import frontPage from "../../assets/Section8/frontPage.png";
 import data from "../../../troy.json";
-import Corett from "./Corett/corett";
+import Corett from "./Corett/Corett";
 import Countries from "./Paises/Countries";
 import VideoCorett from "./VideoCorett/VideoCorett";
 
