@@ -3,12 +3,11 @@ import React from "react";
 const Cuadro13 = () => {
   return (
     <div className="cuadro13-text">
-      <div className="cuadro13-title">
-        The concept of ‘exploitation’ in the trafficking in persons protocol.
-      </div>
+      <h2 className="cuadro13-title">
+      Día mundial contra la trata de personas 2022: prevenir, proteger y perseguir.
+      </h2>
       <p className="cuadro13-description">
-        Oficina de las Naciones Unidas contra la Droga y el Delito, UNODC.
-        (2015).
+      Organización Internacional para las Migraciones, OIM. (2022).
       </p>
     </div>
   );

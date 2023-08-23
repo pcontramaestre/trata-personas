@@ -24,7 +24,7 @@ function SmallInfoBox ({ info, topSection }) {
     margin: `${convertSize((Number(info.width.split('px')[0]) - Number(info.text.width.split('px')[0])) / 2 + 'px')} 0px`
   }
   return (
-    <div id={`SmallInfoBox${info.name}`} style={containerStyles} className={style.SmallInfoBoxContainer}>
+    <div name={`SmallInfoBox${info.name}`} style={containerStyles} className={style.SmallInfoBoxContainer}>
       <p dangerouslySetInnerHTML={{ __html: info.text.content }} style={textStyle} className={style.SmallInfoBoxText} />
     </div>
   )

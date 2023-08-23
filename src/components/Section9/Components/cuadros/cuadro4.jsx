@@ -3,10 +3,10 @@ import React from "react";
 const Cuadro4 = () => {
   return (
     <div className="cuadro4-text">
-      <div className="cuadro4-title">
+      <h2 className="cuadro4-title">
         Coalición Regional de Trata de Personas y Tráfico Ilícito de Migrantes,
         Sección Noticias.
-      </div>
+      </h2>
       <p className="cuadro4-description">
         Coalición Regional de Trata de Personas y Tráfico Ilícito de Migrantes,
         CORETT (s.f.)
