@@ -1,0 +1,125 @@
+.corett {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.corett__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.corett__headtext {
+  display: flex;
+  width: 80%;
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: Inter;
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+
+.corett__title {
+  display: flex;
+  width: 80%;
+  color: var(--verde-claro-textos, #006873);
+  text-align: center;
+  font-family: Formula Condensed;
+  font-size: 54px;
+  font-size: 7.5vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.corett__subtitle {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: Inter;
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 129.494%; /* 38.848px */
+  letter-spacing: 0.9px;
+}
+
+.corett__foot-text {
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: Inter;
+  font-size: 21px;
+  font-size: 2.5vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.75px;
+  text-transform: uppercase;
+}
+
+.corett__foot {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.corett__foot-title {
+  color: var(--verde-medio, #0a4b4e);
+  text-align: center;
+  font-family: Inter;
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 129.494%; /* 38.848px */
+  letter-spacing: 0.9px;
+}
+
+@media screen and (max-width: 720px) {
+  .corett__headtext {
+    width: 95%;
+    font-size: 1.5em;
+  }
+  .corett__title {
+    width: 80%;
+    font-size: 2.5em;
+    letter-spacing: 1.8px;
+  }
+  .corett__subtitle {
+    width: 80%;
+    font-size: 1.5em;
+  }
+  .corett__foot-text {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .corett__headtext {
+    width: 95%;
+    font-size: 1em;
+  }
+  .corett__title {
+    width: 95%;
+    font-size: 2em;
+    letter-spacing: 1.8px;
+  }
+  .corett__subtitle {
+    width: 95%;
+    font-size: 1em;
+  }
+  .corett__foot-text {
+    font-size: 0.8em;
+  }
+}

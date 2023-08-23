@@ -1,0 +1,44 @@
+[
+  {
+    "creditos": {
+      "page1": {
+        "ANOTACIÓN!!!!!!!!!!": "está en el json de troy.json"
+      },
+      "page2": {
+        "head": "La Coalición Regional contra la Trata de Personas y el Tráfico Ilícito de Migrantes (CORETT) es  la instancia encargada de",
+        "title": "la adopción e impulso de estándares, políticas y procesos regionales para combatir y prevenir la trata de personas y el tráfico ilícito de migrantes y mejorar la atención a las víctimas de trata de personas.",
+        "subtitle": "De igual forma, la CORETT trabaja como un <strong>ente encargado de asesorar a los gobiernos de los países que lo requieran.</strong>",
+        "foot": "(CORETT)"
+      },
+      "page3": {
+        "title": "La <strong>CORETT</strong> cuenta con una <strong>Presidencia y una Secretaría Técnica,</strong> y está integrada por las siguientes instituciones:"
+      },
+      "page4": {
+        "country1": "Belice",
+        "titlebelice": "Anti-Trafficking in Persons Council.",
+        "country2": "Costa Rica",
+        "titlecostarica": "Coalición Nacional Contra el Tráfico Ilícito de Migrantes y Trata de Personas.",
+        "country3": "El Salvador",
+        "titleelsalvador": "Consejo Nacional Contra la Trata de Personas.",
+        "country4": "Guatemala",
+        "titleguatemala": "Secretaría contra la Violencia Sexual, Explotación y Trata de Personas.",
+        "country5": "Honduras",
+        "titlehonduras": "Comisión Interinstitucional Contra la Explotación Sexual Comercial y la Trata de Personas.",
+        "country6": "México",
+        "titlemexico": "Comisión Intersecretarial para Prevenir, Sancionar y Erradicar los Delitos en Materia de Trata de Personas y para la Protección y Asistencia a las Víctimas de estos Delitos.",
+        "country7": "Nicaragua",
+        "titlenicaragua": "Coalición Nacional contra <br/> la Trata de Personas.",
+        "country8": "PANAMÁ",
+        "titlepanama": "Comisión Nacional contra la Trata de Personas.",
+        "country9": "REPÚBLICA DOMINICANA",
+        "titlerdm": "Comisión Interinstitucional de Combate a la Trata de Personas y el Tráfico Ilícito de Migrantes."
+      },
+      "page5": {
+        "title": "CORETT",
+        "box": {
+          "text": "<strong>Esta multimedia fue realizada gracias al apoyo de la Organización Internacional para las Migraciones</strong> (OIM) - Oficina Regional para Centroamérica, Norteamérica y el Caribe - en el marco del <strong>Programa Regional sobre Migración,</strong> financiado por la Oficina de Población, Refugiados y Migración del Departamento de Estado de los EE.UU."
+        }
+      }
+    }
+  }
+]

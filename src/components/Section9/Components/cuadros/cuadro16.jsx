@@ -3,12 +3,11 @@ import React from "react";
 const Cuadro16 = () => {
   return (
     <div className="cuadro16-text">
-      <div className="cuadro16-title">
-        The concept of ‘exploitation’ in the trafficking in persons protocol.
-      </div>
+      <h2 className="cuadro16-title">
+      Las víctimas LGBTIQ+ de la trata de personas.
+      </h2>
       <p className="cuadro16-description">
-        Oficina de las Naciones Unidas contra la Droga y el Delito, UNODC.
-        (2015).
+      Organización Internacional para las Migraciones, OIM. (s.f.). Oficina regional para Centroamérica, Norteamérica y el Caribe.
       </p>
     </div>
   );

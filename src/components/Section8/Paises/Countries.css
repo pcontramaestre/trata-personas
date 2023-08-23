@@ -1,0 +1,114 @@
+.countries {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countries__background {
+  padding: 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../assets/Section8/Page2/azul.png");
+  width: 100%;
+}
+
+.rosa {
+  background-image: url("../../../assets//Section8/Page2/rosado.png");
+}
+
+.countries__name {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+
+.countries__img {
+  margin: 0 2vh;
+  width: 22%;
+}
+
+.name__country {
+  color: #fff;
+  font-family: Formula Condensed;
+  font-size: 13.5vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 101.875px */
+  letter-spacing: 3.75px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.rosaname {
+  color: #ffa0a0;
+}
+
+.text__country {
+  color: #0a3c3f;
+  font-family: Formula Condensed;
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  width: 32%;
+}
+
+@media screen and (max-width: 720px) {
+  .countries__background {
+    padding: 10% 0;
+  }
+  .countries__name {
+    width: 60%;
+  }
+  .countries__img {
+    margin: 0 0.5em;
+    width: 15%;
+  }
+  .name__country {
+    font-size: 4em;
+    margin: 0 10px;
+  }
+  .text__country {
+    color: #0a3c3f;
+    font-family: Formula Condensed;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .countries__background {
+    padding: 5% 0;
+  }
+  .countries__name {
+    width: 65%;
+  }
+  .countries__img {
+    margin: 0 0.5em;
+    width: 15%;
+  }
+  .name__country {
+    font-size: 1.8em;
+    margin: 0 10px;
+  }
+  .text__country {
+    margin: 0 5px;
+    color: #0a3c3f;
+    font-family: Formula Condensed;
+    font-size: 0.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    width: 40%;
+  }
+}

@@ -23,8 +23,6 @@
 
 .info__texts {
   display: flex;
-  /* margin-left: 10px; */
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-evenly;
   width: 90vw;
