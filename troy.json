@@ -3075,8 +3075,8 @@
           "tag": "p",
           "width": "1401px",
           "height": "137px",
-          "top": "5415px",
-          "left": "324.9921875px",
+          "top": "67275px",
+          "left": "1378px",
           "fontFamily": "Inter",
           "fontSize": "30px",
           "fontWeight": "400",
@@ -4680,13 +4680,43 @@
     "backgroundColor": "#CFF9FF",
     "images": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
         "height": "1998px",
-        "top": "34174px",
+        "top": "34274px",
         "left": "0px",
-        "objectPosition": "top",
-        "objectFit": "cover",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
+        "name": "leftHand",
+        "width": "1406px",
+        "height": "803px",
+        "top": "35442px",
+        "left": "0px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
+        "name": "bars",
+        "width": "1362px",
+        "height": "1446px",
+        "top": "34718px",
+        "left": "111px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
+        "name": "rightHand",
+        "width": "1007px",
+        "height": "913px",
+        "top": "34950px",
+        "left": "913px",
+        "objectPosition": "center",
+        "objectFit": "contain",
         "zIndex": 0
       },
       {
