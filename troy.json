@@ -4777,7 +4777,7 @@
     ],
     "icons": [
       {
-        "name": "infoGif",
+        "name": "infoGifSection3",
         "width": "40px",
         "height": "40px",
         "top": "38145px",
@@ -4786,7 +4786,7 @@
         "zIndex": 1
       },
       {
-        "name": "infoGif",
+        "name": "infoGifSection3",
         "width": "40px",
         "height": "40px",
         "top": "38980px",
@@ -4795,6 +4795,44 @@
         "zIndex": 1
       }
     ],
+    "smallInfoBox": {
+      "infoGraphic1": {
+        "name": "infoGifSection3",
+        "width": "886px",
+        "top": "38100px",
+        "left": "535px",
+        "backgroundColor": "#FFEE96",
+        "text": {
+          "content": "Para algunos países, en el reporte de las víctimas atendidas se cuantifica también el núcleo familiar entendiéndose como una atención extendida. Así mismo, la atención puede incluir víctimas de años anteriores. Por esta razón el número de víctimas atendidas es mayor que el número de víctimas identificadas.",
+          "width": "777px",
+          "fontFamily": "Inter",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "justify",
+          "color": "#000000"
+        }
+      },
+      "infoGraphic2": {
+        "name": "infoGifSection3",
+        "width": "718.45px",
+        "top": "38950px",
+        "left": "635px",
+        "backgroundColor": "#FFF7CE",
+        "text": {
+          "content": "Las personas asistidas pueden recibir más de un tipo de atención.",
+          "width": "637px",
+          "fontFamily": "Inter",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "letterSpacing": "0em",
+          "textAlign": "justify",
+          "color": "#000000"
+        }
+      }
+    },
     "text": [
       {
         "content": "PROTECCIÓN Y ATENCIÓN",
@@ -5610,6 +5648,7 @@
     "bigCard": {
       "width": "786px",
       "height": "488px",
+      "borderRadius": "28px",
       "backgroundImage": "backgroundCard",
       "titleStile": {
         "fontFamily": "Formula Condensed",
@@ -5639,29 +5678,199 @@
         "color": "#006873"
       },
       "psicosocial": {
-        "name": "psicoloscial",
+        "name": "psicosocial",
         "top": "39050px",
         "left": "550.66px",
+        "topCard": "218px",
+        "leftCard": "134px",
         "title": {
           "content": "11.071",
           "width": "375px",
           "height": "180px",
-          "top": "106px",
-          "left": "205px"
+          "top": "324px",
+          "left": "339px"
         },
         "subtitle": {
           "content": "Número de atenciones",
           "width": "368px",
           "height": "76px",
-          "top": "246px",
-          "left": "209px"
+          "top": "464px",
+          "left": "343px"
         },
         "text": {
           "content": "Se contemplan las terapias individuales, terapias grupales, primeros auxilios psicológicos.",
           "width": "610px",
           "height": "69px",
-          "top": "355px",
-          "left": "88px"
+          "top": "573px",
+          "left": "222px"
+        }
+      },
+      "manutencion": {
+        "name": "manutencion",
+        "top": "40760px",
+        "left": "550.66px",
+        "topCard": "153px",
+        "leftCard": "100px",
+        "title": {
+          "content": "2.614",
+          "width": "314px",
+          "height": "140px",
+          "top": "259px",
+          "left": "336px"
+        },
+        "subtitle": {
+          "content": "Número de atenciones",
+          "width": "368px",
+          "height": "76px",
+          "top": "389px",
+          "left": "309px"
+        },
+        "text": {
+          "content": "Se contempla la asistencia en efectivo, la provisión de alimentos, artículos de higiene y ropa.",
+          "width": "610px",
+          "height": "69px",
+          "top": "508px",
+          "left": "188px"
+        }
+      },
+      "alojamiento": {
+        "name": "alojamiento",
+        "top": "41900px",
+        "left": "550.66px",
+        "topCard": "139px",
+        "leftCard": "108px",
+        "title": {
+          "content": "1.589",
+          "width": "314px",
+          "height": "140px",
+          "top": "259px",
+          "left": "342px"
+        },
+        "subtitle": {
+          "content": "Número de atenciones",
+          "width": "368px",
+          "height": "76px",
+          "top": "379px",
+          "left": "309px"
+        },
+        "text": {
+          "content": "Se contempla el alojamiento, ya sea en albergues estatales, de Organizaciones no Gubernamentales, o asistencia con alquiler.",
+          "width": "514px",
+          "height": "101px",
+          "top": "487px",
+          "left": "244px"
+        }
+      },
+      "educacion": {
+        "name": "educacion",
+        "top": "41330px",
+        "left": "550.66px",
+        "topCard": "139px",
+        "leftCard": "119px",
+        "title": {
+          "content": "1.671",
+          "width": "314px",
+          "height": "140px",
+          "top": "214px",
+          "left": "359px"
+        },
+        "subtitle": {
+          "content": "Número de atenciones",
+          "width": "368px",
+          "height": "76px",
+          "top": "327px",
+          "left": "328px"
+        },
+        "text": {
+          "content": "Se incluyen servicios de acompañamiento para la integración en el sistema de educación, en particular en los casos de víctimas menores de edad, así como capacitaciones vocacionales y apoyo para el inicio de emprendimientos.",
+          "width": "597px",
+          "height": "159px",
+          "top": "430px",
+          "left": "214px"
+        }
+      },
+      "medico": {
+        "name": "medico",
+        "top": "39620px",
+        "left": "550.66px",
+        "topCard": "85px",
+        "leftCard": "109px",
+        "title": {
+          "content": "6.990",
+          "width": "324px",
+          "height": "140px",
+          "top": "191px",
+          "left": "340px"
+        },
+        "subtitle": {
+          "content": "Número de atenciones",
+          "width": "368px",
+          "height": "76px",
+          "top": "331px",
+          "left": "318px"
+        },
+        "text": {
+          "content": "Se incluyen primeros auxilios médicos, atención médica general o especializada, medicamentos y exámenes médicos.",
+          "width": "514px",
+          "height": "69px",
+          "top": "440px",
+          "left": "245px"
+        }
+      },
+      "legal": {
+        "name": "legal",
+        "top": "40190px",
+        "left": "550.66px",
+        "topCard": "100px",
+        "leftCard": "109px",
+        "title": {
+          "content": "5.316",
+          "width": "320px",
+          "height": "140px",
+          "top": "206px",
+          "left": "340px"
+        },
+        "subtitle": {
+          "content": "Número de atenciones",
+          "width": "368px",
+          "height": "76px",
+          "top": "346px",
+          "left": "318px"
+        },
+        "text": {
+          "content": "Se incluye acompañamiento para la presentación de denuncias y durante el proceso penal, así como acompañamiento con los consulados y embajadas.",
+          "width": "630px",
+          "height": "69px",
+          "top": "455px",
+          "left": "187px"
+        }
+      },
+      "reintegracion": {
+        "name": "reintegracion",
+        "top": "42470px",
+        "left": "550.66px",
+        "topCard": "116px",
+        "leftCard": "120px",
+        "title": {
+          "content": "1.005",
+          "width": "320px",
+          "height": "140px",
+          "top": "222px",
+          "left": "355px"
+        },
+        "subtitle": {
+          "content": "Número de atenciones",
+          "width": "368px",
+          "height": "76px",
+          "top": "362px",
+          "left": "329px"
+        },
+        "text": {
+          "content": "Se incluye la reunificación y consejería familiar.",
+          "width": "630px",
+          "height": "69px",
+          "top": "471px",
+          "left": "198px"
         }
       }
     },
