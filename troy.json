@@ -965,6 +965,26 @@
     },
     "images": [
       {
+        "name": "background",
+        "width": "1920px",
+        "height": "1528px",
+        "top": "70628px",
+        "left": "0px",
+        "position": "absolute",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "persons",
+        "width": "1920px",
+        "height": "1070px",
+        "top": "71080px",
+        "left": "0px",
+        "position": "absolute",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
         "name": "scroll2",
         "width": "130px",
         "height": "62.4px",
@@ -2584,7 +2604,8 @@
         "lineHeight": "142px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#08393D"
+        "color": "#08393D",
+        "zIndex": "1"
       },
       {
         "content": "(CORETT, 2021).",
