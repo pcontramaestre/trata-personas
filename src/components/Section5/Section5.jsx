@@ -5,7 +5,12 @@ import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section5.module.css'
 
-import frontPage from '../../assets/Section5/repatriation.png'
+import background from '../../assets/Section5/frontPageBackground.png'
+import person1 from '../../assets/Section5/frontPagePerson1.png'
+import person2 from '../../assets/Section5/frontPagePerson2.png'
+import person3 from '../../assets/Section5/frontPagePerson3.png'
+import person4 from '../../assets/Section5/frontPagePerson4.png'
+import person5 from '../../assets/Section5/frontPagePerson5.png'
 import grafico from '../../assets/Section5/grafico.png'
 import hand from '../../assets/Section5/hand.svg'
 import straightBlueArrow from '../../assets/Section5/straightBlueArrow.svg'
@@ -20,7 +25,12 @@ const { repatriation } = data
 const { noteBook, bigInfoBox, map, animation } = data.repatriation
 
 const images = {
-  frontPage,
+  background,
+  person1,
+  person2,
+  person3,
+  person4,
+  person5,
   grafico,
   hand,
   straightBlueArrow,
