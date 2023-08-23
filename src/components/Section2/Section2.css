@@ -1,14 +1,23 @@
 .Section02 {
+  margin-top: 10vh;
   width: 100vw;
-  /* flex-shrink: 0; */
-  background:#FEFFF3;
+  background: #fefff3;
+}
+
+.page2content {
+  height: 150vh;
 }
 
 .page2 {
+  display: flex;
+  justify-content: flex-end;
   background: url("../../assets/Img-Section02/Page01/background.png");
-  height: 130vh;
-  background-size: 100vw;
+  height: 100%;
+  /* background-size: 100vw; */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
   position: relative;
 }
 
@@ -19,8 +28,7 @@
   font-family: "Formula Condensed";
   right: 13%;
   top: 25%;
-  font-size: 110px;
-  font-size: 720%;
+  font-size: 14.6vh;
   font-style: normal;
   flex-shrink: 0;
   font-weight: 700;
@@ -34,8 +42,8 @@
   position: absolute;
   font-family: "Formula Condensed";
   right: 5.8%;
-  bottom: 42%;
-  font-size: 600%;
+  bottom: 48%;
+  font-size: 13vh;
   font-style: normal;
   flex-shrink: 0;
   font-weight: 700;
@@ -43,6 +51,43 @@
   text-transform: uppercase;
 }
 
-.slider__content{
+.slider__content {
   height: 100vh;
+}
+
+.section__02slider {
+  width: 100vw;
+}
+
+@media screen and (max-width: 1050px) {
+  .page2content {
+    height: 100vh;
+  }
+  .page2__title {
+    right: 16%;
+    top: 25%;
+    font-size: 4em;
+  }
+
+  .page2__title2 {
+    right: 5.8%;
+    bottom: 55%;
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .page2content {
+    height: 80vh;
+  }
+  .page2__title {
+    right: 16%;
+    top: 25%;
+    font-size: 2em;
+  }
+
+  .page2__title2 {
+    right: 8%;
+    bottom: 56%;
+    font-size: 2em;
+  }
 }
