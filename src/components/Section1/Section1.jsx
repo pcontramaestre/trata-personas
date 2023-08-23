@@ -31,7 +31,7 @@ function Section1() {
       <NewSection01 />
       <CircleGraph02 />
       <Women />
-      {/* <BigInfoBox /> */}
+      {/* <Box02Section01 /> */}
     </section>
   );
 }

@@ -8,7 +8,7 @@ const CircleGraph02 = () => {
   return (
     <div className="circlegraph02">
       <div className="circlegraph02__content">
-        <div>
+        <div className="circlegraph02__box">
           <h1
             className="circlegraph02__title"
             dangerouslySetInnerHTML={{ __html: page9.title }}

@@ -20,3 +20,4 @@ const BoxInfoSection02 = () => {
 };
 
 export default BoxInfoSection02;
+//l
