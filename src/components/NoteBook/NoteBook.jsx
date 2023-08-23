@@ -1,5 +1,13 @@
 import style from './NoteBook.module.css'
 
+import whiteSheet from '../../assets/NoteBook/whiteSheet.png'
+import whiteSheetShort from '../../assets/NoteBook/whiteSheetShort.png'
+
+const whiteSheets = {
+  whiteSheet,
+  whiteSheetShort
+}
+
 function convertSize (input) {
   const n = Number(input.split('px')[0])
   return (n * 100 / 1920) + 'vw'
@@ -18,7 +26,7 @@ function NoteBook ({ noteBook, topSection }) {
     left: convertSize(noteBook.left),
     width: convertSize(noteBook.width),
     height: convertSize(noteBook.height),
-    backgroundImage: `url("./src/assets/NoteBook/${noteBook.backgroundImage ? noteBook.backgroundImage : 'whiteSheet'}.png")`,
+    backgroundImage: `url(${noteBook.backgroundImage ? whiteSheets[noteBook.backgroundImage] : whiteSheets.whiteSheet})`,
     transform: `rotateZ(${-Number(noteBook.rotation.split('deg')[0])}deg)`
   }
 

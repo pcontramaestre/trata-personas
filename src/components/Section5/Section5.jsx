@@ -21,6 +21,8 @@ import plane from '../../assets/Section5/plane.png'
 
 import data from '../../../troy.json'
 
+import animationBackground from '../../assets/Section5/animationBackground.png'
+
 const { repatriation } = data
 const { noteBook, bigInfoBox, map, animation } = data.repatriation
 
@@ -38,6 +40,11 @@ const images = {
   straightRedArrow,
   bus,
   plane
+}
+
+const mobiles = {
+  plane,
+  bus
 }
 
 function convertSize (input) {
@@ -116,7 +123,7 @@ function Animation () {
     width: convertSize(animation.width),
     height: convertSize(animation.height),
     top: convertSize(relativeMedition(animation.top)),
-    backgroundImage: `url("./src/assets/Section5/${animation.backgroundImage}")`,
+    backgroundImage: `url(${animationBackground})`,
     backgroundColor: animation.backgroundColor
   }
 
@@ -126,7 +133,7 @@ function Animation () {
       height: convertSize(image.height),
       top: convertSize(image.top),
       left: convertSize(image.left),
-      backgroundImage: `url("./src/assets/Section5/${image.name}.png")`
+      backgroundImage: `url(${mobiles[image.name]})`
     }
   ))
 
