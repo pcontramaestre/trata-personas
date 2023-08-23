@@ -1493,11 +1493,58 @@
     "backgroundColor": "#FFF0F1",
     "image": [
       {
-        "name": "frontPage",
+        "name": "background",
         "width": "1920px",
         "height": "1747px",
         "top": "54626px",
-        "left": "0px"
+        "left": "0px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person1",
+        "width": "444px",
+        "height": "882px",
+        "top": "55306px",
+        "left": "1476px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person2",
+        "width": "337px",
+        "height": "782px",
+        "top": "55306px",
+        "left": "1146px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person3",
+        "width": "372px",
+        "height": "752px",
+        "top": "55396px",
+        "left": "802px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person4",
+        "width": "354px",
+        "height": "735px",
+        "top": "55511px",
+        "left": "459px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "person5",
+        "width": "330px",
+        "height": "711px",
+        "top": "55605px",
+        "left": "118px",
+        "objectFit": "contain",
+        "objectPosition": "center"
       },
       {
         "name": "grafico",
