@@ -9,8 +9,6 @@
 
 .bargraph__image {
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
   position: relative;
   background-image: url("../../../assets/Img-Section01/Page04/grafico09.png");
   background-size: contain;
@@ -69,7 +67,6 @@
   font-weight: 700;
   line-height: normal;
   bottom: 1em;
-  /* left: 0.2rem; */
 }
 
 .baragraph__column2 {
@@ -190,6 +187,7 @@
     align-items: center;
   }
   .bargraph__text2 {
+    text-align: center;
     font-size: 2.5em;
   }
   .bargraph__text3 {
@@ -200,6 +198,7 @@
   }
   .bargraph__text1 {
     width: 100%;
+    text-align: center;
     font-size: 2em;
   }
 }

@@ -17,7 +17,7 @@
   margin: 0;
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 70px;
+  font-size: 9.4vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -27,7 +27,7 @@
   margin: 0;
   color: var(--verde-medio, #0a4b4e);
   font-family: "Inter", sans-serif;
-  font-size: 36px;
+  font-size: 5vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -43,19 +43,80 @@
   color: var(--verde-medio, #0a4b4e);
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 26px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   letter-spacing: 1.35px;
 }
+
 .circlegraph02__p strong {
   color: var(--verde-medio, #0a4b4e);
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 28px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.35px;
+}
+
+@media screen and (max-width: 720px) {
+  .circlegraph02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+    margin-top: 20vh;
+  }
+  .circlegraph02__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circlegraph02__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circlegraph02__title {
+    text-align: center;
+    font-size: 4em;
+  }
+  .circlegraph02__subtitle {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .circlegraph02__img {
+    margin: 1em 0;
+    width: 80vw;
+  }
+  .circlegraph02__p {
+    margin-top: 0;
+    width: 90%;
+    font-size: 2em;
+  }
+  .circlegraph02__p strong {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .circlegraph02__subtitle {
+    text-align: center;
+    font-size: 1em;
+  }
+  .circlegraph02__img {
+    margin: 0.5em 0;
+    width: 80vw;
+  }
+  .circlegraph02__p {
+    width: 90%;
+    font-size: 1em;
+  }
+  .circlegraph02__p strong {
+    font-size: 1em;
+  }
 }

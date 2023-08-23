@@ -1,5 +1,6 @@
 .video__corett {
   position: relative;
+
   height: 150vh;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,8 @@
 
 .videocorett__info {
   position: absolute;
-  bottom: -35vh;
+  z-index: 99;
+  bottom: -20vh;
   display: flex;
   justify-content: center;
   align-items: center;
