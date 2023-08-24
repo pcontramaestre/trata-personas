@@ -39,3 +39,23 @@
   left: 0;
   height: 80%;
 }
+
+@media screen and (max-width: 720px) {
+  .matrimonio {
+    background-size: cover;
+    margin-top: 10vh;
+  }
+  .matrimonio__content {
+    height: 120vh;
+    width: 100vw;
+  }
+  .matrimonio__title {
+    font-size: 4em;
+  }
+  .matrimonio__img {
+    top: 50em;
+    position: absolute;
+    left: 0;
+    height: 40%;
+  }
+}
