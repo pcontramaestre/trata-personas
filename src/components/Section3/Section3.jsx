@@ -152,7 +152,7 @@ function Section3 () {
   const listImageHover = ['psicosocial', 'medico', 'legal', 'manutencion', 'educacion', 'alojamiento', 'reintegracion']
 
   return (
-    <section className={style.ProtectionCare} style={protectionAndCareBackgroundStyles}>
+    <section id="section3" className={style.ProtectionCare} style={protectionAndCareBackgroundStyles}>
       {
         images.map((image, index) => (
           <img id={listImageHover.includes(image.name) ? image.name : null} name={image.grupo ? image.grupo : null} src={image && imagesList[image.name]} style={imagesStyles[index]} className={style.ProtectionCareImages} key={image.name + index} />

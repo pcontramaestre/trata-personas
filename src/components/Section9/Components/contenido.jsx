@@ -1,15 +1,16 @@
 import React from "react";
 import "./contenido.css";
+import fondo1 from '../../../assets/Section9IMG/fondo1.png';
 
 import data from "../../../../trataSection09.json";
 
 function BackgroundComponent() {
   const page1 = data[0].Referencias.page1;
   return (
-    <div className="container">
+    <section id="section9" className="container">
       <div className="flex-center flex-column">
         <div id="fondo1" className="fondo-style">
-          <img src="src/assets/Section9IMG/fondo1.png" alt="" />
+          <img src={fondo1} alt="" />
           <h1 className="style">{page1.title1}</h1>
         </div>
         <div id="fondo2" className="flex-center fondo-style"></div>
@@ -130,7 +131,7 @@ function BackgroundComponent() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
