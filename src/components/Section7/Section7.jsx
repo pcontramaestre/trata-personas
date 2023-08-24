@@ -63,7 +63,7 @@ function Section7 () {
   }))
 
   return (
-    <section className={style.InterestingEventsBackground} style={interestingEventsContainer}>
+    <section id="section7" className={style.InterestingEventsBackground} style={interestingEventsContainer}>
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
       {
         interestingEvents.images.map((image, index) => (

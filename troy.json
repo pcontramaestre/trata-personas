@@ -2051,7 +2051,7 @@
       }
     },
     "map": {
-      "backgroundImage": "mapPink",
+      "backgroundImage": "mexicoHoverMapPink",
       "size": {
         "width": "1920px",
         "height": "800px"
@@ -2260,8 +2260,8 @@
           "name": "plane",
           "width": "1551px",
           "height": "523px",
-          "top": "88px",
-          "left": "-1451px",
+          "top": "138px",
+          "left": "294px",
           "text": {
             "generalText": {
               "fontFamily": "Inika",
@@ -2334,8 +2334,8 @@
           "name": "bus",
           "width": "1369px",
           "height": "310px",
-          "top": "753px",
-          "left": "1814px",
+          "top": "803px",
+          "left": "75px",
           "text": {
             "generalText": {
               "fontFamily": "Inika",

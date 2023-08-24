@@ -90,7 +90,7 @@ function Section4 () {
   }))
 
   return (
-    <section className={style.LawEnforcementBackground} style={lawEnforcementeBackground}>
+    <section id="section4" className={style.LawEnforcementBackground} style={lawEnforcementeBackground}>
       {
         images.map((image, index) => (
           <img id={image.id ? image.id : null} src={image && imagesList[image.name]} style={imagesStyles[index]} className={image.name === 'infoGif' ? style.infoGif : style.LawEnforcementImages} key={image.name + index} />

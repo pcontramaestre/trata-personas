@@ -18,7 +18,7 @@
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Formula Condensed;
-  font-size: 42px;
+  font-size: 5.6vh;
   font-style: normal;
   font-weight: 300;
   letter-spacing: 1.35px;
@@ -61,7 +61,7 @@
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 90vh;
   height: 50%;
 }
 
@@ -72,7 +72,7 @@
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 135vh;
   height: 45%;
 }
 
@@ -111,7 +111,7 @@
   justify-content: center;
   align-items: center;
   width: 42%;
-  padding:3vh;
+  padding: 3vh;
   border-radius: 28px;
   background: #60b6ba;
 }
@@ -143,4 +143,107 @@
   font-weight: 300;
   line-height: normal;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 720px) {
+  .women {
+    width: 100vw;
+    height: 100vh;
+  }
+  .women__content {
+    width: 90%;
+    height: 90%;
+  }
+  .women__title {
+    font-size: 2.5em;
+  }
+  .women__background {
+    position: relative;
+    height: 45vh;
+    z-index: 1;
+  }
+  .womens__img {
+    left: 43%;
+    height: 8em;
+  }
+  .women__texts {
+    height: 15em;
+  }
+  .women__texts-content1 {
+    width: 72vw;
+  }
+  .women__texts-content2 {
+    width: 90%;
+  }
+  .women__text-p {
+    width: 45%;
+    font-size: 1.3em;
+  }
+  .women__card-content {
+    margin-top: 4vh;
+  }
+  .women__card1 {
+    width: 45%;
+    padding: 1em;
+  }
+  .women__card2 {
+    width: 42%;
+    padding: 1em;
+  }
+  .women__percentage {
+    font-size: 5em;
+  }
+  .women__card-p {
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .women__content {
+    width: 90%;
+    height: 70vh;
+  }
+  .women__title {
+    font-size: 1.5em;
+  }
+  .women__background {
+    position: relative;
+    height: 45vh;
+    z-index: 1;
+  }
+  .womens__img {
+    left: 43%;
+    height: 4.5em;
+  }
+  .women__texts {
+    height: 9em;
+  }
+  .women__texts-content1 {
+    width: 72vw;
+  }
+  .women__texts-content2 {
+    width: 100%;
+  }
+  .women__text-p {
+    width: 45%;
+    font-size: 0.7em;
+  }
+  .women__card-content {
+    margin-top: 4vh;
+  }
+  .women__card1 {
+    width: 45%;
+    padding: 1em;
+  }
+  .women__card2 {
+    width: 42%;
+    padding: 1em;
+  }
+  .women__percentage {
+    font-size: 2.5em;
+  }
+  .women__card-p {
+    padding: 0.5em;
+    font-size: 0.8em;
+  }
 }

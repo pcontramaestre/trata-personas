@@ -52,7 +52,7 @@ function Section8() {
 
   return (
     <div>
-      <section style={creditsContainer} className={style.CreditsBackground}>
+      <section id="section8" style={creditsContainer} className={style.CreditsBackground}>
         {images.map((image, index) => (
           <img
             src={imagesList[image.name]}
