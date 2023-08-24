@@ -9,7 +9,10 @@ const SmallInfoSection02 = () => {
     <div className="small__info">
       <h1 className="small__title">{page3.text1}</h1>
       <h5 className="small__foot">{page3.text2}</h5>
-      <img className="small__gif" src={infogif} />
+     
+        <img className="small__gif" src={infogif} />
+        <p className="small__popup">{page3.popup}</p>
+    
     </div>
   );
 };

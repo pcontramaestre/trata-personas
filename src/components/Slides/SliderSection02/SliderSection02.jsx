@@ -20,8 +20,8 @@ const SliderSection02 = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: false,
+    // autoplaySpeed: 3000,
   };
 
   return (

@@ -25,6 +25,19 @@ const ExplotacionSexual = () => {
           <div className="womenloading__content">
             <NoteBookSection02 page4={page4} />
             <img className="womenloading__img" src={womenloading} />
+            <div className="womenloading__graphic">
+              <h1 className="womengraphic__title">{page4.imageback.title}</h1>
+              <div className="womengraphic__background">
+                <ul className="womengrapich__years">
+                  <li>a</li>
+                  <li>ab</li>
+                  <li>abC</li>
+                </ul>
+              </div>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
