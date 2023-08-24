@@ -35,7 +35,7 @@
   object-fit: cover;
 }
 #fondo2 {
-  background-image: url(src/assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
+  background-image: url(../../../assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
   position: absolute;
   top: 845px;
   z-index: 2;
@@ -44,7 +44,7 @@
 }
 
 #fondo3 {
-  background-image: url(src/assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
+  background-image: url(../../../assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
   position: absolute;
   top: 1732px;
   height: 1401px;
@@ -53,7 +53,7 @@
 }
 #fondo4 {
   background-image: url();
-  background-image: url(src/assets/Section9IMG/528d375cdfbed90a2c779e3b78f887cf.png);
+  background-image: url(../../../assets/Section9IMG/528d375cdfbed90a2c779e3b78f887cf.png);
   height: 750px;
   position: absolute;
   top: 2752px;

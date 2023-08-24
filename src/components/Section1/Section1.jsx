@@ -14,7 +14,7 @@ function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
 
   return (
-    <section className={style.Section1}>
+    <section id="section1" className={style.Section1}>
       <div className={style.page1content}>
         <div className={style.page1}>
           <h1 className={style.page1__title}>
