@@ -21,20 +21,14 @@ const ExplotacionSexual = () => {
           </div>
           <h1 className="explotacion__title">{page4.title}</h1>
         </div>
-
         <div className="explotacion__news">
-
           <div className="womenloading__content">
             <NoteBookSection02 page4={page4} />
             <img className="womenloading__img" src={womenloading} />
           </div>
-
-
         </div>
-
-
       </div>
-      <img className="background__sexual" src={backgroundsexual} />
+      {/* <img className="background__sexual" src={backgroundsexual} /> */}
       <Testimonios laboral={false} name1={name1} name2={name2} />
       <div className="video__foot" />
     </div>

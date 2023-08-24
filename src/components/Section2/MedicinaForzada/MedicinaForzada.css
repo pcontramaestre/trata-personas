@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 20vw;
+  /* margin-top: 20vw; */
   position: relative;
 }
 
@@ -26,7 +26,7 @@
   margin-bottom: 0;
   margin-top: 20vh;
   text-align: end;
-  font-size: 5vw;
+  font-size: 10.2vh;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 3px;
@@ -39,4 +39,30 @@
   width: 40vw;
   position: absolute;
   z-index: 20;
+}
+
+@media screen and (max-width: 720px) {
+  .medicina__content {
+    height: 100vh;
+
+  }
+  .medicina__title {
+    width: 100%;
+    margin-left: 0.5em;
+    margin-top: 20vh;
+    font-size: 4em;
+  }
+  .pills__img {
+    top: 20em;
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .medicina__title {
+    font-size: 2.5em;
+  }
+  .pills__img {
+    top: 25em;
+    width: 45vw;
+  }
 }

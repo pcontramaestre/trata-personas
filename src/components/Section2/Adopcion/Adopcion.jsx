@@ -16,7 +16,7 @@ const Adopcion = () => {
         <BookAdopcion page8={page8} />
         <img className="adopcion__img" src={bebe} />
       </div>
-      <div className="laboral__testimonios">
+      <div className="adopcion__testimonios">
         <Testimonios laboral={false} name1={name1} name2={name2} />
       </div>
     </div>

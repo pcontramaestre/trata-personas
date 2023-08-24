@@ -1,5 +1,3 @@
-import NoteBook from "../NoteBook/NoteBook";
-import BigInfoBox from "../BigInfoBox/BigInfoBox";
 import "./Section2.css";
 import data from "../../../trataSection02.json";
 import SliderSection02 from "../Slides/SliderSection02/SliderSection02";
@@ -19,13 +17,15 @@ import BoxInfoSection02 from "../BigInfoBox/BigInfoBoxSection02/BoxInfoSection02
 function Section2() {
   const page1 = data[0].finalidades.page1;
   return (
-    <section className="Section02">
-      <div className="page2">
-        <h1 className="page2__title">{page1.text1}</h1>
-        <h1 className="page2__title2">{page1.text2}</h1>
-      </div>
-      <div className="slider__content">
-        <SliderSection02 />
+    <section id="section2" className="Section02">
+      <div className="page2content">
+        <div className="page2">
+          <h1 className="page2__title">{page1.text1}</h1>
+          <h1 className="page2__title2">{page1.text2}</h1>
+        </div>
+        <div className="section__02slider">
+          <SliderSection02 />
+        </div>
       </div>
       <SmallInfoSection02 />
       <GraphicFinalidades />

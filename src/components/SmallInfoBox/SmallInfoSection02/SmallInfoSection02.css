@@ -1,4 +1,5 @@
 .small__info {
+  margin-top: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +13,7 @@
   font-family: Formula Condensed;
   margin: 0;
   width: 50%;
-  font-size: 650%;
+  font-size: 13.9vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -23,8 +24,8 @@
   margin: 0;
   color: var(--verde-claro-textos, #006873);
   text-align: center;
-  font-family: Inika;
-  font-size: 180%;
+  font-family: "Inika", sans-serif;
+  font-size: 3.85vh;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -33,4 +34,43 @@
 .small__gif {
   margin-top: 4%;
   width: 2.5%;
+}
+
+@media screen and (max-width: 720px) {
+  .small__info {
+    margin-top: 80vh;
+    height: 75vh;
+  }
+
+  .small__title {
+    width: 80%;
+    font-size: 5em;
+  }
+
+  .small__foot {
+    font-size: 2em;
+  }
+
+  .small__gif {
+    width: 2.5em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .small__info {
+    margin-top: 50vh;
+    height: 75vh;
+  }
+
+  .small__title {
+    width: 90%;
+    font-size: 3em;
+  }
+
+  .small__foot {
+    font-size: 1em;
+  }
+
+  .small__gif {
+    width: 2.5em;
+  }
 }

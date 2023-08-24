@@ -4,10 +4,7 @@
   align-items: center;
   position: relative;
   bottom: 0;
-  /* height: 120vh; */
-  /* margin: 25vh 0; */
   z-index: 60;
-  /* padding: 10vh; */
   width: 100vw;
 }
 
@@ -41,4 +38,27 @@
 
 .laboral {
   color: #a2e7f1;
+}
+
+@media screen and (max-width: 720px) {
+  .video__button {
+    width: 47vw;
+    height: 15em;
+    border-radius: 40px;
+  }
+  .video__title {
+    margin: 1vw 0;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .video__button {
+    width: 48vw;
+    height: 10em;
+    border-radius: 30px;
+  }
+  .video__title {
+    margin: 1vw 0;
+    font-size: 1.5em;
+  }
 }

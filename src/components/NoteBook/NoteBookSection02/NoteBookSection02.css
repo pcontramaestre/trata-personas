@@ -66,3 +66,34 @@
   margin-left: 1vw;
   margin-top: 0.65vw;
 }
+
+@media screen and (max-width: 720px) {
+  .NoteBook02 {
+    background: url("../../../assets/Img-Section02/Page04/notebook.png");
+    background-repeat: no-repeat;
+    background-size: 55.5vw;
+    transform: rotate(-4.362deg);
+  }
+  
+  .NoteBook02__texts {
+    margin-left: 2vw;
+    margin-top: 9%;
+    width: 35%;
+    padding: 10vw;
+  }
+}
+@media screen and (max-width: 720px) {
+  .NoteBook02 {
+    background: url("../../../assets/Img-Section02/Page04/notebook.png");
+    background-repeat: no-repeat;
+    background-size: 55.5vw;
+    transform: rotate(-4.362deg);
+  }
+  
+  .NoteBook02__texts {
+    margin-left: 2vw;
+    margin-top: 9%;
+    width: 35%;
+    padding: 10vw;
+  }
+}

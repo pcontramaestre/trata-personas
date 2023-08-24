@@ -68,7 +68,7 @@ function Section6 () {
   }))
 
   return (
-    <section className={style.PreventionBackground} style={preventionBackground}>
+    <section id="section6" className={style.PreventionBackground} style={preventionBackground}>
       {
         images.map((image, index) => (
           <img src={imagesList[image.name]} className={style.images} style={imageStyles[index]} key={image.name + index} />
