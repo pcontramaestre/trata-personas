@@ -43,6 +43,27 @@
   bottom: -15vh;
 }
 
+.adopciongraphic {
+  display: none;
+  position: absolute;
+  top: 15vh;
+  right: 0;
+  background-image: url("../../../assets/Img-Section02/Page08/graficoadopcion.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 80vh;
+}
+
+.adopcion__img:hover + .adopciongraphic{
+display: flex;
+}
+
+.adopciongraphic:hover{
+  display: flex;
+}
+
 @media screen and (max-width: 720px) {
   .adopcion {
     height: 100vh;

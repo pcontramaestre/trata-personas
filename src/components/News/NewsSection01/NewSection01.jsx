@@ -40,7 +40,7 @@ const NewSection01 = () => {
           </p>
         </div>
 
-        <div className="newshover__background1">
+        <div className="newshover__background2">
           <div className="newshover__content">
             <h1 className="newshover__title">{page8.news.hover2.title}</h1>
             <div className="newshover__separador" />

@@ -23,6 +23,8 @@ const ExplotacionLaboral = () => {
       <div className="laboral__testimonios">
         <Testimonios laboral={true} name1={name1} name2={name2} />
       </div>
+      <div className="laboralsectiongraphic"></div>
+      <div className="laboral__graphicquemado"></div>
     </div>
   );
 };

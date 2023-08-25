@@ -35,15 +35,17 @@
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: s center;
+  align-items: center;
   width: 100%;
 }
 
 .practicas__texts {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .practicas__item-background {
@@ -81,6 +83,11 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.4px;
+}
+
+.practicashover{
+  position: absolute;
+  /* display: none; */
 }
 
 .blanco {

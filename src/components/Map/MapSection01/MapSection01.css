@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 120vh;
+  width: 100vw;
 }
 
 .map__title {
@@ -110,14 +111,30 @@
   width: 20%;
 }
 
+.mapcontent {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
 .map__img {
   position: absolute;
-  width: 100%;
-  /* height: 100vh; */
+  max-width: 100vw;
+  min-width: 100vw;
+  height: auto;
   margin-right: 20px;
 }
 
-@media screen and (max-width: 720px) {
+.map__hoverimg {
+  position: absolute;
+  min-height: 100vh;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  top: -10.5vw;
+}
+
+@media screen and (max-width: 769px) {
   .map__foot {
     display: flex;
     justify-content: center;
@@ -141,6 +158,13 @@
     right: 0;
     width: 90%;
     height: 60%;
+  }
+  .map__hoverimg {
+    width: 100%;
+    position: absolute;
+    /* left: 0; */
+    /* top: 0; */
+    bottom: 10.1vh;
   }
   .map__percentage {
     width: 30%;
