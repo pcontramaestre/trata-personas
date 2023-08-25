@@ -5,10 +5,10 @@ import hand from "../../../../assets/Img-Section01/Page09/hand.svg";
 const PracticasEsclavitud = ({ page11 }) => {
   const page = page11[0].finalidades.page11;
   const esclavitud = [
-    { item: page.item1 },
-    { item: page.item2 },
-    { item: page.item3 },
-    { item: page.item4 },
+    { item: page.item1, id: 1, itemcontent: page.item1_content },
+    { item: page.item2, id: 2, itemcontent: page.item2_content },
+    { item: page.item3, id: 3 , itemcontent: page.item3_content },
+    { item: page.item4, id: 4 , itemcontent: page.item4_content},
   ];
 
   return (
@@ -45,7 +45,11 @@ const PracticasEsclavitud = ({ page11 }) => {
                   src={hand}
                 />
               </div>
-              <p className="practicashover">aaaa</p>
+              <p
+                className={`practicashover${e.id} `}
+               dangerouslySetInnerHTML={{__html: e.itemcontent}}>
+              
+              </p>
             </div>
           </div>
         ))}
