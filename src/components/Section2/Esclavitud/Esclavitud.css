@@ -45,8 +45,31 @@
 }
 
 .esclavitud__img {
-  top: 5vw;
+  top: 10vw;
   right: 5vw;
   width: 40vw;
+  height: 40vw;
   position: absolute;
+}
+
+.esclavitudquemado{
+  display: none;
+  position: absolute;
+  top: 25vh;
+  right: 0;
+  background-image: url("../../../assets/Img-Section02/Page10/esclavitudquemado.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 80vh;
+}
+
+.esclavitud__img:hover + .esclavitudquemado{
+  display: flex;
+}
+
+.esclavitudquemado:hover{
+  display: flex;
+  z-index: 99;
 }

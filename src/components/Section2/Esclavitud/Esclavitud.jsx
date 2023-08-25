@@ -13,6 +13,7 @@ const Esclavitud = () => {
         <small className="esclavitud__subtitle">{page10.subtitle}</small>
         <BookEsclavitud page10={page10} />
         <img className="esclavitud__img" src={esclavos} />
+        <div className="esclavitudquemado"/>
       </div>
     </div>
   );
