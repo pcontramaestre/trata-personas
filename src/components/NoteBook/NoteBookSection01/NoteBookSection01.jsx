@@ -21,7 +21,7 @@ function NoteBookSection01() {
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
         end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
-        markers: true, // Muestra marcadores de ScrollTrigger para depuración
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
       },
     });
 
@@ -44,7 +44,7 @@ function NoteBookSection01() {
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
         end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
-        markers: true, // Muestra marcadores de ScrollTrigger para depuración
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
       },
     });
 

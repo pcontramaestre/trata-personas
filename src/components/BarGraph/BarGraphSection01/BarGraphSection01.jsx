@@ -33,7 +33,7 @@ function BarGraphSection01() {
         end: "bottom center", // Termina las animaciones cuando el final del div está en el centro de la vista
         // pin: true,
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 

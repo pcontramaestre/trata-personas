@@ -64,7 +64,7 @@ function Section0 () {
   }
 
   return (
-    <section className={style.HomeHeaderBackground} style={homeHeaderContainer}>
+    <section id='section0' className={style.HomeHeaderBackground} style={homeHeaderContainer}>
       {
         homeHeader.images.map((image, index) => (
           <img src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
