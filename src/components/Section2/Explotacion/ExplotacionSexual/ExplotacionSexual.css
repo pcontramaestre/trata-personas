@@ -86,7 +86,7 @@
 /* MANO DE EXPLORA LAS IMAGENES */
 
 .womenloading__graphic {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,7 @@
 }
 
 .womengraphic__background {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   height: 85%;
   width: 45vw;

@@ -22,8 +22,8 @@ const PracticasEsclavitud = ({ page11 }) => {
           <div className="practicas__content" key={index}>
             <div
               className={`practicas__texts ${
-                e.item === "Servidumbre por deudas" || e.item === 
-                "Venta de menores para explotación"
+                e.item === "Servidumbre por deudas" ||
+                e.item === "Venta de menores para explotación"
                   ? "flex-start"
                   : "flex-end"
               }`}
@@ -45,8 +45,8 @@ const PracticasEsclavitud = ({ page11 }) => {
                   src={hand}
                 />
               </div>
+              <p className="practicashover">aaaa</p>
             </div>
-            <p />
           </div>
         ))}
       </div>
