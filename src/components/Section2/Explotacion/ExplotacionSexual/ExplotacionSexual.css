@@ -30,13 +30,7 @@
   z-index: 3;
 }
 
-.womenloading__img {
-  position: absolute;
-  z-index: 12;
-  height: 45vw;
-  right: 6vw;
-  z-index: 5;
-}
+
 
 .explotacion__title {
   margin-bottom: 0;
@@ -99,6 +93,36 @@
   height: 40vw;
   z-index: 22;
 }
+
+.womenloading__img {
+  position: absolute;
+  z-index: 12;
+  height: 45vw;
+  right: 6vw;
+  z-index: 5;
+}
+
+.womenloading__graphicquemado{
+  display: none;
+  position: absolute;
+  right: 0;
+  background-image: url("../../../../assets/Img-Section02/Page04/graficoquemado.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 80vh;
+  z-index: 6;
+}
+
+.womenloading__img:hover + .womenloading__graphicquemado {
+  display: flex;
+}
+
+.womenloading__graphicquemado:hover{
+  display: flex;
+}
+
 
 .womengraphic__background {
   display: none;
