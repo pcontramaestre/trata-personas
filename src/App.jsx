@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Header from './components/Header/Header'
 import Instructions from './components/Instructions/Instructions'
 import Section0 from './components/Section0/Section0'
@@ -17,15 +17,35 @@ import menuBlancoImg from './assets/Header/menu-blanco.png'
 import './App.css'
 
 function App () {
-  const [show, setShow] = useState('instructions')
+  const [show, setShow] = useState('')
 
-  // useEffect()
+  const currentScroll = useRef(0)
+
+  useEffect(() => {
+    if (show === '') {
+      window.scrollTo(0, currentScroll.current)
+    } else if (show.includes('#')) {
+      const section = document.querySelector(show)
+      const rect = section.getBoundingClientRect()
+      const positon = window.scrollY + rect.top
+      window.scrollTo(0, positon)
+    }
+  }, [show])
+
+  function handleHeader () {
+    if (show !== 'header') {
+      currentScroll.current = window.scrollY
+      setShow('header')
+    } else {
+      setShow('')
+    }
+  }
 
   if (show === 'instructions') return <Instructions setShow={setShow} />
-  if (show === 'header') return <Header setShow={setShow} />
+  if (show === 'header') return <Header setShow={setShow} handleHeader={handleHeader} />
   return (
     <main>
-      <div className='hamburger-icon' onClick={() => { setShow('header') }}>
+      <div className='hamburger-icon' onClick={handleHeader}>
         <img src={menuBlancoImg} alt='Menu Icon' className='hamburger-icon' />
       </div>
       <Section0 />
