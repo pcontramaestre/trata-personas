@@ -2,7 +2,8 @@
     position: absolute;
     width: 100%;
     bottom: 0px;
-    overflow: hidden;
+    overflow-x: scroll;
+    /* overflow: hidden; */
 }
 
 .HandSlideContainer {

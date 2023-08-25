@@ -12,10 +12,12 @@ import republicaDominicana from '../../assets/Map/republicaDominicana.svg'
 
 import mapGreen from '../../assets/Map/mapGreen.svg'
 import mapPink from '../../assets/Map/mapPink.svg'
+import mexicoHoverMapPink from '../../assets/Map/mexicoHoverMapPink.png'
 
 const maps = {
   mapGreen,
-  mapPink
+  mapPink,
+  mexicoHoverMapPink
 }
 
 const flags = {
