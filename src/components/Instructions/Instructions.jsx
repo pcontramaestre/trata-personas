@@ -25,9 +25,9 @@ function convertSize (input) {
   return (n * 100 / 1920) + 'vw'
 }
 
-function Instructions ({ setShowInstructions }) {
+function Instructions ({ setShow }) {
   function handleInstruction () {
-    setShowInstructions(false)
+    setShow('')
   }
 
   const logoStyles = {
