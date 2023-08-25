@@ -17,7 +17,7 @@ import menuBlancoImg from './assets/Header/menu-blanco.png'
 import './App.css'
 
 function App () {
-  const [show, setShow] = useState('')
+  const [show, setShow] = useState('instructions')
 
   const currentScroll = useRef(0)
 
