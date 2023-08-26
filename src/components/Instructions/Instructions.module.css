@@ -26,10 +26,16 @@
 }
 
 .InstructionsContainer button {
+    position: relative;
     padding: 0px;
     margin-top: 2vw;
     border-radius: 0px;
     border: none;
+}
+
+.InstructionsContainer button label {
+    position: relative;
+    top: 5%;
 }
 
 .InstructionsCardsContainer {
