@@ -13,6 +13,7 @@ import Section8 from './components/Section8/Section8'
 import Section9 from './components/Section9/Section9'
 // import Index from './components/Index/Index'
 import menuBlancoImg from './assets/Header/menu-blanco.png'
+import ToHome from './components/ToHome/ToHome'
 
 import './App.css'
 
@@ -48,6 +49,7 @@ function App () {
       <div className='hamburger-icon' onClick={handleHeader}>
         <img src={menuBlancoImg} alt='Menu Icon' className='hamburger-icon' />
       </div>
+      <ToHome />
       <Section0 />
       <Section1 />
       <Section2 />
