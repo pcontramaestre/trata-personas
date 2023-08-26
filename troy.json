@@ -297,16 +297,31 @@
         "color": "#FFFFFF"
       },
       {
-        "content": "LA ESCLAVITUD DEL SIGLO XXI",
+        "content": "LA ESCLAVITUD",
         "tag": "h1",
         "width": "668px",
-        "height": "277px",
+        "height": "137px",
         "top": "1755px",
         "left": "216px",
         "fontFamily": "Formula Condensed",
         "fontSize": "140px",
         "fontWeight": "700",
         "lineHeight": "168px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#026972"
+      },
+      {
+        "content": "DEL SIGLO XXI",
+        "tag": "h1",
+        "width": "651px",
+        "height": "140px",
+        "top": "1892px",
+        "left": "216px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "151px",
+        "fontWeight": "700",
+        "lineHeight": "181.2px",
         "letterSpacing": "0em",
         "textAlign": "left",
         "color": "#026972"
