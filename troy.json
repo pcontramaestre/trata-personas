@@ -168,41 +168,6 @@
     },
     "images": [
       {
-        "name": "logo",
-        "width": "410.68px",
-        "height": "70px",
-        "top": "92px",
-        "left": "120px",
-        "position": "absolute",
-        "zIndex": "1"
-      },
-      {
-        "name": "scroll",
-        "width": "47.06px",
-        "height": "95px",
-        "top": "847px",
-        "left": "946px",
-        "position": "absolute",
-        "zIndex": "1"
-      },
-      {
-        "name": "group",
-        "width": "40px",
-        "height": "45px",
-        "top": "5080.33px",
-        "left": "965.29px",
-        "position": "absolute",
-        "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
-      },
-      {
-        "name": "audio1",
-        "width": "57.93px",
-        "height": "40px",
-        "top": "158px",
-        "left": "1758px",
-        "position": "absolute"
-      },
-      {
         "name": "background",
         "width": "1920px",
         "height": "1214px",
@@ -237,6 +202,41 @@
         "left": "-173px",
         "position": "absolute",
         "objectPosition": "right"
+      },
+      {
+        "name": "logo",
+        "width": "410.68px",
+        "height": "70px",
+        "top": "92px",
+        "left": "120px",
+        "position": "absolute",
+        "zIndex": "1"
+      },
+      {
+        "name": "scroll",
+        "width": "47.06px",
+        "height": "95px",
+        "top": "847px",
+        "left": "946px",
+        "position": "absolute",
+        "zIndex": "1"
+      },
+      {
+        "name": "group",
+        "width": "40px",
+        "height": "45px",
+        "top": "5080.33px",
+        "left": "965.29px",
+        "position": "absolute",
+        "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
+      },
+      {
+        "name": "audio1",
+        "width": "57.93px",
+        "height": "40px",
+        "top": "158px",
+        "left": "1758px",
+        "position": "absolute"
       }
     ],
     "text": [
