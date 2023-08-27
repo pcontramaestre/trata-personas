@@ -76,7 +76,7 @@ function Instructions ({ setShow }) {
           ))
         }
         </div>
-        <button onClick={handleInstruction} style={buttonStyles}>{button.content}</button>
+        <button onClick={handleInstruction} style={buttonStyles}><label>{button.content}</label></button>
       </main>
     </section>
   )

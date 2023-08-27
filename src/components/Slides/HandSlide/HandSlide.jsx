@@ -13,7 +13,8 @@ function HandSlide ({ handSlide, totalTop }) {
   }
 
   const handSlideContainer = {
-    width: convertSize(handSlide.container.width)
+    width: convertSize(handSlide.container.width),
+    top: convertSize(handSlide.container.top)
   }
 
   const cardsStyles = handSlide.container.cards.map((card) => ({
@@ -40,7 +41,7 @@ function HandSlide ({ handSlide, totalTop }) {
     ...handSlide.container.country,
     height: convertSize(handSlide.container.country.fontSize),
     fontSize: convertSize(handSlide.container.country.fontSize),
-    lineHeight: convertSize(handSlide.container.country.lineHeight),
+    lineHeight: convertSize(handSlide.container.country.lineHeight)
   }
 
   const paragraphStyles = {
@@ -51,8 +52,8 @@ function HandSlide ({ handSlide, totalTop }) {
   }
 
   return (
-    <div className={style.HandSlideBackground} style={handSlideBackgroundStyle}>
-      <div style={handSlideContainer} className={style.HandSlideContainer}>
+    <div name='HandSlideContainer' className={style.HandSlideBackground} style={handSlideBackgroundStyle}>
+      <div name='HandSlideContainerCards' style={handSlideContainer} className={style.HandSlideContainer}>
         {
           handSlide.container.cards.map((card, index) => (
             <div className={style.HandSlideCard} style={cardsStyles[index]} key={index}>

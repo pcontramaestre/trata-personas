@@ -13,6 +13,10 @@ import Section8 from './components/Section8/Section8'
 import Section9 from './components/Section9/Section9'
 // import Index from './components/Index/Index'
 import menuBlancoImg from './assets/Header/menu-blanco.png'
+import ToHome from './components/ToHome/ToHome'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
 import './App.css'
 
@@ -22,13 +26,14 @@ function App () {
   const currentScroll = useRef(0)
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
     if (show === '') {
       window.scrollTo(0, currentScroll.current)
     } else if (show.includes('#')) {
       const section = document.querySelector(show)
       const rect = section.getBoundingClientRect()
-      const positon = window.scrollY + rect.top
-      window.scrollTo(0, positon)
+      const position = window.scrollY + rect.top
+      gsap.to(window, { scrollTo: position })
     }
   }, [show])
 
@@ -48,6 +53,7 @@ function App () {
       <div className='hamburger-icon' onClick={handleHeader}>
         <img src={menuBlancoImg} alt='Menu Icon' className='hamburger-icon' />
       </div>
+      <ToHome />
       <Section0 />
       <Section1 />
       <Section2 />

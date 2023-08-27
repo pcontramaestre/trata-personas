@@ -1,3 +1,7 @@
+import { useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import style from './Section7.module.css'
 
 import background from '../../assets/Section7/frontPageBackground.png'
@@ -6,6 +10,8 @@ import scroll2 from '../../assets/Section7/scroll2.svg'
 
 import data from '../../../troy.json'
 import HandSlide from '../Slides/HandSlide/HandSlide'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const icons = {
   background,
@@ -28,12 +34,35 @@ const { interestingEvents } = data
 const { handSlide } = data.interestingEvents
 
 function Section7 () {
+  useLayoutEffect(() => {
+    const containerSection = document.querySelector('#section7')
+    const containerAnimation = document.getElementsByName('HandSlideContainer')[0]
+    const elementToMove = document.getElementsByName('HandSlideContainerCards')[0]
+
+    const widthAnimationContainer = containerAnimation.offsetWidth
+    const widthElementToMove = elementToMove.offsetWidth
+
+    const percentageStart = window.innerWidth * (-0.046875) + 95
+
+    const ctx = gsap.context(() => {
+      gsap.to(elementToMove, {
+        right: widthElementToMove - widthAnimationContainer,
+        scrollTrigger: {
+          trigger: containerAnimation,
+          // markers: true,
+          start: `top ${percentageStart}%`,
+          end: '+=6000 bottom',
+          pin: containerSection,
+          scrub: true
+        }
+      })
+    })
+
+    return () => ctx.revert()
+  }, [])
+
   const interestingEventsContainer = {
     height: convertSize(relativeMedition(interestingEvents.height))
-  }
-
-  const interestingEventsFrontPageStyle = {
-    height: convertSize(interestingEvents.image.height)
   }
 
   const interestingEventsTextContainerStyle = {
@@ -63,7 +92,7 @@ function Section7 () {
   }))
 
   return (
-    <section id="section7" className={style.InterestingEventsBackground} style={interestingEventsContainer}>
+    <section id='section7' className={style.InterestingEventsBackground} style={interestingEventsContainer}>
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
       {
         interestingEvents.images.map((image, index) => (
