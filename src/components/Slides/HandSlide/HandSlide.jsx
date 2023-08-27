@@ -13,7 +13,8 @@ function HandSlide ({ handSlide, totalTop }) {
   }
 
   const handSlideContainer = {
-    width: convertSize(handSlide.container.width)
+    width: convertSize(handSlide.container.width),
+    top: convertSize(handSlide.container.top)
   }
 
   const cardsStyles = handSlide.container.cards.map((card) => ({
