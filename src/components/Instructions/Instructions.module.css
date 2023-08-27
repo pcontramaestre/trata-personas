@@ -38,6 +38,10 @@
     top: 5%;
 }
 
+.InstructionsContainer button label:hover {
+    cursor: pointer;
+}
+
 .InstructionsCardsContainer {
     width: 90%;
     margin-top: 1.2vw;
