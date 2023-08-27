@@ -1,0 +1,19 @@
+.ToHome {
+    position: fixed;
+    bottom: 10vh;
+    left: 94vw;
+    padding: 0px;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.ToHome:hover {
+    border: 0px solid transparent;
+}
+
+.ToHome img {
+    height: 2.08vw;
+    width: 1.875vw;
+    object-fit: contain;
+    object-position: center;
+}

@@ -13,6 +13,7 @@ const Matrimonio = () => {
         <BookMatrimonio page9={page9}/>
       </div>
       <img className="matrimonio__img" src={matromonio}/>
+      <div className="matrimonioquemado"/>
     </div>
   );
 };

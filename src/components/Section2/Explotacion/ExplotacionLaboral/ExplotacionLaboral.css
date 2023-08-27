@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20vh;
-  background-image: url("../../../../assets/Img-Section02//Page06//backgroundpasto.png");
+  background-image: url("../../../../assets/Img-Section02//Page06/backgroundpasto.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -16,6 +16,37 @@
   width: 100vw;
   z-index: 20;
 }
+
+.laboralsectiongraphic {
+  z-index: 66;
+  position: absolute;
+  /* top: 10vh; */
+  left: 0;
+  background-color: transparent;
+  width: 50vw;
+  height: 50vh;
+}
+
+.laboral__graphicquemado {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-image: url("../../../../assets/Img-Section02/Page06/graficoquemado.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 80vh;
+}
+
+.laboralsectiongraphic:hover + .laboral__graphicquemado{
+  display: flex;
+}
+
+.laboral__graphicquemado:hover{
+  display: flex;
+}
+
 
 .laboral__img {
   top: 10vw;

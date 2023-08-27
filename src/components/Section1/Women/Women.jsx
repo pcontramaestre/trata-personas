@@ -40,6 +40,7 @@ const Women = () => {
               dangerouslySetInnerHTML={{ __html: page10.card4.text4 }}
             />
             <img className="women__gif" src={gifblanco} />
+            <div className="women__popup">{page10.card4.popup}</div>
           </div>
         </div>
       </div>

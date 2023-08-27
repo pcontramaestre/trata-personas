@@ -14,6 +14,7 @@ const MedicinaForzada = () => {
         <BookMedicina page7={page7} />
       </div>
       <img className="pills__img" src={pills}/>
+      <div className="medicina__graficoquemado"/>
       {/* <img className="medicina__img" src={background} /> */}
     </div>
   );

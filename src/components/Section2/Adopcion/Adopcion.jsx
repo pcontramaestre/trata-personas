@@ -15,6 +15,7 @@ const Adopcion = () => {
         <h1 className="adopcion__title">{page8.title}</h1>
         <BookAdopcion page8={page8} />
         <img className="adopcion__img" src={bebe} />
+        <div className="adopciongraphic"/>
       </div>
       <div className="adopcion__testimonios">
         <Testimonios laboral={false} name1={name1} name2={name2} />

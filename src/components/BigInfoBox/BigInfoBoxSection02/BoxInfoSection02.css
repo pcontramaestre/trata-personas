@@ -4,6 +4,8 @@
   align-items: center;
   margin-top: 20vh;
   width: 100vw;
+  position: relative;
+  z-index: 99;
 }
 
 .info02__text-content {

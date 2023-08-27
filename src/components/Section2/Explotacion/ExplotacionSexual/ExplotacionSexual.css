@@ -26,16 +26,11 @@
 
 .womenloading__content {
   display: flex;
+  position: relative;
   z-index: 3;
 }
 
-.womenloading__img {
-  position: absolute;
-  z-index: 12;
-  height: 45vw;
-  right: 6vw;
-  z-index: 5;
-}
+
 
 .explotacion__title {
   margin-bottom: 0;
@@ -83,6 +78,76 @@
 }
 
 /* MANO DE EXPLORA LAS IMAGENES */
+
+.womenloading__graphic {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh;
+  position: absolute;
+  right: 8vh;
+  background-color: #004b53;
+  width: 45vw;
+  border-radius: 28px;
+  height: 40vw;
+  z-index: 22;
+}
+
+.womenloading__img {
+  position: absolute;
+  z-index: 12;
+  height: 45vw;
+  right: 6vw;
+  z-index: 5;
+}
+
+.womenloading__graphicquemado{
+  display: none;
+  position: absolute;
+  right: 0;
+  background-image: url("../../../../assets/Img-Section02/Page04/graficoquemado.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 80vh;
+  z-index: 6;
+}
+
+.womenloading__img:hover + .womenloading__graphicquemado {
+  display: flex;
+}
+
+.womenloading__graphicquemado:hover{
+  display: flex;
+}
+
+
+.womengraphic__background {
+  display: none;
+  justify-content: flex-end;
+  height: 85%;
+  width: 45vw;
+  background-image: url("../../../../assets/Img-Section02/Page04/grafico.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.womengraphic__title {
+  width: 80%;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.womengrapich__years {
+  display: flex;
+  width: 85%;
+  list-style: none;
+}
 
 @media screen and (max-width: 720px) {
   .explotacion__content {
