@@ -8,8 +8,8 @@
 .hamburger-icon img{
     position: fixed;
     z-index: 10;
-    left: 94vw;
-    top: 5vw;
+    left: 95vw;
+    top: 3vw;
 }
 .menu-expanded {
     position: fixed;
