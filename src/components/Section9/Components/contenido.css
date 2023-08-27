@@ -6,6 +6,9 @@
   gap: 20px; /* Espacio entre elementos */
   position: relative;
 }
+.App{
+  height: 3500px;
+}
 
 /* Estilos para centrar vertical y horizontalmente */
 .flex-center {
