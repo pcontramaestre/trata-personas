@@ -27,27 +27,12 @@ function App () {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
-    const containerSection = document.querySelector('#section7')
-    function getScrollPosition (id) {
-      const st = ScrollTrigger.create({ trigger: id, pinnedContainer: containerSection, start: 'top 38%' })
-      const stStart = st.start
-      st.kill()
-      return stStart
-    }
     if (show === '') {
       window.scrollTo(0, currentScroll.current)
     } else if (show.includes('#')) {
       const section = document.querySelector(show)
       const rect = section.getBoundingClientRect()
       const position = window.scrollY + rect.top
-      // console.log('section:', section)
-      // console.log(`me voy a la ${show} que esta a ${section.offsetTop}`)
-      // console.log(`me voy a la ${show} que esta a ${rect.top}`)
-      console.log(`me voy a la ${show} que esta a ${position}`)
-      console.log(`me voy a la ${show} que esta a ${getScrollPosition(show)}`)
-      // window.scrollTo(0, position)
-      // window.scrollTo(0, getScrollPosition(show))
-      // window.scrollTo(0, section.offsetTop)
       gsap.to(window, { scrollTo: position })
     }
   }, [show])
@@ -61,36 +46,12 @@ function App () {
     }
   }
 
-  function goTo () {
-    const input = document.querySelector('.inputGoTo')
-    const { value } = input
-    console.log(value)
-    window.scrollTo(0, Number(value))
-  }
-
-  function where () {
-    const input = document.querySelector('.inputGoTo')
-    const { value } = input
-    if (!value) console.log('estoy en:', window.scrollY)
-    else {
-      const section = document.getElementById(value)
-      const rect = section.getBoundingClientRect()
-      console.log(`la ${value} esta en: ${section.offsetTop} (offsetTop)`)
-      console.log(`la ${value} esta en: ${rect.top} (top)`)
-    }
-  }
-
   if (show === 'instructions') return <Instructions setShow={setShow} />
   if (show === 'header') return <Header setShow={setShow} handleHeader={handleHeader} />
   return (
     <main>
       <div className='hamburger-icon' onClick={handleHeader}>
         <img src={menuBlancoImg} alt='Menu Icon' className='hamburger-icon' />
-      </div>
-      <div className='buttonGo'>
-        <button onClick={goTo}>Go</button>
-        <input className='inputGoTo' />
-        <button onClick={where}>¿Where?</button>
       </div>
       <ToHome />
       <Section0 />
