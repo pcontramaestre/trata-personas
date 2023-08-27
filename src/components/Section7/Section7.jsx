@@ -42,13 +42,15 @@ function Section7 () {
     const widthAnimationContainer = containerAnimation.offsetWidth
     const widthElementToMove = elementToMove.offsetWidth
 
+    const percentageStart = window.innerWidth * (-0.046875) + 95
+
     const ctx = gsap.context(() => {
       gsap.to(elementToMove, {
         right: widthElementToMove - widthAnimationContainer,
         scrollTrigger: {
           trigger: containerAnimation,
-          // markers: true,
-          start: 'top 38%',
+          markers: true,
+          start: `top ${percentageStart}%`,
           end: '+=6000 bottom',
           pin: containerSection,
           scrub: true
