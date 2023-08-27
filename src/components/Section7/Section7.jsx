@@ -49,7 +49,7 @@ function Section7 () {
         right: widthElementToMove - widthAnimationContainer,
         scrollTrigger: {
           trigger: containerAnimation,
-          markers: true,
+          // markers: true,
           start: `top ${percentageStart}%`,
           end: '+=6000 bottom',
           pin: containerSection,
