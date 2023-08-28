@@ -33,7 +33,7 @@ function News ({ news, topSection }) {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerAnimation,
-          markers: true,
+          // markers: true,
           start: 'top 80%',
           end: 'bottom bottom',
           scrub: true
