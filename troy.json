@@ -869,100 +869,6 @@
         "text1": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.",
         "footer": "(CORETT)."
       }
-    },
-    "bigInfoBox": {
-      "width": "1700px",
-      "height": "412px",
-      "top": "5235.984375px",
-      "left": "110px",
-      "borderRadius": "28px",
-      "border": "1px",
-      "backgroundColor": "#01535E",
-      "text": [
-        {
-          "content": "El delito de la trata de personas y el <span id='specialSpan'>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
-          "tag": "h1",
-          "width": "1175px",
-          "height": "110px",
-          "top": "5296.0078125px",
-          "left": "325px",
-          "fontFamily": "Formula Condensed",
-          "fontSize": "45px",
-          "fontWeight": "700",
-          "lineHeight": "54px",
-          "letterSpacing": "0.03em",
-          "textAlign": "left",
-          "color": "#FFFFFF"
-        },
-        {
-          "content": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
-          "tag": "p",
-          "width": "1401px",
-          "height": "137px",
-          "top": "5415px",
-          "left": "324.9921875px",
-          "fontFamily": "Inter",
-          "fontSize": "28px",
-          "lineHeight": "34px",
-          "letterSpacing": "0em",
-          "textAlign": "left",
-          "fontWeight1": "700",
-          "fontWeight2": "400",
-          "color": "#FFFFFF"
-        },
-        {
-          "content": "(CORETT).",
-          "tag": "p",
-          "width": "284.0334481956054px",
-          "height": "44.59501064964004px",
-          "top": "5566px",
-          "left": "325.1953125px",
-          "fontFamily": "Inter",
-          "fontSize": "25px",
-          "fontWeight": "400",
-          "lineHeight": "30px",
-          "letterSpacing": "0.11em",
-          "textAlign": "left",
-          "color": "#FFFFFF"
-        }
-      ],
-      "bar": {
-        "height": "220.0000000000002px",
-        "top": "5337px",
-        "left": "250px",
-        "borderLeft": "1px solid #FFFFFF"
-      },
-      "icons": {
-        "name": "group",
-        "width": "39.997704278843464px",
-        "height": "40.00000174456551px",
-        "top": "5260px",
-        "left": "1300px",
-        "transform": "rotateZ(180deg)",
-        "filter": "brightness(0) saturate(100%) invert(70%) sepia(28%) saturate(625%) hue-rotate(134deg) brightness(91%) contrast(82%)",
-        "hover": {
-          "width": "1119.0040283203125px",
-          "height": "204.9998321533203px",
-          "top": "-170px",
-          "left": "570px",
-          "backgroundImage": "gratinBeish",
-          "backgroundColor": "#FFFCED",
-          "text": {
-            "content": "Es importante reconocer la diferencia entre la trata de personas y el tráfico ilícito de migrantes. El tráfico ilícito de migrantes se refiere a la facilitación de la entrada irregular de una persona en un Estado del cual dicha persona no es nacional ni residente permanente con el fin de obtener, directa o indirectamente, un beneficio financiero u otro beneficio de orden material. En algunos casos los dos delitos pueden estar relacionados, pues las redes de tráfico podrían estar conectadas a redes de trata (OIM, 2019).",
-            "width": "1052px",
-            "height": "128px",
-            "top": "45px",
-            "left": "33px",
-            "fontFamily": "Inter",
-            "fontSize": "20px",
-            "fontWeight": "400",
-            "lineHeight": "24px",
-            "letterSpacing": "0em",
-            "textAlign": "left",
-            "color": "#000000"
-          }
-        }
-      }
     }
   },
   "interestingEvents": {
@@ -2336,7 +2242,7 @@
           "width": "1551px",
           "height": "523px",
           "top": "138px",
-          "left": "294px",
+          "left": "-1451px",
           "text": {
             "generalText": {
               "fontFamily": "Inika",
@@ -2410,7 +2316,7 @@
           "width": "1369px",
           "height": "310px",
           "top": "803px",
-          "left": "75px",
+          "left": "1814px",
           "text": {
             "generalText": {
               "fontFamily": "Inika",
@@ -2474,6 +2380,7 @@
       ]
     },
     "bigInfoBox": {
+      "name": "BigInfoBox2",
       "width": "1700px",
       "height": "478px",
       "top": "61799px",
@@ -2580,11 +2487,10 @@
         "name": "background",
         "width": "1920px",
         "height": "1230px",
-        "top": "62224px",
+        "top": "62203px",
         "left": "0px",
         "objectPosition": "center",
-        "objectFit": "contain",
-        "zIndex": "1"
+        "objectFit": "contain"
       },
       {
         "name": "family",
@@ -2593,18 +2499,16 @@
         "top": "62280px",
         "left": "874px",
         "objectPosition": "center",
-        "objectFit": "contain",
-        "zIndex": "1"
+        "objectFit": "contain"
       },
       {
         "name": "frame",
         "width": "1920px",
         "height": "555px",
-        "top": "62224px",
+        "top": "62203px",
         "left": "0px",
         "objectPosition": "center",
-        "objectFit": "contain",
-        "zIndex": "1"
+        "objectFit": "contain"
       },
       {
         "name": "rectanguloAzul",
@@ -3209,7 +3113,72 @@
         }
       }
     },
-    "bigInfoBox": {
+    "bigInfoBox1": {
+      "name": "BigInfoBox2",
+      "width": "1700px",
+      "height": "478px",
+      "top": "61799px",
+      "left": "110px",
+      "borderRadius": "28px",
+      "border": "1px",
+      "backgroundColor": "#CFF9FF",
+      "text": [
+        {
+          "content": "Durante el año 2020, y en el contexto de la COVID-19,",
+          "tag": "h1",
+          "width": "1344px",
+          "height": "72px",
+          "top": "61876px",
+          "left": "326px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "64px",
+          "fontWeight": "700",
+          "lineHeight": "76.8px",
+          "letterSpacing": "0.03em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "los países de la región reportaron una <span>disminución</span> en la capacidad de ejecutar <span>allanamientos</span> y <span>procesamientos judiciales</span> debido a las restricciones impuestas para la mitigación de la enfermedad. De igual forma, se interrumpieron algunos <span>procesos de retorno y repatriación</span> debido a las restricciones de viajes, y se dieron reajustes en los albergues y los espacios de atención de víctimas de trata de personas.",
+          "tag": "p",
+          "width": "1344px",
+          "height": "212px",
+          "top": "61973px",
+          "left": "326px",
+          "fontFamily": "Inter",
+          "fontSize": "30px",
+          "lineHeight": "36.31px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "fontWeight": "400",
+          "fontWeight2": "700",
+          "color": "#081D20"
+        },
+        {
+          "content": "(CORETT, 2020)",
+          "tag": "p",
+          "width": "284.03px",
+          "height": "44.6px",
+          "top": "62167px",
+          "left": "326px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#081D20"
+        }
+      ],
+      "bar": {
+        "height": "306px",
+        "top": "61885px",
+        "left": "250px",
+        "borderLeft": "1px solid #081D20"
+      }
+    },
+    "bigInfoBox2": {
+      "name": "BigInfoBox3",
       "width": "1700px",
       "height": "595px",
       "top": "67040px",

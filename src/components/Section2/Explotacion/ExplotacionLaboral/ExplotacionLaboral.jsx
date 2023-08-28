@@ -2,7 +2,6 @@ import React from "react";
 import "./ExplotacionLaboral.css";
 import data from "../../../../../trataSection02.json";
 import BookLaboral from "../../../NoteBook/NoteBookSection02Laboral/BookLaboral";
-import backgroundpasto from "../../../../assets/Img-Section02/Page06/backgroundpasto.png";
 import Testimonios from "../../Testimonios/Testimonios";
 
 const ExplotacionLaboral = () => {

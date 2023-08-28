@@ -25,16 +25,19 @@ const SliderSection02 = () => {
   };
 
   return (
-      <Slider {...settings}>
-        {texts.map((text, index) => (
-          <div key={index} className="slider-container">
-            <div key={index} className="slider">
-              <h1 className="titleslider02" dangerouslySetInnerHTML={{ __html: text.title }} />
-              <p className="text3__slider">{text.foot}</p>
-            </div>
+    <Slider {...settings}>
+      {texts.map((text, index) => (
+        <div key={index} className="slider-container">
+          <div key={index} className="slider">
+            <h1
+              className="titleslider02"
+              dangerouslySetInnerHTML={{ __html: text.title }}
+            />
+            <p className="text3__slider">{text.foot}</p>
           </div>
-        ))}
-      </Slider>
+        </div>
+      ))}
+    </Slider>
   );
 };
 

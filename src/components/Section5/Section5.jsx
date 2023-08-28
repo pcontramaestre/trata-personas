@@ -1,7 +1,11 @@
+import { useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import NoteBook from '../NoteBook/NoteBook'
 // import BarGraph from '../BarGraph/BarGraph'
 import Map from '../Map/Map'
-import BigInfoBox from '../BigInfoBox/BigInfoBox'
+// import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section5.module.css'
 
@@ -23,8 +27,10 @@ import data from '../../../troy.json'
 
 import animationBackground from '../../assets/Section5/animationBackground.png'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const { repatriation } = data
-const { noteBook, bigInfoBox, map, animation } = data.repatriation
+const { noteBook, map, animation } = data.repatriation
 
 const images = {
   background,
@@ -59,6 +65,38 @@ function relativeMedition (input) {
 }
 
 function Section5 () {
+  useLayoutEffect(() => {
+    const containerSection = document.querySelector('#section5')
+    const containerAnimation = document.getElementsByName('busPlaneContainer')[0]
+    const plane = document.getElementsByName('plane')[0]
+    const bus = document.getElementsByName('bus')[0]
+    console.log('resolución de:', window.innerWidth)
+
+    const percentageStart = window.innerWidth * (-0.0389) + 62.18
+    function move (input) {
+      const n = Number(input.split('px')[0])
+      return window.innerWidth * (n / 1920)
+    }
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerAnimation,
+          markers: true,
+          start: `16% ${percentageStart}%`,
+          end: '+=6000 bottom',
+          pin: containerSection,
+          scrub: true
+        }
+      })
+
+      tl.to(plane, { left: move('294px') })
+      tl.to(bus, { left: move('75px') }, 0)
+    })
+
+    return () => ctx.revert()
+  }, [])
+
   const repatriationCotainer = {
     height: convertSize(Number(repatriation.topNextSection.split('px')[0]) - Number(repatriation.top.split('px')[0]) + 'px')
   }
@@ -86,7 +124,7 @@ function Section5 () {
   }
 
   return (
-    <section id="section5" className={style.RepatriationBackground} style={repatriationCotainer}>
+    <section id='section5' className={style.RepatriationBackground} style={repatriationCotainer}>
       {
         repatriation.image.map((photo, index) => (
           <img src={images[photo.name]} style={imagesStyles[index]} className={style.RepatriationImages} key={photo.name + index} />
@@ -112,7 +150,6 @@ function Section5 () {
       {/* <BarGraph /> */}
       <Map map={map} topSection={repatriation.top} />
       <Animation />
-      <BigInfoBox bigInfoBox={bigInfoBox} topSection={repatriation.top} />
       <div className={style.stuffed} style={stuffedStyle} />
     </section>
   )
@@ -151,10 +188,10 @@ function Animation () {
   })
 
   return (
-    <div style={animationContainerStyles} className={style.animationContainer}>
+    <div name='busPlaneContainer' style={animationContainerStyles} className={style.animationContainer}>
       {
         animation.images.map((image, index) => (
-          <div className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
+          <div name={image.name} className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
             {
               image.text.listText.map((content, index) => (
                 <label style={stylesText[image.name][index]} key={content.content + index}>{content.content}</label>
