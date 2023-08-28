@@ -6,14 +6,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 80vw;
+  width: 100%;
 }
 .titleslider02 strong {
-  width: 80%;
+  width: 100%;
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Formula Condensed;
-  font-size: 6vh;
+  font-size: 10vh;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
