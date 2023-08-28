@@ -81,19 +81,21 @@ const Countries = () => {
           } `}
           key={index}
         >
-          <div className="countries__name">
-            <img className="countries__img" src={e.image} />
-            <h1
-              className={`${
-                e.background === "pink"
-                  ? "name__country rosaname"
-                  : "name__country"
-              }`}
-            >
-              {e.name}
-            </h1>
+          <div className="countries__content">
+            <div className="countries__name">
+              <img className="countries__img" src={e.image} />
+              <h1
+                className={`${
+                  e.background === "pink"
+                    ? "name__country rosaname"
+                    : "name__country"
+                }`}
+              >
+                {e.name}
+              </h1>
+            </div>
+            <p dangerouslySetInnerHTML={{__html: e.title}} className="text__country"/>
           </div>
-          <p className="text__country">{e.title}</p>
         </div>
       ))}
     </div>

@@ -16,7 +16,25 @@
       "page3": {
         "text1": "Finalidades de la trata de personas",
         "text2": "Porcentajes para la región",
-        "popup": "Las definiciones referentes a las finalidades de la trata de personas que a continuación se explicitan, se reportarán en función de las víctimas identificadas. Una persona puede ser víctima de más de una finalidad de trata."
+        "popup": "Las definiciones referentes a las finalidades de la trata de personas que a continuación se explicitan, se reportarán en función de las víctimas identificadas. Una persona puede ser víctima de más de una finalidad de trata.",
+        "graphic": {
+          "text1": "Explotación sexual",
+          "percentage1": "63%",
+          "text2": "Mendicidad forzada",
+          "percentage2": "3%",
+          "text3": "Actividades ilícitas",
+          "percentage3": "2%",
+          "text4": "Explotación laboral",
+          "percentage4": "14%",
+          "text5": "Otros",
+          "percentage5": "13%",
+          "text6": "Matrimonio forsozo",
+          "percentage6": "1%",
+          "text7": "Esclavitud o prácticas análogas",
+          "percentage7": "3%",
+          "text8": "Adopción irregular",
+          "percentage8": "1%"
+        }
       },
       "page4": {
         "head": "Explore las imágenes",

@@ -47,6 +47,7 @@ const PracticasEsclavitud = ({ page11 }) => {
                   src={e.item === "Matrimonio servil" ? handblanco : hand}
                 />
               </div>
+
               <p
                 className={`practicashover${e.id} `}
                 dangerouslySetInnerHTML={{ __html: e.itemcontent }}

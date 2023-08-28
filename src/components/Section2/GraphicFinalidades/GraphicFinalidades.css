@@ -2,13 +2,271 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: max-content;
+  height: 100vh;
+  width: 100vw;
   padding: 40px 0;
+}
+
+.graphicfinalidad__content {
+  width: 80%;
+  height: 85%;
+  /* background-color: #bbb; */
+  border-radius: 90px;
+}
+
+.finalidadexplotacion {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  justify-content: center;
+  height: 33%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 90px 90px 0 0;
+  background-image: url("/src/assets/Img-Section02/Page03/1-explotacion\ 1.png");
+}
+
+.finalidadexplotacion__content {
+  height: 85%;
+  padding-left: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+}
+
+.finalidad__percentagegold {
+  font-family: "Formula Condensed";
+  font-size: 13vh;
+  font-weight: 700;
+  line-height: 156px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f2dfb8;
+}
+
+.explotaciontitle {
+  margin: 0;
+  font-family: Formula Condensed;
+  font-size: 8vh;
+  font-weight: 300;
+  line-height: 84px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #f2dfb8;
+}
+
+.finalidad__filados {
+  display: flex;
+  height: 34%;
+}
+
+.finalidadmendicidad {
+  display: flex;
+  flex-direction: column;
+  background-position: top;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  background-image: url("/src/assets/Img-Section02/Page03/2-mendicidad\ 1.png");
+}
+
+.mendicidadtitle {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  font-family: Formula Condensed;
+  font-size: 4.2vh;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #166266;
+}
+
+.finalidadmendicidad__content {
+  height: 85%;
+  padding-left: 5em;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: column-reverse;
+}
+
+.mendicidadpercentage {
+  font-family: Formula Condensed;
+  font-size: 13vh;
+  font-weight: 700;
+  line-height: 156px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #166266;
+}
+
+.finalidadilicita {
+  display: flex;
+  flex-direction: column;
+  background-position: top;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15%;
+  background-image: url("/src/assets/Img-Section02/Page03/3-actividades\ 1.png");
+}
+
+.finalidadilicita__content {
+  /* padding-left: 0.5em; */
+  display: flex;
+  height: 85%;
+  flex-direction: column-reverse;
+  padding: 1em;
+}
+
+.ilicitatitle {
+  margin: 0;
+  font-family: Formula Condensed;
+  font-size: 4.5vh;
+  font-weight: 300;
+  /* line-height: 45px; */
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #f2dfb8;
+}
+
+.finalidadexplotacion__content-laboral {
+  padding-left: 5em;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 85%;
+  justify-content: end;
+}
+
+.explotacion-laboral__title {
+  margin: 0;
+  font-family: Formula Condensed;
+  font-size: 8vh;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #166266;
+}
+
+.finalidadeslaboral {
+  display: flex;
+  flex-direction: column;
+  background-position: top;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 65%;
+  background-image: url("/src/assets/Img-Section02/Page03/4-explotacion\ 1.png");
+}
+
+.finalidad__filatres {
+  display: flex;
+  height: 33%;
+}
+
+.finalidadotros {
+  width: 60%;
+  border-radius: 0 0 0 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/src/assets/Img-Section02/Page03/5-otros\ 1.png");
+}
+
+.finalidadotros__content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding-left: 5em;
+  height: 85%;
+}
+
+.finalidadmatrimonio {
+  display: flex;
+  background-position: top;
+  background-repeat: no-repeat;
+  justify-content: end;
+  background-size: cover;
+  width: 15%;
+  background-image: url("/src/assets/Img-Section02/Page03/6-matrimonio\ 1.png");
+}
+
+.finalidadmatrimonio__content {
+  padding-left: 0.25em;
+  display: flex;
+  height: 85%;
+  flex-direction: column-reverse;
+  padding: 1em;
+}
+
+.finalidadesclavitud {
+  display: flex;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 23%;
+  background-image: url("/src/assets/Img-Section02/Page03/7-esclavitud\ 1.png");
+}
+
+.esclavitudtitle{
+  display: flex;
+  margin: 0;
+  width: 100%;
+  font-family: Formula Condensed;
+  font-size: 4vh;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #166266;
+}
+
+.finalidadesadopcion {
+  display: flex;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/src/assets/Img-Section02/Page03/8-adopcion\ 1.png");
+  width: 10%;
+  border-radius: 0 0 90px 0;
+}
+
+.finalidadadopcion__content{
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: center; */
+  height: 85%;
+  padding: 1em;
+}
+
+
+
+.adopciontitle{
+  margin: 0;
+  font-family: Formula Condensed;
+  font-size: 4.3vh;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #f2dfb8;
+}
+
+.finalidadesclavitud__content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 1em;
 }
 
 .img__finalidad {
   width: 80%;
   padding: 10em 0;
+  display: none;
 }
 
 @media screen and (max-width: 720px) {
