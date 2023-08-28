@@ -70,20 +70,20 @@ function Section5 () {
     const containerAnimation = document.getElementsByName('busPlaneContainer')[0]
     const plane = document.getElementsByName('plane')[0]
     const bus = document.getElementsByName('bus')[0]
-    console.log('resolución de:', window.innerWidth)
 
     const percentageStart = window.innerWidth * (-0.0389) + 62.18
     function move (input) {
       const n = Number(input.split('px')[0])
-      return window.innerWidth * (n / 1920)
+      const r = window.innerWidth * (n / 1920)
+      return r
     }
 
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerAnimation,
-          markers: true,
-          start: `16% ${percentageStart}%`,
+          // markers: true,
+          start: `16% ${percentageStart < 0 ? 0 : percentageStart}%`,
           end: '+=6000 bottom',
           pin: containerSection,
           scrub: true

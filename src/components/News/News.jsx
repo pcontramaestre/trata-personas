@@ -1,9 +1,15 @@
+import { useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import style from './News.module.css'
 
 import group from '../../assets/Instructions/group.svg'
 import sheetL from '../../assets/News/sheetL.png'
 import sheetM from '../../assets/News/sheetM.png'
 import sheetS from '../../assets/News/sheetS.png'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const sheets = {
   sheetL,
@@ -19,6 +25,29 @@ function convertSize (input) {
 function News ({ news, topSection }) {
   if (!news) return null
 
+  useLayoutEffect(() => {
+    const containerAnimation = document.getElementsByName('news' + news.section)[0]
+    const elementToMove = document.getElementsByName('cardNews' + news.section)
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerAnimation,
+          // markers: true,
+          start: 'top 80%',
+          end: 'bottom bottom',
+          scrub: true
+        }
+      })
+
+      elementToMove.forEach((elemento) => {
+        tl.from(elemento, { x: `${window.innerWidth}` })
+      })
+    })
+
+    return () => ctx.revert()
+  }, [])
+
   const totalHeight = news.articles.reduce((acc, curr) => Number(acc.split('px')[0]) < Number(curr.position.top.split('px')[0]) ? acc : curr.position.top, news.articles[0].position.top)
 
   const newsBackgroundContainer = {
@@ -26,11 +55,11 @@ function News ({ news, topSection }) {
   }
 
   return (
-    <div id='NewsBackground' className={style.NewsBackground} style={newsBackgroundContainer}>
+    <div name={'news' + news.section} id='NewsBackground' className={style.NewsBackground} style={newsBackgroundContainer}>
       {
         news.articles.map((article, index) => (
           <div key={index}>
-            <Card article={article} key={index} totalHeight={totalHeight} footer={news.footerCard} title={news.titleStyles} />
+            <Card section={news.section} article={article} key={index} totalHeight={totalHeight} footer={news.footerCard} title={news.titleStyles} />
             <SheetNews hover={article.hover} title={news.titleStylesHover} text={news.textStylesHover} footer={news.footerStyleHover} icon={news.footerIconHover} />
           </div>
         ))
@@ -39,7 +68,7 @@ function News ({ news, topSection }) {
   )
 }
 
-function Card ({ article, totalHeight, footer, title }) {
+function Card ({ article, totalHeight, footer, title, section }) {
   const width = convertSize(article.size.width)
   const height = convertSize(article.size.height)
   const top = convertSize((Number(article.position.top.split('px')[0]) - Number(totalHeight.split('px')[0]) + 'px'))
@@ -71,7 +100,7 @@ function Card ({ article, totalHeight, footer, title }) {
   }
 
   return (
-    <div className={style.NewsArticle} style={articleStyle}>
+    <div name={'cardNews' + section} className={style.NewsArticle} style={articleStyle}>
       <p dangerouslySetInnerHTML={{ __html: article.title.text }} style={titleStyle} />
       <label style={footerStyle}>{article.footer.text}</label>
     </div>

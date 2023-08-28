@@ -50,7 +50,7 @@ function Section7 () {
         scrollTrigger: {
           trigger: containerAnimation,
           // markers: true,
-          start: `top ${percentageStart}%`,
+          start: `top ${percentageStart < 0 ? 0 : percentageStart}%`,
           end: '+=6000 bottom',
           pin: containerSection,
           scrub: true
