@@ -60,7 +60,7 @@ p {
   position: relative;
   display: none;
   background-image: url("../../../assets/Img-Section01/Page08/new_hover.png");
-  background-size: contain;
+  background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -75,7 +75,7 @@ p {
   position: relative;
   display: none;
   background-image: url("../../../assets/Img-Section01/Page08/noticiachica.png");
-  background-size: contain;
+  background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
 }

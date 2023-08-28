@@ -4,7 +4,7 @@
   align-items: center;
   /* justify-content: center; */
   position: relative;
-  height: 200vh;
+  height: 180vh;
   width: 100vw;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .adopcion__img {
-  top: 5vw;
+  top: 15vw;
   right: 5vw;
   width: 40vw;
   position: absolute;

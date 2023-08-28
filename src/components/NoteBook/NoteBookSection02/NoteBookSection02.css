@@ -2,6 +2,7 @@
   display: flex;
   position: absolute;
   z-index: 5;
+  top: -15vh;
 }
 
 .NoteBook02 {
@@ -67,7 +68,11 @@
   margin-top: 0.65vw;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 790px) {
+  .NoteBook02__container {
+    top: 0vh;
+  }
+  
   .NoteBook02 {
     background: url("../../../assets/Img-Section02/Page04/notebook.png");
     background-repeat: no-repeat;
