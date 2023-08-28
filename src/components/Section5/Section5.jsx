@@ -70,7 +70,6 @@ function Section5 () {
     const containerAnimation = document.getElementsByName('busPlaneContainer')[0]
     const plane = document.getElementsByName('plane')[0]
     const bus = document.getElementsByName('bus')[0]
-    console.log('resolución de:', window.innerWidth)
 
     const percentageStart = window.innerWidth * (-0.0389) + 62.18
     function move (input) {
