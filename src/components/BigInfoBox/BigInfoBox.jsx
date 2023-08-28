@@ -100,7 +100,7 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
     : {}
 
   return (
-    <div className={style.BigInfoBox} style={bigInfoBoxStyle}>
+    <div name={bigInfoBox.name} className={style.BigInfoBox} style={bigInfoBoxStyle}>
       <div className={style.BigInfoBoxBar} style={barInfoBox} />
       {
         bigInfoBox.icons

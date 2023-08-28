@@ -40,7 +40,7 @@ function convertSize (input) {
 }
 
 const { prevention } = data
-const { images, text, noteBook, bigInfoBox, news } = data.prevention
+const { images, text, noteBook, bigInfoBox1, bigInfoBox2, news } = data.prevention
 
 function Section6 () {
   const preventionBackground = {
@@ -68,7 +68,7 @@ function Section6 () {
   }))
 
   return (
-    <section id="section6" className={style.PreventionBackground} style={preventionBackground}>
+    <section id='section6' className={style.PreventionBackground} style={preventionBackground}>
       {
         images.map((image, index) => (
           <img src={imagesList[image.name]} className={style.images} style={imageStyles[index]} key={image.name + index} />
@@ -90,9 +90,10 @@ function Section6 () {
           return true
         })
       }
+      <BigInfoBox bigInfoBox={bigInfoBox1} topSection={prevention.top} />
       <NoteBook noteBook={noteBook} topSection={prevention.top} />
       {/* <BarGraph /> */}
-      <BigInfoBox bigInfoBox={bigInfoBox} topSection={prevention.top} />
+      <BigInfoBox bigInfoBox={bigInfoBox2} topSection={prevention.top} />
       <News news={news} topSection={prevention.top} />
     </section>
   )
