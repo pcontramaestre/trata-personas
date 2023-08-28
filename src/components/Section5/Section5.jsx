@@ -75,7 +75,8 @@ function Section5 () {
     const percentageStart = window.innerWidth * (-0.0389) + 62.18
     function move (input) {
       const n = Number(input.split('px')[0])
-      return window.innerWidth * (n / 1920)
+      const r = window.innerWidth * (n / 1920)
+      return r
     }
 
     const ctx = gsap.context(() => {
@@ -83,7 +84,7 @@ function Section5 () {
         scrollTrigger: {
           trigger: containerAnimation,
           markers: true,
-          start: `16% ${percentageStart}%`,
+          start: `16% ${percentageStart < 0 ? 0 : percentageStart}%`,
           end: '+=6000 bottom',
           pin: containerSection,
           scrub: true
