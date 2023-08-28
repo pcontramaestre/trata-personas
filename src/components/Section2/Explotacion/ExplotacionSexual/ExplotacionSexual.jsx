@@ -5,7 +5,6 @@ import hand from "../../../../assets/Img-Section01/Page09/hand.svg";
 import womenloading from "../../../../assets/Img-Section02/Page04/women_loading.png";
 import NoteBookSection02 from "../../../NoteBook/NoteBookSection02/NoteBookSection02";
 import Testimonios from "../../Testimonios/Testimonios";
-import backgroundsexual from "../../../../assets/Img-Section02/Page04/background.png";
 
 const ExplotacionSexual = () => {
   const page4 = data[0].finalidades.page4;
@@ -42,7 +41,6 @@ const ExplotacionSexual = () => {
           </div>
         </div>
       </div>
-      {/* <img className="background__sexual" src={backgroundsexual} /> */}
       <Testimonios laboral={false} name1={name1} name2={name2} />
       <div className="video__foot" />
     </div>

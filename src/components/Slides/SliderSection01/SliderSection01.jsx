@@ -66,7 +66,7 @@ const SliderSection01 = ({ texts }) => {
       {texts.map((text, index) => (
         <div key={index} className="slider-container">
           <div key={index} className="slider">
-            <h1 className="titleslider">{text.title}</h1>
+            <h1 className="titleslider" dangerouslySetInnerHTML={{__html: text.title}}/>
             <p className="text2__slider">{text.text1}</p>
             <p
               className="text1__slider"

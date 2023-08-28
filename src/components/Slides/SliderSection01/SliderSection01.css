@@ -17,7 +17,6 @@
 .slider {
   padding: 0 10vw;
   display: flex;
-  /* width: 100vw; */
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -25,10 +24,13 @@
 }
 
 .titleslider {
+  display: flex;
+  justify-content: center;
+  width: 60%;
   color: #ce5c3b;
   margin: 0;
   text-align: center;
-  font-size: 7vh;
+  font-size: 10vh;
   font-family: "Formula Condensed";
   font-style: normal;
   font-weight: 700;
@@ -37,9 +39,12 @@
 }
 
 .text1__slider {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
   color: var(--negro-textos, #081d20);
   font-family: Inter;
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 400;
   font-family: "Inter";
@@ -54,6 +59,7 @@
   font-family: Inter;
   font-size: 4vh;
   font-style: normal;
+  padding-bottom: 3vh;
   font-weight: 700;
   line-height: normal;
   margin: 0;
@@ -83,10 +89,12 @@
   }
 
   .titleslider {
+    width: 70%;
     font-size: 7vw;
   }
 
   .text1__slider {
+    width: 90%;
     font-size: 3.5vw;
   }
 

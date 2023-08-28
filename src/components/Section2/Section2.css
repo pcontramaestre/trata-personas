@@ -57,6 +57,7 @@
 
 .section__02slider {
   width: 100vw;
+  margin: 5vh 0;
 }
 
 @media screen and (max-width: 1050px) {

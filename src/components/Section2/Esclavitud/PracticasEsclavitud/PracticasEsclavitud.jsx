@@ -1,14 +1,16 @@
 import React from "react";
 import "./PracticasEsclavitud.css";
 import hand from "../../../../assets/Img-Section01/Page09/hand.svg";
+import handblanco from "../../../../assets/Img-Section02/Page11/iconoblanco.svg";
+// import handblanco from "../../../../assets/Img-Section02/Page11/"
 
 const PracticasEsclavitud = ({ page11 }) => {
   const page = page11[0].finalidades.page11;
   const esclavitud = [
     { item: page.item1, id: 1, itemcontent: page.item1_content },
     { item: page.item2, id: 2, itemcontent: page.item2_content },
-    { item: page.item3, id: 3 , itemcontent: page.item3_content },
-    { item: page.item4, id: 4 , itemcontent: page.item4_content},
+    { item: page.item3, id: 3, itemcontent: page.item3_content },
+    { item: page.item4, id: 4, itemcontent: page.item4_content },
   ];
 
   return (
@@ -28,7 +30,7 @@ const PracticasEsclavitud = ({ page11 }) => {
                   : "flex-end"
               }`}
             >
-              <div className={`practicas__item-background ${e.item}}`}>
+              <div className={`practicas__item-background ${e.item}k`}>
                 <h1
                   className={`practicas__item ${
                     e.item === "Matrimonio servil" ? "blanco" : null
@@ -42,14 +44,13 @@ const PracticasEsclavitud = ({ page11 }) => {
                       ? "img__matrimonio"
                       : "img__comun"
                   }`}
-                  src={hand}
+                  src={e.item === "Matrimonio servil" ? handblanco : hand}
                 />
               </div>
               <p
                 className={`practicashover${e.id} `}
-               dangerouslySetInnerHTML={{__html: e.itemcontent}}>
-              
-              </p>
+                dangerouslySetInnerHTML={{ __html: e.itemcontent }}
+              ></p>
             </div>
           </div>
         ))}

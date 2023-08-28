@@ -43,6 +43,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
+  position: relative;
 }
 
 .circlegraph__percentage {
