@@ -447,6 +447,7 @@
       }
     },
     "news": {
+      "section": "Section0",
       "footerCard": {
         "fontFamily": "Inter",
         "fontSize": "20px",
@@ -3256,6 +3257,7 @@
       }
     },
     "news": {
+      "section": "Section6",
       "footerCard": {
         "fontFamily": "Inter",
         "fontSize": "20px",
@@ -4394,6 +4396,7 @@
       }
     ],
     "news1": {
+      "section": "Section4.1",
       "footerCard": {
         "fontFamily": "Inter",
         "fontSize": "20px",
@@ -4608,6 +4611,7 @@
       ]
     },
     "news2": {
+      "section": "Section4.2",
       "footerCard": {
         "fontFamily": "Inter",
         "fontSize": "20px",
@@ -6152,6 +6156,7 @@
       }
     },
     "news": {
+      "section": "Section3",
       "footerCard": {
         "fontFamily": "Inter",
         "fontSize": "20px",
