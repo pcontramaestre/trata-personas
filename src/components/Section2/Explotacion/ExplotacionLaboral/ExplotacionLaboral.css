@@ -67,18 +67,18 @@
   color: var(--verde-claro-textos, #006873);
   font-family: Formula Condensed;
   width: 100%;
-  margin-right: 8vw;
-  margin-bottom: 0;
+  margin-right: 4vw;
+  margin-top: 4vh;
   top: 10vh;
   text-align: end;
-  font-size: 10vh;
+  font-size: 4.5vw;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 790px) {
   .explotacion__laboral {
     background-size: cover;
     background-position: center;
@@ -106,7 +106,7 @@
     justify-content: flex-end;
     width: 100%;
     height: 5%;
-    font-size: 3em;
+    font-size: 1.8em;
   }
 }
 @media screen and (max-width: 420px) {
@@ -135,6 +135,6 @@
   .laboral__title {
     top: 1em;
     text-align: end;
-    font-size: 1.7em;
+    font-size: 0.8em;
   }
 }
