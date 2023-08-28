@@ -6,6 +6,11 @@
     position: absolute;
 }
 
+.ProtectionCareImagesFrontPage {
+    position: absolute;
+    transform: scale(0.9);
+}
+
 .ProtectionCareText {
     position: absolute;
     margin: 0px;
