@@ -4894,7 +4894,7 @@
         "width": "1406px",
         "height": "803px",
         "top": "35382px",
-        "left": "0px",
+        "left": "-75px",
         "objectPosition": "center",
         "objectFit": "contain",
         "zIndex": 0
@@ -4903,8 +4903,8 @@
         "name": "bars",
         "width": "1362px",
         "height": "1446px",
-        "top": "34658px",
-        "left": "111px",
+        "top": "34720px",
+        "left": "27px",
         "objectPosition": "center",
         "objectFit": "contain",
         "zIndex": 0
@@ -4914,7 +4914,7 @@
         "width": "1007px",
         "height": "913px",
         "top": "34890px",
-        "left": "913px",
+        "left": "964px",
         "objectPosition": "center",
         "objectFit": "contain",
         "zIndex": 0
@@ -5105,7 +5105,7 @@
         "tag": "h1",
         "width": "596px",
         "height": "145px",
-        "top": "35731px",
+        "top": "35670px",
         "left": "595px",
         "fontFamily": "Formula Condensed",
         "fontSize": "120px",
