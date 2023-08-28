@@ -3,18 +3,27 @@
   width: 100vw;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  top: -15vh;
 }
 
 .countries__background {
-  padding: 5% 0;
+  padding:3% 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../../../assets/Section8/Page2/azul.png");
   width: 100%;
+}
+
+.countries__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 .rosa {
@@ -23,13 +32,24 @@
 
 .countries__name {
   display: flex;
-  width: 40%;
+  width: 55%;
   align-items: center;
+}
+
+.text__country {
+  color: #0a3c3f;
+  font-family: Formula Condensed;
+  font-size: 4vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  width: 40%;
 }
 
 .countries__img {
   margin: 0 2vh;
-  width: 22%;
+  width: 23%;
 }
 
 .name__country {
@@ -48,16 +68,7 @@
   color: #ffa0a0;
 }
 
-.text__country {
-  color: #0a3c3f;
-  font-family: Formula Condensed;
-  font-size: 4vh;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  width: 32%;
-}
+
 
 @media screen and (max-width: 720px) {
   .countries__background {
