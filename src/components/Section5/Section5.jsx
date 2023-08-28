@@ -83,7 +83,7 @@ function Section5 () {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerAnimation,
-          markers: true,
+          // markers: true,
           start: `16% ${percentageStart < 0 ? 0 : percentageStart}%`,
           end: '+=6000 bottom',
           pin: containerSection,
