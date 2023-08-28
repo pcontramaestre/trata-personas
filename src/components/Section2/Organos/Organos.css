@@ -46,7 +46,7 @@
   font-size: 4.5vh;
   width: 30%;
   font-style: normal;
-  line-height: 35px; /* 72.917% */
+  line-height: 1em; 
   letter-spacing: 1.44px;
   font-weight: 500;
   position: absolute;
@@ -59,7 +59,7 @@
   font-size: 3.45vh;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  /* line-height: 30px; */
   letter-spacing: 0.4px;
 }
 
@@ -123,7 +123,7 @@
   font-size: 2.6vh;
   font-style: normal;
   font-weight: 400;
-  line-height: 25.5px;
+  line-height: 1.55em;
   padding: 9px 0;
 }
 

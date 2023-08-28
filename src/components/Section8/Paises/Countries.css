@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: -15vh;
+  /* top: -15vh; */
 }
 
 .countries__background {
