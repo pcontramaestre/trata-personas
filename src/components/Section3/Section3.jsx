@@ -151,11 +151,13 @@ function Section3 () {
 
   const listImageHover = ['psicosocial', 'medico', 'legal', 'manutencion', 'educacion', 'alojamiento', 'reintegracion']
 
+  const listImageFrontPage = ['leftHand', 'bars', 'rightHand']
+
   return (
     <section id="section3" className={style.ProtectionCare} style={protectionAndCareBackgroundStyles}>
       {
         images.map((image, index) => (
-          <img id={listImageHover.includes(image.name) ? image.name : null} name={image.grupo ? image.grupo : null} src={image && imagesList[image.name]} style={imagesStyles[index]} className={style.ProtectionCareImages} key={image.name + index} />
+          <img id={listImageHover.includes(image.name) ? image.name : null} name={image.grupo ? image.grupo : null} src={image && imagesList[image.name]} style={imagesStyles[index]} className={listImageFrontPage.includes(image.name) ? style.ProtectionCareImagesFrontPage : style.ProtectionCareImages} key={image.name + index} />
         ))
       }
       {
