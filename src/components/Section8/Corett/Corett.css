@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  /* top: -20vh; */
 }
 
 .corett__container {
@@ -10,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .corett__headtext {
@@ -66,21 +68,23 @@
   line-height: normal;
   letter-spacing: 2.75px;
   text-transform: uppercase;
+  margin-bottom: 4em;
 }
 
 .corett__foot {
+  margin: 20vh 0;
   display: flex;
-  width: 70%;
+  width: 50%;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 20vh;
 }
 
 .corett__foot-title {
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Inter;
-  font-size: 4vh;
+  font-size: 3.5vh;
   font-style: normal;
   font-weight: 400;
   line-height: 129.494%; /* 38.848px */
