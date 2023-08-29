@@ -10,12 +10,11 @@ import nicaragua from '../../assets/Map/nicaragua.svg'
 import panama from '../../assets/Map/panama.svg'
 import republicaDominicana from '../../assets/Map/republicaDominicana.svg'
 
-import mapGreen from '../../assets/Map/mapGreen.svg'
+import { ReactComponent as MapGreen } from '../../assets/Map/mapa1.svg'
 import mapPink from '../../assets/Map/mapPink.svg'
 import mexicoHoverMapPink from '../../assets/Map/mexicoHoverMapPink.png'
 
 const maps = {
-  mapGreen,
   mapPink,
   mexicoHoverMapPink
 }
@@ -40,16 +39,24 @@ function convertSize (input) {
 function Map ({ map, topSection }) {
   if (!map) return null
 
-  const mapStyle = {
+  const styleMapContainer = {
     height: convertSize(map.size.height),
-    top: convertSize(topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top),
-    backgroundImage: `url(${maps[map.backgroundImage]})`
+    top: convertSize(topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top)
+    // backgroundImage: `url(${maps[map.backgroundImage]})`
   }
+
+  // const stylesMap = {
+  //   ...map.map
+  // }
+
   return (
-    <div className={style.MapBackground} style={mapStyle}>
-      {map.countrys.map((country, index) => (
+    <div className={style.ContainerMap} style={styleMapContainer}>
+      <MapGreen />
+      {/* <div dangerouslySetInnerHTML={{ __html: mapGreen }} /> */}
+      {/* <img src={maps[map.backgroundImage]} className={style.map} style={stylesMap} /> */}
+      {/* {map.countrys.map((country, index) => (
         <Card country={country} totalTop={topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top} key={index} />
-      ))}
+      ))} */}
     </div>
   )
 }
@@ -81,12 +88,12 @@ function Card ({ country, totalTop }) {
 
   return (
     <div className={style.MapCard} style={styleCard}>
-      {
+      {/* {
         country.flag.name ? <img src={flags[country.flag.name]} style={flagStyle} /> : null
       }
       {
         country.name ? <label style={nameStyle}>{country.name.toUpperCase()}</label> : null
-      }
+      } */}
     </div>
   )
 }
