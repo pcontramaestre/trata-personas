@@ -23,7 +23,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 90px 90px 0 0;
+  border-radius: 50px 50px 0 0;
   background-image: url("/src/assets/Img-Section02/Page03/1-explotacion\ 1.png");
 }
 
@@ -166,7 +166,7 @@
 
 .finalidadotros {
   width: 60%;
-  border-radius: 0 0 0 90px;
+  border-radius: 0 0 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,10 +229,11 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
   justify-content: center;
   background-image: url("/src/assets/Img-Section02/Page03/8-adopcion\ 1.png");
   width: 12%;
-  border-radius: 0 0 90px 0;
+  border-radius: 0 0 50px 0;
 }
 
 .finalidadadopcion__content{

@@ -21,13 +21,13 @@ const CircleGraphSlider = () => {
   return (
     <div className="CircleGraph__slider">
       <h2></h2>
-      <div>
-        <div>porcentajes</div>
-        <div className="">grafico</div>
-      </div>
-      <div>
-        <div>niñascolor</div>
-        <div>niñoscolor</div>
+      <div className="CircleGraph__content">
+        <div></div>
+        <div className="Circlebarras__slider">
+          <div className="circlenino" />
+          <div className="circlenina" />
+         
+        </div>
       </div>
     </div>
   );

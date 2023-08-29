@@ -1,7 +1,48 @@
-.CircleGraph__slider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+.CircleGraph__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.CircleGraph__content {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  width: 90%;
+}
+
+.Circlebarras__slider {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 75%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/src/assets/Img-Section01/Page09/onSlider/grafico.png");
+}
+
+.circlenino {
+  position: absolute;
+  background-size: contain;
+  height: 45%;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 6%;
+  background-image: url("/src/assets/Img-Section01/Page09/onSlider/nino.png");
+}
+
+.circlenina {
+  position: absolute;
+  background-size: contain;
+  height: 45%;
+  left: 0;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 4.5%;
+  background-image: url("/src/assets/Img-Section01/Page09/onSlider/nina.png");
 }
