@@ -388,6 +388,7 @@
       }
     ],
     "noteBook": {
+      "section": "Section0",
       "top": "1476.27px",
       "left": "831px",
       "rotation": "8.49 deg",
@@ -1973,6 +1974,7 @@
       }
     ],
     "noteBook": {
+      "section": "Section5",
       "top": "56918.77px",
       "left": "455.52px",
       "rotation": "8.3deg",
@@ -3052,6 +3054,7 @@
       }
     ],
     "noteBook": {
+      "section": "Section6",
       "width": "690.83px",
       "height": "708.58px",
       "top": "64505px",
@@ -6099,6 +6102,7 @@
       }
     },
     "noteBook": {
+      "section": "Section3",
       "width": "674px",
       "height": "636.05px",
       "top": "36370.45px",
