@@ -388,6 +388,7 @@
       }
     ],
     "noteBook": {
+      "section": "Section0",
       "top": "1476.27px",
       "left": "831px",
       "rotation": "8.49 deg",
@@ -406,6 +407,8 @@
         },
         "paragraph": [
           {
+            "type": "paragraph",
+            "positionContent": 1,
             "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
             "width": "532.7px",
             "height": "300px",
@@ -424,6 +427,8 @@
         },
         "title": [
           {
+            "type": "title",
+            "positionContent": 2,
             "content": "CON FINES DE EXPLOTACIÓN”.",
             "width": "550.49px",
             "height": "76px",
@@ -432,6 +437,7 @@
           }
         ],
         "footer": {
+          "type": "footer",
           "content": "(OIM,2019)",
           "width": "157.9px",
           "height": "30px",
@@ -2067,6 +2073,7 @@
       }
     ],
     "noteBook": {
+      "section": "Section5",
       "top": "56918.77px",
       "left": "455.52px",
       "rotation": "8.3deg",
@@ -2085,6 +2092,8 @@
         },
         "paragraph": [
           {
+            "type": "paragraph",
+            "positionContent": 1,
             "content": "Se entiende como <span>repatriación</span>, el proceso ordenado, seguro y digno de retorno de personas que reúnen los requisitos a su país de origen o de habitual residencia a partir del ",
             "width": "554.42px",
             "height": "125.65px",
@@ -2103,6 +2112,8 @@
         },
         "title": [
           {
+            "type": "title",
+            "positionContent": 2,
             "content": "DESEO LIBREMENTE EXPRESADO DE REGRESAR.",
             "width": "566.29px",
             "height": "144.39px",
@@ -2111,6 +2122,7 @@
           }
         ],
         "footer": {
+          "type": "footer",
           "content": "(OIM).",
           "width": "292.16px",
           "height": "35.21px",
@@ -3146,6 +3158,7 @@
       }
     ],
     "noteBook": {
+      "section": "Section6",
       "width": "690.83px",
       "height": "708.58px",
       "top": "64505px",
@@ -3164,12 +3177,16 @@
         },
         "paragraph": [
           {
+            "type": "paragraph",
+            "positionContent": 3,
             "content": "Las políticas y actividades incluidas en el concepto de prevención suelen ser las que <span>atacan las causas de la trata de personas.</span>",
             "width": "443.76px",
             "height": "141.9px",
             "top": "64910px"
           },
           {
+            "type": "paragraph",
+            "positionContent": 1,
             "content": "La prevención comprende las",
             "width": "431.14px",
             "height": "34.48px",
@@ -3187,6 +3204,8 @@
         },
         "title": [
           {
+            "type": "title",
+            "positionContent": 2,
             "content": "MEDIDAS QUE TIENEN POR OBJETO IMPEDIR QUE OCURRAN FUTUROS ACTOS DE TRATA DE PERSONAS.",
             "width": "501.87px",
             "height": "201.71px",
@@ -3194,6 +3213,7 @@
           }
         ],
         "footer": {
+          "type": "footer",
           "content": "(ACNUDH, 2014).",
           "width": "248.96px",
           "height": "30px",
@@ -6193,6 +6213,7 @@
       }
     },
     "noteBook": {
+      "section": "Section3",
       "width": "674px",
       "height": "636.05px",
       "top": "36370.45px",
@@ -6211,6 +6232,8 @@
         },
         "paragraph": [
           {
+            "type": "paragraph",
+            "positionContent": 1,
             "content": "Se entiende como <span>víctima de trata atendida,</span> aquellas víctimas de trata de personas que",
             "width": "408.04px",
             "height": "90px",
@@ -6228,6 +6251,8 @@
         },
         "title": [
           {
+            "type": "title",
+            "positionContent": 2,
             "content": "HAN TENIDO ACCESO A SERVICIOS DE ASISTENCIA Y PROTECCIÓN.",
             "width": "480.11px",
             "height": "149.65px",
@@ -6235,6 +6260,7 @@
           }
         ],
         "footer": {
+          "type": "footer",
           "content": "(OIM).",
           "width": "157.9px",
           "height": "30px",
