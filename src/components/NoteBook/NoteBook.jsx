@@ -4,24 +4,24 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import style from './NoteBook.module.css'
 
-import whiteSheet from '../../assets/NoteBook/whiteSheet.png'
-import whiteSheetShort from '../../assets/NoteBook/whiteSheetShort.png'
+import whiteSheet from "../../assets/NoteBook/whiteSheet.png";
+import whiteSheetShort from "../../assets/NoteBook/whiteSheetShort.png";
 
 gsap.registerPlugin(ScrollTrigger)
 
 const whiteSheets = {
   whiteSheet,
-  whiteSheetShort
+  whiteSheetShort,
+};
+
+function convertSize(input) {
+  const n = Number(input.split("px")[0]);
+  return (n * 100) / 1920 + "vw";
 }
 
-function convertSize (input) {
-  const n = Number(input.split('px')[0])
-  return (n * 100 / 1920) + 'vw'
-}
-
-function convertAngle (input) {
-  const n = Number(input.split('deg')[0])
-  return n * (Math.PI / 180)
+function convertAngle(input) {
+  const n = Number(input.split("deg")[0]);
+  return n * (Math.PI / 180);
 }
 
 function NoteBook ({ noteBook, topSection }) {
@@ -188,43 +188,67 @@ function NoteBook ({ noteBook, topSection }) {
   }, [])
 
   const whiteSheetStyle = {
-    top: convertSize(topSection ? Number(noteBook.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : noteBook.top),
+    top: convertSize(
+      topSection
+        ? Number(noteBook.top.split("px")[0]) -
+            Number(topSection.split("px")[0]) +
+            "px"
+        : noteBook.top
+    ),
     left: convertSize(noteBook.left),
     width: convertSize(noteBook.width),
     height: convertSize(noteBook.height),
-    backgroundImage: `url(${noteBook.backgroundImage ? whiteSheets[noteBook.backgroundImage] : whiteSheets.whiteSheet})`,
-    transform: `rotateZ(${-Number(noteBook.rotation.split('deg')[0])}deg)`
-  }
+    backgroundImage: `url(${
+      noteBook.backgroundImage
+        ? whiteSheets[noteBook.backgroundImage]
+        : whiteSheets.whiteSheet
+    })`,
+    transform: `rotateZ(${-Number(noteBook.rotation.split("deg")[0])}deg)`,
+  };
 
   const contentStyle = noteBook.text.paragraph.sort((a, b) => a.positionContent - b.positionContent).map(paragraph => ({
     ...noteBook.text.paragraphStyles,
-    content: '',
+    content: "",
     width: convertSize(paragraph.width),
     height: convertSize(paragraph.height),
-    top: convertSize((Number(paragraph.top.split('px')[0]) - Number(noteBook.top.split('px')[0])) / Math.cos(convertAngle(noteBook.rotation)) + 'px'),
-    left: convertSize('160px'),
+    top: convertSize(
+      (Number(paragraph.top.split("px")[0]) -
+        Number(noteBook.top.split("px")[0])) /
+        Math.cos(convertAngle(noteBook.rotation)) +
+        "px"
+    ),
+    left: convertSize("160px"),
     fontSize: convertSize(noteBook.text.paragraphStyles.fontSize),
-    lineHeight: convertSize(noteBook.text.paragraphStyles.lineHeight)
-  }))
+    lineHeight: convertSize(noteBook.text.paragraphStyles.lineHeight),
+  }));
 
   const titleStyle = noteBook.text.title.sort((a, b) => a.positionContent - b.positionContent).map(title => ({
     ...noteBook.text.titleStyles,
     width: convertSize(title.width),
     height: convertSize(title.height),
-    top: convertSize((Number(title.top.split('px')[0]) - Number(noteBook.top.split('px')[0])) / Math.cos(convertAngle(noteBook.rotation)) + 'px'),
-    left: convertSize('160px'),
+    top: convertSize(
+      (Number(title.top.split("px")[0]) - Number(noteBook.top.split("px")[0])) /
+        Math.cos(convertAngle(noteBook.rotation)) +
+        "px"
+    ),
+    left: convertSize("160px"),
     fontSize: convertSize(noteBook.text.titleStyles.fontSize),
-    lineHeight: convertSize(noteBook.text.titleStyles.lineHeight)
-  }))
+    lineHeight: convertSize(noteBook.text.titleStyles.lineHeight),
+  }));
 
   const footerStyle = {
     ...noteBook.text.footer,
     width: convertSize(noteBook.text.footer.width),
     height: convertSize(noteBook.text.footer.height),
-    top: convertSize((Number(noteBook.text.footer.top.split('px')[0]) - Number(noteBook.top.split('px')[0])) / Math.cos(convertAngle(noteBook.rotation)) + 'px'),
-    left: convertSize('160px'),
-    fontSize: convertSize(noteBook.text.footer.fontSize)
-  }
+    top: convertSize(
+      (Number(noteBook.text.footer.top.split("px")[0]) -
+        Number(noteBook.top.split("px")[0])) /
+        Math.cos(convertAngle(noteBook.rotation)) +
+        "px"
+    ),
+    left: convertSize("160px"),
+    fontSize: convertSize(noteBook.text.footer.fontSize),
+  };
 
   function listTextToWrite () {
     const objectTexts = {
@@ -251,7 +275,7 @@ function NoteBook ({ noteBook, topSection }) {
         }
       <footer name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={footerStyle}>{texts && texts.footer ? texts.footer : ''}</footer>
     </article>
-  )
+  );
 }
 
-export default NoteBook
+export default NoteBook;

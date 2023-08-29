@@ -23,23 +23,22 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 90px 90px 0 0;
-  background-image: url("/src/assets/Img-Section02/Page03/1-explotacion\ 1.png");
+  border-radius: 50px 50px 0 0;
+  background-image: url("../../../assets/Img-Section02/Page03/1-explotacion1.png");
 }
 
 .finalidadexplotacion__content {
   height: 85%;
   padding-left: 5em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   flex-direction: column-reverse;
 }
 
 .finalidad__percentagegold {
   font-family: "Formula Condensed";
-  font-size: 13vh;
+  font-size: 12vh;
   font-weight: 700;
-  line-height: 156px;
   letter-spacing: 0em;
   text-align: left;
   color: #f2dfb8;
@@ -48,9 +47,8 @@
 .explotaciontitle {
   margin: 0;
   font-family: Formula Condensed;
-  font-size: 8vh;
+  font-size: 7vh;
   font-weight: 300;
-  line-height: 84px;
   letter-spacing: 0.04em;
   text-align: left;
   color: #f2dfb8;
@@ -69,7 +67,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 20%;
-  background-image: url("/src/assets/Img-Section02/Page03/2-mendicidad\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/2-mendicidad1.png");
 }
 
 .mendicidadtitle {
@@ -86,7 +84,7 @@
 
 .finalidadmendicidad__content {
   height: 85%;
-  padding-left: 5em;
+  padding-left: 2.5em;
   display: flex;
   /* justify-content: space-evenly; */
   flex-direction: column-reverse;
@@ -94,9 +92,9 @@
 
 .mendicidadpercentage {
   font-family: Formula Condensed;
-  font-size: 13vh;
+  font-size: 12vh;
   font-weight: 700;
-  line-height: 156px;
+  /* line-height: 156px; */
   letter-spacing: 0em;
   text-align: left;
   color: #166266;
@@ -110,7 +108,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 15%;
-  background-image: url("/src/assets/Img-Section02/Page03/3-actividades\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/3-actividades1.png");
 }
 
 .finalidadilicita__content {
@@ -133,7 +131,7 @@
 }
 
 .finalidadexplotacion__content-laboral {
-  padding-left: 5em;
+  padding-left: 2.5em;
   display: flex;
   flex-direction: column-reverse;
   height: 85%;
@@ -158,7 +156,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 65%;
-  background-image: url("/src/assets/Img-Section02/Page03/4-explotacion\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/4-explotacion1.png");
 }
 
 .finalidad__filatres {
@@ -168,14 +166,14 @@
 
 .finalidadotros {
   width: 60%;
-  border-radius: 0 0 0 90px;
+  border-radius: 0 0 0 50px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/src/assets/Img-Section02/Page03/5-otros\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/5-otros1.png");
 }
 
 .finalidadotros__content {
@@ -190,18 +188,19 @@
   display: flex;
   background-position: top;
   background-repeat: no-repeat;
-  justify-content: end;
+  justify-content: center;
   background-size: cover;
   width: 15%;
-  background-image: url("/src/assets/Img-Section02/Page03/6-matrimonio\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/6-matrimonio1.png");
 }
 
 .finalidadmatrimonio__content {
   padding-left: 0.25em;
   display: flex;
-  height: 85%;
+  height: 95%;
+  justify-content: center;
   flex-direction: column-reverse;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .finalidadesclavitud {
@@ -210,7 +209,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 23%;
-  background-image: url("/src/assets/Img-Section02/Page03/7-esclavitud\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/7-esclavitud1.png");
 }
 
 .esclavitudtitle{
@@ -230,20 +229,20 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
   justify-content: center;
-  background-image: url("/src/assets/Img-Section02/Page03/8-adopcion\ 1.png");
-  width: 10%;
-  border-radius: 0 0 90px 0;
+  background-image: url("../../../assets/Img-Section02/Page03/8-adopcion1.png");
+  width: 12%;
+  border-radius: 0 0 50px 0;
 }
 
 .finalidadadopcion__content{
   display: flex;
   flex-direction: column-reverse;
-  /* justify-content: center; */
-  height: 85%;
-  padding: 1em;
+  justify-content: center;
+  height: 80%;
+  padding: 0.5em;
 }
-
 
 
 .adopciontitle{
@@ -260,7 +259,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column-reverse;
-  padding: 1em;
+  padding: 0 1em;
+  height: 100%;
 }
 
 .img__finalidad {
