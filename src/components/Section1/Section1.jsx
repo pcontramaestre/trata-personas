@@ -10,6 +10,7 @@ import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
 import Women from "./Women/Women";
 import CircleGraphSlider from "./CircleGraphSlider/CircleGraphSlider";
+import InfoConsentimiento from "./InfoConsentimiento/InfoConsentimiento";
 
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
@@ -31,9 +32,11 @@ function Section1() {
       <CircleGraph />
       <NewSection01 />
       <CircleGraph02 />
-      <CircleGraphSlider/>
+      <CircleGraphSlider />
       <Women />
-      {/* <Box02Section01 /> */}
+      
+      <InfoConsentimiento/>
+      
     </section>
   );
 }

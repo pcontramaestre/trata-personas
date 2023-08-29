@@ -1,0 +1,131 @@
+.womenslider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 10vh;
+}
+
+.womenslider__graphicconent {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  width: 90%;
+}
+
+.womenslider__graphic {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  /* align-items: center; */
+  height: 90%;
+  width: 85%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../assets/Img-Section01/Page10/onSlider/grafico.png");
+}
+
+.womenslider__valores {
+  display: flex;
+  align-items: end;
+  height: 95%;
+}
+
+.womenslider__valores-list {
+  display: flex;
+  justify-content: start;
+  flex-direction: column-reverse;
+  list-style: none;
+  margin: 0 1vh;
+  height: 95%;
+}
+
+.womenslider__number {
+  font-family: Formula Condensed;
+  font-size: 4.3vh;
+  font-weight: 700;
+  text-align: right;
+  color: #1a6063;
+}
+
+.womenslider__title {
+  margin: 0;
+  display: flex;
+  width: 30%;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+  /* line-height: 42px; */
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1a6063;
+}
+
+.womenslider__years {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: ; */
+  position: absolute;
+  width: 98%;
+  bottom: -1vw;
+  list-style: none;
+}
+
+.womenslider__years-number {
+  font-family: Inter;
+  font-size: 3vh;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1a6063;
+}
+
+.womenslider__foot {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  width: 100%;
+  bottom: -13.5vh;
+}
+
+.womenslider__foot-text {
+  font-family: Formula Condensed;
+  font-size: 3.5vh;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #1a6063;
+}
+
+.womenslider__foot-one {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.background__foot {
+  width: 5vw;
+  height: 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 1vw;
+  background-image: url("../../../assets/Img-Section01/Page10/onSlider/verded.png");
+}
+.two {
+  background-image: url("../../../assets/Img-Section01/Page10/onSlider/amarillo.png");
+}
+.three {
+  background-image: url("../../../assets/Img-Section01/Page10/onSlider/celeste.png");
+}
+.four {
+  background-image: url("../../../assets/Img-Section01/Page10/onSlider/rosa.png");
+}
+
+.background__foot-color{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
