@@ -1,7 +1,14 @@
+import { useState, useLayoutEffect, useEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import style from './NoteBook.module.css'
 
 import whiteSheet from '../../assets/NoteBook/whiteSheet.png'
 import whiteSheetShort from '../../assets/NoteBook/whiteSheetShort.png'
+// import { TimelineMax } from 'gsap/gsap-core'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const whiteSheets = {
   whiteSheet,
@@ -19,7 +26,47 @@ function convertAngle (input) {
 }
 
 function NoteBook ({ noteBook, topSection }) {
-  if (!noteBook) return null
+  if (!noteBook) return
+
+  const [texts, setTexts] = useState({})
+
+  useEffect(() => {
+    if (noteBook) {
+      setTexts(() => ({
+        paragraph: noteBook.text.paragraph.map(() => ''),
+        title: noteBook.text.title.map(() => ''),
+        footer: ''
+      }))
+    }
+  }, [noteBook])
+
+  useLayoutEffect(() => {
+    const containerAnimation = document.getElementsByName('noteBook' + noteBook.section)[0]
+    const elementsToMove = document.getElementsByName('noteBookText' + noteBook.section)
+    const arrayElementsToMove = Array.from(elementsToMove)
+    // console.log('elementsToMove:', elementsToMove)
+
+    const ctx = gsap.context(() => {
+      // const animations = arrayElementsToMove.map(text => {
+      //   const animation = gsap.from(text, {
+      //     opacity: 0,
+      //     duration: 5
+      //   })
+      //   return animation
+      // })
+
+      ScrollTrigger.create({
+        trigger: containerAnimation,
+        markers: true,
+        start: 'top top',
+        onEnter: () => {
+          console.log('hola mundo')
+        }
+      })
+    })
+
+    return () => ctx.revert()
+  }, [])
 
   const whiteSheetStyle = {
     top: convertSize(topSection ? Number(noteBook.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : noteBook.top),
@@ -60,19 +107,48 @@ function NoteBook ({ noteBook, topSection }) {
     fontSize: convertSize(noteBook.text.footer.fontSize)
   }
 
+  function animationWriteText () {
+    const objectTexts = {
+      paragraph: noteBook.text.paragraph.map(content => content.content),
+      title: noteBook.text.title.map(title => title.content),
+      footer: noteBook.text.footer.content
+    }
+    setTexts((texts) => ({
+      ...texts,
+      footer: objectTexts.footer
+    }))
+  }
+
+  // function write (text) {
+  //   const arrayCharacters = text.split('')
+
+  // }
+
   return (
-    <article className={style.NoteBook} style={whiteSheetStyle}>
-      {
+    <article name={'noteBook' + noteBook.section} className={style.NoteBook} style={whiteSheetStyle}>
+      {/* {
           noteBook.text.paragraph.map((paragraph, index) => (
-            <p className={style.NoteBookText} style={contentStyle[index]} dangerouslySetInnerHTML={{ __html: paragraph.content }} key={index} />
+            <p name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={contentStyle[index]} dangerouslySetInnerHTML={{ __html: paragraph.content }} key={index} />
           ))
         }
       {
           noteBook.text.title.map((title, index) => (
-            <h1 className={style.NoteBookText} style={titleStyle[index]} key={index}>{title.content}</h1>
+            <h1 name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={titleStyle[index]} key={index}>{title.content}</h1>
+          ))
+        } */}
+      {
+          noteBook.text.paragraph.map((paragraph, index) => (
+            <p name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={contentStyle[index]} dangerouslySetInnerHTML={{ __html: texts && texts.paragraph ? texts.paragraph[index] : '' }} key={index} />
           ))
         }
-      <footer className={style.NoteBookText} style={footerStyle}>{noteBook.text.footer.content}</footer>
+      {
+          noteBook.text.title.map((title, index) => (
+            <h1 name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={titleStyle[index]} key={index}>{texts && texts.title ? texts.title[index] : ''}</h1>
+          ))
+        }
+      {/* <footer name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={footerStyle}>{noteBook.text.footer.content}</footer> */}
+      <footer name={'noteBookText' + noteBook.section} className={style.NoteBookText} style={footerStyle}>{texts && texts.footer ? texts.footer : ''}</footer>
+      <button onClick={animationWriteText}>Agregar palabras</button>
     </article>
   )
 }
