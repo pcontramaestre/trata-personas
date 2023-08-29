@@ -175,11 +175,13 @@ function NoteBook ({ noteBook, topSection }) {
         // markers: true,
         start: 'top 90%',
         onEnter: () => {
-          setActiveAnimation({
-            paragraph: true,
-            title: true,
-            footer: true
-          })
+          if (!texts.footer[0]) {
+            setActiveAnimation({
+              paragraph: true,
+              title: true,
+              footer: true
+            })
+          }
         }
       })
     })
