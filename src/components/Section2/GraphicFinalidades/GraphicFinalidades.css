@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50px 50px 0 0;
-  background-image: url("/src/assets/Img-Section02/Page03/1-explotacion\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/1-explotacion1.png");
 }
 
 .finalidadexplotacion__content {
@@ -67,7 +67,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 20%;
-  background-image: url("/src/assets/Img-Section02/Page03/2-mendicidad\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/2-mendicidad1.png");
 }
 
 .mendicidadtitle {
@@ -108,7 +108,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 15%;
-  background-image: url("/src/assets/Img-Section02/Page03/3-actividades\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/3-actividades1.png");
 }
 
 .finalidadilicita__content {
@@ -156,7 +156,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 65%;
-  background-image: url("/src/assets/Img-Section02/Page03/4-explotacion\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/4-explotacion1.png");
 }
 
 .finalidad__filatres {
@@ -173,7 +173,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/src/assets/Img-Section02/Page03/5-otros\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/5-otros1.png");
 }
 
 .finalidadotros__content {
@@ -191,7 +191,7 @@
   justify-content: center;
   background-size: cover;
   width: 15%;
-  background-image: url("/src/assets/Img-Section02/Page03/6-matrimonio\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/6-matrimonio1.png");
 }
 
 .finalidadmatrimonio__content {
@@ -209,7 +209,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 23%;
-  background-image: url("/src/assets/Img-Section02/Page03/7-esclavitud\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/7-esclavitud1.png");
 }
 
 .esclavitudtitle{
@@ -231,7 +231,7 @@
   background-size: cover;
   align-items: center;
   justify-content: center;
-  background-image: url("/src/assets/Img-Section02/Page03/8-adopcion\ 1.png");
+  background-image: url("../../../assets/Img-Section02/Page03/8-adopcion1.png");
   width: 12%;
   border-radius: 0 0 50px 0;
 }
