@@ -13,6 +13,9 @@ function convertSize (input) {
 }
 
 function BigInfoBox ({ bigInfoBox, topSection }) {
+
+  if (!bigInfoBox) return null
+
   useEffect(() => {
     if (bigInfoBox && bigInfoBox.icons) {
       const span = document.getElementById('specialSpan')
@@ -34,8 +37,6 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
       }
     }
   }, [])
-
-  if (!bigInfoBox) return null
 
   const bigInfoBoxStyle = {
     top: convertSize(topSection ? Number(bigInfoBox.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : bigInfoBox.top),
