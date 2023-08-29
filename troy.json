@@ -680,6 +680,10 @@
       },
       "top": "4037px",
       "left": "0px",
+      "map": {
+        "filter": "brightness(0) saturate(100%) invert(43%) sepia(60%) saturate(2444%) hue-rotate(164deg) brightness(98%) contrast(101%)",
+        "stroke": "#081D20"
+      },
       "countrys": [
         {
           "name": "Costa Rica",
