@@ -27,7 +27,7 @@ function HandSlide ({ handSlide, totalTop }) {
     paddingRight: convertSize('26.17px'),
     borderRadius: convertSize(handSlide.container.borderRadius),
     backgroundColor: card.backgroundColor,
-    transform: `rotateZ(${card.angle})`
+    rotate: `${card.angle}`
   }))
 
   const dateStyles = {
