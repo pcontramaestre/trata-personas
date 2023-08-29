@@ -1,15 +1,15 @@
 .women {
   display: flex;
+  flex-direction: column;
   position: relative;
-  justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 150vh;
+  height: 250vh;
 }
 
 .women__content {
   width: 85%;
-  height: 90%;
+  height: 100vh;
 }
 
 .women__title {
