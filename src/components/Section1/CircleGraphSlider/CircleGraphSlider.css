@@ -1,9 +1,21 @@
 .CircleGraph__slider {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
+}
+
+.CircleGraph__slidertitle {
+  font-family: Inter;
+  font-size: 3.5vh;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1a6063;
+  margin-bottom: 2em;
 }
 
 .CircleGraph__content {
@@ -13,9 +25,35 @@
   width: 90%;
 }
 
+.CircleGraph__percentages {
+  display: flex;
+  align-items: end;
+  height: 85%;
+}
+
+.CircleGraph__percentageslist {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  height: 85%;
+  list-style: none;
+}
+
+.CircleGraph__number {
+  font-family: Formula Condensed;
+  font-size: 6vh;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1a6063;
+}
+
 .Circlebarras__slider {
   position: relative;
   display: flex;
+  justify-content: end;
+  /* align-items: center; */
   height: 100%;
   width: 75%;
   background-size: contain;
@@ -28,6 +66,7 @@
   position: absolute;
   background-size: contain;
   height: 45%;
+  left: 0;
   width: 20%;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,6 +82,118 @@
   width: 20%;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: 4.5%;
+  bottom: 10%;
   background-image: url("/src/assets/Img-Section01/Page09/onSlider/nina.png");
+}
+
+.Circlebarras__years {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  bottom: 3vw;
+  height: 5%;
+  width: 95%;
+}
+
+.Circlebarras__years-number {
+  font-family: Inter;
+  font-size: 3.5vh;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1a6063;
+}
+
+.Circleninonina__content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  right: 8vw;
+  top: 3vw;
+  width: 70%;
+  height: 80%;
+}
+
+.ninonina__percentage {
+  font-family: Formula Condensed;
+  font-size: 6vh;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1a6063;
+}
+
+.ninonina__content-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 53%;
+}
+
+.ninonina__content-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 27vw;
+}
+
+.ninonina__content-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24vw;
+}
+.ninonina__content-four {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 33vw;
+}
+
+.Circlebarras__foot {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  position: absolute;
+  bottom: -3vh;
+  right: 3vw;
+}
+
+.backgroundfoot__nino {
+  width: 5vw;
+  height: 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 1vw;
+  background-image: url("/src/assets/Img-Section01/Page09/onSlider/ninas.png");
+}
+
+.backgroundfoot__nina {
+  width: 5vw;
+  height: 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 1vw;
+  background-image: url("/src/assets/Img-Section01/Page09/onSlider/ninos.png");
+}
+
+.footnino__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ninoninafoot {
+  margin: 0;
+  font-family: Formula Condensed;
+  font-size: 4vh;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #1a6063;
 }
