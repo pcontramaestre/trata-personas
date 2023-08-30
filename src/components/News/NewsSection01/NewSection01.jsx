@@ -27,7 +27,7 @@ const NewSection01 = () => {
       scrollTrigger: {
         trigger: '.news__content', // Elemento que desencadena el ScrollTrigger
         start: 'top 90%', // Comienza la animación cuando el 80% superior del elemento es visible
-        end: 'bottom 80%', // Termina la animación cuando el 20% inferior del elemento es visible
+        end: 'bottom 90%', // Termina la animación cuando el 20% inferior del elemento es visible
         scrub: true// Activa el "scrubbing" para una animación suave al hacer scroll
       }
 
