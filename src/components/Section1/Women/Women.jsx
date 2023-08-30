@@ -3,11 +3,9 @@ import data from "../../../../trataSection01.json";
 import "./Women.css";
 import gifblanco from "../../../assets/Img-Section01/Page10/gifblanco.gif";
 import womens from "../../../assets/Img-Section01/Page10/chicas.png";
-import hand from "../../../assets/Img-Section01/Page09/hand.svg";
 
 const Women = () => {
   const page10 = data[0].visibilizacion_victimas.page10;
-  const page11 = data[0].visibilizacion_victimas.page11;
 
   return (
     <div className="women">
@@ -44,20 +42,7 @@ const Women = () => {
           </div>
         </div>
       </div>
-      <img src={hand} />
-      <div className="videocorett__info">
-        <div className="videocorett__info-texts">
-          <div className="info__separador" />
-          <div className="info__text-content">
-            <h1 className="info__title">{page11.title}</h1>
-            <p
-              className="info__text1"
-              dangerouslySetInnerHTML={{ __html: page11.text1 }}
-            />
-            <h2 className="info__text2">{page11.foot}</h2>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };

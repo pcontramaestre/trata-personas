@@ -1,7 +1,6 @@
 import React from "react";
 import "./CircleGraph02.css";
 import data from "../../../../trataSection01.json";
-import graph from "../../../assets/Img-Section01/Page09/graphic.png";
 
 const CircleGraph02 = () => {
   const page9 = data[0].visibilizacion_victimas.page9;
@@ -18,7 +17,31 @@ const CircleGraph02 = () => {
             dangerouslySetInnerHTML={{ __html: page9.subtitle }}
           />
         </div>
-        <img className="circlegraph02__img" src={graph} />
+        <div className="circlegraph02__img">
+          <div className="circlenumbers__content">
+            <div className="numbers__content-circle onepercentage">
+              <h1 className="circlegraph02__number">{page9.graphic.number1}</h1>
+              <p
+                className="circlegraph02__foot"
+                dangerouslySetInnerHTML={{ __html: page9.graphic.text1 }}
+              />
+            </div>
+            <div className="numbers__content-circle twopercentage">
+              <h1 className="circlegraph02__number">{page9.graphic.number2}</h1>
+              <p
+                className="circlegraph02__foot"
+                dangerouslySetInnerHTML={{ __html: page9.graphic.text2 }}
+              />
+            </div>
+            <div className="numbers__content-circle threepercentage">
+              <h1 className="circlegraph02__number">{page9.graphic.number3}</h1>
+              <p
+                className="circlegraph02__foot"
+                dangerouslySetInnerHTML={{ __html: page9.graphic.text3 }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <p
         className="circlegraph02__p"

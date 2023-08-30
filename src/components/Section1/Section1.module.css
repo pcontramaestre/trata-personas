@@ -53,6 +53,10 @@
   align-items: center;
 }
 
+
+
+
+
 @media screen and (max-width: 1000px) {
   .Section1 {
     width: 100vw;
