@@ -29,13 +29,13 @@ import verde1 from "../../assets/Section3/verde1.png";
 import amarillo2 from "../../assets/Section3/amarillo2.png";
 import rosado2 from "../../assets/Section3/rosado2.png";
 import azul2 from "../../assets/Section3/azul2.png";
-import psicosocial from "../../assets/Section3/psicosocial.svg";
-import medico from "../../assets/Section3/medico.svg";
-import legal from "../../assets/Section3/legal.svg";
-import manutencion from "../../assets/Section3/manutencion.svg";
+import psicosocial from "../../assets/Section3/psicosocial.png";
+import medico from "../../assets/Section3/medico.png";
+import legal from "../../assets/Section3/legal.png";
+import manutencion from "../../assets/Section3/manutencion.png";
 import educacion from "../../assets/Section3/educacion.svg";
-import alojamiento from "../../assets/Section3/alojamiento.svg";
-import reintegracion from "../../assets/Section3/reintegracion.svg";
+import alojamiento from "../../assets/Section3/alojamiento.png";
+import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
 
 const imagesList = {
@@ -79,25 +79,73 @@ function convertSize(input) {
   return r;
 }
 
+// function createAnimationTimeline(ref) {
+//   const tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ref.current,
+//       start: "top center",
+//       end: "center center",
+//       scrub: true,
+//     },
+//   });
+
+//   tl.fromTo(
+//     ref.current,
+//     {
+//       opacity: 0,
+//       x: "-100%",
+//     },
+//     {
+//       opacity: 1,
+//       x: "0%",
+//     }
+//   );
+
+//   return tl;
+// }
+
 function Section3() {
-  
-  const imgRef = useRef(null);
+  const imgRef = useRef(null); // Crea una referencia única para cada imagen
+  const containerRowRef = useRef(null); // Crea una referencia única para cada elemento
+
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animación para la imagen
-    images.forEach((image, index) => {
-      
-      // Crea una animación para la imagen actual
-      const imgTl = gsap.timeline({
+    // Animación para el texto
+    rows.forEach((row, index) => {
+      const containerRowTl = gsap.timeline({
         scrollTrigger: {
-          trigger: imgRef.current,
-          start: "top center", // Cambia estos valores según tus necesidades
-          end: "bottom center", // Cambia estos valores según tus necesidades
+          trigger: containerRowRef.current,
+          start: "top center",
+          end: "center center",
           scrub: true,
         },
       });
-  
+
+      containerRowTl.fromTo(
+        containerRowRef.current,
+        {
+          opacity: 0,
+          x: "-100%",
+        },
+        {
+          opacity: 1,
+          x: "0%",
+        }
+      );
+    });
+
+    // Animación para la imagen
+    images.forEach((image, index) => {
+      const imgTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: imgRef.current,
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
       imgTl.fromTo(
         imgRef.current,
         {
@@ -295,7 +343,7 @@ function Section3() {
     >
       {
         rows.map((row, index) => (
-          <div className={style.containerRow} style={rowsStyles[index]} key={"rows" + index}>
+          <div ref={containerRowRef} className={style.containerRow} style={rowsStyles[index]} key={"rows" + index}>
             <p className={style.contentrow} style={rowsTextStyles[index]}>{row.text.content}</p>
             <img className={style.contentrow} src={imagesList[row.image.name]} style={rowsImageStyles[index]} alt="" />
             <h1 className={style.contentrow} style={rowsNumberStyles[index]}>{row.number.content}</h1>
