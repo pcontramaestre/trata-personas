@@ -78,6 +78,7 @@ function Section1() {
       <BigInfoBoxSection01 />
       <CircleGraph />
       <NewSection01 />
+
       <section className="animations__sliders">
         <section className="twoslider">
           <div className="text">
@@ -99,6 +100,7 @@ function Section1() {
       </section>
       <div className="separadorslider" />
       <InfoConsentimiento />
+
     </section>
   );
 }

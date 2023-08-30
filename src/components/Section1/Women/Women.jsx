@@ -4,7 +4,6 @@ import "./Women.css";
 import gifblanco from "../../../assets/Img-Section01/Page10/gifblanco.gif";
 import womens from "../../../assets/Img-Section01/Page10/chicas.png";
 
-
 const Women = () => {
   const page10 = data[0].visibilizacion_victimas.page10;
 
@@ -43,7 +42,7 @@ const Women = () => {
           </div>
         </div>
       </div>
- 
+
     </div>
   );
 };
