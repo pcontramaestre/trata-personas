@@ -61,9 +61,9 @@ function Section4() {
         scrollTrigger: {
           trigger: imgRefs[image.name].current,
           start: "top center",
-          end: "bottom center",
+          end: "center center",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
 
