@@ -1248,9 +1248,9 @@
             "angle": "-0.6deg",
             "backgroundColor": "#FCFBCB",
             "text": {
-              "date": "2018",            
-              "country": "Belice",            
-              "paragraph": "Signing of an agreement between the Belize Police Department and the Institute of Human Trafficking, for the development of the capacity of the Specialized Unit of Human Trafficking of Belize. The agreement helps ensure that the specialized unit has the essential tools and resources it needs to conduct proactive investigations of human trafficking."            
+              "date": "2018",
+              "country": "Belice",
+              "paragraph": "Signing of an agreement between the Belize Police Department and the Institute of Human Trafficking, for the development of the capacity of the Specialized Unit of Human Trafficking of Belize. The agreement helps ensure that the specialized unit has the essential tools and resources it needs to conduct proactive investigations of human trafficking."
             }
           },
           {
@@ -1686,20 +1686,20 @@
         "color": "#0A4B4E"
       },
       {
-          "content": "DERECHOS, LA SEGURIDAD Y LA DIGNIDAD DE LAS VÍCTIMAS.",
-          "tag": "h2",
-          "width": "1079px",
-          "height": "230px",
-          "top": "56609px",
-          "left": "437px",
+        "content": "DERECHOS, LA SEGURIDAD Y LA DIGNIDAD DE LAS VÍCTIMAS.",
+        "tag": "h2",
+        "width": "1079px",
+        "height": "230px",
+        "top": "56609px",
+        "left": "437px",
 
-          "fontFamily": "Formula Condensed",
-          "fontSize": "80px",
-          "fontWeight": "700",
-          "lineHeight": "96px",
-          "letterSpacing": "0.03em",
-          "textAlign": "center",
-          "color": "#0A4B4E"
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
+        "fontWeight": "700",
+        "lineHeight": "96px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
       },
       {
         "content": " (ACNUDH, 2014).",
@@ -1877,7 +1877,7 @@
         "fontFamily": "Inter",
         "fontSize": "30px",
         "fontWeight": "400",
-        "lineHeight": "36.31px",        
+        "lineHeight": "36.31px",
         "color": "#0A4B4E"
       },
       {
@@ -1890,7 +1890,7 @@
         "fontFamily": "Inter",
         "fontSize": "27px",
         "fontWeight": "400",
-        "lineHeight": "30px",        
+        "lineHeight": "30px",
         "color": "#0A4B4E"
       },
       {
@@ -1903,7 +1903,7 @@
         "fontFamily": "Inter",
         "fontSize": "27px",
         "fontWeight": "400",
-        "lineHeight": "30px",        
+        "lineHeight": "30px",
         "color": "#0A4B4E"
       },
       {
@@ -2385,7 +2385,6 @@
                 "top": "220px",
                 "left": "115px",
                 "angle": "25.26deg"
-                
               },
               {
                 "content": "90%",
@@ -3126,7 +3125,8 @@
         "letterSpacing": "0.03em",
         "textAlign": "right",
         "color": "#006873"
-      },{
+      },
+      {
         "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
         "tag": "p",
         "width": "467px",
@@ -5049,20 +5049,48 @@
         "top": "35886px",
         "left": "1771px"
       },
+
       {
-        "name": "rows",
+        "name": "rosado1",
         "width": "1920",
-        "height": "4001px",
-        "top": "39005px",
+        "height": "566px",
+        "top": "39571px",
         "left": "0px"
       },
       {
-        "name": "psicosocial",
-        "width": "376px",
-        "height": "385px",
-        "top": "39109px",
-        "left": "766.66px",
-        "grupo": "proteccion"
+        "name": "azul1",
+        "width": "1920",
+        "height": "566px",
+        "top": "40137px",
+        "left": "0px"
+      },
+      {
+        "name": "verde1",
+        "width": "1920",
+        "height": "566px",
+        "top": "40703px",
+        "left": "0px"
+      },
+      {
+        "name": "amarillo2",
+        "width": "1920",
+        "height": "566px",
+        "top": "41269px",
+        "left": "0px"
+      },
+      {
+        "name": "rosado2",
+        "width": "1920",
+        "height": "566px",
+        "top": "41835px",
+        "left": "0px"
+      },
+      {
+        "name": "azul2",
+        "width": "1920",
+        "height": "566px",
+        "top": "42401px",
+        "left": "0px"
       },
       {
         "name": "medico",
@@ -5111,6 +5139,56 @@
         "top": "42476px",
         "left": "741.66px",
         "grupo": "proteccion"
+      }
+    ],
+
+    "rows": [
+      {
+        "number": {
+          "content": "37%",
+          "tag": "h1",
+          "width": "465px",
+          "height": "320px",
+          "top": "39158px",
+          "left": "1348.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "319px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Asistencia psicosocial",
+          "tag": "h1",
+          "width": "478px",
+          "height": "201px",
+          "top": "39189px",
+          "left": "117.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "100px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "psicosocial",
+          "width": "376px",
+          "height": "385px",
+          "top": "39109px",
+          "left": "766.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "amarillo1",
+          "width": "1920",
+          "height": "566px",
+          "top": "39005px",
+          "left": "0px"
+        }
       }
     ],
     "icons": [
@@ -5772,21 +5850,7 @@
         "textAlign": "left",
         "color": "#737373"
       },
-      {
-        "content": "Asistencia psicosocial",
-        "tag": "h1",
-        "width": "478px",
-        "height": "201px",
-        "top": "39189px",
-        "left": "117.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
+
       {
         "content": "Asistencia médica",
         "tag": "h1",
@@ -5877,21 +5941,7 @@
         "textAlign": "left",
         "color": "#006873"
       },
-      {
-        "content": "37%",
-        "tag": "h1",
-        "width": "465px",
-        "height": "320px",
-        "top": "39158px",
-        "left": "1348.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "319px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
-      },
+
       {
         "content": "23%",
         "tag": "h1",
