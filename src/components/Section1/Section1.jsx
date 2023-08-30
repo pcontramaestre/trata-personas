@@ -20,14 +20,15 @@ function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
+
     gsap
       .timeline({
         scrollTrigger: {
           trigger: ".twoslider",
-          pin: true,
-          start: "top top",
+          pin: ".twoslider",
+          start: "top",
           end: ".endslider",
-          scrub: 0.3,
+          scrub: 5,
         },
         defaults: { duration: 1, ease: "none" },
       })
@@ -48,7 +49,7 @@ function Section1() {
           pin: true,
           start: "top top",
           end: ".endslider",
-          scrub: 0.3,
+          scrub: 5,
         },
         defaults: { duration: 1, ease: "none" },
       })
@@ -56,7 +57,7 @@ function Section1() {
       .to(".text-women", { xPercent: 100 }, 0)
       .from(
         ".text-women .womenslider-gsap",
-        { opacity: 1, x: "-=100", duration: 0.5 },
+        { opacity: 1, x: "-=120", duration: 0.5 },
         0.5
       );
   }, []);
@@ -96,7 +97,7 @@ function Section1() {
         </section>
         <div className="endslider"></div>
       </section>
-      <div className="separadorslider"/>
+      <div className="separadorslider" />
       <InfoConsentimiento />
     </section>
   );
