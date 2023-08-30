@@ -24,10 +24,10 @@ function Section1() {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".twoslider",
+          trigger: ".animations__sliders",
           pin: ".twoslider",
-          start: "top",
-          end: ".endslider",
+          start: "top top",
+          end:'.endslider',
           scrub: 5,
         },
         defaults: { duration: 1, ease: "none" },

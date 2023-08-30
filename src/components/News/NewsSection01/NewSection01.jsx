@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import "./NewSection01.css";
 import data from "../../../../trataSection01.json";
 import hand from "../../../assets/Img-Section01/Page08/hand.svg";
+gsap.registerPlugin(ScrollTrigger);
 
 const NewSection01 = () => {
   const page8 = data[0].visibilizacion_victimas.page8;
+
+  useEffect(() => {
+    // Selecciona los elementos que deseas animar
+    const newsCards = document.querySelectorAll(
+      ".news__background1, .newshover__background2, .newshover__background3, .newshover__background1,  .news__background2, .news__background3"
+    );
+
+    // Configura la animación inicial
+    gsap.set(newsCards, { x: "-100%" });
+
+    // Crea la animación para mostrar las tarjetas juntas en pantalla
+    gsap.to(newsCards, {
+      x: "0%",
+      stagger: 0.5, // Retraso entre animaciones individuales
+      ease: "power2.out", // Easing de la animación
+      duration: 10, // Duración de la animación
+      scrollTrigger: {
+        trigger: '.news__content', // Elemento que desencadena el ScrollTrigger
+        start: 'top 90%', // Comienza la animación cuando el 80% superior del elemento es visible
+        end: 'bottom 80%', // Termina la animación cuando el 20% inferior del elemento es visible
+        scrub: true// Activa el "scrubbing" para una animación suave al hacer scroll
+      }
+
+    });
+  }, []);
+
   return (
     <div className="news__content">
       <div className="news1">
