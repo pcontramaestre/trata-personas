@@ -42,3 +42,13 @@
     position: absolute;
     margin: 0px;
 }
+
+.containerRow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.contentrow {
+    position: absolute;
+    margin: 0;
+}
