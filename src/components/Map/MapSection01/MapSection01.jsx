@@ -25,8 +25,8 @@ const MapSection01 = () => {
           </ul>
         </div>
         <div className="mapcontent">
-          <img className="map__img" src={map} />
-          <img className="map__hoverimg" src={hover} />
+          <div className="map__img"></div>
+          {/* <img className="map__hoverimg" src={hover} /> */}
         </div>
         <div className="map__foot">
           <img className="map__foot-img" src={hand} />

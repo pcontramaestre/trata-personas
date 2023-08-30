@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin-top: 8vh;
 }
 
 .circlegraph02__content {
   display: flex;
   width: 90%;
-  height: 70%;
+  height: 60%;
   justify-content: space-evenly;
   align-items: center;
 }

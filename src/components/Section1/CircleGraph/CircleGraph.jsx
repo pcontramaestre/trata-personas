@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "./CircleGraph.css";
 import data from "../../../../trataSection01.json";
 import graphic from "../../../assets/Img-Section01/Page07/graphic.png";
 
 const CircleGraph = () => {
   const page7 = data[0].visibilizacion_victimas.page7;
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.circlegraph', // Cambia el selector si es necesario
+        start: 'top 90%', // Punto de inicio de la animación
+        end: 'bottom 100%', // Punto de finalización de la animación
+        scrub: true, // Activa el "scrubbing" para la animación suave
+      },
+    });
+
+    const tltext = gsap.timeline({
+      scrollTrigger:{
+        trigger: ".circlegraph_graphic",
+        duration: 5,
+        start: 'top 50%', // Punto de inicio de la animación
+        end: 'bottom 70%', // Punto de finalización de la animación
+        scrub: true, // Activa el "scrubbing" para la animación suave
+      }
+    })
+
+    // Definir la animación aquí
+    tl.from('.circlegraph__percentage', { x: -200, opacity: 0 });
+    tl.to('.circlegraph__percentage', { x: 0, opacity: 1 });
+    tltext.from('.circlegraph__p', { x: -100, opacity: 0 });
+    tltext.to('.circlegraph__p', { x: 0, opacity: 1 });
+ 
+
+  }, []);
+
   return (
     <div className="circlegraph">
       <div className="circlegraph__title-content">
