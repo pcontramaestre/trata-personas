@@ -3,7 +3,7 @@ import data from "../../../../trataSection01.json";
 import "./Women.css";
 import gifblanco from "../../../assets/Img-Section01/Page10/gifblanco.gif";
 import womens from "../../../assets/Img-Section01/Page10/chicas.png";
-import WomenSlider from "../WomenSlider/WomenSlider";
+
 
 const Women = () => {
   const page10 = data[0].visibilizacion_victimas.page10;
@@ -43,7 +43,7 @@ const Women = () => {
           </div>
         </div>
       </div>
-      <WomenSlider />
+ 
     </div>
   );
 };
