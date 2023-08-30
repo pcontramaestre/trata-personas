@@ -1,4 +1,10 @@
+import { useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import style from './HandSlide.module.css'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -7,6 +13,33 @@ function convertSize (input) {
 }
 
 function HandSlide ({ handSlide, totalTop }) {
+  useLayoutEffect(() => {
+    const containerAnimationHandSlide = document.getElementById(`HandSlideContainer${handSlide.section}`)
+    const elementToMoveHandSlide = document.getElementById(`HandSlideContainerCards${handSlide.section}`)
+
+    const widthAnimationContainer = containerAnimationHandSlide.offsetWidth
+    const widthElementToMove = elementToMoveHandSlide.offsetWidth
+
+    const percentageStart = window.innerWidth * (-0.046875) + 95
+
+    const ctx = gsap.context(() => {
+      gsap.to(elementToMoveHandSlide, {
+        right: widthElementToMove - widthAnimationContainer,
+        ease: 'power2.inOut',
+        scrollTrigger: {
+          trigger: containerAnimationHandSlide,
+          // markers: true,
+          start: `top ${percentageStart < 0 ? 0 : percentageStart}%`,
+          end: '+=6000 bottom',
+          pin: '#section7',
+          scrub: true
+        }
+      })
+    })
+
+    return () => ctx.revert()
+  }, [])
+
   const handSlideBackgroundStyle = {
     height: convertSize(handSlide.height),
     top: convertSize(totalTop)
@@ -52,8 +85,8 @@ function HandSlide ({ handSlide, totalTop }) {
   }
 
   return (
-    <div name='HandSlideContainer' className={style.HandSlideBackground} style={handSlideBackgroundStyle}>
-      <div name='HandSlideContainerCards' style={handSlideContainer} className={style.HandSlideContainer}>
+    <div id={'HandSlideContainer' + handSlide.section} name='HandSlideContainer' className={style.HandSlideBackground} style={handSlideBackgroundStyle}>
+      <div id={'HandSlideContainerCards' + handSlide.section} style={handSlideContainer} className={style.HandSlideContainer}>
         {
           handSlide.container.cards.map((card, index) => (
             <div className={style.HandSlideCard} style={cardsStyles[index]} key={index}>
