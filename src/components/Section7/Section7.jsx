@@ -1,7 +1,3 @@
-import { useLayoutEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 import style from './Section7.module.css'
 
 import background from '../../assets/Section7/frontPageBackground.png'
@@ -9,9 +5,8 @@ import persons from '../../assets/Section7/frontPagePersons.png'
 import scroll2 from '../../assets/Section7/scroll2.svg'
 
 import data from '../../../troy.json'
+import FrontPageSection7 from './FrontPageSection7/FrontPageSection7'
 import HandSlide from '../Slides/HandSlide/HandSlide'
-
-gsap.registerPlugin(ScrollTrigger)
 
 const icons = {
   background,
@@ -31,36 +26,9 @@ function relativeMedition (input) {
 }
 
 const { interestingEvents } = data
-const { handSlide } = data.interestingEvents
+const { handSlide, forntPageImages } = data.interestingEvents
 
 function Section7 () {
-  useLayoutEffect(() => {
-    const containerSection = document.querySelector('#section7')
-    const containerAnimation = document.getElementsByName('HandSlideContainer')[0]
-    const elementToMove = document.getElementsByName('HandSlideContainerCards')[0]
-
-    const widthAnimationContainer = containerAnimation.offsetWidth
-    const widthElementToMove = elementToMove.offsetWidth
-
-    const percentageStart = window.innerWidth * (-0.046875) + 95
-
-    const ctx = gsap.context(() => {
-      gsap.to(elementToMove, {
-        right: widthElementToMove - widthAnimationContainer,
-        scrollTrigger: {
-          trigger: containerAnimation,
-          // markers: true,
-          start: `top ${percentageStart < 0 ? 0 : percentageStart}%`,
-          end: '+=6000 bottom',
-          pin: containerSection,
-          scrub: true
-        }
-      })
-    })
-
-    return () => ctx.revert()
-  }, [])
-
   const interestingEventsContainer = {
     height: convertSize(relativeMedition(interestingEvents.height))
   }
@@ -94,9 +62,10 @@ function Section7 () {
   return (
     <section id='section7' className={style.InterestingEventsBackground} style={interestingEventsContainer}>
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
+      <FrontPageSection7 forntPageImages={forntPageImages} />
       {
         interestingEvents.images.map((image, index) => (
-          <img src={image && icons[image.name]} className={image.name === 'scroll2' ? style.scroll2 : null} style={iconStyles[index]} key={image.name + index} />
+          <img id={image.name + 'section7'} src={image && icons[image.name]} className={image.name === 'scroll2' ? style.scroll2 : null} style={iconStyles[index]} key={image.name + index} />
         ))
       }
       {
