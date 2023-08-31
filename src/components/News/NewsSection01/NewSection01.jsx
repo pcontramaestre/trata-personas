@@ -16,7 +16,7 @@ const NewSection01 = () => {
     );
 
     // Configura la animación inicial
-    gsap.set(newsCards, { x: "-100%" });
+    gsap.set(newsCards, { x: "+100%" });
 
     // Crea la animación para mostrar las tarjetas juntas en pantalla
     gsap.to(newsCards, {

@@ -26,7 +26,15 @@
   width: 70%;
 }
 
-.rosa {
+.countries__backgroundrosa {
+    padding:3% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   background-image: url("../../../assets//Section8/Page2/rosado.png");
 }
 
