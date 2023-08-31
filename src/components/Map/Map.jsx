@@ -1,36 +1,18 @@
+import { useEffect, useState } from 'react'
+
 import style from './Map.module.css'
 
-import belice from '../../assets/Map/belice.svg'
-import costaRica from '../../assets/Map/costaRica.svg'
-import elSalvador from '../../assets/Map/elSalvador.svg'
-import guatemala from '../../assets/Map/guatemala.svg'
-import honduras from '../../assets/Map/honduras.svg'
-import mexico from '../../assets/Map/mexico.svg'
-import nicaragua from '../../assets/Map/nicaragua.svg'
-import panama from '../../assets/Map/panama.svg'
-import republicaDominicana from '../../assets/Map/republicaDominicana.svg'
-
-import mapGreen from '../../assets/Map/mapGreen.svg'
+import { ReactComponent as MapGreen } from '../../assets/Map/mapa1.svg'
 import mapPink from '../../assets/Map/mapPink.svg'
 import mexicoHoverMapPink from '../../assets/Map/mexicoHoverMapPink.png'
 
 const maps = {
-  mapGreen,
-  mapPink,
+  MapGreen,
   mexicoHoverMapPink
 }
 
-const flags = {
-  belice,
-  costaRica,
-  elSalvador,
-  guatemala,
-  honduras,
-  mexico,
-  nicaragua,
-  panama,
-  republicaDominicana
-}
+const arrayCountries = ['MX', 'GT', 'BZ', 'SV', 'HN', 'NI', 'CR', 'PA', 'DO']
+const arrayContriesFlag = ['E-MX', 'E-GT', 'E-BZ', 'E-SV', 'E-HN', 'E-NI', 'E-CR', 'E-PA', 'E-DO']
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -40,52 +22,57 @@ function convertSize (input) {
 function Map ({ map, topSection }) {
   if (!map) return null
 
-  const mapStyle = {
-    height: convertSize(map.size.height),
-    top: convertSize(topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top),
-    backgroundImage: `url(${maps[map.backgroundImage]})`
-  }
-  return (
-    <div className={style.MapBackground} style={mapStyle}>
-      {map.countrys.map((country, index) => (
-        <Card country={country} totalTop={topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top} key={index} />
-      ))}
-    </div>
-  )
-}
+  const [mapState, setMapState] = useState(maps[map.name])
 
-function Card ({ country, totalTop }) {
-  const styleCard = {
-    top: convertSize(
-      Number(country.position.top.split('px')[0]) -
-        Number(totalTop.split('px')[0]) +
-        'px'
-    ),
-    left: convertSize(country.position.left),
-    fontSize: convertSize(country.fontSize)
-  }
-
-  const flagStyle = {
-    width: convertSize(country.flag.width)
-  }
-
-  const nameStyle = {
-    width: convertSize(country.size.width),
-    fontSize: convertSize(country.fontSize),
-    fontFamily: country.fontFamily,
-    fontWeight: country.fontWeight,
-    lineHeight: convertSize(country.lineHeight),
-    letterSpacing: country.letterSpacing,
-    textAlign: country.textAlign
-  }
-
-  return (
-    <div className={style.MapCard} style={styleCard}>
-      {
-        country.flag.name ? <img src={flags[country.flag.name]} style={flagStyle} /> : null
+  useEffect(() => {
+    if (!map.name) {
+      const countries = arrayCountries.map(country => {
+        let countryTag = document.querySelector('#' + country)
+        if (!countryTag) {
+          countryTag = document.querySelector('#' + country + map.name)
+        }
+        return countryTag
+      })
+      const countriesFlag = arrayContriesFlag.map(flag => document.querySelector('#' + flag))
+      countries.forEach(country => {
+        country.addEventListener('mouseenter' , () => {
+          country.style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
+        })
+        country.addEventListener('mouseleave' , () => {
+          country.style.filter = ''
+        })
+        country.id = country.id + map.name
+      })
+      countriesFlag.forEach((flag, index) => {
+        flag.addEventListener('mouseenter' , () => {
+          countries[index].style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
+        })
+        flag.addEventListener('mouseleave' , () => {
+          countries[index].style.filter = ''
+        })
+      })
+      return () => {
+        countries.forEach(country => {
+          country.removeEventListener('mouseenter', () => {})
+          country.removeEventListener('mouseleave', () => {})
+        })
+        countriesFlag.forEach(flag => {
+          flag.removeEventListener('mouseenter', () => {})
+          flag.removeEventListener('mouseleave', () => {})
+        })
       }
+    }
+  }, [])
+
+  const styleMapContainer = {
+    height: convertSize(map.size.height),
+    top: convertSize(topSection ? Number(map.top.split('px')[0]) - Number(topSection.split('px')[0]) + 'px' : map.top)
+  }
+
+  return (
+    <div className={style.ContainerMap} style={styleMapContainer}>
       {
-        country.name ? <label style={nameStyle}>{country.name.toUpperCase()}</label> : null
+        mapState ? mapState : null
       }
     </div>
   )
