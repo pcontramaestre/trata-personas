@@ -62,6 +62,7 @@
 
 .footerContainer {
     position: absolute;
+    margin: 0px;
 }
 
 .footerContainer label {
