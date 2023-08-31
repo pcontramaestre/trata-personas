@@ -26,7 +26,6 @@ function Map ({ map, topSection }) {
       const countries = arrayCountries.map(country => document.getElementById(country + '01'))
       const countriesFlag = arrayContriesFlag.map(flag => document.querySelector('#' + flag))
       countries.forEach((country, index) => {
-        console.log('country:', country)
         if (country) {
           country.addEventListener('mouseenter', () => {
             country.style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
