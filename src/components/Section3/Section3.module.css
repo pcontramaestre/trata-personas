@@ -42,3 +42,11 @@
     position: absolute;
     margin: 0px;
 }
+
+.containerRow {
+    position: absolute;
+}
+.contentrow {
+    position: absolute;
+    margin: 0;
+}

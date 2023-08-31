@@ -9,7 +9,7 @@
 
 .women__content {
   width: 85%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .women__title {
@@ -90,7 +90,7 @@
 .women__card-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 8vh;
+  margin-top: 2vh;
   width: 95%;
   height: 18%;
 }

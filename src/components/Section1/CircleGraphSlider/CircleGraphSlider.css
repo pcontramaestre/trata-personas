@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 120vh;
+  height: 100%;
 }
 
 .CircleGraph__slidertitle {
@@ -29,22 +29,23 @@
 .CircleGraph__percentages {
   display: flex;
   align-items: end;
-  height: 85%;
+  height: 90%;
 }
 
 .CircleGraph__percentageslist {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-evenly;
-  height: 85%;
+  justify-content: center;
+  margin: 0 2vh;
+  height: 100%;
   list-style: none;
 }
 
 .CircleGraph__number {
   font-family: Formula Condensed;
-  font-size: 6vh;
+  font-size: 2vw;
   font-weight: 700;
-  line-height: 56px;
+  /* line-height: 56px; */
   letter-spacing: 0em;
   text-align: center;
   color: #1a6063;
@@ -55,8 +56,8 @@
   display: flex;
   justify-content: end;
   /* align-items: center; */
-  height: 100%;
-  width: 75%;
+  height: 95%;
+  width: 65%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,7 +72,7 @@
   width: 20%;
   background-repeat: no-repeat;
   background-position: center;
-  top: 6%;
+  top: 7%;
   background-image: url("/src/assets/Img-Section01/Page09/onSlider/nino.png");
 }
 
@@ -83,7 +84,7 @@
   width: 20%;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: 10%;
+  bottom: 8%;
   background-image: url("/src/assets/Img-Section01/Page09/onSlider/nina.png");
 }
 
@@ -93,7 +94,7 @@
   list-style: none;
   position: absolute;
   margin: 0;
-  bottom: 3.6vw;
+  bottom: 0vw;
   height: 5%;
   width: 95%;
 }
@@ -113,7 +114,7 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
-  right: 8vw;
+  right: 6.5vw;
   top: 3vw;
   width: 70%;
   height: 80%;
@@ -153,7 +154,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  height: 33vw;
+  height: 30.5vw;
 }
 
 .Circlebarras__foot {
@@ -161,7 +162,7 @@
   justify-content: space-evenly;
   width: 95%;
   position: absolute;
-  bottom: 1.5vw;
+  bottom: -3.5vw;
   right: 3vw;
 }
 
@@ -197,4 +198,62 @@
   letter-spacing: 0.03em;
   text-align: left;
   color: #1a6063;
+}
+
+.twoslider {
+  position: relative;
+  height: 100vh;
+  margin: 5vh 0;
+  text-align: center;
+}
+
+.threeslider {
+  height: 100vh;
+  position: relative;
+  margin: 5vh 0;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+.text-women {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slidercircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.womenslider-gsap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animations__sliders {
+  position: relative;
+  height: 220vh;
+}
+
+.separadorslider {
+  height: 60vh;
+}
+
+.sliders__alto{
+  height: 2500px;
 }

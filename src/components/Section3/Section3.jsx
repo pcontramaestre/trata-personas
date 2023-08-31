@@ -1,4 +1,4 @@
-import { useEffect, useState, useLayoutEffect, useRef  } from "react";
+import { useEffect, useState, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -22,14 +22,20 @@ import atenciones from "../../assets/Section3/atenciones.svg";
 import group from "../../assets/Instructions/group.svg";
 import infoGifSection3 from "../../assets/Instructions/infoGifBlanco1.svg";
 import audio from "../../assets/Instructions/audio1.svg";
-import rows from "../../assets/Section3/rows.png";
-import psicosocial from "../../assets/Section3/psicosocial.svg";
-import medico from "../../assets/Section3/medico.svg";
-import legal from "../../assets/Section3/legal.svg";
-import manutencion from "../../assets/Section3/manutencion.svg";
+import amarillo1 from "../../assets/Section3/amarillo1.png";
+import rosado1 from "../../assets/Section3/rosado1.png";
+import azul1 from "../../assets/Section3/azul1.png";
+import verde1 from "../../assets/Section3/verde1.png";
+import amarillo2 from "../../assets/Section3/amarillo2.png";
+import rosado2 from "../../assets/Section3/rosado2.png";
+import azul2 from "../../assets/Section3/azul2.png";
+import psicosocial from "../../assets/Section3/psicosocial.png";
+import medico from "../../assets/Section3/medico.png";
+import legal from "../../assets/Section3/legal.png";
+import manutencion from "../../assets/Section3/manutencion.png";
 import educacion from "../../assets/Section3/educacion.svg";
-import alojamiento from "../../assets/Section3/alojamiento.svg";
-import reintegracion from "../../assets/Section3/reintegracion.svg";
+import alojamiento from "../../assets/Section3/alojamiento.png";
+import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
 
 const imagesList = {
@@ -43,7 +49,13 @@ const imagesList = {
   atenciones,
   group,
   audio,
-  rows,
+  amarillo1,
+  rosado1,
+  azul1,
+  verde1,
+  amarillo2,
+  rosado2,
+  azul2,
   psicosocial,
   medico,
   legal,
@@ -58,7 +70,7 @@ const iconList = {
 };
 
 const { protectionAndCare } = data;
-const { images, text, icons, noteBook, news, bigCard, smallInfoBox } =
+const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows } =
   protectionAndCare;
 
 function convertSize(input) {
@@ -67,35 +79,85 @@ function convertSize(input) {
   return r;
 }
 
+// function createAnimationTimeline(ref) {
+//   const tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ref.current,
+//       start: "top center",
+//       end: "center center",
+//       scrub: true,
+//     },
+//   });
+
+//   tl.fromTo(
+//     ref.current,
+//     {
+//       opacity: 0,
+//       x: "-100%",
+//     },
+//     {
+//       opacity: 1,
+//       x: "0%",
+//     }
+//   );
+
+//   return tl;
+// }
+
 function Section3() {
-  const imgRef = useRef(null);
+  const imgRef = useRef(null); // Crea una referencia única para cada imagen
+  const containerRowRef = useRef(null); // Crea una referencia única para cada elemento
 
   useLayoutEffect(() => {
-
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animación para la imagen
-    const imgTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: imgRef.current,
-        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-        end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
-        scrub: true, // Hace que la animación sea suave mientras se desplaza
-        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-      },
+    // Animación para el texto
+    rows.forEach((row, index) => {
+      const containerRowTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRowRef.current,
+          start: "top center",
+          end: "center center",
+          scrub: true,
+        },
+      });
+
+      containerRowTl.fromTo(
+        containerRowRef.current,
+        {
+          opacity: 0,
+          x: "-100%",
+        },
+        {
+          opacity: 1,
+          x: "0%",
+        }
+      );
     });
 
-    imgTl.fromTo(
-      imgRef.current,
-      {
-        x: "100%", // Mueve el elemento hacia la derecha al 100% de su ancho
-        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-      },
-      {
-        x: "0%", // Lleva el elemento a su posición original (0%)
-        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-      }
-    );
+    // Animación para la imagen
+    images.forEach((image, index) => {
+      const imgTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: imgRef.current,
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
+      imgTl.fromTo(
+        imgRef.current,
+        {
+          x: "100%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+        }
+      );
+    });
   }, []);
 
   const [nameBigCard, setNameBigCard] = useState("");
@@ -184,6 +246,57 @@ function Section3() {
     left: convertSize(image.left),
   }));
 
+  const rowsImageStyles = rows.map((row) => ({
+    ...row.image,
+    width: convertSize(row.image.width),
+    height: convertSize(row.image.height),
+    top: convertSize(
+      Number(row.image.top.split("px")[0]) -
+        Number(row.properties.top.split("px")[0]) +
+        "px"
+    ),
+    left: convertSize(row.image.left),
+  }));
+
+  const rowsStyles = rows.map((row) => ({
+    ...row.properties,
+    width: convertSize(row.properties.width),
+    height: convertSize(row.properties.height),
+    backgroundImage: `url(${imagesList[row.properties.name]})`,
+    top: convertSize(
+      Number(row.properties.top.split("px")[0]) -
+        Number(protectionAndCare.top.split("px")[0]) +
+        "px"
+    ),
+    left: convertSize(row.properties.left),
+  }));
+
+  const rowsTextStyles = rows.map((row) => ({
+    ...row.text,
+    width: convertSize(row.text.width),
+    height: convertSize(row.text.height),
+    top: convertSize(
+      Number(row.text.top.split("px")[0]) -
+        Number(row.properties.top.split("px")[0]) +
+        "px"
+    ),
+    left: convertSize(row.text.left),
+  }));
+
+  const rowsNumberStyles = rows.map((row) => ({
+    ...row.number,
+    width: convertSize(row.number.width),
+    height: convertSize(row.number.height),
+    top: convertSize(
+      Number(row.number.top.split("px")[0]) -
+        Number(row.properties.top.split("px")[0]) +
+        "px"
+    ),
+    fontSize: convertSize(row.number.fontSize),
+    lineHeight: convertSize(row.number.lineHeight),
+    left: convertSize(row.number.left),
+  }));
+
   const textStyles = text.map((texto) => ({
     ...texto,
     top: convertSize(
@@ -228,6 +341,15 @@ function Section3() {
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
+      {
+        rows.map((row, index) => (
+          <div ref={containerRowRef} className={style.containerRow} style={rowsStyles[index]} key={"rows" + index}>
+            <p className={style.contentrow} style={rowsTextStyles[index]}>{row.text.content}</p>
+            <img className={style.contentrow} src={imagesList[row.image.name]} style={rowsImageStyles[index]} alt="" />
+            <h1 className={style.contentrow} style={rowsNumberStyles[index]}>{row.number.content}</h1>
+          </div>
+        )) 
+      }
       {images.map((image, index) => (
         <img
           id={listImageHover.includes(image.name) ? image.name : null}

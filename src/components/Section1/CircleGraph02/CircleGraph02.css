@@ -3,14 +3,25 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 120vh;
+  height: 100%;
   margin-top: 8vh;
 }
 
 .circlegraph02__content {
   display: flex;
+  width: 90%;
+  height: 60%;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.circlegraph02__box {
+  display: flex;
+  height: 90%;
+  width: 40%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 
 .circlegraph02__title {
@@ -34,8 +45,61 @@
 }
 
 .circlegraph02__img {
-  margin-top: 15vh;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 30vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../../../assets/Img-Section01/Page09/onSlider/graficocircular.png");
+}
+
+.circlegraph02__number {
+  font-family: Formula Condensed;
+  font-size: 7vh;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #0a4b4e;
+  margin: 0;
+}
+
+.numbers__content-circle{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.circlenumbers__content{
+  position: absolute;
+  top: -6.5vw;
+  right: -7.5vw;
+  display: flex;
+  height: 120%;
+  justify-content: space-between;
   width: 45vw;
+  /* flex-direction: column; */
+}
+
+.onepercentage{
+  justify-content: flex-end;
+}
+
+.threepercentage{
+  justify-content: center;
+}
+
+.circlegraph02__foot {
+  font-family: Inter;
+  font-size: 2vh;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a4b4e;
 }
 
 .circlegraph02__p {
@@ -101,10 +165,10 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .circlegraph02{
+  .circlegraph02 {
     height: 90vh;
   }
-  .circlegraph02__title{
+  .circlegraph02__title {
     font-size: 3em;
   }
   .circlegraph02__subtitle {
