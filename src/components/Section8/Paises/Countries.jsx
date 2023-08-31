@@ -74,19 +74,7 @@ const Countries = () => {
     },
   ];
 
-  const animateCountry = (element, direction) => {
-    gsap.from(element, {
-      x: direction === "right" ? "100%" : "-100%",
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: "top center",
-        end: "bottom center",
-        toggleActions: "play none none reverse",
-      },
-    });
-  };
+  
 
   return (
     <div className="countries">
@@ -98,9 +86,6 @@ const Countries = () => {
               : "countries__background"
           } `}
           key={index}
-          ref={(el) =>
-            animateCountry(el, e.background === "pink" ? "left" : "right")
-          }
         >
           <div className="countries__content">
             <div className="countries__name">

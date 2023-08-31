@@ -13,30 +13,28 @@ const CircleGraph = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '.circlegraph', // Cambia el selector si es necesario
-        start: 'top 90%', // Punto de inicio de la animación
-        end: 'bottom 100%', // Punto de finalización de la animación
+        trigger: ".circlegraph", // Cambia el selector si es necesario
+        start: "top 90%", // Punto de inicio de la animación
+        end: "bottom 100%", // Punto de finalización de la animación
         scrub: true, // Activa el "scrubbing" para la animación suave
       },
     });
 
     const tltext = gsap.timeline({
-      scrollTrigger:{
+      scrollTrigger: {
         trigger: ".circlegraph_graphic",
         duration: 5,
-        start: 'top 50%', // Punto de inicio de la animación
-        end: 'bottom 70%', // Punto de finalización de la animación
+        start: "top 50%", // Punto de inicio de la animación
+        end: "bottom 70%", // Punto de finalización de la animación
         scrub: true, // Activa el "scrubbing" para la animación suave
-      }
-    })
+      },
+    });
 
     // Definir la animación aquí
-    tl.from('.circlegraph__percentage', { x: -200, opacity: 0 });
-    tl.to('.circlegraph__percentage', { x: 0, opacity: 1 });
-    tltext.from('.circlegraph__p', { x: -100, opacity: 0 });
-    tltext.to('.circlegraph__p', { x: 0, opacity: 1 });
- 
-
+    tl.from(".circlegraph__percentage", { x: -200, opacity: 0 });
+    tl.to(".circlegraph__percentage", { x: 0, opacity: 1 });
+    tltext.from(".circlegraph__p", { x: -100, opacity: 0 });
+    tltext.to(".circlegraph__p", { x: 0, opacity: 1 });
   }, []);
 
   return (
