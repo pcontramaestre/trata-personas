@@ -25,40 +25,38 @@ function Map ({ map, topSection }) {
   const [mapState, setMapState] = useState(maps[map.name])
 
   useEffect(() => {
-    if (!map.name) {
+    if (map.name) {
       const countries = arrayCountries.map(country => {
-        let countryTag = document.querySelector('#' + country)
+        let countryTag = document.querySelector('.' + country)
         if (!countryTag) {
-          countryTag = document.querySelector('#' + country + map.name)
+          countryTag = document.querySelector('.' + country + map.name)
         }
         return countryTag
       })
       const countriesFlag = arrayContriesFlag.map(flag => document.querySelector('#' + flag))
-      countries.forEach(country => {
-        country.addEventListener('mouseenter' , () => {
-          country.style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
-        })
-        country.addEventListener('mouseleave' , () => {
-          country.style.filter = ''
-        })
-        country.id = country.id + map.name
-      })
-      countriesFlag.forEach((flag, index) => {
-        flag.addEventListener('mouseenter' , () => {
-          countries[index].style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
-        })
-        flag.addEventListener('mouseleave' , () => {
-          countries[index].style.filter = ''
-        })
+      countries.forEach((country, index) => {
+        if (country && !country.id.includes('Map')) {
+          country.id  = country.className.baseVal + map.name
+          country.addEventListener('mouseenter' , () => {
+            country.style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
+          })
+          country.addEventListener('mouseleave' , () => {
+            country.style.filter = ''
+          })
+          countriesFlag[index].addEventListener('mouseenter' , () => {
+            countries[index].style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
+          })
+          countriesFlag[index].addEventListener('mouseleave' , () => {
+            countries[index].style.filter = ''
+          })
+        }
       })
       return () => {
-        countries.forEach(country => {
+        countries.forEach((country, index) => {
           country.removeEventListener('mouseenter', () => {})
           country.removeEventListener('mouseleave', () => {})
-        })
-        countriesFlag.forEach(flag => {
-          flag.removeEventListener('mouseenter', () => {})
-          flag.removeEventListener('mouseleave', () => {})
+          countriesFlag[index].removeEventListener('mouseenter', () => {})
+          countriesFlag[index].removeEventListener('mouseleave', () => {})
         })
       }
     }
