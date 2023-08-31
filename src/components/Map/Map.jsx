@@ -25,8 +25,7 @@ function Map ({ map, topSection }) {
   const [mapState, setMapState] = useState(maps[map.name])
 
   useEffect(() => {
-    console.log('entre')
-    if (map.name === 'MapGreen') {
+    if (!map.name) {
       const countries = arrayCountries.map(country => {
         let countryTag = document.querySelector('#' + country)
         if (!countryTag) {
@@ -73,7 +72,7 @@ function Map ({ map, topSection }) {
   return (
     <div className={style.ContainerMap} style={styleMapContainer}>
       {
-        mapState
+        mapState ? mapState : null
       }
     </div>
   )
