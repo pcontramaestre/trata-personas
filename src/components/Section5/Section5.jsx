@@ -4,7 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import NoteBook from '../NoteBook/NoteBook'
 // import BarGraph from '../BarGraph/BarGraph'
-import Map from '../Map/Map'
+// import Map from '../Map/Map'
+import MapSection05 from '../Map/MapSection05/MapSection05'
 // import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section5.module.css'
@@ -148,7 +149,8 @@ function Section5 () {
       }
       <NoteBook noteBook={noteBook} topSection={repatriation.top} />
       {/* <BarGraph /> */}
-      <Map map={map} topSection={repatriation.top} />
+      {/* <Map map={map} topSection={repatriation.top} /> */}
+      <MapSection05 topSection={repatriation.top} />
       <Animation />
       <div className={style.stuffed} style={stuffedStyle} />
     </section>

@@ -4,11 +4,11 @@ import style from './Map.module.css'
 
 import { ReactComponent as MapGreen } from '../../assets/Map/mapa1.svg'
 import mapPink from '../../assets/Map/mapPink.svg'
-import mexicoHoverMapPink from '../../assets/Map/mexicoHoverMapPink.png'
+// import mexicoHoverMapPink from '../../assets/Map/mapa3.svg'
 
 const maps = {
   MapGreen,
-  mexicoHoverMapPink
+  // mexicoHoverMapPink,
 }
 
 const arrayCountries = ['MX', 'GT', 'BZ', 'SV', 'HN', 'NI', 'CR', 'PA', 'DO']
