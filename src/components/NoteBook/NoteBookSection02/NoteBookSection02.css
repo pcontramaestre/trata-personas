@@ -72,14 +72,14 @@
   .NoteBook02__container {
     top: 0vh;
   }
-  
+
   .NoteBook02 {
     background: url("../../../assets/Img-Section02/Page04/notebook.png");
     background-repeat: no-repeat;
     background-size: 55.5vw;
     transform: rotate(-4.362deg);
   }
-  
+
   .NoteBook02__texts {
     margin-left: 2vw;
     margin-top: 9%;
@@ -94,7 +94,7 @@
     background-size: 55.5vw;
     transform: rotate(-4.362deg);
   }
-  
+
   .NoteBook02__texts {
     margin-left: 2vw;
     margin-top: 9%;

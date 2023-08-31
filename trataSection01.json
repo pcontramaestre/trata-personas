@@ -110,6 +110,14 @@
         "title": "El 43% de las <br/> víctimas identificadas",
         "subtitle": "en el periodo 2018-2021 <br/> fueron niños, niñas y adolescentes.",
         "foot": "<strong>El porcentaje de niños y adolescentes entre el total de víctimas identificadas es de 23 %y el de niñas y adolescentes es de 20 %</strong> .  En el último año se presentó un aumento de las niñas y adolescentes identificadas como víctimas y una disminución de los niños identificados.",
+        "graphic": {
+          "text1": "Víctimas <strong>menores</strong><br/> de <strong>18 años</strong>",
+          "number1": "43%",
+          "text2": "<strong>Sin información</strong>",
+          "number2": "13%",
+          "text3": "Víctimas <strong>mayores</strong><br/> de <strong>18 años</strong>",
+          "number3": "44%"
+        },
         "onslider": {
           "title": "Niños, niñas y adolescentes entre el número total de víctimas identificadas (2018-2021)",
           "percentage0": "0%",

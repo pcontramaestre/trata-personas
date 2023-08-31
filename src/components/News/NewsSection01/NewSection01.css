@@ -7,8 +7,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 45vw;
-  margin: 0;
+  height: 100vh;
+  margin: 100px 0;
   width: 100%;
   position: relative;
 }
@@ -45,10 +45,11 @@ p {
   left: 10.5vh;
   transform: rotateZ(-7.558deg);
   background-image: url("../../../assets/Img-Section01/Page08/new.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   width: 35%;
-  height: 60%;
+  height: 55%;
 }
 
 .newshover__background1 {
@@ -65,20 +66,7 @@ p {
   background-repeat: no-repeat;
 }
 
-.newshover__background2{
-   width: 39.0625vw;
-  height: 100.4375vh;
-  display: flex;
-  top: 10vh;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  display: none;
-  background-image: url("../../../assets/Img-Section01/Page08/noticiachica.png");
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
-}
+
 
 .newshover__title {
   color: #000;
@@ -157,14 +145,31 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 5%;
+  /* right: -100%; */
   transform: rotate(10.172deg);
   background-image: url("../../../assets/Img-Section01/Page08/new.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   width: 35%;
-  height: 60%;
+  height: 55%;
   /* z-index: 3; */
+}
+
+.newshover__background2{
+  width: 39.0625vw;
+  height: 100.4375vh;
+  display: flex;
+  top: 5vh;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: none;
+  background-image: url("../../../assets/Img-Section01/Page08/noticiachica.png");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .news__p2 {
@@ -186,10 +191,11 @@ p {
   position: absolute;
   transform: rotateZ(3.592deg);
   background-image: url("../../../assets/Img-Section01/Page08/new.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   width: 35%;
-  height: 60%;
+  height: 55%;
   right: 7vh;
 }
 

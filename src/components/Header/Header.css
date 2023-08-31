@@ -8,8 +8,12 @@
 .hamburger-icon img{
     position: fixed;
     z-index: 10;
-    left: 95vw;
+    left: 94vw;
     top: 3vw;
+    cursor: pointer;
+}
+.hamburger-icon img:hover{
+    opacity: 0.8;
 }
 .menu-expanded {
     position: fixed;
@@ -23,7 +27,7 @@
     transform: translateX(0);
   }
 .header-container_img{
-    width: 86vw;
+    width: 84vw;
     margin: 0 auto;
     margin-bottom: 0.7rem;
     display: flex;
@@ -42,12 +46,13 @@
 }
 .header-text .text{
     color: white;
-    font-size: 42px;
+    font-size: 41px;
     font-weight: 700;
     text-align: center;
     font-family: Formula Condensed;
     position: absolute;
     top: 0vw;
+    left: 0vw;
     width: 92%;
     padding: 0% 4%;
     letter-spacing: 1.65px;
@@ -57,6 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .header-text .text:hover{
     opacity: 0;

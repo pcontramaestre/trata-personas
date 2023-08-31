@@ -28,7 +28,6 @@ function News ({ news, topSection }) {
   useLayoutEffect(() => {
     const containerAnimation = document.getElementsByName('news' + news.section)[0]
     const elementToMove = document.getElementsByName('cardNews' + news.section)
-
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
