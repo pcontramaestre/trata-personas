@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -107,12 +107,23 @@ function Card ({ article, totalHeight, footer, title, section }) {
 }
 
 function SheetNews ({ hover, title, text, footer, icon }) {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  useEffect(() => {
+    const img = new Image()
+    img.onload = () => {
+      setImageLoaded(true)
+    }
+    img.src = `./src/assets/News/${hover.backgroundImage}.png`
+  }, [])
+
   const sheetStyles = {
     width: convertSize(hover.width),
     height: convertSize(hover.height),
     top: convertSize(hover.top),
     left: convertSize(hover.left),
-    backgroundImage: `url(${sheets[hover.backgroundImage]})`
+    // backgroundImage: `url(${sheets[hover.backgroundImage]})`
+    backgroundImage: imageLoaded ? `url(${sheets[hover.backgroundImage]})` : 'none'
   }
 
   const titleStyle = {
