@@ -1,10 +1,4 @@
-import { useLayoutEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 import style from './HandSlide.module.css'
-
-gsap.registerPlugin(ScrollTrigger)
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -13,28 +7,6 @@ function convertSize (input) {
 }
 
 function HandSlide ({ handSlide, totalTop }) {
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const scrollTriggerFrontPageSection7 = ScrollTrigger.getById('animationFrontPageSection7')
-
-      ScrollTrigger.create({
-        trigger: `HandSlideContainer${handSlide.section}`,
-        markers: true,
-        start: () => {
-          return scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + ' center'
-        },
-        end: () => {
-          return (scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + 4000) + ' center'
-        },
-        pin: '#section7',
-        scrub: true,
-        id: 'animationHandSlideSection7'
-      })
-    })
-
-    return () => ctx.revert()
-  }, [])
-
   const handSlideBackgroundStyle = {
     height: convertSize(handSlide.height),
     top: convertSize(totalTop)
@@ -80,8 +52,8 @@ function HandSlide ({ handSlide, totalTop }) {
   }
 
   return (
-    <div id={'HandSlideContainer' + handSlide.section} name='HandSlideContainer' className={style.HandSlideBackground} style={handSlideBackgroundStyle}>
-      <div id={'HandSlideContainerCards' + handSlide.section} style={handSlideContainer} className={style.HandSlideContainer}>
+    <div name='HandSlideContainer' className={style.HandSlideBackground} style={handSlideBackgroundStyle}>
+      <div name='HandSlideContainerCards' style={handSlideContainer} className={style.HandSlideContainer}>
         {
           handSlide.container.cards.map((card, index) => (
             <div className={style.HandSlideCard} style={cardsStyles[index]} key={index}>

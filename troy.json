@@ -979,32 +979,6 @@
       "width": "1944px",
       "height": "1520px"
     },
-    "forntPageImages": {
-      "top": "70649px",
-      "height": "1520px",
-      "listImages": [
-        {
-          "name": "background",
-          "width": "1920px",
-          "height": "1528px",
-          "top": "70628px",
-          "left": "0px",
-          "position": "absolute",
-          "objectFit": "contain",
-          "objectPosition": "center"
-        },
-        {
-          "name": "persons",
-          "width": "1920px",
-          "height": "1070px",
-          "top": "71080px",
-          "left": "0px",
-          "position": "absolute",
-          "objectFit": "contain",
-          "objectPosition": "center"
-        }
-      ]
-    },
     "textContainer": {
       "width": "1958px",
       "height": "1451px",
@@ -1012,6 +986,26 @@
       "color": "#002526"
     },
     "images": [
+      {
+        "name": "background",
+        "width": "1920px",
+        "height": "1528px",
+        "top": "70628px",
+        "left": "0px",
+        "position": "absolute",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "persons",
+        "width": "1920px",
+        "height": "1070px",
+        "top": "71080px",
+        "left": "0px",
+        "position": "absolute",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
       {
         "name": "scroll2",
         "width": "130px",
@@ -1159,7 +1153,6 @@
       }
     ],
     "handSlide": {
-      "section": "section7",
       "width": "1920px",
       "height": "829px",
       "top": "73863px",
@@ -1255,9 +1248,9 @@
             "angle": "-0.6deg",
             "backgroundColor": "#FCFBCB",
             "text": {
-              "date": "2018",            
-              "country": "Belice",            
-              "paragraph": "Signing of an agreement between the Belize Police Department and the Institute of Human Trafficking, for the development of the capacity of the Specialized Unit of Human Trafficking of Belize. The agreement helps ensure that the specialized unit has the essential tools and resources it needs to conduct proactive investigations of human trafficking."            
+              "date": "2018",
+              "country": "Belice",
+              "paragraph": "Signing of an agreement between the Belize Police Department and the Institute of Human Trafficking, for the development of the capacity of the Specialized Unit of Human Trafficking of Belize. The agreement helps ensure that the specialized unit has the essential tools and resources it needs to conduct proactive investigations of human trafficking."
             }
           },
           {
@@ -1693,20 +1686,20 @@
         "color": "#0A4B4E"
       },
       {
-          "content": "DERECHOS, LA SEGURIDAD Y LA DIGNIDAD DE LAS VÍCTIMAS.",
-          "tag": "h2",
-          "width": "1079px",
-          "height": "230px",
-          "top": "56609px",
-          "left": "437px",
+        "content": "DERECHOS, LA SEGURIDAD Y LA DIGNIDAD DE LAS VÍCTIMAS.",
+        "tag": "h2",
+        "width": "1079px",
+        "height": "230px",
+        "top": "56609px",
+        "left": "437px",
 
-          "fontFamily": "Formula Condensed",
-          "fontSize": "80px",
-          "fontWeight": "700",
-          "lineHeight": "96px",
-          "letterSpacing": "0.03em",
-          "textAlign": "center",
-          "color": "#0A4B4E"
+        "fontFamily": "Formula Condensed",
+        "fontSize": "80px",
+        "fontWeight": "700",
+        "lineHeight": "96px",
+        "letterSpacing": "0.03em",
+        "textAlign": "center",
+        "color": "#0A4B4E"
       },
       {
         "content": " (ACNUDH, 2014).",
@@ -1884,7 +1877,7 @@
         "fontFamily": "Inter",
         "fontSize": "30px",
         "fontWeight": "400",
-        "lineHeight": "36.31px",        
+        "lineHeight": "36.31px",
         "color": "#0A4B4E"
       },
       {
@@ -1897,7 +1890,7 @@
         "fontFamily": "Inter",
         "fontSize": "27px",
         "fontWeight": "400",
-        "lineHeight": "30px",        
+        "lineHeight": "30px",
         "color": "#0A4B4E"
       },
       {
@@ -1910,7 +1903,7 @@
         "fontFamily": "Inter",
         "fontSize": "27px",
         "fontWeight": "400",
-        "lineHeight": "30px",        
+        "lineHeight": "30px",
         "color": "#0A4B4E"
       },
       {
@@ -2392,7 +2385,6 @@
                 "top": "220px",
                 "left": "115px",
                 "angle": "25.26deg"
-                
               },
               {
                 "content": "90%",
@@ -3133,7 +3125,8 @@
         "letterSpacing": "0.03em",
         "textAlign": "right",
         "color": "#006873"
-      },{
+      },
+      {
         "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
         "tag": "p",
         "width": "467px",
@@ -5055,69 +5048,338 @@
         "height": "42px",
         "top": "35886px",
         "left": "1771px"
+      }
+    ],
+
+    "rows": [
+      {
+        "number": {
+          "content": "37%",
+          "tag": "h1",
+          "width": "465px",
+          "height": "320px",
+          "top": "39158px",
+          "left": "1348.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "319px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Asistencia psicosocial",
+          "tag": "h1",
+          "width": "478px",
+          "height": "201px",
+          "top": "39189px",
+          "left": "117.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "psicosocial",
+          "width": "376px",
+          "height": "385px",
+          "top": "39109px",
+          "left": "766.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "amarillo1",
+          "width": "1920",
+          "height": "566px",
+          "top": "39005px",
+          "left": "0px"
+        }
       },
       {
-        "name": "rows",
-        "width": "1920",
-        "height": "4001px",
-        "top": "39005px",
-        "left": "0px"
+        "number": {
+          "content": "23%",
+          "tag": "h1",
+          "width": "465px",
+          "height": "319px",
+          "top": "39727px",
+          "left": "1348.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "320px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Asistencia médica",
+          "tag": "h1",
+          "width": "384px",
+          "height": "131px",
+          "top": "39780px",
+          "left": "132.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "medico",
+          "width": "314px",
+          "height": "402px",
+          "top": "39673px",
+          "left": "782.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "rosado1",
+          "width": "1920",
+          "height": "566px",
+          "top": "39571px",
+          "left": "0px"
+        }
       },
       {
-        "name": "psicosocial",
-        "width": "376px",
-        "height": "385px",
-        "top": "39109px",
-        "left": "766.66px",
-        "grupo": "proteccion"
+        "number": {
+          "content": "18%",
+          "tag": "h1",
+          "width": "465px",
+          "height": "319px",
+          "top": "40299px",
+          "left": "1352.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "320px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Asesoría Legal",
+          "tag": "h1",
+          "width": "450px",
+          "height": "131px",
+          "top": "40364px",
+          "left": "132.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "legal",
+          "width": "348px",
+          "height": "370px",
+          "top": "40223px",
+          "left": "766.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "azul1",
+          "width": "1920",
+          "height": "566px",
+          "top": "40137px",
+          "left": "0px"
+        }
       },
       {
-        "name": "medico",
-        "width": "314px",
-        "height": "402px",
-        "top": "39673px",
-        "left": "782.66px",
-        "grupo": "proteccion"
+        "number": {
+          "content": "9%",
+          "tag": "h1",
+          "width": "357px",
+          "height": "319px",
+          "top": "40875px",
+          "left": "1456.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "320px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#B3F3FD"
+        },
+        "text": {
+          "content": "Manutención",
+          "tag": "h1",
+          "width": "487px",
+          "height": "131px",
+          "top": "40943px",
+          "left": "100px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#B3F3FD"
+        },
+        "image": {
+          "name": "manutencion",
+          "width": "332px",
+          "height": "378px",
+          "top": "40777px",
+          "left": "765.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "verde1",
+          "width": "1920",
+          "height": "566px",
+          "top": "40703px",
+          "left": "0px"
+        }
       },
       {
-        "name": "legal",
-        "width": "392px",
-        "height": "445px",
-        "top": "40223px",
-        "left": "766.66px",
-        "grupo": "proteccion"
+        "number": {
+          "content": "6%",
+          "tag": "h1",
+          "width": "357px",
+          "height": "319px",
+          "top": "41440px",
+          "left": "1464.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "320px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Formación educativa",
+          "tag": "h1",
+          "width": "382px",
+          "height": "131px",
+          "top": "41460px",
+          "left": "132.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "educacion",
+          "width": "352px",
+          "height": "346px",
+          "top": "41418px",
+          "left": "781px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "amarillo2",
+          "width": "1920",
+          "height": "566px",
+          "top": "41269px",
+          "left": "0px"
+        }
       },
       {
-        "name": "manutencion",
-        "width": "392px",
-        "height": "481px",
-        "top": "40777px",
-        "left": "765.66px",
-        "grupo": "proteccion"
+        "number": {
+          "content": "5%",
+          "tag": "h1",
+          "width": "357px",
+          "height": "319px",
+          "top": "42013px",
+          "left": "1464.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "320px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Alojamiento",
+          "tag": "h1",
+          "width": "487px",
+          "height": "131px",
+          "top": "42091px",
+          "left": "132.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "alojamiento",
+          "width": "342px",
+          "height": "414px",
+          "top": "41937px",
+          "left": "788.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "rosado2",
+          "width": "1920",
+          "height": "566px",
+          "top": "41835px",
+          "left": "0px"
+        }
       },
       {
-        "name": "educacion",
-        "width": "352px",
-        "height": "346px",
-        "top": "41418px",
-        "left": "781px",
-        "grupo": "proteccion"
-      },
-      {
-        "name": "alojamiento",
-        "width": "342px",
-        "height": "414px",
-        "top": "41937px",
-        "left": "788.66px",
-        "grupo": "proteccion"
-      },
-      {
-        "name": "reintegracion",
-        "width": "442px",
-        "height": "476px",
-        "top": "42476px",
-        "left": "741.66px",
-        "grupo": "proteccion"
+        "number": {
+          "content": "3%",
+          "tag": "h1",
+          "width": "357px",
+          "height": "319px",
+          "top": "42581px",
+          "left": "1464.66px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "320px",
+          "fontWeight": "700",
+          "lineHeight": "319px",
+          "letterSpacing": "0.03em",
+          "textAlign": "center",
+          "color": "#006873"
+        },
+        "text": {
+          "content": "Reintegración Familiar",
+          "tag": "h1",
+          "width": "487px",
+          "height": "131px",
+          "top": "42600px",
+          "left": "80px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "90px",
+          "fontWeight": "300",
+          "lineHeight": "102.5px",
+          "letterSpacing": "0em",
+          "textAlign": "left",
+          "color": "#006873"
+        },
+        "image": {
+          "name": "reintegracion",
+          "width": "376px",
+          "height": "356px",
+          "top": "42476px",
+          "left": "741.66px",
+          "grupo": "proteccion"
+        },
+        "properties": {
+          "name": "azul2",
+          "width": "1920",
+          "height": "566px",
+          "top": "42401px",
+          "left": "0px"
+        }
       }
     ],
     "icons": [
@@ -5778,216 +6040,6 @@
         "letterSpacing": "0em",
         "textAlign": "left",
         "color": "#737373"
-      },
-      {
-        "content": "Asistencia psicosocial",
-        "tag": "h1",
-        "width": "478px",
-        "height": "201px",
-        "top": "39189px",
-        "left": "117.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
-      {
-        "content": "Asistencia médica",
-        "tag": "h1",
-        "width": "384px",
-        "height": "131px",
-        "top": "39799px",
-        "left": "132.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
-      {
-        "content": "Asesoría Legal",
-        "tag": "h1",
-        "width": "450px",
-        "height": "131px",
-        "top": "40364px",
-        "left": "132.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
-      {
-        "content": "Manutención",
-        "tag": "h1",
-        "width": "487px",
-        "height": "131px",
-        "top": "40943px",
-        "left": "100px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#B3F3FD"
-      },
-      {
-        "content": "Formación educativa",
-        "tag": "h1",
-        "width": "382px",
-        "height": "131px",
-        "top": "41512px",
-        "left": "132.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
-      {
-        "content": "Alojamiento",
-        "tag": "h1",
-        "width": "487px",
-        "height": "131px",
-        "top": "42071px",
-        "left": "132.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
-      {
-        "content": "Reintegración Familiar",
-        "tag": "h1",
-        "width": "487px",
-        "height": "131px",
-        "top": "42656px",
-        "left": "80px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "100px",
-        "fontWeight": "300",
-        "lineHeight": "102.5px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#006873"
-      },
-      {
-        "content": "37%",
-        "tag": "h1",
-        "width": "465px",
-        "height": "320px",
-        "top": "39158px",
-        "left": "1348.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "319px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
-      },
-      {
-        "content": "23%",
-        "tag": "h1",
-        "width": "465px",
-        "height": "319px",
-        "top": "39727px",
-        "left": "1348.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "320px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
-      },
-      {
-        "content": "18%",
-        "tag": "h1",
-        "width": "465px",
-        "height": "319px",
-        "top": "40299px",
-        "left": "1352.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "320px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
-      },
-      {
-        "content": "9%",
-        "tag": "h1",
-        "width": "357px",
-        "height": "319px",
-        "top": "40875px",
-        "left": "1456.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "320px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#B3F3FD"
-      },
-      {
-        "content": "6%",
-        "tag": "h1",
-        "width": "357px",
-        "height": "319px",
-        "top": "41445px",
-        "left": "1464.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "320px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
-      },
-      {
-        "content": "5%",
-        "tag": "h1",
-        "width": "357px",
-        "height": "319px",
-        "top": "42013px",
-        "left": "1464.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "320px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
-      },
-      {
-        "content": "3%",
-        "tag": "h1",
-        "width": "357px",
-        "height": "319px",
-        "top": "42581px",
-        "left": "1464.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "320px",
-        "fontWeight": "700",
-        "lineHeight": "319px",
-        "letterSpacing": "0.03em",
-        "textAlign": "center",
-        "color": "#006873"
       }
     ],
     "bigCard": {
