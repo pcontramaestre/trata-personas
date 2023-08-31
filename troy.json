@@ -673,6 +673,7 @@
       ]
     },
     "map": {
+      "name": "MapGreen",
       "backgroundImage": "mapGreen",
       "size": {
         "width": "1920px",
