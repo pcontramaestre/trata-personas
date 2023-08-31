@@ -1,27 +1,9 @@
 .ContainerMap {
     position: absolute;
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     width: 100%;
 }
 
 .ContainerMap svg {
     object-fit: cover;
     object-position: center;
-}
-
-.map path {
-    stroke: black;
-} 
-
-.MapCard {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-}
-
-.MapCard img {
-    margin-right: 0.3vw;
 }
