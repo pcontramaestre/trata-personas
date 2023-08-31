@@ -14,26 +14,21 @@ function convertSize (input) {
 
 function HandSlide ({ handSlide, totalTop }) {
   useLayoutEffect(() => {
-    const containerAnimationHandSlide = document.getElementById(`HandSlideContainer${handSlide.section}`)
-    const elementToMoveHandSlide = document.getElementById(`HandSlideContainerCards${handSlide.section}`)
-
-    const widthAnimationContainer = containerAnimationHandSlide.offsetWidth
-    const widthElementToMove = elementToMoveHandSlide.offsetWidth
-
-    const percentageStart = window.innerWidth * (-0.046875) + 95
-
     const ctx = gsap.context(() => {
-      gsap.to(elementToMoveHandSlide, {
-        right: widthElementToMove - widthAnimationContainer,
-        ease: 'power2.inOut',
-        scrollTrigger: {
-          trigger: containerAnimationHandSlide,
-          // markers: true,
-          start: `top ${percentageStart < 0 ? 0 : percentageStart}%`,
-          end: '+=6000 bottom',
-          pin: '#section7',
-          scrub: true
-        }
+      const scrollTriggerFrontPageSection7 = ScrollTrigger.getById('animationFrontPageSection7')
+
+      ScrollTrigger.create({
+        trigger: `HandSlideContainer${handSlide.section}`,
+        markers: true,
+        start: () => {
+          return scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + ' center'
+        },
+        end: () => {
+          return (scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + 4000) + ' center'
+        },
+        pin: '#section7',
+        scrub: true,
+        id: 'animationHandSlideSection7'
       })
     })
 
