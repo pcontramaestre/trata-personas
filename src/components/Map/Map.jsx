@@ -3,12 +3,9 @@ import { useEffect, useState } from 'react'
 import style from './Map.module.css'
 
 import { ReactComponent as MapGreen } from '../../assets/Map/mapa1.svg'
-import mapPink from '../../assets/Map/mapPink.svg'
-import mexicoHoverMapPink from '../../assets/Map/mexicoHoverMapPink.png'
 
 const maps = {
-  MapGreen,
-  mexicoHoverMapPink
+  MapGreen
 }
 
 const arrayCountries = ['MX', 'GT', 'BZ', 'SV', 'HN', 'NI', 'CR', 'PA', 'DO']
@@ -26,27 +23,21 @@ function Map ({ map, topSection }) {
 
   useEffect(() => {
     if (map.name) {
-      const countries = arrayCountries.map(country => {
-        let countryTag = document.querySelector('.' + country)
-        if (!countryTag) {
-          countryTag = document.querySelector('.' + country + map.name)
-        }
-        return countryTag
-      })
+      const countries = arrayCountries.map(country => document.getElementById(country + '01'))
       const countriesFlag = arrayContriesFlag.map(flag => document.querySelector('#' + flag))
       countries.forEach((country, index) => {
-        if (country && !country.id.includes('Map')) {
-          country.id  = country.className.baseVal + map.name
-          country.addEventListener('mouseenter' , () => {
+        console.log('country:', country)
+        if (country) {
+          country.addEventListener('mouseenter', () => {
             country.style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
           })
-          country.addEventListener('mouseleave' , () => {
+          country.addEventListener('mouseleave', () => {
             country.style.filter = ''
           })
-          countriesFlag[index].addEventListener('mouseenter' , () => {
+          countriesFlag[index].addEventListener('mouseenter', () => {
             countries[index].style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
           })
-          countriesFlag[index].addEventListener('mouseleave' , () => {
+          countriesFlag[index].addEventListener('mouseleave', () => {
             countries[index].style.filter = ''
           })
         }
@@ -70,7 +61,7 @@ function Map ({ map, topSection }) {
   return (
     <div className={style.ContainerMap} style={styleMapContainer}>
       {
-        mapState ? mapState : null
+        mapState
       }
     </div>
   )
