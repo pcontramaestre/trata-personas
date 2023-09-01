@@ -25,12 +25,18 @@
     position: absolute;
 }
 
+.NewsArticle:hover {
+    /* cursor: pointer; */
+}
+
 .NewsArticle:hover + .NewsArticleHover {
-    display: flex;
+    /* display: flex;
+    opacity: 0.5; */
 }
 
 .NewsArticleHover:hover {
-    display: flex;
+    /* display: flex;
+    opacity: 0.5; */
 }
 
 .NewsArticleHover {
@@ -38,10 +44,11 @@
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 1;
+    opacity: 1;
 }
 
 .titleIntoArticle {
