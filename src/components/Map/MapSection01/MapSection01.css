@@ -39,6 +39,60 @@
   height: 120%;
 }
 
+.mapnumber02 {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#MX02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+#GT02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+#BZ02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+#SV02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
+#NI02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
+#CR02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
+#PA02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
+.SV02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
+.DO02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
+.HN02:hover {
+  stroke-width: 10px !important;
+  stroke: #13f8fd !important;
+}
+
 .percentage__list {
   display: flex;
   list-style: none;
@@ -77,12 +131,13 @@
   align-items: center;
   align-content: center;
   position: absolute;
-  bottom: 25vh;
+  bottom: 20vh;
 }
 
 .map__foot-text {
   text-align: center;
   color: #737373;
+  margin: 0;
   font-family: Formula Condensed;
   font-size: 1.7em;
   font-style: normal;
@@ -117,24 +172,115 @@
   height: 100vh;
 }
 
-.map__img {
+.maphover__content {
   position: absolute;
-  width: 80%;
-  height: 80%;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../../assets/Img-Section01/Page05/map.svg");
-  /* margin-right: 20px; */
+  flex-direction: column;
+  left: 4.5vw;
+  top: 20%;
+  width: 27vw;
+  height: 37vw;
 }
 
-.map__hoverimg {
-  position: absolute;
-  min-height: 100vh;
-  max-width: 100%;
-  top: 0;
-  left: 0;
-  top: -10.5vw;
+.MXmap {
+  display: none;
+}
+.GTmap {
+  display: none;
+}
+.BZmap {
+  display: none;
+}
+.SVmap {
+  display: none;
+}
+.HNmap {
+  display: none;
+}
+.NImap {
+  display: none;
+}
+.CRmap {
+  display: none;
+}
+.PAmap {
+  display: none;
+}
+.DOmap {
+  display: none;
+}
+
+.maphovertext {
+  position: relative;
+  left: 1vw;
+  width: 100%;
+  height: 35%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.MXtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoMX.png");
+}
+.GTtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoGT.png");
+}
+.BZtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoBZ.png");
+}
+.SVtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoSV.png");
+}
+.HNtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoHN.png");
+}
+.NItext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoNI.png");
+}
+.CRtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoCR.png");
+}
+.PAtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoPA.png");
+}
+.DOtext {
+  background-image: url("../../../assets/Img-Section01/Page05/textoDO.png");
+}
+
+.maphoverimg {
+  height: 60%;
+  width: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.MXimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoMX.png");
+}
+.GTimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoGT.png");
+}
+.BZimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoBZ.png");
+}
+.SVimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoSV.png");
+}
+.HNimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoHN.png");
+}
+.NIimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoNI.png");
+}
+.CRimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoCR.png");
+}
+.PAimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoPA.png");
+}
+.DOimg {
+  background-image: url("../../../assets/Img-Section01/Page05/graficoDO.png");
 }
 
 
