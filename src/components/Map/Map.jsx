@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import style from './Map.module.css'
+import './Map.css'
 
 import { ReactComponent as MapGreen } from '../../assets/Map/mapa1.svg'
 
@@ -25,28 +26,20 @@ function Map ({ map, topSection }) {
     if (map.name) {
       const countries = arrayCountries.map(country => document.getElementById(country + '01'))
       const countriesFlag = arrayContriesFlag.map(flag => document.querySelector('#' + flag))
-      countries.forEach((country, index) => {
-        if (country) {
-          country.addEventListener('mouseenter', () => {
-            country.style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
+      countriesFlag.forEach((flag, index) => {
+        if (flag) {
+          flag.addEventListener('mouseenter', () => {
+            countries[index].querySelector(`.${countries[index].id.split('0')[0]}`).style.fill = '#13F8FD'
           })
-          country.addEventListener('mouseleave', () => {
-            country.style.filter = ''
-          })
-          countriesFlag[index].addEventListener('mouseenter', () => {
-            countries[index].style.filter = 'brightness(0) saturate(100%) invert(95%) sepia(65%) saturate(2813%) hue-rotate(122deg) brightness(102%) contrast(108%)'
-          })
-          countriesFlag[index].addEventListener('mouseleave', () => {
-            countries[index].style.filter = ''
+          flag.addEventListener('mouseleave', () => {
+            countries[index].querySelector(`.${countries[index].id.split('0')[0]}`).style.fill = ''
           })
         }
       })
       return () => {
-        countries.forEach((country, index) => {
-          country.removeEventListener('mouseenter', () => {})
-          country.removeEventListener('mouseleave', () => {})
-          countriesFlag[index].removeEventListener('mouseenter', () => {})
-          countriesFlag[index].removeEventListener('mouseleave', () => {})
+        countriesFlag.forEach((flag, index) => {
+          flag.removeEventListener('mouseenter', () => {})
+          flag.removeEventListener('mouseleave', () => {})
         })
       }
     }
@@ -58,7 +51,7 @@ function Map ({ map, topSection }) {
   }
 
   return (
-    <div className={style.ContainerMap} style={styleMapContainer}>
+    <div id='container-Map' className={style.ContainerMap} style={styleMapContainer}>
       {
         mapState
       }
