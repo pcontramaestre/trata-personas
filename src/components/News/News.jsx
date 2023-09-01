@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -25,13 +25,14 @@ function convertSize (input) {
 function News ({ news, topSection }) {
   if (!news) return null
 
-  const [sheet, setSheet] = useState(() => {
+  const [statusSheet, setStatusSheet] = useState(() => {
     return news.articles.map((article, index) => ({
       position: index,
       value: false
     }))
   })
 
+  // Efecto de entrada de las cartas
   useLayoutEffect(() => {
     const containerAnimation = document.getElementsByName('news' + news.section)[0]
     const elementToMove = document.getElementsByName('cardNews' + news.section)
@@ -55,20 +56,16 @@ function News ({ news, topSection }) {
   }, [])
 
   function activeSheet (position) {
-    const newSheet = [...sheet]
-    newSheet[position].value = true
-    setSheet(newSheet)
+    const newStatusSheet = [...statusSheet]
+    newStatusSheet[position].value = true
+    setStatusSheet(newStatusSheet)
   }
 
   function desactiveSheet (position) {
-    const newSheet = [...sheet]
-    newSheet[position].value = false
-    setSheet(newSheet)
-    // setTimeout(() => {
-    //   console.log('que paso que esta mierda no esta coriendo')
-    //   newSheet[position].value = false
-    //   setSheet(newSheet)
-    // }, 1000)
+    console.log('estoy fuera')
+    const newStatusSheet = [...statusSheet]
+    newStatusSheet[position].value = false
+    setStatusSheet(newStatusSheet)
   }
 
   const totalHeight = news.articles.reduce((acc, curr) => Number(acc.split('px')[0]) < Number(curr.position.top.split('px')[0]) ? acc : curr.position.top, news.articles[0].position.top)
@@ -84,7 +81,7 @@ function News ({ news, topSection }) {
           <div key={index}>
             <Card activeSheet={activeSheet} index={index} section={news.section} article={article} key={index} totalHeight={totalHeight} footer={news.footerCard} title={news.titleStyles} />
             {
-              sheet[index].value ? <SheetNews status={sheet[index]} desactiveSheet={desactiveSheet} hover={article.hover} title={news.titleStylesHover} text={news.textStylesHover} footer={news.footerStyleHover} icon={news.footerIconHover} /> : null
+              statusSheet[index].value ? <SheetNews status={statusSheet[index]} desactiveSheet={desactiveSheet} hover={article.hover} title={news.titleStylesHover} text={news.textStylesHover} footer={news.footerStyleHover} icon={news.footerIconHover} /> : null
             }
           </div>
         ))
@@ -125,7 +122,7 @@ function Card ({ article, totalHeight, footer, title, section, activeSheet, inde
   }
 
   return (
-    <div onMouseEnter={() => { activeSheet(index) }} name={'cardNews' + section} className={style.NewsArticle} style={articleStyle}>
+    <div onMouseEnter={() => (activeSheet(index))} name={'cardNews' + section} className={style.NewsArticle} style={articleStyle}>
       <p dangerouslySetInnerHTML={{ __html: article.title.text }} style={titleStyle} />
       <label style={footerStyle}>{article.footer.text}</label>
     </div>
@@ -133,38 +130,6 @@ function Card ({ article, totalHeight, footer, title, section, activeSheet, inde
 }
 
 function SheetNews ({ hover, title, text, footer, icon, desactiveSheet, status }) {
-  const [imageLoaded, setImageLoaded] = useState(false)
-
-  console.log('status afuera:', status)
-
-  useEffect(() => {
-    if (status !== 'disassemble') {
-      // setTimeout(() => {
-      gsap.fromTo('#nutria', {
-        opacity: 0
-      }, {
-        opacity: 1,
-        duration: 1
-      })
-      // }, 1)
-    }
-    // else {
-    //   console.log('entre en disassemble:', status.value)
-    //   gsap.to('#nutria', {
-    //     opacity: 0,
-    //     duration: 0.5
-    //   })
-    // }
-  }, [status.value])
-
-  useEffect(() => {
-    const img = new Image()
-    img.onload = () => {
-      setImageLoaded(true)
-    }
-    img.src = `./src/assets/News/${hover.backgroundImage}.png`
-  }, [])
-
   const sheetStyles = {
     width: convertSize(hover.width),
     height: convertSize(hover.height),
@@ -220,20 +185,18 @@ function SheetNews ({ hover, title, text, footer, icon, desactiveSheet, status }
     top: convertSize(hover.footer.top),
     left: convertSize(hover.footer.left)
   }
-  if (true) {
-    return (
-      <div id='nutria' style={sheetStyles} className={style.NewsArticleHover} onMouseLeave={() => { desactiveSheet(status.position) }}>
-        <h1 style={titleStyle} className={style.titleIntoArticle}>{hover.title.content}</h1>
-        <div className={style.vector} />
-        <p dangerouslySetInnerHTML={{ __html: hover.text.content }} style={textStyle} className={style.IntoArticle} />
-        <footer style={footerStyles} className={style.footerContainer}>
-          <label style={footerStyle} className={style.IntoArticle}>{hover.footer.content}</label>
-          <a href={hover.link} target='_blank' className={style.articleFooter} style={linkStyles} rel='noreferrer'><img src={group} style={iconStyles} /> CONSULTA LA NOTICIA COMPLETA</a>
-        </footer>
-      </div>
-    )
-  }
-  return null
+
+  return (
+    <div style={sheetStyles} className={style.NewsArticleHover} onMouseLeave={() => { desactiveSheet(status.position) }}>
+      <h1 style={titleStyle} className={style.titleIntoArticle}>{hover.title.content}</h1>
+      <div className={style.vector} />
+      <p dangerouslySetInnerHTML={{ __html: hover.text.content }} style={textStyle} className={style.IntoArticle} />
+      <footer style={footerStyles} className={style.footerContainer}>
+        <label style={footerStyle} className={style.IntoArticle}>{hover.footer.content}</label>
+        <a href={hover.link} target='_blank' className={style.articleFooter} style={linkStyles} rel='noreferrer'><img src={group} style={iconStyles} /> CONSULTA LA NOTICIA COMPLETA</a>
+      </footer>
+    </div>
+  )
 }
 
 export default News
