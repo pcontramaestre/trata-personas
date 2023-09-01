@@ -1,0 +1,47 @@
+.map-container{
+   position: relative;
+   width: 84%;
+   margin-left: 12.5%;
+}
+.map-container #mapImg1,#mapImg2,#mapImg3,#mapImg4,#mapImg5,#mapImg6,#mapImg7,#mapImg8{
+    position: absolute;
+    top: 234.5vw;
+    left: -12.2vw;
+    width: 100vw;
+    display: none;
+    pointer-events: none;
+}
+
+.map-container #MAPA3{
+    position: absolute;
+    top: 234.5vw;
+}
+.map-container #MAPA3 #DO .DO:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #PA .PA:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #CR .CR:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #NI .NI:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #HN .HN:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #SV .SV:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #BZ .BZ:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #GT .GT:hover{
+    fill: #D98E94;
+}
+.map-container #MAPA3 #MX .MX:hover{
+    fill: #D98E94;
+}
+
+
