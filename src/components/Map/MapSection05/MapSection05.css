@@ -9,6 +9,7 @@
     left: -12.2vw;
     width: 100vw;
     display: none;
+    pointer-events: none;
 }
 
 .map-container #MAPA3{
@@ -42,13 +43,5 @@
 .map-container #MAPA3 #MX .MX:hover{
     fill: #D98E94;
 }
-/* .map-container .hola:hover{
-    content: "";
-    background-image: url('../../../assets/Section5/mapa/REPUBLICADOMINICANA.svg');
-    position: absolute;
-    width: 83vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    z-index: 10
-} */
+
 
