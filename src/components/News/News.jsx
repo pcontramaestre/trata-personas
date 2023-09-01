@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -25,6 +25,14 @@ function convertSize (input) {
 function News ({ news, topSection }) {
   if (!news) return null
 
+  const [statusSheet, setStatusSheet] = useState(() => {
+    return news.articles.map((article, index) => ({
+      position: index,
+      value: false
+    }))
+  })
+
+  // Efecto de entrada de las cartas
   useLayoutEffect(() => {
     const containerAnimation = document.getElementsByName('news' + news.section)[0]
     const elementToMove = document.getElementsByName('cardNews' + news.section)
@@ -47,6 +55,19 @@ function News ({ news, topSection }) {
     return () => ctx.revert()
   }, [])
 
+  function activeSheet (position) {
+    const newStatusSheet = [...statusSheet]
+    newStatusSheet[position].value = true
+    setStatusSheet(newStatusSheet)
+  }
+
+  function desactiveSheet (position) {
+    console.log('estoy fuera')
+    const newStatusSheet = [...statusSheet]
+    newStatusSheet[position].value = false
+    setStatusSheet(newStatusSheet)
+  }
+
   const totalHeight = news.articles.reduce((acc, curr) => Number(acc.split('px')[0]) < Number(curr.position.top.split('px')[0]) ? acc : curr.position.top, news.articles[0].position.top)
 
   const newsBackgroundContainer = {
@@ -58,8 +79,10 @@ function News ({ news, topSection }) {
       {
         news.articles.map((article, index) => (
           <div key={index}>
-            <Card section={news.section} article={article} key={index} totalHeight={totalHeight} footer={news.footerCard} title={news.titleStyles} />
-            <SheetNews hover={article.hover} title={news.titleStylesHover} text={news.textStylesHover} footer={news.footerStyleHover} icon={news.footerIconHover} />
+            <Card activeSheet={activeSheet} index={index} section={news.section} article={article} key={index} totalHeight={totalHeight} footer={news.footerCard} title={news.titleStyles} />
+            {
+              statusSheet[index].value ? <SheetNews status={statusSheet[index]} desactiveSheet={desactiveSheet} hover={article.hover} title={news.titleStylesHover} text={news.textStylesHover} footer={news.footerStyleHover} icon={news.footerIconHover} /> : null
+            }
           </div>
         ))
       }
@@ -67,7 +90,7 @@ function News ({ news, topSection }) {
   )
 }
 
-function Card ({ article, totalHeight, footer, title, section }) {
+function Card ({ article, totalHeight, footer, title, section, activeSheet, index }) {
   const width = convertSize(article.size.width)
   const height = convertSize(article.size.height)
   const top = convertSize((Number(article.position.top.split('px')[0]) - Number(totalHeight.split('px')[0]) + 'px'))
@@ -99,31 +122,20 @@ function Card ({ article, totalHeight, footer, title, section }) {
   }
 
   return (
-    <div name={'cardNews' + section} className={style.NewsArticle} style={articleStyle}>
+    <div onMouseEnter={() => (activeSheet(index))} name={'cardNews' + section} className={style.NewsArticle} style={articleStyle}>
       <p dangerouslySetInnerHTML={{ __html: article.title.text }} style={titleStyle} />
       <label style={footerStyle}>{article.footer.text}</label>
     </div>
   )
 }
 
-function SheetNews ({ hover, title, text, footer, icon }) {
-  const [imageLoaded, setImageLoaded] = useState(false)
-
-  // useEffect(() => {
-  //   const img = new Image()
-  //   img.onload = () => {
-  //     setImageLoaded(true)
-  //   }
-  //   img.src = `./src/assets/News/${hover.backgroundImage}.png`
-  // }, [])
-
+function SheetNews ({ hover, title, text, footer, icon, desactiveSheet, status }) {
   const sheetStyles = {
     width: convertSize(hover.width),
     height: convertSize(hover.height),
     top: convertSize(hover.top),
     left: convertSize(hover.left),
     backgroundImage: `url(${sheets[hover.backgroundImage]})`
-    // backgroundImage: imageLoaded ? `url(${sheets[hover.backgroundImage]})` : 'none'
   }
 
   const titleStyle = {
@@ -175,7 +187,7 @@ function SheetNews ({ hover, title, text, footer, icon }) {
   }
 
   return (
-    <div style={sheetStyles} className={style.NewsArticleHover}>
+    <div style={sheetStyles} className={style.NewsArticleHover} onMouseLeave={() => { desactiveSheet(status.position) }}>
       <h1 style={titleStyle} className={style.titleIntoArticle}>{hover.title.content}</h1>
       <div className={style.vector} />
       <p dangerouslySetInnerHTML={{ __html: hover.text.content }} style={textStyle} className={style.IntoArticle} />
