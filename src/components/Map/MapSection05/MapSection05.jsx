@@ -8,7 +8,7 @@ import { ReactComponent as ArrowHN} from '../../../assets/Section5/mapa/HONDURAS
 import { ReactComponent as ArrowCR} from '../../../assets/Section5/mapa/COSTARICA_Costa.svg'
 import { ReactComponent as ArrowPA} from '../../../assets/Section5/mapa/PANAMA_Panama.svg'
 import { ReactComponent as ArrowDO} from '../../../assets/Section5/mapa/REPUBLICADOMINICANA.svg'
-import "./Mapsection05.css";
+import "./MapSection05.css";
 // import arrowMX from '../../../assets/Section5/mapa/MEXICO_Mexico.svg'
 // import arrowGT from '../../../assets/Section5/mapa/GUATEMALA_Guatemala.svg'
 // import arrowBZ from '../../../assets/Section5/mapa/BELICE_Belice.svg'
