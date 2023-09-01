@@ -52,7 +52,11 @@ function Section8() {
 
   return (
     <div>
-      <section id="section8" style={creditsContainer} className={style.CreditsBackground}>
+      <section
+        id="section8"
+        style={creditsContainer}
+        className={style.CreditsBackground}
+      >
         {images.map((image, index) => (
           <img
             src={imagesList[image.name]}
@@ -101,7 +105,9 @@ function Section8() {
       </section>
       <section className={style.section08}>
         <Corett />
+
         <Countries />
+
         <VideoCorett />
       </section>
     </div>
