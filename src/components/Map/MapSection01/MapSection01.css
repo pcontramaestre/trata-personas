@@ -283,6 +283,9 @@
   background-image: url("../../../assets/Img-Section01/Page05/graficoDO.png");
 }
 
+.cls-7 {
+  fill: #004543 !important;
+}
 
 @media screen and (max-width: 769px) {
   .map__foot {
