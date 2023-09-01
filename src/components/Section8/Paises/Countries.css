@@ -8,7 +8,7 @@
 }
 
 .countries__background {
-  padding:3% 0;
+  padding: 3% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.countries__content{
+.countries__content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -27,7 +27,7 @@
 }
 
 .countries__backgroundrosa {
-    padding:3% 0;
+  padding: 3% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,8 +75,6 @@
 .rosaname {
   color: #ffa0a0;
 }
-
-
 
 @media screen and (max-width: 720px) {
   .countries__background {
