@@ -4,13 +4,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import NoteBook from '../NoteBook/NoteBook'
 // import BarGraph from '../BarGraph/BarGraph'
-// import Map from '../Map/Map'
 import MapSection05 from '../Map/MapSection05/MapSection05'
 // import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section5.module.css'
 
-import background from '../../assets/Section5/frontPageBackground.png'
+import background from '../../assets/Section5/frontPageBackgroundOrange.png'
+import frontPageStreet from '../../assets/Section5/frontPageStreet.png'
+import frontPageHouses from '../../assets/Section5/frontPageHouses.png'
 import person1 from '../../assets/Section5/frontPagePerson1.png'
 import person2 from '../../assets/Section5/frontPagePerson2.png'
 import person3 from '../../assets/Section5/frontPagePerson3.png'
@@ -31,10 +32,12 @@ import animationBackground from '../../assets/Section5/animationBackground.png'
 gsap.registerPlugin(ScrollTrigger)
 
 const { repatriation } = data
-const { noteBook, map, animation } = data.repatriation
+const { noteBook, animation } = data.repatriation
 
 const images = {
   background,
+  frontPageStreet,
+  frontPageHouses,
   person1,
   person2,
   person3,
@@ -67,12 +70,7 @@ function relativeMedition (input) {
 
 function Section5 () {
   useLayoutEffect(() => {
-    const containerSection = document.querySelector('#section5')
-    const containerAnimation = document.getElementsByName('busPlaneContainer')[0]
-    const plane = document.getElementsByName('plane')[0]
-    const bus = document.getElementsByName('bus')[0]
-
-    const percentageStart = window.innerWidth * (-0.0389) + 62.18
+    // const percentageStart = window.innerWidth * (-0.0389) + 62.18
     function move (input) {
       const n = Number(input.split('px')[0])
       const r = window.innerWidth * (n / 1920)
@@ -80,19 +78,50 @@ function Section5 () {
     }
 
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
+      // Animation FrontPage
+      const tl1 = gsap.timeline({
         scrollTrigger: {
-          trigger: containerAnimation,
-          // markers: true,
-          start: `16% ${percentageStart < 0 ? 0 : percentageStart}%`,
-          end: '+=6000 bottom',
-          pin: containerSection,
-          scrub: true
+          trigger: '#backgroundsection5',
+          markers: true,
+          start: '10% top',
+          end: '+=5000 bottom',
+          pin: '#section5',
+          scrub: 1,
+          onLeave: () => {
+            const scrollTriggerPlaneBusSection5 = ScrollTrigger.getById('plane&bus')
+            scrollTriggerPlaneBusSection5.refresh()
+          },
+          id: 'frontPageSection5'
+        }
+      })
+      tl1.from('#frontPageStreetsection5', { top: '100%' })
+      tl1.from('#frontPageHousessection5', { top: '100%' })
+      tl1.from('#person1section5', { left: '100%' })
+      tl1.from('#person2section5', { left: () => -document.querySelector('#person2section5').clientWidth })
+      tl1.from('#person3section5', { left: () => -document.querySelector('#person3section5').clientWidth })
+      tl1.from('#person4section5', { left: () => -document.querySelector('#person4section5').clientWidth })
+      tl1.from('#person5section5', { left: () => -document.querySelector('#person5section5').clientWidth })
+
+      // Animation Plane & Bus
+      const scrollTriggerFrontPageSection5 = ScrollTrigger.getById('frontPageSection5')
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#busPlaneContainerSection5',
+          markers: true,
+          start: () => {
+            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + ' top'
+          },
+          end: () => {
+            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'
+          },
+          pin: '#section5',
+          scrub: 1,
+          id: 'plane&bus'
         }
       })
 
-      tl.to(plane, { left: move('294px') })
-      tl.to(bus, { left: move('75px') }, 0)
+      tl2.to('#planesection5', { left: move('294px') })
+      tl2.to('#bussection5', { left: move('75px') }, 0)
     })
 
     return () => ctx.revert()
@@ -128,7 +157,7 @@ function Section5 () {
     <section id='section5' className={style.RepatriationBackground} style={repatriationCotainer}>
       {
         repatriation.image.map((photo, index) => (
-          <img src={images[photo.name]} style={imagesStyles[index]} className={style.RepatriationImages} key={photo.name + index} />
+          <img id={photo.name + 'section5'} src={images[photo.name]} style={imagesStyles[index]} className={style.RepatriationImages} key={photo.name + index} />
         ))
       }
       {
@@ -190,10 +219,10 @@ function Animation () {
   })
 
   return (
-    <div name='busPlaneContainer' style={animationContainerStyles} className={style.animationContainer}>
+    <div id='busPlaneContainerSection5' style={animationContainerStyles} className={style.animationContainer}>
       {
         animation.images.map((image, index) => (
-          <div name={image.name} className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
+          <div id={image.name + 'section5'} className={style.animationPictures} style={picturesStyles[index]} key={image.name + index}>
             {
               image.text.listText.map((content, index) => (
                 <label style={stylesText[image.name][index]} key={content.content + index}>{content.content}</label>
