@@ -40,7 +40,7 @@ function Section7 () {
         y: '50%',
         scrollTrigger: {
           trigger: '#title1Section7',
-          markers: true,
+          // markers: true,
           start: 'top center',
           end: 'bottom center',
           scrub: 10
