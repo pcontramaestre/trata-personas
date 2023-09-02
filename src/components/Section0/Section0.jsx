@@ -85,19 +85,6 @@ function Section0 () {
         x: () => -document.querySelector('#personsection0').clientWidth,
         ease: 'sine.in'
       }, 0)
-      // gsap.to('#puppetContainerSection0', {
-      // y: '-20%',
-      // ease: 'back.in(1.7)',
-      //   scrollTrigger: {
-      //     trigger: '#backgroundsection0',
-      //     markers: true,
-      //     start: 'top top',
-      //     end: '2000 bottom',
-      //     scrub: 1,
-      //     pin: '#section0',
-      //     id: 'puppetSection0ScrollTrigger'
-      //   }
-      // })
     })
     return () => ctx.revert()
   }, [])
