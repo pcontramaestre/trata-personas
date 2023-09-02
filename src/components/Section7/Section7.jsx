@@ -12,6 +12,8 @@ import data from '../../../troy.json'
 import FrontPageSection7 from './FrontPageSection7/FrontPageSection7'
 import HandSlide from '../Slides/HandSlide/HandSlide'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const icons = {
   background,
   persons,
