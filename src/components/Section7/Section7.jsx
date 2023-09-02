@@ -9,9 +9,8 @@ import persons from '../../assets/Section7/frontPagePersons.png'
 import scroll2 from '../../assets/Section7/scroll2.svg'
 
 import data from '../../../troy.json'
+import FrontPageSection7 from './FrontPageSection7/FrontPageSection7'
 import HandSlide from '../Slides/HandSlide/HandSlide'
-
-gsap.registerPlugin(ScrollTrigger)
 
 const icons = {
   background,
@@ -31,31 +30,37 @@ function relativeMedition (input) {
 }
 
 const { interestingEvents } = data
-const { handSlide } = data.interestingEvents
+const { handSlide, forntPageImages } = data.interestingEvents
 
 function Section7 () {
   useLayoutEffect(() => {
-    const containerSection = document.querySelector('#section7')
-    const containerAnimation = document.getElementsByName('HandSlideContainer')[0]
-    const elementToMove = document.getElementsByName('HandSlideContainerCards')[0]
-
-    const widthAnimationContainer = containerAnimation.offsetWidth
-    const widthElementToMove = elementToMove.offsetWidth
-
-    const percentageStart = window.innerWidth * (-0.046875) + 95
-
     const ctx = gsap.context(() => {
-      gsap.to(elementToMove, {
-        right: widthElementToMove - widthAnimationContainer,
+      // Animation Titles
+      gsap.to('#title1Section7', {
+        y: '50%',
         scrollTrigger: {
-          trigger: containerAnimation,
-          // markers: true,
-          start: `top ${percentageStart < 0 ? 0 : percentageStart}%`,
-          end: '+=6000 bottom',
-          pin: containerSection,
-          scrub: true
+          trigger: '#title1Section7',
+          markers: true,
+          start: 'top center',
+          end: 'bottom center',
+          scrub: 10
         }
       })
+      // ScrollTrigger.create({
+      //   trigger: '#title1Section7',
+      //   markers: true,
+      //   start: 'bottom center',
+      //   end: '+=10 center',
+      //   // start: () => {
+      //   //   return scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + ' 20%'
+      //   // },
+      //   // end: () => {
+      //   //   return (scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + 4000) + ' bottom'
+      //   // },
+      //   pin: '#title1Section7',
+      //   // scrub: true,
+      //   id: 'animationTitle1Section7'
+      // })
     })
 
     return () => ctx.revert()
@@ -94,13 +99,21 @@ function Section7 () {
   return (
     <section id='section7' className={style.InterestingEventsBackground} style={interestingEventsContainer}>
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
+      <FrontPageSection7 forntPageImages={forntPageImages} />
       {
         interestingEvents.images.map((image, index) => (
-          <img src={image && icons[image.name]} className={image.name === 'scroll2' ? style.scroll2 : null} style={iconStyles[index]} key={image.name + index} />
+          <img id={image.name + 'section7'} src={image && icons[image.name]} className={image.name === 'scroll2' ? style.scroll2 : null} style={iconStyles[index]} key={image.name + index} />
         ))
       }
+
+      <div id='title1Section7' className={style.title1Section7}>
+        <h1 className={style.InterestingEventsText} style={textStyles[0]}>{interestingEvents.text[0].content}</h1>
+        <h1 className={style.InterestingEventsText} style={textStyles[1]}>{interestingEvents.text[1].content}</h1>
+      </div>
+
       {
         interestingEvents.text.map((texto, index) => {
+          if (index < 2) return null
           switch (texto.tag) {
             case 'h1': {
               return <h1 className={style.InterestingEventsText} style={textStyles[index]} key={index}>{texto.content}</h1>
