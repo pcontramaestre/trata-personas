@@ -79,43 +79,18 @@ function convertSize(input) {
   return r;
 }
 
-// function createAnimationTimeline(ref) {
-//   const tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ref.current,
-//       start: "top center",
-//       end: "center center",
-//       scrub: true,
-//     },
-//   });
-
-//   tl.fromTo(
-//     ref.current,
-//     {
-//       opacity: 0,
-//       x: "-100%",
-//     },
-//     {
-//       opacity: 1,
-//       x: "0%",
-//     }
-//   );
-
-//   return tl;
-// }
-
 function Section3() {
-  const imgRef = useRef(null); // Crea una referencia única para cada imagen
-  const containerRowRef = useRef(null); // Crea una referencia única para cada elemento
+  const imgRefs = useRef([]); // Create an array of refs for images
+  const containerRowRefs = useRef([]); // Create an array of refs for rows
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animación para el texto
+    // Animations for rows
     rows.forEach((row, index) => {
       const containerRowTl = gsap.timeline({
         scrollTrigger: {
-          trigger: containerRowRef.current,
+          trigger: containerRowRefs.current[index], // Use the specific ref for this row
           start: "top center",
           end: "center center",
           scrub: true,
@@ -123,7 +98,7 @@ function Section3() {
       });
 
       containerRowTl.fromTo(
-        containerRowRef.current,
+        containerRowRefs.current[index], // Use the specific ref for this row
         {
           opacity: 0,
           x: "-100%",
@@ -135,19 +110,19 @@ function Section3() {
       );
     });
 
-    // Animación para la imagen
+    // Animations for images
     images.forEach((image, index) => {
       const imgTl = gsap.timeline({
         scrollTrigger: {
-          trigger: imgRef.current,
+          trigger: imgRefs.current,
           start: "top center",
           end: "bottom center",
           scrub: true,
         },
       });
-
+    
       imgTl.fromTo(
-        imgRef.current,
+        imgRefs.current,
         {
           x: "100%",
           opacity: 0,
@@ -341,20 +316,32 @@ function Section3() {
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
-      {
-        rows.map((row, index) => (
-          <div ref={containerRowRef} className={style.containerRow} style={rowsStyles[index]} key={"rows" + index}>
-            <p className={style.contentrow} style={rowsTextStyles[index]}>{row.text.content}</p>
-            <img className={style.contentrow} src={imagesList[row.image.name]} style={rowsImageStyles[index]} alt="" />
-            <h1 className={style.contentrow} style={rowsNumberStyles[index]}>{row.number.content}</h1>
-          </div>
-        )) 
-      }
+      {rows.map((row, index) => (
+        <div
+          ref={(el) => (containerRowRefs.current[index] = el)}
+          className={style.containerRow}
+          style={rowsStyles[index]}
+          key={"rows" + index}
+        >
+          <p className={style.contentrow} style={rowsTextStyles[index]}>
+            {row.text.content}
+          </p>
+          <img
+            className={style.contentrow}
+            src={imagesList[row.image.name]}
+            style={rowsImageStyles[index]}
+            alt=""
+          />
+          <h1 className={style.contentrow} style={rowsNumberStyles[index]}>
+            {row.number.content}
+          </h1>
+        </div>
+      ))}
       {images.map((image, index) => (
         <img
           id={listImageHover.includes(image.name) ? image.name : null}
           name={image.grupo ? image.grupo : null}
-          src={image && imagesList[image.name]}
+          src={imagesList[image.name]}
           style={imagesStyles[index]}
           className={
             listImageFrontPage.includes(image.name)
@@ -362,7 +349,7 @@ function Section3() {
               : style.ProtectionCareImages
           }
           key={image.name + index}
-          ref={image.name === "rightHand" ? imgRef : null}
+          ref={image.name === "rightHand" ? imgRefs : null} // Asigna la referencia solo a la mano derecha
         />
       ))}
       {icons.map((icon, index) => (

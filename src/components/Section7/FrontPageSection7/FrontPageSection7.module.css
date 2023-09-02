@@ -5,3 +5,7 @@
 .FrontPageSection7Container img{
     position: absolute;
 }
+
+.persons {
+    transform: scale(0.8);
+}

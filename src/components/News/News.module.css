@@ -7,7 +7,7 @@
 
 .NewsArticle {
     position: absolute;
-    background-image: url('../../assets/News/backgroundArticle.svg');
+    background-image: url('../../assets/News/backgroundArticle.png');
     background-size: cover;
     background-position: center;
 }
@@ -25,23 +25,16 @@
     position: absolute;
 }
 
-.NewsArticle:hover + .NewsArticleHover {
-    display: flex;
-}
-
-.NewsArticleHover:hover {
-    display: flex;
-}
-
 .NewsArticleHover {
     position: absolute;
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 1;
+    opacity: 1;
 }
 
 .titleIntoArticle {
