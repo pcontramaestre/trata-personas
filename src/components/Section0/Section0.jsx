@@ -64,7 +64,7 @@ function Section0 () {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: '#backgroundsection0',
-          markers: true,
+          // markers: true,
           start: 'top top',
           end: '2000 bottom',
           scrub: 1,
