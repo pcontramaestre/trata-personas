@@ -30,6 +30,14 @@
     animation: upAndDrown 1s infinite alternate ease-in-out;
 }
 
+.containerPuppet {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
 @keyframes upAndDrown {
     to {
         transform: translateY(-1.5vw);
