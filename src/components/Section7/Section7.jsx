@@ -12,6 +12,8 @@ import data from '../../../troy.json'
 import FrontPageSection7 from './FrontPageSection7/FrontPageSection7'
 import HandSlide from '../Slides/HandSlide/HandSlide'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const icons = {
   background,
   persons,
@@ -40,7 +42,7 @@ function Section7 () {
         y: '50%',
         scrollTrigger: {
           trigger: '#title1Section7',
-          markers: true,
+          // markers: true,
           start: 'top center',
           end: 'bottom center',
           scrub: 10

@@ -32,7 +32,7 @@ function FrontPageSection7 ({ forntPageImages }) {
         zIndex: 4,
         scrollTrigger: {
           trigger: '#backgroundsection7',
-          markers: true,
+          // markers: true,
           start: '20% top',
           end: '+=2000 bottom',
           pin: '#section7',

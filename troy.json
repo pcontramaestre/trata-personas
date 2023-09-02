@@ -1556,6 +1556,24 @@
         "objectPosition": "center"
       },
       {
+        "name": "frontPageHouses",
+        "width": "1920px",
+        "height": "802px",
+        "top": "54995px",
+        "left": "0px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
+        "name": "frontPageStreet",
+        "width": "1920px",
+        "height": "861px",
+        "top": "55515px",
+        "left": "0px",
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      {
         "name": "person1",
         "width": "444px",
         "height": "882px",
