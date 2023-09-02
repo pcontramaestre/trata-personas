@@ -82,7 +82,7 @@ function Section5 () {
       const tl1 = gsap.timeline({
         scrollTrigger: {
           trigger: '#backgroundsection5',
-          markers: true,
+          // markers: true,
           start: '10% top',
           end: '+=5000 bottom',
           pin: '#section5',
@@ -107,7 +107,7 @@ function Section5 () {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: '#busPlaneContainerSection5',
-          markers: true,
+          // markers: true,
           start: () => {
             return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + ' top'
           },
