@@ -166,6 +166,13 @@
       "width": "2047px",
       "height": "1824px"
     },
+    "containerPuppet": {
+      "name": "puppetContainer",
+      "width": "1215px",
+      "height": "2708px",
+      "top": "-1448px",
+      "left": "620px"
+    },
     "images": [
       {
         "name": "background",
@@ -191,7 +198,6 @@
         "height": "1354px",
         "top": "-94px",
         "left": "620px",
-        "position": "absolute",
         "objectPosition": "center"
       },
       {

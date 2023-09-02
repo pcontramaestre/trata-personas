@@ -62,7 +62,6 @@ function News ({ news, topSection }) {
   }
 
   function desactiveSheet (position) {
-    console.log('estoy fuera')
     const newStatusSheet = [...statusSheet]
     newStatusSheet[position].value = false
     setStatusSheet(newStatusSheet)
