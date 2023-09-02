@@ -1,3 +1,7 @@
+import { useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger, CustomEase } from 'gsap/all'
+
 import NoteBook from '../NoteBook/NoteBook'
 import News from '../News/News'
 import Map from '../Map/Map'
@@ -15,6 +19,9 @@ import person from '../../assets/Section0/frontPagePersonAhead.png'
 import puppet from '../../assets/Section0/frontPagePuppet.png'
 
 import data from '../../../troy.json'
+
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(CustomEase)
 
 const icons = {
   logo,
@@ -36,6 +43,65 @@ function convertSize (input) {
 }
 
 function Section0 () {
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // Puppet entrance animation
+      const tl = gsap.timeline({ delay: 1 })
+      tl.from('#puppetContainerSection0', {
+        left: '100%',
+        duration: 0.5
+      })
+      tl.fromTo('#puppetContainerSection0', {
+        rotation: -30,
+        duration: 2.5
+      }, {
+        rotation: 0,
+        duration: 2.5,
+        ease: 'elastic.out(1, 0.3)'
+      }, 0.2)
+
+      // Move Puppet
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#backgroundsection0',
+          markers: true,
+          start: 'top top',
+          end: '2000 bottom',
+          scrub: 1,
+          pin: '#section0',
+          id: 'puppetSection0ScrollTrigger'
+        }
+      })
+      tl2.to('#puppetContainerSection0', {
+        y: '-20%',
+        ease: 'back.in(1.7)'
+      })
+      tl2.from('#peoplesection0', {
+        x: '-5%',
+        ease: 'sine.in',
+        opacity: 0
+      }, 0)
+      tl2.from('#personsection0', {
+        x: () => -document.querySelector('#personsection0').clientWidth,
+        ease: 'sine.in'
+      }, 0)
+      // gsap.to('#puppetContainerSection0', {
+      // y: '-20%',
+      // ease: 'back.in(1.7)',
+      //   scrollTrigger: {
+      //     trigger: '#backgroundsection0',
+      //     markers: true,
+      //     start: 'top top',
+      //     end: '2000 bottom',
+      //     scrub: 1,
+      //     pin: '#section0',
+      //     id: 'puppetSection0ScrollTrigger'
+      //   }
+      // })
+    })
+    return () => ctx.revert()
+  }, [])
+
   const homeHeaderContainer = {
     height: convertSize(homeHeader.size.height)
   }
@@ -63,13 +129,26 @@ function Section0 () {
     top: convertSize('5503px')
   }
 
+  const puppetContainerStyles = {
+    ...homeHeader.containerPuppet,
+    top: convertSize(homeHeader.containerPuppet.top),
+    left: convertSize(homeHeader.containerPuppet.left),
+    width: convertSize(homeHeader.containerPuppet.width),
+    height: convertSize(homeHeader.containerPuppet.height)
+  }
+
   return (
     <section id='section0' className={style.HomeHeaderBackground} style={homeHeaderContainer}>
       {
         homeHeader.images.map((image, index) => (
-          <img src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
+          image.name !== 'puppet'
+            ? <img id={image.name + 'section0'} src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
+            : null
         ))
       }
+      <div id='puppetContainerSection0' style={puppetContainerStyles} className={style.containerPuppet}>
+        <img src={puppet} className={style.HomeHeaderImages} style={iconStyles[2]} />
+      </div>
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {
