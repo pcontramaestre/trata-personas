@@ -55,13 +55,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 50%;
+  height: 80%;
   width: 38vw;
 }
 
 .circlegraph__percentage1 {
   color: #1a6063;
-  width: 40%;
+  width: 45%;
   text-align: start;
   font-family: Formula Condensed;
   font-size: 7vh;
@@ -94,10 +94,10 @@
 }
 
 .circlegraph__p {
-  width: 25vw;
+  width: 23vw;
   color: #1a6063;
   font-family: "Inter", sans-serif;
-  font-size: 3.2vh;
+  font-size: 2.5vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -106,7 +106,7 @@
 .circlegraph__p strong {
   color: #1a6063;
   font-family: "Inter", sans-serif;
-  font-size: 3.2vh;
+  font-size: 2.5vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -124,6 +124,7 @@
 }
 
 .circlegraph__img {
+  margin: 0 5vw;
   width: 26vw;
 }
 
@@ -137,14 +138,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 98%;
+  height: 96.5%;
   list-style: none;
   /* margin: 0; */
   /* padding: 0 10px; */
 }
 
 .list__color1 {
-  border-radius: 50%;
+  border-radius: 45px;
   margin-top: 1vh;
   width: 3vw;
   height: 2vh;
@@ -152,14 +153,14 @@
 }
 
 .list__color2 {
-  border-radius: 50%;
+  border-radius: 45px;
   width: 3vw;
   height: 2vh;
   background: #df6441;
 }
 
 .list__color3 {
-  border-radius: 50%;
+  border-radius: 45px;
   width: 3vw;
   height: 2vh;
   background: #dea956;

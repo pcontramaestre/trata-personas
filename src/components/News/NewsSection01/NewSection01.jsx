@@ -23,7 +23,7 @@ const NewSection01 = () => {
       x: "0%",
       stagger: 0.5, // Retraso entre animaciones individuales
       ease: "power2.out", // Easing de la animación
-      duration: 10, // Duración de la animación
+      duration: 5, // Duración de la animación
       scrollTrigger: {
         trigger: '.news__content', // Elemento que desencadena el ScrollTrigger
         start: 'top 90%', // Comienza la animación cuando el 80% superior del elemento es visible
