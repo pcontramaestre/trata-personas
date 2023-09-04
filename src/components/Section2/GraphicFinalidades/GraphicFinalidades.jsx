@@ -43,7 +43,7 @@ const GraphicFinalidades = () => {
           </div>
           <div className="finalidadmatrimonio">
             <div className="finalidadmatrimonio__content">
-              <h1 className="ilicitatitle">{page3.text6}</h1>
+              <h1 className="adopciontitle">{page3.text6}</h1>
               <p className="finalidad__percentagegold">{page3.percentage6}</p>
             </div>
           </div>

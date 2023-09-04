@@ -20,14 +20,13 @@ function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-
     gsap
       .timeline({
         scrollTrigger: {
           trigger: ".animations__sliders",
           pin: ".twoslider",
           start: "top top",
-          end:'.endslider',
+          end: ".endslider",
           scrub: 5,
         },
         defaults: { duration: 1, ease: "none" },
@@ -100,7 +99,6 @@ function Section1() {
       </section>
       <div className="separadorslider" />
       <InfoConsentimiento />
-
     </section>
   );
 }
