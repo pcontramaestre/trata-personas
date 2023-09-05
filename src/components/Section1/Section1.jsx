@@ -23,7 +23,6 @@ function Section1() {
 
   const toggleSlider = () => {
     setIsSliderOpen(!isSliderOpen);
-    console.log("hola grupo");
     if (!isSliderOpen) {
       // Si el slider está cerrado, abrirlo
       gsap.to(".text", { left: 0, duration: 0.5, ease: "ease-in-out" });
@@ -41,6 +40,18 @@ function Section1() {
         ease: "ease-in-out",
       });
     }
+  };
+
+  const sliderReverse = () => {
+    console.log("anda");
+    // Esta función cierra el slider y revierte las animaciones
+    gsap.to(".text", { left: "-100%", duration: 0.5, ease: "ease-in-out" });
+    gsap.to(".slidercircle", {
+      right: 0,
+      duration: 0.5,
+      ease: "ease-in-out",
+    });
+    setIsSliderOpen(false);
   };
 
   return (
@@ -63,7 +74,7 @@ function Section1() {
       <section className="animations__sliders">
         <section className="twoslider">
           <div className="text">
-            <CircleGraphSlider />
+            <CircleGraphSlider sliderReverse={sliderReverse} />
           </div>
           <div className="slidercircle">
             <CircleGraph02 toggleSlider={toggleSlider} />

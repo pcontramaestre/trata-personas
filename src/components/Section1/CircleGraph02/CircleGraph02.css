@@ -15,8 +15,6 @@
   align-items: center;
 }
 
-
-
 .circlegraph02__box {
   display: flex;
   height: 90%;
@@ -66,6 +64,9 @@
 
 .buttonslider {
   border: none;
+  outline: none;
+  position: absolute;
+  right: 5vw;
   height: 4vw;
   width: 2vw;
   background-size: contain;
@@ -73,8 +74,21 @@
   background-image: url("../../../assets/Img-Section01/Page09/hand.svg");
   background-color: transparent;
   background-repeat: no-repeat;
+  padding: 0;
 }
+
+.buttonslider:focus {
+  outline: none;
+}
+
+.onclick {
+  rotate: 180deg;
+  right: 5vw;
+  bottom: 0;
+}
+
 .buttonslider:hover {
+  border: none;
   padding: none;
   cursor: pointer;
   margin: none;

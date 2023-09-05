@@ -5,9 +5,15 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.hamburger-icon{
+  position: relative;
+  z-index: 100;
+}
+
 .hamburger-icon img {
   position: fixed;
-  z-index: 99 !important;
+  z-index: 10;
   left: 94vw;
   top: 3vw;
   cursor: pointer;
