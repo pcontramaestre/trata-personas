@@ -78,10 +78,10 @@ function convertSize(input) {
   const r = (n * 100) / 1920 + "vw";
   return r;
 }
-
 function Section3() {
   const imgRefs = useRef([]); // Create an array of refs for images
   const containerRowRefs = useRef([]); // Create an array of refs for rows
+  const textRef = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -133,6 +133,29 @@ function Section3() {
         }
       );
     });
+
+// Animations for text
+    const textTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+            scrub: true, // Hace que la animación sea suave mientras se desplaza
+            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          },
+        });
+    
+        textTl.fromTo(
+          textRef.current,
+          {
+            x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+          },
+          {
+            x: "0%", // Lleva el elemento a su posición original (0%)
+            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+          }
+        );
   }, []);
 
   const [nameBigCard, setNameBigCard] = useState("");
@@ -309,6 +332,8 @@ function Section3() {
   ];
 
   const listImageFrontPage = ["leftHand", "bars", "rightHand"];
+  const animationText = data.protectionAndCare.animationText;
+  
 
   return (
     <section
@@ -316,6 +341,12 @@ function Section3() {
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
+      <div className={style.animationText1} ref={textRef}>
+        <p className={style.text1}>{animationText.text1} <strong className={style.textStrong}>{animationText.textStrong}</strong>{animationText.text4} </p>
+        <h2 className={style.text3}>{animationText.text3}</h2>
+        <p className={style.text2}>{animationText.text2}</p>
+      </div>
+      
       {rows.map((row, index) => (
         <div
           ref={(el) => (containerRowRefs.current[index] = el)}
@@ -407,7 +438,7 @@ function Section3() {
           key={infoBox.name + index}
         />
       ))}
-      <BigCard
+      <BigCard id="BigCardProtection"
         bigCard={bigCard}
         topSection={protectionAndCare.top}
         name={nameBigCard}
