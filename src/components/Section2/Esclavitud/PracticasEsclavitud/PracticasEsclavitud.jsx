@@ -48,10 +48,27 @@ const PracticasEsclavitud = ({ page11 }) => {
                 />
               </div>
 
-              <p
-                className={`practicashover${e.id} `}
-                dangerouslySetInnerHTML={{ __html: e.itemcontent }}
-              ></p>
+              <div className={`practicashover${e.id} `}>
+                {e.id === 4 ? (
+                  <div className="practicashover__arrows">
+                    <ul className="listarrows">
+                      <li className="arrowpracticas arrowone"></li>
+                      <li className="arrowpracticas arrowtwo"></li>
+                      <li className="arrowpracticas arrowthree"></li>
+                      
+                    </ul>
+                    <p
+                      // className={`practicashover${e.id} `}
+                      dangerouslySetInnerHTML={{ __html: e.itemcontent }}
+                    ></p>
+                  </div>
+                ) : (
+                  <p
+                    // className={`practicashover${e.id} `}
+                    dangerouslySetInnerHTML={{ __html: e.itemcontent }}
+                  />
+                )}
+              </div>
             </div>
           </div>
         ))}

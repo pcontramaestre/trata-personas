@@ -9,7 +9,7 @@ import style from "./Section1.module.css";
 import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
 import Women from "./Women/Women";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import WomenSlider from "../Section1/WomenSlider/WomenSlider";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -19,47 +19,78 @@ import InfoConsentimiento from "./InfoConsentimiento/InfoConsentimiento";
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
   gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".animations__sliders",
-          pin: ".twoslider",
-          start: "top top",
-          end: ".endslider",
-          scrub: 5,
-        },
-        defaults: { duration: 1, ease: "none" },
-      })
-      .to(".slidercircle", { xPercent: 100 })
-      .to(".text", { xPercent: 100 }, 0)
-      .from(
-        ".text .CircleGraph__slider",
-        { opacity: 1, x: "-=100", duration: 0.5 },
-        0.5
-      );
-  }, []);
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [isWomenSliderOpen, setIsWomenSliderOpen] = useState(false);
 
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".threeslider",
-          pin: true,
-          start: "top top",
-          end: ".endslider",
-          scrub: 5,
-        },
-        defaults: { duration: 1, ease: "none" },
-      })
-      .to(".womenslider-gsap", { xPercent: 100 })
-      .to(".text-women", { xPercent: 100 }, 0)
-      .from(
-        ".text-women .womenslider-gsap",
-        { opacity: 1, x: "-=120", duration: 0.5 },
-        0.5
-      );
-  }, []);
+  const toggleSlider = () => {
+    setIsSliderOpen(!isSliderOpen);
+    if (!isSliderOpen) {
+      // Si el slider está cerrado, abrirlo
+      gsap.to(".text", { left: 0, duration: 0.5, ease: "ease-in-out" });
+      gsap.to(".slidercircle", {
+        right: "-100%",
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+    } else {
+      // Si el slider está abierto, cerrarlo
+      gsap.to(".text", { left: "-100%", duration: 0.5, ease: "ease-in-out" });
+      gsap.to(".slidercircle", {
+        right: 0,
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+    }
+  };
+
+  const sliderReverse = () => {
+    gsap.to(".text", { left: "-100%", duration: 0.5, ease: "ease-in-out" });
+    gsap.to(".slidercircle", {
+      right: 0,
+      duration: 0.5,
+      ease: "ease-in-out",
+    });
+    setIsSliderOpen(false);
+  };
+
+  const toggleWomenSlider = () => {
+    setIsWomenSliderOpen(!isWomenSliderOpen);
+    if (!isWomenSliderOpen) {
+      // Si el slider está cerrado, abrirlo
+      gsap.to(".text-women", { left: 0, duration: 0.5, ease: "ease-in-out" });
+      gsap.to(".womenslider-gsap", {
+        right: "-100%",
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+    } else {
+      // Si el slider está abierto, cerrarlo
+      gsap.to(".text-women", {
+        left: "-100%",
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+      gsap.to(".womenslider-circle", {
+        right: 0,
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+    }
+  };
+
+  const reverseWomenSlider = () => {
+    gsap.to(".text-women", {
+      left: "-100%",
+      duration: 0.5,
+      ease: "ease-in-out",
+    });
+    gsap.to(".womenslider-gsap", {
+      right: 0,
+      duration: 0.5,
+      ease: "ease-in-out",
+    });
+    setIsWomenSliderOpen(false);
+  };
 
   return (
     <section id="section1" className={style.Section1}>
@@ -81,18 +112,18 @@ function Section1() {
       <section className="animations__sliders">
         <section className="twoslider">
           <div className="text">
-            <CircleGraphSlider />
+            <CircleGraphSlider sliderReverse={sliderReverse} />
           </div>
           <div className="slidercircle">
-            <CircleGraph02 />
+            <CircleGraph02 toggleSlider={toggleSlider} />
           </div>
         </section>
         <section className="threeslider">
           <div className="text-women">
-            <WomenSlider />
+            <WomenSlider reverseWomenSlider={reverseWomenSlider} />
           </div>
           <div className="womenslider-gsap">
-            <Women />
+            <Women toggleWomenSlider={toggleWomenSlider} />
           </div>
         </section>
         <div className="endslider"></div>

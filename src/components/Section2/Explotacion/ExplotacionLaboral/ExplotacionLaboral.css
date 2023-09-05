@@ -39,14 +39,15 @@
   height: 80vh;
 }
 
-.laboralsectiongraphic:hover + .laboral__graphicquemado{
+.laboralsectiongraphic:hover + .laboral__graphicquemado {
   display: flex;
+  cursor: pointer !important;
 }
 
-.laboral__graphicquemado:hover{
+.laboral__graphicquemado:hover {
   display: flex;
+  cursor: pointer !important;
 }
-
 
 .laboral__img {
   top: 10vw;
