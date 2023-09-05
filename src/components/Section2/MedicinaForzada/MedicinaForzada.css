@@ -58,10 +58,12 @@
 .pills__img:hover + .medicina__graficoquemado{
   display: flex;
   z-index: 22;
+  cursor: pointer;
 }
 
 .medicina__graficoquemado:hover{
   display: block;
+  cursor: pointer;
   z-index: 99;
 }
 

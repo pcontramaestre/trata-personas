@@ -56,11 +56,13 @@
   height: 80vh;
 }
 
-.adopcion__img:hover + .adopciongraphic{
-display: flex;
+.adopcion__img:hover + .adopciongraphic {
+  cursor: pointer;
+  display: flex;
 }
 
-.adopciongraphic:hover{
+.adopciongraphic:hover {
+  cursor: pointer;
   display: flex;
 }
 

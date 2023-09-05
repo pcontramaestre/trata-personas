@@ -2,7 +2,7 @@ import React from "react";
 import "./CircleGraphSlider.css";
 import data from "../../../../trataSection01.json";
 
-const CircleGraphSlider = () => {
+const CircleGraphSlider = ({toggleSlider}) => {
   const page9 = data[0].visibilizacion_victimas.page9;
   const percentages = page9.onslider;
   const numberPercentage = [
@@ -85,6 +85,7 @@ const CircleGraphSlider = () => {
               <h5 className="ninoninafoot">{page9.onslider.foot2}</h5>
             </div>
           </div>
+          <button toggleSlider={toggleSlider}></button>
         </div>
       </div>
     </div>

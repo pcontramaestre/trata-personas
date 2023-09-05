@@ -221,21 +221,25 @@
   height: 100%;
 }
 
-.text-women {
+.slidercircle {
   position: absolute;
+  transition: right 0.5s ease;
   top: 0;
-  left: -100%;
+  /* left: 0; */
   width: 100%;
   height: 100%;
 }
 
-.slidercircle {
+.text-women {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
+  transition: left 0.5s ease;
   width: 100%;
   height: 100%;
 }
+
+
 
 .womenslider-gsap {
   position: absolute;

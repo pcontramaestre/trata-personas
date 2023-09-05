@@ -34,6 +34,7 @@
 .map__content {
   display: flex;
   position: relative;
+  justify-content: center;
   margin-top: 20px;
   width: 100vw;
   height: 120%;
@@ -47,49 +48,77 @@
 }
 
 #MX02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 #GT02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 #BZ02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 #SV02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
 #NI02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
 #CR02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
+  stroke: #13f8fd !important;
+}
+
+#CR02 polygon:hover {
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
 #PA02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
 .SV02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
+  stroke: #13f8fd !important;
+}
+
+#DO02 path:hover {
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
 .DO02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
 .HN02:hover {
-  stroke-width: 10px !important;
+  cursor: pointer;
+  stroke-width: 7px !important;
+  stroke: #13f8fd !important;
+}
+
+#HN02 polygon:hover {
+  cursor: pointer;
+  stroke-width: 7px !important;
   stroke: #13f8fd !important;
 }
 
@@ -127,7 +156,7 @@
 .map__foot {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 30%;
   align-items: center;
   align-content: center;
   position: absolute;

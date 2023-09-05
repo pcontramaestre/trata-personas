@@ -15,6 +15,8 @@
   align-items: center;
 }
 
+
+
 .circlegraph02__box {
   display: flex;
   height: 90%;
@@ -56,6 +58,28 @@
   background-image: url("../../../assets/Img-Section01/Page09/onSlider/graficocircular.png");
 }
 
+.circlegraph02__handslider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonslider {
+  border: none;
+  height: 4vw;
+  width: 2vw;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../../../assets/Img-Section01/Page09/hand.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+.buttonslider:hover {
+  padding: none;
+  cursor: pointer;
+  margin: none;
+}
+
 .circlegraph02__number {
   font-family: Formula Condensed;
   font-size: 7vh;
@@ -67,13 +91,12 @@
   margin: 0;
 }
 
-.numbers__content-circle{
+.numbers__content-circle {
   display: flex;
   flex-direction: column;
-
 }
 
-.circlenumbers__content{
+.circlenumbers__content {
   position: absolute;
   top: -6.5vw;
   right: -7.5vw;
@@ -84,11 +107,11 @@
   /* flex-direction: column; */
 }
 
-.onepercentage{
+.onepercentage {
   justify-content: flex-end;
 }
 
-.threepercentage{
+.threepercentage {
   justify-content: center;
 }
 
