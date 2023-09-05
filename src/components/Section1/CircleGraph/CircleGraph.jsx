@@ -15,17 +15,17 @@ const CircleGraph = () => {
       scrollTrigger: {
         trigger: ".circlegraph", // Cambia el selector si es necesario
         start: "top 90%", // Punto de inicio de la animación
-        end: "bottom 100%", // Punto de finalización de la animación
+        end: "bottom 110%", // Punto de finalización de la animación
         scrub: true, // Activa el "scrubbing" para la animación suave
       },
     });
 
     const tltext = gsap.timeline({
       scrollTrigger: {
-        trigger: ".circlegraph_graphic",
+        trigger: ".circlegraph",
         duration: 5,
-        start: "top 50%", // Punto de inicio de la animación
-        end: "bottom 70%", // Punto de finalización de la animación
+        start: "top 65%", // Punto de inicio de la animación
+        end: "bottom 110%", // Punto de finalización de la animación
         scrub: true, // Activa el "scrubbing" para la animación suave
       },
     });
