@@ -3720,6 +3720,7 @@
         "height": "50px",
         "top": "49817px",
         "left": "935px",
+        "cursor": "pointer",
         "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)"
       }
     ],
@@ -4458,96 +4459,6 @@
         "letterSpacing": "0.03em",
         "textAlign": "center",
         "color": "#C7F1FA"
-      },
-      {
-        "content": "Durante el periodo <span>2018-2021</span> fueron presentadas",
-        "tag": "p",
-        "width": "522px",
-        "height": "93px",
-        "top": "48269px",
-        "left": "1283px",
-        "fontFamily": "Inter",
-        "fontSize": "33px",
-        "fontWeight": "400",
-        "lineHeight": "39.94px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "por el delito de trata de personas.",
-        "tag": "p",
-        "width": "560px",
-        "height": "45px",
-        "top": "48468px",
-        "left": "1285px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "42px",
-        "fontWeight": "700",
-        "lineHeight": "50.4px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "6.696 denuncias",
-        "tag": "h2",
-        "width": "539px",
-        "height": "82px",
-        "top": "48377px",
-        "left": "1283px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "96px",
-        "fontWeight": "700",
-        "lineHeight": "82px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "Durante el periodo <span>2018-2021</span> se emitieron",
-        "tag": "p",
-        "width": "453px",
-        "height": "103px",
-        "top": "53316px",
-        "left": "144px",
-        "fontFamily": "Inter",
-        "fontSize": "33px",
-        "fontWeight": "400",
-        "lineHeight": "39.94px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "condenatorias por el delito de trata de personas.",
-        "tag": "p",
-        "width": "491px",
-        "height": "96px",
-        "top": "53509px",
-        "left": "144px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "46px",
-        "fontWeight": "700",
-        "lineHeight": "55.2px",
-        "letterSpacing": "0.04em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "526 sentencias",
-        "tag": "h2",
-        "width": "509px",
-        "height": "82px",
-        "top": "53419px",
-        "left": "144px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "90px",
-        "fontWeight": "700",
-        "lineHeight": "82px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
       }
     ],
     "news1": {
@@ -4985,6 +4896,7 @@
         "width": "779px",
         "top": "49780px",
         "left": "610px",
+        "cursor": "pointer",
         "backgroundColor": "#FFEE96",
         "text": {
           "content": "Los datos disponibles sobre el tipo de denuncia difieren entre países debido a que <span>cada país reporta en función de su legislación nacional.</span>",
@@ -5092,6 +5004,26 @@
       }
     ],
 
+    "animationText2": {
+        "text5": "Durante el periodo ",
+        "textStrong": "2018-2021",
+        "text8": "fueron presentadas",
+        "text6": "por el delito de trata de personas.",
+        "text7": "6.696 denuncias",
+        "text9": "Durante el periodo",
+        "textStrong2": "2018-2021",
+        "text12": " se emitieron",
+        "text10": "condenatorias por el delito de trata de personas.",
+        "text11": "526 sentencias"
+    },
+
+    "animationText": {  
+      "text1": "Durante el periodo",
+      "textStrong": "2018-2021",
+      "text4": "fueron atendidas",
+      "text2": "víctimas de trata de personas.",
+      "text3": "8.576 personas"
+    },
     "rows": [
       {
         "number": {
@@ -5431,7 +5363,8 @@
         "top": "38145px",
         "left": "935px",
         "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
-        "zIndex": 1
+        "zIndex": 1,
+        "cursor": "pointer"
       },
       {
         "name": "infoGifSection3",
@@ -5440,7 +5373,8 @@
         "top": "38980px",
         "left": "935px",
         "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
-        "zIndex": 1
+        "zIndex": 1,
+        "cursor": "pointer"
       }
     ],
     "smallInfoBox": {
@@ -5449,6 +5383,7 @@
         "width": "886px",
         "top": "38100px",
         "left": "535px",
+        "cursor": "pointer",
         "backgroundColor": "#FFEE96",
         "text": {
           "content": "Para algunos países, en el reporte de las víctimas atendidas se cuantifica también el núcleo familiar entendiéndose como una atención extendida. Así mismo, la atención puede incluir víctimas de años anteriores. Por esta razón el número de víctimas atendidas es mayor que el número de víctimas identificadas.",
@@ -5468,6 +5403,7 @@
         "top": "38950px",
         "left": "635px",
         "backgroundColor": "#FFF7CE",
+        "cursor": "pointer",
         "text": {
           "content": "Las personas asistidas pueden recibir más de un tipo de atención.",
           "width": "637px",
@@ -5646,51 +5582,6 @@
         "letterSpacing": "0em",
         "textAlign": "center",
         "color": "#006873"
-      },
-      {
-        "content": "Durante el periodo <span>2018-2021</span> fueron atendidas",
-        "tag": "p",
-        "width": "487px",
-        "height": "93px",
-        "top": "37678px",
-        "left": "175.66px",
-        "fontFamily": "Inter",
-        "fontSize": "33px",
-        "fontWeight": "400",
-        "lineHeight": "39.94px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "víctimas de trata de personas.",
-        "tag": "p",
-        "width": "456px",
-        "height": "45px",
-        "top": "37878px",
-        "left": "177.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "40px",
-        "fontWeight": "700",
-        "lineHeight": "48px",
-        "letterSpacing": "0.02em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "8.576 personas",
-        "tag": "h2",
-        "width": "507px",
-        "height": "82px",
-        "top": "37782px",
-        "left": "175.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "96px",
-        "fontWeight": "700",
-        "lineHeight": "82px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
       },
       {
         "content": "1.855",
