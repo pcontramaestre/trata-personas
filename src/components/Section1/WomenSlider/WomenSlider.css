@@ -4,13 +4,13 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 
 .womenslider__graphicconent {
   display: flex;
   justify-content: center;
-  height: 80%;
+  height: 75%;
   width: 90%;
 }
 
@@ -29,13 +29,14 @@
 
 .womenslider__valores {
   display: flex;
-  align-items: end;
-  height: 95%;
+  align-items: start;
+  /* margin-top: 0.5v; */
+  height: 85%;
 }
 
 .womenslider__valores-list {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column-reverse;
   list-style: none;
   margin: 0 1vh;
@@ -44,7 +45,7 @@
 
 .womenslider__number {
   font-family: Formula Condensed;
-  font-size: 4.3vh;
+  font-size: 2.3vw;
   font-weight: 700;
   text-align: right;
   color: #1a6063;
@@ -69,7 +70,7 @@
   /* flex-direction: ; */
   position: absolute;
   width: 98%;
-  bottom: -1vw;
+  bottom: -2.5vw;
   list-style: none;
 }
 
@@ -87,7 +88,12 @@
   position: absolute;
   justify-content: space-evenly;
   width: 100%;
-  bottom: -13.5vh;
+  bottom: -14.5vh;
+}
+
+.onclickwomen{
+  bottom: 10vw;
+  right: 3vw;
 }
 
 .womenslider__foot-text {
@@ -124,8 +130,8 @@
   background-image: url("../../../assets/Img-Section01/Page10/onSlider/rosa.png");
 }
 
-.background__foot-color{
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
+.background__foot-color {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
 }

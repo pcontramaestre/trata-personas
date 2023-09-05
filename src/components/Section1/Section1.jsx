@@ -20,6 +20,7 @@ function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
   gsap.registerPlugin(ScrollTrigger);
   const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [isWomenSliderOpen, setIsWomenSliderOpen] = useState(false);
 
   const toggleSlider = () => {
     setIsSliderOpen(!isSliderOpen);
@@ -43,8 +44,6 @@ function Section1() {
   };
 
   const sliderReverse = () => {
-    console.log("anda");
-    // Esta función cierra el slider y revierte las animaciones
     gsap.to(".text", { left: "-100%", duration: 0.5, ease: "ease-in-out" });
     gsap.to(".slidercircle", {
       right: 0,
@@ -52,6 +51,45 @@ function Section1() {
       ease: "ease-in-out",
     });
     setIsSliderOpen(false);
+  };
+
+  const toggleWomenSlider = () => {
+    setIsWomenSliderOpen(!isWomenSliderOpen);
+    if (!isWomenSliderOpen) {
+      // Si el slider está cerrado, abrirlo
+      gsap.to(".text-women", { left: 0, duration: 0.5, ease: "ease-in-out" });
+      gsap.to(".womenslider-gsap", {
+        right: "-100%",
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+    } else {
+      // Si el slider está abierto, cerrarlo
+      gsap.to(".text-women", {
+        left: "-100%",
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+      gsap.to(".womenslider-circle", {
+        right: 0,
+        duration: 0.5,
+        ease: "ease-in-out",
+      });
+    }
+  };
+
+  const reverseWomenSlider = () => {
+    gsap.to(".text-women", {
+      left: "-100%",
+      duration: 0.5,
+      ease: "ease-in-out",
+    });
+    gsap.to(".womenslider-gsap", {
+      right: 0,
+      duration: 0.5,
+      ease: "ease-in-out",
+    });
+    setIsWomenSliderOpen(false);
   };
 
   return (
@@ -82,10 +120,10 @@ function Section1() {
         </section>
         <section className="threeslider">
           <div className="text-women">
-            <WomenSlider />
+            <WomenSlider reverseWomenSlider={reverseWomenSlider} />
           </div>
           <div className="womenslider-gsap">
-            <Women />
+            <Women toggleWomenSlider={toggleWomenSlider} />
           </div>
         </section>
         <div className="endslider"></div>
