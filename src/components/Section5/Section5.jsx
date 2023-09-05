@@ -91,6 +91,10 @@ function Section5 () {
             const scrollTriggerPlaneBusSection5 = ScrollTrigger.getById('plane&bus')
             scrollTriggerPlaneBusSection5.refresh()
           },
+          onEnter: () => {
+            const scrollTriggerTextGraphicSection5 = ScrollTrigger.getById('textGraphicAnimationSection5')
+            scrollTriggerTextGraphicSection5.refresh()
+          },
           id: 'frontPageSection5'
         }
       })
@@ -102,8 +106,31 @@ function Section5 () {
       tl1.from('#person4section5', { left: () => -document.querySelector('#person4section5').clientWidth })
       tl1.from('#person5section5', { left: () => -document.querySelector('#person5section5').clientWidth })
 
-      // Animation Plane & Bus
       const scrollTriggerFrontPageSection5 = ScrollTrigger.getById('frontPageSection5')
+      
+      //Animación del texto en gráficas
+      const textGraphic1 = document.getElementsByName('textGraphic1section5')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: textGraphic1[0],
+          // markers: true,
+          start: () => {
+            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + ' 80%'
+          },
+          end: () => {
+            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200) + ' center'
+          },
+          scrub: 1,
+          id: 'textGraphicAnimationSection5'
+        }
+      })
+      Array.from(textGraphic1).map((text) => {
+        tl.from(text, {
+          left: '100%'
+        }, 0)
+      })
+
+      // Animation Plane & Bus
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: '#busPlaneContainerSection5',
@@ -164,13 +191,13 @@ function Section5 () {
         repatriation.text.map((texto, index) => {
           switch (texto.tag) {
             case 'h1': {
-              return <h1 className={style.repatriationText} style={textStyles[index]} key={index}>{texto.content}</h1>
+              return <h1 name={texto.name ? texto.name + 'section5' : null} className={style.repatriationText} style={textStyles[index]} key={index}>{texto.content}</h1>
             }
             case 'h2': {
-              return <h2 className={style.repatriationText} style={textStyles[index]} key={index}>{texto.content}</h2>
+              return <h2 name={texto.name ? texto.name + 'section5' : null} className={style.repatriationText} style={textStyles[index]} key={index}>{texto.content}</h2>
             }
             case 'p': {
-              return <p dangerouslySetInnerHTML={{ __html: texto.content }} className={style.repatriationText} style={textStyles[index]} key={index} />
+              return <p name={texto.name ? texto.name + 'section5' : null} dangerouslySetInnerHTML={{ __html: texto.content }} className={style.repatriationText} style={textStyles[index]} key={index} />
             }
           }
           return true
