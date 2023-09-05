@@ -45,6 +45,8 @@ function convertSize(input) {
 
 function Section4() {
   const imgRefs = {};
+  const textRef = useRef(null);
+  const textRef2 = useRef(null);
 
   const personImages = images.filter((image) => image.name.includes("person"));
 
@@ -77,6 +79,50 @@ function Section4() {
         }
       );
     });
+    // Animations for text
+    const textTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: textRef.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl.fromTo(
+      textRef.current,
+      {
+        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
+    // Animations for text2
+    const textTl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: textRef2.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl2.fromTo(
+      textRef2.current,
+      {
+        x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
   }, []);
 
   useEffect(() => {
@@ -133,13 +179,26 @@ function Section4() {
     lineHeight: texto.lineHeight && convertSize(texto.lineHeight),
   }));
 
+  const animationText2 = data.protectionAndCare.animationText2;
+
   return (
     <section
       id="section4"
       className={style.LawEnforcementBackground}
       style={lawEnforcementeBackground}
     >
-      
+      <div className={style.animationText2} ref={textRef}>
+        <p className={style.text5}>{animationText2.text5} <strong className={style.textStrong}>{animationText2.textStrong}</strong>{animationText2.text8} </p>
+        <h2 className={style.text7}>{animationText2.text7}</h2>
+        <p className={style.text6}>{animationText2.text6}</p>
+      </div>
+
+      <div className={style.animationText3} ref={textRef2}>
+        <p className={style.text9}>{animationText2.text9} <strong className={style.textStrong2}>{animationText2.textStrong2}</strong>{animationText2.text12} </p>
+        <h2 className={style.text11}>{animationText2.text11}</h2>
+        <p className={style.text10}>{animationText2.text10}</p>
+      </div>
+
       {images.map((image, index) => (
         <img
           id={image.id ? image.id : null}

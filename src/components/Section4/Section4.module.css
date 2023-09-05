@@ -12,7 +12,7 @@
 }
 
 .LawEnforcementText span {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .infoGif {
@@ -24,4 +24,95 @@
     to {
         transform: scale(1.5);
     }
+}
+
+.animationText2 {
+    top: 142vw;
+    right: 3%;
+    position: absolute;
+    width: 30%;
+}
+.animationText2 .text5 {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText2 .text6 {
+    font-family: Formula Condensed;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText2 .text7 {
+    font-family: Formula Condensed;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.animationText2 .textStrong {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-right: 0.5rem;
+}
+.animationText3{
+    top: 407vw;
+    left: 5%;
+    position: absolute;
+    width: 34%;
+}
+.animationText3 .text9{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText3 .text10{
+    font-family: Formula Condensed;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText3 .text11{
+    font-family: Formula Condensed;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.animationText3 .textStrong2 {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-right: 0.5rem;
 }
