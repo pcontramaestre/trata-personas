@@ -57,10 +57,12 @@
 .small__gif:hover + .small__popup{
   display: block;
   z-index: 99;
+  cursor: pointer;
 }
 
 .small__popup:hover{
   display: block;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {

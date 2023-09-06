@@ -59,8 +59,10 @@
 
 .actividades__img:hover + .ilicitasquemado{
   display: flex;
+  cursor: pointer;
 }
 .ilicitasquemado:hover{
   display: flex;
   z-index: 99;
+  cursor: pointer;
 }

@@ -1,7 +1,7 @@
 .CircleGraph__slider {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100vw;
   height: 100%;
@@ -22,6 +22,7 @@
 .CircleGraph__content {
   display: flex;
   justify-content: center;
+  position: relative;
   height: 80%;
   width: 90%;
 }
@@ -221,18 +222,20 @@
   height: 100%;
 }
 
-.text-women {
+.slidercircle {
   position: absolute;
+  transition: right 0.5s ease;
   top: 0;
-  left: -100%;
+  /* left: 0; */
   width: 100%;
   height: 100%;
 }
 
-.slidercircle {
+.text-women {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
+  transition: left 0.5s ease;
   width: 100%;
   height: 100%;
 }
@@ -240,7 +243,7 @@
 .womenslider-gsap {
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
   height: 100%;
 }
@@ -254,6 +257,6 @@
   height: 60vh;
 }
 
-.sliders__alto{
+.sliders__alto {
   height: 2500px;
 }

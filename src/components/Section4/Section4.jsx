@@ -14,11 +14,18 @@ import person2 from "../../assets/Section4/frontPagePerson2.png";
 import person3 from "../../assets/Section4/frontPagePerson3.png";
 import person4 from "../../assets/Section4/frontPagePerson4.png";
 import grafico1 from "../../assets/Section4/grafico1.png";
-import grafico2 from "../../assets/Section4/grafico2.png";
 import grafico3 from "../../assets/Section4/grafico3.png";
 import grafico4 from "../../assets/Section4/grafico4.png";
 import grafico5 from "../../assets/Section4/grafico5.png";
+import grafico2 from "../../assets/Section4/grafico2.png";
 import infoGif from "../../assets/Instructions/infoGifBlanco1.svg";
+import row1 from "../../assets/Section4/1-otros.png";
+import row2 from "../../assets/Section4/2-eslavitud.png";
+import row3 from "../../assets/Section4/3-mendicidad.png";
+import row4 from "../../assets/Section4/4-adopción.png";
+import row5 from "../../assets/Section4/5-explotacion.png";
+import row6 from "../../assets/Section4/6-explotacionsexual.png";
+
 
 const imagesList = {
   background,
@@ -45,6 +52,9 @@ function convertSize(input) {
 
 function Section4() {
   const imgRefs = {};
+  const textRef = useRef(null);
+  const textRef2 = useRef(null);
+  const textRef3 = useRef(null);
 
   const personImages = images.filter((image) => image.name.includes("person"));
 
@@ -77,6 +87,73 @@ function Section4() {
         }
       );
     });
+
+    // const imgTl2 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: textRef3.current,
+    //     start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+    //     end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+    //     scrub: true, // Hace que la animación sea suave mientras se desplaza
+    //     // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+    //   },
+    // });
+
+    // imgTl2.fromTo(
+    //   textRef3.current,
+    //   {
+    //     x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+    //     opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+    //   },
+    //   {
+    //     x: "0%", // Lleva el elemento a su posición original (0%)
+    //     opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+    //   }
+    // );
+
+    // Animations for text
+    const textTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: textRef.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl.fromTo(
+      textRef.current,
+      {
+        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
+    // Animations for text2
+    const textTl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: textRef2.current, 
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl2.fromTo(
+      textRef2.current,
+      {
+        x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
   }, []);
 
   useEffect(() => {
@@ -133,13 +210,51 @@ function Section4() {
     lineHeight: texto.lineHeight && convertSize(texto.lineHeight),
   }));
 
+  const animationText2 = data.protectionAndCare.animationText2;
+
   return (
     <section
       id="section4"
       className={style.LawEnforcementBackground}
       style={lawEnforcementeBackground}
     >
-      
+      <div className={style.animationText2} ref={textRef}>
+        <p className={style.text5}>
+          {animationText2.text5}{" "}
+          <strong className={style.textStrong}>
+            {animationText2.textStrong}
+          </strong>
+          {animationText2.text8}{" "}
+        </p>
+        <h2 className={style.text7}>{animationText2.text7}</h2>
+        <p className={style.text6}>{animationText2.text6}</p>
+      </div>
+
+      <div className={style.animationText3} ref={textRef2}>
+        <p className={style.text9}>
+          {animationText2.text9}{" "}
+          <strong className={style.textStrong2}>
+            {animationText2.textStrong2}
+          </strong>
+          {animationText2.text12}{" "}
+        </p>
+        <h2 className={style.text11}>{animationText2.text11}</h2>
+        <p className={style.text10}>{animationText2.text10}</p>
+      </div>
+
+      <div className={style.graphic2}>
+        <img src={grafico2} alt="" />
+      </div>
+
+      <div className={style.animationGraphic} >
+        <img className={style.row1} src={row1} alt="" ref={textRef3}/>
+        <img className={style.row2} src={row2} alt="" />
+        <img className={style.row3} src={row3} alt="" />
+        <img className={style.row4} src={row4} alt="" />
+        <img className={style.row5} src={row5} alt="" />
+        <img className={style.row6} src={row6} alt="" />
+      </div>
+
       {images.map((image, index) => (
         <img
           id={image.id ? image.id : null}

@@ -2,7 +2,7 @@ import React from "react";
 import "./WomenSlider.css";
 import data from "../../../../trataSection01.json";
 
-const WomenSlider = () => {
+const WomenSlider = ({ reverseWomenSlider }) => {
   const page10 = data[0].visibilizacion_victimas.page10.onslider;
   const valores = [
     page10.number1,
@@ -58,6 +58,7 @@ const WomenSlider = () => {
             </div>
           </div>
         </div>
+        <button className="buttonslider onclickwomen" onClick={reverseWomenSlider} />
       </div>
     </div>
   );

@@ -60,6 +60,7 @@
   background-position: bottom bottom;
   background-color: #ffe1e3;
   background-image: url("../../../../assets/Img-Section02/Page11/rosachico.png");
+  cursor: pointer;
 }
 
 .Servidumbre {
@@ -97,7 +98,7 @@
 }
 
 .blanco {
-  color: #E0FAFF;
+  color: #e0faff;
 }
 
 .img__matrimonio {
@@ -126,16 +127,16 @@
   justify-content: flex-start;
 }
 
-.practicashover1{
-  display: inline;
-  flex-direction: column;
-  justify-content: flex-start;
+.practicashover1 {
+  display: block !important;
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../assets/Img-Section02/Page11/azulcompleto.png");
-  color: #0A4B4E;
+  color: #0a4b4e;
   font-family: "Inter", sans-serif;
   top: 13vh;
   padding: 2.5% 7.5%;
@@ -147,14 +148,14 @@
   z-index: -1;
 }
 
-.practicashover1 strong{
+.practicashover1 strong {
   display: inline;
 }
 
 .practicashover2 {
-  display: flex;
+  display: block !important;
   flex-direction: column;
-  color: #0A4B4E;
+  color: #0a4b4e;
   position: absolute;
   background-color: #ffe1e3;
   background-size: cover;
@@ -176,8 +177,8 @@
   z-index: -1;
 }
 .practicashover3 {
-  display: flex;
-  color: #0A4B4E;
+  display: block !important;
+  color: #0a4b4e;
   flex-direction: column;
   position: absolute;
   background-color: #fde1b5;
@@ -196,8 +197,9 @@
   text-align: left;
   z-index: -1;
 }
+
 .practicashover4 {
-  display: flex;
+  display: block !important;
   flex-direction: column;
   position: absolute;
   background-color: #006671;
@@ -207,8 +209,8 @@
   top: 13vh;
   padding: 2.5% 7.5%;
   width: 70%;
-  color: #E0FAFF;
-  /* border-radius: 0px 0px 5% 5%; */
+  color: #e0faff;
+  /* border-radius: 0px 0px 0% 0%; */
   font-size: 3vh;
   display: flex;
   font-family: Inter;
@@ -216,6 +218,35 @@
   letter-spacing: 0em;
   text-align: left;
   z-index: -1;
+}
+
+.practicashover__arrows {
+  display: flex;
+  height: 100%;
+}
+
+.listarrows {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100%; */
+  margin: 1vw 0;
+}
+
+.arrowpracticas {
+  height: 1.5vw;
+  width: 1.5vw;
+  margin: 0 1vw;
+  background-size: cover;
+  background-image: url("../../../../assets/Img-Section02/Page11/arrow.png");
+}
+
+.arrowtwo{
+  margin-top: 3.5vw;
+}
+.arrowthree{
+  margin-bottom: 1.5vw;
 }
 
 /* rosa  */
@@ -261,7 +292,7 @@
 }
 
 /*verde*/
-.Matrimonio:hover + .practicashover4{
+.Matrimonio:hover + .practicashover4 {
   display: flex;
   z-index: 90;
   border-radius: 0px 0px 45px 45px;
@@ -271,7 +302,7 @@
   border-radius: 45px 45px 0px 0px;
 }
 
-.Matrimonio:hover .img__matrimonio{
+.Matrimonio:hover .img__matrimonio {
   display: none;
 }
 

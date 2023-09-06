@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CircleGraph02.css";
 import data from "../../../../trataSection01.json";
 
-const CircleGraph02 = () => {
+const CircleGraph02 = ({ toggleSlider }) => {
   const page9 = data[0].visibilizacion_victimas.page9;
   return (
     <div className="circlegraph02">
@@ -43,10 +43,13 @@ const CircleGraph02 = () => {
           </div>
         </div>
       </div>
-      <p
-        className="circlegraph02__p"
-        dangerouslySetInnerHTML={{ __html: page9.foot }}
-      />
+      <div className="circlegraph02__handslider">
+        <p
+          className="circlegraph02__p"
+          dangerouslySetInnerHTML={{ __html: page9.foot }}
+        />
+        <button onClick={toggleSlider} className="buttonslider" />
+      </div>
     </div>
   );
 };

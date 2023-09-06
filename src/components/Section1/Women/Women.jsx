@@ -4,7 +4,7 @@ import "./Women.css";
 import gifblanco from "../../../assets/Img-Section01/Page10/gifblanco.gif";
 import womens from "../../../assets/Img-Section01/Page10/chicas.png";
 
-const Women = () => {
+const Women = ({toggleWomenSlider}) => {
   const page10 = data[0].visibilizacion_victimas.page10;
 
   return (
@@ -40,9 +40,10 @@ const Women = () => {
             <img className="women__gif" src={gifblanco} />
             <div className="women__popup">{page10.card4.popup}</div>
           </div>
+          <button className="buttonslider" onClick={toggleWomenSlider}/>
         </div>
       </div>
-
+    
     </div>
   );
 };
