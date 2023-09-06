@@ -95,3 +95,120 @@
     margin-top: 1rem;
 }
 
+.animationText2{
+    position: absolute;
+    top: 460.6vw;
+    left: 6vw;
+}
+/* .animationText2 p{
+    margin-bottom: 1rem;
+} */
+.animationText2 .text5 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+.animationText2 .text7 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+.animationText2 .text9 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+.animationText2 .text11 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+
+.animationText3{
+    position: absolute;
+    top: 460.6vw;
+    right: 5vw;
+}
+/* .animationText3 p{
+    margin-bottom: 1rem;
+} */
+.animationText3 .text6 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+.animationText3 .text8 {
+    width: 171px;
+    height: 60px;
+        font-Family: Formula Condensed;
+        font-Size: 47px;
+        font-Weight: 700;
+        line-Height: 56.4px;
+        letter-Spacing: 0em;
+        text-Align: center;
+        color: #1A6063
+}
+.animationText3 .text10 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+.animationText3 .text12 {
+    width: 171px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+.animationGraphic{
+    position: absolute;
+    top: 459.4vw;
+    left: 15vw;
+    z-index: 2;
+}
+.animationGraphic img{ 
+    width: 68.3vw;
+}
