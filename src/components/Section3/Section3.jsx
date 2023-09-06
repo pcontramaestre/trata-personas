@@ -37,6 +37,7 @@ import educacion from "../../assets/Section3/educacion.svg";
 import alojamiento from "../../assets/Section3/alojamiento.png";
 import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
+import graphic from "../../assets/Section3/grafico-21.png";
 
 const imagesList = {
   background,
@@ -82,6 +83,9 @@ function Section3() {
   const imgRefs = useRef([]); // Create an array of refs for images
   const containerRowRefs = useRef([]); // Create an array of refs for rows
   const textRef = useRef(null);
+  const textRef2 = useRef(null);
+  const textRef3 = useRef(null);
+  const textRef4 = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -135,6 +139,69 @@ function Section3() {
     });
 
 // Animations for text
+    const textTl2 = gsap.timeline({
+          scrollTrigger: {
+            trigger: textRef2.current,
+            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+            scrub: true, // Hace que la animación sea suave mientras se desplaza
+            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          },
+        });
+    
+        textTl2.fromTo(
+          textRef2.current,
+          {
+            x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+          },
+          {
+            x: "0%", // Lleva el elemento a su posición original (0%)
+            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+          }
+        );
+    const textTl3 = gsap.timeline({
+          scrollTrigger: {
+            trigger: textRef3.current,
+            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+            scrub: true, // Hace que la animación sea suave mientras se desplaza
+            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          },
+        });
+    
+        textTl3.fromTo(
+          textRef3.current,
+          {
+            x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+          },
+          {
+            x: "0%", // Lleva el elemento a su posición original (0%)
+            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+          }
+        );
+    const textTl4 = gsap.timeline({
+          scrollTrigger: {
+            trigger: textRef4.current,
+            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+            scrub: true, // Hace que la animación sea suave mientras se desplaza
+            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          },
+        });
+    
+        textTl4.fromTo(
+          textRef4.current,
+          {
+            x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+          },
+          {
+            x: "0%", // Lleva el elemento a su posición original (0%)
+            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+          }
+        );
     const textTl = gsap.timeline({
           scrollTrigger: {
             trigger: textRef.current,
@@ -345,6 +412,22 @@ function Section3() {
         <p className={style.text1}>{animationText.text1} <strong className={style.textStrong}>{animationText.textStrong}</strong>{animationText.text4} </p>
         <h2 className={style.text3}>{animationText.text3}</h2>
         <p className={style.text2}>{animationText.text2}</p>
+      </div>
+
+      <div className={style.animationText2} ref={textRef2}>
+        <p className={style.text5}>{animationText.text5} </p>
+        <p className={style.text7}>{animationText.text7}</p>
+        <p className={style.text9}>{animationText.text9}</p>
+        <p className={style.text11}>{animationText.text11}</p>
+      </div>
+      <div className={style.animationText3} ref={textRef3}>
+        <p className={style.text6}>{animationText.text6}</p>
+        <p className={style.text8}>{animationText.text8}</p>
+        <p className={style.text10}>{animationText.text10}</p>
+        <p className={style.text12}>{animationText.text12}</p>
+      </div>
+      <div className={style.animationGraphic} ref={textRef4}>
+        <img src={graphic} alt="" />
       </div>
       
       {rows.map((row, index) => (

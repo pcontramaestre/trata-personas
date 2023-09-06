@@ -116,3 +116,39 @@
     color: #0a4b4e;
     margin-right: 0.5rem;
 }
+.graphic2 img{
+    width: 41vw;
+    height: 35.3vw;
+    top: 184.7vw;
+    left: 39vw;
+    position: absolute;
+}
+.animationGraphic{
+    top: 186vw;
+    left: 40.51vw;
+    position: absolute;
+    width: 4vw;
+}
+.animationGraphic .row1{
+    width: 11vw;
+}
+.animationGraphic .row2{
+    width: 3.3vw;
+    margin-top: 0.7rem;
+}
+.animationGraphic .row3{
+    width: 3.3vw;
+    margin-top: 0.6rem
+}
+.animationGraphic .row4{
+    width: 5.8vw;
+    margin-top: 0.7rem;
+}
+.animationGraphic .row5{
+    width: 19.4vw;
+    margin-top: 0.7rem;
+}
+.animationGraphic .row6{
+    width: 35.4vw;
+    margin-top: 0.7rem;
+}
