@@ -11,6 +11,7 @@ import scroll2 from '../../assets/Section7/scroll2.svg'
 import data from '../../../troy.json'
 import FrontPageSection7 from './FrontPageSection7/FrontPageSection7'
 import HandSlide from '../Slides/HandSlide/HandSlide'
+import News from '../News/News'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -32,7 +33,7 @@ function relativeMedition (input) {
 }
 
 const { interestingEvents } = data
-const { handSlide, forntPageImages } = data.interestingEvents
+const { handSlide, forntPageImages, news } = data.interestingEvents
 
 function Section7 () {
   useLayoutEffect(() => {
@@ -102,6 +103,7 @@ function Section7 () {
     <section id='section7' className={style.InterestingEventsBackground} style={interestingEventsContainer}>
       <div style={interestingEventsTextContainerStyle} className={style.interestingEventsTextContainer} />
       <FrontPageSection7 forntPageImages={forntPageImages} />
+      <News news={news} topSection={interestingEvents.top} />
       {
         interestingEvents.images.map((image, index) => (
           <img id={image.name + 'section7'} src={image && icons[image.name]} className={image.name === 'scroll2' ? style.scroll2 : null} style={iconStyles[index]} key={image.name + index} />
