@@ -4981,8 +4981,8 @@
       {
         "name": "grafico2",
         "width": "1306px",
-        "height": "408px",
-        "top": "43785px",
+        "height": "auto",
+        "top": "43769px",
         "left": "296.66px"
       },
       {

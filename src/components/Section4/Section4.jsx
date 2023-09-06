@@ -88,27 +88,27 @@ function Section4() {
       );
     });
 
-    // const imgTl2 = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: textRef3.current,
-    //     start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-    //     end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-    //     scrub: true, // Hace que la animación sea suave mientras se desplaza
-    //     // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-    //   },
-    // });
+    const imgTl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: textRef3.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
 
-    // imgTl2.fromTo(
-    //   textRef3.current,
-    //   {
-    //     x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-    //     opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-    //   },
-    //   {
-    //     x: "0%", // Lleva el elemento a su posición original (0%)
-    //     opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-    //   }
-    // );
+    imgTl2.fromTo(
+      textRef3.current,
+      {
+        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
 
     // Animations for text
     const textTl = gsap.timeline({
@@ -246,8 +246,8 @@ function Section4() {
         <img src={grafico2} alt="" />
       </div>
 
-      <div className={style.animationGraphic} >
-        <img className={style.row1} src={row1} alt="" ref={textRef3}/>
+      <div className={style.animationGraphic} ref={textRef3}>
+        <img className={style.row1} src={row1} alt=""/>
         <img className={style.row2} src={row2} alt="" />
         <img className={style.row3} src={row3} alt="" />
         <img className={style.row4} src={row4} alt="" />
