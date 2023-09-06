@@ -45,7 +45,7 @@ function convertSize (input) {
 function Section0 () {
   useLayoutEffect(() => {
     const windowWidth = window.innerWidth
-    function calculateHeight() {
+    function calculateHeight () {
       const y = -0.035 * (windowWidth) + 55
       if (y <= 0) return 0
       else return y
