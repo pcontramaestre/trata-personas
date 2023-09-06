@@ -1,70 +1,76 @@
-.header-container{
-    background-color: #CFF9FF;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.header-container {
+  background-color: #cff9ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.hamburger-icon img{
-    position: fixed;
-    z-index: 999;
-    left: 94vw;
-    top: 3vw;
-    cursor: pointer;
+
+.hamburger-icon{
+  position: relative;
+  z-index: 100;
 }
-.hamburger-icon img:hover{
-    opacity: 0.8;
+
+.hamburger-icon img {
+  position: fixed;
+  z-index: 10;
+  left: 94vw;
+  top: 3vw;
+  cursor: pointer;
+}
+.hamburger-icon img:hover {
+  opacity: 0.8;
 }
 .menu-expanded {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 8;
 }
 
 .menu-expanded.active {
-    transform: translateX(0);
-  }
-.header-container_img{
-    width: 84vw;
-    margin: 0 auto;
-    margin-bottom: 0.7rem;
-    display: flex;
+  transform: translateX(0);
 }
-.header-text{
-    width: 28.8vw;
-    margin: 0rem 0.5rem;
-    position: relative;
+.header-container_img {
+  width: 84vw;
+  margin: 0 auto;
+  margin-bottom: 0.7rem;
+  display: flex;
 }
-.header-text img{
-    border-radius: 28px;
-    max-height: 28.8vh;
-    min-height: 28.8vh;
-    object-fit: cover;
-    width: 100%;
+.header-text {
+  width: 28.8vw;
+  margin: 0rem 0.5rem;
+  position: relative;
 }
-.header-text .text{
-    color: white;
-    font-size: 41px;
-    font-weight: 700;
-    text-align: center;
-    font-family: Formula Condensed;
-    position: absolute;
-    top: 0vw;
-    left: 0vw;
-    width: 92%;
-    padding: 0% 4%;
-    letter-spacing: 1.65px;
-    background-color: rgba(0,0,0,0.5);
-    height: 28.8vh;
-    border-radius: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.header-text img {
+  border-radius: 28px;
+  max-height: 28.8vh;
+  min-height: 28.8vh;
+  object-fit: cover;
+  width: 100%;
 }
-.header-text .text:hover{
-    opacity: 0;
-    transition: all 0.3s;
+.header-text .text {
+  color: white;
+  font-size: 41px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Formula Condensed;
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 92%;
+  padding: 0% 4%;
+  letter-spacing: 1.65px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 28.8vh;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header-text .text:hover {
+  opacity: 0;
+  transition: all 0.3s;
 }

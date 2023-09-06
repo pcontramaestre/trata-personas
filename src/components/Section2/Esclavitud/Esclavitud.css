@@ -67,9 +67,11 @@
 
 .esclavitud__img:hover + .esclavitudquemado{
   display: flex;
+  cursor: pointer;
 }
 
 .esclavitudquemado:hover{
   display: flex;
   z-index: 99;
+  cursor: pointer;
 }

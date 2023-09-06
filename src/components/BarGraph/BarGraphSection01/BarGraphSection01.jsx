@@ -7,19 +7,29 @@ import data from "../../../../trataSection01.json";
 function BarGraphSection01() {
   const page4 = data[0].visibilizacion_victimas.page4;
 
-  const titleRef = useRef();
-  const imageRef = useRef();
-  const textsRef = useRef();
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const barGraphRef = useRef();
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".BarGraph",
+        start: "top 95%",
+        end: "bottom 110%",
+        scrub: true,
+      },
+    });
+
+    tl.from(".bargraph__texts", { x: +100, opacity: 0});
+    tl.to(".bargraph__texts", { x: 0, opacity: 1 });
+  }, []);
 
   return (
-    <div className="BarGraph" ref={barGraphRef}>
+    <div className="BarGraph" >
       <div className="baragraph__graphic">
-        <h2 className="bargraph__title" ref={titleRef}>
+        <h2 className="bargraph__title" >
           {page4.graphic.title}
         </h2>
-        <div className="bargraph__image" ref={imageRef}>
+        <div className="bargraph__image" >
           {" "}
           {/* <div className="baragraphcolumns">
             <ul className="baragraph__columns-1">
@@ -37,7 +47,7 @@ function BarGraphSection01() {
           <li>{page4.graphic.year4}</li>
         </ul> */}
       </div>
-      <div className="bargraph__texts" ref={textsRef}>
+      <div className="bargraph__texts" >
         <p
           className="bargraph__text1"
           dangerouslySetInnerHTML={{ __html: page4.text1 }}

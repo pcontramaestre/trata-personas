@@ -1169,6 +1169,220 @@
         "color": "#0F4A4D"
       }
     ],
+    "news": {
+      "section": "Section6",
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "México: Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
+            "width": "461.18px",
+            "height": "191.51px",
+            "top": "70421.69px",
+            "left": "183px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "70727.81px",
+            "left": "214.18px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70310.36px",
+            "left": "190px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "750px",
+            "height": "817px",
+            "top": "20px",
+            "left": "80px",
+            "backgroundImage": "sheetM",
+            "title": {
+              "content": "Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
+              "width": "534px",
+              "height": "111px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Esta actividad académica está dirigida a funcionarios públicos de los 11 países que conforman la CRM (Canadá, Belice, Costa Rica, El Salvador, Estados Unidos, Guatemala, Honduras, México, Nicaragua, Panamá y República Dominicana), quienes se desempeñan en puestos estratégicos para enfrentar la trata de personas y el trabajo forzoso en sus naciones.<br/>El secretario ejecutivo de la CRM mencionó que “el combate a la trata de personas debe ser permanente y constante en nuestros países; además, el fortalecimiento de capacidades requiere ser fundamental y continuo en nuestras instituciones.<br/>“Es un fenómeno complejo y requiere la coordinación de numerosas personas e instituciones en los sectores público y privado, y en la sociedad civil. Es por ello que la coordinación debe ir de la mano de la actualización de los conocimientos, así como de la comprensión de los retos en nuestra región”",
+              "width": "586px",
+              "height": "440px",
+              "top": "215px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/UNAM",
+              "width": "430px",
+              "height": "23px",
+              "top": "640px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/mexico/especializacion-a-funcionarios-publicos-para-enfrentar-trata-de-personas-y-trabajo-forzoso"
+          }
+        },
+        {
+          "title": {
+            "text": "Honduras: En marcha campaña para combatir trata de personas",
+            "width": "452.52px",
+            "height": "191.51px",
+            "top": "70194.55px",
+            "left": "809.59px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "70383px",
+            "left": "758.98px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70059px",
+            "left": "774.69px",
+            "rotation": "-14.88deg"
+          },
+          "hover": {
+            "width": "730px",
+            "height": "735px",
+            "top": "-110px",
+            "left": "700px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "En marcha campaña para combatir trata de personas",
+              "width": "535px",
+              "height": "80px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La Comisión Interinstitucional Contra la Explotación Sexual Comercial y Trata de Personas de Honduras Lanzó la jornada “Puedes Verme”, en colaboración con la Campaña A21, organización no gubernamental global 501, sin fines de lucro que trabaja frente a ese flagelo.<br/>El trabajo se aúna con el objetivo de mostrar a la población de Honduras, cuáles son los indicadores de la trata de personas y que puedan denunciar a los números telefónicos habilitados en el país.<br/>La campaña está compuesta por spots audiovisuales que muestran la realidad que sufren muchas personas en el país al ser captadas por las redes de trata que operan en el territorio nacional, y por vallas publicitarias y banners, a través de medios de comunicación en puntos estratégicos que permitan generar conciencia y sensibilización.",
+              "width": "570px",
+              "height": "408px",
+              "top": "188px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/La Tribuna ",
+              "width": "470px",
+              "height": "23px",
+              "top": "580px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/honduras/en-marcha-campana-para-combatir-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
+            "width": "443.52px",
+            "height": "191.51px",
+            "top": "70470.31px",
+            "left": "1288.02px"
+          },
+          "footer": {
+            "text": "UNODC",
+            "top": "70763.81px",
+            "left": "1313.2px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70358.36px",
+            "left": "1280.02px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "791px",
+            "height": "847px",
+            "top": "-30px",
+            "left": "1115px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
+              "width": "534px",
+              "height": "74px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La campaña para el Día Mundial contra la Trata de Personas de 2023 tiene como objetivo sensibilizar sobre los alarmantes acontecimientos y amenazas identificados por el último Informe Mundial sobre la Trata de Personas de la UNODC y hace un llamamiento a los gobiernos, las fuerzas del orden, los servicios públicos y la sociedad civil para evaluar y mejorar sus esfuerzos para fortalecer la prevención, identificar y apoyar a las víctimas, y poner fin a la impunidad.<br/>Para acabar con la trata debemos reforzar la resistencia contra la explotación y los problemas socioeconómicos y culturales subyacentes que propician la trata. Debemos sensibilizar a todo el mundo sobre el tema de la trata de personas y dirigir así la atención hacia quienes pueden marcar la diferencia en términos de cambio de políticas y gestión de recursos nacionales para reforzar las medidas de prevención, mejorar la identificación de las víctimas, aumentar el apoyo a los supervivientes y acabar con la impunidad.",
+              "width": "588px",
+              "height": "440px",
+              "top": "212px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: UNODC",
+              "width": "430px",
+              "height": "23px",
+              "top": "640px",
+              "left": "0px"
+            },
+            "link": "https://www.un.org/es/observances/end-human-trafficking-day"
+          }
+        }
+      ]
+    },
     "handSlide": {
       "section": "section7",
       "width": "1920px",
@@ -2658,6 +2872,33 @@
         "objectFit": "contain"
       },
       {
+        "name": "handChild",
+        "width": "284px",
+        "height": "362px",
+        "top": "62829px",
+        "left": "1245px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "handShe",
+        "width": "461px",
+        "height": "612px",
+        "top": "62324px",
+        "left": "930px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "handHe",
+        "width": "545px",
+        "height": "665px",
+        "top": "62332px",
+        "left": "1482px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
         "name": "rectanguloAzul",
         "width": "1920",
         "height": "1025px",
@@ -2970,7 +3211,8 @@
         "lineHeight": "28.6px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "Incluye todos aquellos <span>medios que implican un contacto directo con las potenciales víctimas</span> o quienes tienen un rol desde su ámbito profesional en la prevención de la trata de personas, como talleres de sensibilización y capacitaciones.",
@@ -2985,7 +3227,8 @@
         "lineHeight": "28.6px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "personas alcanzadas",
@@ -3000,7 +3243,8 @@
         "lineHeight": "50.4px",
         "letterSpacing": "0.03em",
         "textAlign": "right",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "personas alcanzadas",
@@ -3015,22 +3259,8 @@
         "lineHeight": "57.6px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
-      },
-      {
-        "content": "personas alcanzadas",
-        "tag": "p",
-        "width": "375px",
-        "height": "75px",
-        "top": "68633px",
-        "left": "1268px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "48px",
-        "fontWeight": "700",
-        "lineHeight": "57.6px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "3.186.277",
@@ -3045,7 +3275,8 @@
         "lineHeight": "115.2px",
         "letterSpacing": "0.03em",
         "textAlign": "right",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "34.652.739",
@@ -3060,7 +3291,8 @@
         "lineHeight": "115.2px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "Prevención directa",
@@ -3075,7 +3307,8 @@
         "lineHeight": "96px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "id": "animationBars"
       },
       {
         "content": "Prevención indirecta",
@@ -3410,220 +3643,6 @@
         "left": "252px",
         "borderLeft": "2px solid #FFFFFF"
       }
-    },
-    "news": {
-      "section": "Section6",
-      "footerCard": {
-        "fontFamily": "Inter",
-        "fontSize": "20px",
-        "fontWeight": "400",
-        "lineHeight": "24px",
-        "letterSpacing": "0.11em",
-        "textAlign": "left",
-        "color": "#000000"
-      },
-      "titleStyles": {
-        "fontFamily": "Inika",
-        "fontSize": "33px",
-        "fontWeight": "700",
-        "lineHeight": "43px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#043335"
-      },
-      "titleStylesHover": {
-        "fontFamily": "Inika",
-        "fontSize": "30px",
-        "fontWeight": "700",
-        "lineHeight": "39px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814"
-      },
-      "textStylesHover": {
-        "fontFamily": "Inter",
-        "fontSize": "20px",
-        "fontWeight": "400",
-        "lineHeight": "24px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814"
-      },
-      "footerStyleHover": {
-        "fontFamily": "Inika",
-        "fontSize": "20px",
-        "fontWeight": "700",
-        "lineHeight": "26px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814",
-        "color2": "#948678"
-      },
-      "footerIconHover": {
-        "width": "20.9993953704834px",
-        "height": "24.002277374267578px",
-        "top": "874.00390625px",
-        "left": "103px",
-        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
-      },
-      "articles": [
-        {
-          "title": {
-            "text": "México: Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
-            "width": "461.18px",
-            "height": "191.51px",
-            "top": "70421.69px",
-            "left": "183px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "70727.81px",
-            "left": "214.18px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70310.36px",
-            "left": "190px",
-            "rotation": "7.56deg"
-          },
-          "hover": {
-            "width": "750px",
-            "height": "817px",
-            "top": "20px",
-            "left": "80px",
-            "backgroundImage": "sheetM",
-            "title": {
-              "content": "Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
-              "width": "534px",
-              "height": "111px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "Esta actividad académica está dirigida a funcionarios públicos de los 11 países que conforman la CRM (Canadá, Belice, Costa Rica, El Salvador, Estados Unidos, Guatemala, Honduras, México, Nicaragua, Panamá y República Dominicana), quienes se desempeñan en puestos estratégicos para enfrentar la trata de personas y el trabajo forzoso en sus naciones.<br/>El secretario ejecutivo de la CRM mencionó que “el combate a la trata de personas debe ser permanente y constante en nuestros países; además, el fortalecimiento de capacidades requiere ser fundamental y continuo en nuestras instituciones.<br/>“Es un fenómeno complejo y requiere la coordinación de numerosas personas e instituciones en los sectores público y privado, y en la sociedad civil. Es por ello que la coordinación debe ir de la mano de la actualización de los conocimientos, así como de la comprensión de los retos en nuestra región”",
-              "width": "586px",
-              "height": "440px",
-              "top": "215px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/UNAM",
-              "width": "430px",
-              "height": "23px",
-              "top": "640px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/mexico/especializacion-a-funcionarios-publicos-para-enfrentar-trata-de-personas-y-trabajo-forzoso"
-          }
-        },
-        {
-          "title": {
-            "text": "Honduras: En marcha campaña para combatir trata de personas",
-            "width": "452.52px",
-            "height": "191.51px",
-            "top": "70194.55px",
-            "left": "809.59px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "70383px",
-            "left": "758.98px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70059px",
-            "left": "774.69px",
-            "rotation": "-14.88deg"
-          },
-          "hover": {
-            "width": "730px",
-            "height": "735px",
-            "top": "-110px",
-            "left": "700px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "En marcha campaña para combatir trata de personas",
-              "width": "535px",
-              "height": "80px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "La Comisión Interinstitucional Contra la Explotación Sexual Comercial y Trata de Personas de Honduras Lanzó la jornada “Puedes Verme”, en colaboración con la Campaña A21, organización no gubernamental global 501, sin fines de lucro que trabaja frente a ese flagelo.<br/>El trabajo se aúna con el objetivo de mostrar a la población de Honduras, cuáles son los indicadores de la trata de personas y que puedan denunciar a los números telefónicos habilitados en el país.<br/>La campaña está compuesta por spots audiovisuales que muestran la realidad que sufren muchas personas en el país al ser captadas por las redes de trata que operan en el territorio nacional, y por vallas publicitarias y banners, a través de medios de comunicación en puntos estratégicos que permitan generar conciencia y sensibilización.",
-              "width": "570px",
-              "height": "408px",
-              "top": "188px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/La Tribuna ",
-              "width": "470px",
-              "height": "23px",
-              "top": "580px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/honduras/en-marcha-campana-para-combatir-trata-de-personas"
-          }
-        },
-        {
-          "title": {
-            "text": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
-            "width": "443.52px",
-            "height": "191.51px",
-            "top": "70470.31px",
-            "left": "1288.02px"
-          },
-          "footer": {
-            "text": "UNODC",
-            "top": "70763.81px",
-            "left": "1313.2px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70358.36px",
-            "left": "1280.02px",
-            "rotation": "7.56deg"
-          },
-          "hover": {
-            "width": "791px",
-            "height": "847px",
-            "top": "-30px",
-            "left": "1115px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
-              "width": "534px",
-              "height": "74px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "La campaña para el Día Mundial contra la Trata de Personas de 2023 tiene como objetivo sensibilizar sobre los alarmantes acontecimientos y amenazas identificados por el último Informe Mundial sobre la Trata de Personas de la UNODC y hace un llamamiento a los gobiernos, las fuerzas del orden, los servicios públicos y la sociedad civil para evaluar y mejorar sus esfuerzos para fortalecer la prevención, identificar y apoyar a las víctimas, y poner fin a la impunidad.<br/>Para acabar con la trata debemos reforzar la resistencia contra la explotación y los problemas socioeconómicos y culturales subyacentes que propician la trata. Debemos sensibilizar a todo el mundo sobre el tema de la trata de personas y dirigir así la atención hacia quienes pueden marcar la diferencia en términos de cambio de políticas y gestión de recursos nacionales para reforzar las medidas de prevención, mejorar la identificación de las víctimas, aumentar el apoyo a los supervivientes y acabar con la impunidad.",
-              "width": "588px",
-              "height": "440px",
-              "top": "212px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: UNODC",
-              "width": "430px",
-              "height": "23px",
-              "top": "640px",
-              "left": "0px"
-            },
-            "link": "https://www.un.org/es/observances/end-human-trafficking-day"
-          }
-        }
-      ]
     }
   },
   "lawEnforcement": {
@@ -3686,13 +3705,6 @@
         "left": "198px"
       },
       {
-        "name": "grafico2",
-        "width": "813px",
-        "height": "709px",
-        "top": "49041px",
-        "left": "741px"
-      },
-      {
         "name": "grafico3",
         "width": "1275px",
         "height": "639px",
@@ -3720,6 +3732,7 @@
         "height": "50px",
         "top": "49817px",
         "left": "935px",
+        "cursor": "pointer",
         "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)"
       }
     ],
@@ -4458,96 +4471,6 @@
         "letterSpacing": "0.03em",
         "textAlign": "center",
         "color": "#C7F1FA"
-      },
-      {
-        "content": "Durante el periodo <span>2018-2021</span> fueron presentadas",
-        "tag": "p",
-        "width": "522px",
-        "height": "93px",
-        "top": "48269px",
-        "left": "1283px",
-        "fontFamily": "Inter",
-        "fontSize": "33px",
-        "fontWeight": "400",
-        "lineHeight": "39.94px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "por el delito de trata de personas.",
-        "tag": "p",
-        "width": "560px",
-        "height": "45px",
-        "top": "48468px",
-        "left": "1285px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "42px",
-        "fontWeight": "700",
-        "lineHeight": "50.4px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "6.696 denuncias",
-        "tag": "h2",
-        "width": "539px",
-        "height": "82px",
-        "top": "48377px",
-        "left": "1283px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "96px",
-        "fontWeight": "700",
-        "lineHeight": "82px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "Durante el periodo <span>2018-2021</span> se emitieron",
-        "tag": "p",
-        "width": "453px",
-        "height": "103px",
-        "top": "53316px",
-        "left": "144px",
-        "fontFamily": "Inter",
-        "fontSize": "33px",
-        "fontWeight": "400",
-        "lineHeight": "39.94px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "condenatorias por el delito de trata de personas.",
-        "tag": "p",
-        "width": "491px",
-        "height": "96px",
-        "top": "53509px",
-        "left": "144px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "46px",
-        "fontWeight": "700",
-        "lineHeight": "55.2px",
-        "letterSpacing": "0.04em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "526 sentencias",
-        "tag": "h2",
-        "width": "509px",
-        "height": "82px",
-        "top": "53419px",
-        "left": "144px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "90px",
-        "fontWeight": "700",
-        "lineHeight": "82px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
       }
     ],
     "news1": {
@@ -4985,6 +4908,7 @@
         "width": "779px",
         "top": "49780px",
         "left": "610px",
+        "cursor": "pointer",
         "backgroundColor": "#FFEE96",
         "text": {
           "content": "Los datos disponibles sobre el tipo de denuncia difieren entre países debido a que <span>cada país reporta en función de su legislación nacional.</span>",
@@ -5092,6 +5016,34 @@
       }
     ],
 
+    "animationText2": {
+        "text5": "Durante el periodo ",
+        "textStrong": "2018-2021",
+        "text8": "fueron presentadas",
+        "text6": "por el delito de trata de personas.",
+        "text7": "6.696 denuncias",
+        "text9": "Durante el periodo",
+        "textStrong2": "2018-2021",
+        "text12": " se emitieron",
+        "text10": "condenatorias por el delito de trata de personas.",
+        "text11": "526 sentencias"
+    },
+
+    "animationText": {  
+      "text1": "Durante el periodo",
+      "textStrong": "2018-2021",
+      "text4": "fueron atendidas",
+      "text2": "víctimas de trata de personas.",
+      "text3": "8.576 personas",
+      "text5": "40",
+      "text6": "15.000",
+      "text7": "30",
+      "text8": "10.000",
+      "text9": "20",
+      "text10": "5.000",
+      "text11": "10",
+      "text12": "0"
+    },
     "rows": [
       {
         "number": {
@@ -5431,7 +5383,8 @@
         "top": "38145px",
         "left": "935px",
         "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
-        "zIndex": 1
+        "zIndex": 1,
+        "cursor": "pointer"
       },
       {
         "name": "infoGifSection3",
@@ -5440,7 +5393,8 @@
         "top": "38980px",
         "left": "935px",
         "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
-        "zIndex": 1
+        "zIndex": 1,
+        "cursor": "pointer"
       }
     ],
     "smallInfoBox": {
@@ -5449,6 +5403,7 @@
         "width": "886px",
         "top": "38100px",
         "left": "535px",
+        "cursor": "pointer",
         "backgroundColor": "#FFEE96",
         "text": {
           "content": "Para algunos países, en el reporte de las víctimas atendidas se cuantifica también el núcleo familiar entendiéndose como una atención extendida. Así mismo, la atención puede incluir víctimas de años anteriores. Por esta razón el número de víctimas atendidas es mayor que el número de víctimas identificadas.",
@@ -5468,6 +5423,7 @@
         "top": "38950px",
         "left": "635px",
         "backgroundColor": "#FFF7CE",
+        "cursor": "pointer",
         "text": {
           "content": "Las personas asistidas pueden recibir más de un tipo de atención.",
           "width": "637px",
@@ -5646,51 +5602,6 @@
         "letterSpacing": "0em",
         "textAlign": "center",
         "color": "#006873"
-      },
-      {
-        "content": "Durante el periodo <span>2018-2021</span> fueron atendidas",
-        "tag": "p",
-        "width": "487px",
-        "height": "93px",
-        "top": "37678px",
-        "left": "175.66px",
-        "fontFamily": "Inter",
-        "fontSize": "33px",
-        "fontWeight": "400",
-        "lineHeight": "39.94px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "víctimas de trata de personas.",
-        "tag": "p",
-        "width": "456px",
-        "height": "45px",
-        "top": "37878px",
-        "left": "177.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "40px",
-        "fontWeight": "700",
-        "lineHeight": "48px",
-        "letterSpacing": "0.02em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
-      },
-      {
-        "content": "8.576 personas",
-        "tag": "h2",
-        "width": "507px",
-        "height": "82px",
-        "top": "37782px",
-        "left": "175.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "96px",
-        "fontWeight": "700",
-        "lineHeight": "82px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#0A4B4E"
       },
       {
         "content": "1.855",
@@ -5916,126 +5827,6 @@
         "letterSpacing": "0em",
         "textAlign": "center",
         "color": "#006873"
-      },
-      {
-        "content": "40",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "43810px",
-        "left": "151.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "15.000",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "43810px",
-        "left": "1596.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "30",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "43893px",
-        "left": "151.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "10.000",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "43893px",
-        "left": "1596.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "20",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "43977px",
-        "left": "151.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "5.000",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "43977px",
-        "left": "1596.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "10",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "44062px",
-        "left": "151.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
-      },
-      {
-        "content": "0",
-        "tag": "p",
-        "width": "171px",
-        "height": "55px",
-        "top": "44062px",
-        "left": "1596.66px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "47px",
-        "fontWeight": "700",
-        "lineHeight": "56.4px",
-        "letterSpacing": "0em",
-        "textAlign": "center",
-        "color": "#1A6063"
       },
       {
         "content": "Número de atenciones",

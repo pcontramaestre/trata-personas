@@ -116,10 +116,12 @@
 
 .womenloading__img:hover + .womenloading__graphicquemado {
   display: flex;
+  cursor: pointer;
 }
 
 .womenloading__graphicquemado:hover {
   display: flex;
+  cursor: pointer;
 }
 
 .womengraphic__background {

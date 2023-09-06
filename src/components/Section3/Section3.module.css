@@ -17,7 +17,7 @@
 }
 
 .ProtectionCareText span {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .ProtectionCareIcon {
@@ -49,4 +49,166 @@
 .contentrow {
     position: absolute;
     margin: 0;
+}
+.animationText1 {
+    top: 141vw;
+    left: 6%;
+    position: absolute;
+    width: 32%;
+}
+.animationText1 .text1 {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText1 .textStrong {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-right: 0.5rem;
+}
+.animationText1 .text2 {
+    font-family: Formula Condensed;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText1 .text3 {
+    font-family: Formula Condensed;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-top: 1rem;
+}
+
+.animationText2{
+    position: absolute;
+    top: 460.6vw;
+    left: 6vw;
+}
+/* .animationText2 p{
+    margin-bottom: 1rem;
+} */
+.animationText2 .text5 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+.animationText2 .text7 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+.animationText2 .text9 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+.animationText2 .text11 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+
+
+.animationText3{
+    position: absolute;
+    top: 460.6vw;
+    right: 5vw;
+}
+/* .animationText3 p{
+    margin-bottom: 1rem;
+} */
+.animationText3 .text6 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+.animationText3 .text8 {
+    width: 171px;
+    height: 60px;
+        font-Family: Formula Condensed;
+        font-Size: 47px;
+        font-Weight: 700;
+        line-Height: 56.4px;
+        letter-Spacing: 0em;
+        text-Align: center;
+        color: #1A6063
+}
+.animationText3 .text10 {
+    width: 171px;
+    height: 60px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+.animationText3 .text12 {
+    width: 171px;
+    font-Family: Formula Condensed;
+    font-Size: 47px;
+    font-Weight: 700;
+    line-Height: 56.4px;
+    letter-Spacing: 0em;
+    text-Align: center;
+    color: #1A6063
+}
+.animationGraphic{
+    position: absolute;
+    top: 459.4vw;
+    left: 15vw;
+    z-index: 2;
+}
+.animationGraphic img{ 
+    width: 68.3vw;
 }

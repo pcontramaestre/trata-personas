@@ -213,6 +213,7 @@ p {
 
 .news1:hover .newshover__background1 {
   display: flex;
+  cursor: pointer;
   /* z-index: 1; */
 }
 
@@ -225,6 +226,7 @@ p {
 .news2:hover .newshover__background2 {
   display: flex;
   /* z-index: 1; */
+  cursor: pointer;
 }
 
 .newshover__background2 {
@@ -236,6 +238,7 @@ p {
 .news3:hover .newshover__background1 {
   display: flex;
   /* z-index: 1; */
+  cursor: pointer;
 }
 
 .newshover__background1 {

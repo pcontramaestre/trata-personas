@@ -12,7 +12,7 @@
 }
 
 .LawEnforcementText span {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .infoGif {
@@ -24,4 +24,131 @@
     to {
         transform: scale(1.5);
     }
+}
+
+.animationText2 {
+    top: 142vw;
+    right: 3%;
+    position: absolute;
+    width: 30%;
+}
+.animationText2 .text5 {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText2 .text6 {
+    font-family: Formula Condensed;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText2 .text7 {
+    font-family: Formula Condensed;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.animationText2 .textStrong {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-right: 0.5rem;
+}
+.animationText3{
+    top: 407vw;
+    left: 5%;
+    position: absolute;
+    width: 34%;
+}
+.animationText3 .text9{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText3 .text10{
+    font-family: Formula Condensed;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+}
+.animationText3 .text11{
+    font-family: Formula Condensed;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.animationText3 .textStrong2 {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 39.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0a4b4e;
+    margin-right: 0.5rem;
+}
+.graphic2 img{
+    width: 41vw;
+    height: 35.3vw;
+    top: 184.7vw;
+    left: 39vw;
+    position: absolute;
+}
+.animationGraphic{
+    top: 186vw;
+    left: 40.51vw;
+    position: absolute;
+    width: 4vw;
+}
+.animationGraphic .row1{
+    width: 11vw;
+}
+.animationGraphic .row2{
+    width: 3.3vw;
+    margin-top: 0.7rem;
+}
+.animationGraphic .row3{
+    width: 3.3vw;
+    margin-top: 0.6rem
+}
+.animationGraphic .row4{
+    width: 5.8vw;
+    margin-top: 0.7rem;
+}
+.animationGraphic .row5{
+    width: 19.4vw;
+    margin-top: 0.7rem;
+}
+.animationGraphic .row6{
+    width: 35.4vw;
+    margin-top: 0.7rem;
 }
