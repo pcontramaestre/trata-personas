@@ -36,7 +36,7 @@ const icons = {
 }
 
 const { homeHeader } = data
-const { noteBook, news, map, bigInfoBox, forntPageImages } = data.homeHeader
+const { noteBook, news, map, bigInfoBox, frontPageImages } = data.homeHeader
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -92,7 +92,7 @@ function Section0 () {
             : null
         ))
       }
-      <FrontPageSection0 forntPageImages={forntPageImages} />
+      <FrontPageSection0 frontPageImages={frontPageImages} />
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {
