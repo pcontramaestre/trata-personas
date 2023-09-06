@@ -1,27 +1,71 @@
 #container-Map #DO01 .DO:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #MX01 .MX:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #GT01 .GT:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #BZ01 .BZ:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #SV01 .SV:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #HN01 .HN:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #NI01 .NI:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #CR01 .CR:hover{
     fill: #13F8FD;
+    cursor: pointer;
 }
 #container-Map #PA01 .PA:hover{
     fill: #13F8FD;
+    cursor: pointer;
+}
+
+#container-Map #E-MX:hover{
+    cursor: pointer;
+}
+
+#container-Map #E-MX:hover{
+    cursor: pointer;
+}
+#container-Map #E-GT:hover{
+    cursor: pointer;
+}
+#container-Map #E-BZ:hover{
+    cursor: pointer;
+}
+#container-Map #E-MX:hover{
+    cursor: pointer;
+}
+#container-Map #E-SV:hover{
+    cursor: pointer;
+}
+#container-Map #E-HN:hover{
+    cursor: pointer;
+}
+#container-Map #E-NI:hover{
+    cursor: pointer;
+}
+#container-Map #E-CR:hover{
+    cursor: pointer;
+}
+#container-Map #E-PA:hover{
+    cursor: pointer;
+}
+#container-Map #E-DO:hover{
+    cursor: pointer;
 }

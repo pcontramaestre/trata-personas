@@ -12,6 +12,10 @@
     background-position: center;
 }
 
+.NewsArticle:hover {
+    cursor: pointer;
+}
+
 .NewsArticle p {
     margin: 0px;
     text-align: start;
@@ -35,6 +39,10 @@
     align-items: flex-start;
     z-index: 1;
     opacity: 1;
+}
+
+.NewsArticleHover:hover {
+    cursor: pointer;
 }
 
 .titleIntoArticle {

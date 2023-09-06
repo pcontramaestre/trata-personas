@@ -18,30 +18,39 @@
 }
 .map-container #MAPA3 #DO .DO:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #PA .PA:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #CR .CR:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #NI .NI:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #HN .HN:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #SV .SV:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #BZ .BZ:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #GT .GT:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 .map-container #MAPA3 #MX .MX:hover{
     fill: #D98E94;
+    cursor: pointer;
 }
 
 
