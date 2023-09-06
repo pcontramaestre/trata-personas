@@ -22,6 +22,7 @@
   position: absolute;
   /* top: 10vh; */
   left: 0;
+  cursor: pointer;
   background-color: transparent;
   width: 50vw;
   height: 50vh;
@@ -30,6 +31,7 @@
 .laboral__graphicquemado {
   display: none;
   position: absolute;
+  cursor: pointer;
   left: 0;
   background-image: url("../../../../assets/Img-Section02/Page06/graficoquemado.png");
   background-size: contain;
@@ -41,12 +43,12 @@
 
 .laboralsectiongraphic:hover + .laboral__graphicquemado {
   display: flex;
-  cursor: pointer !important;
+  /* cursor: pointer !important; */
 }
 
 .laboral__graphicquemado:hover {
   display: flex;
-  cursor: pointer !important;
+  /* cursor: pointer !important; */
 }
 
 .laboral__img {

@@ -28,25 +28,21 @@ function Section1() {
       // Si el slider está cerrado, abrirlo
       gsap.to(".text", { left: 0, duration: 0.5, ease: "ease-in-out" });
       gsap.to(".slidercircle", {
-        right: "-100%",
+        left: "-100%",
         duration: 0.5,
         ease: "ease-in-out",
-      });
+      }); // Cambio aquí
     } else {
       // Si el slider está abierto, cerrarlo
-      gsap.to(".text", { left: "-100%", duration: 0.5, ease: "ease-in-out" });
-      gsap.to(".slidercircle", {
-        right: 0,
-        duration: 0.5,
-        ease: "ease-in-out",
-      });
+      gsap.to(".text", { left: "100%", duration: 0.5, ease: "ease-in-out" }); // Cambio aquí
+      gsap.to(".slidercircle", { left: 0, duration: 0.5, ease: "ease-in-out" }); // Cambio aquí
     }
   };
 
   const sliderReverse = () => {
-    gsap.to(".text", { left: "-100%", duration: 0.5, ease: "ease-in-out" });
+    gsap.to(".text", { left: "+100%", duration: 0.5, ease: "ease-in-out" });
     gsap.to(".slidercircle", {
-      right: 0,
+      left: 0,
       duration: 0.5,
       ease: "ease-in-out",
     });
@@ -59,19 +55,19 @@ function Section1() {
       // Si el slider está cerrado, abrirlo
       gsap.to(".text-women", { left: 0, duration: 0.5, ease: "ease-in-out" });
       gsap.to(".womenslider-gsap", {
-        right: "-100%",
+        left: "-100%",
         duration: 0.5,
         ease: "ease-in-out",
       });
     } else {
       // Si el slider está abierto, cerrarlo
       gsap.to(".text-women", {
-        left: "-100%",
+        left: "100%",
         duration: 0.5,
         ease: "ease-in-out",
       });
       gsap.to(".womenslider-circle", {
-        right: 0,
+        left: 0,
         duration: 0.5,
         ease: "ease-in-out",
       });
@@ -80,12 +76,12 @@ function Section1() {
 
   const reverseWomenSlider = () => {
     gsap.to(".text-women", {
-      left: "-100%",
+      left: "+100%",
       duration: 0.5,
       ease: "ease-in-out",
     });
     gsap.to(".womenslider-gsap", {
-      right: 0,
+      left: 0,
       duration: 0.5,
       ease: "ease-in-out",
     });

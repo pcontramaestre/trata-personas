@@ -11,7 +11,7 @@ const BookAdopcion = ({ page8 }) => {
       scrollTrigger: {
         trigger: ".NoteBook06",
         start: "top 95%",
-        end: "bottom 140%",
+        end: "bottom 50%",
         scrub: true,
       },
     });

@@ -11,7 +11,7 @@ const BookLaboral = ({ page6 }) => {
       scrollTrigger: {
         trigger: ".NoteBook03",
         start: "top 95%",
-        end: "bottom 110%",
+        end: "bottom 40%",
         scrub: true,
       },
     });

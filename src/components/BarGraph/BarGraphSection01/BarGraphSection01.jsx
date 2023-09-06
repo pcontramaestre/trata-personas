@@ -13,23 +13,21 @@ function BarGraphSection01() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".BarGraph",
-        start: "top 95%",
-        end: "bottom 110%",
+        start: "top 60%",
+        end: "center",
         scrub: true,
       },
     });
 
-    tl.from(".bargraph__texts", { x: +100, opacity: 0});
+    tl.from(".bargraph__texts", { x: +100, opacity: 0 });
     tl.to(".bargraph__texts", { x: 0, opacity: 1 });
   }, []);
 
   return (
-    <div className="BarGraph" >
+    <div className="BarGraph">
       <div className="baragraph__graphic">
-        <h2 className="bargraph__title" >
-          {page4.graphic.title}
-        </h2>
-        <div className="bargraph__image" >
+        <h2 className="bargraph__title">{page4.graphic.title}</h2>
+        <div className="bargraph__image">
           {" "}
           {/* <div className="baragraphcolumns">
             <ul className="baragraph__columns-1">
@@ -47,7 +45,7 @@ function BarGraphSection01() {
           <li>{page4.graphic.year4}</li>
         </ul> */}
       </div>
-      <div className="bargraph__texts" >
+      <div className="bargraph__texts">
         <p
           className="bargraph__text1"
           dangerouslySetInnerHTML={{ __html: page4.text1 }}
