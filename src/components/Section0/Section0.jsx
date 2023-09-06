@@ -44,6 +44,12 @@ function convertSize (input) {
 
 function Section0 () {
   useLayoutEffect(() => {
+    const windowWidth = window.innerWidth
+    function calculateHeight() {
+      const y = -0.035 * (windowWidth) + 55
+      if (y <= 0) return 0
+      else return y
+    }
     const ctx = gsap.context(() => {
       // Puppet entrance animation
       const tl = gsap.timeline({ delay: 1 })
@@ -65,7 +71,9 @@ function Section0 () {
         scrollTrigger: {
           trigger: '#backgroundsection0',
           // markers: true,
-          start: 'top top',
+          start: () => {
+            return '20% ' + calculateHeight() + '%'
+          },
           end: '2000 bottom',
           scrub: 1,
           pin: '#section0',
