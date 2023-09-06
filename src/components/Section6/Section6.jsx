@@ -73,21 +73,29 @@ function Section6 () {
         }
       })
 
-      tl1.from('#handChildsection6', {
-        scale: 0
+      tl1.fromTo('#handChildsection6', {
+        scale: 0.7
+      }, {
+        scale: 1
       }, 0)
-      tl1.from('#handShesection6', {
-        scale: 0
+      tl1.fromTo('#handShesection6', {
+        scale: 0.7
+      }, {
+        scale: 1
       }, 0)
-      tl1.from('#handHesection6', {
-        scale: 0
+      tl1.fromTo('#handHesection6', {
+        scale: 0.7
+      }, {
+        scale: 1
       }, 0)
 
       const scrollTriggerFrontPageSection6 = ScrollTrigger.getById('frontPageSection6')
 
       // Animación de mano
-      gsap.from('#handsection6', {
-        scale: 0,
+      gsap.fromTo('#handsection6', {
+        scale: 0.6
+      }, {
+        scale: 1,
         scrollTrigger: {
           trigger: '#handsection6',
           // markers: true,
@@ -122,14 +130,18 @@ function Section6 () {
         }
       })
 
-      tl2.from('#contenedorRojo1section6', {
-        scaleX: 0,
+      tl2.fromTo('#contenedorRojo1section6', {
+        scaleX: 0.6,
         transformOrigin: 'left'
+      }, {
+        scale: 1
       })
 
-      tl2.from('#contenedorRojo2section6', {
-        scaleX: 0,
+      tl2.fromTo('#contenedorRojo2section6', {
+        scaleX: 0.6,
         transformOrigin: 'left'
+      }, {
+        scale: 1
       }, 0)
 
       Array.from(textAnimationSection6).forEach(text => {

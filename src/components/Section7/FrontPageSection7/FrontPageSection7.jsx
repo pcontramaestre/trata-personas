@@ -27,9 +27,8 @@ function FrontPageSection7 ({ forntPageImages }) {
         y: '100%',
         opacity: 0
       }, {
-        y: '-15%',
+        y: '0%',
         opacity: 1,
-        zIndex: 4,
         scrollTrigger: {
           trigger: '#backgroundsection7',
           // markers: true,

@@ -136,7 +136,7 @@ function Section5 () {
           trigger: '#busPlaneContainerSection5',
           // markers: true,
           start: () => {
-            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + ' top'
+            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' top'
           },
           end: () => {
             return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'
