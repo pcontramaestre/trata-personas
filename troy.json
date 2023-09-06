@@ -1169,6 +1169,220 @@
         "color": "#0F4A4D"
       }
     ],
+    "news": {
+      "section": "Section6",
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "México: Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
+            "width": "461.18px",
+            "height": "191.51px",
+            "top": "70421.69px",
+            "left": "183px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "70727.81px",
+            "left": "214.18px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70310.36px",
+            "left": "190px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "750px",
+            "height": "817px",
+            "top": "20px",
+            "left": "80px",
+            "backgroundImage": "sheetM",
+            "title": {
+              "content": "Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
+              "width": "534px",
+              "height": "111px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "Esta actividad académica está dirigida a funcionarios públicos de los 11 países que conforman la CRM (Canadá, Belice, Costa Rica, El Salvador, Estados Unidos, Guatemala, Honduras, México, Nicaragua, Panamá y República Dominicana), quienes se desempeñan en puestos estratégicos para enfrentar la trata de personas y el trabajo forzoso en sus naciones.<br/>El secretario ejecutivo de la CRM mencionó que “el combate a la trata de personas debe ser permanente y constante en nuestros países; además, el fortalecimiento de capacidades requiere ser fundamental y continuo en nuestras instituciones.<br/>“Es un fenómeno complejo y requiere la coordinación de numerosas personas e instituciones en los sectores público y privado, y en la sociedad civil. Es por ello que la coordinación debe ir de la mano de la actualización de los conocimientos, así como de la comprensión de los retos en nuestra región”",
+              "width": "586px",
+              "height": "440px",
+              "top": "215px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/UNAM",
+              "width": "430px",
+              "height": "23px",
+              "top": "640px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/mexico/especializacion-a-funcionarios-publicos-para-enfrentar-trata-de-personas-y-trabajo-forzoso"
+          }
+        },
+        {
+          "title": {
+            "text": "Honduras: En marcha campaña para combatir trata de personas",
+            "width": "452.52px",
+            "height": "191.51px",
+            "top": "70194.55px",
+            "left": "809.59px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "70383px",
+            "left": "758.98px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70059px",
+            "left": "774.69px",
+            "rotation": "-14.88deg"
+          },
+          "hover": {
+            "width": "730px",
+            "height": "735px",
+            "top": "-110px",
+            "left": "700px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "En marcha campaña para combatir trata de personas",
+              "width": "535px",
+              "height": "80px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La Comisión Interinstitucional Contra la Explotación Sexual Comercial y Trata de Personas de Honduras Lanzó la jornada “Puedes Verme”, en colaboración con la Campaña A21, organización no gubernamental global 501, sin fines de lucro que trabaja frente a ese flagelo.<br/>El trabajo se aúna con el objetivo de mostrar a la población de Honduras, cuáles son los indicadores de la trata de personas y que puedan denunciar a los números telefónicos habilitados en el país.<br/>La campaña está compuesta por spots audiovisuales que muestran la realidad que sufren muchas personas en el país al ser captadas por las redes de trata que operan en el territorio nacional, y por vallas publicitarias y banners, a través de medios de comunicación en puntos estratégicos que permitan generar conciencia y sensibilización.",
+              "width": "570px",
+              "height": "408px",
+              "top": "188px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/La Tribuna ",
+              "width": "470px",
+              "height": "23px",
+              "top": "580px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/honduras/en-marcha-campana-para-combatir-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
+            "width": "443.52px",
+            "height": "191.51px",
+            "top": "70470.31px",
+            "left": "1288.02px"
+          },
+          "footer": {
+            "text": "UNODC",
+            "top": "70763.81px",
+            "left": "1313.2px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "70358.36px",
+            "left": "1280.02px",
+            "rotation": "7.56deg"
+          },
+          "hover": {
+            "width": "791px",
+            "height": "847px",
+            "top": "-30px",
+            "left": "1115px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
+              "width": "534px",
+              "height": "74px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La campaña para el Día Mundial contra la Trata de Personas de 2023 tiene como objetivo sensibilizar sobre los alarmantes acontecimientos y amenazas identificados por el último Informe Mundial sobre la Trata de Personas de la UNODC y hace un llamamiento a los gobiernos, las fuerzas del orden, los servicios públicos y la sociedad civil para evaluar y mejorar sus esfuerzos para fortalecer la prevención, identificar y apoyar a las víctimas, y poner fin a la impunidad.<br/>Para acabar con la trata debemos reforzar la resistencia contra la explotación y los problemas socioeconómicos y culturales subyacentes que propician la trata. Debemos sensibilizar a todo el mundo sobre el tema de la trata de personas y dirigir así la atención hacia quienes pueden marcar la diferencia en términos de cambio de políticas y gestión de recursos nacionales para reforzar las medidas de prevención, mejorar la identificación de las víctimas, aumentar el apoyo a los supervivientes y acabar con la impunidad.",
+              "width": "588px",
+              "height": "440px",
+              "top": "212px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: UNODC",
+              "width": "430px",
+              "height": "23px",
+              "top": "640px",
+              "left": "0px"
+            },
+            "link": "https://www.un.org/es/observances/end-human-trafficking-day"
+          }
+        }
+      ]
+    },
     "handSlide": {
       "section": "section7",
       "width": "1920px",
@@ -3429,220 +3643,6 @@
         "left": "252px",
         "borderLeft": "2px solid #FFFFFF"
       }
-    },
-    "news": {
-      "section": "Section6",
-      "footerCard": {
-        "fontFamily": "Inter",
-        "fontSize": "20px",
-        "fontWeight": "400",
-        "lineHeight": "24px",
-        "letterSpacing": "0.11em",
-        "textAlign": "left",
-        "color": "#000000"
-      },
-      "titleStyles": {
-        "fontFamily": "Inika",
-        "fontSize": "33px",
-        "fontWeight": "700",
-        "lineHeight": "43px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#043335"
-      },
-      "titleStylesHover": {
-        "fontFamily": "Inika",
-        "fontSize": "30px",
-        "fontWeight": "700",
-        "lineHeight": "39px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814"
-      },
-      "textStylesHover": {
-        "fontFamily": "Inter",
-        "fontSize": "20px",
-        "fontWeight": "400",
-        "lineHeight": "24px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814"
-      },
-      "footerStyleHover": {
-        "fontFamily": "Inika",
-        "fontSize": "20px",
-        "fontWeight": "700",
-        "lineHeight": "26px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814",
-        "color2": "#948678"
-      },
-      "footerIconHover": {
-        "width": "20.9993953704834px",
-        "height": "24.002277374267578px",
-        "top": "874.00390625px",
-        "left": "103px",
-        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
-      },
-      "articles": [
-        {
-          "title": {
-            "text": "México: Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
-            "width": "461.18px",
-            "height": "191.51px",
-            "top": "70421.69px",
-            "left": "183px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "70727.81px",
-            "left": "214.18px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70310.36px",
-            "left": "190px",
-            "rotation": "7.56deg"
-          },
-          "hover": {
-            "width": "750px",
-            "height": "817px",
-            "top": "20px",
-            "left": "80px",
-            "backgroundImage": "sheetM",
-            "title": {
-              "content": "Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
-              "width": "534px",
-              "height": "111px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "Esta actividad académica está dirigida a funcionarios públicos de los 11 países que conforman la CRM (Canadá, Belice, Costa Rica, El Salvador, Estados Unidos, Guatemala, Honduras, México, Nicaragua, Panamá y República Dominicana), quienes se desempeñan en puestos estratégicos para enfrentar la trata de personas y el trabajo forzoso en sus naciones.<br/>El secretario ejecutivo de la CRM mencionó que “el combate a la trata de personas debe ser permanente y constante en nuestros países; además, el fortalecimiento de capacidades requiere ser fundamental y continuo en nuestras instituciones.<br/>“Es un fenómeno complejo y requiere la coordinación de numerosas personas e instituciones en los sectores público y privado, y en la sociedad civil. Es por ello que la coordinación debe ir de la mano de la actualización de los conocimientos, así como de la comprensión de los retos en nuestra región”",
-              "width": "586px",
-              "height": "440px",
-              "top": "215px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/UNAM",
-              "width": "430px",
-              "height": "23px",
-              "top": "640px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/mexico/especializacion-a-funcionarios-publicos-para-enfrentar-trata-de-personas-y-trabajo-forzoso"
-          }
-        },
-        {
-          "title": {
-            "text": "Honduras: En marcha campaña para combatir trata de personas",
-            "width": "452.52px",
-            "height": "191.51px",
-            "top": "70194.55px",
-            "left": "809.59px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "70383px",
-            "left": "758.98px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70059px",
-            "left": "774.69px",
-            "rotation": "-14.88deg"
-          },
-          "hover": {
-            "width": "730px",
-            "height": "735px",
-            "top": "-110px",
-            "left": "700px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "En marcha campaña para combatir trata de personas",
-              "width": "535px",
-              "height": "80px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "La Comisión Interinstitucional Contra la Explotación Sexual Comercial y Trata de Personas de Honduras Lanzó la jornada “Puedes Verme”, en colaboración con la Campaña A21, organización no gubernamental global 501, sin fines de lucro que trabaja frente a ese flagelo.<br/>El trabajo se aúna con el objetivo de mostrar a la población de Honduras, cuáles son los indicadores de la trata de personas y que puedan denunciar a los números telefónicos habilitados en el país.<br/>La campaña está compuesta por spots audiovisuales que muestran la realidad que sufren muchas personas en el país al ser captadas por las redes de trata que operan en el territorio nacional, y por vallas publicitarias y banners, a través de medios de comunicación en puntos estratégicos que permitan generar conciencia y sensibilización.",
-              "width": "570px",
-              "height": "408px",
-              "top": "188px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/La Tribuna ",
-              "width": "470px",
-              "height": "23px",
-              "top": "580px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/honduras/en-marcha-campana-para-combatir-trata-de-personas"
-          }
-        },
-        {
-          "title": {
-            "text": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
-            "width": "443.52px",
-            "height": "191.51px",
-            "top": "70470.31px",
-            "left": "1288.02px"
-          },
-          "footer": {
-            "text": "UNODC",
-            "top": "70763.81px",
-            "left": "1313.2px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70358.36px",
-            "left": "1280.02px",
-            "rotation": "7.56deg"
-          },
-          "hover": {
-            "width": "791px",
-            "height": "847px",
-            "top": "-30px",
-            "left": "1115px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
-              "width": "534px",
-              "height": "74px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "La campaña para el Día Mundial contra la Trata de Personas de 2023 tiene como objetivo sensibilizar sobre los alarmantes acontecimientos y amenazas identificados por el último Informe Mundial sobre la Trata de Personas de la UNODC y hace un llamamiento a los gobiernos, las fuerzas del orden, los servicios públicos y la sociedad civil para evaluar y mejorar sus esfuerzos para fortalecer la prevención, identificar y apoyar a las víctimas, y poner fin a la impunidad.<br/>Para acabar con la trata debemos reforzar la resistencia contra la explotación y los problemas socioeconómicos y culturales subyacentes que propician la trata. Debemos sensibilizar a todo el mundo sobre el tema de la trata de personas y dirigir así la atención hacia quienes pueden marcar la diferencia en términos de cambio de políticas y gestión de recursos nacionales para reforzar las medidas de prevención, mejorar la identificación de las víctimas, aumentar el apoyo a los supervivientes y acabar con la impunidad.",
-              "width": "588px",
-              "height": "440px",
-              "top": "212px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: UNODC",
-              "width": "430px",
-              "height": "23px",
-              "top": "640px",
-              "left": "0px"
-            },
-            "link": "https://www.un.org/es/observances/end-human-trafficking-day"
-          }
-        }
-      ]
     }
   },
   "lawEnforcement": {
