@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useLayoutEffect, useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "./Organos.css";
 import data from "../../../../trataSection02.json";
 import camilla from "../../../assets/Img-Section02/Page13/organs.png";
@@ -6,6 +8,21 @@ import arrow from "../../../assets/Img-Section02/Page13/arrow.svg";
 
 const Organos = () => {
   const page13 = data[0].finalidades.page13;
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".book_organos__container",
+        start: "top 95%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+    });
+
+    tl.from(".book_organos", { x:+100, opacity: 0 });
+    tl.to(".book_organos", { x: 0, opacity: 1 });
+  }, []);
   return (
     <div className="organos">
       <div className="organos__content">
@@ -18,7 +35,7 @@ const Organos = () => {
             <div className="book_organos">
               <div className="books__texts-organos">
                 <div className="arrow__book">
-                <img className="arrow__img" src={arrow} />
+                  <img className="arrow__img" src={arrow} />
                   <p
                     className="books__text"
                     dangerouslySetInnerHTML={{ __html: page13.text1 }}
@@ -32,7 +49,7 @@ const Organos = () => {
                   />
                 </div>
                 <div className="arrow__book">
-                <img className="arrow__img" src={arrow} />
+                  <img className="arrow__img" src={arrow} />
                   <p
                     className="books__text"
                     dangerouslySetInnerHTML={{ __html: page13.text3 }}
