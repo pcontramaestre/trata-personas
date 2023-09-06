@@ -1,0 +1,46 @@
+.credits__mano1 {
+  position: absolute;
+  background-image: url("../../assets/Section8/mano-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -13.6vw;
+  bottom: 34%;
+  width: 61%;
+  height: 60%;
+  z-index: 3;
+}
+.credits__mano2 {
+  position: absolute;
+  background-image: url("../../assets/Section8/mano-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0vw;
+  right: 1vw;
+  /* bottom: 34%; */
+  width: 59.5%;
+  height: 60%;
+  z-index: 2;
+}
+.credits__mano3 {
+  position: absolute;
+  background-image: url("../../assets/Section8/mano-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0vh;
+  left: 10.5vw;
+  width: 62%;
+  height: 60%;
+}
+.credits__mano4{
+    position: absolute;
+    background-image: url("../../assets/Section8/mano-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    /* top: 0; */
+    left: 43.7vw;
+    bottom: 35%;
+    width: 41%;
+    height: 45%;
+    z-index: 3;
+}

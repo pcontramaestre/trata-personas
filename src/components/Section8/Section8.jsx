@@ -3,7 +3,13 @@ import frontPage from "../../assets/Section8/frontPage.png";
 import data from "../../../troy.json";
 import Corett from "./Corett/Corett";
 import Countries from "./Paises/Countries";
+import "./Section8.css";
 import VideoCorett from "./VideoCorett/VideoCorett";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const imagesList = {
   frontPage,
@@ -19,6 +25,54 @@ const { credits } = data;
 const { images, text } = data.credits;
 
 function Section8() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "._CreditsBackground_1dt04_1",
+        start: "top 70%",
+        end: "center center",
+        scrub: true,
+      },
+    });
+    tl.from(".credits__mano1", { x: +100, opacity: 0 });
+    tl.to(".credits__mano1", { x: 0, opacity: 1 });
+
+    const tlcredits3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "._CreditsBackground_1dt04_1",
+        start: "top 68%",
+        end: "center center",
+        scrub: true,
+      },
+    });
+    tlcredits3.from(".credits__mano3", { x: -100, opacity: 0 });
+    tlcredits3.to(".credits__mano3", { x: 0, opacity: 1 });
+
+    const tlcredits2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "._CreditsBackground_1dt04_1",
+        start: "top 65%",
+        end: "center center",
+        scrub: true,
+      },
+    });
+    tlcredits2.from(".credits__mano2", { y: -100, opacity: 0 });
+    tlcredits2.to(".credits__mano2", { y: 0, opacity: 1 });
+
+    const tlcredits4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "._CreditsBackground_1dt04_1",
+        start: "top 63%",
+        end: "center center",
+        scrub: true,
+      },
+    });
+    tlcredits4.from(".credits__mano4", { y: +100, opacity: 0 });
+    tlcredits4.to(".credits__mano4", { y: 0, opacity: 1 });
+  }, []);
+
   const creditsContainer = {
     width: convertSize(credits.width),
     height: convertSize(credits.height),
@@ -102,6 +156,10 @@ function Section8() {
           }
           return true;
         })}
+        <div className="credits__mano1" />
+        <div className="credits__mano2" />
+        <div className="credits__mano3" />
+        <div className="credits__mano4" />
       </section>
       <section className={style.section08}>
         <Corett />

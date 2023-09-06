@@ -15,7 +15,7 @@ const CircleGraph = () => {
       scrollTrigger: {
         trigger: ".circlegraph", // Cambia el selector si es necesario
         start: "top 90%", // Punto de inicio de la animación
-        end: "bottom 110%", // Punto de finalización de la animación
+        end: "bottom 80%", // Punto de finalización de la animación
         scrub: true, // Activa el "scrubbing" para la animación suave
       },
     });
@@ -25,7 +25,7 @@ const CircleGraph = () => {
         trigger: ".circlegraph",
         duration: 5,
         start: "top 65%", // Punto de inicio de la animación
-        end: "bottom 110%", // Punto de finalización de la animación
+        end: "bottom 80%", // Punto de finalización de la animación
         scrub: true, // Activa el "scrubbing" para la animación suave
       },
     });

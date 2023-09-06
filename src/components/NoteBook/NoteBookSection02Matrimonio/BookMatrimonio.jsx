@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useLayoutEffect, useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "./BookMatrimonio.css";
 
 const BookMatrimonio = ({ page9 }) => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".NoteBook07",
+        start: "top 95%",
+        end: "bottom 110%",
+        scrub: true,
+      },
+    });
+
+    tl.from(".NoteBook07", { x: +100, opacity: 0 });
+    tl.to(".NoteBook07", { x: 0, opacity: 1 });
+  }, []);
   return (
     <div className="NoteBook07">
       <div className="NoteBook07__texts">
