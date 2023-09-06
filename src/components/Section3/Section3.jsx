@@ -22,13 +22,13 @@ import atenciones from "../../assets/Section3/atenciones.svg";
 import group from "../../assets/Instructions/group.svg";
 import infoGifSection3 from "../../assets/Instructions/infoGifBlanco1.svg";
 import audio from "../../assets/Instructions/audio1.svg";
-import amarillo1 from "../../assets/Section3/amarillo1.png";
-import rosado1 from "../../assets/Section3/rosado1.png";
-import azul1 from "../../assets/Section3/azul1.png";
-import verde1 from "../../assets/Section3/verde1.png";
-import amarillo2 from "../../assets/Section3/amarillo2.png";
-import rosado2 from "../../assets/Section3/rosado2.png";
-import azul2 from "../../assets/Section3/azul2.png";
+import amarillo1 from "../../assets/Section3/amarillo1.jpg";
+import rosado1 from "../../assets/Section3/rosado1.jpg";
+import azul1 from "../../assets/Section3/azul1.jpg";
+import verde1 from "../../assets/Section3/verde1.jpg";
+import amarillo2 from "../../assets/Section3/amarillo2.jpg";
+import rosado2 from "../../assets/Section3/rosado2.jpg";
+import azul2 from "../../assets/Section3/azul2.jpg";
 import psicosocial from "../../assets/Section3/psicosocial.png";
 import medico from "../../assets/Section3/medico.png";
 import legal from "../../assets/Section3/legal.png";
@@ -96,7 +96,7 @@ function Section3() {
         scrollTrigger: {
           trigger: containerRowRefs.current[index], // Use the specific ref for this row
           start: "top center",
-          end: "center center",
+          end: "bottom center",
           scrub: true,
         },
       });
@@ -112,6 +112,26 @@ function Section3() {
           x: "0%",
         }
       );
+
+      containerRowTl.fromTo(
+        "#bigCard" + row.image.name,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        }, 2
+      );
+
+      containerRowTl.fromTo(
+        "#bigCard" + row.image.name,
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }, 5
+      );
     });
 
     // Animations for images
@@ -124,7 +144,7 @@ function Section3() {
           scrub: true,
         },
       });
-    
+
       imgTl.fromTo(
         imgRefs.current,
         {
@@ -138,91 +158,91 @@ function Section3() {
       );
     });
 
-// Animations for text
+    // Animations for text
     const textTl2 = gsap.timeline({
-          scrollTrigger: {
-            trigger: textRef2.current,
-            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-            scrub: true, // Hace que la animación sea suave mientras se desplaza
-            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          },
-        });
-    
-        textTl2.fromTo(
-          textRef2.current,
-          {
-            x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-          },
-          {
-            x: "0%", // Lleva el elemento a su posición original (0%)
-            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-          }
-        );
+      scrollTrigger: {
+        trigger: textRef2.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl2.fromTo(
+      textRef2.current,
+      {
+        x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
     const textTl3 = gsap.timeline({
-          scrollTrigger: {
-            trigger: textRef3.current,
-            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-            scrub: true, // Hace que la animación sea suave mientras se desplaza
-            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          },
-        });
-    
-        textTl3.fromTo(
-          textRef3.current,
-          {
-            x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-          },
-          {
-            x: "0%", // Lleva el elemento a su posición original (0%)
-            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-          }
-        );
+      scrollTrigger: {
+        trigger: textRef3.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl3.fromTo(
+      textRef3.current,
+      {
+        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
     const textTl4 = gsap.timeline({
-          scrollTrigger: {
-            trigger: textRef4.current,
-            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-            scrub: true, // Hace que la animación sea suave mientras se desplaza
-            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          },
-        });
-    
-        textTl4.fromTo(
-          textRef4.current,
-          {
-            x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-          },
-          {
-            x: "0%", // Lleva el elemento a su posición original (0%)
-            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-          }
-        );
+      scrollTrigger: {
+        trigger: textRef4.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl4.fromTo(
+      textRef4.current,
+      {
+        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
     const textTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: textRef.current,
-            start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-            end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-            scrub: true, // Hace que la animación sea suave mientras se desplaza
-            // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          },
-        });
-    
-        textTl.fromTo(
-          textRef.current,
-          {
-            x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-            opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-          },
-          {
-            x: "0%", // Lleva el elemento a su posición original (0%)
-            opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-          }
-        );
+      scrollTrigger: {
+        trigger: textRef.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    textTl.fromTo(
+      textRef.current,
+      {
+        x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
   }, []);
 
   const [nameBigCard, setNameBigCard] = useState("");
@@ -265,33 +285,33 @@ function Section3() {
     }
   }, []);
 
-  useEffect(() => {
-    if (bigCard) {
-      const images = document.getElementsByName("proteccion");
-      const div = document.getElementById("BigCardProtection");
+  // useEffect(() => {
+  //   if (bigCard) {
+  //     const images = document.getElementsByName("proteccion");
+  //     const div = document.getElementById("BigCardProtection");
 
-      function activeDisplay(event) {
-        setNameBigCard(event.target.id);
-        div.style.display = "block";
-      }
+  //     function activeDisplay(event) {
+  //       setNameBigCard(event.target.id);
+  //       div.style.display = "block";
+  //     }
 
-      function desactiveDisplay() {
-        div.style.display = "";
-        setNameBigCard("");
-      }
+  //     function desactiveDisplay() {
+  //       div.style.display = "";
+  //       setNameBigCard("");
+  //     }
 
-      images.forEach((image) => {
-        image.addEventListener("mouseenter", activeDisplay);
-      });
-      div.addEventListener("mouseleave", desactiveDisplay);
-      return () => {
-        images.forEach((image) => {
-          image.removeEventListener("mouseenter", activeDisplay);
-        });
-        div.removeEventListener("mouseleave", desactiveDisplay);
-      };
-    }
-  }, []);
+  //     images.forEach((image) => {
+  //       image.addEventListener("mouseenter", activeDisplay);
+  //     });
+  //     div.addEventListener("mouseleave", desactiveDisplay);
+  //     return () => {
+  //       images.forEach((image) => {
+  //         image.removeEventListener("mouseenter", activeDisplay);
+  //       });
+  //       div.removeEventListener("mouseleave", desactiveDisplay);
+  //     };
+  //   }
+  // }, []);
 
   const protectionAndCareBackgroundStyles = {
     width: convertSize(protectionAndCare.width),
@@ -400,7 +420,6 @@ function Section3() {
 
   const listImageFrontPage = ["leftHand", "bars", "rightHand"];
   const animationText = data.protectionAndCare.animationText;
-  
 
   return (
     <section
@@ -409,7 +428,13 @@ function Section3() {
       style={protectionAndCareBackgroundStyles}
     >
       <div className={style.animationText1} ref={textRef}>
-        <p className={style.text1}>{animationText.text1} <strong className={style.textStrong}>{animationText.textStrong}</strong>{animationText.text4} </p>
+        <p className={style.text1}>
+          {animationText.text1}{" "}
+          <strong className={style.textStrong}>
+            {animationText.textStrong}
+          </strong>
+          {animationText.text4}{" "}
+        </p>
         <h2 className={style.text3}>{animationText.text3}</h2>
         <p className={style.text2}>{animationText.text2}</p>
       </div>
@@ -429,7 +454,7 @@ function Section3() {
       <div className={style.animationGraphic} ref={textRef4}>
         <img src={graphic} alt="" />
       </div>
-      
+
       {rows.map((row, index) => (
         <div
           ref={(el) => (containerRowRefs.current[index] = el)}
@@ -449,6 +474,12 @@ function Section3() {
           <h1 className={style.contentrow} style={rowsNumberStyles[index]}>
             {row.number.content}
           </h1>
+          <BigCard
+            id="BigCardProtection"
+            bigCard={bigCard}
+            topSection={row.properties.top}
+            name={row.image.name}
+          />
         </div>
       ))}
       {images.map((image, index) => (
@@ -521,11 +552,12 @@ function Section3() {
           key={infoBox.name + index}
         />
       ))}
-      <BigCard id="BigCardProtection"
+      {/* <BigCard
+        id="BigCardProtection"
         bigCard={bigCard}
         topSection={protectionAndCare.top}
         name={nameBigCard}
-      />
+      /> */}
       <News news={news} topSection={protectionAndCare.top} />
     </section>
   );
@@ -612,7 +644,7 @@ function BigCard({ bigCard, topSection, name }) {
     <div
       style={cardStyles}
       className={style.BigCardStyles}
-      id="BigCardProtection"
+      id={"bigCard" + name}
     >
       {name ? (
         <>

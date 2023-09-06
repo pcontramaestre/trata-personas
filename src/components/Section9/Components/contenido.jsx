@@ -1,16 +1,45 @@
-import React from "react";
+import { useLayoutEffect, useRef } from "react";
 import "./contenido.css";
 import fondo1 from '../../../assets/Section9IMG/fondo1.png';
-
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import data from "../../../../trataSection09.json";
 
 function BackgroundComponent() {
   const page1 = data[0].Referencias.page1;
+  const imgRefs = {};
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animations for images
+    const imgTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: imgRefs.current,
+        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+        end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
+        scrub: true, // Hace que la animación sea suave mientras se desplaza
+        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+      },
+    });
+
+    imgTl.fromTo(
+      imgRefs.current,
+      {
+        x: "-10%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        // opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+      },
+      {
+        x: "0%", // Lleva el elemento a su posición original (0%)
+        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+      }
+    );
+  }, []);
+
   return (
     <section id="section9" className="container">
       <div className="flex-center flex-column">
         <div id="fondo1" className="fondo-style">
-          <img src={fondo1} alt="" />
+          <img src={fondo1} alt="" ref={imgRefs}/>
           <h1 className="style">{page1.title1}</h1>
         </div>
         <div id="fondo2" className="flex-center fondo-style"></div>
