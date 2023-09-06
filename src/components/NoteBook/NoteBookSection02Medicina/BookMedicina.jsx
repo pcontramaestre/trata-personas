@@ -11,7 +11,7 @@ const BookMedicina = ({ page7 }) => {
       scrollTrigger: {
         trigger: ".NoteBook05",
         start: "top 95%",
-        end: "bottom 150%",
+        end: "bottom 58%",
         scrub: true,
       },
     });

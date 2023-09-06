@@ -11,7 +11,7 @@ const NoteBookSection02 = ({ page4 }) => {
       scrollTrigger: {
         trigger: ".NoteBook02__container",
         start: "top 95%",
-        end: "bottom 110%",
+        end: "bottom 40%",
         scrub: true,
       },
     });
