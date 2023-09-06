@@ -27,10 +27,14 @@
 }
 
 .animationText2 {
-    top: 142vw;
+    top: 133vw;
     right: 3%;
     position: absolute;
     width: 30%;
+    height: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .animationText2 .text5 {
     font-family: Inter;

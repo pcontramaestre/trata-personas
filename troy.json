@@ -5908,7 +5908,7 @@
       },
       "psicosocial": {
         "name": "psicosocial",
-        "top": "39050px",
+        "top": "39044px",
         "left": "550.66px",
         "topCard": "218px",
         "leftCard": "134px",
@@ -5936,7 +5936,7 @@
       },
       "manutencion": {
         "name": "manutencion",
-        "top": "40760px",
+        "top": "40744px",
         "left": "550.66px",
         "topCard": "153px",
         "leftCard": "100px",
@@ -5964,7 +5964,7 @@
       },
       "alojamiento": {
         "name": "alojamiento",
-        "top": "41900px",
+        "top": "41875px",
         "left": "550.66px",
         "topCard": "139px",
         "leftCard": "108px",
@@ -5992,7 +5992,7 @@
       },
       "educacion": {
         "name": "educacion",
-        "top": "41330px",
+        "top": "41310px",
         "left": "550.66px",
         "topCard": "139px",
         "leftCard": "119px",
@@ -6020,7 +6020,7 @@
       },
       "medico": {
         "name": "medico",
-        "top": "39620px",
+        "top": "39610px",
         "left": "550.66px",
         "topCard": "85px",
         "leftCard": "109px",
@@ -6048,7 +6048,7 @@
       },
       "legal": {
         "name": "legal",
-        "top": "40190px",
+        "top": "40177px",
         "left": "550.66px",
         "topCard": "100px",
         "leftCard": "109px",
@@ -6076,7 +6076,7 @@
       },
       "reintegracion": {
         "name": "reintegracion",
-        "top": "42470px",
+        "top": "42445px",
         "left": "550.66px",
         "topCard": "116px",
         "leftCard": "120px",
