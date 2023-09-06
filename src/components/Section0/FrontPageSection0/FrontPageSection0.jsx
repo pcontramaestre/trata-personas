@@ -24,7 +24,7 @@ function convertSize (input) {
   return r
 }
 
-function FrontPageSection0 ({ forntPageImages }) {
+function FrontPageSection0 ({ frontPageImages }) {
   useLayoutEffect(() => {
     const windowWidth = window.innerWidth
     function calculateHeight () {
@@ -79,12 +79,7 @@ function FrontPageSection0 ({ forntPageImages }) {
     return () => ctx.revert()
   }, [])
 
-  // const imagesStyles = forntPageImages.listImages.map(image => ({
-  //   top: convertSize(Number(image.top.split('px')[0]) - Number(forntPageImages.top.split('px')[0]) + 'px'),
-  //   height: convertSize(image.height)
-  // }))
-
-  const iconStyles = forntPageImages.listImages.map(icon => ({
+  const iconStyles = frontPageImages.listImages.map(icon => ({
     ...icon,
     top: convertSize(icon.top),
     left: convertSize(icon.left),
@@ -93,17 +88,17 @@ function FrontPageSection0 ({ forntPageImages }) {
   }))
 
   const puppetContainerStyles = {
-    ...forntPageImages.containerPuppet,
-    top: convertSize(forntPageImages.containerPuppet.top),
-    left: convertSize(forntPageImages.containerPuppet.left),
-    width: convertSize(forntPageImages.containerPuppet.width),
-    height: convertSize(forntPageImages.containerPuppet.height)
+    ...frontPageImages.containerPuppet,
+    top: convertSize(frontPageImages.containerPuppet.top),
+    left: convertSize(frontPageImages.containerPuppet.left),
+    width: convertSize(frontPageImages.containerPuppet.width),
+    height: convertSize(frontPageImages.containerPuppet.height)
   }
 
   return (
     <div className={style.FrontPageSection0Container}>
       {
-        forntPageImages.listImages.map((image, index) => (
+        frontPageImages.listImages.map((image, index) => (
           image.name !== 'puppet'
             ? <img id={image.name + 'section0'} src={listImages[image.name]} className={style.FrontPageImages} style={iconStyles[index]} key={image.name + 'section0' + index} />
             : null
