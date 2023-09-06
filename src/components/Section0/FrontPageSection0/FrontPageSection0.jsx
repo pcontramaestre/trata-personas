@@ -59,7 +59,11 @@ function FrontPageSection0 ({ frontPageImages }) {
           end: '2000 bottom',
           scrub: 1,
           pin: '#section0',
-          id: 'puppetSection0ScrollTrigger'
+          id: 'puppetSection0ScrollTrigger',
+          onEnter: () => {
+            const scrollTriggerNoteBook = ScrollTrigger.getById('noteBookSection0')
+            scrollTriggerNoteBook.refresh()
+          }
         }
       })
       tl2.to('#puppetContainerSection0', {
