@@ -2658,6 +2658,33 @@
         "objectFit": "contain"
       },
       {
+        "name": "handChild",
+        "width": "284px",
+        "height": "362px",
+        "top": "62829px",
+        "left": "1245px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "handShe",
+        "width": "461px",
+        "height": "612px",
+        "top": "62324px",
+        "left": "930px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
+        "name": "handHe",
+        "width": "545px",
+        "height": "665px",
+        "top": "62332px",
+        "left": "1482px",
+        "objectPosition": "center",
+        "objectFit": "contain"
+      },
+      {
         "name": "rectanguloAzul",
         "width": "1920",
         "height": "1025px",
@@ -2970,7 +2997,8 @@
         "lineHeight": "28.6px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "Incluye todos aquellos <span>medios que implican un contacto directo con las potenciales víctimas</span> o quienes tienen un rol desde su ámbito profesional en la prevención de la trata de personas, como talleres de sensibilización y capacitaciones.",
@@ -2985,7 +3013,8 @@
         "lineHeight": "28.6px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "personas alcanzadas",
@@ -3000,7 +3029,8 @@
         "lineHeight": "50.4px",
         "letterSpacing": "0.03em",
         "textAlign": "right",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "personas alcanzadas",
@@ -3015,22 +3045,8 @@
         "lineHeight": "57.6px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
-      },
-      {
-        "content": "personas alcanzadas",
-        "tag": "p",
-        "width": "375px",
-        "height": "75px",
-        "top": "68633px",
-        "left": "1268px",
-        "fontFamily": "Formula Condensed",
-        "fontSize": "48px",
-        "fontWeight": "700",
-        "lineHeight": "57.6px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "3.186.277",
@@ -3045,7 +3061,8 @@
         "lineHeight": "115.2px",
         "letterSpacing": "0.03em",
         "textAlign": "right",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "34.652.739",
@@ -3060,7 +3077,8 @@
         "lineHeight": "115.2px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "name": "animationBars"
       },
       {
         "content": "Prevención directa",
@@ -3075,7 +3093,8 @@
         "lineHeight": "96px",
         "letterSpacing": "0.03em",
         "textAlign": "left",
-        "color": "#0F4A4D"
+        "color": "#0F4A4D",
+        "id": "animationBars"
       },
       {
         "content": "Prevención indirecta",
