@@ -23,6 +23,7 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
 
       function activeDisplay () {
         div.style.display = 'block'
+        span.style.cursor = 'pointer'
       }
 
       function desactiveDisplay () {
