@@ -166,49 +166,54 @@
       "width": "2047px",
       "height": "1824px"
     },
-    "containerPuppet": {
-      "name": "puppetContainer",
-      "width": "1215px",
-      "height": "2708px",
-      "top": "-1448px",
-      "left": "620px"
+    "frontPageImages": {
+      "listImages": [
+        {
+          "name": "background",
+          "width": "1920px",
+          "height": "1214px",
+          "top": "0px",
+          "left": "0px",
+          "position": "absolute",
+          "objectPosition": "center"
+        },
+        {
+          "name": "people",
+          "width": "1765px",
+          "height": "627px",
+          "top": "686px",
+          "left": "288px",
+          "position": "absolute",
+          "objectPosition": "center"
+        },
+        {
+          "name": "puppet",
+          "width": "1215px",
+          "height": "1354px",
+          "top": "-94px",
+          "left": "620px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "person",
+          "width": "465px",
+          "height": "1020px",
+          "top": "766px",
+          "left": "-173px",
+          "position": "absolute",
+          "objectPosition": "right"
+        }
+      ],
+      "containerPuppet": {
+        "name": "puppetContainer",
+        "width": "1215px",
+        "height": "2708px",
+        "top": "-1448px",
+        "left": "620px"
+      }
     },
     "images": [
-      {
-        "name": "background",
-        "width": "1920px",
-        "height": "1214px",
-        "top": "0px",
-        "left": "0px",
-        "position": "absolute",
-        "objectPosition": "center"
-      },
-      {
-        "name": "people",
-        "width": "1765px",
-        "height": "627px",
-        "top": "686px",
-        "left": "288px",
-        "position": "absolute",
-        "objectPosition": "center"
-      },
-      {
-        "name": "puppet",
-        "width": "1215px",
-        "height": "1354px",
-        "top": "-94px",
-        "left": "620px",
-        "objectPosition": "center"
-      },
-      {
-        "name": "person",
-        "width": "465px",
-        "height": "1020px",
-        "top": "766px",
-        "left": "-173px",
-        "position": "absolute",
-        "objectPosition": "right"
-      },
       {
         "name": "logo",
         "width": "410.68px",
