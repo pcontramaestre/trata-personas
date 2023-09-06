@@ -399,6 +399,10 @@
       }
     ],
     "noteBook": {
+      "scrollTriggerBehind": [
+        "puppetSection0ScrollTrigger",
+        "puppetSection0ScrollTrigger"
+      ],
       "section": "Section0",
       "top": "1476.27px",
       "left": "831px",
@@ -464,6 +468,10 @@
       }
     },
     "news": {
+      "scrollTriggerBehind": [
+        "puppetSection0ScrollTrigger",
+        "puppetSection0ScrollTrigger"
+      ],
       "section": "Section0",
       "footerCard": {
         "fontFamily": "Inter",
