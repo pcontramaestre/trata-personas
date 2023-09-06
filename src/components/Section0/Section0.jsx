@@ -1,4 +1,3 @@
-import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from 'gsap/all'
 
@@ -44,18 +43,6 @@ function convertSize (input) {
 }
 
 function Section0 () {
-  useLayoutEffect(() => {
-    const windowWidth = window.innerWidth
-    function calculateHeight () {
-      const y = -0.035 * (windowWidth) + 55
-      if (y <= 0) return 0
-      else return y
-    }
-    const ctx = gsap.context(() => {
-    })
-    return () => ctx.revert()
-  }, [])
-
   const homeHeaderContainer = {
     height: convertSize(homeHeader.size.height)
   }
