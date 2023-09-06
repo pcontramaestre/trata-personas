@@ -1,4 +1,3 @@
-import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from 'gsap/all'
 
@@ -6,6 +5,7 @@ import NoteBook from '../NoteBook/NoteBook'
 import News from '../News/News'
 import Map from '../Map/Map'
 import BigInfoBox from '../BigInfoBox/BigInfoBox'
+import FrontPageSection0 from './FrontPageSection0/FrontPageSection0'
 
 import style from './Section0.module.css'
 
@@ -35,7 +35,7 @@ const icons = {
 }
 
 const { homeHeader } = data
-const { noteBook, news, map, bigInfoBox } = data.homeHeader
+const { noteBook, news, map, bigInfoBox, frontPageImages } = data.homeHeader
 
 function convertSize (input) {
   const n = Number(input.split('px')[0])
@@ -43,60 +43,6 @@ function convertSize (input) {
 }
 
 function Section0 () {
-  useLayoutEffect(() => {
-    const windowWidth = window.innerWidth
-    function calculateHeight () {
-      const y = -0.035 * (windowWidth) + 55
-      if (y <= 0) return 0
-      else return y
-    }
-    const ctx = gsap.context(() => {
-      // Puppet entrance animation
-      const tl = gsap.timeline({ delay: 1 })
-      tl.from('#puppetContainerSection0', {
-        left: '100%',
-        duration: 0.5
-      })
-      tl.fromTo('#puppetContainerSection0', {
-        rotation: -30,
-        duration: 2.5
-      }, {
-        rotation: 0,
-        duration: 2.5,
-        ease: 'elastic.out(1, 0.3)'
-      }, 0.2)
-
-      // Move Puppet
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#backgroundsection0',
-          // markers: true,
-          start: () => {
-            return '20% ' + calculateHeight() + '%'
-          },
-          end: '2000 bottom',
-          scrub: 1,
-          pin: '#section0',
-          id: 'puppetSection0ScrollTrigger'
-        }
-      })
-      tl2.to('#puppetContainerSection0', {
-        y: '-20%',
-        ease: 'back.in(1.7)'
-      })
-      tl2.from('#peoplesection0', {
-        x: '-5%',
-        ease: 'sine.in',
-        opacity: 0
-      }, 0)
-      tl2.from('#personsection0', {
-        x: () => -document.querySelector('#personsection0').clientWidth,
-        ease: 'sine.in'
-      }, 0)
-    })
-    return () => ctx.revert()
-  }, [])
-
   const homeHeaderContainer = {
     height: convertSize(homeHeader.size.height)
   }
@@ -124,14 +70,6 @@ function Section0 () {
     top: convertSize('5503px')
   }
 
-  const puppetContainerStyles = {
-    ...homeHeader.containerPuppet,
-    top: convertSize(homeHeader.containerPuppet.top),
-    left: convertSize(homeHeader.containerPuppet.left),
-    width: convertSize(homeHeader.containerPuppet.width),
-    height: convertSize(homeHeader.containerPuppet.height)
-  }
-
   return (
     <section id='section0' className={style.HomeHeaderBackground} style={homeHeaderContainer}>
       {
@@ -141,9 +79,7 @@ function Section0 () {
             : null
         ))
       }
-      <div id='puppetContainerSection0' style={puppetContainerStyles} className={style.containerPuppet}>
-        <img src={puppet} className={style.HomeHeaderImages} style={iconStyles[2]} />
-      </div>
+      <FrontPageSection0 frontPageImages={frontPageImages} />
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {

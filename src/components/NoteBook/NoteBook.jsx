@@ -168,12 +168,22 @@ function NoteBook ({ noteBook, topSection }) {
 
   useLayoutEffect(() => {
     const containerAnimation = document.getElementsByName('noteBook' + noteBook.section)[0]
-
     const ctx = gsap.context(() => {
+      const scrollTriggerBehind1 = noteBook.scrollTriggerBehind && noteBook.scrollTriggerBehind[0] ? ScrollTrigger.getById(noteBook.scrollTriggerBehind[0]) : { start: 0 }
+      const scrollTriggerBehind2 = noteBook.scrollTriggerBehind && noteBook.scrollTriggerBehind[1] ? ScrollTrigger.getById(noteBook.scrollTriggerBehind[1]) : { end: 0 }
       ScrollTrigger.create({
         trigger: containerAnimation,
+        id: 'noteBook' + noteBook.section,
         // markers: true,
-        start: 'top 90%',
+        start: () => {
+          if (noteBook.scrollTriggerBehind) {
+            return scrollTriggerBehind2.end - scrollTriggerBehind1.start + ' 90%'
+          }
+          return 'top 90%'
+        },
+        end: () => {
+          return '+=' + (scrollTriggerBehind2.end - scrollTriggerBehind1.start) + ' 90%'
+        },
         onEnter: () => {
           if (!texts.footer[0]) {
             setActiveAnimation({
