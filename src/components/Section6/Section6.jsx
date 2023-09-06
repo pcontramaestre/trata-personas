@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import NoteBook from '../NoteBook/NoteBook'
 // import BarGraph from '../BarGraph/BarGraph'
-import News from '../News/News'
+// import News from '../News/News'
 import BigInfoBox from '../BigInfoBox/BigInfoBox'
 
 import style from './Section6.module.css'
@@ -50,7 +50,8 @@ function convertSize (input) {
 }
 
 const { prevention } = data
-const { images, text, noteBook, bigInfoBox1, bigInfoBox2, news } = data.prevention
+// const { images, text, noteBook, bigInfoBox1, bigInfoBox2, news } = data.prevention
+const { images, text, noteBook, bigInfoBox1, bigInfoBox2 } = data.prevention
 
 function Section6 () {
   useLayoutEffect(() => {
@@ -198,7 +199,7 @@ function Section6 () {
       <NoteBook noteBook={noteBook} topSection={prevention.top} />
       {/* <BarGraph /> */}
       <BigInfoBox bigInfoBox={bigInfoBox2} topSection={prevention.top} />
-      <News news={news} topSection={prevention.top} />
+      {/* <News news={news} topSection={prevention.top} /> */}
     </section>
   )
 }
