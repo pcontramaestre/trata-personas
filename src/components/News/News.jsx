@@ -36,13 +36,24 @@ function News ({ news, topSection }) {
   useLayoutEffect(() => {
     const containerAnimation = document.getElementsByName('news' + news.section)[0]
     const elementToMove = document.getElementsByName('cardNews' + news.section)
+
+    const scrollTriggerBehind1 = news.scrollTriggerBehind && news.scrollTriggerBehind[0] ? ScrollTrigger.getById(news.scrollTriggerBehind[0]) : { start: 0 }
+    const scrollTriggerBehind2 = news.scrollTriggerBehind && news.scrollTriggerBehind[1] ? ScrollTrigger.getById(news.scrollTriggerBehind[1]) : { end: 0 }
+
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerAnimation,
           // markers: true,
-          start: 'top 80%',
-          end: 'bottom bottom',
+          start: () => {
+            if (news.scrollTriggerBehind) {
+              return scrollTriggerBehind2.end - scrollTriggerBehind1.start + ' 80%'
+            }
+            return 'top 90%'
+          },
+          end: () => {
+            return (scrollTriggerBehind2.end - scrollTriggerBehind1.start) + ' 20%'
+          },
           scrub: true
         }
       })
