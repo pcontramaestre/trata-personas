@@ -107,8 +107,8 @@ function Section5 () {
       tl1.from('#person5section5', { left: () => -document.querySelector('#person5section5').clientWidth })
 
       const scrollTriggerFrontPageSection5 = ScrollTrigger.getById('frontPageSection5')
-      
-      //Animación del texto en gráficas
+
+      // Animación del texto en gráficas
       const textGraphic1 = document.getElementsByName('textGraphic1section5')
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -124,7 +124,7 @@ function Section5 () {
           id: 'textGraphicAnimationSection5'
         }
       })
-      Array.from(textGraphic1).map((text) => {
+      Array.from(textGraphic1).forEach((text) => {
         tl.from(text, {
           left: '100%'
         }, 0)
