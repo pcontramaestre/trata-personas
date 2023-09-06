@@ -1,0 +1,21 @@
+.FrontPageSection0Container {
+    position: absolute;
+    width: 100%;
+}
+
+.persons {
+    transform: scale(0.8);
+}
+
+.FrontPageImages {
+    position: absolute;
+    object-fit: contain;
+}
+
+.containerPuppet {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+}
