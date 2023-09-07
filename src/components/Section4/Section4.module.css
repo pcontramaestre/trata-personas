@@ -76,10 +76,14 @@
     margin-right: 0.5rem;
 }
 .animationText3{
-    top: 407vw;
+    top: 396vw;
     left: 5%;
     position: absolute;
     width: 34%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .animationText3 .text9{
     font-family: Inter;

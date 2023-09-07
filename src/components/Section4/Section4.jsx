@@ -231,13 +231,13 @@ function Section4() {
       </div>
 
       <div className={style.animationText3} ref={textRef2}>
+        <p className={style.text9}>{animationText2.text9} </p>
         <p className={style.text9}>
-          {animationText2.text9}{" "}
-        </p>
-        <p className={style.text9}><strong className={style.textStrong2}>
+          <strong className={style.textStrong2}>
             {animationText2.textStrong2}
-          </strong>
-          {" "}{animationText2.text12}</p>
+          </strong>{" "}
+          {animationText2.text12}
+        </p>
         <h2 className={style.text11}>{animationText2.text11}</h2>
         <p className={style.text10}>{animationText2.text10}</p>
       </div>
