@@ -95,10 +95,16 @@ function Section1() {
           <div className={style.page1__images}>
             <div className={style.page1__manos} />
             <div className={style.page1__rejas} />
-            <div className={style.page1__antebrazosleft} />
-            <div className={style.page1__antebrazosright} />
-            <div className={style.page1__precios1} />
-            <div className={style.page1__precios2} />
+            <div className={style.manosleft__content}>
+              <div className={style.page1__manosleft} />
+              <div className={style.page1__antebrazosleft} />
+              <div className={style.page1__priceleft} />
+            </div>
+            <div className={style.manosright__content}>
+              <div className={style.page1__manosright} />
+              <div className={style.page1__antebrazosright} />
+              <div className={style.page1__priceright} />
+            </div>
           </div>
           <h1 className={style.page1__title}>
             {page1.text1} <br /> {page1.text2}

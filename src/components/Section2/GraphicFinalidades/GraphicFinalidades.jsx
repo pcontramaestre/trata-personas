@@ -1,6 +1,6 @@
 import React from "react";
 import "./GraphicFinalidades.css";
-import finalidades_img from "../../../assets/Img-Section02/Page03/info.png";
+
 import data from "../../../../trataSection02.json";
 
 const GraphicFinalidades = () => {
@@ -61,7 +61,6 @@ const GraphicFinalidades = () => {
           </div>
         </div>
       </div>
-      <img className="img__finalidad" src={finalidades_img} />
     </div>
   );
 };
