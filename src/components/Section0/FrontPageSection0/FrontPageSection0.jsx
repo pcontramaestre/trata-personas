@@ -4,10 +4,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import style from './FrontPageSection0.module.css'
 
-import background from '../../../assets/Section0/frontPageBackground.jpg'
-import people from '../../../assets/Section0/frontPagePeopleBehind.png'
-import person from '../../../assets/Section0/frontPagePersonAhead.png'
-import puppet from '../../../assets/Section0/frontPagePuppet.png'
+import background from '/Section0/frontPageBackground.jpg'
+import people from '/Section0/frontPagePeopleBehind.png'
+import person from '/Section0/frontPagePersonAhead.png'
+import puppet from '/Section0/frontPagePuppet.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
