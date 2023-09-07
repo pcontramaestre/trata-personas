@@ -1778,79 +1778,85 @@
     "top": "54906px",
     "topNextSection": "62224px",
     "backgroundColor": "#FFF0F1",
+    "frontPageImages": {
+      "top": "54906px",
+      "height": "1747px",
+      "listImages": [
+        {
+          "name": "background",
+          "width": "1920px",
+          "height": "1747px",
+          "top": "54626px",
+          "left": "0px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "frontPageHouses",
+          "width": "1920px",
+          "height": "802px",
+          "top": "54995px",
+          "left": "0px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "frontPageStreet",
+          "width": "1920px",
+          "height": "861px",
+          "top": "55515px",
+          "left": "0px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "person1",
+          "width": "444px",
+          "height": "882px",
+          "top": "55306px",
+          "left": "1476px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "person2",
+          "width": "337px",
+          "height": "782px",
+          "top": "55306px",
+          "left": "1146px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "person3",
+          "width": "372px",
+          "height": "752px",
+          "top": "55396px",
+          "left": "802px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "person4",
+          "width": "354px",
+          "height": "735px",
+          "top": "55511px",
+          "left": "459px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        },
+        {
+          "name": "person5",
+          "width": "330px",
+          "height": "711px",
+          "top": "55605px",
+          "left": "118px",
+          "objectFit": "contain",
+          "objectPosition": "center"
+        }
+      ]
+    },
     "image": [
-      {
-        "name": "background",
-        "width": "1920px",
-        "height": "1747px",
-        "top": "54626px",
-        "left": "0px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "frontPageHouses",
-        "width": "1920px",
-        "height": "802px",
-        "top": "54995px",
-        "left": "0px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "frontPageStreet",
-        "width": "1920px",
-        "height": "861px",
-        "top": "55515px",
-        "left": "0px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "person1",
-        "width": "444px",
-        "height": "882px",
-        "top": "55306px",
-        "left": "1476px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "person2",
-        "width": "337px",
-        "height": "782px",
-        "top": "55306px",
-        "left": "1146px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "person3",
-        "width": "372px",
-        "height": "752px",
-        "top": "55396px",
-        "left": "802px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "person4",
-        "width": "354px",
-        "height": "735px",
-        "top": "55511px",
-        "left": "459px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
-      {
-        "name": "person5",
-        "width": "330px",
-        "height": "711px",
-        "top": "55605px",
-        "left": "118px",
-        "objectFit": "contain",
-        "objectPosition": "center"
-      },
       {
         "name": "grafico",
         "width": "888px",
@@ -2341,6 +2347,10 @@
       }
     ],
     "noteBook": {
+      "scrollTriggerBehind": [
+        "frontPageSection5",
+        "frontPageSection5"
+      ],
       "section": "Section5",
       "top": "56918.77px",
       "left": "455.52px",
@@ -2856,61 +2866,67 @@
     "height": "8446px",
     "top": "62203px",
     "backgroundColor": "#CFF9FF",
+    "frontPageImages": {
+      "top": "62203px",
+      "height": "1230px",
+      "listImages": [
+        {
+          "name": "background",
+          "width": "1920px",
+          "height": "1230px",
+          "top": "62203px",
+          "left": "0px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "family",
+          "width": "1105px",
+          "height": "1087px",
+          "top": "62280px",
+          "left": "874px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "frame",
+          "width": "1920px",
+          "height": "555px",
+          "top": "62203px",
+          "left": "0px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "handChild",
+          "width": "284px",
+          "height": "362px",
+          "top": "62829px",
+          "left": "1245px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "handShe",
+          "width": "461px",
+          "height": "612px",
+          "top": "62324px",
+          "left": "930px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "handHe",
+          "width": "545px",
+          "height": "665px",
+          "top": "62332px",
+          "left": "1482px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        }
+      ]
+    },
     "images": [
-      {
-        "name": "background",
-        "width": "1920px",
-        "height": "1230px",
-        "top": "62203px",
-        "left": "0px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "family",
-        "width": "1105px",
-        "height": "1087px",
-        "top": "62280px",
-        "left": "874px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "frame",
-        "width": "1920px",
-        "height": "555px",
-        "top": "62203px",
-        "left": "0px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "handChild",
-        "width": "284px",
-        "height": "362px",
-        "top": "62829px",
-        "left": "1245px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "handShe",
-        "width": "461px",
-        "height": "612px",
-        "top": "62324px",
-        "left": "930px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "handHe",
-        "width": "545px",
-        "height": "665px",
-        "top": "62332px",
-        "left": "1482px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
       {
         "name": "rectanguloAzul",
         "width": "1920",
@@ -3430,6 +3446,10 @@
       }
     ],
     "noteBook": {
+      "scrollTriggerBehind": [
+        "frontPageSection6",
+        "frontPageSection6"
+      ],
       "section": "Section6",
       "width": "690.83px",
       "height": "708.58px",
