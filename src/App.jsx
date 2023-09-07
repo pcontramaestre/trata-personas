@@ -33,7 +33,9 @@ function App () {
       './News/backgroundArticle.png',
       './News/sheetL.png',
       './News/sheetM.png',
-      './News/sheetS.png'
+      './News/sheetS.png',
+      './NoteBook/whiteSheet.png',
+      './NoteBook/whiteSheetShort.png'
     ]
     cacheImages(imgs)
   }, [])
