@@ -3410,22 +3410,7 @@
         "fontWeight": "400",
         "lineHeight": "33.89px",
         "letterSpacing": "0.03em",
-        "textAlign": "right",
-        "color": "#006873"
-      },
-      {
-        "content": "Personas alcanzadas a través de <span>medios de prevención directa</span>",
-        "tag": "p",
-        "width": "467px",
-        "height": "68px",
-        "top": "69127px",
-        "left": "1078px",
-        "fontFamily": "Inter",
-        "fontSize": "28px",
-        "fontWeight": "400",
-        "lineHeight": "33.89px",
-        "letterSpacing": "0.03em",
-        "textAlign": "right",
+        "textAlign": "left",
         "color": "#006873"
       },
       {
