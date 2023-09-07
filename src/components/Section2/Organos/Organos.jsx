@@ -15,7 +15,7 @@ const Organos = () => {
       scrollTrigger: {
         trigger: ".book_organos__container",
         start: "top 95%",
-        end: "bottom 80%",
+        end: "bottom 30%",
         scrub: true,
       },
     });

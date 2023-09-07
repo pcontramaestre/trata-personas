@@ -41,6 +41,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  height: 100%;
   width: 50%;
 }
 
@@ -134,6 +135,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  height: 100%;
   width: 40%;
 }
 

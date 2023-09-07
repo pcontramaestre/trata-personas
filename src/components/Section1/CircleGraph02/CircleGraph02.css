@@ -31,6 +31,7 @@
   font-size: 9.4vh;
   font-style: normal;
   font-weight: 700;
+  text-align: left;
   line-height: normal;
 }
 
@@ -40,6 +41,7 @@
   font-family: "Inter", sans-serif;
   font-size: 5vh;
   font-style: normal;
+  text-align: left;
   font-weight: 400;
   line-height: normal;
 }
@@ -82,9 +84,11 @@
 }
 
 .onclick {
-  /* rotate: 180deg; */
-  right: 5vw;
-  bottom: 0;
+  rotate: 180deg;
+  left: 5vw;
+  justify-content: center;
+  /* align-items: ; */
+  bottom: 50%;
 }
 
 .buttonslider:hover {

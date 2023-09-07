@@ -11,7 +11,7 @@ const BookEsclavitud = ({page10}) => {
       scrollTrigger: {
         trigger: ".NoteBook08",
         start: "top 95%",
-        end: "bottom 140%",
+        end: "bottom 40%",
         scrub: true,
       },
     });

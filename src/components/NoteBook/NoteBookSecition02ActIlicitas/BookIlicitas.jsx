@@ -11,7 +11,7 @@ const BookIlicitas = ({ page12 }) => {
       scrollTrigger: {
         trigger: ".NoteBook09",
         start: "top 95%",
-        end: "bottom 150%",
+        end: "bottom 55%",
         scrub: true,
       },
     });
