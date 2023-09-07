@@ -5,7 +5,7 @@
 }
 .map-container #mapImg1,#mapImg2,#mapImg3,#mapImg4,#mapImg5,#mapImg6,#mapImg7,#mapImg8{
     position: absolute;
-    top: 234.5vw;
+    top: 224.5vw;
     left: -12.2vw;
     width: 100vw;
     display: none;
@@ -14,7 +14,7 @@
 
 .map-container #MAPA3{
     position: absolute;
-    top: 234.5vw;
+    top: 224.5vw;
 }
 .map-container #MAPA3 #DO .DO:hover{
     fill: #D98E94;
