@@ -61,7 +61,7 @@
 }
 .animationText1 .text1 {
     font-family: Inter;
-    font-size: 27px;
+    font-size: 33px;
     font-weight: 400;
     line-height: 39.94px;
     letter-spacing: 0.01em;
@@ -70,7 +70,7 @@
 }
 .animationText1 .textStrong {
     font-family: Inter;
-    font-size: 27px;
+    font-size: 33px;
     font-weight: 700;
     line-height: 39.94px;
     letter-spacing: 0.01em;
@@ -80,16 +80,16 @@
 }
 .animationText1 .text2 {
     font-family: Formula Condensed;
-    font-size: 34px;
+    font-size: 40px;
+    letter-spacing: 0.8px;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0.01em;
     text-align: left;
     color: #0a4b4e;
 }
 .animationText1 .text3 {
     font-family: Formula Condensed;
-    font-size: 90px;
+    font-size: 96px;
     font-weight: 700;
     line-height: 82px;
     letter-spacing: 0em;
@@ -97,115 +97,121 @@
     color: #0a4b4e;
     margin-top: 1rem;
 }
-
-.animationText2{
+.animationText2 {
     position: absolute;
-    top: 460.6vw;
+    top: 454.4vw;
     left: 6vw;
+    height: 31vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .animationText2 .text5 {
-    width: 171px;
-    height: 60px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
 
 .animationText2 .text7 {
-    width: 171px;
-    height: 60px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
+
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
 
 .animationText2 .text9 {
-    width: 171px;
-    height: 60px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
+
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
 
 .animationText2 .text11 {
-    width: 171px;
-    height: 60px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
+
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
 
-
-.animationText3{
+.animationText3 {
     position: absolute;
-    top: 460.6vw;
+    top: 454.4vw;
     right: 5vw;
+    height: 31vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .animationText3 .text6 {
-    width: 171px;
-    height: 60px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
+
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
 .animationText3 .text8 {
-    width: 171px;
-    height: 60px;
-        font-family: Formula Condensed;
-        font-size: 47px;
-        font-weight: 700;
-        line-height: 56.4px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #1A6063
+    width: 12.5vw;
+    height: 4.3vw;
+    font-family: Formula Condensed;
+    font-size: 47px;
+    font-weight: 700;
+
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1a6063;
 }
 .animationText3 .text10 {
-    width: 171px;
-    height: 60px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
+
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
 .animationText3 .text12 {
-    width: 171px;
+    width: 12.5vw;
+    height: 4.3vw;
     font-family: Formula Condensed;
     font-size: 47px;
     font-weight: 700;
-    line-height: 56.4px;
+
     letter-spacing: 0em;
     text-align: center;
-    color: #1A6063
+    color: #1a6063;
 }
-.animationGraphic{
+.animationGraphic {
     position: absolute;
     top: 459.4vw;
     left: 15vw;
     z-index: 2;
 }
-.animationGraphic img{ 
+.animationGraphic img {
     width: 68.3vw;
 }

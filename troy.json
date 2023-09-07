@@ -3828,16 +3828,15 @@
       {
         "content": "Las diferentes <span>Fiscalías, Procuradurías, Ministerios Públicos y Cortes de la región</span> se han encargado de procurar la justicia en los casos de trata de personas.",
         "tag": "p",
-        "width": "1000px",
-        "height": "124px",
+        "width": "810px",
+        "height": "6.45833vw",
         "top": "47636px",
-        "left": "460px",
-        "fontFamily": "Inter",
-        "fontSize": "30px",
+        "left": "0",
+        "right": "0",
+        "margin": "0 auto",
+        "fontSize": "32px",
         "fontWeight": "400",
-        "lineHeight": "36.31px",
-        "letterSpacing": "0.11em",
-        "textAlign": "center",
+        "lineHeight": "2.3vw",
         "color": "#0A4B4E"
       },
       {
@@ -5030,19 +5029,19 @@
     ],
 
     "animationText2": {
-        "text5": "Durante el periodo ",
-        "textStrong": "2018-2021",
-        "text8": "fueron presentadas",
-        "text6": "por el delito de trata de personas.",
-        "text7": "6.696 denuncias",
-        "text9": "Durante el periodo",
-        "textStrong2": "2018-2021",
-        "text12": " se emitieron",
-        "text10": "condenatorias por el delito de trata de personas.",
-        "text11": "526 sentencias"
+      "text5": "Durante el periodo ",
+      "textStrong": "2018-2021",
+      "text8": "fueron presentadas",
+      "text6": "por el delito de trata de personas.",
+      "text7": "6.696 denuncias",
+      "text9": "Durante el periodo",
+      "textStrong2": "2018-2021",
+      "text12": " se emitieron",
+      "text10": "condenatorias por el delito de trata de personas.",
+      "text11": "526 sentencias"
     },
 
-    "animationText": {  
+    "animationText": {
       "text1": "Durante el periodo",
       "textStrong": "2018-2021",
       "text4": "fueron atendidas",
