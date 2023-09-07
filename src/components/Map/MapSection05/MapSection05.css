@@ -1,5 +1,4 @@
 .map-container{
-   position: relative;
    width: 84%;
    margin-left: 12.5%;
 }
@@ -8,10 +7,55 @@
     top: 224.5vw;
     left: -12.2vw;
     width: 100vw;
+
     display: none;
     pointer-events: none;
 }
-
+.map-container #mapImg1 .a{
+    fill: #fecc4b!important;
+}
+.map-container #mapImg1 .b{
+    fill: #5fc4c2!important;
+}
+.map-container #mapImg1 .c{
+    fill: #004543!important;
+}
+.map-container #mapImg2 .a{
+    fill: #ee5440!important;
+}
+.map-container #mapImg2 .b{
+    fill: #004543!important;
+}
+.map-container #mapImg3 .a{
+    fill: #fecc4b!important;
+}
+.map-container #mapImg3 .b{
+    fill: #5fc4c2!important;
+}
+.map-container #mapImg4 .a{
+    fill: #ee5440!important;
+}
+.map-container #mapImg4 .b{
+    fill: #004543!important;
+}
+.map-container #mapImg5 .a{
+    fill: #fecc4b!important;
+}
+.map-container #mapImg5 .b{
+    fill: #ee5440!important;
+}
+.map-container #mapImg5 .d{
+    fill: #004543!important;
+}
+.map-container #mapImg6 .a{
+    fill: #5fc4c2!important;
+}
+.map-container #mapImg6 .b{
+    fill: #004543!important;
+}
+.map-container #mapImg7 .b{
+    fill: #5fc4c2!important;
+}
 .map-container #MAPA3{
     position: absolute;
     top: 224.5vw;
@@ -28,10 +72,7 @@
     fill: #D98E94;
     cursor: pointer;
 }
-.map-container #MAPA3 #NI .NI:hover{
-    fill: #D98E94;
-    cursor: pointer;
-}
+
 .map-container #MAPA3 #HN .HN:hover{
     fill: #D98E94;
     cursor: pointer;

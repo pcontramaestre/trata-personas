@@ -14,7 +14,7 @@ const animateSlide = (slide, setSlidesViewed) => {
     trigger: slide,
     animation: tween,
     start: "top bottom-=75%",
-    end: "bottom 75%",
+    end: "bottom 68%",
     toggleActions: "play none none none",
     scrub: true,
     onToggle: (self) => {
@@ -41,15 +41,6 @@ const SliderSection01 = ({ texts }) => {
     }
   }, [slidesViewed, texts]);
 
-  useEffect(() => {
-    if (enableScroll) {
-      // Enable page scrolling when all slides have been viewed
-      gsap.to(window, { duration: 0.1, scrollTo: "max" });
-      document.body.style.overflow = "auto"; // Restore scrolling
-    } else {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-  }, [enableScroll]);
 
   const settings = {
     dots: false,
