@@ -1,6 +1,7 @@
 .map-container{
    width: 84%;
    margin-left: 12.5%;
+   position: relative;
 }
 .map-container #mapImg1,#mapImg2,#mapImg3,#mapImg4,#mapImg5,#mapImg6,#mapImg7,#mapImg8{
     position: absolute;
