@@ -1,0 +1,9 @@
+.FrontPageSection5Container {
+    position: absolute;
+    width: 100%;
+}
+
+.FrontPageImages {
+    position: absolute;
+    object-fit: contain;
+}
