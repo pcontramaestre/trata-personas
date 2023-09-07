@@ -91,6 +91,7 @@ function Section1() {
   return (
     <section id="section1" className={style.Section1}>
       <div className={style.page1content}>
+        <div className={style.relleno} />
         <div className={style.page1}>
           <div className={style.page1__images}>
             <div className={style.page1__manos} />

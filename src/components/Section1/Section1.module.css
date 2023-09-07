@@ -11,6 +11,15 @@
   position: relative;
 }
 
+.relleno{
+  position: absolute;
+  height: 15vh;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  background-color: #002d2c ;
+}
+
 .page1content {
   /* display: flex; */
   /* justify-content: flex-end; */
@@ -19,7 +28,7 @@
 
 .page1 {
   margin-top: 20vh;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   /* justify-content: flex-end; */
   align-items: center;
@@ -34,6 +43,7 @@
 }
 
 .page1__images {
+  z-index: 3;
   /* position: absolute; */
   width: 100%;
   height: 100%;
@@ -67,6 +77,7 @@
   font-family: "Formula Condensed";
   right: 18vw;
   bottom: 70%;
+  z-index: 5;
   font-size: 13vh;
   font-style: normal;
   flex-shrink: 0;
