@@ -3,13 +3,11 @@
 
 } */
 
-
-
 .Section1 {
   width: 100vw;
   margin-top: 0;
   /* flex-shrink: 0; */
-  /* background: #fff0f1; */
+  background-color: #fff0f1;
   position: relative;
 }
 
@@ -18,7 +16,6 @@
   /* justify-content: flex-end; */
   height: 220vh;
 }
-
 
 .page1 {
   margin-top: 20vh;
