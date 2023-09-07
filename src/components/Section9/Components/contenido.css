@@ -7,7 +7,8 @@
   position: relative;
 }
 .App{
-  height: 3500px;
+  height: 235vw;
+
 }
 
 /* Estilos para centrar vertical y horizontalmente */
@@ -33,39 +34,39 @@
   z-index: 3;
 }
 #fondo1 img {
-  height: 1180px;
+  height: 84vw;
   width: 111vw;
   object-fit: cover;
 }
 #fondo2 {
   background-image: url(../../../assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
   position: absolute;
-  top: 845px;
-  z-index: 2;
-  height: 1236px;
+  top: 61vw;
+    z-index: 2;
+    height: 100vw;
   width: 100vw;
 }
 
 #fondo3 {
   background-image: url(../../../assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
   position: absolute;
-  top: 1732px;
-  height: 1401px;
+  top: 132vw;
+  height: 67vw;
   width: 100vw;
   object-fit: cover;
 }
 #fondo4 {
   background-image: url();
   background-image: url(../../../assets/Section9IMG/528d375cdfbed90a2c779e3b78f887cf.png);
-  height: 750px;
+  height: 50vw;
+  top: 185vw;
   position: absolute;
-  top: 2752px;
   object-fit: cover;
 }
 
 .square {
   position: absolute;
-  top: 880px;
+  top: 63vw;
   width: 100vw;
   z-index: 4;
 }
@@ -108,7 +109,7 @@ p {
 .cuadro1-style {
   width: 33vw;
   max-width: 528px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #0f4a4d;
   display: flex;
   justify-content: center;
@@ -148,7 +149,7 @@ p {
 .cuadro2-style {
   width: 57vw;
   max-width: 893px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #81ddec;
   display: flex;
   justify-content: center;
@@ -185,7 +186,7 @@ p {
 .cuadro3-style {
   width: 45vw;
   max-width: 690px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #13aaaf;
   display: flex;
   justify-content: center;
@@ -223,7 +224,7 @@ p {
 .cuadro4-style {
   width: 45vw;
   max-width: 730px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #8af4f9;
   display: flex;
   justify-content: center;
@@ -261,7 +262,7 @@ p {
   max-width: 488px;
   width: 30vw;
   margin-right: 1rem;
-  height: 287px;
+  height: 18vw;;;
   background-color: #ebeaa6;
   display: flex;
   justify-content: center;
@@ -301,7 +302,7 @@ p {
   align-items: center;
   width: 60vw;
   max-width: 931px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #0f4a4d;
 }
 
@@ -335,7 +336,7 @@ p {
   margin-right: 1rem;
   width: 34vw;
   max-width: 592px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #8cd7e1;
   display: flex;
   justify-content: center;
@@ -371,7 +372,7 @@ p {
 .cuadro8-style {
   width: 56vw;
   max-width: 840px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #86f3f8;
   display: flex;
   justify-content: center;
@@ -407,7 +408,7 @@ p {
 .cuadro9-style {
   max-width: 710px;
   width: 39vw;
-  height: 287px;
+  height: 18vw;;;
   background-color: #0f4a4d;
   display: flex;
   justify-content: center;
@@ -446,7 +447,7 @@ p {
 
 .cuadro10-style {
   max-width: 710px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #13aaaf;
   display: flex;
   justify-content: center;
@@ -487,7 +488,7 @@ p {
   margin-right: 1rem;
   width: 40vw;
   max-width: 727px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #86f3f8;
   display: flex;
   justify-content: center;
@@ -523,7 +524,7 @@ p {
 .cuadro12-style {
   width: 50vw;
     max-width: 690px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #8cd7e1;
   display: flex;
   justify-content: center;
@@ -560,7 +561,7 @@ p {
   width: 34vw;
   margin-right: 1rem;
   max-width: 487px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #13AAAF;
   display: flex;
   justify-content: center;
@@ -596,7 +597,7 @@ p {
 .cuadro14-style {
   width: 56vw;
   max-width: 930px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #EBEAA6;
   display: flex;
   justify-content: center;
@@ -631,7 +632,7 @@ p {
 .cuadro15-style {
   margin-right: 1rem;
   max-width: 623px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #86F3F8;
   display: flex;
   justify-content: center;
@@ -668,7 +669,7 @@ p {
 .cuadro16-style {
   width: 48vw;
   max-width: 795px;
-  height: 287px;
+  height: 18vw;;;
   background-color: #8CD7E1;
   display: flex;
   justify-content: center;
