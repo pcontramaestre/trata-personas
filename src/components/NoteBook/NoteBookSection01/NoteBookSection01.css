@@ -6,8 +6,8 @@
 
 .NoteBook {
   background-image: url("../../../assets/Img-Section01/Page03/hoja.png");
-  height: 100vh;
-  width: 80vw;
+  height: 95vh;
+  width: 50vw;
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(-2.362deg);
@@ -20,7 +20,7 @@
   /* height: 70vh; */
   width: 50vw;
   z-index: 1;
-  right: 7vw;
+  right: 4vw;
   position: absolute;
 }
 
@@ -33,18 +33,17 @@
   transform: rotate(-2.362deg);
   text-align: center;
   margin-left: 23vh;
-  margin-top: 14.4%;
-  margin-top: 20vh;
-  line-height: 1.9em;
+  margin-top: 22.5vh;
+  line-height: 1.75em;
   font-style: normal;
-  width: 35%;
+  width: 56%;
 }
 
 .NoteBook__text1 {
   width: 100%;
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
-  font-size: 1.5em;
+  font-size: 1.45em;
   font-weight: 400;
   text-align: left;
   font-family: "Inter", sans-serif;
@@ -56,7 +55,7 @@
   transform: rotate(-4.362deg);
   color: #c18831;
   font-family: "Formula Condensed";
-  font-size: 3em;
+  font-size: 2.9em;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;

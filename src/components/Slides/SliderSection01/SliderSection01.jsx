@@ -14,7 +14,7 @@ const animateSlide = (slide, setSlidesViewed) => {
     trigger: slide,
     animation: tween,
     start: "top bottom-=75%",
-    end: "bottom 75%",
+    end: "bottom 68%",
     toggleActions: "play none none none",
     scrub: true,
     onToggle: (self) => {
