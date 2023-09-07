@@ -26,7 +26,6 @@ import row4 from "../../assets/Section4/4-adopción.png";
 import row5 from "../../assets/Section4/5-explotacion.png";
 import row6 from "../../assets/Section4/6-explotacionsexual.png";
 
-
 const imagesList = {
   background,
   person1,
@@ -135,7 +134,7 @@ function Section4() {
     // Animations for text2
     const textTl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: textRef2.current, 
+        trigger: textRef2.current,
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
         end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
@@ -219,13 +218,14 @@ function Section4() {
       style={lawEnforcementeBackground}
     >
       <div className={style.animationText2} ref={textRef}>
+        <p className={style.text5}>{animationText2.text5} </p>
         <p className={style.text5}>
-          {animationText2.text5}{" "}
           <strong className={style.textStrong}>
             {animationText2.textStrong}
-          </strong>
-          {animationText2.text8}{" "}
+          </strong>{" "}
+          {animationText2.text8}
         </p>
+
         <h2 className={style.text7}>{animationText2.text7}</h2>
         <p className={style.text6}>{animationText2.text6}</p>
       </div>
@@ -233,11 +233,11 @@ function Section4() {
       <div className={style.animationText3} ref={textRef2}>
         <p className={style.text9}>
           {animationText2.text9}{" "}
-          <strong className={style.textStrong2}>
+        </p>
+        <p className={style.text9}><strong className={style.textStrong2}>
             {animationText2.textStrong2}
           </strong>
-          {animationText2.text12}{" "}
-        </p>
+          {" "}{animationText2.text12}</p>
         <h2 className={style.text11}>{animationText2.text11}</h2>
         <p className={style.text10}>{animationText2.text10}</p>
       </div>
@@ -247,7 +247,7 @@ function Section4() {
       </div>
 
       <div className={style.animationGraphic} ref={textRef3}>
-        <img className={style.row1} src={row1} alt=""/>
+        <img className={style.row1} src={row1} alt="" />
         <img className={style.row2} src={row2} alt="" />
         <img className={style.row3} src={row3} alt="" />
         <img className={style.row4} src={row4} alt="" />
