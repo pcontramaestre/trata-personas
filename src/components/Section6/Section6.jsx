@@ -6,15 +6,10 @@ import NoteBook from '../NoteBook/NoteBook'
 // import BarGraph from '../BarGraph/BarGraph'
 // import News from '../News/News'
 import BigInfoBox from '../BigInfoBox/BigInfoBox'
+import FrontPageSection6 from './FrontPageSection6/FrontPageSection6'
 
 import style from './Section6.module.css'
 
-import background from '../../assets/Section6/frontPageBackground.png'
-import family from '../../assets/Section6/frontPageFamily.png'
-import frame from '../../assets/Section6/frontPageFrame.png'
-import handChild from '../../assets/Section6/manoNina.png'
-import handShe from '../../assets/Section6/manoElla.png'
-import handHe from '../../assets/Section6/manoEl.png'
 import hand from '../../assets/Section6/hand.png'
 import contenedorRojo1 from '../../assets/Section6/contenedorRojo1.png'
 import contenedorRojo2 from '../../assets/Section6/contenedorRojo2.png'
@@ -27,9 +22,6 @@ import rectanguloAzul from '../../assets/Section6/rectanguloAzul.png'
 import data from '../../../troy.json'
 
 const imagesList = {
-  background,
-  family,
-  frame,
   hand,
   contenedorRojo1,
   contenedorRojo2,
@@ -37,10 +29,7 @@ const imagesList = {
   megafono,
   dona1,
   graphic1,
-  rectanguloAzul,
-  handChild,
-  handHe,
-  handShe
+  rectanguloAzul
 }
 
 function convertSize (input) {
@@ -51,44 +40,11 @@ function convertSize (input) {
 
 const { prevention } = data
 // const { images, text, noteBook, bigInfoBox1, bigInfoBox2, news } = data.prevention
-const { images, text, noteBook, bigInfoBox1, bigInfoBox2 } = data.prevention
+const { images, text, noteBook, bigInfoBox1, bigInfoBox2, frontPageImages } = data.prevention
 
 function Section6 () {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Animación frontPage
-      const tl1 = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#backgroundsection6',
-          // markers: true,
-          start: '7% top',
-          end: '+=2000 bottom',
-          pin: '#section6',
-          scrub: 1,
-          id: 'frontPageSection6',
-          onEnter: () => {
-            const scrollTriggerHandSection6 = ScrollTrigger.getById('handSection6')
-            scrollTriggerHandSection6.refresh()
-          }
-        }
-      })
-
-      tl1.fromTo('#handChildsection6', {
-        scale: 0.7
-      }, {
-        scale: 1
-      }, 0)
-      tl1.fromTo('#handShesection6', {
-        scale: 0.7
-      }, {
-        scale: 1
-      }, 0)
-      tl1.fromTo('#handHesection6', {
-        scale: 0.7
-      }, {
-        scale: 1
-      }, 0)
-
       const scrollTriggerFrontPageSection6 = ScrollTrigger.getById('frontPageSection6')
 
       // Animación de mano
@@ -186,6 +142,7 @@ function Section6 () {
 
   return (
     <section id='section6' className={style.PreventionBackground} style={preventionBackground}>
+      <FrontPageSection6 frontPageImages={frontPageImages} />
       {
         images.map((image, index) => (
           <img id={image.name + 'section6'} src={imagesList[image.name]} className={style.images} style={imageStyles[index]} key={image.name + index} />
