@@ -5,9 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import style from './News.module.css'
 
 import group from '../../assets/Instructions/group.svg'
-import sheetL from '../../assets/News/sheetL.png'
-import sheetM from '../../assets/News/sheetM.png'
-import sheetS from '../../assets/News/sheetS.png'
+import sheetL from '/News/sheetL.png'
+import sheetM from '/News/sheetM.png'
+import sheetS from '/News/sheetS.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
