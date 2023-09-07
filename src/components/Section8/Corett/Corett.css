@@ -17,26 +17,29 @@
 
 .corett__headtext {
   display: flex;
-  width: 80%;
+  width: 50%;
+  margin: 0;
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Inter;
-  font-size: 4vh;
+  font-size: 3.2vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.9px;
+  margin-bottom: 2vw;
 }
 
 .corett__title {
   display: flex;
-  width: 80%;
+  width: 68%;
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: Formula Condensed;
   font-size: 54px;
-  font-size: 7.5vh;
+  font-size: 6.8vh;
   font-style: normal;
+  margin: 0;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.8px;
@@ -44,13 +47,12 @@
 }
 
 .corett__subtitle {
-  display: flex;
-  flex-direction: column;
-  width: 43%;
+  display: block;
+  width: 60%;
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Inter;
-  font-size: 4vh;
+  font-size: 3.5vh;
   font-style: normal;
   font-weight: 400;
   line-height: 129.494%; /* 38.848px */
@@ -62,7 +64,7 @@
   text-align: center;
   font-family: Inter;
   font-size: 21px;
-  font-size: 2.5vh;
+  font-size: 3vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -72,7 +74,7 @@
 }
 
 .corett__foot {
-  margin: 20vh 0;
+  margin: 15vh 0;
   display: flex;
   width: 50%;
   justify-content: center;
@@ -84,7 +86,7 @@
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Inter;
-  font-size: 3.5vh;
+  font-size: 3.2vh;
   font-style: normal;
   font-weight: 400;
   line-height: 129.494%; /* 38.848px */
