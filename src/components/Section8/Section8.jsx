@@ -28,9 +28,11 @@ function Section8() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const triggerAnimation = style.CreditsBackground;
+
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
+        trigger: triggerAnimation,
         start: "top 70%",
         end: "center center",
         scrub: true,
