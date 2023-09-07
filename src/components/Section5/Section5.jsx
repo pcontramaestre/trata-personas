@@ -78,12 +78,24 @@ function Section5 () {
     }
 
     const ctx = gsap.context(() => {
+      // Animation Titles
+      gsap.to('#title1Section5', {
+        y: '80%',
+        scrollTrigger: {
+          trigger: '#title1Section5',
+          // markers: true,
+          start: 'top center',
+          end: 'bottom center',
+          scrub: 10
+        }
+      })
+
       // Animation FrontPage
       const tl1 = gsap.timeline({
         scrollTrigger: {
           trigger: '#backgroundsection5',
           // markers: true,
-          start: '10% top',
+          start: '30% top',
           end: '+=5000 bottom',
           pin: '#section5',
           scrub: 1,
@@ -99,7 +111,7 @@ function Section5 () {
         }
       })
       tl1.from('#frontPageStreetsection5', { top: '100%' })
-      tl1.from('#frontPageHousessection5', { top: '100%' })
+      tl1.fromTo('#frontPageHousessection5', { top: '100%' }, { top: '2.5%' })
       tl1.from('#person1section5', { left: '100%' })
       tl1.from('#person2section5', { left: () => -document.querySelector('#person2section5').clientWidth })
       tl1.from('#person3section5', { left: () => -document.querySelector('#person3section5').clientWidth })
@@ -187,8 +199,15 @@ function Section5 () {
           <img id={photo.name + 'section5'} src={images[photo.name]} style={imagesStyles[index]} className={style.RepatriationImages} key={photo.name + index} />
         ))
       }
+
+      <div id='title1Section5' className={style.title1Section5}>
+        <h1 className={style.repatriationText} style={textStyles[0]}>{repatriation.text[0].content}</h1>
+        <h1 className={style.repatriationText} style={textStyles[1]}>{repatriation.text[1].content}</h1>
+      </div>
+
       {
         repatriation.text.map((texto, index) => {
+          if (index < 2) return null
           switch (texto.tag) {
             case 'h1': {
               return <h1 name={texto.name ? texto.name + 'section5' : null} className={style.repatriationText} style={textStyles[index]} key={index}>{texto.content}</h1>
