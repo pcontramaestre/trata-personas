@@ -6,6 +6,7 @@ import NoteBook from '../NoteBook/NoteBook'
 // import BarGraph from '../BarGraph/BarGraph'
 import MapSection05 from '../Map/MapSection05/MapSection05'
 // import BigInfoBox from '../BigInfoBox/BigInfoBox'
+import FrontPageSection5 from './FrontPageSection5/FrontPageSection5'
 
 import style from './Section5.module.css'
 
@@ -32,7 +33,7 @@ import animationBackground from '../../assets/Section5/animationBackground.png'
 gsap.registerPlugin(ScrollTrigger)
 
 const { repatriation } = data
-const { noteBook, animation } = data.repatriation
+const { noteBook, animation, frontPageImages } = data.repatriation
 
 const images = {
   background,
@@ -71,11 +72,6 @@ function relativeMedition (input) {
 function Section5 () {
   useLayoutEffect(() => {
     // const percentageStart = window.innerWidth * (-0.0389) + 62.18
-    function move (input) {
-      const n = Number(input.split('px')[0])
-      const r = window.innerWidth * (n / 1920)
-      return r
-    }
 
     const ctx = gsap.context(() => {
       // Animation Titles
@@ -90,34 +86,6 @@ function Section5 () {
         }
       })
 
-      // Animation FrontPage
-      const tl1 = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#backgroundsection5',
-          // markers: true,
-          start: '30% top',
-          end: '+=5000 bottom',
-          pin: '#section5',
-          scrub: 1,
-          onLeave: () => {
-            const scrollTriggerPlaneBusSection5 = ScrollTrigger.getById('plane&bus')
-            scrollTriggerPlaneBusSection5.refresh()
-          },
-          onEnter: () => {
-            const scrollTriggerTextGraphicSection5 = ScrollTrigger.getById('textGraphicAnimationSection5')
-            scrollTriggerTextGraphicSection5.refresh()
-          },
-          id: 'frontPageSection5'
-        }
-      })
-      tl1.from('#frontPageStreetsection5', { top: '100%' })
-      tl1.fromTo('#frontPageHousessection5', { top: '100%' }, { top: '2.5%' })
-      tl1.from('#person1section5', { left: '100%' })
-      tl1.from('#person2section5', { left: () => -document.querySelector('#person2section5').clientWidth })
-      tl1.from('#person3section5', { left: () => -document.querySelector('#person3section5').clientWidth })
-      tl1.from('#person4section5', { left: () => -document.querySelector('#person4section5').clientWidth })
-      tl1.from('#person5section5', { left: () => -document.querySelector('#person5section5').clientWidth })
-
       const scrollTriggerFrontPageSection5 = ScrollTrigger.getById('frontPageSection5')
 
       // Animación del texto en gráficas
@@ -127,10 +95,10 @@ function Section5 () {
           trigger: textGraphic1[0],
           // markers: true,
           start: () => {
-            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + ' 80%'
+            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + ' 90%'
           },
           end: () => {
-            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200) + ' center'
+            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200) + ' 70%'
           },
           scrub: 1,
           id: 'textGraphicAnimationSection5'
@@ -141,26 +109,6 @@ function Section5 () {
           left: '100%'
         }, 0)
       })
-
-      // Animation Plane & Bus
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#busPlaneContainerSection5',
-          // markers: true,
-          start: () => {
-            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' top'
-          },
-          end: () => {
-            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'
-          },
-          pin: '#section5',
-          scrub: 1,
-          id: 'plane&bus'
-        }
-      })
-
-      tl2.to('#planesection5', { left: move('294px') })
-      tl2.to('#bussection5', { left: move('75px') }, 0)
     })
 
     return () => ctx.revert()
@@ -194,6 +142,7 @@ function Section5 () {
 
   return (
     <section id='section5' className={style.RepatriationBackground} style={repatriationCotainer}>
+      <FrontPageSection5 frontPageImages={frontPageImages} />
       {
         repatriation.image.map((photo, index) => (
           <img id={photo.name + 'section5'} src={images[photo.name]} style={imagesStyles[index]} className={style.RepatriationImages} key={photo.name + index} />
@@ -233,6 +182,38 @@ function Section5 () {
 }
 
 function Animation () {
+  useLayoutEffect(() => {
+    function move (input) {
+      const n = Number(input.split('px')[0])
+      const r = window.innerWidth * (n / 1920)
+      return r
+    }
+    const ctx = gsap.context(() => {
+      const scrollTriggerFrontPageSection5 = ScrollTrigger.getById('frontPageSection5')
+      // Animation Plane & Bus
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#busPlaneContainerSection5',
+          // markers: true,
+          start: () => {
+            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' top'
+          },
+          end: () => {
+            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'
+          },
+          pin: '#section5',
+          scrub: 1,
+          id: 'plane&bus'
+        }
+      })
+
+      tl2.to('#planesection5', { left: move('294px') })
+      tl2.to('#bussection5', { left: move('75px') }, 0)
+    })
+
+    return () => ctx.revert()
+  }, [])
+
   const animationContainerStyles = {
     width: convertSize(animation.width),
     height: convertSize(animation.height),

@@ -41,14 +41,14 @@ const Organos = () => {
                     dangerouslySetInnerHTML={{ __html: page13.text1 }}
                   />
                 </div>
-                <div className="arrow__book">
+                <div className="arrow__book booktres">
                   <img className="arrow__img" src={arrow} />
                   <p
                     className="books__text"
                     dangerouslySetInnerHTML={{ __html: page13.text2 }}
                   />
                 </div>
-                <div className="arrow__book">
+                <div className="arrow__book booktres">
                   <img className="arrow__img" src={arrow} />
                   <p
                     className="books__text"

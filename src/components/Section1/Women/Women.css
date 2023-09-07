@@ -7,6 +7,10 @@
   height: 250vh;
 }
 
+.separadorslider {
+  height: 40vh;
+}
+
 .women__content {
   width: 85%;
   height: 90vh;
@@ -50,7 +54,7 @@
   background-image: url("../../../assets/Img-Section01/Page10/women.png");
   justify-content: space-evenly;
   z-index: 20;
-  height: 50vh;
+  height: 55vh;
   /* width: 100vw; */
 }
 
@@ -81,6 +85,7 @@
   color: var(--verde-medio, #0a4b4e);
   font-family: "Inter", sans-serif;
   padding: 2%;
+  padding-left: 1.5em;
   font-size: 4vh;
   font-style: normal;
   font-weight: 700;
@@ -119,15 +124,16 @@
 .women__popup {
   display: none;
   z-index: 20;
-  background-color: #f2edd2;
+  background-image: url("../../../assets/Img-Section01/Page10/popup.jpg");
+  background-repeat: no-repeat;
   top: -8vw;
   width: 40vw;
   color: black;
   font-family: "Inter";
   font-size: 2.5vh ;
   font-weight: 400;
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 1.2em;
+  padding: 0.5em;
   letter-spacing: 0em;
   text-align: left;
   position: absolute;
