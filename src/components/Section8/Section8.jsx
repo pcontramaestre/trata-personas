@@ -28,11 +28,9 @@ function Section8() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const triggerAnimation = style.CreditsBackground;
-
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: triggerAnimation,
+        trigger: "#section8",
         start: "top 70%",
         end: "center center",
         scrub: true,
@@ -43,7 +41,7 @@ function Section8() {
 
     const tlcredits3 = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
+        trigger: "#section8",
         start: "top 68%",
         end: "center center",
         scrub: true,
@@ -54,7 +52,7 @@ function Section8() {
 
     const tlcredits2 = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
+        trigger: "#section8",
         start: "top 65%",
         end: "center center",
         scrub: true,
@@ -65,7 +63,7 @@ function Section8() {
 
     const tlcredits4 = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
+        trigger: "#section8",
         start: "top 63%",
         end: "center center",
         scrub: true,
