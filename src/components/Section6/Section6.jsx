@@ -100,7 +100,7 @@ function Section6 () {
           trigger: '#handsection6',
           // markers: true,
           start: () => {
-            return scrollTriggerFrontPageSection6.end - scrollTriggerFrontPageSection6.start + ' center'
+            return scrollTriggerFrontPageSection6.end - scrollTriggerFrontPageSection6.start + ' 80%'
           },
           end: () => {
             return (scrollTriggerFrontPageSection6.end - scrollTriggerFrontPageSection6.start + 100) + ' center'
