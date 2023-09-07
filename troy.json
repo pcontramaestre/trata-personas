@@ -2866,61 +2866,67 @@
     "height": "8446px",
     "top": "62203px",
     "backgroundColor": "#CFF9FF",
+    "frontPageImages": {
+      "top": "62203px",
+      "height": "1230px",
+      "listImages": [
+        {
+          "name": "background",
+          "width": "1920px",
+          "height": "1230px",
+          "top": "62203px",
+          "left": "0px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "family",
+          "width": "1105px",
+          "height": "1087px",
+          "top": "62280px",
+          "left": "874px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "frame",
+          "width": "1920px",
+          "height": "555px",
+          "top": "62203px",
+          "left": "0px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "handChild",
+          "width": "284px",
+          "height": "362px",
+          "top": "62829px",
+          "left": "1245px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "handShe",
+          "width": "461px",
+          "height": "612px",
+          "top": "62324px",
+          "left": "930px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        },
+        {
+          "name": "handHe",
+          "width": "545px",
+          "height": "665px",
+          "top": "62332px",
+          "left": "1482px",
+          "objectPosition": "center",
+          "objectFit": "contain"
+        }
+      ]
+    },
     "images": [
-      {
-        "name": "background",
-        "width": "1920px",
-        "height": "1230px",
-        "top": "62203px",
-        "left": "0px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "family",
-        "width": "1105px",
-        "height": "1087px",
-        "top": "62280px",
-        "left": "874px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "frame",
-        "width": "1920px",
-        "height": "555px",
-        "top": "62203px",
-        "left": "0px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "handChild",
-        "width": "284px",
-        "height": "362px",
-        "top": "62829px",
-        "left": "1245px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "handShe",
-        "width": "461px",
-        "height": "612px",
-        "top": "62324px",
-        "left": "930px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "handHe",
-        "width": "545px",
-        "height": "665px",
-        "top": "62332px",
-        "left": "1482px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
       {
         "name": "rectanguloAzul",
         "width": "1920",
@@ -3440,6 +3446,10 @@
       }
     ],
     "noteBook": {
+      "scrollTriggerBehind": [
+        "frontPageSection6",
+        "frontPageSection6"
+      ],
       "section": "Section6",
       "width": "690.83px",
       "height": "708.58px",
