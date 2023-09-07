@@ -61,7 +61,7 @@ function Section6 () {
         scrollTrigger: {
           trigger: '#backgroundsection6',
           // markers: true,
-          start: 'top top',
+          start: '7% top',
           end: '+=2000 bottom',
           pin: '#section6',
           scrub: 1,
@@ -100,7 +100,7 @@ function Section6 () {
           trigger: '#handsection6',
           // markers: true,
           start: () => {
-            return scrollTriggerFrontPageSection6.end - scrollTriggerFrontPageSection6.start + ' center'
+            return scrollTriggerFrontPageSection6.end - scrollTriggerFrontPageSection6.start + ' 80%'
           },
           end: () => {
             return (scrollTriggerFrontPageSection6.end - scrollTriggerFrontPageSection6.start + 100) + ' center'

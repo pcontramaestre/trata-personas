@@ -43,3 +43,9 @@
         transform: translateY(-1.5vw);
     }
 }
+
+#audio1section0:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}

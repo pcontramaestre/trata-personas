@@ -12,7 +12,7 @@ import style from './Section0.module.css'
 import logo from '../../assets/Instructions/logo.svg'
 import scroll from '../../assets/Instructions/scroll1.svg'
 import group from '../../assets/Instructions/group.svg'
-import audio1 from '../../assets/Instructions/audio1.svg'
+import audio1 from '../../assets/Instructions/audio1.png'
 import background from '/Section0/frontPageBackground.jpg'
 import people from '/Section0/frontPagePeopleBehind.png'
 import person from '/Section0/frontPagePersonAhead.png'
@@ -72,14 +72,15 @@ function Section0 () {
 
   return (
     <section id='section0' className={style.HomeHeaderBackground} style={homeHeaderContainer}>
+      <FrontPageSection0 frontPageImages={frontPageImages} />
       {
         homeHeader.images.map((image, index) => (
           image.name !== 'puppet'
-            ? <img id={image.name + 'section0'} src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
+            ? <img id={style[image.name + 'section0']} src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
             : null
         ))
       }
-      <FrontPageSection0 frontPageImages={frontPageImages} />
+      
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {
