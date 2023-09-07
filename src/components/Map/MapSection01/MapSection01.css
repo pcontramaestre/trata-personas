@@ -42,7 +42,7 @@
 
 .mapnumber02 {
   position: absolute;
-  right: 0;
+  right: -1vw;
   width: 100%;
   height: 100%;
 }
@@ -131,19 +131,20 @@
 .percentage1 {
   width: 4.2em;
   height: 1.3em;
-  background: #a2e7f1;
+  background-image:url("../../../assets/Img-Section01/Page05/percentage1.jpg") ; 
 }
 
 .percentage2 {
   width: 4.2em;
   height: 1.3em;
-  background: #1e7b85;
+  background-image:url("../../../assets/Img-Section01/Page05/percentage2.jpg") ; 
 }
 
 .percentage3 {
   width: 4.2em;
   height: 1.3em;
   background: #081d20;
+  background-image:url("../../../assets/Img-Section01/Page05/percentage3.jpg") ; 
 }
 
 .percentage__number {

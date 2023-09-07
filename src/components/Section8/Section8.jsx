@@ -30,8 +30,8 @@ function Section8() {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
-        start: "top 70%",
+        trigger: "#section8",
+        start: "top 50%",
         end: "center center",
         scrub: true,
       },
@@ -41,8 +41,8 @@ function Section8() {
 
     const tlcredits3 = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
-        start: "top 68%",
+        trigger: "#section8",
+        start: "top 48%",
         end: "center center",
         scrub: true,
       },
@@ -52,8 +52,8 @@ function Section8() {
 
     const tlcredits2 = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
-        start: "top 65%",
+        trigger: "#section8",
+        start: "top 45%",
         end: "center center",
         scrub: true,
       },
@@ -63,8 +63,8 @@ function Section8() {
 
     const tlcredits4 = gsap.timeline({
       scrollTrigger: {
-        trigger: "._CreditsBackground_1dt04_1",
-        start: "top 63%",
+        trigger: "#section8",
+        start: "top 43%",
         end: "center center",
         scrub: true,
       },

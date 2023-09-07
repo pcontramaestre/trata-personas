@@ -120,7 +120,8 @@ function Section3() {
         },
         {
           opacity: 1,
-        }, 2
+        },
+        2
       );
 
       containerRowTl.fromTo(
@@ -130,7 +131,8 @@ function Section3() {
         },
         {
           opacity: 0,
-        }, 5
+        },
+        5
       );
     });
 
@@ -428,12 +430,12 @@ function Section3() {
       style={protectionAndCareBackgroundStyles}
     >
       <div className={style.animationText1} ref={textRef}>
+        <p className={style.text1}>{animationText.text1} </p>
         <p className={style.text1}>
-          {animationText.text1}{" "}
           <strong className={style.textStrong}>
             {animationText.textStrong}
-          </strong>
-          {animationText.text4}{" "}
+          </strong>{" "}
+          {animationText.text4}
         </p>
         <h2 className={style.text3}>{animationText.text3}</h2>
         <p className={style.text2}>{animationText.text2}</p>

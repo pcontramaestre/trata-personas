@@ -7,8 +7,17 @@
   width: 100vw;
   margin-top: 0;
   /* flex-shrink: 0; */
-  /* background: #fff0f1; */
+  background-color: #fff0f1;
   position: relative;
+}
+
+.relleno{
+  position: absolute;
+  height: 15vh;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  background-color: #002d2c ;
 }
 
 .page1content {
@@ -19,12 +28,12 @@
 
 .page1 {
   margin-top: 20vh;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   /* justify-content: flex-end; */
   align-items: center;
   justify-content: center;
-  background-image: url("../../../src/assets/Img-Section01/Page01/visibilidad1.png");
+  background-image: url("../../../src/assets/Img-Section01/Page01/fondo.png");
   height: 100%;
   background-size: contain;
   /* background-position: center; */
@@ -33,12 +42,42 @@
   position: relative;
 }
 
+.page1__images {
+  z-index: 3;
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+}
+
+.page1__manos {
+  position: absolute;
+  top: 0;
+  /* z-index: 0; */
+  width: 40%;
+  height: 25%;
+  left: 8vw;
+  background-image: url("../../assets/Img-Section01/Page01/mano-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.page1__rejas {
+  position: relative;
+  top: 2vw;
+  width: 100%;
+  height: 55%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../assets/Img-Section01/Page01/rejas-4.png");
+}
+
 .page1__title {
   color: #ffdcd1;
   position: absolute;
   font-family: "Formula Condensed";
   right: 18vw;
   bottom: 70%;
+  z-index: 5;
   font-size: 13vh;
   font-style: normal;
   flex-shrink: 0;
@@ -47,15 +86,100 @@
   text-transform: uppercase;
 }
 
-.section__01slider{
+.manosleft__content {
+  position: absolute;
+  top: 18vw;
+  left: 9vw;
+  width: 35%;
+  height: 30%;
+  /* background-color: white; */
+}
+
+.page1__manosleft {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/Img-Section01/Page01/manos-1.png");
+}
+.page1__antebrazosleft {
+  position: absolute;
+  top: 10vw;
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/Img-Section01/Page01/antebrazo-1.png");
+}
+
+.page1__priceleft {
+  position: absolute;
+  top: 15vw;
+  right: 0.5vw;
+  z-index: 1;
+  width: 35%;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/Img-Section01/Page01/etiqueta-1.png");
+}
+
+.manosright__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  top: 36vw;
+  right: 10.5vw;
+  width: 35%;
+  height: 30%;
+  /* background-color: white; */
+}
+
+.page1__manosright {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  top: 0;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/Img-Section01/Page01/manos-2.png");
+}
+.page1__antebrazosright {
+  position: absolute;
+  top: 7.8vw;
+  right: 3vw;
+  z-index: -1;
+  width: 70%;
+  height: 80%;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/Img-Section01/Page01/antebrazo-2.png");
+}
+
+.page1__priceright {
+  position: absolute;
+  top: 8.5vw;
+  right: 2vw;
+  z-index: 5;
+  width: 25%;
+  height: 45%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/Img-Section01/Page01/etiequeta-2.png");
+}
+
+.section__01slider {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 
 @media screen and (max-width: 1000px) {
   .Section1 {
@@ -111,7 +235,6 @@
 }
 
 @media screen and (max-width: 380px) {
- 
   .page1content {
     height: 100vh;
   }
