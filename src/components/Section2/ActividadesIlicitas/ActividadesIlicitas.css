@@ -42,6 +42,7 @@
   right: 5vw;
   width: 45vw;
   position: absolute;
+  z-index: 98;
 }
 
 .ilicitasquemado{
@@ -49,12 +50,13 @@
   position: absolute;
   top: 45vh;
   right: 0;
-  background-image: url("../../../assets/Img-Section02/Page10/esclavitudquemado.png");
+  background-image: url("../../../assets/Img-Section02/Page10/ilicitasquemado.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 50%;
   height: 80vh;
+  z-index: 99;
 }
 
 .actividades__img:hover + .ilicitasquemado{
