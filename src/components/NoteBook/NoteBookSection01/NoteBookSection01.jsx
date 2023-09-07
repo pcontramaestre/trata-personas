@@ -15,13 +15,13 @@ function NoteBookSection01() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".NoteBook__container",
-        start: "top 95%",
+        start: "top 60%",
         end: "bottom 110%",
         scrub: true,
       },
     });
 
-    tl.from(".NoteBook", { x: -100, opacity: 0});
+    tl.from(".NoteBook", { x: -100, opacity: 0 });
     tl.to(".NoteBook", { x: 0, opacity: 1 });
   }, []);
 

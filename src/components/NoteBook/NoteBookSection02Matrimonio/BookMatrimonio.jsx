@@ -11,7 +11,7 @@ const BookMatrimonio = ({ page9 }) => {
       scrollTrigger: {
         trigger: ".NoteBook07",
         start: "top 95%",
-        end: "bottom 110%",
+        end: "bottom 40%",
         scrub: true,
       },
     });
