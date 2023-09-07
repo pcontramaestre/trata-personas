@@ -49,7 +49,11 @@
   right: 5vw;
   width: 40vw;
   height: 40vw;
+  background-image: url("../../../assets/Img-Section02/Page10/esclavos.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
+  z-index: 97;
 }
 
 .esclavitudquemado{
@@ -63,15 +67,23 @@
   background-repeat: no-repeat;
   width: 50%;
   height: 80vh;
+  z-index: 99;
 }
 
 .esclavitud__img:hover + .esclavitudquemado{
-  display: flex;
+  display: block !important;
   cursor: pointer;
+  z-index: 98;
+}
+
+.esclavitud__content:hover + .esclavitudquemado{
+  display: block !important;
+  cursor: pointer;
+  z-index: 98;
 }
 
 .esclavitudquemado:hover{
-  display: flex;
+  display: block !important;
   z-index: 99;
   cursor: pointer;
 }
