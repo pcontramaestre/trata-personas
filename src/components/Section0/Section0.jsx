@@ -72,6 +72,7 @@ function Section0 () {
 
   return (
     <section id='section0' className={style.HomeHeaderBackground} style={homeHeaderContainer}>
+      <FrontPageSection0 frontPageImages={frontPageImages} />
       {
         homeHeader.images.map((image, index) => (
           image.name !== 'puppet'
@@ -79,7 +80,7 @@ function Section0 () {
             : null
         ))
       }
-      <FrontPageSection0 frontPageImages={frontPageImages} />
+      
       {
         homeHeader.text.map((texto, index) => {
           switch (texto.tag) {
