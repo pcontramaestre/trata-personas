@@ -92,6 +92,14 @@ function Section1() {
     <section id="section1" className={style.Section1}>
       <div className={style.page1content}>
         <div className={style.page1}>
+          <div className={style.page1__images}>
+            <div className={style.page1__manos} />
+            <div className={style.page1__rejas} />
+            <div className={style.page1__antebrazosleft} />
+            <div className={style.page1__antebrazosright} />
+            <div className={style.page1__precios1} />
+            <div className={style.page1__precios2} />
+          </div>
           <h1 className={style.page1__title}>
             {page1.text1} <br /> {page1.text2}
           </h1>
