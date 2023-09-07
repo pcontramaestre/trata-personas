@@ -7,7 +7,7 @@
 
 .NewsArticle {
     position: absolute;
-    background-image: url('../../assets/News/backgroundArticle.png');
+    background-image: url('/News/backgroundArticle.png');
     background-size: cover;
     background-position: center;
 }

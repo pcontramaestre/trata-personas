@@ -26,14 +26,14 @@ function App () {
 
   useEffect(() => {
     const imgs = [
-      './src/assets/Section0/frontPageBackground.jpg',
-      './src/assets/Section0/frontPagePeopleBehind.png',
-      './src/assets/Section0/frontPagePersonAhead.png',
-      './src/assets/Section0/frontPagePuppet.png',
-      './src/assets/News/backgroundArticle.png',
-      './src/assets/News/sheetL.png',
-      './src/assets/News/sheetM.png',
-      './src/assets/News/sheetS.png'
+      './Section0/frontPageBackground.jpg',
+      './Section0/frontPagePeopleBehind.png',
+      './Section0/frontPagePersonAhead.png',
+      './Section0/frontPagePuppet.png',
+      './News/backgroundArticle.png',
+      './News/sheetL.png',
+      './News/sheetM.png',
+      './News/sheetS.png'
     ]
     cacheImages(imgs)
   }, [])
