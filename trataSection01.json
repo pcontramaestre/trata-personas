@@ -72,7 +72,7 @@
           "percentaje1": "20%",
           "percentaje2": "18%",
           "percentaje3": "62%",
-          "text1": "<strong>La mayoría de las personas identificadas</strong> como víctimas de trata de personas <h3>se encontraban dentro de su país de nacionalidad.</h3>",
+          "text1": "<strong>La mayoría de las personas identificadas</strong> como víctimas <br/> de trata de personas <h3>se encontraban dentro de su país de nacionalidad.</h3>",
           "text2": "Personas víctimas de trata identificadas <strong>dentro de su país de nacionalidad</strong>",
           "text3": "Personas víctimas de trata identificadas <strong>fuera de su país de nacionalidad</strong>",
           "text4": "Sin información"
@@ -108,7 +108,7 @@
       },
       "page9": {
         "title": "El 43% de las <br/> víctimas identificadas",
-        "subtitle": "en el periodo 2018-2021 <br/> fueron niños, niñas y adolescentes.",
+        "subtitle": "en el periodo 2018-2021 <br/> <small>fueron niños, niñas y adolescentes.</small>",
         "foot": "<strong>El porcentaje de niños y adolescentes entre el total de víctimas identificadas es de 23% y el de niñas y adolescentes es de 20 %</strong> .  En el último año se presentó un aumento de las niñas y adolescentes identificadas como víctimas y una disminución de los niños identificados.",
         "graphic": {
           "text1": "Víctimas <strong>menores</strong><br/> de <strong>18 años</strong>",

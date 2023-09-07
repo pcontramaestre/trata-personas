@@ -7,11 +7,11 @@ import "./SliderSection02.css";
 const SliderSection02 = () => {
   const page2 = data[0].finalidades.page2.slider;
   const texts = [
+    { title: page2.text2, foot: page2.text4 },
     {
       title: page2.text1,
       foot: page2.text3,
     },
-    { title: page2.text2, foot: page2.text4 },
   ];
   const settings = {
     dots: false,

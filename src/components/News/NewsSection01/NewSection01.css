@@ -66,8 +66,6 @@ p {
   background-repeat: no-repeat;
 }
 
-
-
 .newshover__title {
   color: #000;
   font-family: "Inika";
@@ -116,7 +114,9 @@ p {
 
 .newshover__link {
   display: flex;
+  width: 100%;
   /* flex-direction: column; */
+  justify-content: start;
   align-items: center;
   font-family: "Inika";
   font-size: 2vh;
@@ -124,6 +124,10 @@ p {
   line-height: normal;
   letter-spacing: 0em;
   text-align: left;
+  color: #948678;
+}
+
+.newshover__link:hover {
   color: #948678;
 }
 
@@ -157,7 +161,7 @@ p {
   /* z-index: 3; */
 }
 
-.newshover__background2{
+.newshover__background2 {
   width: 39.0625vw;
   height: 100.4375vh;
   display: flex;

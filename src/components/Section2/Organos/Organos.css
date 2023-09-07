@@ -58,8 +58,8 @@
   font-family: "Inter", sans-serif;
   font-size: 3.45vh;
   font-style: normal;
-  font-weight: 400;
-  /* line-height: 30px; */
+  font-weight: 500;
+  line-height: 30px;
   letter-spacing: 0.4px;
 }
 
@@ -112,7 +112,7 @@
   align-content: center;
   transform: rotate(9.6deg);
   margin-left: 7.5vw;
-  margin-top: 19vh;
+  margin-top: 20vh;
   font-style: normal;
   width: 75%;
 }
@@ -123,14 +123,14 @@
   font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.55em;
+  line-height: 1.2em;
   padding: 9px 0;
 }
 
 .books__text strong {
   color: var(--negro-textos, #c18831);
   font-family: Formula Condensed;
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
@@ -144,6 +144,10 @@
   align-items: start;
 }
 
+.booktres{
+  margin-top: 0.2vw;
+}
+
 .arrow__img {
   /* margin-top: 2vh; */
   padding: 15px 5px;
@@ -154,6 +158,7 @@
   color: var(--negro-textos, #081d20);
   font-family: Inter;
   font-size: 2.5vh;
+  margin-top: 2.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
