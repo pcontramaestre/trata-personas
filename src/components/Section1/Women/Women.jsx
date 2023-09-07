@@ -4,7 +4,7 @@ import "./Women.css";
 import gifblanco from "../../../assets/Img-Section01/Page10/gifblanco.gif";
 import womens from "../../../assets/Img-Section01/Page10/chicas.png";
 
-const Women = ({toggleWomenSlider}) => {
+const Women = ({ toggleWomenSlider }) => {
   const page10 = data[0].visibilizacion_victimas.page10;
 
   return (
@@ -16,11 +16,11 @@ const Women = ({toggleWomenSlider}) => {
         />
         <div className="women__texts">
           <div className="women__texts-content1">
-            <p className="women__text-p">{page10.card1.text1}</p>
+          <p dangerouslySetInnerHTML={{__html: page10.card1.text1}} className="women__text-p"/>
             <h1 className="women__percentage">{page10.card1.percentage1}</h1>
           </div>
           <div className="women__texts-content2">
-            <p className="women__text-p">{page10.card2.text2}</p>
+            <p dangerouslySetInnerHTML={{__html: page10.card2.text2}} className="women__text-p"/>
             <h1 className="women__percentage">{page10.card2.percentage2}</h1>
             <img className="womens__img" src={womens} />
           </div>
@@ -40,10 +40,9 @@ const Women = ({toggleWomenSlider}) => {
             <img className="women__gif" src={gifblanco} />
             <div className="women__popup">{page10.card4.popup}</div>
           </div>
-          <button className="buttonslider" onClick={toggleWomenSlider}/>
+          <button className="buttonslider" onClick={toggleWomenSlider} />
         </div>
       </div>
-    
     </div>
   );
 };
