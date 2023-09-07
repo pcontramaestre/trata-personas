@@ -150,11 +150,11 @@
       "page10": {
         "title": "Las mujeres y las niñas siguen siendo las principales víctimas de trata constituyendo <strong>el 54% de víctimas de trata</strong> identificadas en la región",
         "card1": {
-          "text1": "Hombres y niños víctimas de trata de personas en la región",
+          "text1": "Hombres y niños <br/> víctimas de trata de personas en la región",
           "percentage1": "33%"
         },
         "card2": {
-          "text2": "Mujeres y niñas víctimas de trata de personas en la región",
+          "text2": "Mujeres y niñas víctimas <br/> de trata de personas en <br/> la región",
           "percentage2": "54%"
         },
         "card3": {
