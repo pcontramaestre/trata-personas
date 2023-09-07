@@ -22,8 +22,36 @@ import './App.css'
 
 function App () {
   const [show, setShow] = useState('instructions')
-
   const currentScroll = useRef(0)
+
+  useEffect(() => {
+    const imgs = [
+      './Section0/frontPageBackground.jpg',
+      './Section0/frontPagePeopleBehind.png',
+      './Section0/frontPagePersonAhead.png',
+      './Section0/frontPagePuppet.png',
+      './News/backgroundArticle.png',
+      './News/sheetL.png',
+      './News/sheetM.png',
+      './News/sheetS.png'
+    ]
+    cacheImages(imgs)
+  }, [])
+
+  async function cacheImages (srcArray) {
+    const promises = await srcArray.map(src => {
+      return new Promise((resolve, reject) => {
+        const img = new Image()
+        img.src = src
+        img.onload = resolve()
+        img.onerror = () => {
+          const error = new Error('No se pudo cargar la imagen')
+          reject(error)
+        }
+      })
+    })
+    await Promise.all(promises)
+  }
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
