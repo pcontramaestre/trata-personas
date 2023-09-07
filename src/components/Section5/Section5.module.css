@@ -41,3 +41,10 @@
 .animationPictures label {
     position: absolute;
 }
+
+.title1Section5 {
+    width: 10px;
+    height: 10vw;
+    position: relative;
+    z-index: 5;
+}
