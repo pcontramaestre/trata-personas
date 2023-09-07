@@ -107,6 +107,7 @@
   color: #1a6063;
   font-family: "Inter", sans-serif;
   font-size: 2.5vh;
+  /* font-size: 30; */
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -114,7 +115,7 @@
 
 .circlegraph__p h3 {
   color: #1a6063;
-  font-family: "Formula Condensed";
+  font-family: Formula Condensed;
   font-size: 4.5vh;
   font-style: normal;
   font-weight: 700;

@@ -46,11 +46,11 @@
 }
 
 .bargraph__title {
-  width: 60%;
+  width: 70%;
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 4vh;
+  font-size: 1.45833vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
