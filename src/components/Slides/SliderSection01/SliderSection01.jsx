@@ -41,15 +41,6 @@ const SliderSection01 = ({ texts }) => {
     }
   }, [slidesViewed, texts]);
 
-  useEffect(() => {
-    if (enableScroll) {
-      // Enable page scrolling when all slides have been viewed
-      gsap.to(window, { duration: 0.1, scrollTo: "max" });
-      document.body.style.overflow = "auto"; // Restore scrolling
-    } else {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-  }, [enableScroll]);
 
   const settings = {
     dots: false,

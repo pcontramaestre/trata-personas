@@ -19,6 +19,11 @@ function Section2() {
   return (
     <section id="section2" className="Section02">
       <div className="page2content">
+        <div className="page2__imagesbackground">
+          <div className="page2__imagemen"/>
+          <div className="page2__sombreromen"/>
+          <div className="page2__botas"/>
+        </div>
         <div className="page2">
           <h1 className="page2__title">{page1.text1}</h1>
           <h1 className="page2__title2">{page1.text2}</h1>
