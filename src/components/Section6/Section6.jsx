@@ -61,7 +61,7 @@ function Section6 () {
         scrollTrigger: {
           trigger: '#backgroundsection6',
           // markers: true,
-          start: 'top top',
+          start: '7% top',
           end: '+=2000 bottom',
           pin: '#section6',
           scrub: 1,
