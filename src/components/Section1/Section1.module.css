@@ -13,8 +13,8 @@
 
 .relleno{
   position: absolute;
-  height: 15vh;
-  top: 0;
+  height: 20vh;
+  top: -1vw;
   width: 100vw;
   z-index: 1;
   background-color: #002d2c ;
@@ -65,7 +65,7 @@
   position: relative;
   top: 2vw;
   width: 100%;
-  height: 55%;
+  height: 60vw;
   background-position: center;
   background-size: cover;
   background-image: url("../../assets/Img-Section01/Page01/rejas-4.png");
@@ -153,7 +153,7 @@
   position: absolute;
   top: 7.8vw;
   right: 3vw;
-  z-index: -1;
+  z-index: -2;
   width: 70%;
   height: 80%;
   background-size: contain;
@@ -182,11 +182,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+
   .Section1 {
+    top: -1vw;
     width: 100vw;
   }
 
   .page1 {
+    margin-top: 5vh;
     top: 0vh;
   }
 

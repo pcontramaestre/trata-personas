@@ -30,7 +30,7 @@
   color: #ce5c3b;
   margin: 0;
   text-align: center;
-  font-size: 10vh;
+  font-size: 5vw;
   font-family: "Formula Condensed";
   font-style: normal;
   font-weight: 700;
@@ -44,7 +44,7 @@
   width: 65%;
   color: var(--negro-textos, #081d20);
   font-family: Inter;
-  font-size: 4vh;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 400;
   font-family: "Inter";
@@ -57,9 +57,9 @@
   text-align: center;
   font-family: "Inter", sans-serif;
   font-family: Inter;
-  font-size: 4vh;
+  font-size: 2vw;
   font-style: normal;
-  padding-bottom: 3vh;
+  padding-bottom: 1.5vw;
   font-weight: 700;
   line-height: normal;
   margin: 0;

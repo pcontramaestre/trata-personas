@@ -28,7 +28,7 @@
   margin: 0;
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 9.4vh;
+  font-size: 4.8vw;
   font-style: normal;
   font-weight: 700;
   text-align: left;
@@ -39,7 +39,7 @@
   margin: 0;
   color: var(--verde-medio, #0a4b4e);
   font-family: "Inter", sans-serif;
-  font-size: 5vh;
+  font-size: 2.5vw;
   font-style: normal;
   text-align: left;
   font-weight: 400;
@@ -50,7 +50,7 @@
   margin: 0;
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 5vh;
+  font-size: 2.5vw;
   font-style: normal;
   text-align: left;
   font-weight: 300;
@@ -111,8 +111,8 @@
 
 .circlegraph02__number {
   font-family: Formula Condensed;
-  font-size: 7vh;
   font-weight: 700;
+  font-size: 3.5vw;
   line-height: 84px;
   letter-spacing: 0.05em;
   text-align: left;
@@ -127,8 +127,8 @@
 
 .circlenumbers__content {
   position: absolute;
-  top: -6.5vw;
-  right: -7.5vw;
+  top: -6.9vw;
+  right: -8.6vw;
   display: flex;
   height: 120%;
   justify-content: space-between;
@@ -145,8 +145,8 @@
 }
 
 .circlegraph02__foot {
-  font-family: Inter;
-  font-size: 2.2vh;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1vw;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
@@ -159,7 +159,7 @@
   color: var(--verde-medio, #0a4b4e);
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 4vh;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -170,7 +170,7 @@
   color: var(--verde-medio, #0a4b4e);
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 4vh;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

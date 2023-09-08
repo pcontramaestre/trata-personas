@@ -20,7 +20,9 @@
   align-items: start;
   justify-content: center;
   height: 33%;
-  background-position: top;
+  position: relative;
+  top: 0.2vw;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50px 50px 0 0;
@@ -31,13 +33,13 @@
   height: 75%;
   padding-left: 2.5em;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-direction: column-reverse;
 }
 
 .finalidad__percentagegold {
   font-family: "Formula Condensed";
-  font-size: 12vh;
+  font-size: 6vw;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: normal;
@@ -48,7 +50,7 @@
 .explotaciontitle {
   margin: 0;
   font-family: Formula Condensed;
-  font-size: 7vh;
+  font-size: 3.5vw;
   font-weight: 300;
   letter-spacing: 0.04em;
   text-align: left;
@@ -77,7 +79,7 @@
   margin: 0;
   width: 100%;
   font-family: Formula Condensed;
-  font-size: 5vh;
+  font-size: 2.5vw;
   font-weight: 300;
   letter-spacing: 0.02em;
   text-align: left;
@@ -94,7 +96,7 @@
 
 .mendicidadpercentage {
   font-family: Formula Condensed;
-  font-size: 12vh;
+  font-size: 6vw;
   font-weight: 700;
   line-height: normal;
   /* line-height: 156px; */
@@ -125,7 +127,7 @@
 .ilicitatitle {
   margin: 0;
   font-family: Formula Condensed;
-  font-size: 5vh;
+  font-size: 2.5vw;
   font-weight: 300;
   line-height: normal;
   /* line-height: 45px; */
@@ -146,7 +148,7 @@
 .explotacion-laboral__title {
   margin: 0;
   font-family: Formula Condensed;
-  font-size: 8vh;
+  font-size: 4vw;
   font-weight: 300;
   letter-spacing: 0.04em;
   text-align: left;
@@ -217,12 +219,12 @@
   background-image: url("../../../assets/Img-Section02/Page03/7-esclavitud1.png");
 }
 
-.esclavitudtitle{
+.esclavitudtitle {
   display: flex;
   margin: 0;
   width: 100%;
   font-family: Formula Condensed;
-  font-size: 4vh;
+  font-size: 2vw;
   font-weight: 300;
   letter-spacing: 0.02em;
   text-align: left;
@@ -241,7 +243,7 @@
   border-radius: 0 0 50px 0;
 }
 
-.finalidadadopcion__content{
+.finalidadadopcion__content {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -249,18 +251,17 @@
   padding: 0.5em;
 }
 
-
-.adopciontitle{
+.adopciontitle {
   margin: 0;
   font-family: Formula Condensed;
-  font-size: 4vh;
+  font-size: 2vw;
   font-weight: 300;
   letter-spacing: 0.02em;
   text-align: left;
   color: #f2dfb8;
 }
 
-.finalidadesclavitud__content{
+.finalidadesclavitud__content {
   display: flex;
   justify-content: center;
   flex-direction: column-reverse;
