@@ -102,18 +102,6 @@ function Section3() {
       });
 
       containerRowTl.fromTo(
-        containerRowRefs.current[index], // Use the specific ref for this row
-        {
-          opacity: 0,
-          x: "-100%",
-        },
-        {
-          opacity: 1,
-          x: "0%",
-        }
-      );
-
-      containerRowTl.fromTo(
         "#bigCard" + row.image.name,
         {
           opacity: 0,
