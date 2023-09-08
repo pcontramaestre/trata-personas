@@ -16,7 +16,7 @@ function BackgroundComponent() {
       scrollTrigger: {
         trigger: imgRefs.current,
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-        end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
+        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
         // markers: true, // Muestra marcadores de ScrollTrigger para depuración
       },
@@ -25,7 +25,7 @@ function BackgroundComponent() {
     imgTl.fromTo(
       imgRefs.current,
       {
-        x: "-10%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+        x: "-5%", // Mueve el elemento hacia la izquierda al 100% de su ancho
         // opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
       },
       {
