@@ -53,12 +53,13 @@
   color: #1a6063;
 }
 
+
 .womenslider__title {
   margin: 0;
   display: flex;
   width: 30%;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: 600;
   /* line-height: 42px; */
   letter-spacing: 0em;

@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
 import "./NoteBookSection01.css";
 import hand from "../../../assets/Img-Section01/Page03/MANOS.png";
 import data from "../../../../trataSection01.json";

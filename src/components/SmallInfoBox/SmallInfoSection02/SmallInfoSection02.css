@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 75vh;
+  height: 32.75vw;
 }
 
 .small__title {
@@ -14,7 +15,7 @@
   font-family: Formula Condensed;
   margin: 0;
   width: 50%;
-  font-size: 13.9vh;
+  font-size: 6.9vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -26,7 +27,7 @@
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: "Inika", sans-serif;
-  font-size: 3.85vh;
+  font-size: 1.8vw;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -41,17 +42,17 @@
   display: none;
   background-color: #FFEE96;
   border-radius: 1vh;
-  padding: 3vh;
+  padding: 1.5vw;
   color: black;
   font-family: "Inter";
-  font-size: 2.8vh;
+  font-size: 1.4vw;
   font-weight: 400; 
   line-height: 1.2em;
   letter-spacing: 0em;
   width: 60%;
   text-align: justify;
   position: absolute;
-  bottom: 5vh;
+  bottom: 0%;
 }
 
 .small__gif:hover + .small__popup{

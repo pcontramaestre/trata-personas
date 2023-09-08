@@ -2,7 +2,7 @@
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 5.3vh;
+  font-size: 2.515vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -13,7 +13,7 @@
   color: var(--verde-medio, #0a4b4e);
   text-align: center;
   font-family: Formula Condensed;
-  font-size: 10vh;
+  font-size: 5vw;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
