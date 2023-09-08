@@ -15,7 +15,7 @@
   /* border-left: 0.5vh solid #fff; */
 }
 
-.info__separador{
+.info__separador {
   margin-left: 4vh;
   height: 50%;
   border: 0.25vh solid #fff;
@@ -35,7 +35,7 @@
   margin: 10px 0;
   color: #fff;
   font-family: Formula Condensed;
-  font-size: 5vh;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -46,7 +46,7 @@
   margin: 0;
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 3.1vh;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -55,7 +55,7 @@
 .info__text2 {
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 2.95vh;
+  font-size: 1.5vw;
   font-style: normal;
   margin: 10px 0;
   font-weight: 400;
@@ -64,9 +64,8 @@
   text-transform: uppercase;
 }
 
-
 @media screen and (max-width: 720px) {
-  .info__separador{
+  .info__separador {
     margin-left: 0.2em;
     border: 0.09em solid #fff;
   }
@@ -74,13 +73,13 @@
     width: 95vw;
     height: 20vh;
   }
-  .info__title{
+  .info__title {
     font-size: 1.45em;
   }
-  .info__text1{
+  .info__text1 {
     font-size: 1em;
   }
-  .info__text2{
+  .info__text2 {
     font-size: 0.8em;
   }
 }
@@ -89,14 +88,14 @@
   .info__texts {
     height: 15vh;
   }
-  .info__title{
+  .info__title {
     margin: 5px 0;
     font-size: 0.68em;
   }
-  .info__text1{
+  .info__text1 {
     font-size: 0.45em;
   }
-  .info__text2{
+  .info__text2 {
     font-size: 0.3em;
   }
 }
