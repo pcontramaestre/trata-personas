@@ -9,6 +9,8 @@
 
 .HomeHeaderImages {
     object-fit: contain;
+    position: relative;
+    z-index: 1;
 }
 
 .HomeHeaderText {
