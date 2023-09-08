@@ -5023,16 +5023,8 @@
         "top": "38812.33px",
         "left": "834.29px",
         "filter": "brightness(0) saturate(100%) invert(92%) sepia(5%) saturate(3566%) hue-rotate(139deg) brightness(72%) contrast(103%)"
-      },
-      {
-        "name": "audio",
-        "width": "42px",
-        "height": "42px",
-        "top": "35886px",
-        "left": "1771px"
       }
     ],
-
     "animationText2": {
       "text5": "Durante el periodo ",
       "textStrong": "2018-2021",
