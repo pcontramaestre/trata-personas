@@ -5,10 +5,14 @@
     padding: 0px;
     z-index: 5;
     background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 .ToHome:hover {
-    border: 0px solid transparent;
+    /* border: 0px solid transparent; */
+    opacity: 0.8;
 }
 
 .ToHome img {
