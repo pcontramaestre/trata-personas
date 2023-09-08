@@ -554,12 +554,6 @@ function Section3() {
           key={infoBox.name + index}
         />
       ))}
-      {/* <BigCard
-        id="BigCardProtection"
-        bigCard={bigCard}
-        topSection={protectionAndCare.top}
-        name={nameBigCard}
-      /> */}
       <News news={news} topSection={protectionAndCare.top} />
     </section>
   );

@@ -7,7 +7,7 @@
   position: relative;
 }
 .App{
-  height: 235vw;
+  height: 229vw;
 
 }
 
@@ -32,16 +32,17 @@
 #fondo1 {
   width: 100vw;
   z-index: 3;
+  height: 80vw;
 }
 #fondo1 img {
-  height: 84vw;
-  width: 111vw;
-  object-fit: cover;
+  height: 100%;
+  width: 105vw;
+  object-fit: fill;
 }
 #fondo2 {
   background-image: url(../../../assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
   position: absolute;
-  top: 61vw;
+  top: 53vw;
     z-index: 2;
     height: 100vw;
   width: 100vw;
@@ -50,7 +51,7 @@
 #fondo3 {
   background-image: url(../../../assets/Section9IMG/819f19fbc8d2bf12d848c4a71e828d49.png);
   position: absolute;
-  top: 132vw;
+  top: 127vw;
   height: 67vw;
   width: 100vw;
   object-fit: cover;
@@ -59,14 +60,14 @@
   background-image: url();
   background-image: url(../../../assets/Section9IMG/528d375cdfbed90a2c779e3b78f887cf.png);
   height: 50vw;
-  top: 185vw;
+  top: 179vw;
   position: absolute;
   object-fit: cover;
 }
 
 .square {
   position: absolute;
-  top: 63vw;
+  top: 56vw;
   width: 100vw;
   z-index: 4;
 }
