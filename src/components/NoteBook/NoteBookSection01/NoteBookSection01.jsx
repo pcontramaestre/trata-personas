@@ -20,7 +20,7 @@ function NoteBookSection01() {
       },
     });
 
-    tl.from(".NoteBook", { x: -100, opacity: 0 });
+    tl.from(".NoteBook", { x: "-100%", opacity: 0.5 });
     tl.to(".NoteBook", { x: 0, opacity: 1 });
   }, []);
 
