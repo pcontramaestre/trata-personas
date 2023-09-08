@@ -38,6 +38,7 @@ import alojamiento from "../../assets/Section3/alojamiento.png";
 import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
 import graphic from "../../assets/Section3/grafico-21.png";
+import mp3 from "../../assets/Section3/Naciones-Unidas-Plano-voz-2.mp3";
 
 const imagesList = {
   background,
@@ -49,7 +50,6 @@ const imagesList = {
   frecuencia,
   atenciones,
   group,
-  audio,
   amarillo1,
   rosado1,
   azul1,
@@ -79,7 +79,12 @@ function convertSize(input) {
   const r = (n * 100) / 1920 + "vw";
   return r;
 }
+
 function Section3() {
+  const [audioPlaying, setAudioPlaying] = useState(false);
+const [audioAutoPlay, setAudioAutoPlay] = useState(true);
+  const [sectionVisible, setSectionVisible] = useState(false);
+
   const imgRefs = useRef([]); // Create an array of refs for images
   const containerRowRefs = useRef([]); // Create an array of refs for rows
   const textRef = useRef(null);
@@ -90,12 +95,20 @@ function Section3() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    ScrollTrigger.create({
+      trigger: "#section3", // Debe ser el id de la sección
+      onEnter: () => {
+        setSectionVisible(true); // Marca la sección como visible
+      },
+      // ...
+    });
+    
     // Animations for rows
     rows.forEach((row, index) => {
       const containerRowTl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRowRefs.current[index], // Use the specific ref for this row
-          start: "top center",
+          start: "center center",
           end: "bottom center",
           scrub: true,
         },
@@ -109,7 +122,6 @@ function Section3() {
         {
           opacity: 1,
         },
-        2
       );
 
       containerRowTl.fromTo(
@@ -119,8 +131,7 @@ function Section3() {
         },
         {
           opacity: 0,
-        },
-        5
+        },4
       );
     });
 
@@ -146,6 +157,8 @@ function Section3() {
           opacity: 1,
         }
       );
+
+      
     });
 
     // Animations for text
@@ -238,6 +251,7 @@ function Section3() {
   const [nameBigCard, setNameBigCard] = useState("");
 
   useEffect(() => {
+    
     if (smallInfoBox) {
       const iconsList = document.getElementsByName(icons[0].name);
       const divs = document.getElementsByName(`SmallInfoBox${icons[0].name}`);
@@ -411,12 +425,47 @@ function Section3() {
   const listImageFrontPage = ["leftHand", "bars", "rightHand"];
   const animationText = data.protectionAndCare.animationText;
 
+  const audioRef = useRef(null);
+
+  const toggleAudio = () => {
+    const audioElement = document.getElementById('miAudio');
+    
+    if (audioElement) {
+      if (audioAutoPlay) {
+        audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
+        setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
+      } else {
+        if (audioPlaying) {
+          audioElement.pause(); // Pausa el audio si estaba reproduciéndose
+        } else {
+          audioElement.play(); // Reanuda el audio si estaba pausado
+        }
+      }
+      setAudioPlaying(!audioPlaying); // Actualiza el estado del audio
+    }
+  };
+
   return (
     <section
       id="section3"
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
+      {sectionVisible && (
+        <div className={style.iconAudio}>
+          <img
+            src={audio}
+            alt="Audio"
+            onClick={() => toggleAudio()}
+          />
+        </div>
+      )}
+      <audio
+      ref={audioRef}
+        id="miAudio"
+        src={mp3}
+        style={{ display: "none" }} // Para ocultar el reproductor de audio
+      />
       <div className={style.animationText1} ref={textRef}>
         <p className={style.text1}>{animationText.text1} </p>
         <p className={style.text1}>
