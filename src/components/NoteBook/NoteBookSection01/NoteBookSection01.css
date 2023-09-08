@@ -6,18 +6,16 @@
 
 .NoteBook {
   background-image: url("../../../assets/Img-Section01/Page03/hoja.png");
-  height: 95vh;
+  height: 47.5vw;
   width: 50vw;
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(-2.362deg);
   margin-left: 6vw;
-  /* position: absolute; */
 }
 
 .img__hands {
   margin-top: 10vh;
-  /* height: 70vh; */
   width: 50vw;
   z-index: 1;
   right: 4vw;
@@ -32,9 +30,11 @@
   align-content: center;
   transform: rotate(-2.362deg);
   text-align: center;
-  margin-left: 13vw;
-  margin-top: 22.5vh;
-  margin-top: 10.5vw;
+  margin-left: 12vw;
+  margin-left: 22%;
+  margin-top: 11.5vw;
+  /* margin-top: 23.5%;
+  margin-top: 14.2; */
   line-height: 1.75vw;
   font-style: normal;
   width: 56%;

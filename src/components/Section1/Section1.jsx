@@ -88,6 +88,98 @@ function Section1() {
     setIsWomenSliderOpen(false);
   };
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const manosLeft = document.querySelector(`.${style.page1__manosleft}`);
+    const manosRight = document.querySelector(`.${style.page1__manosright}`);
+    const priceLeft = document.querySelector(`.${style.page1__priceleft}`);
+    const priceRight = document.querySelector(`.${style.page1__priceright}`);
+    const manos = document.querySelector(`.${style.page1__manos}`);
+
+    // Configura la animación para que las manos caigan en diagonal
+    gsap.from(manos, {
+      x: -100, // Posición inicial horizontal (izquierda)
+      y: -100, // Posición inicial vertical (arriba)
+      rotation: 15, // Rotación en grados (inclinación)
+      duration: 1, // Duración de la animación
+      ease: 'power4.out', // Curva de easing (ajusta según tus preferencias)
+      scrollTrigger: {
+        trigger: manos,
+        start: 'top center', // Comienza la animación cuando las manos están en el centro de la vista
+        end: 'bottom center', // Termina la animación cuando las manos están en el centro de la vista
+        scrub: true, // Para que el efecto sea suave
+      },
+    });
+
+    // Configura el efecto de péndulo para manos_left
+    gsap.fromTo(
+      manosLeft,
+      { rotation: -10 },
+      {
+        rotation: 10,
+        transformOrigin: "center",
+        ease: "none",
+        scrollTrigger: {
+          trigger: manosLeft,
+          start: "top center",
+          end: "center",
+          scrub: true, // Para que el efecto sea suave
+        },
+      }
+    );
+
+    // Configura el efecto de péndulo para manos_right
+    gsap.fromTo(
+      manosRight,
+      { rotation: 10 },
+      {
+        rotation: -10,
+        transformOrigin: "center",
+        ease: "none",
+        scrollTrigger: {
+          trigger: manosRight,
+          start: "top center",
+          end: "center",
+          scrub: true, // Para que el efecto sea suave
+        },
+      }
+    );
+
+    // Configura el efecto inverso para price_left
+    gsap.fromTo(
+      priceLeft,
+      { rotation: 10 },
+      {
+        rotation: -10,
+        transformOrigin: "center",
+        ease: "none",
+        scrollTrigger: {
+          trigger: manosLeft, // Usa el mismo trigger que manos_left
+          start: "top center",
+          end: "center",
+          scrub: true, // Para que el efecto sea suave
+        },
+      }
+    );
+
+    // Configura el efecto inverso para price_right
+    gsap.fromTo(
+      priceRight,
+      { rotation: -10 },
+      {
+        rotation: 10,
+        transformOrigin: "center",
+        ease: "none",
+        scrollTrigger: {
+          trigger: manosRight, // Usa el mismo trigger que manos_right
+          start: "top center",
+          end: "center",
+          scrub: true, // Para que el efecto sea suave
+        },
+      }
+    );
+  }, []);
   return (
     <section id="section1" className={style.Section1}>
       <div className={style.page1content}>
