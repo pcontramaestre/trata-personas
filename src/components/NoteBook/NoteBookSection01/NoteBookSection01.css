@@ -38,6 +38,7 @@
   line-height: 1.75vw;
   font-style: normal;
   width: 56%;
+  width: 32vw;
 }
 
 .NoteBook__text1 {
@@ -45,6 +46,7 @@
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
   font-size: 1.45em;
+  font-size: 1.6vw;
   font-weight: 400;
   text-align: left;
   font-family: "Inter", sans-serif;
@@ -180,14 +182,14 @@
 
 @media screen and (min-height: 1400px) {
   .NoteBook__texts {
-    width: 45%;
+    width: 50%;
   }
 
   .NoteBook__text1 {
     width: 100%;
     transform: rotate(-4.362deg);
     color: var(--negro-textos, #081d20);
-    font-size: 3em;
+    font-size: 1.6vw;
     font-weight: 400;
     line-height: normal;
     text-align: left;
