@@ -78,7 +78,7 @@ const Organos = () => {
           dangerouslySetInnerHTML={{ __html: page13.foot }}
         />
       </div>
-      <img className="organos__img" src={camilla} />
+      {/* <img className="organos__img" src={camilla} /> */}
     </div>
   );
 };
