@@ -6,6 +6,7 @@ import NoteBook from "../NoteBook/NoteBook";
 // import BarGraph from '../BarGraph/BarGraph'
 import SmallInfoBox from "../SmallInfoBox/SmallInfoBox";
 import News from "../News/News";
+import BigInfoBox from "../BigInfoBox/BigInfoBox.jsx"
 
 import style from "./Section3.module.css";
 
@@ -15,6 +16,7 @@ import background from "../../assets/Section3/frontPageBackground.png";
 import leftHand from "../../assets/Section3/frontPageLeftHand.png";
 import bars from "../../assets/Section3/frontPageBars.png";
 import rightHand from "../../assets/Section3/frontPageRightHand.png";
+import camilla from "../../assets/Img-Section02/Page13/organs.png"
 import grafico1 from "../../assets/Section3/grafico1.png";
 import grafico2 from "../../assets/Section3/grafico2.png";
 import frecuencia from "../../assets/Section3/frecuencia.svg";
@@ -45,6 +47,7 @@ const imagesList = {
   leftHand,
   bars,
   rightHand,
+  camilla,
   grafico1,
   grafico2,
   frecuencia,
@@ -71,7 +74,7 @@ const iconList = {
 };
 
 const { protectionAndCare } = data;
-const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows } =
+const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows, bigInfoBox } =
   protectionAndCare;
 
 function convertSize(input) {
@@ -582,6 +585,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
         }
         return true;
       })}
+      <BigInfoBox bigInfoBox={bigInfoBox} topSection={protectionAndCare.top} />
       <NoteBook noteBook={noteBook} topSection={protectionAndCare.top} />
       {/* <BarGraph /> */}
       {Object.values(smallInfoBox).map((infoBox, index) => (
