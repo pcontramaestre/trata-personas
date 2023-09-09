@@ -1,0 +1,19 @@
+#sectionpinwomen {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+
+  & > * {
+    min-width: 60vw;
+    padding: 0 5vw;
+  }
+}
