@@ -8,20 +8,31 @@ import arrow from "../../../assets/Img-Section02/Page13/arrow.svg";
 
 const Organos = () => {
   const page13 = data[0].finalidades.page13;
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".book_organos__container",
-        start: "top 95%",
-        end: "bottom 30%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".book_organos", { x:+100, opacity: 0 });
-    tl.to(".book_organos", { x: 0, opacity: 1 });
+    const ctx = gsap.context(() => {
+      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".book_organos__container",
+          // start: "top 95%",
+          // end: "bottom 30%",
+          scrub: true,
+          // markers: true,
+          start: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
+          },
+          end: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 600 + ' center'
+          },
+          id: 'noteBook_section02_' + page13.title
+        },
+      });
+  
+      tl.from(".book_organos", { x:+100, opacity: 0 });
+      tl.to(".book_organos", { x: 0, opacity: 1 });
+    })
+    return () => ctx.revert()
   }, []);
   return (
     <div className="organos">

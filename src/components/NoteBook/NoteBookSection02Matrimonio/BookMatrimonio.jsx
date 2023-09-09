@@ -4,20 +4,30 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./BookMatrimonio.css";
 
 const BookMatrimonio = ({ page9 }) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".NoteBook07",
-        start: "top 95%",
-        end: "bottom 40%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".NoteBook07", { x: +100, opacity: 0 });
-    tl.to(".NoteBook07", { x: 0, opacity: 1 });
+    const ctx = gsap.context(() => {
+      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".NoteBook07",
+          // start: "top 95%",
+          // end: "bottom 40%",
+          scrub: true,
+          start: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+          },
+          end: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+          },
+          id: 'noteBook_section02_' + page9.title
+        },
+      });
+  
+      tl.from(".NoteBook07", { x: +100, opacity: 0 });
+      tl.to(".NoteBook07", { x: 0, opacity: 1 });
+    })
+    return () => ctx.revert()
   }, []);
   return (
     <div className="NoteBook07">
