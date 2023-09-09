@@ -4,20 +4,31 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./BookIlicitas.css";
 
 const BookIlicitas = ({ page12 }) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".NoteBook09",
-        start: "top 95%",
-        end: "bottom 55%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".NoteBook09", { x: -100, opacity: 0 });
-    tl.to(".NoteBook09", { x: 0, opacity: 1 });
+    const ctx = gsap.context(() => {
+      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".NoteBook09",
+          // start: "top 95%",
+          // end: "bottom 55%",
+          scrub: true,
+          // markers: true,
+          start: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
+          },
+          end: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 600 + ' center'
+          },
+          id: 'noteBook_section02_' + page12.title
+        },
+      });
+  
+      tl.from(".NoteBook09", { x: -100, opacity: 0 });
+      tl.to(".NoteBook09", { x: 0, opacity: 1 });
+    })
+    return () => ctx.revert()
   }, []);
   return (
     <div className="NoteBook09">

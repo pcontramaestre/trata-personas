@@ -4,20 +4,29 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 const BookLaboral = ({ page6 }) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".NoteBook03",
-        start: "top 95%",
-        end: "bottom 40%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".NoteBook03", { x: +100, opacity: 0 });
-    tl.to(".NoteBook03", { x: 0, opacity: 1 });
+    const ctx = gsap.context(() => {
+      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".NoteBook03",
+          scrub: true,
+          // markers: true,
+          start: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+          },
+          end: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+          },
+          id: 'noteBook_section02_' + page6.title
+        },
+      });
+  
+      tl.from(".NoteBook03", { x: +100, opacity: 0 });
+      tl.to(".NoteBook03", { x: 0, opacity: 1 });
+    })
+    return () => ctx.revert()
   }, []);
 
   return (

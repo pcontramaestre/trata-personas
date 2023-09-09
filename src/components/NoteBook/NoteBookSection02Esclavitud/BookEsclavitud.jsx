@@ -4,20 +4,31 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./BookEsclavitud.css"
 
 const BookEsclavitud = ({page10}) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".NoteBook08",
-        start: "top 95%",
-        end: "bottom 40%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".NoteBook08", { x: -100, opacity: 0 });
-    tl.to(".NoteBook08", { x: 0, opacity: 1 });
+    const ctx = gsap.context(() => {
+      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".NoteBook08",
+          // start: "top 95%",
+          // end: "bottom 40%",
+          scrub: true,
+          // markers: true,
+          start: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 200 + ' center'
+          },
+          end: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 700 + ' center'
+          },
+          id: 'noteBook_section02_' + page10.title
+        },
+      });
+  
+      tl.from(".NoteBook08", { x: -100, opacity: 0 });
+      tl.to(".NoteBook08", { x: 0, opacity: 1 });
+    })
+    return () => ctx.revert()
   }, []);
   return (
     <div className="NoteBook08__container">

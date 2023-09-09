@@ -6,6 +6,7 @@ import NoteBook from "../NoteBook/NoteBook";
 // import BarGraph from '../BarGraph/BarGraph'
 import SmallInfoBox from "../SmallInfoBox/SmallInfoBox";
 import News from "../News/News";
+import BigInfoBox from "../BigInfoBox/BigInfoBox.jsx"
 
 import style from "./Section3.module.css";
 
@@ -15,6 +16,7 @@ import background from "../../assets/Section3/frontPageBackground.png";
 import leftHand from "../../assets/Section3/frontPageLeftHand.png";
 import bars from "../../assets/Section3/frontPageBars.png";
 import rightHand from "../../assets/Section3/frontPageRightHand.png";
+import camilla from "../../assets/Img-Section02/Page13/organs.png"
 import grafico1 from "../../assets/Section3/grafico1.png";
 import grafico2 from "../../assets/Section3/grafico2.png";
 import frecuencia from "../../assets/Section3/frecuencia.svg";
@@ -38,18 +40,19 @@ import alojamiento from "../../assets/Section3/alojamiento.png";
 import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
 import graphic from "../../assets/Section3/grafico-21.png";
+import mp3 from "../../assets/Section3/Naciones-Unidas-Plano-voz-2.mp3";
 
 const imagesList = {
   background,
   leftHand,
   bars,
   rightHand,
+  camilla,
   grafico1,
   grafico2,
   frecuencia,
   atenciones,
   group,
-  audio,
   amarillo1,
   rosado1,
   azul1,
@@ -71,7 +74,7 @@ const iconList = {
 };
 
 const { protectionAndCare } = data;
-const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows } =
+const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows, bigInfoBox } =
   protectionAndCare;
 
 function convertSize(input) {
@@ -79,7 +82,12 @@ function convertSize(input) {
   const r = (n * 100) / 1920 + "vw";
   return r;
 }
+
 function Section3() {
+  const [audioPlaying, setAudioPlaying] = useState(false);
+const [audioAutoPlay, setAudioAutoPlay] = useState(true);
+  const [sectionVisible, setSectionVisible] = useState(false);
+
   const imgRefs = useRef([]); // Create an array of refs for images
   const containerRowRefs = useRef([]); // Create an array of refs for rows
   const textRef = useRef(null);
@@ -90,30 +98,26 @@ function Section3() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    ScrollTrigger.create({
+      trigger: "#section3", // Debe ser el id de la sección
+      onEnter: () => {
+        setSectionVisible(true); // Marca la sección como visible
+      },
+      // ...
+    });
+    
     // Animations for rows
     rows.forEach((row, index) => {
       const containerRowTl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRowRefs.current[index], // Use the specific ref for this row
-          start: "top center",
+          start: "center center",
           end: "bottom center",
           scrub: true,
         },
       });
 
       containerRowTl.fromTo(
-        containerRowRefs.current[index], // Use the specific ref for this row
-        {
-          opacity: 0,
-          x: "-100%",
-        },
-        {
-          opacity: 1,
-          x: "0%",
-        }
-      );
-
-      containerRowTl.fromTo(
         "#bigCard" + row.image.name,
         {
           opacity: 0,
@@ -121,7 +125,6 @@ function Section3() {
         {
           opacity: 1,
         },
-        2
       );
 
       containerRowTl.fromTo(
@@ -131,8 +134,7 @@ function Section3() {
         },
         {
           opacity: 0,
-        },
-        5
+        },4
       );
     });
 
@@ -158,6 +160,8 @@ function Section3() {
           opacity: 1,
         }
       );
+
+      
     });
 
     // Animations for text
@@ -250,6 +254,7 @@ function Section3() {
   const [nameBigCard, setNameBigCard] = useState("");
 
   useEffect(() => {
+    
     if (smallInfoBox) {
       const iconsList = document.getElementsByName(icons[0].name);
       const divs = document.getElementsByName(`SmallInfoBox${icons[0].name}`);
@@ -423,12 +428,47 @@ function Section3() {
   const listImageFrontPage = ["leftHand", "bars", "rightHand"];
   const animationText = data.protectionAndCare.animationText;
 
+  const audioRef = useRef(null);
+
+  const toggleAudio = () => {
+    const audioElement = document.getElementById('miAudio');
+    
+    if (audioElement) {
+      if (audioAutoPlay) {
+        audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
+        setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
+      } else {
+        if (audioPlaying) {
+          audioElement.pause(); // Pausa el audio si estaba reproduciéndose
+        } else {
+          audioElement.play(); // Reanuda el audio si estaba pausado
+        }
+      }
+      setAudioPlaying(!audioPlaying); // Actualiza el estado del audio
+    }
+  };
+
   return (
     <section
       id="section3"
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
+      {sectionVisible && (
+        <div className={style.iconAudio}>
+          <img
+            src={audio}
+            alt="Audio"
+            onClick={() => toggleAudio()}
+          />
+        </div>
+      )}
+      <audio
+      ref={audioRef}
+        id="miAudio"
+        src={mp3}
+        style={{ display: "none" }} // Para ocultar el reproductor de audio
+      />
       <div className={style.animationText1} ref={textRef}>
         <p className={style.text1}>{animationText.text1} </p>
         <p className={style.text1}>
@@ -545,6 +585,7 @@ function Section3() {
         }
         return true;
       })}
+      <BigInfoBox bigInfoBox={bigInfoBox} topSection={protectionAndCare.top} />
       <NoteBook noteBook={noteBook} topSection={protectionAndCare.top} />
       {/* <BarGraph /> */}
       {Object.values(smallInfoBox).map((infoBox, index) => (
@@ -554,12 +595,6 @@ function Section3() {
           key={infoBox.name + index}
         />
       ))}
-      {/* <BigCard
-        id="BigCardProtection"
-        bigCard={bigCard}
-        topSection={protectionAndCare.top}
-        name={nameBigCard}
-      /> */}
       <News news={news} topSection={protectionAndCare.top} />
     </section>
   );

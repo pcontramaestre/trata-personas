@@ -4989,6 +4989,16 @@
         "zIndex": 0
       },
       {
+        "name": "camilla",
+        "width": "1084px",
+        "height": "594px",
+        "top": "33836px",
+        "left": "89px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
         "name": "grafico1",
         "width": "1015px",
         "height": "506px",
@@ -5023,16 +5033,8 @@
         "top": "38812.33px",
         "left": "834.29px",
         "filter": "brightness(0) saturate(100%) invert(92%) sepia(5%) saturate(3566%) hue-rotate(139deg) brightness(72%) contrast(103%)"
-      },
-      {
-        "name": "audio",
-        "width": "42px",
-        "height": "42px",
-        "top": "35886px",
-        "left": "1771px"
       }
     ],
-
     "animationText2": {
       "text5": "Durante el periodo ",
       "textStrong": "2018-2021",
@@ -5086,7 +5088,7 @@
           "top": "39189px",
           "left": "117.66px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -5133,7 +5135,7 @@
           "top": "39780px",
           "left": "132.66px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -5175,12 +5177,12 @@
         "text": {
           "content": "Asesoría Legal",
           "tag": "h1",
-          "width": "450px",
+          "width": "300px",
           "height": "131px",
           "top": "40364px",
           "left": "132.66px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -5227,7 +5229,7 @@
           "top": "40943px",
           "left": "100px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -5274,7 +5276,7 @@
           "top": "41460px",
           "left": "132.66px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -5321,7 +5323,7 @@
           "top": "42091px",
           "left": "132.66px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -5368,7 +5370,7 @@
           "top": "42600px",
           "left": "80px",
           "fontFamily": "Formula Condensed",
-          "fontSize": "90px",
+          "fontSize": "4.7vw",
           "fontWeight": "300",
           "lineHeight": "102.5px",
           "letterSpacing": "0em",
@@ -6118,6 +6120,54 @@
           "top": "471px",
           "left": "198px"
         }
+      }
+    },
+    "bigInfoBox": {
+      "name": "BigInfoBox",
+      "width": "1700px",
+      "height": "478px",
+      "top": "34540px",
+      "left": "111px",
+      "borderRadius": "28px",
+      "border": "1px",
+      "backgroundColor": "#CFF9FF",
+      "text": [
+        {
+          "content": "<span>El abanico de prácticas de explotación asociado a la trata de personas es muy amplio,</span> por lo tanto, es posible que en el futuro se identifiquen nuevos fines constitutivos de explotación.",
+          "tag": "p",
+          "width": "1362px",
+          "height": "227px",
+          "top": "34666px",
+          "left": "334px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "58px",
+          "lineHeight": "69.6px",
+          "letterSpacing": "0.03em",
+          "textAlign": "left",
+          "fontWeight": "300",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "(CORETT, 2020)",
+          "tag": "p",
+          "width": "385.96px",
+          "height": "30px",
+          "top": "34906px",
+          "left": "334.23px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30.26px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        }
+      ],
+      "bar": {
+        "height": "306px",
+        "top": "34633px",
+        "left": "252px",
+        "borderLeft": "2px solid #0A4B4E"
       }
     },
     "noteBook": {

@@ -127,12 +127,12 @@
 
 .circlenumbers__content {
   position: absolute;
-  top: -6.9vw;
+  top: -8.1vw;
   right: -8.6vw;
   display: flex;
-  height: 120%;
+  height: 31vw;
   justify-content: space-between;
-  width: 45vw;
+  width: 47vw;
   /* flex-direction: column; */
 }
 
