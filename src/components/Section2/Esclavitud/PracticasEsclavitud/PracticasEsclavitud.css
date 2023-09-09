@@ -128,7 +128,8 @@
 }
 
 .practicashover1 {
-  display: block !important;
+  /* display: block !important; */
+  display: none;
   /* flex-direction: column; */
   /* justify-content: flex-start; */
   position: absolute;
@@ -153,7 +154,8 @@
 }
 
 .practicashover2 {
-  display: block !important;
+  /* display: block !important; */
+  display: none;
   flex-direction: column;
   color: #0a4b4e;
   position: absolute;
@@ -166,7 +168,7 @@
   background-repeat: no-repeat;
   top: 13vh;
   font-size: 3vh;
-  display: flex;
+  /* display: flex; */
   padding: 2.5% 7.5%;
   width: 70%;
   font-family: Inter;
@@ -177,7 +179,8 @@
   z-index: -1;
 }
 .practicashover3 {
-  display: block !important;
+  /* display: block !important; */
+  display: none;
   color: #0a4b4e;
   flex-direction: column;
   position: absolute;
@@ -186,7 +189,7 @@
   background-repeat: no-repeat;
   background-image: url("../../../../assets/Img-Section02/Page11/amarillogrande.png");
   top: 13vh;
-  display: flex;
+  /* display: flex; */
   padding: 2.5% 7.5%;
   width: 70%;
   font-size: 3vh;
@@ -199,7 +202,8 @@
 }
 
 .practicashover4 {
-  display: block !important;
+  /* display: block !important; */
+  display: none;
   flex-direction: column;
   position: absolute;
   background-color: #006671;
@@ -212,7 +216,7 @@
   color: #e0faff;
   /* border-radius: 0px 0px 0% 0%; */
   font-size: 3vh;
-  display: flex;
+  /* display: flex; */
   font-family: Inter;
   font-weight: 400;
   letter-spacing: 0em;

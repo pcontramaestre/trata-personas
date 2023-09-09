@@ -4989,6 +4989,16 @@
         "zIndex": 0
       },
       {
+        "name": "camilla",
+        "width": "1084px",
+        "height": "594px",
+        "top": "33836px",
+        "left": "89px",
+        "objectPosition": "center",
+        "objectFit": "contain",
+        "zIndex": 0
+      },
+      {
         "name": "grafico1",
         "width": "1015px",
         "height": "506px",
@@ -6110,6 +6120,54 @@
           "top": "471px",
           "left": "198px"
         }
+      }
+    },
+    "bigInfoBox": {
+      "name": "BigInfoBox",
+      "width": "1700px",
+      "height": "478px",
+      "top": "34540px",
+      "left": "111px",
+      "borderRadius": "28px",
+      "border": "1px",
+      "backgroundColor": "#CFF9FF",
+      "text": [
+        {
+          "content": "<span>El abanico de prácticas de explotación asociado a la trata de personas es muy amplio,</span> por lo tanto, es posible que en el futuro se identifiquen nuevos fines constitutivos de explotación.",
+          "tag": "p",
+          "width": "1362px",
+          "height": "227px",
+          "top": "34666px",
+          "left": "334px",
+          "fontFamily": "Formula Condensed",
+          "fontSize": "58px",
+          "lineHeight": "69.6px",
+          "letterSpacing": "0.03em",
+          "textAlign": "left",
+          "fontWeight": "300",
+          "color": "#0A4B4E"
+        },
+        {
+          "content": "(CORETT, 2020)",
+          "tag": "p",
+          "width": "385.96px",
+          "height": "30px",
+          "top": "34906px",
+          "left": "334.23px",
+          "fontFamily": "Inter",
+          "fontSize": "25px",
+          "fontWeight": "400",
+          "lineHeight": "30.26px",
+          "letterSpacing": "0.11em",
+          "textAlign": "left",
+          "color": "#0A4B4E"
+        }
+      ],
+      "bar": {
+        "height": "306px",
+        "top": "34633px",
+        "left": "252px",
+        "borderLeft": "2px solid #0A4B4E"
       }
     },
     "noteBook": {
