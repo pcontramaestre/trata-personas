@@ -14,7 +14,7 @@ const BookAdopcion = ({ page8 }) => {
           // start: "top 95%",
           // end: "bottom 50%",
           scrub: true,
-          markers: true,
+          // markers: true,
           start: () => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
           },
