@@ -12,19 +12,36 @@ gsap.registerPlugin(ScrollTrigger)
 const SliderSection02 = () => {
 
   useLayoutEffect(() => {
-    const containerWidth = document.querySelector('.section__02slider').offsetWidth
-    const contaierWidthChild = document.querySelector('.slider-father').offsetWidth
     const ctx = gsap.context(() => {
       gsap.to('.slider-father', {
-        x: containerWidth - contaierWidthChild,
+        x: () => {
+          return document.querySelector('.section__02slider').offsetWidth - document.querySelector('.slider-father').offsetWidth
+        },
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: '.slider-father',
-          markers: true,
+          // markers: true,
           start: 'top 20%',
           end: '+=3000 bottom',
           scrub: 2,
-          pin: '#section2'
+          pin: '#section2',
+          id: 'SliderSection02',
+          onEnter: () => {
+            const arrayTitles = [
+              // 'noteBook_section02_Explotación sexual',
+              // 'noteBook_section02_Explotación laboral',
+              // 'noteBook_section02_Mendicidad forzada',
+              // 'noteBook_section02_Adopción irregular o ilegal',
+              // 'noteBook_section02_Matrimonio forzoso',
+              // 'noteBook_section02_Esclavitud',
+              // 'noteBook_section02_Actividades ilícitas',
+              // 'noteBook_section02_Extracción <br/> ilícita  de órganos'
+            ]
+            arrayTitles.forEach(noteBook => {
+              const scrollTriggerNoteBook = ScrollTrigger.getById(noteBook)
+              scrollTriggerNoteBook.refresh()
+            })
+          }
         }
       })
     })
