@@ -14,10 +14,10 @@ const NoteBookSection02 = ({ page4 }) => {
           // markers: true,
           scrub: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 200 + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 700 + ' center'
           },
           id: 'noteBook_section02_' + page4.title
         },
