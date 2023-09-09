@@ -4,20 +4,30 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./BookAdopcion.css";
 
 const BookAdopcion = ({ page8 }) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".NoteBook06",
-        start: "top 95%",
-        end: "bottom 50%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".NoteBook06", { x: -100, opacity: 0 });
-    tl.to(".NoteBook06", { x: 0, opacity: 1 });
+    const ctx = gsap.context(() => {
+      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".NoteBook06",
+          // start: "top 95%",
+          // end: "bottom 50%",
+          scrub: true,
+          markers: true,
+          start: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+          },
+          end: () => {
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+          },
+          id: 'noteBook_section02_' + page8.title
+        },
+      });
+      tl.from(".NoteBook06", { x: -100, opacity: 0 });
+      tl.to(".NoteBook06", { x: 0, opacity: 1 });
+    })
+    return () => ctx.revert()
   }, []);
   return (
     <div className="NoteBook06">
