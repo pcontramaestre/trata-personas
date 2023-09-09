@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./BookEsclavitud.css"
 
 const BookEsclavitud = ({page10}) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
@@ -14,7 +14,7 @@ const BookEsclavitud = ({page10}) => {
           // start: "top 95%",
           // end: "bottom 40%",
           scrub: true,
-          markers: true,
+          // markers: true,
           start: () => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 200 + ' center'
           },
