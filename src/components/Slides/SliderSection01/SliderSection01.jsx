@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "./SliderSection01.css";
@@ -7,53 +7,33 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const animateSlide = (slide, setSlidesViewed) => {
-  const tween = gsap.fromTo(slide, { x: "100%" }, { x: "0%", duration: 20000 });
-
-  ScrollTrigger.create({
-    trigger: slide,
-    animation: tween,
-    start: "top bottom-=75%",
-    end: "bottom 68%",
-    toggleActions: "play none none none",
-    scrub: true,
-    onToggle: (self) => {
-      if (self.isActive) {
-        setSlidesViewed((prev) => prev + 1);
-      }
-    },
-  });
-};
-
 const SliderSection01 = ({ texts }) => {
-  const [slidesViewed, setSlidesViewed] = useState(0);
-  const [enableScroll, setEnableScroll] = useState(false);
-
-  useEffect(() => {
-    gsap.utils
-      .toArray(".slider-container")
-      .forEach((slide) => animateSlide(slide, setSlidesViewed));
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".slider-father01", {
+        x: () => {
+          return (
+            document.querySelector(".section__01slider").offsetWidth -
+            document.querySelector(".slider-father01").offsetWidth
+          );
+        },
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: ".slider-father01",
+          // markers: true,
+          start: "top 5%",
+          end: "+=3000 bottom",
+          scrub: 2,
+          pin: "#section1",
+          id: "SliderSection01",
+        },
+      });
+    });
+    return () => ctx.revert();
   }, []);
 
-  useEffect(() => {
-    if (slidesViewed === texts.length) {
-      setEnableScroll(true);
-    }
-  }, [slidesViewed, texts]);
-
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 2500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: false,
-  };
-
   return (
-    <Slider {...settings}>
+    <div className="slider-father01">
       {texts.map((text, index) => (
         <div key={index} className="slider-container">
           <div key={index} className="slider">
@@ -70,7 +50,7 @@ const SliderSection01 = ({ texts }) => {
           </div>
         </div>
       ))}
-    </Slider>
+    </div>
   );
 };
 
