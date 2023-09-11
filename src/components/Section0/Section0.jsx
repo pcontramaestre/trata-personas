@@ -49,28 +49,26 @@ function convertSize (input) {
 function Section0 () {
 
   const audioTag = useRef()
-  const firstTime = useRef(true)
+  const firstTimeuseEffect = useRef(true)
 
-  // useLayoutEffect(() => {
-  //   if (firstTime.current) {
-  //     const sound = new Howl({
-  //       src: ['/audio/Section0/section0.mp3']
-  //     })
-  //     firstTime.current = false
-  //     ScrollTrigger.create({
-  //       trigger: '#section0',
-  //       markers: true,
-  //       start: '10 top',
-  //       onEnter: () => sound.play()
-  //     })
-  //   }
-  // }, [])
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: '#section2',
+        markers: true,
+        start: 'top top',
+        end: 'top top',
+        onLeave: () => stopAudio()
+      })
+    })
+    return () => ctx.revert()
+  }, [])
 
   useEffect(() => {
-    if (firstTime.current) {
+    if (firstTimeuseEffect.current) {
       const audioButtom = document.querySelector(`#${style['audio1section0']}`)
       audioButtom.addEventListener('click', () => setAudio())
-      firstTime.current = false
+      firstTimeuseEffect.current = false
       playAudio()
       return () => audioButtom.removeEventListener('click', () => {})
     }
