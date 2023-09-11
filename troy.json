@@ -5898,6 +5898,7 @@
       "height": "488px",
       "borderRadius": "28px",
       "backgroundImage": "backgroundCard",
+      "opacity": "0",
       "titleStile": {
         "fontFamily": "Formula Condensed",
         "fontSize": "180px",
