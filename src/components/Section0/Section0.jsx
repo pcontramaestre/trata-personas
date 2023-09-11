@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from 'gsap/all'
+import { Howl } from 'howler'
 
 import NoteBook from '../NoteBook/NoteBook'
 import News from '../News/News'
@@ -52,12 +53,18 @@ function Section0 () {
   const firstTime = useRef(true)
 
   // useLayoutEffect(() => {
-  //   ScrollTrigger.create({
-  //     trigger: '#section0',
-  //     markers: true,
-  //     start: '10 top',
-  //     onEnter: () => setAudio()
-  //   })
+  //   if (firstTime.current) {
+  //     const sound = new Howl({
+  //       src: ['/audio/Section0/section0.mp3']
+  //     })
+  //     firstTime.current = false
+  //     ScrollTrigger.create({
+  //       trigger: '#section0',
+  //       markers: true,
+  //       start: '10 top',
+  //       onEnter: () => sound.play()
+  //     })
+  //   }
   // }, [])
 
   useEffect(() => {
