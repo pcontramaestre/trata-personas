@@ -55,7 +55,7 @@ function Section0 () {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: '#section2',
-        markers: true,
+        // markers: true,
         start: 'top top',
         end: 'top top',
         onLeave: () => stopAudio()
