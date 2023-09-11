@@ -97,9 +97,11 @@ function Section1() {
     const priceRight = document.querySelector(`.${style.page1__priceright}`);
     const manos = document.querySelector(`.${style.page1__manos}`);
 
-    // Configura la animación para que las manos caigan desde arriba
+    // Configura la animación para que las manos caigan en diagonal
     gsap.from(manos, {
-      y: -10, // Posición inicial arriba de la página
+      x: -100, // Posición inicial horizontal (izquierda)
+      y: -100, // Posición inicial vertical (arriba)
+      rotation: 15, // Rotación en grados (inclinación)
       duration: 1, // Duración de la animación
       ease: "power4.out", // Curva de easing (ajusta según tus preferencias)
       scrollTrigger: {

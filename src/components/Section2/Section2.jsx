@@ -32,43 +32,6 @@ function Section2() {
     animation: imagenMenTrembling,
   });
 
-  const botas = document.querySelector(".page2__botas");
-  const sombrero = document.querySelector(".page2__sombreromen");
-
-  const caidaBotas = gsap.from(botas, {
-    y: -100, // La distancia desde la parte superior de la página
-    opacity: 0, // Inicialmente, las botas no son visibles
-    duration: 1, // Duración de la animación en segundos
-    ease: "power4.out", // Easing para suavizar la caída
-  });
-
-  const caidaSombrero = gsap.from(sombrero, {
-    y: -100, // La distancia desde la parte superior de la página
-    opacity: 0, // Inicialmente, el sombrero no es visible
-    duration: 1, // Duración de la animación en segundos
-    ease: "power4.out", // Easing para suavizar la caída
-  });
-  ScrollTrigger.create({
-    trigger: ".page2content", // Selector del elemento que desencadenará la animación
-    start: "top", // Puedes ajustar esta configuración según tus necesidades
-    end: "center",
-    onEnter: () => {
-      // Cuando el elemento es visible, inicia las animaciones de caída
-      caidaBotas.play();
-      caidaSombrero.play();
-    },
-    onLeave: () => {
-      // Cuando el elemento sale de la vista, pausa las animaciones (opcional)
-      caidaBotas.pause();
-      caidaSombrero.pause();
-    },
-    onEnterBack: () => {
-      // Cuando se regresa al elemento, continúa las animaciones (opcional)
-      caidaBotas.play();
-      caidaSombrero.play();
-    },
-  });
-
   return (
     <section id="section2" className="Section02">
       <div className="page2content">
