@@ -30,6 +30,7 @@
   margin-top: 20vh;
   z-index: 3;
   display: flex;
+  flex-direction: column;
   /* justify-content: flex-end; */
   align-items: center;
   justify-content: center;
