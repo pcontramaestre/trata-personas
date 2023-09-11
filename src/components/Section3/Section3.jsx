@@ -124,7 +124,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
         },
         {
           opacity: 1,
-        },
+        },1
       );
 
       containerRowTl.fromTo(
