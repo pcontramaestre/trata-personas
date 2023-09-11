@@ -115,8 +115,8 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
           end: "bottom center",
           scrub: true,
         },
-      });
 
+      });
       containerRowTl.fromTo(
         "#bigCard" + row.image.name,
         {
@@ -136,6 +136,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
           opacity: 0,
         },4
       );
+
     });
 
     // Animations for images
@@ -291,34 +292,6 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
       };
     }
   }, []);
-
-  // useEffect(() => {
-  //   if (bigCard) {
-  //     const images = document.getElementsByName("proteccion");
-  //     const div = document.getElementById("BigCardProtection");
-
-  //     function activeDisplay(event) {
-  //       setNameBigCard(event.target.id);
-  //       div.style.display = "block";
-  //     }
-
-  //     function desactiveDisplay() {
-  //       div.style.display = "";
-  //       setNameBigCard("");
-  //     }
-
-  //     images.forEach((image) => {
-  //       image.addEventListener("mouseenter", activeDisplay);
-  //     });
-  //     div.addEventListener("mouseleave", desactiveDisplay);
-  //     return () => {
-  //       images.forEach((image) => {
-  //         image.removeEventListener("mouseenter", activeDisplay);
-  //       });
-  //       div.removeEventListener("mouseleave", desactiveDisplay);
-  //     };
-  //   }
-  // }, []);
 
   const protectionAndCareBackgroundStyles = {
     width: convertSize(protectionAndCare.width),
@@ -517,7 +490,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
             {row.number.content}
           </h1>
           <BigCard
-            id="BigCardProtection"
+            className={style.bigCardProtection}
             bigCard={bigCard}
             topSection={row.properties.top}
             name={row.image.name}
