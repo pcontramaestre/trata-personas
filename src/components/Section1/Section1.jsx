@@ -97,17 +97,15 @@ function Section1() {
     const priceRight = document.querySelector(`.${style.page1__priceright}`);
     const manos = document.querySelector(`.${style.page1__manos}`);
 
-    // Configura la animación para que las manos caigan en diagonal
+    // Configura la animación para que las manos caigan desde arriba
     gsap.from(manos, {
-      x: -100, // Posición inicial horizontal (izquierda)
-      y: -100, // Posición inicial vertical (arriba)
-      rotation: 15, // Rotación en grados (inclinación)
+      y: -10, // Posición inicial arriba de la página
       duration: 1, // Duración de la animación
-      ease: 'power4.out', // Curva de easing (ajusta según tus preferencias)
+      ease: "power4.out", // Curva de easing (ajusta según tus preferencias)
       scrollTrigger: {
         trigger: manos,
-        start: 'top center', // Comienza la animación cuando las manos están en el centro de la vista
-        end: 'bottom center', // Termina la animación cuando las manos están en el centro de la vista
+        start: "top center", // Comienza la animación cuando las manos están en el centro de la vista
+        end: "bottom center", // Termina la animación cuando las manos están en el centro de la vista
         scrub: true, // Para que el efecto sea suave
       },
     });
