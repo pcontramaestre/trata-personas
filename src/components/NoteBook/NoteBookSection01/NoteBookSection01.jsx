@@ -8,21 +8,37 @@ import data from "../../../../trataSection01.json";
 function NoteBookSection01() {
   const page3 = data[0].visibilizacion_victimas.page3;
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   const scrollTriggerSliderSection01 =
+  //     ScrollTrigger.getById("SliderSection01");
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".NoteBook__container",
+  //       start: () => {
+  //         return (
+  //           scrollTriggerSliderSection01.end -
+  //           scrollTriggerSliderSection01.start +
+  //           100 +
+  //           " center"
+  //         );
+  //       },
+  //       end: () => {
+  //         return (
+  //           scrollTriggerSliderSection01.end -
+  //           scrollTriggerSliderSection01.start +
+  //           600 +
+  //           " center"
+  //         );
+  //       },
+  //       id: "noteBook__Section01",
+  //       scrub: true,
+  //     },
+  //   });
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".NoteBook__container",
-        start: "top 60%",
-        end: "bottom 110%",
-        scrub: true,
-      },
-    });
-
-    tl.from(".NoteBook", { x: "-100%", opacity: 0.5 });
-    tl.to(".NoteBook", { x: 0, opacity: 1 });
-  }, []);
+  //   tl.from(".NoteBook", { x: "-100%", opacity: 0.5 });
+  //   tl.to(".NoteBook", { x: 0, opacity: 1 });
+  // }, []);
 
   return (
     <div className="NoteBook__container">

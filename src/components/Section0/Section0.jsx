@@ -66,7 +66,7 @@ function Section0 () {
   }))
 
   const blockFooterStyle = {
-    height: convertSize('634px'),
+    height: convertSize('150px'),
     top: convertSize('5503px')
   }
 

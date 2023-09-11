@@ -7,10 +7,9 @@
 
 .section__01slider {
   width: 100vw;
-  position: absolute;
-  bottom: 0;
-  margin: 0vh 0;
-  overflow: hidden;
+  /* margin: 25vh 0; */
+  /* height: 80vh; */
+  /* overflow: hidden; */
 }
 
 .slider-container {

@@ -1,7 +1,7 @@
 .NoteBook__container {
   display: flex;
   width: 100vw;
-  margin-top: 200px;
+  margin-top: 100vh;
 }
 
 .NoteBook {
