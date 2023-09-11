@@ -1,3 +1,4 @@
+import { useEffect, useLayoutEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from 'gsap/all'
 
@@ -17,6 +18,8 @@ import background from '/Section0/frontPageBackground.jpg'
 import people from '/Section0/frontPagePeopleBehind.png'
 import person from '/Section0/frontPagePersonAhead.png'
 import puppet from '/Section0/frontPagePuppet.png'
+
+import audio from '/audio/Section0/section0.mp3'
 
 import data from '../../../troy.json'
 
@@ -43,6 +46,48 @@ function convertSize (input) {
 }
 
 function Section0 () {
+
+  const audioTag = useRef()
+  const audioPlay = useRef(false)
+  const firstTime = useRef(true)
+
+  // useLayoutEffect(() => {
+  //   ScrollTrigger.create({
+  //     trigger: '#section0',
+  //     markers: true,
+  //     start: '10 top',
+  //     onEnter: () => setAudio()
+  //   })
+  // }, [])
+
+  useEffect(() => {
+    if (firstTime.current) {
+      const audioButtom = document.querySelector(`#${style['audio1section0']}`)
+      audioButtom.addEventListener('click', () => setAudio())
+      firstTime.current = false
+      return () => audioButtom.removeEventListener('click', () => {})
+    }
+  },[])
+
+  function setAudio() {
+    if (!audioPlay.current) {
+      playAudio()
+      audioPlay.current = !audioPlay.current
+    } else {
+      stopAudio()
+      audioPlay.current = !audioPlay.current
+    }
+  }
+
+  function playAudio() {
+    audioTag.current.play()
+  }
+
+  function stopAudio() {
+    audioTag.current.pause()
+    audioTag.current.currentTime = 0
+  }
+
   const homeHeaderContainer = {
     height: convertSize(homeHeader.size.height)
   }
@@ -102,6 +147,10 @@ function Section0 () {
       <Map map={map} />
       <BigInfoBox bigInfoBox={bigInfoBox} />
       <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle} />
+      {/* <audio className={style.audio} ref={audio}>
+        <source src={audio} type='audio/mpeg'></source>
+      </audio> */}
+      <audio id='audio1section0' src={audio} ref={audioTag}></audio>
     </section>
   )
 }
