@@ -49,7 +49,6 @@ function convertSize (input) {
 function Section0 () {
 
   const audioTag = useRef()
-  const audioPlay = useRef(false)
   const firstTime = useRef(true)
 
   // useLayoutEffect(() => {
@@ -72,17 +71,16 @@ function Section0 () {
       const audioButtom = document.querySelector(`#${style['audio1section0']}`)
       audioButtom.addEventListener('click', () => setAudio())
       firstTime.current = false
+      playAudio()
       return () => audioButtom.removeEventListener('click', () => {})
     }
   },[])
 
   function setAudio() {
-    if (!audioPlay.current) {
+    if (audioTag.current.paused) {
       playAudio()
-      audioPlay.current = !audioPlay.current
     } else {
       stopAudio()
-      audioPlay.current = !audioPlay.current
     }
   }
 
@@ -92,7 +90,7 @@ function Section0 () {
 
   function stopAudio() {
     audioTag.current.pause()
-    audioTag.current.currentTime = 0
+    // audioTag.current.currentTime = 0
   }
 
   const homeHeaderContainer = {
@@ -154,9 +152,6 @@ function Section0 () {
       <Map map={map} />
       <BigInfoBox bigInfoBox={bigInfoBox} />
       <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle} />
-      {/* <audio className={style.audio} ref={audio}>
-        <source src={audio} type='audio/mpeg'></source>
-      </audio> */}
       <audio id='audio1section0' src={audio} ref={audioTag}></audio>
     </section>
   )
