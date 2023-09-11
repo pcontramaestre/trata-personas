@@ -115,8 +115,8 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
           end: "bottom center",
           scrub: true,
         },
-      });
 
+      });
       containerRowTl.fromTo(
         "#bigCard" + row.image.name,
         {
@@ -124,7 +124,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
         },
         {
           opacity: 1,
-        },1
+        },0
       );
 
       containerRowTl.fromTo(
@@ -136,6 +136,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
           opacity: 0,
         },4
       );
+
     });
 
     // Animations for images
