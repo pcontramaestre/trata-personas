@@ -85,7 +85,7 @@ function convertSize(input) {
 
 function Section3() {
   const [audioPlaying, setAudioPlaying] = useState(false);
-const [audioAutoPlay, setAudioAutoPlay] = useState(true);
+  const [audioAutoPlay, setAudioAutoPlay] = useState(true);
   const [sectionVisible, setSectionVisible] = useState(false);
 
   const imgRefs = useRef([]); // Create an array of refs for images
@@ -100,10 +100,16 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
 
     ScrollTrigger.create({
       trigger: "#section3", // Debe ser el id de la sección
+      markers: true,
       onEnter: () => {
         setSectionVisible(true); // Marca la sección como visible
+        toggleAudio()
       },
-      // ...
+      onLeave: ()=> {
+        console.log("hola");
+        toggleAudio()
+      },
+      end: "bottom bottom"
     });
     
     // Animations for rows
@@ -406,17 +412,23 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
   const toggleAudio = () => {
     const audioElement = document.getElementById('miAudio');
     
+    console.log("audioPlaying", audioPlaying);
     if (audioElement) {
-      if (audioAutoPlay) {
-        audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
-        setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
-      } else {
+    
+      // if (audioAutoPlay) {
+
+        // audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
+        // setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
+      // } else {
         if (audioPlaying) {
           audioElement.pause(); // Pausa el audio si estaba reproduciéndose
+          console.log("activar audio");
         } else {
           audioElement.play(); // Reanuda el audio si estaba pausado
+          console.log("detener audio");
         }
-      }
+
+      
       setAudioPlaying(!audioPlaying); // Actualiza el estado del audio
     }
   };
