@@ -36,6 +36,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    scale: 0.8;
 }
 
 .animationPictures label {
