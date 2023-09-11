@@ -120,13 +120,11 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
       containerRowTl.fromTo(
         "#bigCard" + row.image.name,
         {
-          x: "-100%",
           opacity: 0,
         },
         {
-          x: "0%",
           opacity: 1,
-        },0
+        },
       );
 
       containerRowTl.fromTo(
@@ -492,7 +490,7 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
             {row.number.content}
           </h1>
           <BigCard
-            id="BigCardProtection"
+            className={style.bigCardProtection}
             bigCard={bigCard}
             topSection={row.properties.top}
             name={row.image.name}
