@@ -7,6 +7,7 @@ import data from "../../../../trataSection02.json";
 import "slick-carousel/slick/slick.css";
 import "./SliderSection02.css";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const SliderSection02 = () => {
