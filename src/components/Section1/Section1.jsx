@@ -214,7 +214,6 @@ function Section1() {
       <NoteBookSection01 />
       <BarGraphSection01 />
       <MapSection01 />
-      <BigInfoBoxSection01 />
       <CircleGraph />
       <NewSection01 />
 
