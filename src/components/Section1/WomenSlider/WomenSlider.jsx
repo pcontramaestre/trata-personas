@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import "./WomenSlider.css";
 import data from "../../../../trataSection01.json";
+
 
 const WomenSlider = ({ reverseWomenSlider }) => {
   const page10 = data[0].visibilizacion_victimas.page10.onslider;

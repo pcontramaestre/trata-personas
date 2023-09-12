@@ -1,14 +1,52 @@
-import React, { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import data from "../../../../trataSection01.json";
 import "./MapSection01.css";
 import { ReactComponent as MapNumber } from "../../../assets/Img-Section01/Page05/mapanumbertwo.svg";
 import hand from "../../../assets/Img-Section01/Page05/hand_click.svg";
 import BigInfoBoxSection01 from "../../BigInfoBox/BigInfoBoxSection01/BigInfoBoxSection01";
 
-
 const MapSection01 = () => {
   const page5 = data[0].visibilizacion_victimas.page5;
   const mapsIDstyles = ["MX", "GT", "BZ", "SV", "HN", "NI", "CR", "PA", "DO"];
+
+  const secondAccordionRef = useRef(null);
+
+  useEffect(() => {
+    const secondAccordion = secondAccordionRef.current;
+    const timeline = gsap.timeline();
+    gsap.registerPlugin(ScrollTrigger);
+    const scrollTriggerBarGraph = ScrollTrigger.getById("SliderSection01");
+    timeline.to(secondAccordion, {
+      y: "-100%", // Mueve el segundo accordion hacia arriba para que se superponga al primero
+      opacity: 1, // Hacerlo visible
+      scrollTrigger: {
+        // markers: true,
+        // pin: true,
+        trigger: "#contentaccordion", // El elemento que dispara la animación
+        start: () => {
+          return (
+            scrollTriggerBarGraph.end -
+            scrollTriggerBarGraph.start +
+            600 +
+            " center"
+          );
+        },
+        // start: "top", // Comienza la animación cuando el centro de la ventana de visualización alcanza el inicio del trigger
+        end: () => {
+          return (
+            scrollTriggerBarGraph.end -
+            scrollTriggerBarGraph.start +
+            850 +
+            " center"
+          );
+        },
+        // end: "bottom", // Finaliza la animación cuando el centro de la ventana de visualización alcanza el final del trigger
+        scrub: true, // Permite que la animación se reproduzca a medida que se hace scroll
+      },
+    });
+  }, []);
 
   const mapsID = [
     "#MX02",
@@ -50,7 +88,7 @@ const MapSection01 = () => {
   }, []);
 
   return (
-    <div id="wrapperaccordion" className="map__section01">
+    <div className="map__section01">
       <h1 className="map__title">{page5.title}</h1>
       <h2 className="map__text1">{page5.text1}</h2>
       <div id="contentaccordion" className="content-accordion">
@@ -83,7 +121,7 @@ const MapSection01 = () => {
             </div>
           </div>
         </div>
-        <div className="accordion-content">
+        <div className="accordion-content" ref={secondAccordionRef}>
           <BigInfoBoxSection01 />
         </div>
       </div>
@@ -92,3 +130,4 @@ const MapSection01 = () => {
 };
 
 export default MapSection01;
+
