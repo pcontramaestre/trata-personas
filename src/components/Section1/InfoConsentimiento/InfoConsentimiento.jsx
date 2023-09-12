@@ -5,7 +5,7 @@ import data from "../../../../trataSection01.json";
 const InfoConsentimiento = () => {
   const page11 = data[0].visibilizacion_victimas.page11;
   return (
-    <div className="videocorett__info">
+    <div className="fixsection2">
       <div className="videocorett__info-texts">
         <div className="info__separador" />
         <div className="info__text-content">

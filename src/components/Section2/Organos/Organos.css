@@ -46,7 +46,7 @@
   font-size: 4.5vh;
   width: 30%;
   font-style: normal;
-  line-height: 1em; 
+  line-height: 1em;
   letter-spacing: 1.44px;
   font-weight: 500;
   position: absolute;
@@ -95,10 +95,15 @@
 .book_organos {
   display: flex;
   /* flex-direction: column-reverse; */
+  position: relative;
+  right: 5vw;
+  height: 40vw;
+  width: 55vw;
   align-items: flex-start;
   background: url("../../../assets/Img-Section02/Page13/booklargo.png");
+  transform: rotate(9.6deg);
   background-repeat: no-repeat;
-  background-size: 53.5vw;
+  background-size: contain;
   height: 100%;
   position: absolute;
 }
@@ -110,9 +115,9 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  transform: rotate(9.6deg);
-  margin-left: 7.5vw;
-  margin-top: 20vh;
+  transform: rotate(0.6deg);
+  margin-left: 8vw;
+  margin-top: 8vw;
   font-style: normal;
   width: 75%;
 }
@@ -144,7 +149,7 @@
   align-items: start;
 }
 
-.booktres{
+.booktres {
   margin-top: 0.2vw;
 }
 

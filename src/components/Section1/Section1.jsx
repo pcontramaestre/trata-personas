@@ -238,7 +238,7 @@ function Section1() {
         <div className="endslider"></div>
       </section>
       <div className="separadorslider" />
-      <InfoConsentimiento />
+      {/* <InfoConsentimiento /> */}
     </section>
   );
 }
