@@ -1,7 +1,6 @@
 import { useEffect, useLayoutEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from 'gsap/all'
-import { Howl } from 'howler'
 
 import NoteBook from '../NoteBook/NoteBook'
 import News from '../News/News'

@@ -13,7 +13,7 @@ function BarGraphSection01() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".BarGraph",
-        markers: true,
+        // markers: true,
         start: () => {
           return (
             scrollTriggerBarGraph.end -
