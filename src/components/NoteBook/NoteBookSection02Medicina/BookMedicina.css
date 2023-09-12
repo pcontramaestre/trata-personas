@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  transform: rotate(8.062deg);
+  transform: rotate(4.062deg);
   text-align: center;
   margin-left: 9.5vw;
   margin-top: 16vh;
@@ -47,7 +47,7 @@
   text-align: start;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 0.8vw;
+  margin-left: 0.4vw;
   margin-top: 0.3vh;
 }
 
@@ -62,7 +62,7 @@
   font-family: "Inter", sans-serif;
   line-height: normal;
   letter-spacing: 2.75px;
-  margin-left: 1vw;
+  margin-left: 0.9vw;
   margin-top: 0.65vw;
 }
 

@@ -1,7 +1,12 @@
 .Section02 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
   margin-top: 10vh;
   width: 100vw;
   background: #fefff3;
+  /* z-index: 1 !important; */
 }
 
 .page2content {

@@ -10,12 +10,28 @@ function NoteBookSection01() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
+    const scrollTriggerSliderSection01 =
+      ScrollTrigger.getById("SliderSection01");
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".NoteBook__container",
-        start: "top 60%",
-        end: "bottom 110%",
+        start: () => {
+          return (
+            scrollTriggerSliderSection01.end -
+            scrollTriggerSliderSection01.start +
+            100 +
+            " center"
+          );
+        },
+        end: () => {
+          return (
+            scrollTriggerSliderSection01.end -
+            scrollTriggerSliderSection01.start +
+            600 +
+            " center"
+          );
+        },
+        id: "noteBook__Section01",
         scrub: true,
       },
     });

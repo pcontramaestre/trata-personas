@@ -4,12 +4,28 @@ import "slick-carousel/slick/slick.css";
 import "./SliderSection01.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import data from "../../../../trataSection01.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SliderSection01 = ({ texts }) => {
+const SliderSection01 = () => {
+  const page2 = data[0].visibilizacion_victimas.page2.slider;
+  const texts = [
+    {
+      title: page2.content1.title,
+      text2: page2.content1.text2,
+      text1: "",
+      text3: page2.content1.text3,
+    },
+    {
+      title: page2.content2.title,
+      text1: page2.content2.text1,
+      text2: page2.content2.text2,
+      text3: page2.content2.text3,
+    },
+  ];
   useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
+    const animation = gsap.context(() => {
       gsap.to(".slider-father01", {
         x: () => {
           return (
@@ -21,15 +37,15 @@ const SliderSection01 = ({ texts }) => {
         scrollTrigger: {
           trigger: ".slider-father01",
           // markers: true,
-          start: "top 5%",
+          start: "top 20%",
           end: "+=3000 bottom",
-          scrub: 2,
+          scrub: 3,
           pin: "#section1",
           id: "SliderSection01",
         },
       });
     });
-    return () => ctx.revert();
+    return () => animation.revert();
   }, []);
 
   return (

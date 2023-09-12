@@ -4,6 +4,7 @@
     max-width: 100%;
     height: auto;
     min-height: 100vh;
+    z-index: 4 !important;
     background-color: #CFF9FF;
 }
 

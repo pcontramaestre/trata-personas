@@ -1,7 +1,6 @@
 import { useEffect, useLayoutEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from 'gsap/all'
-import { Howl } from 'howler'
 
 import NoteBook from '../NoteBook/NoteBook'
 import News from '../News/News'
@@ -114,7 +113,7 @@ function Section0 () {
   }))
 
   const blockFooterStyle = {
-    height: convertSize('634px'),
+    height: convertSize('150px'),
     top: convertSize('5503px')
   }
 

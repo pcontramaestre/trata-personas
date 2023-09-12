@@ -9,12 +9,28 @@ function BarGraphSection01() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
+    const scrollTriggerBarGraph = ScrollTrigger.getById("SliderSection01");
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".BarGraph",
-        start: "top 60%",
-        end: "center",
+        // markers: true,
+        start: () => {
+          return (
+            scrollTriggerBarGraph.end -
+            scrollTriggerBarGraph.start +
+            100 +
+            " center"
+          );
+        },
+        end: () => {
+          return (
+            scrollTriggerBarGraph.end -
+            scrollTriggerBarGraph.start +
+            600 +
+            " center"
+          );
+        },
+
         scrub: true,
       },
     });
