@@ -1,0 +1,9 @@
+.fixsection2 {
+  position: absolute;
+  z-index: 3;
+  top: -15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}

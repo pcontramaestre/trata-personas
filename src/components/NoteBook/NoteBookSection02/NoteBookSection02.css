@@ -6,9 +6,14 @@
 }
 
 .NoteBook02 {
+  position: relative;
+  top: 10vw;
+  left: 2vw;
+  width: 45vw;
+  height: 40vw;
   background: url("../../../assets/Img-Section02/Page04/notebook.png");
   background-repeat: no-repeat;
-  background-size: 55.5vw;
+  background-size: contain;
   transform: rotate(-4.362deg);
 }
 
@@ -19,13 +24,15 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  transform: rotate(-3.962deg);
+  transform: rotate(4deg);
   text-align: center;
-  margin-left: 2vw;
-  margin-top: 22.6vh;
+  top: 2vw;
+  left: 4vw;
+  /* margin-left: 2vw; */
+  margin-top: 0vw;
   font-style: normal;
-  width: 35%;
-  padding: 10vw;
+  width: 70%;
+  padding: 5vw;
 }
 
 .NoteBook02__text1 {

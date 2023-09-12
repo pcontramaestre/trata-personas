@@ -15,6 +15,7 @@ import Organos from "./Organos/Organos";
 import BoxInfoSection02 from "../BigInfoBox/BigInfoBoxSection02/BoxInfoSection02";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import InfoConsentimiento from "../Section1/InfoConsentimiento/InfoConsentimiento";
 gsap.registerPlugin(ScrollTrigger);
 
 function Section2() {
@@ -34,6 +35,7 @@ function Section2() {
 
   return (
     <section id="section2" className="Section02">
+      <InfoConsentimiento />
       <div className="page2content">
         <div className="page2__imagesbackground">
           <div className="page2__imagemen" />
