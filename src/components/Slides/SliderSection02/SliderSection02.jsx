@@ -7,6 +7,7 @@ import data from "../../../../trataSection02.json";
 import "slick-carousel/slick/slick.css";
 import "./SliderSection02.css";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const SliderSection02 = () => {
@@ -22,7 +23,7 @@ const SliderSection02 = () => {
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: ".slider-father",
-          markers: true,
+          // markers: true,
           start: "top 20%",
           end: "+=3000 bottom",
           scrub: 2,
