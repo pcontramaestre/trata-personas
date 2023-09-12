@@ -84,9 +84,11 @@ function convertSize(input) {
 }
 
 function Section3() {
-  const [audioPlaying, setAudioPlaying] = useState(false);
-const [audioAutoPlay, setAudioAutoPlay] = useState(true);
-  const [sectionVisible, setSectionVisible] = useState(false);
+  // const [audioPlaying, setAudioPlaying] = useState(false);
+  const audioPlaying = useRef(false)
+  // const [audioAutoPlay, setAudioAutoPlay] = useState(true);
+  const audioAutoPlay = useRef(true)
+  const [sectionVisible, setSectionVisible] = useState(true);
 
   const imgRefs = useRef([]); // Create an array of refs for images
   const containerRowRefs = useRef([]); // Create an array of refs for rows
@@ -97,159 +99,169 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    ScrollTrigger.create({
-      trigger: "#section3", // Debe ser el id de la sección
-      onEnter: () => {
-        setSectionVisible(true); // Marca la sección como visible
-      },
-      // ...
-    });
-    
-    // Animations for rows
-    rows.forEach((row, index) => {
-      const containerRowTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: containerRowRefs.current[index], // Use the specific ref for this row
-          start: "center center",
-          end: "bottom center",
-          scrub: true,
+    const ctx = gsap.context(() => {
+      // Animación del audio
+      ScrollTrigger.create({
+        trigger: "#section3", // Debe ser el id de la sección
+        // markers: true,
+        onEnter: () => {
+          // setSectionVisible(true); // Marca la sección como visible
+          if (audioAutoPlay.current) toggleAudio('play')
         },
-
-      });
-      containerRowTl.fromTo(
-        "#bigCard" + row.image.name,
-        {
-          opacity: 0,
+        onLeave: ()=> {
+          toggleAudio('stop')
         },
-        {
-          opacity: 1,
-        },
-      );
-
-      containerRowTl.fromTo(
-        "#bigCard" + row.image.name,
-        {
-          opacity: 1,
-        },
-        {
-          opacity: 0,
-        },4
-      );
-
-    });
-
-    // Animations for images
-    images.forEach((image, index) => {
-      const imgTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: imgRefs.current,
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
+        end: "bottom bottom",
+        start: 'top 5%'
       });
 
-      imgTl.fromTo(
-        imgRefs.current,
+      // Animations for rows
+      rows.forEach((row, index) => {
+        const containerRowTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: containerRowRefs.current[index], // Use the specific ref for this row
+            start: "center center",
+            end: "bottom center",
+            scrub: true,
+          },
+  
+        });
+        containerRowTl.fromTo(
+          "#bigCard" + row.image.name,
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        );
+  
+        containerRowTl.fromTo(
+          "#bigCard" + row.image.name,
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          },4
+        );
+  
+      });
+
+      // Animations for images
+      images.forEach((image, index) => {
+        const imgTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: imgRefs.current,
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+        });
+  
+        imgTl.fromTo(
+          imgRefs.current,
+          {
+            x: "100%",
+            opacity: 0,
+          },
+          {
+            x: "0%",
+            opacity: 1,
+          }
+        );
+  
+        
+      });
+  
+      // Animations for text
+      const textTl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef2.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+        },
+      });
+  
+      textTl2.fromTo(
+        textRef2.current,
         {
-          x: "100%",
-          opacity: 0,
+          x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
         },
         {
-          x: "0%",
-          opacity: 1,
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
         }
       );
+      const textTl3 = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef3.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+        },
+      });
+  
+      textTl3.fromTo(
+        textRef3.current,
+        {
+          x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
+      const textTl4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef4.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+        },
+      });
+  
+      textTl4.fromTo(
+        textRef4.current,
+        {
+          x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
+      const textTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+        },
+      });
+  
+      textTl.fromTo(
+        textRef.current,
+        {
+          x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
+    })
 
-      
-    });
-
-    // Animations for text
-    const textTl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: textRef2.current,
-        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-        scrub: true, // Hace que la animación sea suave mientras se desplaza
-        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-      },
-    });
-
-    textTl2.fromTo(
-      textRef2.current,
-      {
-        x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-      },
-      {
-        x: "0%", // Lleva el elemento a su posición original (0%)
-        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-      }
-    );
-    const textTl3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: textRef3.current,
-        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-        scrub: true, // Hace que la animación sea suave mientras se desplaza
-        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-      },
-    });
-
-    textTl3.fromTo(
-      textRef3.current,
-      {
-        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-      },
-      {
-        x: "0%", // Lleva el elemento a su posición original (0%)
-        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-      }
-    );
-    const textTl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: textRef4.current,
-        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-        scrub: true, // Hace que la animación sea suave mientras se desplaza
-        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-      },
-    });
-
-    textTl4.fromTo(
-      textRef4.current,
-      {
-        x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-      },
-      {
-        x: "0%", // Lleva el elemento a su posición original (0%)
-        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-      }
-    );
-    const textTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-        end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-        scrub: true, // Hace que la animación sea suave mientras se desplaza
-        // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-      },
-    });
-
-    textTl.fromTo(
-      textRef.current,
-      {
-        x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-        opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-      },
-      {
-        x: "0%", // Lleva el elemento a su posición original (0%)
-        opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-      }
-    );
+    return () => ctx.revert()
   }, []);
 
   const [nameBigCard, setNameBigCard] = useState("");
@@ -403,21 +415,27 @@ const [audioAutoPlay, setAudioAutoPlay] = useState(true);
 
   const audioRef = useRef(null);
 
-  const toggleAudio = () => {
+  const toggleAudio = (instruction) => {
     const audioElement = document.getElementById('miAudio');
-    
     if (audioElement) {
-      if (audioAutoPlay) {
-        audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
-        setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
-      } else {
-        if (audioPlaying) {
+    
+      // if (audioAutoPlay) {
+
+        // audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
+        // setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
+      // } else {
+        if (instruction ? audioPlaying.current && instruction === 'stop' : !audioElement.paused ) {
           audioElement.pause(); // Pausa el audio si estaba reproduciéndose
-        } else {
+          if (instruction) {
+            audioElement.currentTime = 0
+          }
+          audioAutoPlay.current = false
+          // console.log("activar audio");
+        } else if (instruction ? !audioPlaying.current && instruction === 'play' : audioElement.paused) {
           audioElement.play(); // Reanuda el audio si estaba pausado
+          // console.log("detener audio");
         }
-      }
-      setAudioPlaying(!audioPlaying); // Actualiza el estado del audio
+        audioPlaying.current = !audioPlaying.current; // Actualiza el estado del audio
     }
   };
 

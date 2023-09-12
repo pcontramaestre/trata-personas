@@ -209,12 +209,12 @@
 }
 .animationGraphic {
     position: absolute;
-    top: 459.4vw;
-    left: 15vw;
+    top: 463.4vw;
+    left: 24vw;
     z-index: 2;
 }
 .animationGraphic img {
-    width: 68.3vw;
+    width: 52.3vw;
 }
 .iconAudio{
     top: 46vw;

@@ -5055,13 +5055,13 @@
       "text2": "víctimas de trata de personas.",
       "text3": "8.576 personas",
       "text5": "40",
-      "text6": "15.000",
+      "text6": "12.000",
       "text7": "30",
-      "text8": "10.000",
+      "text8": "9.000",
       "text9": "20",
-      "text10": "5.000",
+      "text10": "6.000",
       "text11": "10",
-      "text12": "0"
+      "text12": "3.000"
     },
     "rows": [
       {
@@ -5898,6 +5898,7 @@
       "height": "488px",
       "borderRadius": "28px",
       "backgroundImage": "backgroundCard",
+      "opacity": "0!important",
       "titleStile": {
         "fontFamily": "Formula Condensed",
         "fontSize": "180px",
