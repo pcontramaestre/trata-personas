@@ -8,7 +8,10 @@
   margin-bottom: 1.5vw;
 }
 
-
+.accordion-content{
+  /* position: relative; */
+  /* box-sizing: border-box; */
+}
 
 .map__title {
   color: #004543;
@@ -34,9 +37,7 @@
   margin: 0;
 }
 
-.content-accordion{
-  /* height: 150%; */
-}
+
 
 .map__content {
   display: flex;
