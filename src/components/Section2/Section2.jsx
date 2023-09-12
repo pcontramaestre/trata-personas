@@ -13,6 +13,8 @@ import PracticasEsclavitud from "./Esclavitud/PracticasEsclavitud/PracticasEscla
 import ActividadesIlicitas from "./ActividadesIlicitas/ActividadesIlicitas";
 import Organos from "./Organos/Organos";
 import BoxInfoSection02 from "../BigInfoBox/BigInfoBoxSection02/BoxInfoSection02";
+import persona1 from "../../assets/Img-Section02/Page01/persona1.png";
+import botas1 from "../../assets/Img-Section02/Page01/botas1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import InfoConsentimiento from "../Section1/InfoConsentimiento/InfoConsentimiento";
@@ -38,9 +40,9 @@ function Section2() {
       <InfoConsentimiento />
       <div className="page2content">
         <div className="page2__imagesbackground">
-          <div className="page2__imagemen" />
+          <img className="page2__imagemen animation-image" src={persona1} alt="" />
           <div className="page2__sombreromen" />
-          <div className="page2__botas" />
+          <img className="page2__botas animation-image2" src={botas1} alt="" />
         </div>
         <div className="page2">
           <h1 className="page2__title">{page1.text1}</h1>

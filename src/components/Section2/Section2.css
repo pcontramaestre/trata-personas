@@ -36,17 +36,78 @@
   bottom: 10vw;
 }
 
-.page2__imagemen{
+.page2__imagemen {
   position: relative;
   left: 0vw;
   width: 48%;
   height: 80%;
-  background-image: url("../../assets/Img-Section02/Page01/persona1.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.page2__sombreromen{
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-1.5px, 1.5px);
+  }
+  20% {
+    transform: translate(1.5px, -1.5px);
+  }
+  30% {
+    transform: translate(-1.5px, 1.5px);
+  }
+  40% {
+    transform: translate(1.5px, -1.5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animation-image {
+  animation: shake 0.9s infinite;
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(-3px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(-3px) rotate(0deg);
+  }
+  75% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-3px) rotate(0deg);
+  }
+}
+.animation-image2 {
+  animation: sway 9s infinite ease-in-out;
+  transform-origin: center bottom;
+}
+
+.page2__sombreromen {
   position: relative;
   width: 25%;
   height: 25%;
@@ -56,15 +117,13 @@
   background-repeat: no-repeat;
 }
 
-.page2__botas{
+.page2__botas {
   position: absolute;
-  right: 0;
+  right: 2vw;
   width: 35%;
   height: 35%;
   bottom: 5vw;
-  background-image: url("../../assets/Img-Section02/Page01/botas1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  object-fit: contain;
 }
 
 .page2__title {
