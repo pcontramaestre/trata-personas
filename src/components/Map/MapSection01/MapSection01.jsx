@@ -22,7 +22,7 @@ const MapSection01 = () => {
       y: "-100%", // Mueve el segundo accordion hacia arriba para que se superponga al primero
       opacity: 1, // Hacerlo visible
       scrollTrigger: {
-        markers: true,
+        // markers: true,
         // pin: true,
         trigger: "#contentaccordion", // El elemento que dispara la animación
         start: () => {
