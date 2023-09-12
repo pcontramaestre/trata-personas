@@ -8,11 +8,6 @@
   margin-bottom: 1.5vw;
 }
 
-.accordion-content{
-  /* position: relative; */
-  /* box-sizing: border-box; */
-}
-
 .map__title {
   color: #004543;
   text-align: center;
@@ -36,8 +31,6 @@
   line-height: normal;
   margin: 0;
 }
-
-
 
 .map__content {
   display: flex;
