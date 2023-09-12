@@ -14,6 +14,7 @@ import logo from '../../assets/Instructions/logo.svg'
 import scroll from '../../assets/Instructions/scroll1.svg'
 import group from '../../assets/Instructions/group.svg'
 import audio1 from '../../assets/Instructions/audio1.png'
+import audioMute from '../../assets/Section0/audioMute.png'
 import background from '/Section0/frontPageBackground.jpg'
 import people from '/Section0/frontPagePeopleBehind.png'
 import person from '/Section0/frontPagePersonAhead.png'
@@ -34,7 +35,8 @@ const icons = {
   background,
   people,
   person,
-  puppet
+  puppet,
+  audioMute
 }
 
 const { homeHeader } = data
@@ -47,6 +49,7 @@ function convertSize (input) {
 
 function Section0 () {
 
+  const [audioPlaying, setAudioPlaying] = useState(true)
   const audioTag = useRef()
   const firstTimeuseEffect = useRef(true)
 
@@ -83,10 +86,12 @@ function Section0 () {
 
   function playAudio() {
     audioTag.current.play()
+    setAudioPlaying(true)
   }
 
   function stopAudio() {
     audioTag.current.pause()
+    setAudioPlaying(false)
     // audioTag.current.currentTime = 0
   }
 
@@ -123,7 +128,7 @@ function Section0 () {
       {
         homeHeader.images.map((image, index) => (
           image.name !== 'puppet'
-            ? <img id={style[image.name + 'section0']} src={image && icons[image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
+            ? <img id={style[image.name + 'section0']} src={image && icons[image.name === 'audio1' && !audioPlaying ? 'audioMute' : image.name]} className={image.name === 'scroll' ? style.scroll : style.HomeHeaderImages} style={iconStyles[index]} key={image.name + index} />
             : null
         ))
       }
