@@ -33,7 +33,7 @@
   display: flex;
   align-items: start;
   /* margin-top: 0.5v; */
-  height: 85%;
+  height: 95%;
 }
 
 .womenslider__valores-list {
@@ -42,12 +42,12 @@
   flex-direction: column-reverse;
   list-style: none;
   margin: 0 1vh;
-  height: 95%;
+  height: 100%;
 }
 
 .womenslider__number {
   font-family: Formula Condensed;
-  font-size: 2.2vw;
+  font-size: 2.4vw;
   font-weight: 700;
   text-align: right;
   color: #1a6063;

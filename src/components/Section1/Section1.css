@@ -1,6 +1,7 @@
 .Section1 {
+  display: block;
   /* margin-top: 11vw !important; */
-  padding-top: 15vw !important;
+  padding-top: 10vw !important;
   width: 100vw;
   margin-top: 0;
   background-color: #fff0f1;
@@ -8,15 +9,17 @@
 
 .relleno {
   position: absolute;
-  height: 40vh;
-  top: -15vw;
+  height: 30vw;
+  top: -10vw;
   width: 100vw;
   z-index: 1;
   background-color: #002d2c;
 }
 
 .page1content {
+  z-index: 1;
   position: relative;
+  /* top:11vw; */
   height: 150vh;
 }
 
@@ -25,30 +28,30 @@
   justify-content: flex-end;
   background-image: url("../../../src/assets/Img-Section01/Page01/fondo.png");
   height: 100%;
-  z-index: 1;
-  /* background-size: 100vw; */
+  z-index: 3;
   background-size: contain;
-  background-position: el;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+  top: 5vw;
 }
 
 .page1__images {
+  top: 5vw;
   z-index: 2;
   position: absolute;
   /* left: 7.5%; */
   width: 100%;
   height: 60%;
-  bottom: 26vw;
+  bottom: 30vw;
 }
 
 .page1__manos {
   position: absolute;
-  top: -7vw;
-  /* z-index: 0; */
+  top: -5vw;
+  /* z-index: 99; */
   width: 50%;
-  height: 80%;
+  height: 50%;
   left: 3vw;
   background-image: url("../../assets/Img-Section01/Page01/mano-3.png");
   background-position: center;
@@ -58,10 +61,10 @@
 
 .page1__rejas {
   position: relative;
-  top: -2vw;
-  width: 100%;
+  top: -5vw;
+  width: 100vw;
   height: 60vw;
-  background-position: center;
+  background-position: contain;
   background-size: cover;
   background-image: url("../../assets/Img-Section01/Page01/rejas-4.png");
 }
@@ -73,7 +76,7 @@
   right: 18vw;
   bottom: 70%;
   z-index: 10;
-  font-size: 13vh;
+  font-size: 7.5vw;
   font-style: normal;
   flex-shrink: 0;
   font-weight: 700;
@@ -123,12 +126,11 @@
   background-image: url("../../assets/Img-Section01/Page01/etiqueta-1.png");
 }
 
-.page1__title{
+.page1__title {
   position: absolute;
   top: 8vw;
   /* margin-left: 10vw; */
   /* left: 1%; */
-
 }
 
 .manosright__content {

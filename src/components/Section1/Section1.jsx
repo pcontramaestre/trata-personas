@@ -1,12 +1,9 @@
-import Slides from "../Slides/Slides";
 import NoteBookSection01 from "../NoteBook/NoteBookSection01/NoteBookSection01";
 import BarGraphSection01 from "../BarGraph/BarGraphSection01/BarGraphSection01";
 import BigInfoBoxSection01 from "../BigInfoBox/BigInfoBoxSection01/BigInfoBoxSection01";
 import CircleGraph from "./CircleGraph/CircleGraph";
 import NewSection01 from "../News/NewsSection01/NewSection01";
 import data from "../../../trataSection01.json";
-import datatroy from "../../../troy.json";
-import style from "./Section1.module.css";
 import "./Section1.css";
 import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
@@ -107,6 +104,8 @@ function Section1() {
       y: -100, // Posición inicial vertical (arriba)
       rotation: 15, // Rotación en grados (inclinación)
       duration: 1, // Duración de la animación
+      opacity: 0, // Opacidad inicial (comienza completamente transparente)
+      duration: 1, // Duración de la animación
       ease: "power4.out", // Curva de easing (ajusta según tus preferencias)
       scrollTrigger: {
         trigger: ".page1__manos",
@@ -188,21 +187,23 @@ function Section1() {
     <section id="section1" className="Section1">
       <div className="page1content">
         <div className="relleno" />
-        <div className="page1__images">
-          <div className="page1__manos" />
-          <div className="page1__rejas" />
-          <div className="manosleft__content">
-            <div className="page1__manosleft" />
-            <div className="page1__antebrazosleft" />
-            <div className="page1__priceleft" />
-          </div>
-          <div className="manosright__content">
-            <div className="page1__manosright" />
-            <div className="page1__antebrazosright" />
-            <div className="page1__priceright" />
+
+        <div className="page1">
+          <div className="page1__images">
+            <div className="page1__manos" />
+            <div className="page1__rejas" />
+            <div className="manosleft__content">
+              <div className="page1__manosleft" />
+              <div className="page1__antebrazosleft" />
+              <div className="page1__priceleft" />
+            </div>
+            <div className="manosright__content">
+              <div className="page1__manosright" />
+              <div className="page1__antebrazosright" />
+              <div className="page1__priceright" />
+            </div>
           </div>
         </div>
-        <div className="page1"></div>
         <h1 className="page1__title">
           {page1.text1} <br /> {page1.text2}
         </h1>
