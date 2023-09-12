@@ -22,7 +22,7 @@ const SliderSection02 = () => {
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: ".slider-father",
-          markers: true,
+          // markers: true,
           start: "top 20%",
           end: "+=3000 bottom",
           scrub: 2,
