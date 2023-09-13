@@ -101,19 +101,19 @@ function Section3() {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       // Animación del audio
-      ScrollTrigger.create({
-        trigger: "#section3", // Debe ser el id de la sección
-        // markers: true,
-        onEnter: () => {
-          // setSectionVisible(true); // Marca la sección como visible
-          if (audioAutoPlay.current) toggleAudio('play')
-        },
-        onLeave: ()=> {
-          toggleAudio('stop')
-        },
-        end: "bottom bottom",
-        start: 'top 5%'
-      });
+      // ScrollTrigger.create({
+      //   trigger: "#section3", // Debe ser el id de la sección
+      //   // markers: true,
+      //   onEnter: () => {
+      //     // setSectionVisible(true); // Marca la sección como visible
+      //     if (audioAutoPlay.current) toggleAudio('play')
+      //   },
+      //   onLeave: ()=> {
+      //     toggleAudio('stop')
+      //   },
+      //   end: "bottom bottom",
+      //   start: 'top 5%'
+      // });
 
       // Animations for rows
       rows.forEach((row, index) => {
@@ -416,29 +416,29 @@ function Section3() {
 
   const audioRef = useRef(null);
 
-  const toggleAudio = (instruction) => {
-    const audioElement = document.getElementById('miAudio');
-    if (audioElement) {
+  // const toggleAudio = (instruction) => {
+  //   const audioElement = document.getElementById('miAudio');
+  //   if (audioElement) {
     
-      // if (audioAutoPlay) {
+  //     // if (audioAutoPlay) {
 
-        // audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
-        // setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
-      // } else {
-        if (instruction ? audioPlaying.current && instruction === 'stop' : !audioElement.paused ) {
-          audioElement.pause(); // Pausa el audio si estaba reproduciéndose
-          if (instruction) {
-            audioElement.currentTime = 0
-          }
-          audioAutoPlay.current = false
-          // console.log("activar audio");
-        } else if (instruction ? !audioPlaying.current && instruction === 'play' : audioElement.paused) {
-          audioElement.play(); // Reanuda el audio si estaba pausado
-          // console.log("detener audio");
-        }
-        audioPlaying.current = !audioPlaying.current; // Actualiza el estado del audio
-    }
-  };
+  //       // audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
+  //       // setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
+  //     // } else {
+  //       if (instruction ? audioPlaying.current && instruction === 'stop' : !audioElement.paused ) {
+  //         audioElement.pause(); // Pausa el audio si estaba reproduciéndose
+  //         if (instruction) {
+  //           audioElement.currentTime = 0
+  //         }
+  //         audioAutoPlay.current = false
+  //         // console.log("activar audio");
+  //       } else if (instruction ? !audioPlaying.current && instruction === 'play' : audioElement.paused) {
+  //         audioElement.play(); // Reanuda el audio si estaba pausado
+  //         // console.log("detener audio");
+  //       }
+  //       audioPlaying.current = !audioPlaying.current; // Actualiza el estado del audio
+  //   }
+  // };
 
   return (
     <section
@@ -446,7 +446,7 @@ function Section3() {
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
-      {sectionVisible && (
+      {/* {sectionVisible && (
         <div className={style.iconAudio}>
           <img
             src={audio}
@@ -454,13 +454,13 @@ function Section3() {
             onClick={() => toggleAudio()}
           />
         </div>
-      )}
-      <audio
+      )} */}
+      {/* <audio
       ref={audioRef}
         id="miAudio"
         src={mp3}
         style={{ display: "none" }} // Para ocultar el reproductor de audio
-      />
+      /> */}
       <div className={style.animationText1} ref={textRef}>
         <p className={style.text1}>{animationText.text1} </p>
         <p className={style.text1}>

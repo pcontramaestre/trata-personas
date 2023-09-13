@@ -34,13 +34,20 @@ function convertSize (input) {
 
 function FrontPageSection5 ({ frontPageImages }) {
   useLayoutEffect(() => {
+    function topPosition() {
+      const m = (0 - 10) / (1600 - 1200)
+      const b = - 1600 * m
+      const x = window.innerWidth
+      const y = m * x + b > 0 ? m * x + b : 0
+      return y + '%'
+    }
     const ctx = gsap.context(() => {
       // // Animation FrontPage
       const tl1 = gsap.timeline({
         scrollTrigger: {
           trigger: '#backgroundsection5',
           // markers: true,
-          start: '30% top',
+          start: '30% ' + topPosition(),
           end: '+=5000 bottom',
           pin: '#section5',
           scrub: 1,
