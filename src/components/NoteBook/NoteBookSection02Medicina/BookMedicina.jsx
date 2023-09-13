@@ -17,7 +17,7 @@ const BookMedicina = ({ page7 }) => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 200 + ' center'
           },
           id: 'noteBook_section02_' + page7.title
         },
