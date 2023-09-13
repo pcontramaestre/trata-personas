@@ -188,6 +188,14 @@ function Animation () {
       const r = window.innerWidth * (n / 1920)
       return r
     }
+
+    function topPosition() {
+      const m = (0 - 10) / (1600 - 1200)
+      const b = - 1600 * m
+      const x = window.innerWidth
+      const y = m * x + b > 0 ? m * x + b : 0
+      return y + '%'
+    }
     const ctx = gsap.context(() => {
       const scrollTriggerFrontPageSection5 = ScrollTrigger.getById('frontPageSection5')
       // Animation Plane & Bus
@@ -196,7 +204,7 @@ function Animation () {
           trigger: '#busPlaneContainerSection5',
           // markers: true,
           start: () => {
-            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' top'
+            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' ' + topPosition()
           },
           end: () => {
             return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'

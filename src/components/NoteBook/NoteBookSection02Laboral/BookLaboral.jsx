@@ -17,7 +17,7 @@ const BookLaboral = ({ page6 }) => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
           },
           id: 'noteBook_section02_' + page6.title
         },

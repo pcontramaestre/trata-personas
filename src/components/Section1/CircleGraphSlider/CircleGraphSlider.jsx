@@ -86,7 +86,7 @@ const CircleGraphSlider = ({ sliderReverse }) => {
             </div>
           </div>
         </div>
-        <button className="buttonslider onclick" onClick={sliderReverse} />
+        {/* <button className="buttonslider onclick" onClick={sliderReverse} /> */}
       </div>
     </div>
   );

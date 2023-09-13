@@ -13,34 +13,25 @@ import PracticasEsclavitud from "./Esclavitud/PracticasEsclavitud/PracticasEscla
 import ActividadesIlicitas from "./ActividadesIlicitas/ActividadesIlicitas";
 import Organos from "./Organos/Organos";
 import BoxInfoSection02 from "../BigInfoBox/BigInfoBoxSection02/BoxInfoSection02";
+import persona1 from "../../assets/Img-Section02/Page01/persona1.png";
+import botas1 from "../../assets/Img-Section02/Page01/botas1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import InfoConsentimiento from "../Section1/InfoConsentimiento/InfoConsentimiento";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Section2() {
   const page1 = data[0].finalidades.page1;
-  const imagenMenTrembling = gsap.to(".page2__imagemen", {
-    x: "+=10", // Cambia el valor según la intensidad que desees para el temblor
-    repeat: -1, // Repite la animación indefinidamente
-    yoyo: true, // Hace que la animación vuelva a su posición original en cada repetición
-    ease: "power1.inOut", // Easing para suavizar el temblor
-  });
-  ScrollTrigger.create({
-    trigger: ".page2__imagemen", // Selector del elemento que desencadenará la animación
-    start: "top center", // Puedes ajustar esta configuración según tus necesidades
-    end: "bottom center",
-    animation: imagenMenTrembling,
-  });
 
   return (
     <section id="section2" className="Section02">
       <InfoConsentimiento />
       <div className="page2content">
         <div className="page2__imagesbackground">
-          <div className="page2__imagemen" />
+          <img className="page2__imagemen animation-image" src={persona1} alt="" />
           <div className="page2__sombreromen" />
-          <div className="page2__botas" />
+          <img className="page2__botas animation-image2" src={botas1} alt="" />
         </div>
         <div className="page2">
           <h1 className="page2__title">{page1.text1}</h1>

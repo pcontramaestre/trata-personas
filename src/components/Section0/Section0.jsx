@@ -53,28 +53,28 @@ function Section0 () {
   const audioTag = useRef()
   const firstTimeuseEffect = useRef(true)
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: '#section2',
-        // markers: true,
-        start: 'top top',
-        end: 'top top',
-        onLeave: () => stopAudio()
-      })
-    })
-    return () => ctx.revert()
-  }, [])
+  // useLayoutEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //     ScrollTrigger.create({
+  //       trigger: '#section2',
+  //       // markers: true,
+  //       start: 'top top',
+  //       end: 'top top',
+  //       onLeave: () => stopAudio()
+  //     })
+  //   })
+  //   return () => ctx.revert()
+  // }, [])
 
-  useEffect(() => {
-    if (firstTimeuseEffect.current) {
-      const audioButtom = document.querySelector(`#${style['audio1section0']}`)
-      audioButtom.addEventListener('click', () => setAudio())
-      firstTimeuseEffect.current = false
-      playAudio()
-      return () => audioButtom.removeEventListener('click', () => {})
-    }
-  },[])
+  // useEffect(() => {
+  //   if (firstTimeuseEffect.current) {
+  //     const audioButtom = document.querySelector(`#${style['audio1section0']}`)
+  //     audioButtom.addEventListener('click', () => setAudio())
+  //     firstTimeuseEffect.current = false
+  //     playAudio()
+  //     return () => audioButtom.removeEventListener('click', () => {})
+  //   }
+  // },[])
 
   function setAudio() {
     if (audioTag.current.paused) {
@@ -154,7 +154,7 @@ function Section0 () {
       <Map map={map} />
       <BigInfoBox bigInfoBox={bigInfoBox} />
       <div className={style.HomeHeaderBlockFooter} style={blockFooterStyle} />
-      <audio id='audio1section0' src={audio} ref={audioTag}></audio>
+      {/* <audio id='audio1section0' src={audio} ref={audioTag}></audio> */}
     </section>
   )
 }

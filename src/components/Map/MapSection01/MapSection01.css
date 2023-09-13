@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 180vh;
   width: 100vw;
   margin-bottom: 1.5vw;
 }
@@ -18,6 +18,11 @@
   line-height: normal;
   letter-spacing: 2.9px;
   margin: 0;
+}
+.accordion-content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
 .map__text1 {
@@ -38,14 +43,15 @@
   justify-content: center;
   margin-top: 20px;
   width: 100vw;
-  height: 120%;
+  height: 75%;
 }
 
 .mapnumber02 {
+  top: -1%;
   position: absolute;
   right: -1vw;
-  width: 100%;
-  height: 100%;
+  width: 83vw;
+  height: 50vw;
 }
 
 #MX02:hover {
@@ -132,20 +138,20 @@
 .percentage1 {
   width: 4.2em;
   height: 1.3em;
-  background-image:url("../../../assets/Img-Section01/Page05/percentage1.jpg") ; 
+  background-image: url("../../../assets/Img-Section01/Page05/percentage1.jpg");
 }
 
 .percentage2 {
   width: 4.2em;
   height: 1.3em;
-  background-image:url("../../../assets/Img-Section01/Page05/percentage2.jpg") ; 
+  background-image: url("../../../assets/Img-Section01/Page05/percentage2.jpg");
 }
 
 .percentage3 {
   width: 4.2em;
   height: 1.3em;
   background: #081d20;
-  background-image:url("../../../assets/Img-Section01/Page05/percentage3.jpg") ; 
+  background-image: url("../../../assets/Img-Section01/Page05/percentage3.jpg");
 }
 
 .percentage__number {
@@ -188,6 +194,7 @@
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  font-size: 0.85vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

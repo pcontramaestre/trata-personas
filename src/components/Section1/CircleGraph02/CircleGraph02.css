@@ -113,7 +113,7 @@
   font-family: Formula Condensed;
   font-weight: 700;
   font-size: 3.5vw;
-  line-height: 84px;
+  /* line-height: 84px; */
   letter-spacing: 0.05em;
   text-align: left;
   color: #0a4b4e;
@@ -127,12 +127,12 @@
 
 .circlenumbers__content {
   position: absolute;
-  top: -8.1vw;
+  top: -6.1vw;
   right: -8.6vw;
   display: flex;
   height: 31vw;
   justify-content: space-between;
-  width: 47vw;
+  width: 48vw;
   /* flex-direction: column; */
 }
 

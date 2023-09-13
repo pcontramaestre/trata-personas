@@ -1,6 +1,5 @@
 import NoteBookSection01 from "../NoteBook/NoteBookSection01/NoteBookSection01";
 import BarGraphSection01 from "../BarGraph/BarGraphSection01/BarGraphSection01";
-import BigInfoBoxSection01 from "../BigInfoBox/BigInfoBoxSection01/BigInfoBoxSection01";
 import CircleGraph from "./CircleGraph/CircleGraph";
 import NewSection01 from "../News/NewsSection01/NewSection01";
 import data from "../../../trataSection01.json";
@@ -8,14 +7,12 @@ import "./Section1.css";
 import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
 import Women from "./Women/Women";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import WomenSlider from "../Section1/WomenSlider/WomenSlider";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import CircleGraphSlider from "./CircleGraphSlider/CircleGraphSlider";
-import InfoConsentimiento from "./InfoConsentimiento/InfoConsentimiento";
 import SliderSection01 from "../Slides/SliderSection01/SliderSection01";
-import BigInfoBox from "../BigInfoBox/BigInfoBox";
 
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
@@ -183,11 +180,68 @@ function Section1() {
       }
     );
   }, []);
+
+  useLayoutEffect(() => {
+    const scrollTriggerSliderSection01 =
+      ScrollTrigger.getById("SliderSection01");
+    const circleSlider = gsap.context(() => {
+      gsap.to(".twoslider", {
+        x: "-100vw",
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: ".twoslider",
+          // markers: true,
+          start: () => {
+            return (
+              scrollTriggerSliderSection01.end -
+              scrollTriggerSliderSection01.start +
+              -30 +
+              "top"
+            );
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section1",
+          id: "SliderCircle",
+        },
+      });
+    });
+    return () => circleSlider.revert();
+  }, []);
+
+  useLayoutEffect(() => {
+    const scrollTriggerCircle = ScrollTrigger.getById("SliderCircle");
+    const scrollTriggerSlider01 = ScrollTrigger.getById("SliderSection01");
+    const womenSlider = gsap.context(() => {
+      gsap.to(".threeslider", {
+        x: "-100vw",
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: ".threeslider",
+          // markers: true,
+          start: () => {
+            return (
+              scrollTriggerCircle.end -
+              scrollTriggerCircle.start +
+              scrollTriggerSlider01.end -
+              scrollTriggerSlider01.start +
+              "top 2%"
+            );
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section1",
+          id: "SliderCircle",
+        },
+      });
+    });
+    return () => womenSlider.revert();
+  }, []);
+
   return (
     <section id="section1" className="Section1">
       <div className="page1content">
         <div className="relleno" />
-
         <div className="page1">
           <div className="page1__images">
             <div className="page1__manos" />
@@ -214,7 +268,6 @@ function Section1() {
       <NoteBookSection01 />
       <BarGraphSection01 />
       <MapSection01 />
-      <BigInfoBoxSection01 />
       <CircleGraph />
       <NewSection01 />
 
