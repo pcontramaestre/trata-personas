@@ -195,8 +195,8 @@ function Section1() {
             return (
               scrollTriggerSliderSection01.end -
               scrollTriggerSliderSection01.start +
-              -50 +
-              " top"
+              -30 +
+              "top"
             );
           },
           end: "+=3000 bottom",
@@ -225,8 +225,7 @@ function Section1() {
               scrollTriggerCircle.start +
               scrollTriggerSlider01.end -
               scrollTriggerSlider01.start +
-              -20 +
-              " top"
+              "top 2%"
             );
           },
           end: "+=3000 bottom",

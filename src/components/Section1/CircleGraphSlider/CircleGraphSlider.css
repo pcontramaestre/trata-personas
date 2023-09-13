@@ -6,6 +6,7 @@
   width: 100vw;
   height: 100%;
 }
+.animations__sliders
 
 .CircleGraph__slidertitle {
   font-family: Inter;
@@ -136,6 +137,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 53%;
+  height: 18vw;
 }
 
 .ninonina__content-two {
@@ -153,9 +155,11 @@
 }
 .ninonina__content-four {
   display: flex;
+  position: relative;
+  top: -1vw;
   flex-direction: column-reverse;
   justify-content: space-between;
-  height: 30.5vw;
+  height: 31vw;
 }
 
 .Circlebarras__foot {
@@ -209,7 +213,7 @@
 }
 
 .threeslider {
-  height: 100vh;
+  height: 50vw;
   position: relative;
   margin: 5vh 0;
 }
@@ -247,13 +251,6 @@
   width: 100%;
   height: 100%;
 }
-
-.animations__sliders {
-  position: relative;
-  height: 220vh;
-}
-
-
 
 .sliders__alto {
   height: 2500px;
