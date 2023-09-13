@@ -11,7 +11,8 @@ const Organos = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const scrollTriggerSliderSection02 =
+        ScrollTrigger.getById("SliderSection02");
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".book_organos__container",
@@ -20,19 +21,29 @@ const Organos = () => {
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 70 + ' center'
+            return (
+              scrollTriggerSliderSection02.end -
+              scrollTriggerSliderSection02.start +
+              70 +
+              " center"
+            );
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+            return (
+              scrollTriggerSliderSection02.end -
+              scrollTriggerSliderSection02.start +
+              500 +
+              " center"
+            );
           },
-          id: 'noteBook_section02_' + page13.title
+          id: "noteBook_section02_" + page13.title,
         },
       });
-  
-      tl.from(".book_organos", { x:+100, opacity: 0 });
+
+      tl.from(".book_organos", { x: +100, opacity: 0 });
       tl.to(".book_organos", { x: 0, opacity: 1 });
-    })
-    return () => ctx.revert()
+    });
+    return () => ctx.revert();
   }, []);
   return (
     <div className="organos">
