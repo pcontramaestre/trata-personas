@@ -8,8 +8,6 @@
   margin-bottom: 1.5vw;
 }
 
-
-
 .map__title {
   color: #004543;
   text-align: center;
@@ -32,10 +30,6 @@
   font-weight: 300;
   line-height: normal;
   margin: 0;
-}
-
-.content-accordion{
-  /* height: 150%; */
 }
 
 .map__content {

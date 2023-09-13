@@ -19,7 +19,7 @@ const BookAdopcion = ({ page8 }) => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 350 + ' center'
           },
           id: 'noteBook_section02_' + page8.title
         },
