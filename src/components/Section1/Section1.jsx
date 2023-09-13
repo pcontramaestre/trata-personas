@@ -7,7 +7,7 @@ import "./Section1.css";
 import MapSection01 from "../Map/MapSection01/MapSection01";
 import CircleGraph02 from "./CircleGraph02/CircleGraph02";
 import Women from "./Women/Women";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import WomenSlider from "../Section1/WomenSlider/WomenSlider";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -180,11 +180,69 @@ function Section1() {
       }
     );
   }, []);
+
+  useLayoutEffect(() => {
+    const scrollTriggerSliderSection01 =
+      ScrollTrigger.getById("SliderSection01");
+    const circleSlider = gsap.context(() => {
+      gsap.to(".twoslider", {
+        x: "-100vw",
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: ".twoslider",
+          // markers: true,
+          start: () => {
+            return (
+              scrollTriggerSliderSection01.end -
+              scrollTriggerSliderSection01.start +
+              -50 +
+              " top"
+            );
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section1",
+          id: "SliderCircle",
+        },
+      });
+    });
+    return () => circleSlider.revert();
+  }, []);
+
+  useLayoutEffect(() => {
+    const scrollTriggerCircle = ScrollTrigger.getById("SliderCircle");
+    const scrollTriggerSlider01 = ScrollTrigger.getById("SliderSection01");
+    const womenSlider = gsap.context(() => {
+      gsap.to(".threeslider", {
+        x: "-100vw",
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: ".threeslider",
+          // markers: true,
+          start: () => {
+            return (
+              scrollTriggerCircle.end -
+              scrollTriggerCircle.start +
+              scrollTriggerSlider01.end -
+              scrollTriggerSlider01.start +
+              -20 +
+              " top"
+            );
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section1",
+          id: "SliderCircle",
+        },
+      });
+    });
+    return () => womenSlider.revert();
+  }, []);
+
   return (
     <section id="section1" className="Section1">
       <div className="page1content">
         <div className="relleno" />
-
         <div className="page1">
           <div className="page1__images">
             <div className="page1__manos" />

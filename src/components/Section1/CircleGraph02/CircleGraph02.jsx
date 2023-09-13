@@ -48,7 +48,7 @@ const CircleGraph02 = ({ toggleSlider }) => {
           className="circlegraph02__p"
           dangerouslySetInnerHTML={{ __html: page9.foot }}
         />
-        <button onClick={toggleSlider} className="buttonslider" />
+        {/* <button onClick={toggleSlider} className="buttonslider" /> */}
       </div>
     </div>
   );

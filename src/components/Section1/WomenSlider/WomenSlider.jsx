@@ -59,7 +59,7 @@ const WomenSlider = ({ reverseWomenSlider }) => {
             </div>
           </div>
         </div>
-        <button className="buttonslider onclick" onClick={reverseWomenSlider} />
+        {/* <button className="buttonslider onclick" onClick={reverseWomenSlider} /> */}
       </div>
     </div>
   );
