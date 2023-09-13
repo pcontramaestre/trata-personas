@@ -24,6 +24,10 @@ import './App.css'
 
 function App () {
   const [show, setShow] = useState('instructions')
+  const [autoPlay, setAutoPlay] = useState({
+    audio1_0: true,
+    audio1_3: true
+  })
   const currentScroll = useRef(0)
 
   useEffect(() => {
@@ -96,7 +100,7 @@ function App () {
       <Section7 />
       <Section8 />
       <Section9 />
-      <Audios></Audios>
+      <Audios play={{autoPlay, setAutoPlay}} />
       {/* <Index /> */}
     </main>
   )
