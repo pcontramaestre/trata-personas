@@ -14,6 +14,8 @@ import Section9 from './components/Section9/Section9'
 // import Index from './components/Index/Index'
 import menuBlancoImg from './assets/Header/menu-blanco.png'
 import ToHome from './components/ToHome/ToHome'
+import Audios from './components/Audios/Audios'
+
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
@@ -94,6 +96,7 @@ function App () {
       <Section7 />
       <Section8 />
       <Section9 />
+      <Audios></Audios>
       {/* <Index /> */}
     </main>
   )

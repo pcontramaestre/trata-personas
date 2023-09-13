@@ -1,0 +1,22 @@
+.audio {
+    position: fixed;
+    width: 3.017vw;
+    height: 2.083vw;
+    z-index: 5;
+}
+
+.audio:hover {
+    cursor: pointer;
+}
+
+.audio1_0 {
+    /* top: 8.75vw; */
+    top: 20%;
+    left: 94.27vw;
+}
+
+.audio1_3 {
+    /* top: 53.96vw; */
+    top: 75%;
+    left: 92.24vw;
+}

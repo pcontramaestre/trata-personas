@@ -58,17 +58,17 @@ function BackgroundComponent() {
                 </div>
               </div>
             </a>
-            <div className="cuadro2-style style-hover">
-              <a
-                href="https://www.coalicioncorett.com/_files/ugd/001469_8df1a7bc00b847ee8f42562ca2318465.pdf"
-                target="_blank"
-              >
+            <a
+              href="https://www.coalicioncorett.com/_files/ugd/001469_8df1a7bc00b847ee8f42562ca2318465.pdf"
+              target="_blank"
+            >
+              <div className="cuadro2-style style-hover">
                 <div className="cuadro2-text">
                   <h2 className="cuadro2-subtitle">{page1.squareTitle2}</h2>
                   <p className="cuadro2-description">{page1.squareContent2}</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
           <div className="container-square">
             <a
@@ -100,7 +100,10 @@ function BackgroundComponent() {
                 </div>
               </div>
             </a>
-            <a href="https://treaties.un.org/doc/Treaties/2000/11/20001115%2011-38%20AM/Ch_XVIII_12_ap.pdf" target="_blank">
+            <a
+              href="https://treaties.un.org/doc/Treaties/2000/11/20001115%2011-38%20AM/Ch_XVIII_12_ap.pdf"
+              target="_blank"
+            >
               <div className="cuadro6-style style-hover">
                 <div className="cuadro6-text">
                   <h2 className="cuadro6-title">{page1.squareTitle6}</h2>
@@ -110,93 +113,137 @@ function BackgroundComponent() {
             </a>
           </div>
           <div className="container-square">
-          <a href="https://www.unodc.org/documents/congress/background-information/Human_Trafficking/UNODC_2015_Issue_Paper_Exploitation.pdf" target="_blank">
-            <div className="cuadro7-style style-hover">
-              <div className="cuadro7-text">
-                <h2 className="cuadro7-title">{page1.squareTitle7}</h2>
-                <p className="cuadro7-description">{page1.squareContent7}</p>
+            <a
+              href="https://www.unodc.org/documents/congress/background-information/Human_Trafficking/UNODC_2015_Issue_Paper_Exploitation.pdf"
+              target="_blank"
+            >
+              <div className="cuadro7-style style-hover">
+                <div className="cuadro7-text">
+                  <h2 className="cuadro7-title">{page1.squareTitle7}</h2>
+                  <p className="cuadro7-description">{page1.squareContent7}</p>
+                </div>
               </div>
-            </div>
             </a>
-          <a href="https://www.unodc.org/toc/es/crimes/human-trafficking.html" target="_blank">
-            <div className="cuadro8-style style-hover">
-              <div className="cuadro8-text">
-                <h2 className="cuadro8-title">{page1.squareTitle8}</h2>
-                <p className="cuadro8-description">{page1.squareContent8}</p>
+            <a
+              href="https://www.unodc.org/toc/es/crimes/human-trafficking.html"
+              target="_blank"
+            >
+              <div className="cuadro8-style style-hover">
+                <div className="cuadro8-text">
+                  <h2 className="cuadro8-title">{page1.squareTitle8}</h2>
+                  <p className="cuadro8-description">{page1.squareContent8}</p>
+                </div>
               </div>
-            </div>
-            </a>
-          </div>
-          <div className="container-square">
-          <a href="https://www.un.org/es/observances/end-human-trafficking-day" target="_blank">
-            <div className="cuadro9-style style-hover">
-              <div className="cuadro9-text">
-                <h2 className="cuadro9-title">{page1.squareTitle9}</h2>
-                <p className="cuadro9-description">{page1.squareContent9}</p>
-              </div>
-            </div>
-            </a>
-          <a href="https://www.ohchr.org/sites/default/files/Documents/Publications/FS36_sp.pdf" target="_blank">
-            <div className="cuadro10-style style-hover">
-              <div className="cuadro10-text">
-                <h2 className="cuadro10-title">{page1.squareTitle10}</h2>
-                <p className="cuadro10-description">{page1.squareContent10}</p>
-              </div>
-            </div>
             </a>
           </div>
           <div className="container-square">
-          <a href="https://www.ilo.org/dyn/normlex/es/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C029" target="_blank">
-            <div className="cuadro11-style style-hover">
-              <div className="cuadro11-text">
-                <h2 className="cuadro11-title">{page1.squareTitle11}</h2>
-                <p className="cuadro11-description">{page1.squareContent11}</p>
+            <a
+              href="https://www.un.org/es/observances/end-human-trafficking-day"
+              target="_blank"
+            >
+              <div className="cuadro9-style style-hover">
+                <div className="cuadro9-text">
+                  <h2 className="cuadro9-title">{page1.squareTitle9}</h2>
+                  <p className="cuadro9-description">{page1.squareContent9}</p>
+                </div>
               </div>
-            </div>
             </a>
-          <a href="https://publications.iom.int/system/files/pdf/iml-34-glossary-es.pdf" target="_blank">
-            <div className="cuadro12-style style-hover">
-              <div className="cuadro12-text">
-                <h2 className="cuadro12-title">{page1.squareTitle12}</h2>
-                <p className="cuadro12-description">{page1.squareContent12}</p>
+            <a
+              href="https://www.ohchr.org/sites/default/files/Documents/Publications/FS36_sp.pdf"
+              target="_blank"
+            >
+              <div className="cuadro10-style style-hover">
+                <div className="cuadro10-text">
+                  <h2 className="cuadro10-title">{page1.squareTitle10}</h2>
+                  <p className="cuadro10-description">
+                    {page1.squareContent10}
+                  </p>
+                </div>
               </div>
-            </div>
-            </a>
-          </div>
-          <div className="container-square">
-          <a href="https://www.iom.int/es/dia-mundial-contra-la-trata-de-personas-2022" target="_blank">
-            <div className="cuadro13-style style-hover">
-              <div className="cuadro13-text">
-                <h2 className="cuadro13-title">{page1.squareTitle13}</h2>
-                <p className="cuadro13-description">{page1.squareContent13}</p>
-              </div>
-            </div>
-            </a>
-          <a href="https://www.iom.int/es/video/dia-mundial-contra-la-trata-de-personas-2022-trafico-de-cifras" target="_blank">
-            <div className="cuadro14-style style-hover">
-              <div className="cuadro14-text">
-                <h2 className="cuadro14-title">{page1.squareTitle14}</h2>
-                <p className="cuadro14-description">{page1.squareContent14}</p>
-              </div>
-            </div>
             </a>
           </div>
           <div className="container-square">
-          <a href="https://colombia.iom.int/es/lucha-contra-la-trata-de-personas" target="_blank">
-            <div className="cuadro15-style style-hover">
-              <div className="cuadro15-text">
-                <h2 className="cuadro15-title">{page1.squareTitle15}</h2>
-                <p className="cuadro15-description">{page1.squareContent15}</p>
+            <a
+              href="https://www.ilo.org/dyn/normlex/es/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C029"
+              target="_blank"
+            >
+              <div className="cuadro11-style style-hover">
+                <div className="cuadro11-text">
+                  <h2 className="cuadro11-title">{page1.squareTitle11}</h2>
+                  <p className="cuadro11-description">
+                    {page1.squareContent11}
+                  </p>
+                </div>
               </div>
-            </div>
             </a>
-          <a href="https://rosanjose.iom.int/es/blogs/las-victimas-lgbtiq-de-la-trata-de-personas" target="_blank">
-            <div className="cuadro16-style style-hover">
-              <div className="cuadro16-text">
-                <h2 className="cuadro16-title">{page1.squareTitle16}</h2>
-                <p className="cuadro16-description">{page1.squareContent16}</p>
+            <a
+              href="https://publications.iom.int/system/files/pdf/iml-34-glossary-es.pdf"
+              target="_blank"
+            >
+              <div className="cuadro12-style style-hover">
+                <div className="cuadro12-text">
+                  <h2 className="cuadro12-title">{page1.squareTitle12}</h2>
+                  <p className="cuadro12-description">
+                    {page1.squareContent12}
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
+          </div>
+          <div className="container-square">
+            <a
+              href="https://www.iom.int/es/dia-mundial-contra-la-trata-de-personas-2022"
+              target="_blank"
+            >
+              <div className="cuadro13-style style-hover">
+                <div className="cuadro13-text">
+                  <h2 className="cuadro13-title">{page1.squareTitle13}</h2>
+                  <p className="cuadro13-description">
+                    {page1.squareContent13}
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.iom.int/es/video/dia-mundial-contra-la-trata-de-personas-2022-trafico-de-cifras"
+              target="_blank"
+            >
+              <div className="cuadro14-style style-hover">
+                <div className="cuadro14-text">
+                  <h2 className="cuadro14-title">{page1.squareTitle14}</h2>
+                  <p className="cuadro14-description">
+                    {page1.squareContent14}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="container-square">
+            <a
+              href="https://colombia.iom.int/es/lucha-contra-la-trata-de-personas"
+              target="_blank"
+            >
+              <div className="cuadro15-style style-hover">
+                <div className="cuadro15-text">
+                  <h2 className="cuadro15-title">{page1.squareTitle15}</h2>
+                  <p className="cuadro15-description">
+                    {page1.squareContent15}
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://rosanjose.iom.int/es/blogs/las-victimas-lgbtiq-de-la-trata-de-personas"
+              target="_blank"
+            >
+              <div className="cuadro16-style style-hover">
+                <div className="cuadro16-text">
+                  <h2 className="cuadro16-title">{page1.squareTitle16}</h2>
+                  <p className="cuadro16-description">
+                    {page1.squareContent16}
+                  </p>
+                </div>
+              </div>
             </a>
           </div>
         </div>
