@@ -20,10 +20,10 @@ const Organos = () => {
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 70 + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 600 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
           },
           id: 'noteBook_section02_' + page13.title
         },

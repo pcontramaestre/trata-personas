@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import data from "../../../../trataSection01.json";
@@ -13,7 +13,7 @@ const MapSection01 = () => {
 
   const secondAccordionRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const secondAccordion = secondAccordionRef.current;
     const timeline = gsap.timeline();
     gsap.registerPlugin(ScrollTrigger);
