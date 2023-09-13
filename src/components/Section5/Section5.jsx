@@ -203,15 +203,18 @@ function Animation () {
         scrollTrigger: {
           trigger: '#busPlaneContainerSection5',
           // markers: true,
-          start: () => {
-            return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' ' + topPosition()
-          },
-          end: () => {
-            return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'
-          },
+          // start: () => {
+          //   return scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 200 + ' ' + topPosition()
+          // },
+          // end: () => {
+          //   return (scrollTriggerFrontPageSection5.end - scrollTriggerFrontPageSection5.start + 4000) + ' bottom'
+          // },
+          start: 'top+=200 ' + topPosition(),
+          end: 'bottom+=4000 bottom',
           pin: '#section5',
           scrub: 1,
-          id: 'plane&bus'
+          id: 'plane&bus',
+          pinnedContainer: '#section5'
         }
       })
 

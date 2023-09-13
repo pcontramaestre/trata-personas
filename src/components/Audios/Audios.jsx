@@ -49,7 +49,6 @@ function Audios () {
             })
             gsap.from(`.${style.audio1_3}`, {
                 y: window.innerHeight,
-                opacity: 0,
                 scrollTrigger: {
                     trigger: '#section3',
                     // markers: true,
@@ -57,7 +56,7 @@ function Audios () {
                     end: 'top top',
                     scrub: 1,
                     onLeave: () => {
-                        if (autoPlay) {
+                        if (autoPlay.current) {
                             playAudio('audio1_3')
                             autoPlay.current = false
                         }
