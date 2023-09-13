@@ -23,7 +23,6 @@ const grafico = useRef([]); // Create an array of refs for rows
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const ctx = gsap.context(() => {
       const textTl2 = gsap.timeline({
         scrollTrigger: {
           trigger: textRef2.current,
@@ -56,10 +55,6 @@ const grafico = useRef([]); // Create an array of refs for rows
           opacity: 0, // Establece la opacidad en 1 para que sea completamente visible
         },6
       );
- 
-  })
-
-  return () => ctx.revert()
   }, []);
 
   return (
