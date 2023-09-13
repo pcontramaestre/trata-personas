@@ -1,6 +1,5 @@
 import NoteBookSection01 from "../NoteBook/NoteBookSection01/NoteBookSection01";
 import BarGraphSection01 from "../BarGraph/BarGraphSection01/BarGraphSection01";
-import BigInfoBoxSection01 from "../BigInfoBox/BigInfoBoxSection01/BigInfoBoxSection01";
 import CircleGraph from "./CircleGraph/CircleGraph";
 import NewSection01 from "../News/NewsSection01/NewSection01";
 import data from "../../../trataSection01.json";
@@ -13,9 +12,7 @@ import WomenSlider from "../Section1/WomenSlider/WomenSlider";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import CircleGraphSlider from "./CircleGraphSlider/CircleGraphSlider";
-import InfoConsentimiento from "./InfoConsentimiento/InfoConsentimiento";
 import SliderSection01 from "../Slides/SliderSection01/SliderSection01";
-import BigInfoBox from "../BigInfoBox/BigInfoBox";
 
 function Section1() {
   const page1 = data[0].visibilizacion_victimas.page1;
