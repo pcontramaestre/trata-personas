@@ -42,7 +42,9 @@
     position: absolute;
     margin: 0px;
 }
-
+#bigCardpsicosocial{
+    opacity: 0!important;
+}
 .containerRow {
     position: absolute;
 }

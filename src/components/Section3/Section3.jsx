@@ -123,6 +123,7 @@ function Section3() {
             start: "center center",
             end: "bottom center",
             scrub: true,
+            opacity: 0
           },
   
         });
