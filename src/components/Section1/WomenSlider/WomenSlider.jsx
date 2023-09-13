@@ -1,4 +1,4 @@
-import React, { useEffect }  from "react";
+import React  from "react";
 import "./WomenSlider.css";
 import data from "../../../../trataSection01.json";
 
