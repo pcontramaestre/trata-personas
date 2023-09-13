@@ -19,6 +19,11 @@
   letter-spacing: 2.9px;
   margin: 0;
 }
+.accordion-content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
 
 .map__text1 {
   color: #ce5c3b;
@@ -42,10 +47,11 @@
 }
 
 .mapnumber02 {
+  top: -1%;
   position: absolute;
   right: -1vw;
-  width: 100%;
-  height: 100%;
+  width: 83vw;
+  height: 50vw;
 }
 
 #MX02:hover {
@@ -188,6 +194,7 @@
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  font-size: 0.85vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

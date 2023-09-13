@@ -4,8 +4,12 @@
   position: relative;
   align-items: center;
   width: 100vw;
-  height: 250vh;
+  height: auto;
+  /* height: 250vh; */
 }
+
+
+
 
 .separadorslider {
   height: 12vw;
@@ -13,7 +17,7 @@
 
 .women__content {
   width: 85%;
-  height: 90vh;
+  height: 50vw;
 }
 
 .women__title {

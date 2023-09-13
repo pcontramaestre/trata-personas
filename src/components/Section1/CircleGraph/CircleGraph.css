@@ -16,11 +16,12 @@
   width: 65vw;
 }
 
+
 .circlegraph__title {
   color: #ce5c3b;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 4.9vh;
+  font-size: 2.45vw;
   font-style: normal;
   font-weight: 700;
   /* line-height: 51px;  */
@@ -29,8 +30,7 @@
 .circlegraph__small {
   color: #1e7b85;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-size: 3.2vh;
+  font-size: 1.55vw;
   margin: 0 10px;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +64,7 @@
   width: 45%;
   text-align: start;
   font-family: Formula Condensed;
-  font-size: 7vh;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -76,7 +76,7 @@
   text-align: left;
   margin-left: 13vh;
   font-family: Formula Condensed;
-  font-size: 7vh;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -87,7 +87,7 @@
   color: #1a6063;
   text-align: left;
   font-family: Formula Condensed;
-  font-size: 7vh;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -97,7 +97,7 @@
   width: 23vw;
   color: #1a6063;
   font-family: "Inter", sans-serif;
-  font-size: 2.5vh;
+  font-size: 1.25vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -106,7 +106,7 @@
 .circlegraph__p strong {
   color: #1a6063;
   font-family: "Inter", sans-serif;
-  font-size: 2.5vh;
+  font-size: 1.25vw;
   /* font-size: 30; */
   font-style: normal;
   font-weight: 700;
@@ -116,7 +116,7 @@
 .circlegraph__p h3 {
   color: #1a6063;
   font-family: Formula Condensed;
-  font-size: 4.5vh;
+  font-size: 2.25vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -179,7 +179,8 @@
 .list__color-text1 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 3.75vh;
+
+  font-size: 1.9vw;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -190,7 +191,7 @@
 .list__color-text2 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 3.75vh;
+  font-size: 1.9vw;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -198,10 +199,12 @@
   margin: 0 10px;
 }
 
+
+
 .list__color-text3 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 3.75vh;
+  font-size: 1.9vw;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -307,13 +310,13 @@
   .circlegraph__percentage3 {
     font-size: 1.5em;
   }
-  .list__color-text1{
+  .list__color-text1 {
     font-size: 1em;
   }
-  .list__color-text2{
+  .list__color-text2 {
     font-size: 1em;
   }
-  .list__color-text3{
+  .list__color-text3 {
     font-size: 1em;
   }
 }
@@ -323,4 +326,3 @@
   height: 100vh;
   background-color: #cff9ff;
 }
-
