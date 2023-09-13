@@ -40,7 +40,7 @@ function Audios () {
                 opacity: 0,
                 scrollTrigger: {
                     trigger: '#section3',
-                    markers: true,
+                    // markers: true,
                     start: 'top bottom',
                     end: 'top top',
                     scrub: 1,
@@ -52,7 +52,7 @@ function Audios () {
                 opacity: 0,
                 scrollTrigger: {
                     trigger: '#section3',
-                    markers: true,
+                    // markers: true,
                     start: 'top bottom',
                     end: 'top top',
                     scrub: 1,
