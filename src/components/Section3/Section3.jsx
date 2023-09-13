@@ -265,8 +265,6 @@ function Section3() {
     return () => ctx.revert()
   }, []);
 
-  const [nameBigCard, setNameBigCard] = useState("");
-
   useEffect(() => {
     
     if (smallInfoBox) {
