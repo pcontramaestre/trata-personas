@@ -18,22 +18,11 @@ import botas1 from "../../assets/Img-Section02/Page01/botas1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import InfoConsentimiento from "../Section1/InfoConsentimiento/InfoConsentimiento";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Section2() {
   const page1 = data[0].finalidades.page1;
-  const imagenMenTrembling = gsap.to(".page2__imagemen", {
-    x: "+=10", // Cambia el valor según la intensidad que desees para el temblor
-    repeat: -1, // Repite la animación indefinidamente
-    yoyo: true, // Hace que la animación vuelva a su posición original en cada repetición
-    ease: "power1.inOut", // Easing para suavizar el temblor
-  });
-  ScrollTrigger.create({
-    trigger: ".page2__imagemen", // Selector del elemento que desencadenará la animación
-    start: "top center", // Puedes ajustar esta configuración según tus necesidades
-    end: "bottom center",
-    animation: imagenMenTrembling,
-  });
 
   return (
     <section id="section2" className="Section02">

@@ -41,8 +41,7 @@
   left: 0vw;
   width: 48%;
   height: 80%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  object-fit: contain;
 }
 
 @keyframes shake {
