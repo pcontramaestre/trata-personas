@@ -38,16 +38,16 @@ const ExplotacionSexual = () => {
       }
     );
 
-    graficoTl.fromTo(
-      grafico.current,
-      {
-        opacity: 1,
-      },
-      {
-        opacity: 0,
-      },4
+    // graficoTl.fromTo(
+    //   grafico.current,
+    //   {
+    //     opacity: 1,
+    //   },
+    //   {
+    //     opacity: 0,
+    //   },4
       
-    );
+    // );
   }, []);
   return (
     <div className="explotacion__content">
