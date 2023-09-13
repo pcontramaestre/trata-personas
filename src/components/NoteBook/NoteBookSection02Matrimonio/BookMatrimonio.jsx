@@ -18,7 +18,7 @@ const BookMatrimonio = ({ page9 }) => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 500 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 400 + ' center'
           },
           id: 'noteBook_section02_' + page9.title
         },

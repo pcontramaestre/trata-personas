@@ -17,20 +17,35 @@ const NewSection01 = () => {
 
     // Configura la animación inicial
     gsap.set(newsCards, { x: "+100%" });
-
+    const scrollTriggerBarGraph = ScrollTrigger.getById("SliderSection01");
     // Crea la animación para mostrar las tarjetas juntas en pantalla
     gsap.to(newsCards, {
       x: "0%",
       stagger: 0.5, // Retraso entre animaciones individuales
       ease: "power2.out", // Easing de la animación
-      duration: 5, // Duración de la animación
+      duration: 4, // Duración de la animación
+      markers: true,
       scrollTrigger: {
-        trigger: '.news__content', // Elemento que desencadena el ScrollTrigger
-        start: 'top 90%', // Comienza la animación cuando el 80% superior del elemento es visible
-        end: 'bottom 90%', // Termina la animación cuando el 20% inferior del elemento es visible
-        scrub: true// Activa el "scrubbing" para una animación suave al hacer scroll
-      }
-
+        trigger: ".news__content", // Elemento que desencadena el ScrollTrigger
+        start: () => {
+          return (
+            scrollTriggerBarGraph.end -
+            scrollTriggerBarGraph.start +
+            -100 +
+            " center"
+          );
+        },
+        // start: "top", // Comienza la animación cuando el centro de la ventana de visualización alcanza el inicio del trigger
+        end: () => {
+          return (
+            scrollTriggerBarGraph.end -
+            scrollTriggerBarGraph.start +
+            250 +
+            " center"
+          );
+        },
+        scrub: true, // Activa el "scrubbing" para una animación suave al hacer scroll
+      },
     });
   }, []);
 

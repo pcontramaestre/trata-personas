@@ -16,10 +16,10 @@ const BookEsclavitud = ({page10}) => {
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 200 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 700 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 400 + ' center'
           },
           id: 'noteBook_section02_' + page10.title
         },

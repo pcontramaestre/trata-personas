@@ -19,7 +19,7 @@ const BookIlicitas = ({ page12 }) => {
             return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 600 + ' center'
+            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 250 + ' center'
           },
           id: 'noteBook_section02_' + page12.title
         },

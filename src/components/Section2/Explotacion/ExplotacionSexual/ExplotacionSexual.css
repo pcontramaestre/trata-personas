@@ -102,22 +102,19 @@
 }
 
 .womenloading__graphicquemado {
-  display: none;
+  /* display: none; */
   position: absolute;
   right: 0;
-  background-image: url("../../../../assets/Img-Section02/Page04/graficoquemado.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: contain;
   width: 50%;
   height: 80vh;
   z-index: 6;
 }
 
-.womenloading__img:hover + .womenloading__graphicquemado {
+/* .womenloading__img:hover + .womenloading__graphicquemado {
   display: flex;
   cursor: pointer;
-}
+} */
 
 .womenloading__graphicquemado:hover {
   display: flex;

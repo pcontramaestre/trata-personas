@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 180vh;
   width: 100vw;
   margin-bottom: 1.5vw;
 }
@@ -38,7 +38,7 @@
   justify-content: center;
   margin-top: 20px;
   width: 100vw;
-  height: 120%;
+  height: 75%;
 }
 
 .mapnumber02 {
@@ -132,20 +132,20 @@
 .percentage1 {
   width: 4.2em;
   height: 1.3em;
-  background-image:url("../../../assets/Img-Section01/Page05/percentage1.jpg") ; 
+  background-image: url("../../../assets/Img-Section01/Page05/percentage1.jpg");
 }
 
 .percentage2 {
   width: 4.2em;
   height: 1.3em;
-  background-image:url("../../../assets/Img-Section01/Page05/percentage2.jpg") ; 
+  background-image: url("../../../assets/Img-Section01/Page05/percentage2.jpg");
 }
 
 .percentage3 {
   width: 4.2em;
   height: 1.3em;
   background: #081d20;
-  background-image:url("../../../assets/Img-Section01/Page05/percentage3.jpg") ; 
+  background-image: url("../../../assets/Img-Section01/Page05/percentage3.jpg");
 }
 
 .percentage__number {
