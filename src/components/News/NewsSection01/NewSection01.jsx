@@ -25,7 +25,7 @@ const NewSection01 = () => {
       stagger: 0.5, // Retraso entre animaciones individuales
       ease: "power2.out", // Easing de la animación
       duration: 4, // Duración de la animación
-      markers: true,
+      // markers: true,
       scrollTrigger: {
         trigger: ".news__content", // Elemento que desencadena el ScrollTrigger
         start: () => {
