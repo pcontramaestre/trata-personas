@@ -61,6 +61,7 @@
   justify-content: space-evenly;
   z-index: 20;
   height: 27.5vw;
+  overflow: hidden;
   /* width: 100vw; */
 }
 
