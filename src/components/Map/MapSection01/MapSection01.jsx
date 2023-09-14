@@ -18,9 +18,7 @@ const MapSection01 = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".content-accordion",
-
           // markers: true,
-
           start: () => {
             return scrollSlider01.end - scrollSlider01.start + "top";
           },
@@ -32,11 +30,44 @@ const MapSection01 = () => {
         },
       });
       tl.to(".accordion-contentinfo", {
-        y: "-40vw",
-        ease: "power2.in",
+        // y: "-40vw",
+        // ease: "power2.in",
       });
     });
     return () => animateGraphic.revert();
+  }, []);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const scrollMap = ScrollTrigger.getById("mapPinned");
+    const scrollSlider01 = ScrollTrigger.getById("SliderSection01");
+    const tlinfo = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".accordion-contentinfo",
+        // markers: true,
+        start: () => {
+          return (
+            scrollMap.end -
+            scrollMap.start +
+            scrollSlider01.end -
+            scrollSlider01.start + -200 +
+            " center"
+          );
+        },
+        end: () => {
+          return (
+            scrollMap.end -
+            scrollMap.start +
+            scrollSlider01.end -
+            scrollSlider01.start +
+            " center"
+          );
+        },
+        scrub: true,
+      },
+    });
+    tlinfo.from(".accordion-contentinfo", { y: +100, opacity: 0 });
+    tlinfo.to(".accordion-contentinfo", { y: 0, opacity: 1 });
   }, []);
 
   const mapsID = [

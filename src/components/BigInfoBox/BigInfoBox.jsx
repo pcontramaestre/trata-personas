@@ -1,7 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import style from './BigInfoBox.module.css'
 import group from '../../assets/Instructions/group.svg'
 import gratinBeish from '../../assets/BigInfoBox/gratinBeish.png'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const backgroundStyles = {
   gratinBeish
@@ -13,8 +18,25 @@ function convertSize (input) {
 }
 
 function BigInfoBox ({ bigInfoBox, topSection }) {
-
   if (!bigInfoBox) return null
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(`#${bigInfoBox.name}`, {
+        y: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: `#${bigInfoBox.name}`,
+          // markers: true,
+          start: 'top bottom',
+          end: 'bottom bottom',
+          scrub: 1,
+          pinnedContainer: `#${bigInfoBox.name.split('_')[1]}`
+        }
+      })
+    })
+    return () => ctx.revert()
+  }, [])
 
   useEffect(() => {
     if (bigInfoBox && bigInfoBox.icons) {
@@ -102,7 +124,7 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
     : {}
 
   return (
-    <div name={bigInfoBox.name} className={style.BigInfoBox} style={bigInfoBoxStyle}>
+    <div id={bigInfoBox.name} name={bigInfoBox.name} className={style.BigInfoBox} style={bigInfoBoxStyle}>
       <div className={style.BigInfoBoxBar} style={barInfoBox} />
       {
         bigInfoBox.icons

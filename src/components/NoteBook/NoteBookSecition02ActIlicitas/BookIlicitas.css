@@ -6,11 +6,11 @@
 .NoteBook09 {
   background: url("../../../assets/Img-Section01/Page03/hoja.png");
   background-repeat: no-repeat;
-  background-size: 44vw;
+  background-size: 38vw;
   height: 100%;
-  transform: rotate(-1.362deg);
+  transform: rotate(-2.362deg);
   left: 8vw;
-  top: 60vh;
+  top: 28vw;
   position: absolute;
   z-index: 90;
 }
@@ -24,8 +24,8 @@
   align-content: center;
   transform: rotate(4deg);
   text-align: center;
-  margin-left: 11.5vw;
-  margin-top: 19.5vh;
+  margin-left: 9vw;
+  margin-top: 8.5vw;
   font-style: normal;
   width: 26%;
 }
