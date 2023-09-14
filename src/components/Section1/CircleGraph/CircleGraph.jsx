@@ -11,12 +11,15 @@ const CircleGraph = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const scrollTriggerBarGraph = ScrollTrigger.getById("SliderSection01");
+    const scrollMap = ScrollTrigger.getById("mapPinned");
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".circlegraph", // Cambia el selector si es necesario
         // markers: true,
         start: () => {
           return (
+            scrollMap.end -
+            scrollMap.start +
             scrollTriggerBarGraph.end -
             scrollTriggerBarGraph.start +
             100 +
@@ -25,6 +28,8 @@ const CircleGraph = () => {
         },
         end: () => {
           return (
+            scrollMap.end -
+            scrollMap.start +
             scrollTriggerBarGraph.end -
             scrollTriggerBarGraph.start +
             250 +
