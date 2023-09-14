@@ -7,26 +7,41 @@ const BookLaboral = ({ page6 }) => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const scrollSexual = ScrollTrigger.getById("explotacionSexual");
+      const scrollTriggerSliderSection02 =
+        ScrollTrigger.getById("SliderSection02");
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".NoteBook03",
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+            return (
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollTriggerSliderSection02.end -
+              scrollTriggerSliderSection02.start +
+              " center"
+            );
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
+            return (
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollTriggerSliderSection02.end -
+              scrollTriggerSliderSection02.start +
+              100 +
+              " center"
+            );
           },
-          id: 'noteBook_section02_' + page6.title
+          id: "noteBook_section02_" + page6.title,
         },
       });
-  
+
       tl.from(".NoteBook03", { x: +100, opacity: 0 });
       tl.to(".NoteBook03", { x: 0, opacity: 1 });
-    })
-    return () => ctx.revert()
+    });
+    return () => ctx.revert();
   }, []);
 
   return (

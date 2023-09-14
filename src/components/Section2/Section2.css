@@ -5,6 +5,7 @@
   position: relative;
   margin-top: 10vh;
   width: 100vw;
+  height: max-content;
   background: #fefff3;
   /* z-index: 1 !important; */
 }

@@ -7,28 +7,66 @@ const BookIlicitas = ({ page12 }) => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
+      const scrollSexual = ScrollTrigger.getById("explotacionSexual");
+      const scrollLaboral = ScrollTrigger.getById("explotacionLaboral");
+      const scrollMendicidad = ScrollTrigger.getById("mendicidadForzada");
+      const scrollAdopcion = ScrollTrigger.getById("trataAdopcion");
+      const scrollMatrimonio = ScrollTrigger.getById("trataMatrimonio");
+      const scrollEsclavitud = ScrollTrigger.getById("trataEsclavitud");
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".NoteBook09",
-          // start: "top 95%",
-          // end: "bottom 55%",
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 100 + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              scrollMendicidad.end -
+              scrollMendicidad.start +
+              scrollAdopcion.end -
+              scrollAdopcion.start +
+              scrollMatrimonio.end -
+              scrollMatrimonio.start +
+              scrollEsclavitud.end -
+              scrollEsclavitud.start +
+              100 +
+              " center"
+            );
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 250 + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              scrollMendicidad.end -
+              scrollMendicidad.start +
+              scrollAdopcion.end -
+              scrollAdopcion.start +
+              scrollMatrimonio.end -
+              scrollMatrimonio.start +
+              scrollEsclavitud.end -
+              scrollEsclavitud.start +
+              250 +
+              " center"
+            );
           },
-          id: 'noteBook_section02_' + page12.title
+          id: "noteBook_section02_" + page12.title,
         },
       });
-  
+
       tl.from(".NoteBook09", { x: -100, opacity: 0 });
       tl.to(".NoteBook09", { x: 0, opacity: 1 });
-    })
-    return () => ctx.revert()
+    });
+    return () => ctx.revert();
   }, []);
   return (
     <div className="NoteBook09">

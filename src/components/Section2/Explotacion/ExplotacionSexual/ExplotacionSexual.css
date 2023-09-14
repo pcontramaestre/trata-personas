@@ -104,7 +104,7 @@
 .womenloading__graphicquemado {
   /* display: none; */
   position: absolute;
-  right: 0;
+  right: -100vw;
   object-fit: contain;
   width: 50%;
   height: 80vh;
@@ -116,10 +116,10 @@
   cursor: pointer;
 } */
 
-.womenloading__graphicquemado:hover {
+/* .womenloading__graphicquemado:hover {
   display: flex;
   cursor: pointer;
-}
+} */
 
 .womengraphic__background {
   display: none;

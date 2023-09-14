@@ -7,26 +7,46 @@ const BookMedicina = ({ page7 }) => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
+      const scrollSexual = ScrollTrigger.getById("explotacionSexual");
+      const scrollLaboral = ScrollTrigger.getById("explotacionLaboral");
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".NoteBook05",
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              100 +
+              " center"
+            );
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 200 + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              400 +
+              " center"
+            );
           },
-          id: 'noteBook_section02_' + page7.title
+          id: "noteBook_section02_" + page7.title,
         },
       });
-  
+
       tl.from(".NoteBook05", { x: +100, opacity: 0 });
       tl.to(".NoteBook05", { x: 0, opacity: 1 });
-    })
-    return () => ctx.revert()
+    });
+    return () => ctx.revert();
   }, []);
   return (
     <div className="NoteBook05">
