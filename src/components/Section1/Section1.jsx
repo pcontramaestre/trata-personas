@@ -184,6 +184,7 @@ function Section1() {
   useLayoutEffect(() => {
     const scrollTriggerSliderSection01 =
       ScrollTrigger.getById("SliderSection01");
+    const scrollMap = ScrollTrigger.getById("mapPinned");
     const circleSlider = gsap.context(() => {
       gsap.to(".twoslider", {
         x: "-100vw",
@@ -195,6 +196,8 @@ function Section1() {
             return (
               scrollTriggerSliderSection01.end -
               scrollTriggerSliderSection01.start +
+              scrollMap.end -
+              scrollMap.start +
               -30 +
               "top"
             );
@@ -212,6 +215,7 @@ function Section1() {
   useLayoutEffect(() => {
     const scrollTriggerCircle = ScrollTrigger.getById("SliderCircle");
     const scrollTriggerSlider01 = ScrollTrigger.getById("SliderSection01");
+    const scrollMap = ScrollTrigger.getById("mapPinned");
     const womenSlider = gsap.context(() => {
       gsap.to(".threeslider", {
         x: "-100vw",
@@ -221,6 +225,8 @@ function Section1() {
           // markers: true,
           start: () => {
             return (
+              scrollMap.end -
+              scrollMap.start +
               scrollTriggerCircle.end -
               scrollTriggerCircle.start +
               scrollTriggerSlider01.end -

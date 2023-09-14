@@ -19,7 +19,7 @@
   letter-spacing: 2.9px;
   margin: 0;
 }
-.accordion-content{
+.accordion-content {
   display: flex;
   justify-content: start;
   align-items: start;
@@ -168,7 +168,7 @@
   align-items: center;
   align-content: center;
   position: absolute;
-  bottom: 20vh;
+  bottom: 8vw;
 }
 
 .map__foot-text {
