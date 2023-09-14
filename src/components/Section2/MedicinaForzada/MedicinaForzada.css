@@ -19,10 +19,10 @@
 }
 
 .medicina__graficoquemado {
-  display: none;
+  display: flex;
   position: absolute;
-  top: 15vh;
-  left: 0;
+  top: 10vw;
+  left: -100vw;
   background-image: url("../../../assets/Img-Section02/Page07/mendicidadquemado.png");
   background-size: contain;
   background-position: center;
@@ -30,7 +30,6 @@
   width: 50%;
   height: 80vh;
 }
-
 
 .medicina__title {
   color: var(--verde-claro-textos, #006873);
@@ -53,18 +52,6 @@
   width: 40vw;
   position: absolute;
   z-index: 1;
-}
-
-.pills__img:hover + .medicina__graficoquemado{
-  display: flex;
-  z-index: 22;
-  cursor: pointer;
-}
-
-.medicina__graficoquemado:hover{
-  display: block;
-  cursor: pointer;
-  z-index: 99;
 }
 
 @media screen and (max-width: 720px) {

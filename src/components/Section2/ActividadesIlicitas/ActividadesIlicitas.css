@@ -46,10 +46,10 @@
 }
 
 .ilicitasquemado{
-  display: none;
+  display: block;
   position: absolute;
-  top: 45vh;
-  right: 0;
+  top: 22vw;
+  right: -100vw;
   background-image: url("../../../assets/Img-Section02/Page12/ilicitasquemado.png");
   background-size: contain;
   background-position: center;
@@ -59,12 +59,3 @@
   z-index: 99;
 }
 
-.actividades__img:hover + .ilicitasquemado{
-  display: flex;
-  cursor: pointer;
-}
-.ilicitasquemado:hover{
-  display: flex;
-  z-index: 99;
-  cursor: pointer;
-}

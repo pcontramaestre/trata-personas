@@ -240,6 +240,14 @@
         "left": "965.29px",
         "position": "absolute",
         "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
+      },
+      {
+        "name": "audio1",
+        "width": "57.93px",
+        "height": "40px",
+        "top": "168px",
+        "left": "94.27vw",
+        "position": "absolute"
       }
     ],
     "text": [
@@ -5082,7 +5090,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#006873"
@@ -5129,7 +5137,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#006873"
@@ -5176,7 +5184,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#006873"
@@ -5223,7 +5231,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#B3F3FD"
@@ -5270,7 +5278,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#006873"
@@ -5317,7 +5325,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#006873"
@@ -5364,7 +5372,7 @@
           "fontFamily": "Formula Condensed",
           "fontSize": "4.7vw",
           "fontWeight": "300",
-          "lineHeight": "102.5px",
+          "lineHeight": "5.35vw",
           "letterSpacing": "0em",
           "textAlign": "left",
           "color": "#006873"
