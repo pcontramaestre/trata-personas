@@ -18,7 +18,7 @@ const MapSection01 = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".content-accordion",
-          markers: true,
+          // markers: true,
           start: () => {
             return scrollSlider01.end - scrollSlider01.start + "top";
           },
