@@ -29,7 +29,11 @@ function Section2() {
       <InfoConsentimiento />
       <div className="page2content">
         <div className="page2__imagesbackground">
-          <img className="page2__imagemen animation-image" src={persona1} alt="" />
+          <img
+            className="page2__imagemen animation-image"
+            src={persona1}
+            alt=""
+          />
           <div className="page2__sombreromen" />
           <img className="page2__botas animation-image2" src={botas1} alt="" />
         </div>

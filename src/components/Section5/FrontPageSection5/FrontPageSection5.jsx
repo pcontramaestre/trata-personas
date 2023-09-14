@@ -51,14 +51,6 @@ function FrontPageSection5 ({ frontPageImages }) {
           end: '+=5000 bottom',
           pin: '#section5',
           scrub: 1,
-          onLeave: () => {
-            const scrollTriggerPlaneBusSection5 = ScrollTrigger.getById('plane&bus')
-            scrollTriggerPlaneBusSection5.refresh()
-          },
-          onEnter: () => {
-            const scrollTriggerTextGraphicSection5 = ScrollTrigger.getById('textGraphicAnimationSection5')
-            scrollTriggerTextGraphicSection5.refresh()
-          },
           id: 'frontPageSection5'
         }
       })

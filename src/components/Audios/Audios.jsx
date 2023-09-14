@@ -17,7 +17,7 @@ function convertSize (input) {
     return (n * 100 / 1920) + 'vw'
   }
 
-function Audios () {
+function Audios ({play}) {
 
     const [audioPlaying, setAudioPlaying] = useState({
         audio1_0: false,
@@ -56,9 +56,13 @@ function Audios () {
                     end: 'top top',
                     scrub: 1,
                     onLeave: () => {
-                        if (autoPlay.current) {
+                        if (autoPlay.current && play.autoPlay.audio1_3) {
                             playAudio('audio1_3')
                             autoPlay.current = false
+                            play.setAutoPlay(autoPlay => ({
+                                ...autoPlay,
+                                audio1_3: false
+                            }))
                         }
                     }
                 }
@@ -68,9 +72,13 @@ function Audios () {
     }, [])
     
       useEffect(() => {
-        if (firstTimeuseEffect.current) {
+        if (firstTimeuseEffect.current && play.autoPlay.audio1_0) {
             firstTimeuseEffect.current = false
             playAudio('audio1_0')
+            play.setAutoPlay(autoPlay => ({
+                ...autoPlay,
+                audio1_0: false
+            }))
         }
       },[])
     

@@ -288,7 +288,7 @@ function Section1() {
             <Women toggleWomenSlider={toggleWomenSlider} />
           </div>
         </section>
-        <div className="endslider"></div>
+        {/* <div className="endslider"></div> */}
       </section>
       <div className="separadorslider" />
       {/* <InfoConsentimiento /> */}

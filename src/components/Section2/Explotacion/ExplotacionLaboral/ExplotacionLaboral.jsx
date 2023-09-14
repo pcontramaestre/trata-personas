@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "./ExplotacionLaboral.css";
 import data from "../../../../../trataSection02.json";
 import BookLaboral from "../../../NoteBook/NoteBookSection02Laboral/BookLaboral";
@@ -8,6 +10,37 @@ const ExplotacionLaboral = () => {
   const page6 = data[0].finalidades.page6;
   const name1 = page6.text4;
   const name2 = page6.text5;
+  useLayoutEffect(() => {
+    const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
+    const scrollSexual = ScrollTrigger.getById("explotacionSexual");
+    const animateGraphic = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".explotacion__laboral-content",
+          // markers: true,
+          start: () => {
+            return (
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              "top"
+            );
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section2",
+          pinSpacing: true,
+          id: "explotacionLaboral",
+        },
+      });
+      tl.to(".laboral__graphicquemado", {
+        x: "+100vw",
+        ease: "power2.Out",
+      });
+    });
+    return () => animateGraphic.revert();
+  }, []);
 
   return (
     <div className="explotacion__laboral">
@@ -22,7 +55,6 @@ const ExplotacionLaboral = () => {
       <div className="laboral__testimonios">
         <Testimonios laboral={true} name1={name1} name2={name2} />
       </div>
-      <div className="laboralsectiongraphic"></div>
       <div className="laboral__graphicquemado"></div>
     </div>
   );
