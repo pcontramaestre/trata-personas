@@ -47,6 +47,8 @@ const CircleGraph = () => {
         // markers: true,
         start: () => {
           return (
+            scrollMap.end -
+            scrollMap.start +
             scrollTriggerBarGraph.end -
             scrollTriggerBarGraph.start +
             200 +
@@ -55,6 +57,8 @@ const CircleGraph = () => {
         },
         end: () => {
           return (
+            scrollMap.end -
+            scrollMap.start +
             scrollTriggerBarGraph.end -
             scrollTriggerBarGraph.start +
             300 +

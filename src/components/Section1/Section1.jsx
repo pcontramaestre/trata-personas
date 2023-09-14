@@ -31,7 +31,6 @@ function Section1() {
         ease: "ease-in-out",
       }); // Cambio aquí
     } else {
-      // Si el slider está abierto, cerrarlo
       gsap.to(".text", { left: "100%", duration: 0.5, ease: "ease-in-out" }); // Cambio aquí
       gsap.to(".slidercircle", { left: 0, duration: 0.5, ease: "ease-in-out" }); // Cambio aquí
     }

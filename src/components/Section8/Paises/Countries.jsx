@@ -74,49 +74,52 @@ const Countries = () => {
     },
   ];
 
-  const animateCountry = (element, direction) => {
-    gsap.from(element, {
-      x: direction === "right" ? "100%" : "-100%",
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: "top center",
-        end: "bottom center",
-        toggleActions: "play none none reverse",
-      },
+  useEffect(() => {
+    gsap.utils.toArray(".country-card").forEach((card, index) => {
+      gsap.from(card, {
+        x: index % 2 === 0 ? "100%" : "-100%",
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: card,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none reverse",
+        },
+      });
     });
-  };
+  }, []);
 
   return (
     <div className="countries">
-      {countries.map((e, index) => (
+      {countries.map((country, index) => (
         <div
           className={`${
-            e.background === "pink"
+            country.background === "pink"
               ? "countries__backgroundrosa"
               : "countries__background"
-          } `}
+          } country-card`}
           key={index}
-          ref={(el) =>
-            animateCountry(el, e.background === "pink" ? "left" : "right")
-          }
         >
           <div className="countries__content">
             <div className="countries__name">
-              <img className="countries__img" src={e.image} />
+              <img
+                className="countries__img"
+                src={country.image}
+                alt={country.name}
+              />
               <h1
                 className={`${
-                  e.background === "pink"
+                  country.background === "pink"
                     ? "name__country rosaname"
                     : "name__country"
                 }`}
               >
-                {e.name}
+                {country.name}
               </h1>
             </div>
             <p
-              dangerouslySetInnerHTML={{ __html: e.title }}
+              dangerouslySetInnerHTML={{ __html: country.title }}
               className="text__country"
             />
           </div>
