@@ -215,7 +215,6 @@ function Section1() {
   useLayoutEffect(() => {
     const scrollTriggerCircle = ScrollTrigger.getById("SliderCircle");
     const scrollTriggerSlider01 = ScrollTrigger.getById("SliderSection01");
-    const scrollMap = ScrollTrigger.getById("mapPinned");
     const womenSlider = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -223,8 +222,6 @@ function Section1() {
           // markers: true,
           start: () => {
             return (
-              scrollMap.end -
-              scrollMap.start +
               scrollTriggerCircle.end -
               scrollTriggerCircle.start +
               scrollTriggerSlider01.end -
