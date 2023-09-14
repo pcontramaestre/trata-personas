@@ -1,7 +1,6 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
 import "./ExplotacionSexual.css";
 import data from "../../../../../trataSection02.json";
 import hand from "../../../../assets/Img-Section01/Page09/hand.svg";
@@ -14,48 +13,6 @@ const ExplotacionSexual = () => {
   const page4 = data[0].finalidades.page4;
   const name1 = data[0].finalidades.page5.video1;
   const name2 = data[0].finalidades.page5.video2;
-  const grafico = useRef([]); // Create an array of refs for rows
-  // const grafico = document.querySelector('.womenloading__graphicquemado');
-
-  const textRef2 = useRef([]);
-
-  // useLayoutEffect(() => {
-  // gsap.registerPlugin(ScrollTrigger);
-  // const textTl2 = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: textRef2.current,
-  //     start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-  //     end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-  //     scrub: true, // Hace que la animación sea suave mientras se desplaza
-  //     // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-  //   },
-  // });
-
-  // textTl2.fromTo(
-  //   textRef2.current,
-  //   {
-  //     // x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-  //     opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-  //   },
-  //   {
-  //     // x: "0%", // Lleva el elemento a su posición original (0%)
-  //     opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-  //   },
-  //   2
-  // );
-  // textTl2.fromTo(
-  //   textRef2.current,
-  //   {
-  //     // x: "0%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-  //     opacity: 1, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-  //   },
-  //   {
-  //     // x: "100%", // Lleva el elemento a su posición original (0%)
-  //     opacity: 0, // Establece la opacidad en 1 para que sea completamente visible
-  //   },
-  //   6
-  // );
-  // }, []);
 
   useLayoutEffect(() => {
     const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
@@ -106,23 +63,9 @@ const ExplotacionSexual = () => {
             <NoteBookSection02 page4={page4} />
             <img className="womenloading__img" src={womenloading} />
             <img
-              ref={textRef2}
               className="womenloading__graphicquemado"
               src={grafico1}
             />
-            {/* <div className="womenloading__graphic">
-              <h1 className="womengraphic__title">{page4.imageback.title}</h1>
-              <div className="womengraphic__background">
-                <ul className="womengrapich__years">
-                  <li>a</li>
-                  <li>ab</li>
-                  <li>abC</li>
-                </ul>
-              </div>
-              <ul>
-                <li></li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>
