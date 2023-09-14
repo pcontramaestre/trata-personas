@@ -11,41 +11,32 @@ const MapSection01 = () => {
   const page5 = data[0].visibilizacion_victimas.page5;
   const mapsIDstyles = ["MX", "GT", "BZ", "SV", "HN", "NI", "CR", "PA", "DO"];
 
-  const secondAccordionRef = useRef(null);
-
   useLayoutEffect(() => {
-    const secondAccordion = secondAccordionRef.current;
-    const timeline = gsap.timeline();
     gsap.registerPlugin(ScrollTrigger);
-    const scrollTriggerBarGraph = ScrollTrigger.getById("SliderSection01");
-    timeline.to(secondAccordion, {
-      y: "-100%", // Mueve el segundo accordion hacia arriba para que se superponga al primero
-      opacity: 1, // Hacerlo visible
-      scrollTrigger: {
-        // markers: true,
-        // pin: true,
-        trigger: "#contentaccordion", // El elemento que dispara la animación
-        start: () => {
-          return (
-            scrollTriggerBarGraph.end -
-            scrollTriggerBarGraph.start +
-            600 +
-            " center"
-          );
+    const scrollSlider01 = ScrollTrigger.getById("SliderSection01");
+    const animateGraphic = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".content-accordion",
+
+          // markers: true,
+
+          start: () => {
+            return scrollSlider01.end - scrollSlider01.start + "top";
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section1",
+          pinSpacing: true,
+          id: "mapPinned",
         },
-        // start: "top", // Comienza la animación cuando el centro de la ventana de visualización alcanza el inicio del trigger
-        end: () => {
-          return (
-            scrollTriggerBarGraph.end -
-            scrollTriggerBarGraph.start +
-            850 +
-            " center"
-          );
-        },
-        // end: "bottom", // Finaliza la animación cuando el centro de la ventana de visualización alcanza el final del trigger
-        scrub: true, // Permite que la animación se reproduzca a medida que se hace scroll
-      },
+      });
+      tl.to(".accordion-contentinfo", {
+        y: "-40vw",
+        ease: "power2.in",
+      });
     });
+    return () => animateGraphic.revert();
   }, []);
 
   const mapsID = [
@@ -121,7 +112,7 @@ const MapSection01 = () => {
             </div>
           </div>
         </div>
-        <div className="accordion-content" ref={secondAccordionRef}>
+        <div className="accordion-contentinfo">
           <BigInfoBoxSection01 />
         </div>
       </div>
