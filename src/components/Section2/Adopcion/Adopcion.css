@@ -46,7 +46,7 @@
 .adopciongraphic {
   display: flex;
   position: absolute;
-  top: 15vw;
+  top: 18vw;
   right: -100vw;
   background-image: url("../../../assets/Img-Section02/Page08/graficoadopcion.png");
   background-size: contain;
