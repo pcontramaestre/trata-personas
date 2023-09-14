@@ -215,31 +215,49 @@ function Section1() {
   useLayoutEffect(() => {
     const scrollTriggerCircle = ScrollTrigger.getById("SliderCircle");
     const scrollTriggerSlider01 = ScrollTrigger.getById("SliderSection01");
-    const scrollMap = ScrollTrigger.getById("mapPinned");
     const womenSlider = gsap.context(() => {
-      gsap.to(".threeslider", {
-        x: "-100vw",
-        ease: "power2.inOut",
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".threeslider",
           // markers: true,
-          start: () => {
-            return (
-              scrollMap.end -
-              scrollMap.start +
-              scrollTriggerCircle.end -
-              scrollTriggerCircle.start +
-              scrollTriggerSlider01.end -
-              scrollTriggerSlider01.start +
-              "top 2%"
-            );
-          },
-          end: "+=3000 bottom",
-          scrub: 3,
+          // start: () => {
+          //   return (
+          //     scrollTriggerCircle.end -
+          //     scrollTriggerCircle.start +
+          //     scrollTriggerSlider01.end -
+          //     scrollTriggerSlider01.start +
+          //     "top 2%"
+          //   );
+          // },
+          start: "top 2%",
+          end: "bottom+=3000 bottom",
+          scrub: 2,
           pin: "#section1",
           id: "SliderCircle",
-        },
-      });
+          pinnedContainer: "#section1",
+          pinSpacing: true
+        }
+      })
+
+      tl.from('.women__texts', {
+        scaleX: 0.6,
+        transformOrigin: 'left',
+        ease: "power2.out"
+      })
+      tl.from('.women__texts-content1', {
+        opacity: 0
+      }, 1)
+      tl.from('.women__texts-content2', {
+        opacity: 0
+      }, 1)
+      tl.from('.womens__img', {
+        y: 50,
+        opacity: 0
+      }, 1)
+      tl.to(".threeslider", {
+        x: "-100vw",
+        ease: "power2.inOut",
+      })
     });
     return () => womenSlider.revert();
   }, []);
