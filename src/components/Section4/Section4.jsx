@@ -18,7 +18,7 @@ import grafico3 from "../../assets/Section4/grafico3.png";
 import grafico4 from "../../assets/Section4/grafico4.png";
 import grafico5 from "../../assets/Section4/grafico5.png";
 import grafico2 from "../../assets/Section4/grafico2.png";
-import infoGif from "../../assets/Instructions/infoGifBlanco1.svg";
+import infoGif from "../../assets/Section3/infoGifVerdeOscuro1.png";
 import row1 from "../../assets/Section4/1-otros.png";
 import row2 from "../../assets/Section4/2-eslavitud.png";
 import row3 from "../../assets/Section4/3-mendicidad.png";
