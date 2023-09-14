@@ -21,19 +21,16 @@ function BigInfoBox ({ bigInfoBox, topSection }) {
   if (!bigInfoBox) return null
 
   useLayoutEffect(() => {
-    // console.log('id:', bigInfoBox.name)
-    // console.log('section:', bigInfoBox.name.slice(11))
-    // const containerBigInfoBox = document.querySelector(`#${bigInfoBox.name}`)
-    // console.log('containerBigInfoBox', containerBigInfoBox)
-    // const containerFather = document.querySelector(`#${bigInfoBox.name.slice(11)}`)
-    // console.log('containerFather:', containerFather)
     const ctx = gsap.context(() => {
-      gsap.to(`#${bigInfoBox.name}`, {
+      gsap.from(`#${bigInfoBox.name}`, {
+        y: 200,
+        opacity: 0,
         scrollTrigger: {
           trigger: `#${bigInfoBox.name}`,
-          markers: true,
-          start: 'top center',
-          end: 'bottom center',
+          // markers: true,
+          start: 'top bottom',
+          end: 'bottom bottom',
+          scrub: 1,
           pinnedContainer: `#${bigInfoBox.name.split('_')[1]}`
         }
       })
