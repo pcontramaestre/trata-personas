@@ -56,34 +56,16 @@
   z-index: 97;
 }
 
-.esclavitudquemado{
-  display: none;
+.esclavitudquemado {
+  display: block;
   position: absolute;
-  top: 25vh;
-  right: 0;
+  top: 12.5vw;
+  right: -100vw;
   background-image: url("../../../assets/Img-Section02/Page10/esclavitudquemado.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 50%;
-  height: 80vh;
+  height: 40vw;
   z-index: 99;
-}
-
-.esclavitud__img:hover + .esclavitudquemado{
-  display: block !important;
-  cursor: pointer;
-  z-index: 98;
-}
-
-.esclavitud__content:hover + .esclavitudquemado{
-  display: block !important;
-  cursor: pointer;
-  z-index: 98;
-}
-
-.esclavitudquemado:hover{
-  display: block !important;
-  z-index: 99;
-  cursor: pointer;
 }

@@ -19,27 +19,18 @@
 }
 
 .matrimonioquemado{
-  display: none;
+  display: block;
   position: absolute;
-  top: 25vh;
-  left: 0;
+  top: 12.5vw;
+  left: -100vw;
   background-image: url("../../../assets/Img-Section02/Page09/matrimonioquemado.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 50%;
-  height: 80vh;
+  height: 38vw;
 }
 
-.matrimonio__img:hover + .matrimonioquemado{
-  display: flex;
-  cursor: pointer;
-}
-
-.matrimonioquemado:hover{
-  display: flex;
-  cursor: pointer;
-}
 
 .matrimonio__title {
   color: var(--verde-claro-textos, #006873);

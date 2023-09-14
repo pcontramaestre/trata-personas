@@ -63,12 +63,12 @@ const ExplotacionSexual = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".explotacion__container",
-          markers: true,
+          // markers: true,
           start: () => {
             return (
               scrollTriggerSlider02.end -
               scrollTriggerSlider02.start +
-              100 +
+              80 +
               "top"
             );
           },
@@ -76,35 +76,17 @@ const ExplotacionSexual = () => {
           scrub: 3,
           pin: "#section2",
           pinSpacing: true,
+          id: "explotacionSexual",
         },
       });
       tl.to(".womenloading__img", {
         x: "+100vw",
-        opacity: 1,
         ease: "power2.in",
       });
       tl.to(".womenloading__graphicquemado", {
         x: "-100vw",
-        opacity: 1,
         ease: "power2.Out",
       });
-      // gsap.to(".womenloading__graphicquemado", {
-      //   x: "-100vw",
-      //   ease: "power2.inOut",
-      //   scrollTrigger: {
-      //     trigger: ".explotacion__container",
-      //     markers: true,
-      //     start: () => {
-      //       return (
-      //         scrollTriggerSlider02.end - scrollTriggerSlider02.start + "top"
-      //       );
-      //     },
-      //     end: "+=2500 bottom",
-      //     scrub: 3,
-      //     pin: "#section2",
-      //     pinSpacing: true,
-      //   },
-      // });
     });
     return () => animateGraphic.revert();
   }, []);
