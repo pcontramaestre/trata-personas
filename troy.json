@@ -240,15 +240,6 @@
         "left": "965.29px",
         "position": "absolute",
         "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
-
-      },
-      {
-        "name": "audio1",
-        "width": "57.93px",
-        "height": "40px",
-        "top": "168px",
-        "left": "94vw",
-        "position": "absolute"
       }
     ],
     "text": [
@@ -3751,8 +3742,7 @@
         "height": "50px",
         "top": "49817px",
         "left": "935px",
-        "cursor": "pointer",
-        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)"
+        "cursor": "pointer"
       }
     ],
     "text": [
@@ -5402,7 +5392,6 @@
         "height": "40px",
         "top": "38145px",
         "left": "935px",
-        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
         "zIndex": 1,
         "cursor": "pointer"
       },
@@ -5412,7 +5401,6 @@
         "height": "40px",
         "top": "38980px",
         "left": "935px",
-        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
         "zIndex": 1,
         "cursor": "pointer"
       }
