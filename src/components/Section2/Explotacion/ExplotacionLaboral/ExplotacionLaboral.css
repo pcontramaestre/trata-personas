@@ -17,39 +17,21 @@
   z-index: 20;
 }
 
-.laboralsectiongraphic {
-  z-index: 66;
-  position: absolute;
-  /* top: 10vh; */
-  left: 0;
-  cursor: pointer;
-  background-color: transparent;
-  width: 50vw;
-  height: 50vh;
-}
 
 .laboral__graphicquemado {
-  display: none;
+  display: flex;
   position: absolute;
+  top: 4vw;
   cursor: pointer;
-  left: 0;
+  left: -100vw;
   background-image: url("../../../../assets/Img-Section02/Page06/graficoquemado.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 50%;
-  height: 80vh;
+  height: 40vw;
 }
 
-.laboralsectiongraphic:hover + .laboral__graphicquemado {
-  display: flex;
-  /* cursor: pointer !important; */
-}
-
-.laboral__graphicquemado:hover {
-  display: flex;
-  /* cursor: pointer !important; */
-}
 
 .laboral__img {
   top: 10vw;
@@ -70,7 +52,7 @@
   color: var(--verde-claro-textos, #006873);
   font-family: Formula Condensed;
   width: 100%;
-  margin-right: 4vw;
+  margin-right: 6vw;
   margin-top: 4vh;
   top: 10vh;
   text-align: end;

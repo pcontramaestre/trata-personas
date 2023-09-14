@@ -14,52 +14,86 @@ const ExplotacionSexual = () => {
   const page4 = data[0].finalidades.page4;
   const name1 = data[0].finalidades.page5.video1;
   const name2 = data[0].finalidades.page5.video2;
-const grafico = useRef([]); // Create an array of refs for rows
+  const grafico = useRef([]); // Create an array of refs for rows
   // const grafico = document.querySelector('.womenloading__graphicquemado');
-
-
 
   const textRef2 = useRef([]);
 
+  // useLayoutEffect(() => {
+  // gsap.registerPlugin(ScrollTrigger);
+  // const textTl2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: textRef2.current,
+  //     start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+  //     end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+  //     scrub: true, // Hace que la animación sea suave mientras se desplaza
+  //     // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+  //   },
+  // });
+
+  // textTl2.fromTo(
+  //   textRef2.current,
+  //   {
+  //     // x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+  //     opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+  //   },
+  //   {
+  //     // x: "0%", // Lleva el elemento a su posición original (0%)
+  //     opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+  //   },
+  //   2
+  // );
+  // textTl2.fromTo(
+  //   textRef2.current,
+  //   {
+  //     // x: "0%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+  //     opacity: 1, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+  //   },
+  //   {
+  //     // x: "100%", // Lleva el elemento a su posición original (0%)
+  //     opacity: 0, // Establece la opacidad en 1 para que sea completamente visible
+  //   },
+  //   6
+  // );
+  // }, []);
+
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-      const textTl2 = gsap.timeline({
+    const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
+    const animateGraphic = gsap.context(() => {
+      const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: textRef2.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-          scrub: true, // Hace que la animación sea suave mientras se desplaza
-          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          trigger: ".explotacion__container",
+          // markers: true,
+          start: () => {
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              80 +
+              "top"
+            );
+          },
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section2",
+          pinSpacing: true,
+          id: "explotacionSexual",
         },
       });
-  
-      textTl2.fromTo(
-        textRef2.current,
-        {
-          // x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-        },
-        {
-          // x: "0%", // Lleva el elemento a su posición original (0%)
-          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-        },2
-      );
-      textTl2.fromTo(
-        textRef2.current,
-        {
-          // x: "0%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-          opacity: 1, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-        },
-        {
-          // x: "100%", // Lleva el elemento a su posición original (0%)
-          opacity: 0, // Establece la opacidad en 1 para que sea completamente visible
-        },6
-      );
+      tl.to(".womenloading__img", {
+        x: "+100vw",
+        ease: "power2.in",
+      });
+      tl.to(".womenloading__graphicquemado", {
+        x: "-100vw",
+        ease: "power2.Out",
+      });
+    });
+    return () => animateGraphic.revert();
   }, []);
 
   return (
     <div className="explotacion__content">
-      <div className="explotacion__container">
+      <div id="explotacion__container" className="explotacion__container">
         <div className="explotacion__hand">
           <div className="hand__content">
             <img className="hand__img" src={hand} />

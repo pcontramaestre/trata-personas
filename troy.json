@@ -240,6 +240,7 @@
         "left": "965.29px",
         "position": "absolute",
         "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
+
       },
       {
         "name": "audio1",
@@ -247,7 +248,7 @@
         "height": "40px",
         "top": "168px",
         "left": "94vw",
-        "position": "absolute"
+        "position": "absolute"in
       }
     ],
     "text": [

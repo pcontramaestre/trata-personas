@@ -7,27 +7,55 @@ const BookMatrimonio = ({ page9 }) => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
+      const scrollSexual = ScrollTrigger.getById("explotacionSexual");
+      const scrollLaboral = ScrollTrigger.getById("explotacionLaboral");
+      const scrollMendicidad = ScrollTrigger.getById("mendicidadForzada");
+      const scrollAdopcion = ScrollTrigger.getById("trataAdopcion");
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".NoteBook07",
-          // start: "top 95%",
-          // end: "bottom 40%",
+          // markers: true,
           scrub: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              scrollMendicidad.end -
+              scrollMendicidad.start +
+              scrollAdopcion.end -
+              scrollAdopcion.start +
+              " center"
+            );
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 400 + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              scrollMendicidad.end -
+              scrollMendicidad.start +
+              scrollAdopcion.end -
+              scrollAdopcion.start +
+              400 +
+              " center"
+            );
           },
-          id: 'noteBook_section02_' + page9.title
+          id: "noteBook_section02_" + page9.title,
         },
       });
-  
+
       tl.from(".NoteBook07", { x: +100, opacity: 0 });
       tl.to(".NoteBook07", { x: 0, opacity: 1 });
-    })
-    return () => ctx.revert()
+    });
+    return () => ctx.revert();
   }, []);
   return (
     <div className="NoteBook07">

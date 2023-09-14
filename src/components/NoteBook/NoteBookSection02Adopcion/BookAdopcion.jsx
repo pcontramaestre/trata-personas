@@ -7,27 +7,49 @@ const BookAdopcion = ({ page8 }) => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      const scrollTriggerSliderSection02 = ScrollTrigger.getById('SliderSection02')
+      const scrollTriggerSlider02 = ScrollTrigger.getById("SliderSection02");
+      const scrollSexual = ScrollTrigger.getById("explotacionSexual");
+      const scrollLaboral = ScrollTrigger.getById("explotacionLaboral");
+      const scrollMendicidad = ScrollTrigger.getById("mendicidadForzada");
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".NoteBook06",
-          // start: "top 95%",
-          // end: "bottom 50%",
           scrub: true,
           // markers: true,
           start: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              scrollMendicidad.end -
+              scrollMendicidad.start +
+              " center"
+            );
           },
           end: () => {
-            return scrollTriggerSliderSection02.end - scrollTriggerSliderSection02.start + 350 + ' center'
+            return (
+              scrollTriggerSlider02.end -
+              scrollTriggerSlider02.start +
+              scrollSexual.end -
+              scrollSexual.start +
+              scrollLaboral.end -
+              scrollLaboral.start +
+              scrollMendicidad.end -
+              scrollMendicidad.start +
+              350 +
+              " center"
+            );
           },
-          id: 'noteBook_section02_' + page8.title
+          id: "noteBook_section02_" + page8.title,
         },
       });
       tl.from(".NoteBook06", { x: -100, opacity: 0 });
       tl.to(".NoteBook06", { x: 0, opacity: 1 });
-    })
-    return () => ctx.revert()
+    });
+    return () => ctx.revert();
   }, []);
   return (
     <div className="NoteBook06">

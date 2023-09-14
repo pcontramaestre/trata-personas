@@ -44,26 +44,16 @@
 }
 
 .adopciongraphic {
-  display: none;
+  display: flex;
   position: absolute;
-  top: 35vh;
-  right: 0;
+  top: 15vw;
+  right: -100vw;
   background-image: url("../../../assets/Img-Section02/Page08/graficoadopcion.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 50%;
-  height: 80vh;
-}
-
-.adopcion__img:hover + .adopciongraphic {
-  cursor: pointer;
-  display: flex;
-}
-
-.adopciongraphic:hover {
-  cursor: pointer;
-  display: flex;
+  height: 35vw;
 }
 
 @media screen and (max-width: 720px) {
