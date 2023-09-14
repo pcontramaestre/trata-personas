@@ -220,19 +220,22 @@ function Section1() {
         scrollTrigger: {
           trigger: ".threeslider",
           // markers: true,
-          start: () => {
-            return (
-              scrollTriggerCircle.end -
-              scrollTriggerCircle.start +
-              scrollTriggerSlider01.end -
-              scrollTriggerSlider01.start +
-              "top 2%"
-            );
-          },
-          end: "+=3000 bottom",
+          // start: () => {
+          //   return (
+          //     scrollTriggerCircle.end -
+          //     scrollTriggerCircle.start +
+          //     scrollTriggerSlider01.end -
+          //     scrollTriggerSlider01.start +
+          //     "top 2%"
+          //   );
+          // },
+          start: "top 2%",
+          end: "bottom+=3000 bottom",
           scrub: 2,
           pin: "#section1",
           id: "SliderCircle",
+          pinnedContainer: "#section1",
+          pinSpacing: true
         }
       })
 
