@@ -20,7 +20,7 @@
   align-items: center;
   width: 45vw;
   height: 55vh;
-
+  border-radius: 1vw;
   background: #c4c4c4;
 }
 
@@ -31,7 +31,6 @@
   width: 65vw;
   height: 40vw;
 }
-
 
 .video__button img:hover {
   cursor: pointer;
