@@ -34,11 +34,13 @@ function App () {
   const [videosPlay, setVideosPlay] = useState({
     Pablo: false,
     ['José']: false,
+    Teresa: false,
+    ['María']: false,
     name: null
   })
 
   function openVideo (name) {
-    console.log('entre en openVideo')
+    console.log('entre en openVideo con:', name)
     setVideosPlay(videos => ({
       ...videos,
       [name]: true,
