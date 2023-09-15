@@ -2,7 +2,7 @@ import React from "react";
 import "./Testimonios.css";
 import play from "../../../assets/Img-Section02/play_button.png";
 
-const Testimonios = ({ name1, name2, laboral }) => {
+const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
   const testimonios = [
     {
       name: name1,
@@ -40,7 +40,7 @@ const Testimonios = ({ name1, name2, laboral }) => {
                   <h1 className="video__title">{e.name}</h1>
                 )}
                 <div className="video__button">
-                  <img src={play} />
+                  <img onClick={() => {handleVideosPlay.openVideo(e.name)}} src={play} />
                 </div>
               </div>
             </div>
