@@ -20,8 +20,13 @@
   align-items: center;
   width: 45vw;
   height: 55vh;
+  border-radius: 63px;
+  /* background: #c4c4c4; */
+  background-color: black;
+}
 
-  background: #c4c4c4;
+.video__button img {
+  opacity: 0.5;
 }
 
 .veronika {
