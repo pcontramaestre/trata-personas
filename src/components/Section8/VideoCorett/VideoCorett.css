@@ -1,11 +1,11 @@
 .video__corett {
   position: relative;
   padding-top: 15vh;
-  height: 120vh;
+  height: 65vw;
   padding-bottom: 4em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   background-position: center;
   background-size: cover;
@@ -23,9 +23,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45vw;
-  height: 55vh;
-  border-radius: 50px;
+  width: 70vw;
+  height: 40vw;
+  border-radius: 1.5vw;
   background: #000000;
 }
 
@@ -33,8 +33,9 @@
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: Inika;
-  font-size: 48px;
-  /* font-size: 4vh; */
+  margin: 0;
+  margin-bottom: 2vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
