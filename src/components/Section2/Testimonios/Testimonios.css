@@ -40,6 +40,7 @@
 
 .video__button img:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .video__title {
