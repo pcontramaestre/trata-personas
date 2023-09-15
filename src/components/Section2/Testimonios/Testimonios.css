@@ -29,6 +29,15 @@
   opacity: 0.5;
 }
 
+.veronika {
+  position: relative;
+  /* top: 5vw; */
+  border-radius: 1vw;
+  width: 65vw;
+  height: 40vw;
+}
+
+
 .video__button img:hover {
   cursor: pointer;
 }
