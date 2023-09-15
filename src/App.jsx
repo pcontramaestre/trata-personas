@@ -24,7 +24,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import './App.css'
 
 function App () {
-  const [show, setShow] = useState('')
+  const [show, setShow] = useState('instructions')
   const [autoPlay, setAutoPlay] = useState({
     audio1_0: true,
     audio1_3: true
@@ -40,7 +40,6 @@ function App () {
   })
 
   function openVideo (name) {
-    console.log('entre en openVideo con:', name)
     setVideosPlay(videos => ({
       ...videos,
       [name]: true,
@@ -49,7 +48,6 @@ function App () {
   }
 
   function closeVideo () {
-    console.log('entre en closeVideo')
     const name = videosPlay.name
     setVideosPlay(videos => ({
       ...videos,
