@@ -48,7 +48,7 @@ function Section2({handleVideosPlay}) {
       </div>
       <SmallInfoSection02 />
       <GraphicFinalidades />
-      <ExplotacionSexual />
+      <ExplotacionSexual handleVideosPlay={handleVideosPlay} />
       <ExplotacionLaboral handleVideosPlay={handleVideosPlay} />
       <MedicinaForzada />
       <Adopcion />

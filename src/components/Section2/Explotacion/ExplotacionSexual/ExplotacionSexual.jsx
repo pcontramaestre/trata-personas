@@ -9,7 +9,7 @@ import grafico1 from "../../../../assets/Img-Section02/Page04/graficoquemado.png
 import NoteBookSection02 from "../../../NoteBook/NoteBookSection02/NoteBookSection02";
 import Testimonios from "../../Testimonios/Testimonios";
 
-const ExplotacionSexual = () => {
+const ExplotacionSexual = ({handleVideosPlay}) => {
   const page4 = data[0].finalidades.page4;
   const name1 = data[0].finalidades.page5.video1;
   const name2 = data[0].finalidades.page5.video2;
@@ -69,7 +69,7 @@ const ExplotacionSexual = () => {
           </div>
         </div>
       </div>
-      <Testimonios laboral={false} name1={name1} name2={name2} />
+      <Testimonios handleVideosPlay={handleVideosPlay} laboral={false} name1={name1} name2={name2} />
       <div className="video__foot" />
     </div>
   );

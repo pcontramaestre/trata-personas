@@ -7,7 +7,9 @@ function Video({close, name}) {
 
     const videos = {
         Pablo: 'https://drive.google.com/file/d/1LUtNv4tjpXzzQHlJMsykuqBPGhEO2z6m/preview',
-        ['José']: 'https://drive.google.com/file/d/14-fMEFiQ5ufGzlwkrRtvifXonIODy_-F/preview'
+        ['José']: 'https://drive.google.com/file/d/14-fMEFiQ5ufGzlwkrRtvifXonIODy_-F/preview',
+        Teresa: 'https://drive.google.com/file/d/1YMOHVndKsDUTy1aD-VxRqyfl1iQm9f7m/preview',
+        ['María']: 'https://drive.google.com/file/d/1njLiXFA1EtyxjSSvtIxRLVgDl1hb8vgk/preview'
     }
 
     useEffect(() => {
