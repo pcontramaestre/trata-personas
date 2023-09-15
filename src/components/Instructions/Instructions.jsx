@@ -67,7 +67,7 @@ function Instructions ({ setShow }) {
   return (
     <section id='InstructionsBackground' className={style.InstructionsBackground}>
       <img src={logo} style={logoStyles} />
-      <main className={style.InstructionsContainer}>
+      <div className={style.InstructionsContainer}>
         <h1 style={titleStyles}>{title.text}</h1>
         <div className={style.InstructionsCardsContainer}>
           {
@@ -77,7 +77,7 @@ function Instructions ({ setShow }) {
         }
         </div>
         <button onClick={handleInstruction} style={buttonStyles}><label>{button.content}</label></button>
-      </main>
+      </div>
     </section>
   )
 }
