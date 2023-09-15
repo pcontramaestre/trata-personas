@@ -20,9 +20,18 @@
   align-items: center;
   width: 45vw;
   height: 55vh;
-  border-radius: 63px;
+
   background: #c4c4c4;
 }
+
+.veronika {
+  position: relative;
+  /* top: 5vw; */
+  border-radius: 1vw;
+  width: 65vw;
+  height: 40vw;
+}
+
 
 .video__button img:hover {
   cursor: pointer;
