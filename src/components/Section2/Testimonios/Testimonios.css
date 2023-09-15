@@ -24,6 +24,10 @@
   background: #c4c4c4;
 }
 
+.video__button img:hover {
+  cursor: pointer;
+}
+
 .video__title {
   margin: 1vw 0;
   color: var(--verde-claro-textos, #006873);
