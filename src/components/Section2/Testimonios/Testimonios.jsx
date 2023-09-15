@@ -23,8 +23,13 @@ const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
               ) : (
                 <h1 className="video__title">{testimonios[0].name}</h1>
               )}
-              <div className="video__button">
-                <img src={play} />
+              <div >
+                <iframe className="video__button veronika"
+                  src="https://drive.google.com/file/d/1ur1Sr4Qoa20jWQ7VaolesCLjBlgOyIaK/preview"
+                  width="640"
+                  height="480"
+                  allow="autoplay"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -40,7 +45,12 @@ const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
                   <h1 className="video__title">{e.name}</h1>
                 )}
                 <div className="video__button">
-                  <img onClick={() => {handleVideosPlay.openVideo(e.name)}} src={play} />
+                  <img
+                    onClick={() => {
+                      handleVideosPlay.openVideo(e.name);
+                    }}
+                    src={play}
+                  />
                 </div>
               </div>
             </div>
