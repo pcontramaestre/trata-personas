@@ -6,7 +6,7 @@ import NoteBook from "../NoteBook/NoteBook";
 // import BarGraph from '../BarGraph/BarGraph'
 import SmallInfoBox from "../SmallInfoBox/SmallInfoBox";
 import News from "../News/News";
-import BigInfoBox from "../BigInfoBox/BigInfoBox.jsx"
+import BigInfoBox from "../BigInfoBox/BigInfoBox.jsx";
 
 import style from "./Section3.module.css";
 
@@ -16,7 +16,7 @@ import background from "../../assets/Section3/frontPageBackground.png";
 import leftHand from "../../assets/Section3/frontPageLeftHand.png";
 import bars from "../../assets/Section3/frontPageBars.png";
 import rightHand from "../../assets/Section3/frontPageRightHand.png";
-import camilla from "../../assets/Img-Section02/Page13/organs.png"
+import camilla from "../../assets/Img-Section02/Page13/organs.png";
 import grafico1 from "../../assets/Section3/grafico1.png";
 import grafico2 from "../../assets/Section3/grafico2.png";
 import frecuencia from "../../assets/Section3/frecuencia.svg";
@@ -73,8 +73,17 @@ const iconList = {
 };
 
 const { protectionAndCare } = data;
-const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows, bigInfoBox } =
-  protectionAndCare;
+const {
+  images,
+  text,
+  icons,
+  noteBook,
+  news,
+  bigCard,
+  smallInfoBox,
+  rows,
+  bigInfoBox,
+} = protectionAndCare;
 
 function convertSize(input) {
   const n = Number(input.split("px")[0]);
@@ -83,8 +92,8 @@ function convertSize(input) {
 }
 
 function Section3() {
-  const audioPlaying = useRef(false)
-  const audioAutoPlay = useRef(true)
+  const audioPlaying = useRef(false);
+  const audioAutoPlay = useRef(true);
   const [sectionVisible, setSectionVisible] = useState(true);
 
   const imgRefs = useRef([]); // Create an array of refs for images
@@ -103,11 +112,12 @@ function Section3() {
           scrollTrigger: {
             trigger: containerRowRefs.current[index], // Use the specific ref for this row
             start: "center center",
-            end: "bottom center",
+            end: "center center",
+            PinSpacing: true,
+            pin: "#section3",
             scrub: true,
             opacity: 0
           },
-  
         });
         containerRowTl.fromTo(
           "#bigCard" + row.image.name,
@@ -115,47 +125,48 @@ function Section3() {
             opacity: 0,
           },
           {
-            opacity: 1,
-          },
-        );
-  
-        containerRowTl.fromTo(
-          "#bigCard" + row.image.name,
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          },4
-        );
-  
-      });
-
-      // Animations for images
-        const imgTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: '#backgroundsection3',
-            markers: true,
-          start: '43% top',
-          end: '+=1700 bottom',
-          pin: '#section3',
-          scrub: 1,
-          pinnedContainer: '#section3'
-          },
-        });
-  
-        imgTl.fromTo('#rightHandsection3',
-          {
-            x: "100%",
-            opacity: 0,
-          },
-          {
-            x: "0%",
             opacity: 1,
           }
         );
-  
-        
+
+        containerRowTl.fromTo(
+          "#bigCard" + row.image.name,
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          },
+          4
+        );
+      });
+
+      // Animations for images
+      const imgTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#backgroundsection3",
+          markers: true,
+          start: "43% top",
+          end: "+=1700 bottom",
+          pin: "#section3",
+          PinSpacing: true,
+          scrub: 1,
+          pinnedContainer: "#section3",
+        },
+      });
+
+      imgTl.fromTo(
+        "#rightHandsection3",
+        {
+          x: "100%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+        }
+      );
+
       // Animations for text
       const textTl2 = gsap.timeline({
         scrollTrigger: {
@@ -163,10 +174,12 @@ function Section3() {
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
+          pin: "#section3",
+          PinSpacing: true
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
         },
       });
-  
+
       textTl2.fromTo(
         textRef2.current,
         {
@@ -184,10 +197,12 @@ function Section3() {
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
+          pin: "#section3",
+          PinSpacing: true
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
         },
       });
-  
+
       textTl3.fromTo(
         textRef3.current,
         {
@@ -203,12 +218,14 @@ function Section3() {
         scrollTrigger: {
           trigger: textRef4.current,
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
+          pin: "#section3",
+          PinSpacing: true
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
         },
       });
-  
+
       textTl4.fromTo(
         textRef4.current,
         {
@@ -226,10 +243,12 @@ function Section3() {
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
+          pin: "#section3",
+          PinSpacing: true
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
         },
       });
-  
+
       textTl.fromTo(
         textRef.current,
         {
@@ -241,13 +260,12 @@ function Section3() {
           opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
         }
       );
-    })
+    });
 
-    return () => ctx.revert()
+    return () => ctx.revert();
   }, []);
 
   useEffect(() => {
-    
     if (smallInfoBox) {
       const iconsList = document.getElementsByName(icons[0].name);
       const divs = document.getElementsByName(`SmallInfoBox${icons[0].name}`);
@@ -458,7 +476,7 @@ function Section3() {
       ))}
       {images.map((image, index) => (
         <img
-        id={image.name + 'section3'}
+          id={image.name + "section3"}
           name={image.grupo ? image.grupo : null}
           src={imagesList[image.name]}
           style={imagesStyles[index]}
