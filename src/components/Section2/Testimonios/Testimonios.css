@@ -24,6 +24,11 @@
   background: #000;
 }
 
+.video__button img {
+  opacity: 0.5;
+
+}
+
 .veronika {
   position: relative;
   /* top: 5vw; */
@@ -34,6 +39,7 @@
 
 .video__button img:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .video__title {
