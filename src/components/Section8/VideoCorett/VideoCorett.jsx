@@ -1,6 +1,5 @@
 import React from "react";
 import data from "../../../../trataSection08.json";
-import videoCorett from "../../Video/VideoCorett.mp4";
 import "./VideoCorett.css";
 
 const VideoCorett = () => {
@@ -8,9 +7,13 @@ const VideoCorett = () => {
   return (
     <div className="video__corett">
       <h1 className="videocorett__title">{page5.title}</h1>
-      <video controls className="videocorett__button">
-        <source src={videoCorett} type="video/mp4" />
-      </video>
+      <iframe
+        className="videocorett__button"
+        src="https://drive.google.com/file/d/1PayBYFvAtRl_h9Ywg4oNqRtP3XWQPvcV/preview"
+        width="640"
+        height="480"
+        allow="autoplay"
+      ></iframe>
       <div className="videocorett__info">
         <div className="videocorett__info-texts">
           <div className="info__separador" />
