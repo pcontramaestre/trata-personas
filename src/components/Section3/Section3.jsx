@@ -108,11 +108,13 @@ function Section3() {
           scrollTrigger: {
             trigger: containerRowRefs.current[index], // Use the specific ref for this row
             start: "center center",
-            end: "center center",
+            end: "bottom center",
             PinSpacing: true,
-            pin: "#section3",
+            // pin: "#section3",
+            // pinnedContainer: "#section3",
             scrub: true,
             opacity: 0,
+            markers: true,
           },
         });
         containerRowTl.fromTo(
@@ -136,6 +138,96 @@ function Section3() {
           4
         );
       });
+
+      // Animations for text
+      const textTl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef2.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          // PinSpacing: true
+        },
+      });
+
+      textTl2.fromTo(
+        textRef2.current,
+        {
+          x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
+      const textTl3 = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef3.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          // PinSpacing: true
+        },
+      });
+
+      textTl3.fromTo(
+        textRef3.current,
+        {
+          x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
+      const textTl4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef4.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          // PinSpacing: true
+        },
+      });
+
+      textTl4.fromTo(
+        textRef4.current,
+        {
+          x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
+      const textTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          scrub: true, // Hace que la animación sea suave mientras se desplaza
+          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          PinSpacing: true
+        },
+      });
+
+      textTl.fromTo(
+        textRef.current,
+        {
+          x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+        },
+        {
+          x: "0%", // Lleva el elemento a su posición original (0%)
+          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+        }
+      );
 
       // Animations for images
       const imgTl = gsap.timeline({
@@ -163,99 +255,20 @@ function Section3() {
         }
       );
 
-      // Animations for text
-      const textTl2 = gsap.timeline({
+      // Animations for images sin pin
+
+      const imgTl2 = gsap.timeline({
         scrollTrigger: {
-          trigger: textRef2.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-          scrub: true, // Hace que la animación sea suave mientras se desplaza
-          pin: "#section3",
-          PinSpacing: true,
-          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          trigger: "#backgroundsection3",
+          start: "+=1700 bottom", // Comienza cuando la parte inferior de la sección está en la parte inferior de la ventana
+          end: "+=1700 bottom",
+          scrub: 1,
         },
       });
 
-      textTl2.fromTo(
-        textRef2.current,
-        {
-          x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-        },
-        {
-          x: "0%", // Lleva el elemento a su posición original (0%)
-          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-        }
-      );
-      const textTl3 = gsap.timeline({
-        scrollTrigger: {
-          trigger: textRef3.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-          scrub: true, // Hace que la animación sea suave mientras se desplaza
-          pin: "#section3",
-          PinSpacing: true,
-          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-        },
+      imgTl2.to("#section3", {
+        y: "-=0", // Desplaza hacia arriba para continuar el desplazamiento normal
       });
-
-      textTl3.fromTo(
-        textRef3.current,
-        {
-          x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-        },
-        {
-          x: "0%", // Lleva el elemento a su posición original (0%)
-          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-        }
-      );
-      const textTl4 = gsap.timeline({
-        scrollTrigger: {
-          trigger: textRef4.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "bottom center", // Termina la animación cuando el componente está completamente fuera de la vista
-          scrub: true, // Hace que la animación sea suave mientras se desplaza
-          pin: "#section3",
-          PinSpacing: true,
-          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-        },
-      });
-
-      textTl4.fromTo(
-        textRef4.current,
-        {
-          x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-        },
-        {
-          x: "0%", // Lleva el elemento a su posición original (0%)
-          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-        }
-      );
-      const textTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: textRef.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
-          scrub: true, // Hace que la animación sea suave mientras se desplaza
-          pin: "#section3",
-          PinSpacing: true,
-          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
-        },
-      });
-
-      textTl.fromTo(
-        textRef.current,
-        {
-          x: "-100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
-          opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
-        },
-        {
-          x: "0%", // Lleva el elemento a su posición original (0%)
-          opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
-        }
-      );
     });
 
     return () => ctx.revert();
