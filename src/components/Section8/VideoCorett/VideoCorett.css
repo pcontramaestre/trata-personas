@@ -23,9 +23,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70vw;
+  border-radius: 1vw;
+  width: 65vw;
   height: 40vw;
-  border-radius: 1.5vw;
   background: #000000;
 }
 
