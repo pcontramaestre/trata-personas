@@ -13,6 +13,13 @@ function convertSize (input) {
 }
 
 function HandSlide ({ handSlide, totalTop }) {
+  function topPosition() {
+    const m = (0 - 35) / (1600 - 1280)
+    const b = - 1600 * m
+    const x = window.innerWidth
+    const y = m * x + b > 0 ? m * x + b : 0
+    return y + '%'
+  }
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const scrollTriggerFrontPageSection7 = ScrollTrigger.getById('animationFrontPageSection7')
@@ -25,7 +32,7 @@ function HandSlide ({ handSlide, totalTop }) {
           trigger: '#HandSlideContainer' + handSlide.section,
           // markers: true,
           start: () => {
-            return scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + ' 20%'
+            return scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + ' ' + topPosition()
           },
           end: () => {
             return (scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + 4000) + ' bottom'
