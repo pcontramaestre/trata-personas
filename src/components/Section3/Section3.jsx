@@ -102,6 +102,33 @@ function Section3() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
+
+      const imgTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#backgroundsection3",
+          // markers: true,
+          start: "43% top",
+          end: "+=1700 bottom",
+          pin: "#section3",
+          pinSpacing: true,
+          scrub: 1,
+          pinnedContainer: "#section3",
+          id: "backgroundsection3"
+        },
+      });
+
+      imgTl.fromTo(
+        "#rightHandsection3",
+        {
+          x: "100%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+        }
+      );
+
       // Animations for rows
       rows.forEach((row, index) => {
         const containerRowTl = gsap.timeline({
@@ -109,12 +136,15 @@ function Section3() {
             trigger: containerRowRefs.current[index], // Use the specific ref for this row
             start: "center center",
             end: "bottom center",
-            PinSpacing: true,
+            pinSpacing: true,
             // pin: "#section3",
-            // pinnedContainer: "#section3",
+            pinnedContainer: "#section3",
             scrub: true,
-            opacity: 0,
-            markers: true,
+            // markers: true,
+            onEnter: () => {
+              const bigCard = document.querySelector("#bigCard" + row.image.name)
+              bigCard.style.visibility = "visible"
+            }
           },
         });
         containerRowTl.fromTo(
@@ -134,8 +164,7 @@ function Section3() {
           },
           {
             opacity: 0,
-          },
-          4
+          },4
         );
       });
 
@@ -147,7 +176,8 @@ function Section3() {
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          // PinSpacing: true
+          pinSpacing: true,
+          pinnedContainer: "#section3"
         },
       });
 
@@ -169,7 +199,8 @@ function Section3() {
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          // PinSpacing: true
+          pinSpacing: true,
+          pinnedContainer: "#section3"
         },
       });
 
@@ -191,7 +222,8 @@ function Section3() {
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          // PinSpacing: true
+          pinnedContainer: "#section3",
+          pinSpacing: true
         },
       });
 
@@ -209,11 +241,22 @@ function Section3() {
       const textTl = gsap.timeline({
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          // start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          start: () => {
+            const scrollBanner = ScrollTrigger.getById("backgroundsection3")
+
+            return scrollBanner.end-scrollBanner.start + " center"
+          }, // Inicia la animación cuando el componente está en el centro de la vista
+          // end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          end: () => {
+            const scrollBanner = ScrollTrigger.getById("backgroundsection3")
+
+            return scrollBanner.end-scrollBanner.start + (textRef.current.offsetHeight/2) + " center"
+          }, // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
-          markers: true, // Muestra marcadores de ScrollTrigger para depuración
-          PinSpacing: true
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          pinSpacing: true,
+          // pinnedContainer: "#section3" 
         },
       });
 
@@ -230,45 +273,7 @@ function Section3() {
       );
 
       // Animations for images
-      const imgTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#backgroundsection3",
-          markers: true,
-          start: "43% top",
-          end: "+=1700 bottom",
-          pin: "#section3",
-          PinSpacing: true,
-          scrub: 1,
-          pinnedContainer: "#section3",
-        },
-      });
-
-      imgTl.fromTo(
-        "#rightHandsection3",
-        {
-          x: "100%",
-          opacity: 0,
-        },
-        {
-          x: "0%",
-          opacity: 1,
-        }
-      );
-
-      // Animations for images sin pin
-
-      const imgTl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#backgroundsection3",
-          start: "+=1700 bottom", // Comienza cuando la parte inferior de la sección está en la parte inferior de la ventana
-          end: "+=1700 bottom",
-          scrub: 1,
-        },
-      });
-
-      imgTl2.to("#section3", {
-        y: "-=0", // Desplaza hacia arriba para continuar el desplazamiento normal
-      });
+      
     });
 
     return () => ctx.revert();

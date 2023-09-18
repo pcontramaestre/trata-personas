@@ -36,6 +36,8 @@
     background-size: contain;
     background-position: center;
     opacity: 0;
+    /* display: none; */
+    visibility: hidden;
 }
 
 .textStyles {
@@ -228,3 +230,6 @@
     width: 3vw;
     cursor: pointer;
 }
+/* .bigCardProtection{
+    display: none;
+} */
