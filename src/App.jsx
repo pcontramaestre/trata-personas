@@ -15,6 +15,7 @@ import Section9 from './components/Section9/Section9'
 import menuBlancoImg from './assets/Header/menu-blanco.png'
 import ToHome from './components/ToHome/ToHome'
 import Audios from './components/Audios/Audios'
+import Video from './components/Video/Video'
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -29,6 +30,35 @@ function App () {
     audio1_3: true
   })
   const currentScroll = useRef(0)
+
+  const [videosPlay, setVideosPlay] = useState({
+    Pablo: false,
+    ['José']: false,
+    Teresa: false,
+    ['María']: false,
+    name: null
+  })
+
+  function openVideo (name) {
+    setVideosPlay(videos => ({
+      ...videos,
+      [name]: true,
+      name: name
+    }))
+  }
+
+  function closeVideo () {
+    const name = videosPlay.name
+    setVideosPlay(videos => ({
+      ...videos,
+      [name]: false,
+      name: null
+    }))
+  }
+
+  useEffect(() => {
+
+  },[videosPlay.name])
 
   useEffect(() => {
     const imgs = [
@@ -86,13 +116,17 @@ function App () {
   if (show === 'header') return <Header setShow={setShow} handleHeader={handleHeader} />
   return (
     <main>
-      <div className='hamburger-icon' onClick={handleHeader}>
-        <img src={menuBlancoImg} alt='Menu Icon' className='hamburger-icon' />
-      </div>
+      {
+        videosPlay.name && videosPlay[videosPlay.name]
+        ? null
+        : <div className='hamburger-icon' onClick={handleHeader}>
+            <img src={menuBlancoImg} alt='Menu Icon' className='hamburger-icon' />
+          </div>
+      }
       <ToHome />
       <Section0 />
       <Section1 />
-      <Section2 />
+      <Section2 handleVideosPlay={{openVideo, closeVideo}} />
       <Section3 />
       <Section4 />
       <Section5 />
@@ -101,6 +135,9 @@ function App () {
       <Section8 />
       <Section9 />
       <Audios play={{autoPlay, setAutoPlay}} />
+      {
+        videosPlay.name && videosPlay[videosPlay.name] ? <Video close={closeVideo} name={videosPlay.name} /> : null
+      }
       {/* <Index /> */}
     </main>
   )

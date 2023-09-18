@@ -66,7 +66,7 @@ const ActividadesIlicitas = () => {
       </div>
       <BookIlicitas page12={page12} />
       <img className="actividades__img" src={act} />
-      <div className="ilicitasquemado"/>
+      <div className="ilicitasquemado" />
     </div>
   );
 };

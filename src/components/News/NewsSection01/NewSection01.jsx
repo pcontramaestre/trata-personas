@@ -18,17 +18,20 @@ const NewSection01 = () => {
     // Configura la animación inicial
     gsap.set(newsCards, { x: "+100%" });
     const scrollTriggerBarGraph = ScrollTrigger.getById("SliderSection01");
+    const scrollMap = ScrollTrigger.getById("mapPinned");
     // Crea la animación para mostrar las tarjetas juntas en pantalla
     gsap.to(newsCards, {
       x: "0%",
       stagger: 0.5, // Retraso entre animaciones individuales
       ease: "power2.out", // Easing de la animación
       duration: 4, // Duración de la animación
-      markers: true,
+      // markers: true,
       scrollTrigger: {
         trigger: ".news__content", // Elemento que desencadena el ScrollTrigger
         start: () => {
           return (
+            scrollMap.end -
+            scrollMap.start +
             scrollTriggerBarGraph.end -
             scrollTriggerBarGraph.start +
             -100 +
@@ -38,6 +41,8 @@ const NewSection01 = () => {
         // start: "top", // Comienza la animación cuando el centro de la ventana de visualización alcanza el inicio del trigger
         end: () => {
           return (
+            scrollMap.end -
+            scrollMap.start +
             scrollTriggerBarGraph.end -
             scrollTriggerBarGraph.start +
             250 +

@@ -10,9 +10,9 @@ import FrontPageSection0 from './FrontPageSection0/FrontPageSection0'
 
 import style from './Section0.module.css'
 
-import logo from '../../assets/Instructions/logo.svg'
-import scroll from '../../assets/Instructions/scroll1.svg'
-import group from '../../assets/Instructions/group.svg'
+import logo from '../../assets/Instructions/logo.png'
+import scroll from '../../assets/Instructions/scroll1.png'
+import group from '../../assets/Section0/group.png'
 import audio1 from '../../assets/Instructions/audio1.png'
 import audioMute from '../../assets/Section0/audioMute.png'
 import background from '/Section0/frontPageBackground.jpg'

@@ -240,15 +240,6 @@
         "left": "965.29px",
         "position": "absolute",
         "filter": "brightness(0) saturate(100%) invert(62%) sepia(37%) saturate(445%) hue-rotate(134deg) brightness(99%) contrast(89%)"
-
-      },
-      {
-        "name": "audio1",
-        "width": "57.93px",
-        "height": "40px",
-        "top": "168px",
-        "left": "94vw",
-        "position": "absolute"
       }
     ],
     "text": [
@@ -903,6 +894,7 @@
       }
     },
     "bigInfoBox": {
+      "name": "bigInfoBox_section0_1",
       "width": "1700px",
       "height": "412px",
       "top": "5235.984375px",
@@ -2763,70 +2755,6 @@
           }
         }
       ]
-    },
-    "bigInfoBox": {
-      "name": "BigInfoBox2",
-      "width": "1700px",
-      "height": "478px",
-      "top": "61799px",
-      "left": "110px",
-      "borderRadius": "28px",
-      "border": "1px",
-      "backgroundColor": "#CFF9FF",
-      "text": [
-        {
-          "content": "Durante el año 2020, y en el contexto de la COVID-19,",
-          "tag": "h1",
-          "width": "1344px",
-          "height": "72px",
-          "top": "61876px",
-          "left": "326px",
-          "fontFamily": "Formula Condensed",
-          "fontSize": "64px",
-          "fontWeight": "700",
-          "lineHeight": "76.8px",
-          "letterSpacing": "0.03em",
-          "textAlign": "left",
-          "color": "#0A4B4E"
-        },
-        {
-          "content": "los países de la región reportaron una <span>disminución</span> en la capacidad de ejecutar <span>allanamientos</span> y <span>procesamientos judiciales</span> debido a las restricciones impuestas para la mitigación de la enfermedad. De igual forma, se interrumpieron algunos <span>procesos de retorno y repatriación</span> debido a las restricciones de viajes, y se dieron reajustes en los albergues y los espacios de atención de víctimas de trata de personas.",
-          "tag": "p",
-          "width": "1344px",
-          "height": "212px",
-          "top": "61973px",
-          "left": "326px",
-          "fontFamily": "Inter",
-          "fontSize": "30px",
-          "lineHeight": "36.31px",
-          "letterSpacing": "0em",
-          "textAlign": "left",
-          "fontWeight": "400",
-          "fontWeight2": "700",
-          "color": "#081D20"
-        },
-        {
-          "content": "(CORETT, 2020)",
-          "tag": "p",
-          "width": "284.03px",
-          "height": "44.6px",
-          "top": "62167px",
-          "left": "326px",
-          "fontFamily": "Inter",
-          "fontSize": "25px",
-          "fontWeight": "400",
-          "lineHeight": "30px",
-          "letterSpacing": "0.11em",
-          "textAlign": "left",
-          "color": "#081D20"
-        }
-      ],
-      "bar": {
-        "height": "306px",
-        "top": "61885px",
-        "left": "250px",
-        "borderLeft": "1px solid #081D20"
-      }
     }
   },
   "credits": {
@@ -3522,7 +3450,7 @@
       }
     },
     "bigInfoBox1": {
-      "name": "BigInfoBox2",
+      "name": "bigInfoBox_section6_1",
       "width": "1700px",
       "height": "478px",
       "top": "61799px",
@@ -3586,7 +3514,7 @@
       }
     },
     "bigInfoBox2": {
-      "name": "BigInfoBox3",
+      "name": "bigInfoBox_section6_2",
       "width": "1700px",
       "height": "595px",
       "top": "67040px",
@@ -3751,8 +3679,7 @@
         "height": "50px",
         "top": "49817px",
         "left": "935px",
-        "cursor": "pointer",
-        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)"
+        "cursor": "pointer"
       }
     ],
     "text": [
@@ -5402,7 +5329,6 @@
         "height": "40px",
         "top": "38145px",
         "left": "935px",
-        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
         "zIndex": 1,
         "cursor": "pointer"
       },
@@ -5412,7 +5338,6 @@
         "height": "40px",
         "top": "38980px",
         "left": "935px",
-        "filter": "brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1019%) hue-rotate(134deg) brightness(94%) contrast(94%)",
         "zIndex": 1,
         "cursor": "pointer"
       }
@@ -6124,7 +6049,7 @@
       }
     },
     "bigInfoBox": {
-      "name": "BigInfoBox",
+      "name": "bigInfoBox_section3_1",
       "width": "1700px",
       "height": "478px",
       "top": "34540px",

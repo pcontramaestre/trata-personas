@@ -6,7 +6,7 @@ import style from './Section7.module.css'
 
 import background from '../../assets/Section7/frontPageBackground.png'
 import persons from '../../assets/Section7/frontPagePersons.png'
-import scroll2 from '../../assets/Section7/scroll2.svg'
+import scroll2 from '../../assets/Section7/scroll2.png'
 
 import data from '../../../troy.json'
 import FrontPageSection7 from './FrontPageSection7/FrontPageSection7'

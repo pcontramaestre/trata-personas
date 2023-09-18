@@ -17,7 +17,7 @@ import manosAmigas from '../../assets/Section6/manosAmigas.png'
 import megafono from '../../assets/Section6/megafono.png'
 import dona1 from '../../assets/Section6/dona1.png'
 import graphic1 from '../../assets/Section6/graphic1.png'
-import rectanguloAzul from '../../assets/Section6/rectanguloAzul.png'
+import rectanguloAzul from '../../assets/Section6/rectanguloAzul.jpg'
 
 import data from '../../../troy.json'
 

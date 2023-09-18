@@ -1,12 +1,12 @@
 import style from './Instructions.module.css'
 
 import data from '../../../troy.json'
-import logo from '../../assets/Instructions/logo.svg'
-import scroll1 from '../../assets/Instructions/scroll1.svg'
+import logo from '../../assets/Instructions/logo.png'
+import scroll1 from '../../assets/Instructions/scroll1.png'
 import menuBlanco from '../../assets/Instructions/menuBlanco.svg'
-import audio1 from '../../assets/Instructions/audio1.svg'
-import infoGifBlanco1 from '../../assets/Instructions/infoGifBlanco1.svg'
-import group from '../../assets/Instructions/group.svg'
+import audio1 from '../../assets/Instructions/audio1.png'
+import infoGifBlanco1 from '../../assets/Instructions/infoGifBlanco1.png'
+import group from '../../assets/Instructions/group.png'
 import home from '../../assets/Instructions/home.svg'
 
 const icons = {
@@ -67,7 +67,7 @@ function Instructions ({ setShow }) {
   return (
     <section id='InstructionsBackground' className={style.InstructionsBackground}>
       <img src={logo} style={logoStyles} />
-      <main className={style.InstructionsContainer}>
+      <div className={style.InstructionsContainer}>
         <h1 style={titleStyles}>{title.text}</h1>
         <div className={style.InstructionsCardsContainer}>
           {
@@ -77,7 +77,7 @@ function Instructions ({ setShow }) {
         }
         </div>
         <button onClick={handleInstruction} style={buttonStyles}><label>{button.content}</label></button>
-      </main>
+      </div>
     </section>
   )
 }

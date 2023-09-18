@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Section2.css";
 import data from "../../../trataSection02.json";
 import SliderSection02 from "../Slides/SliderSection02/SliderSection02";
@@ -21,7 +22,7 @@ import InfoConsentimiento from "../Section1/InfoConsentimiento/InfoConsentimient
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Section2() {
+function Section2({handleVideosPlay}) {
   const page1 = data[0].finalidades.page1;
 
   return (
@@ -47,8 +48,8 @@ function Section2() {
       </div>
       <SmallInfoSection02 />
       <GraphicFinalidades />
-      <ExplotacionSexual />
-      <ExplotacionLaboral />
+      <ExplotacionSexual handleVideosPlay={handleVideosPlay} />
+      <ExplotacionLaboral handleVideosPlay={handleVideosPlay} />
       <MedicinaForzada />
       <Adopcion />
       <Matrimonio />
