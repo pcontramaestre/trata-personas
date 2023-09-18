@@ -40,7 +40,6 @@ import alojamiento from "../../assets/Section3/alojamiento.png";
 import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
 import graphic from "../../assets/Section3/grafico-21.png";
-import mp3 from "../../assets/Section3/Naciones-Unidas-Plano-voz-2.mp3";
 
 const imagesList = {
   background,
@@ -84,9 +83,7 @@ function convertSize(input) {
 }
 
 function Section3() {
-  // const [audioPlaying, setAudioPlaying] = useState(false);
   const audioPlaying = useRef(false)
-  // const [audioAutoPlay, setAudioAutoPlay] = useState(true);
   const audioAutoPlay = useRef(true)
   const [sectionVisible, setSectionVisible] = useState(true);
 
@@ -100,21 +97,6 @@ function Section3() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      // Animación del audio
-      // ScrollTrigger.create({
-      //   trigger: "#section3", // Debe ser el id de la sección
-      //   // markers: true,
-      //   onEnter: () => {
-      //     // setSectionVisible(true); // Marca la sección como visible
-      //     if (audioAutoPlay.current) toggleAudio('play')
-      //   },
-      //   onLeave: ()=> {
-      //     toggleAudio('stop')
-      //   },
-      //   end: "bottom bottom",
-      //   start: 'top 5%'
-      // });
-
       // Animations for rows
       rows.forEach((row, index) => {
         const containerRowTl = gsap.timeline({
@@ -150,18 +132,19 @@ function Section3() {
       });
 
       // Animations for images
-      images.forEach((image, index) => {
         const imgTl = gsap.timeline({
           scrollTrigger: {
-            trigger: imgRefs.current,
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
+            trigger: '#backgroundsection3',
+            markers: true,
+          start: '43% top',
+          end: '+=1700 bottom',
+          pin: '#section3',
+          scrub: 1,
+          pinnedContainer: '#section3'
           },
         });
   
-        imgTl.fromTo(
-          imgRefs.current,
+        imgTl.fromTo('#rightHandsection3',
           {
             x: "100%",
             opacity: 0,
@@ -173,8 +156,6 @@ function Section3() {
         );
   
         
-      });
-  
       // Animations for text
       const textTl2 = gsap.timeline({
         scrollTrigger: {
@@ -414,51 +395,12 @@ function Section3() {
 
   const audioRef = useRef(null);
 
-  // const toggleAudio = (instruction) => {
-  //   const audioElement = document.getElementById('miAudio');
-  //   if (audioElement) {
-    
-  //     // if (audioAutoPlay) {
-
-  //       // audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
-  //       // setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
-  //     // } else {
-  //       if (instruction ? audioPlaying.current && instruction === 'stop' : !audioElement.paused ) {
-  //         audioElement.pause(); // Pausa el audio si estaba reproduciéndose
-  //         if (instruction) {
-  //           audioElement.currentTime = 0
-  //         }
-  //         audioAutoPlay.current = false
-  //         // console.log("activar audio");
-  //       } else if (instruction ? !audioPlaying.current && instruction === 'play' : audioElement.paused) {
-  //         audioElement.play(); // Reanuda el audio si estaba pausado
-  //         // console.log("detener audio");
-  //       }
-  //       audioPlaying.current = !audioPlaying.current; // Actualiza el estado del audio
-  //   }
-  // };
-
   return (
     <section
       id="section3"
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
-      {/* {sectionVisible && (
-        <div className={style.iconAudio}>
-          <img
-            src={audio}
-            alt="Audio"
-            onClick={() => toggleAudio()}
-          />
-        </div>
-      )} */}
-      {/* <audio
-      ref={audioRef}
-        id="miAudio"
-        src={mp3}
-        style={{ display: "none" }} // Para ocultar el reproductor de audio
-      /> */}
       <div className={style.animationText1} ref={textRef}>
         <p className={style.text1}>{animationText.text1} </p>
         <p className={style.text1}>
@@ -516,7 +458,7 @@ function Section3() {
       ))}
       {images.map((image, index) => (
         <img
-          id={listImageHover.includes(image.name) ? image.name : null}
+        id={image.name + 'section3'}
           name={image.grupo ? image.grupo : null}
           src={imagesList[image.name]}
           style={imagesStyles[index]}
