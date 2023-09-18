@@ -92,8 +92,8 @@ function convertSize(input) {
 }
 
 function Section3() {
-  const audioPlaying = useRef(false);
-  const audioAutoPlay = useRef(true);
+  const audioPlaying = useRef(false)
+  const audioAutoPlay = useRef(true)
   const [sectionVisible, setSectionVisible] = useState(true);
 
   const imgRefs = useRef([]); // Create an array of refs for images
@@ -167,6 +167,29 @@ function Section3() {
         }
       );
 
+        const imgTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '#backgroundsection3',
+            markers: true,
+          start: '43% top',
+          end: '+=1700 bottom',
+          pin: '#section3',
+          scrub: 1,
+          pinnedContainer: '#section3'
+          },
+        });
+  
+        imgTl.fromTo('#rightHandsection3',
+          {
+            x: "100%",
+            opacity: 0,
+          },
+          {
+            x: "0%",
+            opacity: 1,
+          }
+        );
+      
       // Animations for text
       const textTl2 = gsap.timeline({
         scrollTrigger: {
@@ -476,7 +499,7 @@ function Section3() {
       ))}
       {images.map((image, index) => (
         <img
-          id={image.name + "section3"}
+        id={image.name + 'section3'}
           name={image.grupo ? image.grupo : null}
           src={imagesList[image.name]}
           style={imagesStyles[index]}
