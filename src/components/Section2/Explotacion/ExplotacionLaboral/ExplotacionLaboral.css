@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20vh;
-  background-image: url("../../../../assets/Img-Section02//Page06/backgroundpasto.png");
+  background-image: url("../../../../assets/Img-Section02/Page06/backgroundpasto.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -17,6 +17,16 @@
   z-index: 20;
 }
 
+.laboral__men{
+background-image: url("../../../../assets/Img-Section02/Page06/laboralmen.png");
+background-size: contain;
+background-repeat: no-repeat;
+width: 70vw;
+height: 85vw;
+top: 10vw;
+left: 0;
+position: absolute;
+}
 
 .laboral__graphicquemado {
   display: flex;
@@ -33,12 +43,7 @@
 }
 
 
-.laboral__img {
-  top: 10vw;
-  width: 100vw;
-  position: absolute;
-  z-index: 20;
-}
+
 
 .laboral__testimonios {
   width: 100%;
