@@ -175,7 +175,7 @@ function Section3() {
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
-          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
           pinSpacing: true,
           pinnedContainer: "#section3"
         },
@@ -198,7 +198,7 @@ function Section3() {
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
-          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
           pinSpacing: true,
           pinnedContainer: "#section3"
         },
@@ -221,7 +221,7 @@ function Section3() {
           start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
-          markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          // markers: true, // Muestra marcadores de ScrollTrigger para depuración
           pinnedContainer: "#section3",
           pinSpacing: true
         },
@@ -559,7 +559,7 @@ function Section3() {
           key={infoBox.name + index}
         />
       ))}
-      <News news={news} topSection={protectionAndCare.top} />
+      
     </section>
   );
 }
