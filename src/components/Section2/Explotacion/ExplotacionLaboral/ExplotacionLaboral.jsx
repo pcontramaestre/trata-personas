@@ -6,7 +6,7 @@ import data from "../../../../../trataSection02.json";
 import BookLaboral from "../../../NoteBook/NoteBookSection02Laboral/BookLaboral";
 import Testimonios from "../../Testimonios/Testimonios";
 
-const ExplotacionLaboral = ({handleVideosPlay}) => {
+const ExplotacionLaboral = ({ handleVideosPlay }) => {
   const page6 = data[0].finalidades.page6;
   const name1 = page6.text4;
   const name2 = page6.text5;
@@ -38,6 +38,10 @@ const ExplotacionLaboral = ({handleVideosPlay}) => {
         x: "+100vw",
         ease: "power2.Out",
       });
+      tl.to(".laboral__men", {
+        x: "+130vw",
+        ease: "power2.in",
+      });
     });
     return () => animateGraphic.revert();
   }, []);
@@ -51,10 +55,15 @@ const ExplotacionLaboral = ({handleVideosPlay}) => {
         />
         <BookLaboral page6={page6} />
       </div>
-      {/* <img className="laboral__img" src={backgroundpasto} /> */}
       <div className="laboral__testimonios">
-        <Testimonios laboral={true} name1={name1} name2={name2} handleVideosPlay={handleVideosPlay} />
+        <Testimonios
+          laboral={true}
+          name1={name1}
+          name2={name2}
+          handleVideosPlay={handleVideosPlay}
+        />
       </div>
+      <div className="laboral__men" />
       <div className="laboral__graphicquemado"></div>
     </div>
   );
