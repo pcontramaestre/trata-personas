@@ -2,6 +2,18 @@ import React from "react";
 import "./Testimonios.css";
 import play from "../../../assets/Img-Section02/play_button.png";
 
+import José from "../../../assets/Video/José.jpg"
+import María from "../../../assets/Video/María.jpg"
+import Pablo from "../../../assets/Video/Pablo.jpg"
+import Teresa from "../../../assets/Video/Teresa.jpg"
+
+const miniaturas = {
+  José,
+  María,
+  Pablo,
+  Teresa
+}
+
 const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
   const testimonios = [
     {
@@ -44,7 +56,7 @@ const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
                 ) : (
                   <h1 className="video__title">{e.name}</h1>
                 )}
-                <div className="video__button">
+                <div className="video__button" style={{backgroundImage: `url(${miniaturas[e.name]})`}}>
                   <img
                     onClick={() => {
                       handleVideosPlay.openVideo(e.name);
