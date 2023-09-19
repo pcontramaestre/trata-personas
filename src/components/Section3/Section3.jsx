@@ -160,7 +160,7 @@ function Section3() {
         scrollTrigger: {
           trigger: containerAnimation,
           id: 'noteBooksection3',
-          markers: true,
+          // markers: true,
           start: 'top 90%',
           end: 'bottom bottom',
           scrub: 1,
