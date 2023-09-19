@@ -103,7 +103,11 @@ function Section3() {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
 
-      const imgTl = gsap.timeline({
+      // Animations for FrontPage
+      // console.log('entre en Layout de Section3')
+      gsap.from("#rightHandsection3", {
+        x: "100%",
+        opacity: 0,
         scrollTrigger: {
           trigger: "#backgroundsection3",
           // markers: true,
@@ -113,21 +117,56 @@ function Section3() {
           pinSpacing: true,
           scrub: 1,
           pinnedContainer: "#section3",
-          id: "backgroundsection3"
-        },
-      });
-
-      imgTl.fromTo(
-        "#rightHandsection3",
-        {
-          x: "100%",
-          opacity: 0,
-        },
-        {
-          x: "0%",
-          opacity: 1,
+          id: "backgroundsection3",
+          onEnter: () => {
+            console.log('entre')
+            const scrollTriggerNoteBook = ScrollTrigger.getById('noteBooksection3')
+            scrollTriggerNoteBook.refresh()
+            // console.log('scrollTrigger:', scrollTriggerNoteBook)
+          }
         }
-      );
+      })
+      // const imgTl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: "#backgroundsection3",
+      //     // markers: true,
+      //     start: "43% top",
+      //     end: "+=1700 bottom",
+      //     pin: "#section3",
+      //     pinSpacing: true,
+      //     scrub: 1,
+      //     pinnedContainer: "#section3",
+      //     id: "backgroundsection3"
+      //   },
+      // });
+
+      // imgTl.fromTo(
+      //   "#rightHandsection3",
+      //   {
+      //     x: "100%",
+      //     opacity: 0,
+      //   },
+      //   {
+      //     x: "0%",
+      //     opacity: 1,
+      //   }
+      // );
+
+      // Animacion del NoteBook
+      const containerAnimation = document.getElementsByName('noteBook' + noteBook.section)[0]
+      gsap.from(containerAnimation, {
+        left: '100%',
+        opacity: 0,
+        scrollTrigger: {
+          trigger: containerAnimation,
+          id: 'noteBooksection3',
+          markers: true,
+          start: 'top 90%',
+          end: 'bottom bottom',
+          scrub: 1,
+          pinnedContainer: '#section3'
+        }
+      })
 
       // Animations for rows
       rows.forEach((row, index) => {

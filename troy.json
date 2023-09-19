@@ -395,7 +395,7 @@
         "puppetSection0ScrollTrigger",
         "puppetSection0ScrollTrigger"
       ],
-      "section": "Section0",
+      "section": "section0",
       "top": "1476.27px",
       "left": "831px",
       "rotation": "8.49 deg",
@@ -2344,7 +2344,7 @@
         "frontPageSection5",
         "frontPageSection5"
       ],
-      "section": "Section5",
+      "section": "section5",
       "top": "56918.77px",
       "left": "455.52px",
       "rotation": "8.3deg",
@@ -3379,7 +3379,7 @@
         "frontPageSection6",
         "frontPageSection6"
       ],
-      "section": "Section6",
+      "section": "section6",
       "width": "690.83px",
       "height": "708.58px",
       "top": "64505px",
@@ -6201,7 +6201,7 @@
       }
     },
     "noteBook": {
-      "section": "Section3",
+      "section": "section3",
       "width": "674px",
       "height": "636.05px",
       "top": "36370.45px",
