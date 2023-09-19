@@ -117,7 +117,6 @@ p {
   height: 18vw;
   background-color: #0f4a4d;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
@@ -131,10 +130,10 @@ p {
 .cuadro1-text {
   color: #fff;
   font-family: "Formula Condensed", sans-serif;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-weight: 400;
   line-height: normal;
-  padding: 2rem;
+  padding: 3.5vw;
 }
 
 .cuadro1-title {
@@ -145,7 +144,7 @@ p {
 
 .cuadro1-description {
   font-family: "Inter", sans-serif;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-weight: 400;
   line-height: normal;
 }
@@ -156,21 +155,18 @@ p {
   height: 18vw;;;
   background-color: #81ddec;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro2-text {
   /* width: 800px; */
-  height: 200px;
   color: #0f4a4d;
   font-family: "Formula Condensed", sans-serif;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.02px;
-  padding: 2rem;
-  justify-content: center;
+  padding: 3.5vw;
   display: flex;
   flex-direction: column;
 }
@@ -182,9 +178,12 @@ p {
 }
 
 .cuadro2-description {
-  font-size: 0.94vw;
-  font-weight: 400;
-  line-height: normal;
+    color: #000;
+    font-family: Inter;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .cuadro3-style {
@@ -193,7 +192,6 @@ p {
   height: 18vw;;;
   background-color: #13aaaf;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
@@ -206,8 +204,7 @@ p {
   font-weight: 800;
   line-height: normal;
   letter-spacing: 1.02px;
-  margin-left: 1vw;
-  padding: 2rem;
+  padding: 3.5vw;
 }
 
 .cuadro3-subtitle {
@@ -219,7 +216,7 @@ p {
 .cuadro3-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -231,12 +228,11 @@ p {
   height: 18vw;;;
   background-color: #8af4f9;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro4-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -244,7 +240,6 @@ p {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.02px;
-  margin-left: 1vw;
 }
 
 .cuadro4-subtitle {
@@ -256,7 +251,7 @@ p {
 .cuadro4-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -269,7 +264,6 @@ p {
   height: 18vw;;;
   background-color: #ebeaa6;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -281,8 +275,7 @@ p {
   font-weight: 700px;
   line-height: normal;
   letter-spacing: 1.02px;
-  margin-left: 1vw;
-  padding: 2rem;
+  padding: 3.5vw;
 }
 
 .cuadro5-subtitle {
@@ -294,7 +287,7 @@ p {
 .cuadro5-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -302,7 +295,6 @@ p {
 
 .cuadro6-style {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 55vw;
   /* max-width: 931px; */
@@ -311,7 +303,7 @@ p {
 }
 
 .cuadro6-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #fff;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -330,7 +322,7 @@ p {
 .cuadro6-description {
   color: #fff;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -342,12 +334,11 @@ p {
   height: 18vw;
   background-color: #8cd7e1;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro7-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -366,7 +357,7 @@ p {
 .cuadro7-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -378,12 +369,11 @@ p {
   height: 18vw;
   background-color: #86f3f8;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro8-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -402,7 +392,7 @@ p {
 .cuadro8-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -414,7 +404,6 @@ p {
   height: 18vw;
   background-color: #0f4a4d;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
@@ -422,7 +411,6 @@ p {
 .cuadro9-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: #fff;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -430,7 +418,7 @@ p {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.02px;
-  padding: 2rem;
+  padding: 3.5vw;
 }
 
 .cuadro9-subtitle {
@@ -442,7 +430,7 @@ p {
 .cuadro9-description {
   color: #fff;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -453,13 +441,12 @@ p {
   height: 18vw;
   background-color: #13aaaf;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 46vw;
 }
 
 .cuadro10-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -480,7 +467,7 @@ p {
   height: 44px;
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -493,12 +480,11 @@ p {
   height: 18vw;
   background-color: #86f3f8;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro11-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -517,7 +503,7 @@ p {
 .cuadro11-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -529,12 +515,11 @@ p {
   height: 18vw;
   background-color: #8cd7e1;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro12-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -553,7 +538,7 @@ p {
 .cuadro12-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -566,12 +551,11 @@ p {
   height: 18vw;
   background-color: #13AAAF;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro13-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -590,7 +574,7 @@ p {
 .cuadro13-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -602,7 +586,6 @@ p {
   height: 18vw;
   background-color: #EBEAA6;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -614,7 +597,7 @@ p {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.02px;
-  padding: 2rem;
+  padding: 3.5vw;
 }
 
 .cuadro14-subtitle {
@@ -626,7 +609,7 @@ p {
 .cuadro14-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -637,13 +620,12 @@ p {
   height: 18vw;
   background-color: #86F3F8;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 37vw;
 }
 
 .cuadro15-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -662,7 +644,7 @@ p {
 .cuadro15-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -674,12 +656,11 @@ p {
   height: 18vw;
   background-color: #8CD7E1;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .cuadro16-text {
-  padding: 2rem;
+  padding: 3.5vw;
   color: #0f4a4d;
   font-family: Formula Condensed;
   font-size: 1.78vw;
@@ -698,7 +679,7 @@ p {
 .cuadro16-description {
   color: #000;
   font-family: Inter;
-  font-size: 0.94vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

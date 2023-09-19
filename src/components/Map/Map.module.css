@@ -7,3 +7,30 @@
     object-fit: cover;
     object-position: center;
 }
+
+.flags {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flags:hover > span {
+    color: #13F8FD
+}
+
+.flags span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: "0em";
+    text-align: "left";
+    margin-left: 0.4vw;
+    font-size: 1.09vw;
+    color: #00525e;
+}
+
+.flags img {
+    object-fit: contain;
+    object-position: center;
+    width: 3.1vw;
+}
