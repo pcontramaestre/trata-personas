@@ -62,7 +62,7 @@ function Section4() {
         pinSpacing: true,
         scrub: true,
         pinnedContainer: "#section4",
-        markers: true,
+        // markers: true,
       },
     });
 
