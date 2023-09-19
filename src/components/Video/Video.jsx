@@ -33,7 +33,7 @@ function Video({ close, name }) {
     return () => {
       html.style.overflow = "";
     };
-  });
+  }, []);
 
   return (
     <article className="video_container">
