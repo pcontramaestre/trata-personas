@@ -21,7 +21,9 @@
   width: 45vw;
   height: 55vh;
   border-radius: 1vw;
-  background: #000;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .video__button img {
