@@ -2130,7 +2130,7 @@
         "color": "#006873"
       },
       {
-        "content": "En el <span>periodo 2018-2021</span>",
+        "content": "En el <span>período 2018-2021</span>",
         "tag": "p",
         "width": "500px",
         "height": "130px",
@@ -2324,7 +2324,7 @@
         "color": "#0A4B4E"
       },
       {
-        "content": "REPATRIADAS A TRAVÉS DE MEDIO AÉREO",
+        "content": "REPATRIADAS POR VÍA AÉREA",
         "tag": "h2",
         "width": "926px",
         "height": "153px",
@@ -2755,6 +2755,220 @@
           }
         }
       ]
+    },
+    "news": {
+      "section": "Section5",
+      "footerCard": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.11em",
+        "textAlign": "left",
+        "color": "#000000"
+      },
+      "titleStyles": {
+        "fontFamily": "Inika",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "lineHeight": "43px",
+        "letterSpacing": "0.03em",
+        "textAlign": "left",
+        "color": "#043335"
+      },
+      "titleStylesHover": {
+        "fontFamily": "Inika",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "39px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "textStylesHover": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814"
+      },
+      "footerStyleHover": {
+        "fontFamily": "Inika",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#231814",
+        "color2": "#948678"
+      },
+      "footerIconHover": {
+        "width": "20.9993953704834px",
+        "height": "24.002277374267578px",
+        "top": "874.00390625px",
+        "left": "103px",
+        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
+      },
+      "articles": [
+        {
+          "title": {
+            "text": "República Dominicana: Condenan a 20 años de prisión a una mujer vinculada a la trata de personas",
+            "width": "488.76px",
+            "height": "191.51px",
+            "top": "54198.95px",
+            "left": "156.5px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "54390.47px",
+            "left": "155.86px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "54104.04px",
+            "left": "96.78px",
+            "rotation": "-0.91deg"
+          },
+          "hover": {
+            "width": "685px",
+            "height": "683px",
+            "top": "-20px",
+            "left": "80px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Condenan a 20 años de prisión a una mujer vinculada a la trata de personas",
+              "width": "555px",
+              "height": "76px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "La Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas (PETT) y la Fiscalía de esta jurisdicción obtuvieron una condena de 20 años de prisión en contra de una mujer que se dedicaba a la trata de personas con fines de explotación sexual en perjuicio de 27 mujeres de nacionalidad dominicana y venezolana.<br/><br/>En el transcurso de la investigación, se obtuvieron pruebas con las que quedó demostrado que la encartada incurrió en trata de personas agravada, dada la multiplicidad de víctimas.",
+              "width": "540px",
+              "height": "266px",
+              "top": "203px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/ Procuraduría General de la República- Gobierno de la República Dominicana",
+              "width": "477px",
+              "height": "50px",
+              "top": "521px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/historias-republica-dominicana"
+          }
+        },
+        {
+          "title": {
+            "text": "Ministerio Público logra condena de más de 10 años y multa de Q300 mil por trata de personas en Guatemala",
+            "width": "481.03px",
+            "height": "191.51px",
+            "top": "54119.76px",
+            "left": "1273.82px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "54324.04px",
+            "left": "1240.52px"
+          },
+          "size": {
+            "width": "603.02px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "54017.04pxx",
+            "left": "1220.27px",
+            "rotation": "-8.25deg"
+          },
+          "hover": {
+            "width": "700px",
+            "height": "705px",
+            "top": "-40px",
+            "left": "1180px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Ministerio Público logra condena de más de 10 años y multa de Q300 mil por trata de personas en Guatemala",
+              "width": "585px",
+              "height": "115px",
+              "top": "56px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "18 de mayo de 2023<br/><br/>El Ministerio Público, por medio de la Unidad contra la Explotación Sexual, de la Fiscalía contra la Trata de Personas, logró con base en la acusación presentada sentencia condenatoria de 10 años y 6 meses de prisión inconmutables contra Bertoldino Florián Valenzuela por el delito de trata de personas.<br/><br/>En concepto de reparación digna debe pagar Q10 mil por daño moral, una beca de estudios hasta el nivel diversificado para la víctima y colocar cuatro mantas vinílicas en el parque de Villa Nueva en coordinación con la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas (SVET) y la Municipalidad de Villa Nueva.",
+              "width": "570px",
+              "height": "364px",
+              "top": "232px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/Ministerio Público de Guatemala",
+              "width": "470px",
+              "height": "23px",
+              "top": "585px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/guatemala/ministerio-publico-logra-condena-de-mas-de-10-anos-y-multa-de-q300-mil-por-trata-de-personas"
+          }
+        },
+        {
+          "title": {
+            "text": "El Salvador: Explotador sexual es condenado a 8 años de prisión",
+            "width": "481.03px",
+            "height": "132.71px",
+            "top": "54407.35px",
+            "left": "682px"
+          },
+          "footer": {
+            "text": "CORETT",
+            "top": "54569.5px",
+            "left": "708px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "54292.38px",
+            "left": "651.98px",
+            "rotation": "7.56 deg"
+          },
+          "hover": {
+            "width": "681px",
+            "height": "683px",
+            "top": "130px",
+            "left": "620px",
+            "backgroundImage": "sheetS",
+            "title": {
+              "content": "Explotador sexual es condenado a 8 años de prisión",
+              "width": "477px",
+              "height": "76px",
+              "top": "62px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "José Salvador Lovo recibió una condena de 8 años de prisión por el delito de Trata de Personas Agravada, modalidad de Explotación Sexual, en perjuicio de dos adolescentes.<br/><br/>Las investigaciones de la Unidad Especializada de Delitos de Tráfico Ilegal y Trata de Personas lograron establecer que el imputado habría atraído a las víctimas con la promesa de trabajar en una cervecería como meseras. Sin embrago, ya en el lugar fueron amenazadas y luego obligadas a realizar trabajos sexuales con clientes del negocio y a la venta de bebidas alcohólicas, en beneficio económico del imputado, dueño del local.",
+              "width": "527px",
+              "height": "298px",
+              "top": "209px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: CORETT/ Fiscalía General de la República de El Salvador",
+              "width": "457px",
+              "height": "50px",
+              "top": "535px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/historias-el-salvador"
+          }
+        }
+      ]
     }
   },
   "credits": {
@@ -3127,7 +3341,7 @@
         "color": "#053739"
       },
       {
-        "content": "Durante el periodo <span>2018-2021</span>, las actividades de prevención de la trata de personas tuvieron un <span>alcance de</span>",
+        "content": "Durante el período <span>2018-2021</span>, las actividades de prevención de la trata de personas tuvieron un <span>alcance de</span>",
         "tag": "p",
         "width": "1005px",
         "height": "103px",
@@ -3599,51 +3813,6 @@
     "left": "0px",
     "backgroundColor": "#CFF9FF",
     "images": [
-      {
-        "name": "background",
-        "width": "1920px",
-        "height": "1909px",
-        "top": "44809px",
-        "left": "0px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "person1",
-        "width": "786px",
-        "height": "611px",
-        "top": "46105px",
-        "left": "1134px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "person2",
-        "width": "846px",
-        "height": "755px",
-        "top": "45961px",
-        "left": "632px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "person3",
-        "width": "732px",
-        "height": "1105px",
-        "top": "45611px",
-        "left": "305px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
-      {
-        "name": "person4",
-        "width": "736px",
-        "height": "1304px",
-        "top": "45414",
-        "left": "0px",
-        "objectPosition": "center",
-        "objectFit": "contain"
-      },
       {
         "name": "grafico1",
         "width": "1015px",
@@ -4474,110 +4643,7 @@
         "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
       },
       "articles": [
-        {
-          "title": {
-            "text": "Panamá: Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
-            "width": "481.03px",
-            "height": "191.51px",
-            "top": "44752.33px",
-            "left": "414.05px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "315.36px",
-            "left": "446.05px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "44658.36px",
-            "left": "382.02px",
-            "rotation": "7.56deg"
-          },
-          "hover": {
-            "width": "700px",
-            "height": "873px",
-            "top": "-250px",
-            "left": "300px",
-            "backgroundImage": "sheetL",
-            "title": {
-              "content": "Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
-              "width": "585px",
-              "height": "124px",
-              "top": "57px",
-              "left": "197px"
-            },
-            "text": {
-              "content": "19 de marzo de 2023<br/><br/>Las menores rescatadas durante la Operación “Luz de Esperanza” que desarrolló el Ministerio Público y el Servicio Nacional de Fronteras, quienes se encuentran bajo el cuidado de familiares, recibieron la atención del equipo técnico evaluador de la Comisión Nacional contra la Trata de Personas del Ministerio de Seguridad Pública como parte del cuidado posterior.<br/><br/>El año pasado, las autoridades de Panamá en coordinación con las de Costa Rica, lograron desarticular una banda dedicada a la trata de personas con fines de explotación sexual infantil. En esa operación se realizaron 12 allanamientos, tanto en Panamá como en Costa Rica, logrando rescatar a 9 menores de edad entre 6 y 15 años.<br/><br/>De forma periódica el equipo técnico evalúa las necesidades para atender a los menores de forma individualizada a fin de conocer el avance y el estado de salud de niñas violentadas en su integridad.",
-              "width": "566px",
-              "height": "490px",
-              "top": "221px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/El Siglo Panamá",
-              "width": "497px",
-              "height": "27px",
-              "top": "740px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/panama/comision-nacional-contra-la-trata-de-personas-atiende-victimas-de-explotacion-sexual-infantil"
-          }
-        },
-        {
-          "title": {
-            "text": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
-            "width": "488.58px",
-            "height": "191.51px",
-            "top": "44827.27px",
-            "left": "1036.59px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "45070.69px",
-            "left": "1010.86px"
-          },
-          "size": {
-            "width": "603.02px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "44702px",
-            "left": "986.23px",
-            "rotation": "-7.43deg"
-          },
-          "hover": {
-            "width": "791px",
-            "height": "793px",
-            "top": "-200px",
-            "left": "980px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
-              "width": "585px",
-              "height": "76px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "7 de junio de 2023<br/><br/>Un total de 9 víctimas de trata de personas fueron rescatadas por Honduras en los últimos días, con lo que suman 25 las liberadas entre enero y mayo de 2023, informó este miércoles la Comisión Interinstitucional Contra la Explotación Sexual, Comercial y Trata de Personas (CICESCT).<br/><br/>“Se ha logrado la identificación y atención inmediata a nueve sobrevivientes de trata de personas en territorio nacional”, indicó la CICESCT en un comunicado.<br/><br/>Los rescates ocurrieron en operaciones coordinadas por la CICESCT con apoyo del Ministerio Público, la Unidad Contra la Trata, Explotación Sexual Comercial y Tráfico de Personas, la Dirección Policial de Investigaciones (DPI), la Agencia Técnica de Investigación Criminal (ATIC) y la Secretaría de Seguridad, entre otras instituciones.",
-              "width": "586px",
-              "height": "440px",
-              "top": "203px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/SWI",
-              "width": "430px",
-              "height": "23px",
-              "top": "640px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/honduras/honduras-rescata-a-9-victimas-de-trata-y-suman-25-las-liberadas-en-5-meses-de-2023"
-          }
-        },
+
         {
           "title": {
             "text": "Panamá continúa lucha contra la trata de personas",
@@ -4603,7 +4669,7 @@
           "hover": {
             "width": "650px",
             "height": "653px",
-            "top": "-20px",
+            "top": "348vw",
             "left": "736px",
             "backgroundImage": "sheetS",
             "backgroundSize": "640px 623px",
@@ -4795,158 +4861,106 @@
       "articles": [
         {
           "title": {
-            "text": "República Dominicana: Condenan a 20 años de prisión a una mujer vinculada a la trata de personas",
-            "width": "488.76px",
+            "text": "Panamá: Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
+            "width": "481.03px",
             "height": "191.51px",
-            "top": "54198.95px",
-            "left": "156.5px"
+            "top": "44752.33px",
+            "left": "414.05px"
           },
           "footer": {
             "text": "CORETT",
-            "top": "54390.47px",
-            "left": "155.86px"
+            "top": "315.36px",
+            "left": "446.05px"
           },
           "size": {
             "width": "603px",
             "height": "427px"
           },
           "position": {
-            "top": "54104.04px",
-            "left": "96.78px",
-            "rotation": "-0.91deg"
+            "top": "44658.36px",
+            "left": "382.02px",
+            "rotation": "7.56deg"
           },
           "hover": {
-            "width": "685px",
-            "height": "683px",
-            "top": "-20px",
-            "left": "80px",
-            "backgroundImage": "sheetS",
+            "width": "700px",
+            "height": "873px",
+            "top": "-250px",
+            "left": "300px",
+            "backgroundImage": "sheetL",
             "title": {
-              "content": "Condenan a 20 años de prisión a una mujer vinculada a la trata de personas",
-              "width": "555px",
-              "height": "76px",
-              "top": "56px",
-              "left": "97px"
+              "content": "Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
+              "width": "585px",
+              "height": "124px",
+              "top": "57px",
+              "left": "197px"
             },
             "text": {
-              "content": "La Procuraduría Especializada Contra el Tráfico Ilícito de Migrantes y Trata de Personas (PETT) y la Fiscalía de esta jurisdicción obtuvieron una condena de 20 años de prisión en contra de una mujer que se dedicaba a la trata de personas con fines de explotación sexual en perjuicio de 27 mujeres de nacionalidad dominicana y venezolana.<br/><br/>En el transcurso de la investigación, se obtuvieron pruebas con las que quedó demostrado que la encartada incurrió en trata de personas agravada, dada la multiplicidad de víctimas.",
-              "width": "540px",
-              "height": "266px",
-              "top": "203px",
+              "content": "19 de marzo de 2023<br/><br/>Las menores rescatadas durante la Operación “Luz de Esperanza” que desarrolló el Ministerio Público y el Servicio Nacional de Fronteras, quienes se encuentran bajo el cuidado de familiares, recibieron la atención del equipo técnico evaluador de la Comisión Nacional contra la Trata de Personas del Ministerio de Seguridad Pública como parte del cuidado posterior.<br/><br/>El año pasado, las autoridades de Panamá en coordinación con las de Costa Rica, lograron desarticular una banda dedicada a la trata de personas con fines de explotación sexual infantil. En esa operación se realizaron 12 allanamientos, tanto en Panamá como en Costa Rica, logrando rescatar a 9 menores de edad entre 6 y 15 años.<br/><br/>De forma periódica el equipo técnico evalúa las necesidades para atender a los menores de forma individualizada a fin de conocer el avance y el estado de salud de niñas violentadas en su integridad.",
+              "width": "566px",
+              "height": "490px",
+              "top": "221px",
               "left": "96px"
             },
             "footer": {
-              "content": "Fuente: CORETT/ Procuraduría General de la República- Gobierno de la República Dominicana",
-              "width": "477px",
-              "height": "50px",
-              "top": "521px",
+              "content": "Fuente: CORETT/El Siglo Panamá",
+              "width": "497px",
+              "height": "27px",
+              "top": "740px",
               "left": "0px"
             },
-            "link": "https://www.coalicioncorett.com/historias-republica-dominicana"
+            "link": "https://www.coalicioncorett.com/noticias/panama/comision-nacional-contra-la-trata-de-personas-atiende-victimas-de-explotacion-sexual-infantil"
           }
         },
         {
           "title": {
-            "text": "Ministerio Público logra condena de más de 10 años y multa de Q300 mil por trata de personas en Guatemala",
-            "width": "481.03px",
+            "text": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
+            "width": "488.58px",
             "height": "191.51px",
-            "top": "54119.76px",
-            "left": "1273.82px"
+            "top": "44827.27px",
+            "left": "1036.59px"
           },
           "footer": {
             "text": "CORETT",
-            "top": "54324.04px",
-            "left": "1240.52px"
+            "top": "45070.69px",
+            "left": "1010.86px"
           },
           "size": {
             "width": "603.02px",
             "height": "427px"
           },
           "position": {
-            "top": "54017.04pxx",
-            "left": "1220.27px",
-            "rotation": "-8.25deg"
+            "top": "44702px",
+            "left": "986.23px",
+            "rotation": "-7.43deg"
           },
           "hover": {
-            "width": "700px",
-            "height": "705px",
-            "top": "-40px",
-            "left": "1180px",
+            "width": "791px",
+            "height": "793px",
+            "top": "-200px",
+            "left": "980px",
             "backgroundImage": "sheetS",
             "title": {
-              "content": "Ministerio Público logra condena de más de 10 años y multa de Q300 mil por trata de personas en Guatemala",
+              "content": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
               "width": "585px",
-              "height": "115px",
+              "height": "76px",
               "top": "56px",
               "left": "97px"
             },
             "text": {
-              "content": "18 de mayo de 2023<br/><br/>El Ministerio Público, por medio de la Unidad contra la Explotación Sexual, de la Fiscalía contra la Trata de Personas, logró con base en la acusación presentada sentencia condenatoria de 10 años y 6 meses de prisión inconmutables contra Bertoldino Florián Valenzuela por el delito de trata de personas.<br/><br/>En concepto de reparación digna debe pagar Q10 mil por daño moral, una beca de estudios hasta el nivel diversificado para la víctima y colocar cuatro mantas vinílicas en el parque de Villa Nueva en coordinación con la Secretaría contra la Violencia Sexual, Explotación y Trata de Personas (SVET) y la Municipalidad de Villa Nueva.",
-              "width": "570px",
-              "height": "364px",
-              "top": "232px",
+              "content": "7 de junio de 2023<br/><br/>Un total de 9 víctimas de trata de personas fueron rescatadas por Honduras en los últimos días, con lo que suman 25 las liberadas entre enero y mayo de 2023, informó este miércoles la Comisión Interinstitucional Contra la Explotación Sexual, Comercial y Trata de Personas (CICESCT).<br/><br/>“Se ha logrado la identificación y atención inmediata a nueve sobrevivientes de trata de personas en territorio nacional”, indicó la CICESCT en un comunicado.<br/><br/>Los rescates ocurrieron en operaciones coordinadas por la CICESCT con apoyo del Ministerio Público, la Unidad Contra la Trata, Explotación Sexual Comercial y Tráfico de Personas, la Dirección Policial de Investigaciones (DPI), la Agencia Técnica de Investigación Criminal (ATIC) y la Secretaría de Seguridad, entre otras instituciones.",
+              "width": "586px",
+              "height": "440px",
+              "top": "203px",
               "left": "96px"
             },
             "footer": {
-              "content": "Fuente: CORETT/Ministerio Público de Guatemala",
-              "width": "470px",
+              "content": "Fuente: CORETT/SWI",
+              "width": "430px",
               "height": "23px",
-              "top": "585px",
+              "top": "640px",
               "left": "0px"
             },
-            "link": "https://www.coalicioncorett.com/noticias/guatemala/ministerio-publico-logra-condena-de-mas-de-10-anos-y-multa-de-q300-mil-por-trata-de-personas"
-          }
-        },
-        {
-          "title": {
-            "text": "El Salvador: Explotador sexual es condenado a 8 años de prisión",
-            "width": "481.03px",
-            "height": "132.71px",
-            "top": "54407.35px",
-            "left": "682px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "54569.5px",
-            "left": "708px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "54292.38px",
-            "left": "651.98px",
-            "rotation": "7.56 deg"
-          },
-          "hover": {
-            "width": "681px",
-            "height": "683px",
-            "top": "130px",
-            "left": "620px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "Explotador sexual es condenado a 8 años de prisión",
-              "width": "477px",
-              "height": "76px",
-              "top": "62px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "José Salvador Lovo recibió una condena de 8 años de prisión por el delito de Trata de Personas Agravada, modalidad de Explotación Sexual, en perjuicio de dos adolescentes.<br/><br/>Las investigaciones de la Unidad Especializada de Delitos de Tráfico Ilegal y Trata de Personas lograron establecer que el imputado habría atraído a las víctimas con la promesa de trabajar en una cervecería como meseras. Sin embrago, ya en el lugar fueron amenazadas y luego obligadas a realizar trabajos sexuales con clientes del negocio y a la venta de bebidas alcohólicas, en beneficio económico del imputado, dueño del local.",
-              "width": "527px",
-              "height": "298px",
-              "top": "209px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/ Fiscalía General de la República de El Salvador",
-              "width": "457px",
-              "height": "50px",
-              "top": "535px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/historias-el-salvador"
+            "link": "https://www.coalicioncorett.com/noticias/honduras/honduras-rescata-a-9-victimas-de-trata-y-suman-25-las-liberadas-en-5-meses-de-2023"
           }
         }
       ]
@@ -5068,12 +5082,12 @@
       }
     ],
     "animationText2": {
-      "text5": "Durante el periodo ",
+      "text5": "Durante el período ",
       "textStrong": "2018-2021",
       "text8": "fueron presentadas",
       "text6": "por el delito de trata de personas.",
       "text7": "6.696 denuncias",
-      "text9": "Durante el periodo",
+      "text9": "Durante el período",
       "textStrong2": "2018-2021",
       "text12": " se emitieron",
       "text10": "condenatorias por el delito de trata de personas.",
@@ -5081,7 +5095,7 @@
     },
 
     "animationText": {
-      "text1": "Durante el periodo",
+      "text1": "Durante el período",
       "textStrong": "2018-2021",
       "text4": "fueron atendidas",
       "text2": "víctimas de trata de personas.",
@@ -5518,7 +5532,7 @@
         "color": "#CFF9FF"
       },
       {
-        "content": "<span>Se reportan la totalidad de víctimas atendidas durante el periodo</span>, independientemente de que hayan sido identificadas en un periodo anterior.",
+        "content": "<span>Se reportan la totalidad de víctimas atendidas durante el período</span>, independientemente de que hayan sido identificadas en un período anterior.",
         "tag": "p",
         "width": "841px",
         "height": "120px",
@@ -6262,65 +6276,6 @@
           "color": "#081D20"
         }
       }
-    },
-    "news": {
-      "section": "Section3",
-      "footerCard": {
-        "fontFamily": "Inter",
-        "fontSize": "20px",
-        "fontWeight": "400",
-        "lineHeight": "24px",
-        "letterSpacing": "0.11em",
-        "textAlign": "left",
-        "color": "#000000"
-      },
-      "titleStyles": {
-        "fontFamily": "Inika",
-        "fontSize": "33px",
-        "fontWeight": "700",
-        "lineHeight": "43px",
-        "letterSpacing": "0.03em",
-        "textAlign": "left",
-        "color": "#043335"
-      },
-      "titleStylesHover": {
-        "fontFamily": "Inika",
-        "fontSize": "30px",
-        "fontWeight": "700",
-        "lineHeight": "39px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814"
-      },
-      "textStylesHover": {
-        "fontFamily": "Inter",
-        "fontSize": "20px",
-        "fontWeight": "400",
-        "lineHeight": "24px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814"
-      },
-      "footerStyleHover": {
-        "fontFamily": "Inika",
-        "fontSize": "20px",
-        "fontWeight": "700",
-        "lineHeight": "26px",
-        "letterSpacing": "0em",
-        "textAlign": "left",
-        "color": "#231814",
-        "color2": "#948678"
-      },
-      "footerIconHover": {
-        "width": "20.9993953704834px",
-        "height": "24.002277374267578px",
-        "top": "874.00390625px",
-        "left": "103px",
-        "filter": " brightness(0) saturate(100%) invert(57%) sepia(5%) saturate(1058%) hue-rotate(349deg) brightness(93%) contrast(98%)"
-      },
-      "articles": [
-      
-      ]
     }
   }
 }
