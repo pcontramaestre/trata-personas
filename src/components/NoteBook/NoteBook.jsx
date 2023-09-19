@@ -170,8 +170,7 @@ function NoteBook ({ noteBook, topSection }) {
   useLayoutEffect(() => {
     const containerAnimation = document.getElementsByName('noteBook' + noteBook.section)[0]
     const ctx = gsap.context(() => {
-      const scrollTriggerBehind1 = noteBook.scrollTriggerBehind && noteBook.scrollTriggerBehind[0] ? ScrollTrigger.getById(noteBook.scrollTriggerBehind[0]) : { start: 0 }
-      const scrollTriggerBehind2 = noteBook.scrollTriggerBehind && noteBook.scrollTriggerBehind[1] ? ScrollTrigger.getById(noteBook.scrollTriggerBehind[1]) : { end: 0 }
+      if (noteBook.section !== 'section3')
       gsap.from(containerAnimation, {
         left: '100%',
         opacity: 0,
@@ -179,41 +178,12 @@ function NoteBook ({ noteBook, topSection }) {
           trigger: containerAnimation,
           id: 'noteBook' + noteBook.section,
           // markers: true,
-          start: () => {
-            if (noteBook.scrollTriggerBehind) {
-              return scrollTriggerBehind2.end - scrollTriggerBehind1.start + ' 90%'
-            }
-            return 'top 90%'
-          },
-          end: () => {
-            return (scrollTriggerBehind2.end - scrollTriggerBehind1.start) + 300 + ' 70%'
-          },
-          scrub: 1
+          start: 'top 90%',
+          end: 'bottom bottom',
+          scrub: 1,
+          pinnedContainer: '#' + noteBook.section
         }
       })
-      // ScrollTrigger.create({
-      //   trigger: containerAnimation,
-      //   id: 'noteBook' + noteBook.section,
-      //   markers: true,
-      //   start: () => {
-      //     if (noteBook.scrollTriggerBehind) {
-      //       return scrollTriggerBehind2.end - scrollTriggerBehind1.start + ' 90%'
-      //     }
-      //     return 'top 90%'
-      //   },
-      //   end: () => {
-      //     return '+=' + (scrollTriggerBehind2.end - scrollTriggerBehind1.start) + ' 90%'
-      //   },
-      //   onEnter: () => {
-      //     if (!texts.footer[0]) {
-      //       setActiveAnimation({
-      //         paragraph: true,
-      //         title: true,
-      //         footer: true
-      //       })
-      //     }
-      //   }
-      // })
     })
 
     return () => ctx.revert()
