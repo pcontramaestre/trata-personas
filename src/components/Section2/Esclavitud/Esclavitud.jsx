@@ -43,15 +43,22 @@ const Esclavitud = () => {
           id: "trataEsclavitud",
         },
       });
-      tl.to(".esclavitudquemado", {
-        x: "-100vw",
-        ease: "power2.Out",
-      });
       tl.to(".esclavitud__img", {
         x: "+100vw",
         ease: "power2.in",
       });
-     
+      tl.to(".esclavitudquemado", {
+        x: "-100vw",
+        ease: "power2.Out",
+      });
+      tl.from(".animacion__fantasma", {
+        x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.to(".animacion__fantasma", {
+        x: "0vw",
+        ease: "power2.in",
+      });
     });
     return () => animateGraphic.revert();
   }, []);

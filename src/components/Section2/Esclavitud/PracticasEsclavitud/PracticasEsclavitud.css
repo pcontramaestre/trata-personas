@@ -63,13 +63,13 @@
   cursor: pointer;
 }
 
-.Servidumbre {
+.deudask {
   background-image: url("../../../../assets/Img-Section02/Page11/azulcompleto.png");
   border-radius: 45px 45px 0px 45px;
   background-color: #8cdff1;
 }
 
-.Servidumbre:hover {
+.deudask:hover {
   border-radius: 45px 45px 0px 0px;
 }
 
@@ -254,29 +254,29 @@
 }
 
 /* rosa  */
-.Servidumbrek:hover + .practicashover2 {
+.glebak:hover + .practicashover2 {
   display: flex;
   z-index: 5;
   border-radius: 0px 0px 45px 45px;
 }
 
-.Servidumbrek:hover {
+.glebak:hover {
   border-radius: 0px 45px 0px 0px;
 }
 
-.Servidumbrek:hover .img__comun {
+.glebak:hover .img__comun {
   display: none;
 }
 
 /* azul */
 
-.Servidumbre:hover + .practicashover1 {
+.deudask:hover + .practicashover1 {
   display: flex;
   z-index: 5;
   border-radius: 0px 0px 45px 45px;
 }
 
-.Servidumbre:hover .img__comun {
+.deudask:hover .img__comun {
   display: none;
 }
 

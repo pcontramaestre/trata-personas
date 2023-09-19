@@ -34,12 +34,20 @@ const ExplotacionLaboral = ({ handleVideosPlay }) => {
           id: "explotacionLaboral",
         },
       });
+      tl.to(".laboral__men", {
+        x: "+130vw",
+        ease: "power2.in",
+      });
       tl.to(".laboral__graphicquemado", {
         x: "+100vw",
         ease: "power2.Out",
       });
-      tl.to(".laboral__men", {
-        x: "+130vw",
+      tl.from(".animacion__fantasma", {
+        x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.to(".animacion__fantasma", {
+        x: "0vw",
         ease: "power2.in",
       });
     });
@@ -63,6 +71,7 @@ const ExplotacionLaboral = ({ handleVideosPlay }) => {
           handleVideosPlay={handleVideosPlay}
         />
       </div>
+      <div className="animacion__fantasma" />
       <div className="laboral__men" />
       <div className="laboral__graphicquemado"></div>
     </div>

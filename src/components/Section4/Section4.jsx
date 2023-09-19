@@ -27,11 +27,6 @@ import row5 from "../../assets/Section4/5-explotacion.png";
 import row6 from "../../assets/Section4/6-explotacionsexual.png";
 
 const imagesList = {
-  background,
-  person1,
-  person2,
-  person3,
-  person4,
   grafico1,
   grafico2,
   grafico3,
@@ -55,37 +50,31 @@ function Section4() {
   const textRef2 = useRef(null);
   const textRef3 = useRef(null);
 
-  const personImages = images.filter((image) => image.name.includes("person"));
-
-  // Crear referencias para las imágenes seleccionadas
-  personImages.forEach((image) => {
-    imgRefs[image.name] = useRef(null);
-  });
-
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    personImages.forEach((image) => {
-      const imgTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: imgRefs[image.name].current,
-          start: "top center",
-          end: "center center",
-          scrub: true,
-          // markers: true,
-        },
-      });
-
-      imgTl.fromTo(
-        imgRefs[image.name].current,
-        {
-          x: "-20%",
-        },
-        {
-          x: "0%",
-        }
-      );
+    const ctx = gsap.context(() => {
+    const imgTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: imgRefs.current,
+        start: "35% center",
+        end: "+=1300 bottom",
+        pin: "#section4",
+        pinSpacing: true,
+        scrub: true,
+        pinnedContainer: "#section4",
+        // markers: true,
+      },
     });
+
+    imgTl.fromTo(
+      imgRefs.current,
+      {
+        x: "-20%",
+      },
+      {
+        x: "0%",
+      }
+    );
 
     const imgTl2 = gsap.timeline({
       scrollTrigger: {
@@ -93,6 +82,7 @@ function Section4() {
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
         end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
+        pinnedContainer: "#section4",
         // markers: true, // Muestra marcadores de ScrollTrigger para depuración
       },
     });
@@ -116,6 +106,7 @@ function Section4() {
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
         end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
+        pinnedContainer: "#section4",
         // markers: true, // Muestra marcadores de ScrollTrigger para depuración
       },
     });
@@ -138,6 +129,7 @@ function Section4() {
         start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
         end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
         scrub: true, // Hace que la animación sea suave mientras se desplaza
+        pinnedContainer: "#section4",
         // markers: true, // Muestra marcadores de ScrollTrigger para depuración
       },
     });
@@ -153,6 +145,9 @@ function Section4() {
         opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
       }
     );
+  });
+
+  return () => ctx.revert();
   }, []);
 
   useEffect(() => {
@@ -217,6 +212,14 @@ function Section4() {
       className={style.LawEnforcementBackground}
       style={lawEnforcementeBackground}
     >
+      <img src={background} className={style.background3} alt="" />
+
+      <div ref={imgRefs} className={style.containerImg}>
+        <img src={person1} alt="" className={style.person1} />
+        <img src={person2} alt="" className={style.person2}/>
+        <img src={person3} alt="" className={style.person3}/>
+        <img src={person4} alt="" className={style.person4}/>
+      </div>
       <div className={style.animationText2} ref={textRef}>
         <p className={style.text5}>{animationText2.text5} </p>
         <p className={style.text5}>
@@ -266,7 +269,6 @@ function Section4() {
               : style.LawEnforcementImages
           }
           key={image.name + index}
-          ref={imgRefs[image.name]}
         />
       ))}
       {text.map((texto, index) => {

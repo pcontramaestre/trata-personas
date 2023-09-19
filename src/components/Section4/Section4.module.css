@@ -160,3 +160,49 @@
     width: 35.4vw;
     margin-top: 0.7rem;
 }
+.background3{
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    object-fit: contain;
+    top: -36.79vw;
+}
+.person1{
+    width: 40.9375vw;
+    height: 31.8229vw;
+    top: 30.9896vw;
+    left: 59.0625vw;
+    object-position: center center;
+    object-fit: contain;
+    position: absolute;
+}
+.person2{
+    width: 44.0625vw;
+    height: 39.3229vw;
+    top: 23.4896vw;
+    left: 32.9167vw;
+    object-position: center center;
+    object-fit: contain;
+    position: absolute;
+}
+.person3{
+    width: 38.125vw;
+    height: 57.5521vw;
+    top: 5.26042vw;
+    left: 15.8854vw;
+    object-position: center center;
+    object-fit: contain;
+    position: absolute;
+}
+.person4{
+    width: 38.3333vw;
+    height: 67.9167vw;
+    top: -5vw;
+    left: 0vw;
+    object-position: center center;
+    object-fit: contain;
+    position: absolute;
+}
+.containerImg{
+    height: 67.9167vw; 
+}

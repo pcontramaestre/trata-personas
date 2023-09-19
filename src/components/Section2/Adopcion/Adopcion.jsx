@@ -42,13 +42,20 @@ const Adopcion = () => {
           id: "trataAdopcion",
         },
       });
-     
+      tl.to(".adopcion__img", {
+        x: "+100vw",
+        ease: "power2.in",
+      });
       tl.to(".adopciongraphic", {
         x: "-100vw",
         ease: "power2.Out",
       });
-      tl.to(".adopcion__img", {
+      tl.from(".animacion__fantasma", {
         x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.to(".animacion__fantasma", {
+        x: "0vw",
         ease: "power2.in",
       });
     });
