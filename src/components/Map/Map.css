@@ -35,37 +35,48 @@
     cursor: pointer;
 }
 
-#container-Map #E-MX:hover{
+#container-Map #E-MX{
     cursor: pointer;
+    display: none;
 }
 
-#container-Map #E-MX:hover{
+#container-Map #E-MX{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-GT:hover{
+#container-Map #E-GT {
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-BZ:hover{
+#container-Map #E-BZ{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-MX:hover{
+#container-Map #E-MX{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-SV:hover{
+#container-Map #E-SV{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-HN:hover{
+#container-Map #E-HN{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-NI:hover{
+#container-Map #E-NI{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-CR:hover{
+#container-Map #E-CR{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-PA:hover{
+#container-Map #E-PA{
     cursor: pointer;
+    display: none;
 }
-#container-Map #E-DO:hover{
+#container-Map #E-DO{
     cursor: pointer;
+    display: none;
 }
