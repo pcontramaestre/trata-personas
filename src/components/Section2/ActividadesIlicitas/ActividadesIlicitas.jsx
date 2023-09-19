@@ -47,14 +47,15 @@ const ActividadesIlicitas = () => {
           id: "trataIlicitas",
         },
       });
-      tl.to(".actividades__img", {
-        x: "+100vw",
-        ease: "power2.in",
-      });
       tl.to(".ilicitasquemado", {
         x: "-100vw",
         ease: "power2.Out",
       });
+      tl.to(".actividades__img", {
+        x: "+100vw",
+        ease: "power2.in",
+      });
+  
     });
     return () => animateGraphic.revert();
   }, []);

@@ -41,6 +41,8 @@ const SliderSection01 = () => {
           end: "+=3000 bottom",
           scrub: 3,
           pin: "#section1",
+          pinnedContainer: "#section1",
+          pinSpacing: true,
           id: "SliderSection01",
         },
       });
