@@ -28,7 +28,6 @@
 
 .video__button img {
   opacity: 0.5;
-
 }
 
 .veronika {
@@ -39,9 +38,8 @@
   height: 40vw;
 }
 
-.video__button img:hover {
+.video__button:hover {
   cursor: pointer;
-  opacity: 1;
 }
 
 .video__title {
