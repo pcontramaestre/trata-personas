@@ -1,10 +1,70 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "./GraphicFinalidades.css";
 
 import data from "../../../../trataSection02.json";
 
 const GraphicFinalidades = () => {
   const page3 = data[0].finalidades.page3.graphic;
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger); // Registra ScrollTrigger
+    const spaceSlider = ScrollTrigger.getById("SliderSection02");
+
+    // Configura las animaciones
+    gsap.from(".finalidadexplotacion", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        // markers: true,
+        trigger: ".finalidadexplotacion",
+        start: () => {
+          return spaceSlider.end - spaceSlider.start + " center";
+        },
+        end: () => {
+          return spaceSlider.end - spaceSlider.start + "bottom 50%";
+        },
+
+        scrub: 1,
+      },
+    });
+
+    gsap.from(".finalidad__filados", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        // markers: true,
+        trigger: ".finalidad__filados",
+        start: () => {
+          return spaceSlider.end - spaceSlider.start + " center";
+        },
+        end: () => {
+          return spaceSlider.end - spaceSlider.start + "bottom 50%";
+        },
+        scrub: 1,
+      },
+    });
+
+    gsap.from(".finalidad__filatres", {
+    
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".finalidad__filatres",
+        start: () => {
+          return spaceSlider.end - spaceSlider.start + "top 75%";
+        },
+        end: () => {
+          return spaceSlider.end - spaceSlider.start + "top 80%";
+        },
+        scrub: 1,
+      },
+    });
+  }, []); // Asegúrate de que esto solo se ejecute una vez
+
   return (
     <div className="graphic__finalidad">
       <div className="graphicfinalidad__content">
