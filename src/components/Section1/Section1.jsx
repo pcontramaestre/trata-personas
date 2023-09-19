@@ -180,6 +180,7 @@ function Section1() {
     );
   }, []);
 
+
   useLayoutEffect(() => {
     const scrollTriggerSliderSection01 =
       ScrollTrigger.getById("SliderSection01");
@@ -234,29 +235,41 @@ function Section1() {
           pin: "#section1",
           id: "SliderCircle",
           pinnedContainer: "#section1",
-          pinSpacing: true
-        }
-      })
+          pinSpacing: true,
+        },
+      });
 
-      tl.from('.women__texts', {
+      tl.from(".women__texts", {
         scaleX: 0.6,
-        transformOrigin: 'left',
-        ease: "power2.out"
-      })
-      tl.from('.women__texts-content1', {
-        opacity: 0
-      }, 1)
-      tl.from('.women__texts-content2', {
-        opacity: 0
-      }, 1)
-      tl.from('.womens__img', {
-        y: 50,
-        opacity: 0
-      }, 1)
+        transformOrigin: "left",
+        ease: "power2.out",
+      });
+      tl.from(
+        ".women__texts-content1",
+        {
+          opacity: 0,
+        },
+        1
+      );
+      tl.from(
+        ".women__texts-content2",
+        {
+          opacity: 0,
+        },
+        1
+      );
+      tl.from(
+        ".womens__img",
+        {
+          y: 50,
+          opacity: 0,
+        },
+        1
+      );
       tl.to(".threeslider", {
         x: "-100vw",
         ease: "power2.inOut",
-      })
+      });
     });
     return () => womenSlider.revert();
   }, []);

@@ -6,7 +6,7 @@ import NoteBook from "../NoteBook/NoteBook";
 // import BarGraph from '../BarGraph/BarGraph'
 import SmallInfoBox from "../SmallInfoBox/SmallInfoBox";
 import News from "../News/News";
-import BigInfoBox from "../BigInfoBox/BigInfoBox.jsx"
+import BigInfoBox from "../BigInfoBox/BigInfoBox.jsx";
 
 import style from "./Section3.module.css";
 
@@ -16,7 +16,7 @@ import background from "../../assets/Section3/frontPageBackground.png";
 import leftHand from "../../assets/Section3/frontPageLeftHand.png";
 import bars from "../../assets/Section3/frontPageBars.png";
 import rightHand from "../../assets/Section3/frontPageRightHand.png";
-import camilla from "../../assets/Img-Section02/Page13/organs.png"
+import camilla from "../../assets/Img-Section02/Page13/organs.png";
 import grafico1 from "../../assets/Section3/grafico1.png";
 import grafico2 from "../../assets/Section3/grafico2.png";
 import frecuencia from "../../assets/Section3/frecuencia.svg";
@@ -40,7 +40,6 @@ import alojamiento from "../../assets/Section3/alojamiento.png";
 import reintegracion from "../../assets/Section3/reintegracion.png";
 import backgroundCard from "../../assets/Section3/backgroundCard.png";
 import graphic from "../../assets/Section3/grafico-21.png";
-import mp3 from "../../assets/Section3/Naciones-Unidas-Plano-voz-2.mp3";
 
 const imagesList = {
   background,
@@ -74,8 +73,17 @@ const iconList = {
 };
 
 const { protectionAndCare } = data;
-const { images, text, icons, noteBook, news, bigCard, smallInfoBox, rows, bigInfoBox } =
-  protectionAndCare;
+const {
+  images,
+  text,
+  icons,
+  noteBook,
+  news,
+  bigCard,
+  smallInfoBox,
+  rows,
+  bigInfoBox,
+} = protectionAndCare;
 
 function convertSize(input) {
   const n = Number(input.split("px")[0]);
@@ -84,12 +92,6 @@ function convertSize(input) {
 }
 
 function Section3() {
-  // const [audioPlaying, setAudioPlaying] = useState(false);
-  const audioPlaying = useRef(false)
-  // const [audioAutoPlay, setAudioAutoPlay] = useState(true);
-  const audioAutoPlay = useRef(true)
-  const [sectionVisible, setSectionVisible] = useState(true);
-
   const imgRefs = useRef([]); // Create an array of refs for images
   const containerRowRefs = useRef([]); // Create an array of refs for rows
   const textRef = useRef(null);
@@ -100,20 +102,71 @@ function Section3() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      // Animación del audio
-      // ScrollTrigger.create({
-      //   trigger: "#section3", // Debe ser el id de la sección
-      //   // markers: true,
-      //   onEnter: () => {
-      //     // setSectionVisible(true); // Marca la sección como visible
-      //     if (audioAutoPlay.current) toggleAudio('play')
+
+      // Animations for FrontPage
+      // console.log('entre en Layout de Section3')
+      gsap.from("#rightHandsection3", {
+        x: "100%",
+        opacity: 0,
+        scrollTrigger: {
+          trigger: "#backgroundsection3",
+          // markers: true,
+          start: "43% top",
+          end: "+=1700 bottom",
+          pin: "#section3",
+          pinSpacing: true,
+          scrub: 1,
+          pinnedContainer: "#section3",
+          id: "backgroundsection3",
+          onEnter: () => {
+            console.log('entre')
+            const scrollTriggerNoteBook = ScrollTrigger.getById('noteBooksection3')
+            scrollTriggerNoteBook.refresh()
+            // console.log('scrollTrigger:', scrollTriggerNoteBook)
+          }
+        }
+      })
+      // const imgTl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: "#backgroundsection3",
+      //     // markers: true,
+      //     start: "43% top",
+      //     end: "+=1700 bottom",
+      //     pin: "#section3",
+      //     pinSpacing: true,
+      //     scrub: 1,
+      //     pinnedContainer: "#section3",
+      //     id: "backgroundsection3"
       //   },
-      //   onLeave: ()=> {
-      //     toggleAudio('stop')
-      //   },
-      //   end: "bottom bottom",
-      //   start: 'top 5%'
       // });
+
+      // imgTl.fromTo(
+      //   "#rightHandsection3",
+      //   {
+      //     x: "100%",
+      //     opacity: 0,
+      //   },
+      //   {
+      //     x: "0%",
+      //     opacity: 1,
+      //   }
+      // );
+
+      // Animacion del NoteBook
+      const containerAnimation = document.getElementsByName('noteBook' + noteBook.section)[0]
+      gsap.from(containerAnimation, {
+        left: '100%',
+        opacity: 0,
+        scrollTrigger: {
+          trigger: containerAnimation,
+          id: 'noteBooksection3',
+          markers: true,
+          start: 'top 90%',
+          end: 'bottom bottom',
+          scrub: 1,
+          pinnedContainer: '#section3'
+        }
+      })
 
       // Animations for rows
       rows.forEach((row, index) => {
@@ -122,10 +175,16 @@ function Section3() {
             trigger: containerRowRefs.current[index], // Use the specific ref for this row
             start: "center center",
             end: "bottom center",
+            pinSpacing: true,
+            // pin: "#section3",
+            pinnedContainer: "#section3",
             scrub: true,
-            opacity: 0
+            // markers: true,
+            onEnter: () => {
+              const bigCard = document.querySelector("#bigCard" + row.image.name)
+              bigCard.style.visibility = "visible"
+            }
           },
-  
         });
         containerRowTl.fromTo(
           "#bigCard" + row.image.name,
@@ -134,9 +193,9 @@ function Section3() {
           },
           {
             opacity: 1,
-          },
+          }
         );
-  
+
         containerRowTl.fromTo(
           "#bigCard" + row.image.name,
           {
@@ -146,35 +205,8 @@ function Section3() {
             opacity: 0,
           },4
         );
-  
       });
 
-      // Animations for images
-      images.forEach((image, index) => {
-        const imgTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: imgRefs.current,
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
-          },
-        });
-  
-        imgTl.fromTo(
-          imgRefs.current,
-          {
-            x: "100%",
-            opacity: 0,
-          },
-          {
-            x: "0%",
-            opacity: 1,
-          }
-        );
-  
-        
-      });
-  
       // Animations for text
       const textTl2 = gsap.timeline({
         scrollTrigger: {
@@ -183,9 +215,11 @@ function Section3() {
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          pinSpacing: true,
+          pinnedContainer: "#section3"
         },
       });
-  
+
       textTl2.fromTo(
         textRef2.current,
         {
@@ -204,9 +238,11 @@ function Section3() {
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          pinSpacing: true,
+          pinnedContainer: "#section3"
         },
       });
-  
+
       textTl3.fromTo(
         textRef3.current,
         {
@@ -225,9 +261,11 @@ function Section3() {
           end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          pinnedContainer: "#section3",
+          pinSpacing: true
         },
       });
-  
+
       textTl4.fromTo(
         textRef4.current,
         {
@@ -242,13 +280,25 @@ function Section3() {
       const textTl = gsap.timeline({
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
-          end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          // start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+          start: () => {
+            const scrollBanner = ScrollTrigger.getById("backgroundsection3")
+
+            return scrollBanner.end-scrollBanner.start + " center"
+          }, // Inicia la animación cuando el componente está en el centro de la vista
+          // end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+          end: () => {
+            const scrollBanner = ScrollTrigger.getById("backgroundsection3")
+
+            return scrollBanner.end-scrollBanner.start + (textRef.current.offsetHeight/2) + " center"
+          }, // Termina la animación cuando el componente está completamente fuera de la vista
           scrub: true, // Hace que la animación sea suave mientras se desplaza
           // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+          pinSpacing: true,
+          // pinnedContainer: "#section3" 
         },
       });
-  
+
       textTl.fromTo(
         textRef.current,
         {
@@ -260,13 +310,15 @@ function Section3() {
           opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
         }
       );
-    })
 
-    return () => ctx.revert()
+      // Animations for images
+      
+    });
+
+    return () => ctx.revert();
   }, []);
 
   useEffect(() => {
-    
     if (smallInfoBox) {
       const iconsList = document.getElementsByName(icons[0].name);
       const divs = document.getElementsByName(`SmallInfoBox${icons[0].name}`);
@@ -414,51 +466,12 @@ function Section3() {
 
   const audioRef = useRef(null);
 
-  // const toggleAudio = (instruction) => {
-  //   const audioElement = document.getElementById('miAudio');
-  //   if (audioElement) {
-    
-  //     // if (audioAutoPlay) {
-
-  //       // audioElement.play(); // Reproduce el audio automáticamente al cargar la sección
-  //       // setAudioAutoPlay(false); // Desactiva la reproducción automática después del primer clic
-  //     // } else {
-  //       if (instruction ? audioPlaying.current && instruction === 'stop' : !audioElement.paused ) {
-  //         audioElement.pause(); // Pausa el audio si estaba reproduciéndose
-  //         if (instruction) {
-  //           audioElement.currentTime = 0
-  //         }
-  //         audioAutoPlay.current = false
-  //         // console.log("activar audio");
-  //       } else if (instruction ? !audioPlaying.current && instruction === 'play' : audioElement.paused) {
-  //         audioElement.play(); // Reanuda el audio si estaba pausado
-  //         // console.log("detener audio");
-  //       }
-  //       audioPlaying.current = !audioPlaying.current; // Actualiza el estado del audio
-  //   }
-  // };
-
   return (
     <section
       id="section3"
       className={style.ProtectionCare}
       style={protectionAndCareBackgroundStyles}
     >
-      {/* {sectionVisible && (
-        <div className={style.iconAudio}>
-          <img
-            src={audio}
-            alt="Audio"
-            onClick={() => toggleAudio()}
-          />
-        </div>
-      )} */}
-      {/* <audio
-      ref={audioRef}
-        id="miAudio"
-        src={mp3}
-        style={{ display: "none" }} // Para ocultar el reproductor de audio
-      /> */}
       <div className={style.animationText1} ref={textRef}>
         <p className={style.text1}>{animationText.text1} </p>
         <p className={style.text1}>
@@ -516,7 +529,7 @@ function Section3() {
       ))}
       {images.map((image, index) => (
         <img
-          id={listImageHover.includes(image.name) ? image.name : null}
+          id={image.name + "section3"}
           name={image.grupo ? image.grupo : null}
           src={imagesList[image.name]}
           style={imagesStyles[index]}
@@ -585,7 +598,7 @@ function Section3() {
           key={infoBox.name + index}
         />
       ))}
-      <News news={news} topSection={protectionAndCare.top} />
+      
     </section>
   );
 }
