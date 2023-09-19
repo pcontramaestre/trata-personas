@@ -56,13 +56,8 @@ const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
                 ) : (
                   <h1 className="video__title">{e.name}</h1>
                 )}
-                <div className="video__button" style={{backgroundImage: `url(${miniaturas[e.name]})`}}>
-                  <img
-                    onClick={() => {
-                      handleVideosPlay.openVideo(e.name);
-                    }}
-                    src={play}
-                  />
+                <div onClick={() => {handleVideosPlay.openVideo(e.name)}} className="video__button" style={{backgroundImage: `url(${miniaturas[e.name]})`}}>
+                  {/* <img src={play} /> */}
                 </div>
               </div>
             </div>
