@@ -29,11 +29,12 @@ import plane from '../../assets/Section5/plane.png'
 import data from '../../../troy.json'
 
 import animationBackground from '../../assets/Section5/animationBackground.png'
+import News from '../News/News'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const { repatriation } = data
-const { noteBook, animation, frontPageImages } = data.repatriation
+const { noteBook, animation, news, frontPageImages } = data.repatriation
 
 const images = {
   background,
@@ -177,6 +178,7 @@ function Section5 () {
       <MapSection05 topSection={repatriation.top} />
       <Animation />
       <div className={style.stuffed} style={stuffedStyle} />
+      <News news={news} topSection={repatriation.top} />
     </section>
   )
 }

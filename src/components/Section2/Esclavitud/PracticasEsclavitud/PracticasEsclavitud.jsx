@@ -25,7 +25,7 @@ const PracticasEsclavitud = ({ page11 }) => {
             <div
               className={`practicas__texts ${
                 e.item === "Servidumbre por deudas" ||
-                e.item === "Venta de menores para explotación"
+                e.item === "Venta de niños o jóvenes"
                   ? "flex-start"
                   : "flex-end"
               }`}
@@ -33,18 +33,18 @@ const PracticasEsclavitud = ({ page11 }) => {
               <div className={`practicas__item-background ${e.item}k`}>
                 <h1
                   className={`practicas__item ${
-                    e.item === "Matrimonio servil" ? "blanco" : null
+                    e.item === "Matrimonio forzado y servil" ? "blanco" : null
                   }`}
                 >
                   {e.item}
                 </h1>
                 <img
                   className={`${
-                    e.item === "Matrimonio servil"
+                    e.item === "Matrimonio forzado y servil"
                       ? "img__matrimonio"
                       : "img__comun"
                   }`}
-                  src={e.item === "Matrimonio servil" ? handblanco : hand}
+                  src={e.item === "Matrimonio forzado y servil" ? handblanco : hand}
                 />
               </div>
 
