@@ -34,15 +34,22 @@ const MedicinaForzada = () => {
           id: "mendicidadForzada",
         },
       });
-      tl.to(".medicina__graficoquemado", {
-        x: "+100vw",
-        ease: "power2.Out",
-      });
       tl.to(".pills__img", {
         x: "-100vw",
         ease: "power2.in",
       });
-    
+      tl.to(".medicina__graficoquemado", {
+        x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.from(".animacion__fantasma", {
+        x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.to(".animacion__fantasma", {
+        x: "0vw",
+        ease: "power2.in",
+      });
     });
     return () => animateGraphic.revert();
   }, []);
