@@ -75,6 +75,7 @@ const Countries = () => {
   ];
 
   useEffect(() => {
+    // const spacePin = ScrollTrigger.getById("backgroundSection8");
     gsap.utils.toArray(".country-card").forEach((card, index) => {
       gsap.from(card, {
         x: index % 2 === 0 ? "100%" : "-100%",
@@ -82,8 +83,15 @@ const Countries = () => {
         duration: 1,
         scrollTrigger: {
           trigger: card,
+          // markers: true,
           start: "top center",
           end: "bottom center",
+          // start: () => {
+          //   return spacePin.end - spacePin.start + "top center";
+          // },
+          // end: () => {
+          //   return spacePin.end - spacePin.start + "bottom center";
+          // },
           toggleActions: "play none none reverse",
         },
       });
