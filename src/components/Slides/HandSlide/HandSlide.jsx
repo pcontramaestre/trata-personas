@@ -14,8 +14,8 @@ function convertSize (input) {
 
 function HandSlide ({ handSlide, totalTop }) {
   function topPosition() {
-    const m = (0 - 35) / (1600 - 1280)
-    const b = - 1600 * m
+    const m = (20 - 35) / (1600 - 1280)
+    const b = - (1600 * m) + 20
     const x = window.innerWidth
     const y = m * x + b > 0 ? m * x + b : 0
     return y + '%'
