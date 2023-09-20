@@ -29,7 +29,7 @@
 
 .video-veronika{
   /* position: absolute; */
-    border-radius: 1vw;
+    border-radius: 60px;
     width: 65.2vw;
     height: 40.2vw;
     z-index: 10;
@@ -42,7 +42,7 @@
 .veronika {
   position: relative;
   /* top: 5vw; */
-  border-radius: 1vw;
+  border-radius: 60px;
   width: 65vw;
   height: 40vw;
 }
