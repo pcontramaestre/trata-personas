@@ -36,7 +36,7 @@ const VideoCorett = () => {
           <div>
             <iframe
               className="videocorett__button"
-              src="https://drive.google.com/file/d/1PayBYFvAtRl_h9Ywg4oNqRtP3XWQPvcV/preview"
+              src="https://www.youtube.com/watch?reload=9&v=DMsUfyK2SWM"
               width="640"
               height="480"
               allow="autoplay"
