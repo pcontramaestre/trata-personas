@@ -4,7 +4,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./MedicinaForzada.css";
 import data from "../../../../trataSection02.json";
 import BookMedicina from "../../NoteBook/NoteBookSection02Medicina/BookMedicina";
-import pills from "../../../assets/Img-Section02/Page07/pills.png";
 
 const MedicinaForzada = () => {
   useLayoutEffect(() => {
@@ -14,7 +13,7 @@ const MedicinaForzada = () => {
     const animateGraphic = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".pills__img",
+          trigger: ".mano__pills",
           // markers: true,
           start: () => {
             return (
@@ -27,14 +26,30 @@ const MedicinaForzada = () => {
               "top"
             );
           },
-          end: "+=3000 bottom",
+          end: "+=4000 bottom",
           scrub: 3,
           pin: "#section2",
           pinSpacing: true,
           id: "mendicidadForzada",
         },
       });
-      tl.to(".pills__img", {
+      tl.from(".mano__moneda2", {
+        y: "0vw",
+        ease: "power2.in",
+      });
+      tl.to(".mano__moneda2", {
+        y: "+30vw",
+        ease: "power2.in",
+      });
+      tl.from(".mano__moneda1", {
+        y: "0vw",
+        ease: "power2.in",
+      });
+      tl.to(".mano__moneda1", {
+        y: "+15vw",
+        ease: "power2.in",
+      });
+      tl.to(".mano__pills", {
         x: "-100vw",
         ease: "power2.in",
       });
@@ -61,7 +76,11 @@ const MedicinaForzada = () => {
         <h1 className="medicina__title">{page7.title}</h1>
         <BookMedicina page7={page7} />
       </div>
-      <img className="pills__img" src={pills} />
+      {/* <img className="pills__img" src={pills} /> */}
+      <div className="mano__pills">
+        <div className="mano__moneda1" />
+        <div className="mano__moneda2" />
+      </div>
       <div className="medicina__graficoquemado" />
       {/* <img className="medicina__img" src={background} /> */}
     </div>
