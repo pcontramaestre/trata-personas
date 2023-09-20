@@ -99,6 +99,25 @@ function Section4() {
       }
     );
 
+    // Animations news
+    const containerAnimation = document.getElementsByName('newsSection4.1')[0]
+    const elementToMove = document.getElementsByName('cardNewsSection4.1')
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerAnimation,
+        start: 'top 80%',
+        end: 'top 20%',
+        // markers: true,
+        scrub: true,
+        pinnedContainer: '#section4'
+
+      }
+    })
+
+    elementToMove.forEach((elemento) => {
+      tl.from(elemento, { x: `${window.innerWidth}` })
+    })
+
     // Animations for text
     const textTl = gsap.timeline({
       scrollTrigger: {
