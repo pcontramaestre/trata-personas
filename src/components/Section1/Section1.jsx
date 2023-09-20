@@ -219,7 +219,7 @@ function Section1() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".threeslider",
-          markers: true,
+          // markers: true,
           // start: () => {
           //   return (
           //     scrollTriggerCircle.end -
