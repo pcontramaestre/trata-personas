@@ -46,7 +46,7 @@
 }
 
 .bargraph__title {
-  width: 30vw;
+  width: 32vw;
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: "Inter", sans-serif;

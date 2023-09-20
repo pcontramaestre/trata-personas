@@ -18,16 +18,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45vw;
+  width: 43vw;
   height: 55vh;
-  border-radius: 1vw;
+  border-radius: 63px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.video__button img {
-  opacity: 0.5;
+
+.video-veronika{
+  /* position: absolute; */
+    border-radius: 1vw;
+    width: 65.2vw;
+    height: 40.2vw;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* pointer-events: none; */
 }
 
 .veronika {
@@ -36,6 +45,10 @@
   border-radius: 1vw;
   width: 65vw;
   height: 40vw;
+}
+
+.video__button img {
+  opacity: 0.5;
 }
 
 .video__button:hover {
