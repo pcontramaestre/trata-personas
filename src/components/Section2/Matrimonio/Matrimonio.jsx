@@ -41,13 +41,20 @@ const Matrimonio = () => {
           id: "trataMatrimonio",
         },
       });
-    
+      tl.to(".matrimonio__img", {
+        x: "-100vw",
+        ease: "power2.in",
+      });
       tl.to(".matrimonioquemado", {
         x: "+100vw",
         ease: "power2.Out",
       });
-      tl.to(".matrimonio__img", {
-        x: "-100vw",
+      tl.from(".animacion__fantasma", {
+        x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.to(".animacion__fantasma", {
+        x: "0vw",
         ease: "power2.in",
       });
     });

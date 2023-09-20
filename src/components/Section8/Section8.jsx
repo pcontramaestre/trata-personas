@@ -7,7 +7,7 @@ import "./Section8.css";
 import VideoCorett from "./VideoCorett/VideoCorett";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,52 +25,34 @@ const { credits } = data;
 const { images, text } = data.credits;
 
 function Section8() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    const background = document.querySelector(`.${style.CreditsBackground}`);
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#section8",
-        start: "top 50%",
-        end: "center center",
-        scrub: true,
-      },
+    const animateBackground = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: background,
+          // markers: true,
+          start: "top",
+          end: "+=3000 bottom",
+          scrub: 3,
+          pin: "#section8",
+          pinSpacing: true,
+          id: "backgroundSection8",
+        },
+      });
+      tl.from(".credits__mano1", { x: +100, opacity: 0 });
+      tl.to(".credits__mano1", { x: 0, opacity: 1 });
+      tl.from(".credits__mano3", { x: -100, opacity: 0 });
+      tl.to(".credits__mano3", { x: 0, opacity: 1 });
+      tl.from(".credits__mano2", { y: -100, opacity: 0 });
+      tl.to(".credits__mano2", { y: 0, opacity: 1 });
+      tl.from(".credits__mano4", { y: +100, opacity: 0 });
+      tl.to(".credits__mano4", { y: 0, opacity: 1 });
     });
-    tl.from(".credits__mano1", { x: +100, opacity: 0 });
-    tl.to(".credits__mano1", { x: 0, opacity: 1 });
 
-    const tlcredits3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#section8",
-        start: "top 48%",
-        end: "center center",
-        scrub: true,
-      },
-    });
-    tlcredits3.from(".credits__mano3", { x: -100, opacity: 0 });
-    tlcredits3.to(".credits__mano3", { x: 0, opacity: 1 });
-
-    const tlcredits2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#section8",
-        start: "top 45%",
-        end: "center center",
-        scrub: true,
-      },
-    });
-    tlcredits2.from(".credits__mano2", { y: -100, opacity: 0 });
-    tlcredits2.to(".credits__mano2", { y: 0, opacity: 1 });
-
-    const tlcredits4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#section8",
-        start: "top 43%",
-        end: "center center",
-        scrub: true,
-      },
-    });
-    tlcredits4.from(".credits__mano4", { y: +100, opacity: 0 });
-    tlcredits4.to(".credits__mano4", { y: 0, opacity: 1 });
+    return () => animateBackground.revert();
   }, []);
 
   const creditsContainer = {

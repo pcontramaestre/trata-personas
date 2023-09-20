@@ -21,12 +21,13 @@
   width: 45vw;
   height: 55vh;
   border-radius: 1vw;
-  background: #000;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .video__button img {
   opacity: 0.5;
-
 }
 
 .veronika {
@@ -37,9 +38,8 @@
   height: 40vw;
 }
 
-.video__button img:hover {
+.video__button:hover {
   cursor: pointer;
-  opacity: 1;
 }
 
 .video__title {

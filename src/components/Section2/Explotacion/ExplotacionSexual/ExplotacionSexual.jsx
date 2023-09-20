@@ -36,12 +36,20 @@ const ExplotacionSexual = ({ handleVideosPlay }) => {
           id: "explotacionSexual",
         },
       });
+      tl.to(".womenloading__img", {
+        x: "+100vw",
+        ease: "power2.in",
+      });
       tl.to(".womenloading__graphicquemado", {
         x: "-100vw",
         ease: "power2.Out",
       });
-      tl.to(".womenloading__img", {
+      tl.from(".animacion__fantasma", {
         x: "+100vw",
+        ease: "power2.Out",
+      });
+      tl.to(".animacion__fantasma", {
+        x: "0vw",
         ease: "power2.in",
       });
     });

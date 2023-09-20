@@ -3,6 +3,18 @@ import { useEffect } from "react";
 import "./Video.css";
 import x from "../../assets/Video/X.png";
 
+// import José from "../../assets/Video/José.jpg"
+// import María from "../../assets/Video/María.jpg"
+// import Pablo from "../../assets/Video/Pablo.jpg"
+// import Teresa from "../../assets/Video/Teresa.jpg"
+
+// const miniaturas = {
+//   José,
+//   María,
+//   Pablo,
+//   Teresa
+// }
+
 function Video({ close, name }) {
   const videos = {
     Pablo:
@@ -21,7 +33,7 @@ function Video({ close, name }) {
     return () => {
       html.style.overflow = "";
     };
-  });
+  }, []);
 
   return (
     <article className="video_container">

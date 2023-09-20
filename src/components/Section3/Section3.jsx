@@ -119,7 +119,6 @@ function Section3() {
           pinnedContainer: "#section3",
           id: "backgroundsection3",
           onEnter: () => {
-            console.log('entre')
             const scrollTriggerNoteBook = ScrollTrigger.getById('noteBooksection3')
             scrollTriggerNoteBook.refresh()
             // console.log('scrollTrigger:', scrollTriggerNoteBook)

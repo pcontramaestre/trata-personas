@@ -62,7 +62,7 @@ function Section4() {
         pinSpacing: true,
         scrub: true,
         pinnedContainer: "#section4",
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -98,6 +98,25 @@ function Section4() {
         opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
       }
     );
+
+    // Animations news
+    const containerAnimation = document.getElementsByName('newsSection4.1')[0]
+    const elementToMove = document.getElementsByName('cardNewsSection4.1')
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerAnimation,
+        start: 'top 80%',
+        end: 'top 20%',
+        // markers: true,
+        scrub: true,
+        pinnedContainer: '#section4'
+
+      }
+    })
+
+    elementToMove.forEach((elemento) => {
+      tl.from(elemento, { x: `${window.innerWidth}` })
+    })
 
     // Animations for text
     const textTl = gsap.timeline({
