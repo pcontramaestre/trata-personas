@@ -230,7 +230,7 @@ function Section1() {
           //   );
           // },
           start: "top 2%",
-          end: "bottom+=3000 bottom",
+          end: "bottom+=4000 bottom",
           scrub: 2,
           pin: "#section1",
           id: "SliderCircle",
@@ -249,14 +249,14 @@ function Section1() {
         {
           opacity: 0,
         },
-        1
+        0.5
       );
       tl.from(
         ".women__texts-content2",
         {
           opacity: 0,
         },
-        1
+        0.5
       );
       tl.from(
         ".womens__img",
@@ -264,11 +264,12 @@ function Section1() {
           y: 50,
           opacity: 0,
         },
-        1
+        0.5
       );
       tl.to(".threeslider", {
         x: "-100vw",
         ease: "power2.inOut",
+        duration: 5
       });
     });
     return () => womenSlider.revert();
