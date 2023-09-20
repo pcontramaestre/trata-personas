@@ -47,12 +47,37 @@
   text-transform: uppercase;
 }
 
-.pills__img {
-  top: 5vw;
+.mano__pills {
+  height: 55vw;
+  width: 60vw;
   left: 0;
-  width: 40vw;
+  top: 4vw;
   position: absolute;
-  z-index: 1;
+  background-image: url("../../../assets/Img-Section02/Page07/mano.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mano__moneda1 {
+  height: 15vw;
+  width: 15vw;
+  top: 13vw;
+  left: 12vw;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/Img-Section02/Page07/mendicidad-21.png");
+}
+
+.mano__moneda2 {
+  height: 11vw;
+  width: 11vw;
+  top: 0vw;
+  left: 12vw;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/Img-Section02/Page07/mendicidad-31.png");
 }
 
 @media screen and (max-width: 720px) {
