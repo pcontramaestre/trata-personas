@@ -34,9 +34,10 @@ const VideoCorett = () => {
         )}
         {playVideo && (
           <div>
-            <iframe
+          {/* https://www.youtube-nocookie.com/embed/DMsUfyK2SWM?si=boDUXiJjjxuwUSiQ&amp;controls=0&rel=0&showinfo=0 */}
+            <iframe 
               className="videocorett__button"
-              src="https://www.youtube.com/watch?reload=9&v=DMsUfyK2SWM"
+              src="https://drive.google.com/file/d/1PayBYFvAtRl_h9Ywg4oNqRtP3XWQPvcV/preview"
               width="640"
               height="480"
               allow="autoplay"
