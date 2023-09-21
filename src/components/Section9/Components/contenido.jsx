@@ -59,7 +59,7 @@ function BackgroundComponent() {
               </div>
             </a>
             <a
-              href="https://www.coalicioncorett.com/_files/ugd/001469_8df1a7bc00b847ee8f42562ca2318465.pdf"
+              href="https://www.coalicioncorett.com/infograf%C3%ADas"
               target="_blank"
             >
               <div className="cuadro2-style style-hover">

@@ -78,7 +78,6 @@ const {
   text,
   icons,
   noteBook,
-  news,
   bigCard,
   smallInfoBox,
   rows,

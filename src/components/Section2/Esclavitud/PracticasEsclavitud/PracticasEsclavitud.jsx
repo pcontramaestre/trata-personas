@@ -25,7 +25,7 @@ const PracticasEsclavitud = ({ page11 }) => {
             <div
               className={`practicas__texts ${
                 e.item === "Servidumbre por deudas" ||
-                e.item === "Venta de niños o jóvenes"
+                e.item === "Venta de niños, niñas y adolescentes"
                   ? "flex-start"
                   : "flex-end"
               }`}
