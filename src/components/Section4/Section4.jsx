@@ -49,6 +49,7 @@ function Section4() {
   const textRef = useRef(null);
   const textRef2 = useRef(null);
   const textRef3 = useRef(null);
+  const textRef4 = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -166,6 +167,28 @@ function Section4() {
     );
   });
 
+  const textTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: textRef4.current,
+      start: "top center", // Inicia la animación cuando el componente está en el centro de la vista
+      end: "center center", // Termina la animación cuando el componente está completamente fuera de la vista
+      scrub: true, // Hace que la animación sea suave mientras se desplaza
+      pinnedContainer: "#section4",
+      // markers: true, // Muestra marcadores de ScrollTrigger para depuración
+    },
+  });
+
+  textTl.fromTo(
+    textRef4.current,
+    {
+      x: "100%", // Mueve el elemento hacia la izquierda al 100% de su ancho
+      opacity: 0, // Inicialmente establece la opacidad en 0 para que aparezca gradualmente
+    },
+    {
+      x: "0%", // Lleva el elemento a su posición original (0%)
+      opacity: 1, // Establece la opacidad en 1 para que sea completamente visible
+    }
+  );
   return () => ctx.revert();
   }, []);
 
@@ -262,6 +285,19 @@ function Section4() {
         </p>
         <h2 className={style.text11}>{animationText2.text11}</h2>
         <p className={style.text10}>{animationText2.text10}</p>
+      </div>
+
+      <div className={style.animationText4} ref={textRef4}>
+        <p className={style.text13}>{animationText2.text13} </p>
+        <p className={style.text13}>
+          <strong className={style.textStrong3}>
+            {animationText2.textStrong3}
+          </strong>{" "}
+          {animationText2.text14}
+        </p>
+
+        <h2 className={style.text16}>{animationText2.text16}</h2>
+        <p className={style.text15}>{animationText2.text15}</p>
       </div>
 
       <div className={style.graphic2}>

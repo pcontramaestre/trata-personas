@@ -416,7 +416,7 @@
           {
             "type": "paragraph",
             "positionContent": 1,
-            "content": "<span>La trata de personas</span> se define como la “captación, transporte, traslado, acogida o recepción de <span>personas</span>, recurriendo a la amenaza o al uso de la fuerza u otras formas de coacción, al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
+            "content": "“La<span> Trata de Personas</span> es la captación, el transporte, el traslado, la acogida o la recepción de <span>personas</span>, recurriendo a la <span>amenaza o al uso de la fuerza u otras formas de coacción,</span> al rapto, al fraude, al engaño, al abuso de poder o de una <span>situación de vulnerabilidad</span> o a la concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre otra,",
             "width": "532.7px",
             "height": "300px",
             "top": "1635.06px",
@@ -436,7 +436,7 @@
           {
             "type": "title",
             "positionContent": 2,
-            "content": "CON FINES DE EXPLOTACIÓN”.",
+            "content": "CON FINES DE EXPLOTACIÓN…”",
             "width": "550.49px",
             "height": "76px",
             "top": "1941.08px",
@@ -445,8 +445,8 @@
         ],
         "footer": {
           "type": "footer",
-          "content": "(OIM,2019)",
-          "width": "157.9px",
+          "content": "(ONU, 2000).",
+          "width": "270px",
           "height": "30px",
           "top": "2032.25px",
           "left": "1059px",
@@ -704,8 +704,8 @@
             "width": "51.25px"
           },
           "position": {
-            "top": "5005px",
-            "left": "930px"
+            "top": "5025px",
+            "left": "935px"
           },
           "size": {
             "width": "124px",
@@ -725,8 +725,8 @@
             "width": "54.32px"
           },
           "position": {
-            "top": "4950px",
-            "left": "786px"
+            "top": "4967px",
+            "left": "795px"
           },
           "size": {
             "width": "138px",
@@ -746,8 +746,8 @@
             "width": "57.94px"
           },
           "position": {
-            "top": "4875px",
-            "left": "723px"
+            "top": "4893px",
+            "left": "728px"
           },
           "size": {
             "width": "129px",
@@ -789,7 +789,7 @@
           },
           "position": {
             "top": "4762px",
-            "left": "1040px"
+            "left": "1060px"
           },
           "size": {
             "width": "70px",
@@ -809,8 +809,8 @@
             "width": "62.67px"
           },
           "position": {
-            "top": "4807px",
-            "left": "1162px"
+            "top": "4810px",
+            "left": "1180px"
           },
           "size": {
             "width": "116px",
@@ -830,8 +830,8 @@
             "width": "52.65px"
           },
           "position": {
-            "top": "4869px",
-            "left": "1164px"
+            "top": "4885px",
+            "left": "1187px"
           },
           "size": {
             "width": "123px",
@@ -851,8 +851,8 @@
             "width": "50.7px"
           },
           "position": {
-            "top": "4939px",
-            "left": "1203px"
+            "top": "4953px",
+            "left": "1220px"
           },
           "size": {
             "width": "90px",
@@ -873,7 +873,7 @@
           },
           "position": {
             "top": "4805px",
-            "left": "1433px"
+            "left": "1445px"
           },
           "size": {
             "width": "252px",
@@ -896,7 +896,7 @@
     "bigInfoBox": {
       "name": "bigInfoBox_section0_1",
       "width": "1700px",
-      "height": "412px",
+      "height": "450px",
       "top": "5235.984375px",
       "left": "110px",
       "borderRadius": "28px",
@@ -904,7 +904,7 @@
       "backgroundColor": "#01535E",
       "text": [
         {
-          "content": "El delito de la trata de personas y el <span id='specialSpan'>tráfico ilícito de migrantes</span> han sido agenda de preocupación por parte de los Estados de la Región,",
+          "content": "La trata de personas y el <span id='specialSpan'>tráfico ilícito de migrantes</span> son agenda de preocupación para los países de la región.",
           "tag": "h1",
           "width": "1175px",
           "height": "110px",
@@ -919,7 +919,7 @@
           "color": "#FFFFFF"
         },
         {
-          "content": "y el interés recobra más fuerza al usarse el territorio regional como corredor para estos delitos y, por las condiciones violatorias a los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
+          "content": "El interés se intensifica al considerar que el territorio regional puede ser utilizado como corredor para estos delitos, que tienen la capacidad de violar los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
           "tag": "p",
           "width": "1401px",
           "height": "137px",
@@ -939,7 +939,7 @@
           "tag": "p",
           "width": "284.0334481956054px",
           "height": "44.59501064964004px",
-          "top": "5566px",
+          "top": "5610px",
           "left": "325.1953125px",
           "fontFamily": "Inter",
           "fontSize": "25px",
@@ -961,7 +961,7 @@
         "width": "39.997704278843464px",
         "height": "40.00000174456551px",
         "top": "5260px",
-        "left": "1300px",
+        "left": "1130px",
         "transform": "rotateZ(180deg)",
         "filter": "brightness(0) saturate(100%) invert(70%) sepia(28%) saturate(625%) hue-rotate(134deg) brightness(91%) contrast(82%)",
         "hover": {
@@ -3829,16 +3829,16 @@
       },
       {
         "name": "grafico4",
-        "width": "1294px",
-        "height": "650px",
-        "top": "52164px",
-        "left": "343px"
+        "width": "1025px",
+        "height": "516px",
+        "top": "53191px",
+        "left": "198px"
       },
       {
         "name": "grafico5",
         "width": "1052px",
         "height": "527.66px",
-        "top": "53191px",
+        "top": "52244px",
         "left": "786px"
       },
       {
@@ -3928,9 +3928,10 @@
         "color": "#006873"
       },
       {
-        "content": "Las diferentes <span>Fiscalías, Procuradurías, Ministerios Públicos y Cortes de la región</span> se han encargado de procurar la justicia en los casos de trata de personas.",
+        "content": "Los países de la CORETT cuentan con <span>Fiscalías, Policías de investigación, Ministerios Públicos, Procuradurías, Cortes o Instancias de Justicia</span>  inclusive instancias con competencia especializada en materia de trata de personas, que se encargan de procurar justicia y el acceso a la misma, en los casos de trata de personas.",
         "tag": "p",
-        "width": "810px",
+        "width": "1100px",
+        "textAlign": "center;",
         "height": "6.45833vw",
         "top": "47636px",
         "left": "0",
@@ -4319,10 +4320,10 @@
       {
         "content": "Sentencias absolutorias (2018-2021)",
         "tag": "p",
-        "width": "852px",
+        "width": "650px",
         "height": "34px",
-        "top": "52054px",
-        "left": "564px",
+        "top": "53081px",
+        "left": "381px",
         "fontFamily": "Inter",
         "fontSize": "28px",
         "fontWeight": "700",
@@ -4334,10 +4335,10 @@
       {
         "content": "2018",
         "tag": "p",
-        "width": "171px",
+        "width": "110px",
         "height": "51px",
-        "top": "52864px",
-        "left": "568px",
+        "top": "53742.68px",
+        "left": "393px",
         "fontFamily": "Inter",
         "fontSize": "30px",
         "fontWeight": "700",
@@ -4349,10 +4350,10 @@
       {
         "content": "2019",
         "tag": "p",
-        "width": "212px",
+        "width": "110",
         "height": "51px",
-        "top": "52864px",
-        "left": "820px",
+        "top": "53742.68px",
+        "left": "603px",
         "fontFamily": "Inter",
         "fontSize": "30px",
         "fontWeight": "700",
@@ -4364,10 +4365,10 @@
       {
         "content": "2020",
         "tag": "p",
-        "width": "139px",
+        "width": "110",
         "height": "51px",
-        "top": "52864px",
-        "left": "1123px",
+        "top": "53742.68px",
+        "left": "817px",
         "fontFamily": "Inter",
         "fontSize": "30px",
         "fontWeight": "700",
@@ -4379,10 +4380,10 @@
       {
         "content": "2021",
         "tag": "p",
-        "width": "139px",
+        "width": "110px",
         "height": "51px",
-        "top": "52864px",
-        "left": "1375px",
+        "top": "53742.68px",
+        "left": "1018px",
         "fontFamily": "Inter",
         "fontSize": "30px",
         "fontWeight": "700",
@@ -4394,10 +4395,10 @@
       {
         "content": "45",
         "tag": "p",
-        "width": "171px",
+        "width": "110px",
         "height": "51px",
-        "top": "52342px",
-        "left": "578px",
+        "top": "53327px",
+        "left": "393px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
         "fontWeight": "700",
@@ -4409,10 +4410,10 @@
       {
         "content": "51",
         "tag": "p",
-        "width": "212px",
+        "width": "110",
         "height": "76px",
-        "top": "52256px",
-        "left": "821px",
+        "top": "53273px",
+        "left": "603px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
         "fontWeight": "700",
@@ -4424,10 +4425,10 @@
       {
         "content": "15",
         "tag": "p",
-        "width": "139px",
+        "width": "110",
         "height": "51px",
-        "top": "52665px",
-        "left": "1124px",
+        "top": "53595.05px",
+        "left": "817px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
         "fontWeight": "700",
@@ -4439,10 +4440,10 @@
       {
         "content": "13",
         "tag": "p",
-        "width": "139px",
+        "width": "110px",
         "height": "51px",
-        "top": "52698px",
-        "left": "1378px",
+        "top": "53615px",
+        "left": "1015px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
         "fontWeight": "700",
@@ -4456,7 +4457,7 @@
         "tag": "p",
         "width": "650px",
         "height": "34px",
-        "top": "53081px",
+        "top": "52130px",
         "left": "990px",
         "fontFamily": "Inter",
         "fontSize": "28px",
@@ -4471,7 +4472,7 @@
         "tag": "p",
         "width": "115.14px",
         "height": "42.25px",
-        "top": "53742.68px",
+        "top": "52790px",
         "left": "1621.8px",
         "fontFamily": "Inter",
         "fontSize": "30px",
@@ -4486,7 +4487,7 @@
         "tag": "p",
         "width": "115.14px",
         "height": "42.25px",
-        "top": "53742.68px",
+        "top": "52790px",
         "left": "1423.83px",
         "fontFamily": "Inter",
         "fontSize": "30px",
@@ -4501,7 +4502,7 @@
         "tag": "p",
         "width": "175.61px",
         "height": "42.25px",
-        "top": "53742.68px",
+        "top": "52790px",
         "left": "1172.01px",
         "fontFamily": "Inter",
         "fontSize": "30px",
@@ -4516,7 +4517,7 @@
         "tag": "p",
         "width": "141.65px",
         "height": "42.25px",
-        "top": "53742.68px",
+        "top": "52790px",
         "left": "972.38px",
         "fontFamily": "Inter",
         "fontSize": "30px",
@@ -4531,7 +4532,7 @@
         "tag": "p",
         "width": "115.14px",
         "height": "42.25px",
-        "top": "53434px",
+        "top": "52480px",
         "left": "1622px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
@@ -4546,7 +4547,7 @@
         "tag": "p",
         "width": "115.14px",
         "height": "42.25px",
-        "top": "53445px",
+        "top": "52480px",
         "left": "1421.34px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
@@ -4561,7 +4562,7 @@
         "tag": "p",
         "width": "175.61px",
         "height": "62.95px",
-        "top": "53321.05px",
+        "top": "52368px",
         "left": "1172.01px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
@@ -4576,7 +4577,7 @@
         "tag": "p",
         "width": "141.65px",
         "height": "45.56px",
-        "top": "53425px",
+        "top": "52470px",
         "left": "972.38px",
         "fontFamily": "Formula Condensed",
         "fontSize": "53px",
@@ -4865,12 +4866,12 @@
             "width": "481.03px",
             "height": "191.51px",
             "top": "44752.33px",
-            "left": "414.05px"
+            "left": "229px"
           },
           "footer": {
             "text": "CORETT",
             "top": "315.36px",
-            "left": "446.05px"
+            "left": "262.19px"
           },
           "size": {
             "width": "603px",
@@ -4878,21 +4879,21 @@
           },
           "position": {
             "top": "44658.36px",
-            "left": "382.02px",
-            "rotation": "7.56deg"
+            "left": "145px",
+            "rotation": "-0.91deg"
           },
           "hover": {
             "width": "700px",
             "height": "873px",
             "top": "-250px",
-            "left": "300px",
+            "left": "65px",
             "backgroundImage": "sheetL",
             "title": {
               "content": "Comisión Nacional contra la Trata de Personas atiende víctimas de explotación sexual infantil",
               "width": "585px",
               "height": "124px",
               "top": "57px",
-              "left": "197px"
+              "left": "97px"
             },
             "text": {
               "content": "19 de marzo de 2023<br/><br/>Las menores rescatadas durante la Operación “Luz de Esperanza” que desarrolló el Ministerio Público y el Servicio Nacional de Fronteras, quienes se encuentran bajo el cuidado de familiares, recibieron la atención del equipo técnico evaluador de la Comisión Nacional contra la Trata de Personas del Ministerio de Seguridad Pública como parte del cuidado posterior.<br/><br/>El año pasado, las autoridades de Panamá en coordinación con las de Costa Rica, lograron desarticular una banda dedicada a la trata de personas con fines de explotación sexual infantil. En esa operación se realizaron 12 allanamientos, tanto en Panamá como en Costa Rica, logrando rescatar a 9 menores de edad entre 6 y 15 años.<br/><br/>De forma periódica el equipo técnico evalúa las necesidades para atender a los menores de forma individualizada a fin de conocer el avance y el estado de salud de niñas violentadas en su integridad.",
@@ -4913,16 +4914,68 @@
         },
         {
           "title": {
+            "text": "Guatemala: Coordinan rescate de niñas, niños y adolescentes víctimas de trata con fines de explotación sexual.",
+            "width": "481.03px",
+            "height": "191.51px",
+            "top": "44900.33px",
+            "left": "796px"
+          },
+          "footer": {
+            "text": "MINISTERIO PÚBLICO",
+            "top": "315.36px",
+            "left": "772.76px"
+          },
+          "size": {
+            "width": "603px",
+            "height": "427px"
+          },
+          "position": {
+            "top": "44808.36px",
+            "left": "665px",
+            "rotation": "-8.25deg"
+          },
+          "hover": {
+            "width": "700px",
+            "height": "873px",
+            "top": "-150px",
+            "left": "650px",
+            "backgroundImage": "sheetL",
+            "title": {
+              "content": "Fiscalía contra la Trata de Personas coordina rescate de ocho niñas, niños y adolescentes durante allanamientos por explotación sexual",
+              "width": "585px",
+              "height": "124px",
+              "top": "57px",
+              "left": "97px"
+            },
+            "text": {
+              "content": "17 de febrero 2023<br/><br/>El Ministerio Público, por medio de la Unidad contra la Explotación Sexual de la Fiscalía contra la Trata de Personas, en coordinación con la fiscal regional de Guatemala y el apoyo de la Policía Nacional Civil, realizó dos diligencias de allanamiento, inspección, registro y secuestro de evidencias en inmuebles ubicados en la zona 1 de la capital. Como resultado, se logró el rescate de ocho niñas, niños y adolescentes comprendidos entre las edades de cuatro meses y 17 años, quienes fueron puestos al resguardo de la Procuraduría General de la Nación. También se logró el secuestro de varios indicios, entre estos, teléfonos celulares, cuadernos de control de servicios, dispositivos de grabación DVR y declaraciones testimoniales de varias víctimas, los cuales contribuirán en el fortalecimiento de la investigación que se realiza.",
+              "width": "566px",
+              "height": "490px",
+              "top": "221px",
+              "left": "96px"
+            },
+            "footer": {
+              "content": "Fuente: MINISTERIO PÚBLICO GUATEMALA",
+              "width": "497px",
+              "height": "27px",
+              "top": "740px",
+              "left": "0px"
+            },
+            "link": "https://www.coalicioncorett.com/noticias/panama/comision-nacional-contra-la-trata-de-personas-atiende-victimas-de-explotacion-sexual-infantil"
+          }
+        },
+        {
+          "title": {
             "text": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
             "width": "488.58px",
             "height": "191.51px",
             "top": "44827.27px",
-            "left": "1036.59px"
+            "left": "1236px"
           },
           "footer": {
             "text": "CORETT",
             "top": "45070.69px",
-            "left": "1010.86px"
+            "left": "1223.06px"
           },
           "size": {
             "width": "603.02px",
@@ -4930,14 +4983,14 @@
           },
           "position": {
             "top": "44702px",
-            "left": "986.23px",
-            "rotation": "-7.43deg"
+            "left": "1200px",
+            "rotation": "7.56 deg"
           },
           "hover": {
-            "width": "791px",
+            "width": "760px",
             "height": "793px",
             "top": "-200px",
-            "left": "980px",
+            "left": "1100px",
             "backgroundImage": "sheetS",
             "title": {
               "content": "Honduras rescata a 9 víctimas de trata y suman 25 las liberadas en 5 meses de 2023",
@@ -5091,7 +5144,13 @@
       "textStrong2": "2018-2021",
       "text12": " se emitieron",
       "text10": "condenatorias por el delito de trata de personas.",
-      "text11": "526 sentencias"
+      "text11": "526 sentencias",
+      
+      "text13": "Durante el período ",
+      "textStrong3": "2018-2021",
+      "text14": " se emitieron",
+      "text15": "absolutorias por el delito de trata de personas.",
+      "text16": "124 sentencias"
     },
 
     "animationText": {

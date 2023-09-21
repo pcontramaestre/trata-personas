@@ -2,33 +2,28 @@
   background: url("../../../assets/Img-Section02/Page06/bookcorto.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 55vh;
-  transform: rotate(4.362deg);
-  left: 95vh;
+  height: 70vh;
+  transform: rotate(5.362deg);
+  left: 104vh;
   top: 40vh;
   position: absolute;
-  z-index: 90;
+  /* z-index: 90; */
 }
 
 .NoteBook07__texts {
-  display: flex;
+ 
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
-  text-align: center;
-  transform: rotate(4.062deg);
-  margin-left: 15.5vh;
-  margin-top: 14.5vh;
+  transform: rotate(5.062deg);
+  margin-left: 18.5vh;
+  margin-top: 16.5vh;
   font-style: normal;
-  width: 50%;
+  width: 61%;
 }
 
 .NoteBook07__text1 {
   transform: rotate(-4.362deg);
   color: var(--negro-textos, #081d20);
-  font-size: 2.5vh;
+  font-size: 1.3vw;
   line-height: normal;
   font-weight: 400;
   text-align: start;
@@ -40,7 +35,7 @@
   transform: rotate(-4.362deg);
   color: #c18831;
   font-family: "Formula Condensed";
-  font-size: 5vh;
+  font-size: 2.8vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -49,6 +44,7 @@
   margin: 0;
   margin-left: 0.8vh;
   margin-top: 0.3vh;
+  margin-bottom: 0.5em;
 }
 
 .NoteBook07__text3 {
@@ -56,7 +52,7 @@
   text-align: start;
   color: var(--negro-textos, #081d20);
   font-family: Inter;
-  font-size: 2.2vh;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
   font-family: "Inter", sans-serif;

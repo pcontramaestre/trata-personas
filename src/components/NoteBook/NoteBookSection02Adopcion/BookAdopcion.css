@@ -1,11 +1,11 @@
 .NoteBook06 {
   background: url("../../../assets/Img-Section02/Page06/bookcorto.png");
   background-repeat: no-repeat;
-  background-size: 40vw;
+  background-size: 42vw;
   height: 100%;
   transform: rotate(-12.362deg);
   left: 10vw;
-  top: 40vh;
+  top: 35vh;
   position: absolute;
   z-index: 90;
 }
@@ -19,10 +19,10 @@
   align-content: center;
   transform: rotate(4.062deg);
   text-align: center;
-  margin-left: 9.5vw;
-  margin-top: 16vh;
+  margin-left: 8.5vw;
+  margin-top: 14vh;
   font-style: normal;
-  width: 50%;
+  width: 36%;
 }
 
 .NoteBook06__text1 {
@@ -34,6 +34,7 @@
   text-align: start;
   font-family: "Inter", sans-serif;
   margin: 0;
+  margin-bottom: 0.3rem;
 }
 
 .NoteBook06__text2 {
@@ -49,6 +50,7 @@
   margin: 0;
   margin-left: 0.5vw;
   margin-top: 0.3vh;
+  /* margin-bottom: 0.5rem; */
 }
 
 .NoteBook06__text3 {
