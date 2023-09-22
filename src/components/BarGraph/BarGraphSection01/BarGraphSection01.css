@@ -14,8 +14,8 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 65vh;
-  width: 70.5%;
+  height: 50vw;
+  width: 70vw;
 }
 
 .baragraphcolumns {
@@ -50,7 +50,7 @@
   color: var(--verde-claro-textos, #006873);
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -136,13 +136,13 @@
   align-items: start;
   justify-content: center;
   height: 100%;
-  width: 40%;
+  width: 45%;
 }
 
 .bargraph__text1 {
   color: var(--verde-medio, #0a4b4e);
   font-family: "Inter", sans-serif;
-  font-size: 4vh;
+  font-size: 1.9vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -154,7 +154,7 @@
 .bargraph__text2 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 8vh;
+  font-size: 4.2vw;
   font-style: normal;
   font-weight: 700;
   line-height: 0.2;
@@ -164,7 +164,7 @@
 .bargraph__text3 {
   color: var(--verde-medio, #0a4b4e);
   font-family: Formula Condensed;
-  font-size: 6vh;
+  font-size: 3.6vw;
   font-style: normal;
   font-weight: 700;
   line-height: 2;
