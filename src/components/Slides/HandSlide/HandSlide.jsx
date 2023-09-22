@@ -35,7 +35,7 @@ function HandSlide ({ handSlide, totalTop }) {
             return scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + ' ' + topPosition()
           },
           end: () => {
-            return (scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + 4000) + ' bottom'
+            return (scrollTriggerFrontPageSection7.end - scrollTriggerFrontPageSection7.start + 4000) + 'bottom'
           },
           pin: '#section7',
           scrub: 1,
