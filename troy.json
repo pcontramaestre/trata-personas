@@ -1396,7 +1396,7 @@
       "top": "73863px",
       "left": "-1px",
       "container": {
-        "width": "11898.3623046875px",
+        "width": "12490px",
         "height": "892.13818359375px",
         "top": "-56px",
         "left": "-3.078125px",
@@ -1760,6 +1760,20 @@
               "date": "2021",
               "country": "Belice",
               "paragraph": "Validation and acceptance of the Protocol for Accompanied and Unaccompanied Migrant Children in Belize. The preparation of this document was carried out with the support of IOM."
+            }
+          },
+          {
+            "width": "671.4844092819054px",
+            "height": "415.98060874860585px",
+            "top": "196.669921875px",
+            "left": "11770px",
+            "border-radius": "28px",
+            "angle": "2.6deg",
+            "backgroundColor": "rgb(252, 251, 203)",
+            "text": {
+              "date": "2023",
+              "country": "Guatemala",
+              "paragraph": "Con el apoyo de UNODC, se plantea la necesidad de realizar un abordaje diferente, mediante el relanzamiento de la campaña Corazón Azul, en atención a la incidencia a nivel nacional e internacional ya que con la trata de personas estamos enfrentándonos a una manifestación del crimen organizado transnacional. Las modalidades que se abordarán en la nueva línea gráfica son la explotación sexual, explotación laboral, mendicidad, extracción y tráfico de órganos, trata de personas como delitos procedentes del lavado de dinero u otros y el reclutamiento de personas menores de edad para grupos delictivos organizados."
             }
           }
         ]
