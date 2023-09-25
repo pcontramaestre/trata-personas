@@ -1250,14 +1250,14 @@
           },
           "position": {
             "top": "70310.36px",
-            "left": "190px",
+            "left": "400px",
             "rotation": "7.56deg"
           },
           "hover": {
             "width": "750px",
             "height": "817px",
-            "top": "20px",
-            "left": "80px",
+            "top": "-20px",
+            "left": "290px",
             "backgroundImage": "sheetM",
             "title": {
               "content": "Especialización a funcionarios públicos para enfrentar trata de personas y trabajo forzoso",
@@ -1285,58 +1285,6 @@
         },
         {
           "title": {
-            "text": "Honduras: En marcha campaña para combatir trata de personas",
-            "width": "452.52px",
-            "height": "191.51px",
-            "top": "70194.55px",
-            "left": "809.59px"
-          },
-          "footer": {
-            "text": "CORETT",
-            "top": "70383px",
-            "left": "758.98px"
-          },
-          "size": {
-            "width": "603px",
-            "height": "427px"
-          },
-          "position": {
-            "top": "70059px",
-            "left": "774.69px",
-            "rotation": "-14.88deg"
-          },
-          "hover": {
-            "width": "730px",
-            "height": "735px",
-            "top": "-110px",
-            "left": "700px",
-            "backgroundImage": "sheetS",
-            "title": {
-              "content": "En marcha campaña para combatir trata de personas",
-              "width": "535px",
-              "height": "80px",
-              "top": "56px",
-              "left": "97px"
-            },
-            "text": {
-              "content": "La Comisión Interinstitucional Contra la Explotación Sexual Comercial y Trata de Personas de Honduras Lanzó la jornada “Puedes Verme”, en colaboración con la Campaña A21, organización no gubernamental global 501, sin fines de lucro que trabaja frente a ese flagelo.<br/>El trabajo se aúna con el objetivo de mostrar a la población de Honduras, cuáles son los indicadores de la trata de personas y que puedan denunciar a los números telefónicos habilitados en el país.<br/>La campaña está compuesta por spots audiovisuales que muestran la realidad que sufren muchas personas en el país al ser captadas por las redes de trata que operan en el territorio nacional, y por vallas publicitarias y banners, a través de medios de comunicación en puntos estratégicos que permitan generar conciencia y sensibilización.",
-              "width": "570px",
-              "height": "408px",
-              "top": "188px",
-              "left": "96px"
-            },
-            "footer": {
-              "content": "Fuente: CORETT/La Tribuna ",
-              "width": "470px",
-              "height": "23px",
-              "top": "580px",
-              "left": "0px"
-            },
-            "link": "https://www.coalicioncorett.com/noticias/honduras/en-marcha-campana-para-combatir-trata-de-personas"
-          }
-        },
-        {
-          "title": {
             "text": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
             "width": "443.52px",
             "height": "191.51px",
@@ -1354,14 +1302,14 @@
           },
           "position": {
             "top": "70358.36px",
-            "left": "1280.02px",
-            "rotation": "7.56deg"
+            "left": "1000px",
+            "rotation": "-7.56deg"
           },
           "hover": {
             "width": "791px",
             "height": "847px",
             "top": "-30px",
-            "left": "1115px",
+            "left": "935px",
             "backgroundImage": "sheetS",
             "title": {
               "content": "Llegar a todas las víctimas de la trata, sin dejar a nadie atrás",
