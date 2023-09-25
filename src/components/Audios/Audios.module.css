@@ -1,7 +1,7 @@
 .audio {
     position: fixed;
-    width: 3.017vw;
-    height: 2.083vw;
+    width: 3.5vw;
+    height: 2.5vw;
     z-index: 5;
 }
 
@@ -11,8 +11,8 @@
 
 .audio1_0 {
     /* top: 8.75vw; */
-    top: 20%;
-    left: 94.27vw;
+    top: 75%;
+    left: 94vw;
 }
 
 .audio1_3 {

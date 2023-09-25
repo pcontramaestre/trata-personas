@@ -70,8 +70,8 @@
         "icon": {
           "name": "audio1",
           "size": {
-            "width": "71px",
-            "height": "49px"
+            "width": "90px",
+            "height": "75px"
           }
         },
         "text": {
@@ -3945,7 +3945,7 @@
         "content": "Los países de la CORETT cuentan con <span>Fiscalías, Policías de investigación, Ministerios Públicos, Procuradurías, Cortes o Instancias de Justicia</span>  inclusive instancias con competencia especializada en materia de trata de personas, que se encargan de procurar justicia y el acceso a la misma, en los casos de trata de personas.",
         "tag": "p",
         "width": "1100px",
-        "textAlign": "center;",
+        "textAlign": "center",
         "height": "6.45833vw",
         "top": "47636px",
         "left": "0",
