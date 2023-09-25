@@ -23,7 +23,6 @@ import frecuencia from "../../assets/Section3/frecuencia.svg";
 import atenciones from "../../assets/Section3/atenciones.svg";
 import group from "../../assets/Instructions/group.svg";
 import infoGifSection3 from "../../assets/Section3/infoGifVerdeOscuro1.png";
-import audio from "../../assets/Instructions/audio1.png";
 import amarillo1 from "../../assets/Section3/amarillo1.jpg";
 import rosado1 from "../../assets/Section3/rosado1.jpg";
 import azul1 from "../../assets/Section3/azul1.jpg";
