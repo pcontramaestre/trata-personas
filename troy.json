@@ -244,22 +244,22 @@
     ],
     "text": [
       {
-        "content": "TRATA DE",
+        "content": "UNA MIRADA",
         "tag": "h1",
-        "top": "306px",
+        "top": "256px",
         "left": "118px",
-        "width": "486px",
+        "width": "600px",
         "height": "157px",
         "fontSize": "140px",
         "fontFamily": "Formula Condensed",
         "color": "#CFF9FF"
       },
       {
-        "content": "PERSONAS",
+        "content": "A LA TRATA",
         "tag": "h1",
         "width": "486px",
         "height": "157px",
-        "top": "441px",
+        "top": "395px",
         "left": "129px",
         "fontFamily": "Formula Condensed",
         "fontSize": "140px",
@@ -270,11 +270,26 @@
         "color": "#CFF9FF"
       },
       {
-        "content": "Un crimen contra",
+        "content": "DE PERSONAS:",
+        "tag": "h1",
+        "width": "600px",
+        "height": "157px",
+        "top": "540px",
+        "left": "129px",
+        "fontFamily": "Formula Condensed",
+        "fontSize": "140px",
+        "fontWeight": "700",
+        "lineHeight": "168px",
+        "letterSpacing": "0em",
+        "textAlign": "left",
+        "color": "#CFF9FF"
+      },
+      {
+        "content": "Cifras y voces de las",
         "tag": "h2",
-        "width": "554px",
+        "width": "600px",
         "height": "66px",
-        "top": "634px",
+        "top": "720px",
         "left": "123px",
         "fontFamily": "Inika",
         "fontSize": "60px",
@@ -285,11 +300,11 @@
         "color": "#FFFFFF"
       },
       {
-        "content": "la humanidad",
+        "content": "personas sobrevivientes",
         "tag": "h2",
-        "width": "554px",
+        "width": "1000px",
         "height": "80px",
-        "top": "700px",
+        "top": "786px",
         "left": "127px",
         "fontFamily": "Inika",
         "fontSize": "77px",
@@ -439,7 +454,7 @@
             "content": "CON FINES DE EXPLOTACIÓN…”",
             "width": "550.49px",
             "height": "76px",
-            "top": "1941.08px",
+            "top": "1961.08px",
             "left": "1042px"
           }
         ],
@@ -919,7 +934,7 @@
           "color": "#FFFFFF"
         },
         {
-          "content": "El interés se intensifica al considerar que el territorio regional puede ser utilizado como corredor para estos delitos, que tienen la capacidad de violar los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierten en víctima, sino que afecta la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
+          "content": "El interés se intensifica al considerar que el territorio regional puede ser utilizado como corredor para estos delitos, que tienen la capacidad de violar los derechos humanos, a la dignidad, integridad, intimidad y hasta la vida de las personas sujetas de éstos. <span>Estos fenómenos no solo afectan a quien se convierte en víctima, sino que afectan la estabilidad democrática, el desarrollo humano y a la seguridad ciudadana.</span>",
           "tag": "p",
           "width": "1401px",
           "height": "137px",
@@ -3890,7 +3905,7 @@
         "color": "#006873"
       },
       {
-        "content": "Los países de la CORETT cuentan con <span>Fiscalías, Policías de investigación, Ministerios Públicos, Procuradurías, Cortes o Instancias de Justicia</span>  inclusive instancias con competencia especializada en materia de trata de personas, que se encargan de procurar justicia y el acceso a la misma, en los casos de trata de personas.",
+        "content": "Los países de la CORETT cuentan con <span>Fiscalías, Policías de investigación, Ministerios Públicos, Procuradurías, Cortes o Instancias de Justicia,</span>  inclusive instancias con competencia especializada en materia de trata de personas, que se encargan de procurar justicia y el acceso a la misma, en los casos de trata de personas.",
         "tag": "p",
         "width": "1100px",
         "textAlign": "center",
@@ -4910,7 +4925,7 @@
               "left": "97px"
             },
             "text": {
-              "content": "17 de febrero 2023<br/><br/>El Ministerio Público, por medio de la Unidad contra la Explotación Sexual de la Fiscalía contra la Trata de Personas, en coordinación con la fiscal regional de Guatemala y el apoyo de la Policía Nacional Civil, realizó dos diligencias de allanamiento, inspección, registro y secuestro de evidencias en inmuebles ubicados en la zona 1 de la capital. Como resultado, se logró el rescate de ocho niñas, niños y adolescentes comprendidos entre las edades de cuatro meses y 17 años, quienes fueron puestos al resguardo de la Procuraduría General de la Nación. También se logró el secuestro de varios indicios, entre estos, teléfonos celulares, cuadernos de control de servicios, dispositivos de grabación DVR y declaraciones testimoniales de varias víctimas, los cuales contribuirán en el fortalecimiento de la investigación que se realiza.",
+              "content": "17 de febrero 2023<br/><br/>El Ministerio Público, por medio de la Unidad contra la Explotación Sexual de la Fiscalía contra la Trata de Personas, en coordinación con la fiscal regional de Guatemala y el apoyo de la Policía Nacional Civil, realizó dos diligencias de allanamiento, inspección, registro y secuestro de evidencias en inmuebles ubicados en la zona 1 de la capital. <br/><br/>Como resultado, se logró el rescate de ocho niñas, niños y adolescentes comprendidos entre las edades de cuatro meses y 17 años, quienes fueron puestos al resguardo de la Procuraduría General de la Nación. <br/><br/>También se logró el secuestro de varios indicios, entre estos, teléfonos celulares, cuadernos de control de servicios, dispositivos de grabación DVR y declaraciones testimoniales de varias víctimas, los cuales contribuirán en el fortalecimiento de la investigación que se realiza.",
               "width": "566px",
               "height": "490px",
               "top": "221px",
