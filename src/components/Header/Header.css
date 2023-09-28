@@ -17,6 +17,7 @@
   left: 94vw;
   top: 3vw;
   cursor: pointer;
+  width: 2.4rem;
 }
 .hamburger-icon img:hover {
   opacity: 0.8;

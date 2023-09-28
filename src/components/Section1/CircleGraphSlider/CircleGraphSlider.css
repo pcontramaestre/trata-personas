@@ -10,14 +10,16 @@
 
 .CircleGraph__slidertitle {
   font-family: Inter;
-  font-size: 3.5vh;
-  font-weight: 400;
+  font-size: 1.46vw;
+  font-weight: 700;
   line-height: 41px;
   letter-spacing: 0em;
   text-align: center;
   color: #1a6063;
   margin: 0;
-  /* margin-bottom: 2em; */
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+
 }
 
 .CircleGraph__content {

@@ -63,7 +63,7 @@ const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
                   <div>
                     <iframe
                       className="video__button veronika"
-                      src="https://drive.google.com/file/d/1ur1Sr4Qoa20jWQ7VaolesCLjBlgOyIaK/preview"
+                      src="https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0"
                       width="640"
                       height="480"
                       allow="autoplay"
