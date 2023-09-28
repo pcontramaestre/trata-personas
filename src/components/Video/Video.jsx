@@ -18,13 +18,13 @@ import x from "../../assets/Video/X.png";
 function Video({ close, name }) {
   const videos = {
     Pablo:
-      "https://drive.google.com/file/d/1LUtNv4tjpXzzQHlJMsykuqBPGhEO2z6m/preview",
+      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
     ["José"]:
-      "https://drive.google.com/file/d/14-fMEFiQ5ufGzlwkrRtvifXonIODy_-F/preview",
+      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
     Teresa:
-      "https://drive.google.com/file/d/1YMOHVndKsDUTy1aD-VxRqyfl1iQm9f7m/preview",
+      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
     ["María"]:
-      "https://drive.google.com/file/d/1njLiXFA1EtyxjSSvtIxRLVgDl1hb8vgk/preview",
+      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
   };
 
   useEffect(() => {

@@ -37,7 +37,7 @@ const VideoCorett = () => {
           {/* https://www.youtube-nocookie.com/embed/DMsUfyK2SWM?si=boDUXiJjjxuwUSiQ&amp;controls=0&rel=0&showinfo=0 */}
             <iframe 
               className="videocorett__button"
-              src="https://drive.google.com/file/d/1PayBYFvAtRl_h9Ywg4oNqRtP3XWQPvcV/preview"
+              src="https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0"
               width="640"
               height="480"
               allow="autoplay"
