@@ -3,28 +3,28 @@ import { useEffect } from "react";
 import "./Video.css";
 import x from "../../assets/Video/X.png";
 
-// import José from "../../assets/Video/José.jpg"
-// import María from "../../assets/Video/María.jpg"
-// import Pablo from "../../assets/Video/Pablo.jpg"
-// import Teresa from "../../assets/Video/Teresa.jpg"
+import José from "../../assets/Video/José.jpg"
+import María from "../../assets/Video/María.jpg"
+import Pablo from "../../assets/Video/Pablo.jpg"
+import Teresa from "../../assets/Video/Teresa.jpg"
 
-// const miniaturas = {
-//   José,
-//   María,
-//   Pablo,
-//   Teresa
-// }
+const miniaturas = {
+  José,
+  María,
+  Pablo,
+  Teresa
+}
 
 function Video({ close, name }) {
   const videos = {
     Pablo:
-      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
+      "https://www.youtube.com/embed/qqs7rEOVI1k?rel=0&showinfo=0&controls=0",
     ["José"]:
-      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
+      "https://www.youtube.com/embed/q0iFlhK_OHU?rel=0&showinfo=0&controls=0",
     Teresa:
-      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
+      "https://www.youtube.com/embed/xFm-URjhd_k?rel=0&showinfo=0&controls=0",
     ["María"]:
-      "https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0",
+      "https://www.youtube.com/embed/8i9laHzV-O4?rel=0&showinfo=0&controls=0",
   };
 
   useEffect(() => {
