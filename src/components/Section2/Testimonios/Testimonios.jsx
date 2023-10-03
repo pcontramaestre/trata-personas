@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import "./Testimonios.css";
-import play from "../../../assets/Img-Section02/play_button.png";
 
 import José from "../../../assets/Video/José.jpg";
 import María from "../../../assets/Video/María.jpg";
