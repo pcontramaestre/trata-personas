@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import data from "../../../../trataSection08.json";
-import Corett from "../../../assets/VideoCorett.mp4";
+// import Corett from "../video-corett/VideoCorett.mp4";
+// import Corett from "../VideoCorett/VideoCorett";
 
 import "./VideoCorett.css";
 
@@ -12,7 +13,7 @@ const VideoCorett = () => {
       <h1 className="videocorett__title">{page5.title}</h1>
       <div>
         <video className="videocorett__video" width="940" controls>
-          <source src={Corett} type="video/mp4" />
+          <source src="/VideoCorett.mp4" type="video/mp4" />
           Tu navegador no admite la reproducción de videos MP4.
         </video>
       </div>
