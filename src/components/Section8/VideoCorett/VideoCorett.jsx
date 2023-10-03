@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import data from "../../../../trataSection08.json";
-import Corett from "../../../assets/video/VideoCorett.mp4";
+import Corett from "../../../assets/VideoCorett.mp4";
 import "./VideoCorett.css";
 
 const VideoCorett = () => {
