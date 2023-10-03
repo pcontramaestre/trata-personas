@@ -6,7 +6,6 @@ import José from "../../../assets/Video/José.jpg";
 import María from "../../../assets/Video/María.jpg";
 import Pablo from "../../../assets/Video/Pablo.jpg";
 import Teresa from "../../../assets/Video/Teresa.jpg";
-import Veronika from "../../../assets/Video/Veronica.jpg";
 
 const miniaturas = {
   José,
@@ -45,32 +44,17 @@ const Testimonios = ({ name1, name2, laboral, handleVideosPlay }) => {
         <div className="videos__content">
           <div>
             <div className="video__play">
-              {laboral ? (
-                <h1 className="video__title laboral">{testimonios[0].name}</h1>
-              ) : (
-                <h1 className="video__title">{testimonios[0].name}</h1>
-              )}
               <div>
-                {showThumbnail && (
-                  <img
-                    className="video-veronika"
-                    src={Veronika}
-                    alt=""
-                    onClick={handleThumbnailClick}
-                  />
-                )}
-                {playVideo && (
-                  <div>
-                    <iframe
-                      className="video__button veronika"
-                      src="https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0"
-                      width="640"
-                      height="480"
-                      allow="autoplay"
-                      ref={iframeRef}
-                    ></iframe>
-                  </div>
-                )}
+                <div>
+                  <iframe
+                    className="video__button veronika"
+                    src="https://www.youtube.com/embed/3WLLDR7nFis?rel=0&showinfo=0&controls=0"
+                    width="640"
+                    height="480"
+                    allow="autoplay"
+                    ref={iframeRef}
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
