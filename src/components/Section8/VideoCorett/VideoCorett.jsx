@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import data from "../../../../trataSection08.json";
-import Corett from "../../../assets/Video/Corett.jpg";
+import Corett from "../../../assets/Section8/video-corett/VideoCorett.mp4";
 import "./VideoCorett.css";
 
 const VideoCorett = () => {
@@ -11,7 +11,7 @@ const VideoCorett = () => {
   const iframeRef = useRef(null);
 
   const handleThumbnailClick = () => {
-    setShowThumbnail(false);
+    // setShowThumbnail(false);
     setPlayVideo(true);
     // Reproducir el video
     iframeRef.current.contentWindow.postMessage(
@@ -24,27 +24,36 @@ const VideoCorett = () => {
     <div className="video__corett">
       <h1 className="videocorett__title">{page5.title}</h1>
       <div>
-        {showThumbnail && (
+        {/* {showThumbnail && (
           <img
             className="video-veronika"
             src={Corett}
             alt=""
             onClick={handleThumbnailClick}
           />
-        )}
-        {playVideo && (
-          <div>
+        )} */}
+        <div>
           {/* https://www.youtube-nocookie.com/embed/DMsUfyK2SWM?si=boDUXiJjjxuwUSiQ&amp;controls=0&rel=0&showinfo=0 */}
-            <iframe 
+          {/* <iframe 
               className="videocorett__button"
-              src="https://www.youtube.com/embed/DMsUfyK2SWM?rel=0&showinfo=0&controls=0"
+              src="../../assets/Section8/video-corett/VideoCorett.mp4"
               width="640"
               height="480"
               allow="autoplay"
               ref={iframeRef}
-            ></iframe>
-          </div>
-        )}
+            ></iframe> */}
+          <video
+            className="videocorett__video"
+            width="940"
+            controls
+          >
+            <source
+              src={Corett}
+              type="video/mp4"
+            />
+            Tu navegador no admite la reproducción de videos MP4.
+          </video>
+        </div>
       </div>
       <div className="videocorett__info">
         <div className="videocorett__info-texts">

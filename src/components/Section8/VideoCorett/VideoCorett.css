@@ -11,7 +11,9 @@
   background-size: cover;
   background-image: url("../../../assets/Section8/background.png");
 }
-
+.videocorett__video{
+border-radius: 25px;
+}
 .videocorett__play {
   display: flex;
   flex-direction: column;
